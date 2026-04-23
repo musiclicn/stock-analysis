@@ -253,29 +253,30 @@
     <div class="brand">
       <div class="logo"></div>
       <div>
-        <h1>Market Pulse</h1>
-        <small>U.S. equities · scores &amp; breadth</small>
+        <h1 data-i18n="brand.title">Market Pulse</h1>
+        <small data-i18n="brand.tagline">U.S. equities · scores &amp; breadth</small>
       </div>
     </div>
     <div class="toolbar">
       <div id="status" class="status loading"><span class="dot"></span><span id="status-text">Loading…</span></div>
       <button id="refresh" class="btn" title="Reload this tab's data">
-        <span id="refresh-ico">↻</span><span>Refresh</span>
+        <span id="refresh-ico">↻</span><span data-i18n="btn.refresh">Refresh</span>
       </button>
+      <button id="lang-toggle" class="btn">中文</button>
     </div>
   </header>
 
   <!-- ================= TAB NAV ================= -->
   <nav class="tab-nav">
-    <a class="tab active" data-tab="overview" href="#/overview">Overview<span class="pill">scores</span></a>
-    <a class="tab"        data-tab="breadth"  href="#/breadth" >Market Breadth<span class="pill">S&amp;P 500</span></a>
+    <a class="tab active" data-tab="overview" href="#/overview"><span data-i18n="tab.overview">Overview</span><span class="pill">scores</span></a>
+    <a class="tab"        data-tab="breadth"  href="#/breadth" ><span data-i18n="tab.breadth">Market Breadth</span><span class="pill">S&amp;P 500</span></a>
   </nav>
 
   <!-- ================= ERROR BANNER (shared) ================= -->
   <div id="error-banner" class="error-banner">
-    <strong>Data load failed.</strong>
+    <strong data-i18n="error.title">Data load failed.</strong>
     <span id="error-msg"></span><br/>
-    <span style="color:var(--text-dim); font-size:12px;">
+    <span data-i18n-html="error.hint" style="color:var(--text-dim); font-size:12px;">
       Serve this folder over HTTP (e.g. <code>python3 -m http.server 8000</code>) — browsers block <code>fetch()</code> on <code>file://</code>.
     </span>
   </div>
@@ -284,52 +285,52 @@
   <section class="view visible" data-tab="overview">
 
     <div class="section-head">
-      <h2>Major Indexes</h2>
+      <h2 data-i18n="section.indexes">Major Indexes</h2>
       <div class="right">
-        <span class="hint">Score: 0 (strong bearish) · 50 (neutral) · 100 (strong bullish)</span>
+        <span class="hint" data-i18n="hint.score">Score: 0 (strong bearish) · 50 (neutral) · 100 (strong bullish)</span>
         <div class="toggle" role="tablist" aria-label="Timeframe">
-          <button id="tf-daily"  class="active" data-tf="daily">Daily</button>
-          <button id="tf-weekly" data-tf="weekly">Weekly</button>
+          <button id="tf-daily"  class="active" data-tf="daily"  data-i18n="tf.daily">Daily</button>
+          <button id="tf-weekly" data-tf="weekly" data-i18n="tf.weekly">Weekly</button>
         </div>
       </div>
     </div>
     <div class="indexes" id="indexes-wrap"></div>
 
     <div class="section-head">
-      <h2>Sectors (SPDR ETFs)</h2>
-      <div class="hint">Sorted by active timeframe · click a sector for drill-down (prototype)</div>
+      <h2 data-i18n="section.sectors">Sectors (SPDR ETFs)</h2>
+      <div class="hint" data-i18n="hint.sectors">Sorted by active timeframe · click a sector for drill-down (prototype)</div>
     </div>
     <div class="sectors" id="sectors-wrap"></div>
     <div class="legend">
-      <span><span class="swatch" style="background:var(--score-0)"></span>0–20 strong bearish</span>
-      <span><span class="swatch" style="background:var(--score-25)"></span>20–40 bearish</span>
-      <span><span class="swatch" style="background:var(--score-50)"></span>40–60 neutral</span>
-      <span><span class="swatch" style="background:var(--score-75)"></span>60–80 bullish</span>
-      <span><span class="swatch" style="background:var(--score-100)"></span>80–100 strong bullish</span>
+      <span><span class="swatch" style="background:var(--score-0)"></span><span data-i18n="legend.strong_bearish">0–20 strong bearish</span></span>
+      <span><span class="swatch" style="background:var(--score-25)"></span><span data-i18n="legend.bearish">20–40 bearish</span></span>
+      <span><span class="swatch" style="background:var(--score-50)"></span><span data-i18n="legend.neutral">40–60 neutral</span></span>
+      <span><span class="swatch" style="background:var(--score-75)"></span><span data-i18n="legend.bullish">60–80 bullish</span></span>
+      <span><span class="swatch" style="background:var(--score-100)"></span><span data-i18n="legend.strong_bullish">80–100 strong bullish</span></span>
     </div>
 
     <div class="section-head">
-      <h2>Constituents</h2>
-      <div class="hint">Sorted by <span id="sort-hint">score (desc)</span></div>
+      <h2 data-i18n="section.constituents">Constituents</h2>
+      <div class="hint"><span data-i18n="hint.sorted_by">Sorted by</span> <span id="sort-hint">score (desc)</span></div>
     </div>
     <div class="inner-tabs">
-      <button id="tab-ndx" class="active" data-idx="ndx">Nasdaq 100</button>
-      <button id="tab-spx" data-idx="spx">S&amp;P 500</button>
+      <button id="tab-ndx" class="active" data-idx="ndx" data-i18n="idx.ndx">Nasdaq 100</button>
+      <button id="tab-spx" data-idx="spx" data-i18n="idx.spx">S&amp;P 500</button>
       <div class="spacer"></div>
-      <input class="search" id="search" placeholder="Search ticker or name…" />
+      <input class="search" id="search" data-i18n="search.placeholder" data-i18n-attr="placeholder" placeholder="Search ticker or name…" />
     </div>
     <div class="table-wrap">
       <div class="scroll-body">
         <table class="stocks" id="stocks-table">
           <thead>
             <tr>
-              <th data-k="rank" style="width:60px">#</th>
-              <th data-k="sym">Ticker</th>
-              <th data-k="name">Name</th>
-              <th data-k="sector">Sector</th>
-              <th data-k="score"  class="num" style="text-align:right">Score <span class="arrow">▼</span></th>
-              <th data-k="price"  class="num" style="text-align:right">Price</th>
-              <th data-k="chg"    class="num" style="text-align:right">Chg %</th>
+              <th data-k="rank" style="width:60px"><span data-i18n="th.rank">#</span></th>
+              <th data-k="sym"><span data-i18n="th.ticker">Ticker</span></th>
+              <th data-k="name"><span data-i18n="th.name">Name</span></th>
+              <th data-k="sector"><span data-i18n="th.sector">Sector</span></th>
+              <th data-k="score"  class="num" style="text-align:right"><span data-i18n="th.score">Score</span> <span class="arrow">▼</span></th>
+              <th data-k="price"  class="num" style="text-align:right"><span data-i18n="th.price">Price</span></th>
+              <th data-k="chg"    class="num" style="text-align:right"><span data-i18n="th.chg">Chg %</span></th>
             </tr>
           </thead>
           <tbody id="stocks-body"></tbody>
@@ -342,12 +343,12 @@
   <section class="view" data-tab="breadth">
     <div class="chart-card">
       <div class="chart-head">
-        <h2>S&amp;P 500 Market Breadth</h2>
-        <div class="sub">Index price vs. % of constituents above their 50-day and 200-day moving averages</div>
+        <h2 data-i18n="breadth.title">S&amp;P 500 Market Breadth</h2>
+        <div class="sub" data-i18n="breadth.subtitle">Index price vs. % of constituents above their 50-day and 200-day moving averages</div>
       </div>
 
       <div class="range-row">
-        <span class="label">Zoom</span>
+        <span class="label" data-i18n="breadth.zoom">Zoom</span>
         <div class="range" id="range">
           <button data-r="all">All</button>
           <button data-r="10y">10y</button>
@@ -359,23 +360,23 @@
           <button data-r="6m" class="active">6m</button>
         </div>
         <div class="spacer"></div>
-        <span class="label">Updated</span>
+        <span class="label" data-i18n="breadth.updated">Updated</span>
         <span id="breadth-updated-at" style="font-family: var(--mono); color: var(--text-soft); font-size: 12px;">—</span>
       </div>
 
       <div class="chart-wrap"><canvas id="chart"></canvas></div>
 
       <div class="legend-row" id="chart-legend">
-        <span class="item" data-ds="0"><span class="swatch" style="background:var(--price)"></span>S&amp;P 500 (Index, left)</span>
-        <span class="item" data-ds="1"><span class="swatch" style="background:var(--ma50)"></span>% above MA50 (right)</span>
-        <span class="item" data-ds="2"><span class="swatch" style="background:var(--ma200)"></span>% above MA200 (right)</span>
+        <span class="item" data-ds="0"><span class="swatch" style="background:var(--price)"></span><span data-i18n="chart.sp500">S&amp;P 500 (Index, left)</span></span>
+        <span class="item" data-ds="1"><span class="swatch" style="background:var(--ma50)"></span><span data-i18n="chart.ma50">% above MA50 (right)</span></span>
+        <span class="item" data-ds="2"><span class="swatch" style="background:var(--ma200)"></span><span data-i18n="chart.ma200">% above MA200 (right)</span></span>
       </div>
 
       <div class="summary" id="summary"></div>
     </div>
   </section>
 
-  <footer class="foot">
+  <footer class="foot" data-i18n-html="footer.text">
     Data from <code>scores.json</code> and <code>breadth.json</code>. Edits appear within seconds.
   </footer>
 </div>
@@ -383,6 +384,7 @@
 <!-- Chart.js only used for the Breadth tab -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<script src="translations.js"></script>
 
 <script>
 /* ============================================================================
@@ -434,11 +436,11 @@ function scoreColor(s){
   return '#888';
 }
 function trendLabel(s){
-  if (s >= 80) return 'Strong Bullish';
-  if (s >= 60) return 'Bullish';
-  if (s >= 40) return 'Neutral';
-  if (s >= 20) return 'Bearish';
-  return 'Strong Bearish';
+  if (s >= 80) return t('trend.strong_bullish');
+  if (s >= 60) return t('trend.bullish');
+  if (s >= 40) return t('trend.neutral');
+  if (s >= 20) return t('trend.bearish');
+  return t('trend.strong_bearish');
 }
 
 /* ============================================================================
@@ -467,7 +469,7 @@ const Overview = (() => {
           <div class="index-symbol">${ix.sym}</div>
         </div>
         <div style="text-align:right;">
-          <div class="index-title">${state.tf === 'daily' ? 'Daily Score' : 'Weekly Score'}</div>
+          <div class="index-title">${state.tf === 'daily' ? t('card.daily_score') : t('card.weekly_score')}</div>
           <div class="${deltaCls}" style="font-family:var(--mono); font-size:15px; margin-top:4px;">
             ${delta >= 0 ? '▲' : '▼'} ${Math.abs(delta).toFixed(2)}%
           </div>
@@ -488,10 +490,10 @@ const Overview = (() => {
           </div>
         </div>
         <div class="stat-grid">
-          <div class="stat"><div class="k">Price</div><div class="v">${fmtNum(ix.price||0,2)}</div></div>
-          <div class="stat"><div class="k">Daily Score</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily}</div></div>
-          <div class="stat"><div class="k">Weekly Score</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</div></div>
-          <div class="stat"><div class="k">Trend</div><div class="v">${trendLabel(score)}</div></div>
+          <div class="stat"><div class="k">${t('card.price')}</div><div class="v">${fmtNum(ix.price||0,2)}</div></div>
+          <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily}</div></div>
+          <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</div></div>
+          <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
         </div>
       </div>
     </div>`;
@@ -511,8 +513,8 @@ const Overview = (() => {
       </div>
       <div class="bar-wrap"><div class="bar" style="width:${sc}%; background:${col}"></div></div>
       <div style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
-        <span>Daily <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
-        <span>Weekly <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
+        <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
+        <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
       </div>
     </div>`;
   }
@@ -568,9 +570,13 @@ const Overview = (() => {
 
     document.querySelectorAll('#stocks-table thead th').forEach(th => {
       const key = th.dataset.k;
-      th.innerHTML = th.innerHTML.replace(/\s*[▲▼]\s*$/, '');
+      const oldArrow = th.querySelector('.arrow');
+      if (oldArrow) oldArrow.remove();
       if (key === state.sortKey){
-        th.innerHTML += ` <span class="arrow">${state.sortDir === 'asc' ? '▲' : '▼'}</span>`;
+        const arrow = document.createElement('span');
+        arrow.className = 'arrow';
+        arrow.textContent = state.sortDir === 'asc' ? '▲' : '▼';
+        th.appendChild(arrow);
       }
     });
     document.getElementById('sort-hint').textContent = `${state.sortKey} (${state.sortDir})`;
@@ -581,23 +587,23 @@ const Overview = (() => {
   }
 
   async function load(silent=false){
-    if (!silent && Router.active() === 'overview') setStatus('loading', 'Refreshing…');
+    if (!silent && Router.active() === 'overview') setStatus('loading', t('status.refreshing'));
     try {
       const res = await fetch(`${URL_}?v=${Date.now()}`, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
 
       if (json.updated_at && json.updated_at === state.lastUpdated && state.data){
-        if (Router.active() === 'overview') setStatus('live', `Live · ${fmtTime(state.lastUpdated)}`);
+        if (Router.active() === 'overview') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
         hideError(); return;
       }
       state.data = json;
       state.lastUpdated = json.updated_at || new Date().toISOString();
       hideError();
       paint();
-      if (Router.active() === 'overview') setStatus('live', `Live · ${fmtTime(state.lastUpdated)}`);
+      if (Router.active() === 'overview') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
     } catch(err){
-      if (Router.active() === 'overview'){ setStatus('error', 'Failed to load'); showError(err.message || String(err)); }
+      if (Router.active() === 'overview'){ setStatus('error', t('status.failed')); showError(err.message || String(err)); }
     }
   }
 
@@ -638,6 +644,7 @@ const Overview = (() => {
   return {
     init(){ bind(); load(); setInterval(() => load(true), POLL_MS); },
     refresh: () => load(),
+    repaint(){ if (state.data) paint(); },
     lastUpdated: () => state.lastUpdated,
   };
 })();
@@ -677,9 +684,9 @@ const Breadth = (() => {
     state.chart = new Chart(ctx, {
       type: 'line',
       data: { datasets: [
-        { label: 'S&P 500',        data: [], yAxisID: 'yPrice', borderColor: css('--price'),  backgroundColor: css('--price'),  borderWidth: 2,   pointRadius: 0, tension: 0.1 },
-        { label: '% above MA50',   data: [], yAxisID: 'yPct',   borderColor: css('--ma50'),   backgroundColor: css('--ma50'),   borderWidth: 1.6, pointRadius: 0, tension: 0.1 },
-        { label: '% above MA200',  data: [], yAxisID: 'yPct',   borderColor: css('--ma200'),  backgroundColor: css('--ma200'),  borderWidth: 1.6, pointRadius: 0, tension: 0.1 },
+        { label: t('chart.sp500_label'), data: [], yAxisID: 'yPrice', borderColor: css('--price'),  backgroundColor: css('--price'),  borderWidth: 2,   pointRadius: 0, tension: 0.1 },
+        { label: t('chart.ma50_label'),  data: [], yAxisID: 'yPct',   borderColor: css('--ma50'),   backgroundColor: css('--ma50'),   borderWidth: 1.6, pointRadius: 0, tension: 0.1 },
+        { label: t('chart.ma200_label'), data: [], yAxisID: 'yPct',   borderColor: css('--ma200'),  backgroundColor: css('--ma200'),  borderWidth: 1.6, pointRadius: 0, tension: 0.1 },
       ]},
       options: {
         responsive: true, maintainAspectRatio: false, animation: false,
@@ -713,14 +720,14 @@ const Breadth = (() => {
             grid:   { color: 'rgba(31,42,74,0.45)', drawTicks: false },
             ticks:  { color: css('--text-dim'), callback: v => v.toLocaleString() },
             border: { color: css('--border') },
-            title:  { display: true, text: 'Index', color: css('--text-dim'), font: { size: 11 } },
+            title:  { display: true, text: t('chart.y_index'), color: css('--text-dim'), font: { size: 11 } },
           },
           yPct: {
             position: 'right', min: 0, max: 100,
             grid:   { drawOnChartArea: false },
             ticks:  { color: css('--text-dim'), callback: v => v + '%' },
             border: { color: css('--border') },
-            title:  { display: true, text: 'Percent', color: css('--text-dim'), font: { size: 11 } },
+            title:  { display: true, text: t('chart.y_percent'), color: css('--text-dim'), font: { size: 11 } },
           },
         },
       },
@@ -755,15 +762,15 @@ const Breadth = (() => {
         <div class="sub">${sub || ''}</div>
       </div>`;
     wrap.innerHTML = [
-      tile('Latest Close', fmtNum(last.price, 2), last.date),
-      tile(`Change (${state.range.toUpperCase()})`, `${priceChg>=0?'+':''}${priceChg.toFixed(2)}%`, `vs. ${first.date}`, color),
-      tile('% above MA50',  `${last.above_ma50.toFixed(1)}%`,  last.above_ma50  >= 50 ? 'majority above' : 'majority below'),
-      tile('% above MA200', `${last.above_ma200.toFixed(1)}%`, last.above_ma200 >= 50 ? 'long-term bullish' : 'long-term bearish'),
+      tile(t('summary.latest_close'), fmtNum(last.price, 2), last.date),
+      tile(`${t('summary.change')} (${state.range.toUpperCase()})`, `${priceChg>=0?'+':''}${priceChg.toFixed(2)}%`, `vs. ${first.date}`, color),
+      tile(t('summary.above_ma50'),  `${last.above_ma50.toFixed(1)}%`,  last.above_ma50  >= 50 ? t('summary.majority_above') : t('summary.majority_below')),
+      tile(t('summary.above_ma200'), `${last.above_ma200.toFixed(1)}%`, last.above_ma200 >= 50 ? t('summary.lt_bullish') : t('summary.lt_bearish')),
     ].join('');
   }
 
   async function load(silent=false){
-    if (!silent && Router.active() === 'breadth') setStatus('loading', 'Refreshing…');
+    if (!silent && Router.active() === 'breadth') setStatus('loading', t('status.refreshing'));
     try {
       const res = await fetch(`${URL_}?v=${Date.now()}`, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -771,7 +778,7 @@ const Breadth = (() => {
       if (!Array.isArray(json.series)) throw new Error('"series" array missing');
 
       if (json.updated_at && json.updated_at === state.lastUpdated && state.data){
-        if (Router.active() === 'breadth') setStatus('live', `Live · ${fmtTime(state.lastUpdated)}`);
+        if (Router.active() === 'breadth') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
         hideError(); return;
       }
       state.data = json;
@@ -779,9 +786,9 @@ const Breadth = (() => {
       document.getElementById('breadth-updated-at').textContent = fmtTime(state.lastUpdated);
       hideError();
       if (Router.active() === 'breadth') paint();
-      if (Router.active() === 'breadth') setStatus('live', `Live · ${fmtTime(state.lastUpdated)}`);
+      if (Router.active() === 'breadth') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
     } catch(err){
-      if (Router.active() === 'breadth'){ setStatus('error', 'Failed to load'); showError(err.message || String(err)); }
+      if (Router.active() === 'breadth'){ setStatus('error', t('status.failed')); showError(err.message || String(err)); }
     }
   }
 
@@ -808,6 +815,17 @@ const Breadth = (() => {
     init(){ bind(); load(); setInterval(() => load(true), POLL_MS); },
     refresh: () => load(),
     onShow(){ if (state.data) paint(); },     // lazy paint when tab becomes visible
+    repaint(){
+      if (!state.data) return;
+      if (state.chartInited){
+        state.chart.data.datasets[0].label = t('chart.sp500_label');
+        state.chart.data.datasets[1].label = t('chart.ma50_label');
+        state.chart.data.datasets[2].label = t('chart.ma200_label');
+        state.chart.options.scales.yPrice.title.text = t('chart.y_index');
+        state.chart.options.scales.yPct.title.text = t('chart.y_percent');
+      }
+      paint();
+    },
     lastUpdated: () => state.lastUpdated,
   };
 })();
@@ -826,11 +844,9 @@ const Router = (() => {
     document.querySelectorAll('.view').forEach(v => v.classList.toggle('visible', v.dataset.tab === name));
     // update status to reflect the now-active tab
     const upd = name === 'overview' ? Overview.lastUpdated() : Breadth.lastUpdated();
-    if (upd) setStatus('live', `Live · ${fmtTime(upd)}`);
+    if (upd) setStatus('live', `${t('status.live')} · ${fmtTime(upd)}`);
     if (name === 'breadth') Breadth.onShow();
-    document.title = name === 'breadth'
-      ? 'Market Breadth — Market Pulse'
-      : 'Market Pulse — U.S. Equities Dashboard';
+    document.title = name === 'breadth' ? t('title.breadth') : t('title.overview');
   }
 
   function apply(){
@@ -864,10 +880,21 @@ document.getElementById('refresh').addEventListener('click', async () => {
 /* ============================================================================
    KICKOFF
    ============================================================================ */
+applyI18n();       // apply saved language preference immediately
 Router.bind();
 Overview.init();
 Breadth.init();
 Router.apply();    // respect initial URL hash
+
+document.getElementById('lang-toggle').addEventListener('click', () => {
+  switchLang(currentLang === 'en' ? 'zh' : 'en');
+  Overview.repaint();
+  Breadth.repaint();
+  const name = Router.active();
+  const upd = name === 'overview' ? Overview.lastUpdated() : Breadth.lastUpdated();
+  if (upd) setStatus('live', `${t('status.live')} · ${fmtTime(upd)}`);
+  document.title = name === 'breadth' ? t('title.breadth') : t('title.overview');
+});
 </script>
 </body>
 </html>
