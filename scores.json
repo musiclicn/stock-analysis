@@ -1,0 +1,5553 @@
+{
+  "updated_at": "2026-04-23T01:46:57+00:00",
+  "indexes": [
+    {
+      "sym": "SPY",
+      "name": "S&P 500",
+      "price": 711.21,
+      "chg": 1.01,
+      "daily": 50,
+      "weekly": 55
+    },
+    {
+      "sym": "QQQ",
+      "name": "Nasdaq 100",
+      "price": 655.11,
+      "chg": 1.67,
+      "daily": 75,
+      "weekly": 55
+    }
+  ],
+  "sectors": [
+    {
+      "sym": "XLC",
+      "name": "Communication Svcs",
+      "price": 117.88,
+      "chg": 0.61,
+      "daily": 50,
+      "weekly": 55
+    },
+    {
+      "sym": "XLY",
+      "name": "Consumer Discretionary",
+      "price": 118.93,
+      "chg": -0.03,
+      "daily": 50,
+      "weekly": 55
+    },
+    {
+      "sym": "XLP",
+      "name": "Consumer Staples",
+      "price": 82.11,
+      "chg": 0.33,
+      "daily": 45,
+      "weekly": 80
+    },
+    {
+      "sym": "XLE",
+      "name": "Energy",
+      "price": 56.54,
+      "chg": 1.2,
+      "daily": 55,
+      "weekly": 80
+    },
+    {
+      "sym": "XLF",
+      "name": "Financials",
+      "price": 52.21,
+      "chg": -0.17,
+      "daily": 30,
+      "weekly": 45
+    },
+    {
+      "sym": "XLV",
+      "name": "Health Care",
+      "price": 146.38,
+      "chg": 0.32,
+      "daily": 20,
+      "weekly": 40
+    },
+    {
+      "sym": "XLI",
+      "name": "Industrials",
+      "price": 171.04,
+      "chg": -0.23,
+      "daily": 45,
+      "weekly": 85
+    },
+    {
+      "sym": "XLK",
+      "name": "Technology",
+      "price": 158.09,
+      "chg": 2.2,
+      "daily": 85,
+      "weekly": 65
+    },
+    {
+      "sym": "XLB",
+      "name": "Materials",
+      "price": 51.83,
+      "chg": 0.12,
+      "daily": 55,
+      "weekly": 90
+    },
+    {
+      "sym": "XLRE",
+      "name": "Real Estate",
+      "price": 43.46,
+      "chg": -0.73,
+      "daily": 45,
+      "weekly": 85
+    },
+    {
+      "sym": "XLU",
+      "name": "Utilities",
+      "price": 44.87,
+      "chg": -0.18,
+      "daily": 30,
+      "weekly": 80
+    }
+  ],
+  "stocks": {
+    "ndx": [
+      {
+        "sym": "ADBE",
+        "name": "Adobe Inc.",
+        "sector": "",
+        "price": 255.94,
+        "chg": 3.54,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "AMD",
+        "name": "Advanced Micro Devices",
+        "sector": "",
+        "price": 303.46,
+        "chg": 6.67,
+        "daily": 80,
+        "weekly": 95
+      },
+      {
+        "sym": "ABNB",
+        "name": "Airbnb",
+        "sector": "",
+        "price": 144.18,
+        "chg": 1.07,
+        "daily": 85,
+        "weekly": 65
+      },
+      {
+        "sym": "ALNY",
+        "name": "Alnylam Pharmaceuticals",
+        "sector": "",
+        "price": 310.58,
+        "chg": 0.7,
+        "daily": 10,
+        "weekly": 25
+      },
+      {
+        "sym": "GOOGL",
+        "name": "Alphabet Inc. (Class A)",
+        "sector": "",
+        "price": 339.32,
+        "chg": 2.12,
+        "daily": 75,
+        "weekly": 55
+      },
+      {
+        "sym": "GOOG",
+        "name": "Alphabet Inc. (Class C)",
+        "sector": "",
+        "price": 337.73,
+        "chg": 2.2,
+        "daily": 65,
+        "weekly": 55
+      },
+      {
+        "sym": "AMZN",
+        "name": "Amazon",
+        "sector": "",
+        "price": 255.36,
+        "chg": 2.18,
+        "daily": 85,
+        "weekly": 55
+      },
+      {
+        "sym": "AEP",
+        "name": "American Electric Power",
+        "sector": "",
+        "price": 131.62,
+        "chg": -0.2,
+        "daily": 85,
+        "weekly": 80
+      },
+      {
+        "sym": "AMGN",
+        "name": "Amgen",
+        "sector": "",
+        "price": 345.92,
+        "chg": 0.31,
+        "daily": 40,
+        "weekly": 75
+      },
+      {
+        "sym": "ADI",
+        "name": "Analog Devices",
+        "sector": "",
+        "price": 381.42,
+        "chg": 1.64,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "AAPL",
+        "name": "Apple Inc.",
+        "sector": "",
+        "price": 273.17,
+        "chg": 2.63,
+        "daily": 50,
+        "weekly": 65
+      },
+      {
+        "sym": "AMAT",
+        "name": "Applied Materials",
+        "sector": "",
+        "price": 403.48,
+        "chg": 2.32,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "APP",
+        "name": "AppLovin",
+        "sector": "",
+        "price": 483.71,
+        "chg": 2.23,
+        "daily": 20,
+        "weekly": 55
+      },
+      {
+        "sym": "ARM",
+        "name": "Arm Holdings",
+        "sector": "",
+        "price": 196.57,
+        "chg": 12.01,
+        "daily": 80,
+        "weekly": 50
+      },
+      {
+        "sym": "ASML",
+        "name": "ASML Holding",
+        "sector": "",
+        "price": 1443.66,
+        "chg": -1.05,
+        "daily": 50,
+        "weekly": 90
+      },
+      {
+        "sym": "ADSK",
+        "name": "Autodesk",
+        "sector": "",
+        "price": 247.57,
+        "chg": 0.85,
+        "daily": 10,
+        "weekly": 40
+      },
+      {
+        "sym": "ADP",
+        "name": "Automatic Data Processing",
+        "sector": "",
+        "price": 201.69,
+        "chg": -0.58,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "AXON",
+        "name": "Axon Enterprise",
+        "sector": "",
+        "price": 403.15,
+        "chg": -0.44,
+        "daily": 0,
+        "weekly": 25
+      },
+      {
+        "sym": "BKR",
+        "name": "Baker Hughes",
+        "sector": "",
+        "price": 62.54,
+        "chg": 3.8,
+        "daily": 55,
+        "weekly": 90
+      },
+      {
+        "sym": "BKNG",
+        "name": "Booking Holdings",
+        "sector": "",
+        "price": 179.4,
+        "chg": -6.0,
+        "daily": 35,
+        "weekly": 45
+      },
+      {
+        "sym": "AVGO",
+        "name": "Broadcom",
+        "sector": "",
+        "price": 422.65,
+        "chg": 5.09,
+        "daily": 80,
+        "weekly": 95
+      },
+      {
+        "sym": "CDNS",
+        "name": "Cadence Design Systems",
+        "sector": "",
+        "price": 331.61,
+        "chg": 1.77,
+        "daily": 50,
+        "weekly": 50
+      },
+      {
+        "sym": "CHTR",
+        "name": "Charter Communications",
+        "sector": "",
+        "price": 242.49,
+        "chg": 0.22,
+        "daily": 30,
+        "weekly": 15
+      },
+      {
+        "sym": "CTAS",
+        "name": "Cintas",
+        "sector": "",
+        "price": 174.66,
+        "chg": -0.91,
+        "daily": 15,
+        "weekly": 25
+      },
+      {
+        "sym": "CSCO",
+        "name": "Cisco",
+        "sector": "",
+        "price": 89.8,
+        "chg": 0.11,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "CCEP",
+        "name": "Coca-Cola Europacific Partners",
+        "sector": "",
+        "price": 96.19,
+        "chg": 0.32,
+        "daily": 25,
+        "weekly": 80
+      },
+      {
+        "sym": "CTSH",
+        "name": "Cognizant",
+        "sector": "",
+        "price": 58.81,
+        "chg": -2.71,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "CMCSA",
+        "name": "Comcast",
+        "sector": "",
+        "price": 29.37,
+        "chg": 1.1,
+        "daily": 50,
+        "weekly": 10
+      },
+      {
+        "sym": "CEG",
+        "name": "Constellation Energy",
+        "sector": "",
+        "price": 287.16,
+        "chg": 3.41,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "CPRT",
+        "name": "Copart",
+        "sector": "",
+        "price": 33.68,
+        "chg": -0.18,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "CSGP",
+        "name": "CoStar Group",
+        "sector": "XLRE",
+        "price": 38.77,
+        "chg": -0.36,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "COST",
+        "name": "Costco",
+        "sector": "",
+        "price": 1003.7,
+        "chg": -0.21,
+        "daily": 50,
+        "weekly": 90
+      },
+      {
+        "sym": "CRWD",
+        "name": "CrowdStrike",
+        "sector": "",
+        "price": 466.68,
+        "chg": 3.8,
+        "daily": 50,
+        "weekly": 45
+      },
+      {
+        "sym": "CSX",
+        "name": "CSX Corporation",
+        "sector": "",
+        "price": 43.18,
+        "chg": -0.44,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "DDOG",
+        "name": "Datadog",
+        "sector": "",
+        "price": 132.14,
+        "chg": 2.2,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "DXCM",
+        "name": "DexCom",
+        "sector": "",
+        "price": 63.41,
+        "chg": 1.29,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "FANG",
+        "name": "Diamondback Energy",
+        "sector": "",
+        "price": 193.87,
+        "chg": 2.14,
+        "daily": 55,
+        "weekly": 80
+      },
+      {
+        "sym": "DASH",
+        "name": "DoorDash",
+        "sector": "",
+        "price": 182.27,
+        "chg": -0.1,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "EA",
+        "name": "Electronic Arts",
+        "sector": "",
+        "price": 202.78,
+        "chg": -0.38,
+        "daily": 40,
+        "weekly": 65
+      },
+      {
+        "sym": "EXC",
+        "name": "Exelon",
+        "sector": "",
+        "price": 45.86,
+        "chg": -0.89,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "FAST",
+        "name": "Fastenal",
+        "sector": "",
+        "price": 44.81,
+        "chg": -1.95,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "FER",
+        "name": "Ferrovial",
+        "sector": "",
+        "price": 69.93,
+        "chg": -0.46,
+        "daily": 45,
+        "weekly": 85
+      },
+      {
+        "sym": "FTNT",
+        "name": "Fortinet",
+        "sector": "",
+        "price": 87.09,
+        "chg": 2.15,
+        "daily": 50,
+        "weekly": 50
+      },
+      {
+        "sym": "GEHC",
+        "name": "GE HealthCare",
+        "sector": "",
+        "price": 71.38,
+        "chg": -1.22,
+        "daily": 15,
+        "weekly": 20
+      },
+      {
+        "sym": "GILD",
+        "name": "Gilead Sciences",
+        "sector": "",
+        "price": 132.9,
+        "chg": -0.29,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "HON",
+        "name": "Honeywell",
+        "sector": "",
+        "price": 219.97,
+        "chg": -1.01,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "IDXX",
+        "name": "Idexx Laboratories",
+        "sector": "",
+        "price": 578.35,
+        "chg": 1.64,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "INSM",
+        "name": "Insmed Incorporated",
+        "sector": "",
+        "price": 144.48,
+        "chg": 2.48,
+        "daily": 10,
+        "weekly": 45
+      },
+      {
+        "sym": "INTC",
+        "name": "Intel",
+        "sector": "",
+        "price": 65.27,
+        "chg": -1.49,
+        "daily": 90,
+        "weekly": 80
+      },
+      {
+        "sym": "INTU",
+        "name": "Intuit",
+        "sector": "",
+        "price": 408.68,
+        "chg": 0.95,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "ISRG",
+        "name": "Intuitive Surgical",
+        "sector": "",
+        "price": 483.62,
+        "chg": 7.16,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "KDP",
+        "name": "Keurig Dr Pepper",
+        "sector": "",
+        "price": 26.54,
+        "chg": 0.38,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "KLAC",
+        "name": "KLA Corporation",
+        "sector": "",
+        "price": 1812.06,
+        "chg": 1.49,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "KHC",
+        "name": "Kraft Heinz",
+        "sector": "",
+        "price": 21.89,
+        "chg": -0.41,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "LRCX",
+        "name": "Lam Research",
+        "sector": "",
+        "price": 265.55,
+        "chg": 2.78,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "LIN",
+        "name": "Linde plc",
+        "sector": "",
+        "price": 494.62,
+        "chg": -0.04,
+        "daily": 80,
+        "weekly": 80
+      },
+      {
+        "sym": "MAR",
+        "name": "Marriott International",
+        "sector": "",
+        "price": 367.13,
+        "chg": -2.22,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "MRVL",
+        "name": "Marvell Technology",
+        "sector": "",
+        "price": 157.32,
+        "chg": 3.97,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "MELI",
+        "name": "Mercado Libre",
+        "sector": "",
+        "price": 1860.98,
+        "chg": 0.37,
+        "daily": 15,
+        "weekly": 50
+      },
+      {
+        "sym": "META",
+        "name": "Meta Platforms",
+        "sector": "",
+        "price": 674.72,
+        "chg": 0.88,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "MCHP",
+        "name": "Microchip Technology",
+        "sector": "",
+        "price": 82.48,
+        "chg": 1.92,
+        "daily": 100,
+        "weekly": 50
+      },
+      {
+        "sym": "MU",
+        "name": "Micron Technology",
+        "sector": "",
+        "price": 487.48,
+        "chg": 8.48,
+        "daily": 60,
+        "weekly": 90
+      },
+      {
+        "sym": "MSFT",
+        "name": "Microsoft",
+        "sector": "",
+        "price": 432.92,
+        "chg": 2.07,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "MSTR",
+        "name": "MicroStrategy",
+        "sector": "",
+        "price": 179.36,
+        "chg": 9.39,
+        "daily": 35,
+        "weekly": 40
+      },
+      {
+        "sym": "MDLZ",
+        "name": "Mondelez International",
+        "sector": "",
+        "price": 56.06,
+        "chg": -0.12,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "MPWR",
+        "name": "Monolithic Power Systems",
+        "sector": "",
+        "price": 1522.04,
+        "chg": -0.39,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "MNST",
+        "name": "Monster Beverage",
+        "sector": "",
+        "price": 75.95,
+        "chg": 0.9,
+        "daily": 55,
+        "weekly": 45
+      },
+      {
+        "sym": "NFLX",
+        "name": "Netflix, Inc.",
+        "sector": "",
+        "price": 93.24,
+        "chg": 0.71,
+        "daily": 35,
+        "weekly": 35
+      },
+      {
+        "sym": "NVDA",
+        "name": "Nvidia",
+        "sector": "",
+        "price": 202.5,
+        "chg": 1.31,
+        "daily": 100,
+        "weekly": 65
+      },
+      {
+        "sym": "NXPI",
+        "name": "NXP Semiconductors",
+        "sector": "",
+        "price": 225.75,
+        "chg": 0.56,
+        "daily": 50,
+        "weekly": 40
+      },
+      {
+        "sym": "ORLY",
+        "name": "O'Reilly Automotive",
+        "sector": "",
+        "price": 93.92,
+        "chg": 0.12,
+        "daily": 30,
+        "weekly": 45
+      },
+      {
+        "sym": "ODFL",
+        "name": "Old Dominion Freight Line",
+        "sector": "",
+        "price": 219.98,
+        "chg": -1.98,
+        "daily": 95,
+        "weekly": 80
+      },
+      {
+        "sym": "PCAR",
+        "name": "Paccar",
+        "sector": "",
+        "price": 125.27,
+        "chg": -0.72,
+        "daily": 80,
+        "weekly": 85
+      },
+      {
+        "sym": "PLTR",
+        "name": "Palantir Technologies",
+        "sector": "",
+        "price": 152.62,
+        "chg": 4.56,
+        "daily": 0,
+        "weekly": 55
+      },
+      {
+        "sym": "PANW",
+        "name": "Palo Alto Networks",
+        "sector": "",
+        "price": 181.2,
+        "chg": 3.57,
+        "daily": 30,
+        "weekly": 50
+      },
+      {
+        "sym": "PAYX",
+        "name": "Paychex",
+        "sector": "",
+        "price": 93.43,
+        "chg": -0.27,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "PYPL",
+        "name": "PayPal",
+        "sector": "",
+        "price": 51.22,
+        "chg": 0.67,
+        "daily": 35,
+        "weekly": 0
+      },
+      {
+        "sym": "PDD",
+        "name": "PDD Holdings",
+        "sector": "",
+        "price": 100.05,
+        "chg": 1.07,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "PEP",
+        "name": "PepsiCo",
+        "sector": "",
+        "price": 153.79,
+        "chg": -0.73,
+        "daily": 35,
+        "weekly": 60
+      },
+      {
+        "sym": "QCOM",
+        "name": "Qualcomm",
+        "sector": "",
+        "price": 136.07,
+        "chg": 0.38,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "REGN",
+        "name": "Regeneron Pharmaceuticals",
+        "sector": "",
+        "price": 746.58,
+        "chg": -0.1,
+        "daily": 30,
+        "weekly": 10
+      },
+      {
+        "sym": "ROP",
+        "name": "Roper Technologies",
+        "sector": "",
+        "price": 364.73,
+        "chg": 0.5,
+        "daily": 35,
+        "weekly": 10
+      },
+      {
+        "sym": "ROST",
+        "name": "Ross Stores",
+        "sector": "",
+        "price": 226.34,
+        "chg": 0.33,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "SNDK",
+        "name": "Sandisk",
+        "sector": "",
+        "price": 979.07,
+        "chg": 8.37,
+        "daily": 90,
+        "weekly": null
+      },
+      {
+        "sym": "STX",
+        "name": "Seagate Technology",
+        "sector": "",
+        "price": 579.88,
+        "chg": 3.57,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "SHOP",
+        "name": "Shopify",
+        "sector": "",
+        "price": 131.96,
+        "chg": 0.63,
+        "daily": 20,
+        "weekly": 55
+      },
+      {
+        "sym": "SBUX",
+        "name": "Starbucks",
+        "sector": "",
+        "price": 99.52,
+        "chg": 1.76,
+        "daily": 65,
+        "weekly": 80
+      },
+      {
+        "sym": "SNPS",
+        "name": "Synopsys",
+        "sector": "",
+        "price": 477.26,
+        "chg": 2.07,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "TMUS",
+        "name": "T-Mobile US",
+        "sector": "",
+        "price": 188.92,
+        "chg": -3.31,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "TTWO",
+        "name": "Take-Two Interactive",
+        "sector": "",
+        "price": 218.19,
+        "chg": 0.25,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "TSLA",
+        "name": "Tesla, Inc.",
+        "sector": "",
+        "price": 387.51,
+        "chg": 0.28,
+        "daily": 20,
+        "weekly": 55
+      },
+      {
+        "sym": "TXN",
+        "name": "Texas Instruments",
+        "sector": "",
+        "price": 236.31,
+        "chg": 1.36,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "TRI",
+        "name": "Thomson Reuters",
+        "sector": "",
+        "price": 92.86,
+        "chg": -3.99,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "VRSK",
+        "name": "Verisk Analytics",
+        "sector": "",
+        "price": 178.89,
+        "chg": -1.76,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "VRTX",
+        "name": "Vertex Pharmaceuticals",
+        "sector": "",
+        "price": 437.67,
+        "chg": 0.25,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "WMT",
+        "name": "Walmart",
+        "sector": "",
+        "price": 129.98,
+        "chg": 0.29,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "WBD",
+        "name": "Warner Bros. Discovery",
+        "sector": "",
+        "price": 27.33,
+        "chg": 0.07,
+        "daily": 25,
+        "weekly": 45
+      },
+      {
+        "sym": "WDC",
+        "name": "Western Digital",
+        "sector": "",
+        "price": 389.1,
+        "chg": 1.38,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "WDAY",
+        "name": "Workday, Inc.",
+        "sector": "",
+        "price": 126.6,
+        "chg": -1.98,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "XEL",
+        "name": "Xcel Energy",
+        "sector": "",
+        "price": 78.11,
+        "chg": -1.23,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "ZS",
+        "name": "Zscaler",
+        "sector": "",
+        "price": 142.66,
+        "chg": 2.18,
+        "daily": 0,
+        "weekly": 10
+      }
+    ],
+    "spx": [
+      {
+        "sym": "MMM",
+        "name": "3M",
+        "sector": "XLI",
+        "price": 145.78,
+        "chg": -1.81,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "AOS",
+        "name": "A. O. Smith",
+        "sector": "XLI",
+        "price": 64.81,
+        "chg": -0.28,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "ABT",
+        "name": "Abbott Laboratories",
+        "sector": "XLV",
+        "price": 91.7,
+        "chg": -1.1,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "ABBV",
+        "name": "AbbVie",
+        "sector": "XLV",
+        "price": 200.5,
+        "chg": -2.25,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "ACN",
+        "name": "Accenture",
+        "sector": "XLK",
+        "price": 190.1,
+        "chg": -2.22,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "ADBE",
+        "name": "Adobe Inc.",
+        "sector": "XLK",
+        "price": 255.94,
+        "chg": 3.54,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "AMD",
+        "name": "Advanced Micro Devices",
+        "sector": "XLK",
+        "price": 303.46,
+        "chg": 6.67,
+        "daily": 80,
+        "weekly": 95
+      },
+      {
+        "sym": "AES",
+        "name": "AES Corporation",
+        "sector": "XLU",
+        "price": 14.45,
+        "chg": 0.07,
+        "daily": 45,
+        "weekly": 35
+      },
+      {
+        "sym": "AFL",
+        "name": "Aflac",
+        "sector": "XLF",
+        "price": 114.75,
+        "chg": -1.05,
+        "daily": 75,
+        "weekly": 90
+      },
+      {
+        "sym": "A",
+        "name": "Agilent Technologies",
+        "sector": "XLV",
+        "price": 120.47,
+        "chg": -1.33,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "APD",
+        "name": "Air Products",
+        "sector": "XLB",
+        "price": 296.76,
+        "chg": 0.67,
+        "daily": 80,
+        "weekly": 70
+      },
+      {
+        "sym": "ABNB",
+        "name": "Airbnb",
+        "sector": "XLY",
+        "price": 144.18,
+        "chg": 1.07,
+        "daily": 85,
+        "weekly": 65
+      },
+      {
+        "sym": "AKAM",
+        "name": "Akamai Technologies",
+        "sector": "XLK",
+        "price": 97.11,
+        "chg": -0.99,
+        "daily": 50,
+        "weekly": 70
+      },
+      {
+        "sym": "ALB",
+        "name": "Albemarle Corporation",
+        "sector": "XLB",
+        "price": 194.22,
+        "chg": -2.12,
+        "daily": 95,
+        "weekly": 75
+      },
+      {
+        "sym": "ARE",
+        "name": "Alexandria Real Estate Equities",
+        "sector": "XLRE",
+        "price": 46.65,
+        "chg": -2.43,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "ALGN",
+        "name": "Align Technology",
+        "sector": "XLV",
+        "price": 196.05,
+        "chg": 0.44,
+        "daily": 65,
+        "weekly": 30
+      },
+      {
+        "sym": "ALLE",
+        "name": "Allegion",
+        "sector": "XLI",
+        "price": 144.93,
+        "chg": 1.02,
+        "daily": 20,
+        "weekly": 25
+      },
+      {
+        "sym": "LNT",
+        "name": "Alliant Energy",
+        "sector": "XLU",
+        "price": 70.96,
+        "chg": -0.25,
+        "daily": 70,
+        "weekly": 80
+      },
+      {
+        "sym": "ALL",
+        "name": "Allstate",
+        "sector": "XLF",
+        "price": 214.16,
+        "chg": -1.01,
+        "daily": 75,
+        "weekly": 95
+      },
+      {
+        "sym": "GOOGL",
+        "name": "Alphabet Inc. (Class A)",
+        "sector": "XLC",
+        "price": 339.32,
+        "chg": 2.12,
+        "daily": 75,
+        "weekly": 55
+      },
+      {
+        "sym": "GOOG",
+        "name": "Alphabet Inc. (Class C)",
+        "sector": "XLC",
+        "price": 337.73,
+        "chg": 2.2,
+        "daily": 65,
+        "weekly": 55
+      },
+      {
+        "sym": "MO",
+        "name": "Altria",
+        "sector": "XLP",
+        "price": 65.18,
+        "chg": 0.82,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "AMZN",
+        "name": "Amazon",
+        "sector": "XLY",
+        "price": 255.36,
+        "chg": 2.18,
+        "daily": 85,
+        "weekly": 55
+      },
+      {
+        "sym": "AMCR",
+        "name": "Amcor",
+        "sector": "XLB",
+        "price": 40.27,
+        "chg": -2.02,
+        "daily": 15,
+        "weekly": 0
+      },
+      {
+        "sym": "AEE",
+        "name": "Ameren",
+        "sector": "XLU",
+        "price": 109.24,
+        "chg": -0.65,
+        "daily": 70,
+        "weekly": 80
+      },
+      {
+        "sym": "AEP",
+        "name": "American Electric Power",
+        "sector": "XLU",
+        "price": 131.62,
+        "chg": -0.2,
+        "daily": 85,
+        "weekly": 80
+      },
+      {
+        "sym": "AXP",
+        "name": "American Express",
+        "sector": "XLF",
+        "price": 332.9,
+        "chg": 0.94,
+        "daily": 15,
+        "weekly": 55
+      },
+      {
+        "sym": "AIG",
+        "name": "American International Group",
+        "sector": "XLF",
+        "price": 76.03,
+        "chg": -2.44,
+        "daily": 15,
+        "weekly": 40
+      },
+      {
+        "sym": "AMT",
+        "name": "American Tower",
+        "sector": "XLRE",
+        "price": 176.31,
+        "chg": 0.89,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "AWK",
+        "name": "American Water Works",
+        "sector": "XLU",
+        "price": 131.13,
+        "chg": -0.7,
+        "daily": 10,
+        "weekly": 15
+      },
+      {
+        "sym": "AMP",
+        "name": "Ameriprise Financial",
+        "sector": "XLF",
+        "price": 468.51,
+        "chg": 1.61,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "AME",
+        "name": "Ametek",
+        "sector": "XLI",
+        "price": 230.46,
+        "chg": -1.32,
+        "daily": 50,
+        "weekly": 90
+      },
+      {
+        "sym": "AMGN",
+        "name": "Amgen",
+        "sector": "XLV",
+        "price": 345.92,
+        "chg": 0.31,
+        "daily": 40,
+        "weekly": 75
+      },
+      {
+        "sym": "APH",
+        "name": "Amphenol",
+        "sector": "XLK",
+        "price": 148.13,
+        "chg": -2.5,
+        "daily": 70,
+        "weekly": 55
+      },
+      {
+        "sym": "ADI",
+        "name": "Analog Devices",
+        "sector": "XLK",
+        "price": 381.42,
+        "chg": 1.64,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "AON",
+        "name": "Aon plc",
+        "sector": "XLF",
+        "price": 326.86,
+        "chg": -2.52,
+        "daily": 35,
+        "weekly": 40
+      },
+      {
+        "sym": "APA",
+        "name": "APA Corporation",
+        "sector": "XLE",
+        "price": 38.06,
+        "chg": 1.22,
+        "daily": 55,
+        "weekly": 80
+      },
+      {
+        "sym": "APO",
+        "name": "Apollo Global Management",
+        "sector": "XLF",
+        "price": 129.06,
+        "chg": 1.41,
+        "daily": 35,
+        "weekly": 50
+      },
+      {
+        "sym": "AAPL",
+        "name": "Apple Inc.",
+        "sector": "XLK",
+        "price": 273.17,
+        "chg": 2.63,
+        "daily": 50,
+        "weekly": 65
+      },
+      {
+        "sym": "AMAT",
+        "name": "Applied Materials",
+        "sector": "XLK",
+        "price": 403.48,
+        "chg": 2.32,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "APP",
+        "name": "AppLovin",
+        "sector": "XLK",
+        "price": 483.71,
+        "chg": 2.23,
+        "daily": 20,
+        "weekly": 55
+      },
+      {
+        "sym": "APTV",
+        "name": "Aptiv",
+        "sector": "XLY",
+        "price": 60.86,
+        "chg": 0.1,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "ACGL",
+        "name": "Arch Capital Group",
+        "sector": "XLF",
+        "price": 96.77,
+        "chg": -2.1,
+        "daily": 45,
+        "weekly": 65
+      },
+      {
+        "sym": "ADM",
+        "name": "Archer Daniels Midland",
+        "sector": "XLP",
+        "price": 69.43,
+        "chg": -0.57,
+        "daily": 60,
+        "weekly": 80
+      },
+      {
+        "sym": "ARES",
+        "name": "Ares Management",
+        "sector": "XLF",
+        "price": 121.05,
+        "chg": 1.01,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "ANET",
+        "name": "Arista Networks",
+        "sector": "XLK",
+        "price": 177.73,
+        "chg": 2.82,
+        "daily": 80,
+        "weekly": 95
+      },
+      {
+        "sym": "AJG",
+        "name": "Arthur J. Gallagher & Co.",
+        "sector": "XLF",
+        "price": 221.11,
+        "chg": -1.49,
+        "daily": 30,
+        "weekly": 10
+      },
+      {
+        "sym": "AIZ",
+        "name": "Assurant",
+        "sector": "XLF",
+        "price": 229.07,
+        "chg": 0.05,
+        "daily": 50,
+        "weekly": 55
+      },
+      {
+        "sym": "T",
+        "name": "AT&T",
+        "sector": "XLC",
+        "price": 25.98,
+        "chg": 0.39,
+        "daily": 10,
+        "weekly": 40
+      },
+      {
+        "sym": "ATO",
+        "name": "Atmos Energy",
+        "sector": "XLU",
+        "price": 182.49,
+        "chg": -0.24,
+        "daily": 70,
+        "weekly": 80
+      },
+      {
+        "sym": "ADSK",
+        "name": "Autodesk",
+        "sector": "XLK",
+        "price": 247.57,
+        "chg": 0.85,
+        "daily": 10,
+        "weekly": 40
+      },
+      {
+        "sym": "ADP",
+        "name": "Automatic Data Processing",
+        "sector": "XLI",
+        "price": 201.69,
+        "chg": -0.58,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "AZO",
+        "name": "AutoZone",
+        "sector": "XLY",
+        "price": 3589.99,
+        "chg": -0.45,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "AVB",
+        "name": "AvalonBay Communities",
+        "sector": "XLRE",
+        "price": 171.31,
+        "chg": -0.48,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "AVY",
+        "name": "Avery Dennison",
+        "sector": "XLB",
+        "price": 167.05,
+        "chg": -1.42,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "AXON",
+        "name": "Axon Enterprise",
+        "sector": "XLI",
+        "price": 403.15,
+        "chg": -0.44,
+        "daily": 0,
+        "weekly": 25
+      },
+      {
+        "sym": "BKR",
+        "name": "Baker Hughes",
+        "sector": "XLE",
+        "price": 62.54,
+        "chg": 3.8,
+        "daily": 55,
+        "weekly": 90
+      },
+      {
+        "sym": "BALL",
+        "name": "Ball Corporation",
+        "sector": "XLB",
+        "price": 62.67,
+        "chg": -1.09,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "BAC",
+        "name": "Bank of America",
+        "sector": "XLF",
+        "price": 53.12,
+        "chg": -0.67,
+        "daily": 60,
+        "weekly": 55
+      },
+      {
+        "sym": "BAX",
+        "name": "Baxter International",
+        "sector": "XLV",
+        "price": 18.31,
+        "chg": -0.97,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "BDX",
+        "name": "Becton Dickinson",
+        "sector": "XLV",
+        "price": 155.65,
+        "chg": -0.66,
+        "daily": 30,
+        "weekly": 25
+      },
+      {
+        "sym": "BRK-B",
+        "name": "Berkshire Hathaway",
+        "sector": "XLF",
+        "price": 465.4,
+        "chg": -0.66,
+        "daily": 10,
+        "weekly": 25
+      },
+      {
+        "sym": "BBY",
+        "name": "Best Buy",
+        "sector": "XLY",
+        "price": 63.53,
+        "chg": -4.6,
+        "daily": 35,
+        "weekly": 10
+      },
+      {
+        "sym": "TECH",
+        "name": "Bio-Techne",
+        "sector": "XLV",
+        "price": 58.58,
+        "chg": -1.83,
+        "daily": 50,
+        "weekly": 10
+      },
+      {
+        "sym": "BIIB",
+        "name": "Biogen",
+        "sector": "XLV",
+        "price": 190.07,
+        "chg": 2.22,
+        "daily": 60,
+        "weekly": 35
+      },
+      {
+        "sym": "BLK",
+        "name": "BlackRock",
+        "sector": "XLF",
+        "price": 1062.47,
+        "chg": 1.88,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "BX",
+        "name": "Blackstone Inc.",
+        "sector": "XLF",
+        "price": 129.73,
+        "chg": 0.96,
+        "daily": 35,
+        "weekly": 40
+      },
+      {
+        "sym": "XYZ",
+        "name": "Block, Inc.",
+        "sector": "XLF",
+        "price": 72.5,
+        "chg": 1.05,
+        "daily": 75,
+        "weekly": 50
+      },
+      {
+        "sym": "BK",
+        "name": "BNY Mellon",
+        "sector": "XLF",
+        "price": 135.88,
+        "chg": -1.48,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "BA",
+        "name": "Boeing",
+        "sector": "XLI",
+        "price": 231.28,
+        "chg": 5.53,
+        "daily": 45,
+        "weekly": 60
+      },
+      {
+        "sym": "BKNG",
+        "name": "Booking Holdings",
+        "sector": "XLY",
+        "price": 179.4,
+        "chg": -6.0,
+        "daily": 35,
+        "weekly": 45
+      },
+      {
+        "sym": "BSX",
+        "name": "Boston Scientific",
+        "sector": "XLV",
+        "price": 64.87,
+        "chg": 8.99,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "BMY",
+        "name": "Bristol Myers Squibb",
+        "sector": "XLV",
+        "price": 58.8,
+        "chg": -0.99,
+        "daily": 25,
+        "weekly": 70
+      },
+      {
+        "sym": "AVGO",
+        "name": "Broadcom",
+        "sector": "XLK",
+        "price": 422.65,
+        "chg": 5.09,
+        "daily": 80,
+        "weekly": 95
+      },
+      {
+        "sym": "BR",
+        "name": "Broadridge Financial Solutions",
+        "sector": "XLI",
+        "price": 160.64,
+        "chg": -0.76,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "BRO",
+        "name": "Brown & Brown",
+        "sector": "XLF",
+        "price": 67.88,
+        "chg": -1.55,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "BF-B",
+        "name": "Brown\u2013Forman",
+        "sector": "XLP",
+        "price": 28.53,
+        "chg": -0.77,
+        "daily": 70,
+        "weekly": 10
+      },
+      {
+        "sym": "BLDR",
+        "name": "Builders FirstSource",
+        "sector": "XLI",
+        "price": 90.63,
+        "chg": 0.97,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "BG",
+        "name": "Bunge Global",
+        "sector": "XLP",
+        "price": 125.77,
+        "chg": -0.05,
+        "daily": 55,
+        "weekly": 75
+      },
+      {
+        "sym": "BXP",
+        "name": "BXP, Inc.",
+        "sector": "XLRE",
+        "price": 58.29,
+        "chg": -0.36,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "CHRW",
+        "name": "C.H. Robinson",
+        "sector": "XLI",
+        "price": 182.35,
+        "chg": -0.7,
+        "daily": 55,
+        "weekly": 85
+      },
+      {
+        "sym": "CDNS",
+        "name": "Cadence Design Systems",
+        "sector": "XLK",
+        "price": 331.61,
+        "chg": 1.77,
+        "daily": 50,
+        "weekly": 50
+      },
+      {
+        "sym": "CPT",
+        "name": "Camden Property Trust",
+        "sector": "XLRE",
+        "price": 101.48,
+        "chg": -0.98,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "CPB",
+        "name": "Campbell's Company (The)",
+        "sector": "XLP",
+        "price": 20.82,
+        "chg": -0.43,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "COF",
+        "name": "Capital One",
+        "sector": "XLF",
+        "price": 199.43,
+        "chg": -1.52,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "CAH",
+        "name": "Cardinal Health",
+        "sector": "XLV",
+        "price": 200.55,
+        "chg": -2.13,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "CCL",
+        "name": "Carnival",
+        "sector": "XLY",
+        "price": 26.94,
+        "chg": -1.54,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "CARR",
+        "name": "Carrier Global",
+        "sector": "XLI",
+        "price": 60.65,
+        "chg": -1.72,
+        "daily": 45,
+        "weekly": 50
+      },
+      {
+        "sym": "CVNA",
+        "name": "Carvana",
+        "sector": "XLY",
+        "price": 416.79,
+        "chg": 3.96,
+        "daily": 65,
+        "weekly": 55
+      },
+      {
+        "sym": "CASY",
+        "name": "Casey's",
+        "sector": "XLP",
+        "price": 782.91,
+        "chg": 0.14,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "CAT",
+        "name": "Caterpillar Inc.",
+        "sector": "XLI",
+        "price": 808.87,
+        "chg": 1.05,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "CBOE",
+        "name": "Cboe Global Markets",
+        "sector": "XLF",
+        "price": 297.45,
+        "chg": -0.6,
+        "daily": 80,
+        "weekly": 90
+      },
+      {
+        "sym": "CBRE",
+        "name": "CBRE Group",
+        "sector": "XLRE",
+        "price": 153.52,
+        "chg": 2.45,
+        "daily": 35,
+        "weekly": 45
+      },
+      {
+        "sym": "CDW",
+        "name": "CDW Corporation",
+        "sector": "XLK",
+        "price": 142.44,
+        "chg": 0.73,
+        "daily": 35,
+        "weekly": 0
+      },
+      {
+        "sym": "COR",
+        "name": "Cencora",
+        "sector": "XLV",
+        "price": 308.3,
+        "chg": -1.31,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "CNC",
+        "name": "Centene Corporation",
+        "sector": "XLV",
+        "price": 38.93,
+        "chg": -0.54,
+        "daily": 55,
+        "weekly": 10
+      },
+      {
+        "sym": "CNP",
+        "name": "CenterPoint Energy",
+        "sector": "XLU",
+        "price": 42.12,
+        "chg": -0.31,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "CF",
+        "name": "CF Industries",
+        "sector": "XLB",
+        "price": 122.46,
+        "chg": 0.95,
+        "daily": 55,
+        "weekly": 90
+      },
+      {
+        "sym": "CRL",
+        "name": "Charles River Laboratories",
+        "sector": "XLV",
+        "price": 184.8,
+        "chg": 0.93,
+        "daily": 60,
+        "weekly": 10
+      },
+      {
+        "sym": "SCHW",
+        "name": "Charles Schwab Corporation",
+        "sector": "XLF",
+        "price": 91.71,
+        "chg": -0.28,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "CHTR",
+        "name": "Charter Communications",
+        "sector": "XLC",
+        "price": 242.49,
+        "chg": 0.22,
+        "daily": 30,
+        "weekly": 15
+      },
+      {
+        "sym": "CVX",
+        "name": "Chevron Corporation",
+        "sector": "XLE",
+        "price": 186.32,
+        "chg": 0.18,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "CMG",
+        "name": "Chipotle Mexican Grill",
+        "sector": "XLY",
+        "price": 35.11,
+        "chg": -2.61,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "CB",
+        "name": "Chubb Limited",
+        "sector": "XLF",
+        "price": 325.43,
+        "chg": -1.17,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "CHD",
+        "name": "Church & Dwight",
+        "sector": "XLP",
+        "price": 92.9,
+        "chg": -0.33,
+        "daily": 30,
+        "weekly": 45
+      },
+      {
+        "sym": "CIEN",
+        "name": "Ciena",
+        "sector": "XLK",
+        "price": 498.97,
+        "chg": -1.38,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "CI",
+        "name": "Cigna",
+        "sector": "XLV",
+        "price": 274.7,
+        "chg": -0.72,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "CINF",
+        "name": "Cincinnati Financial",
+        "sector": "XLF",
+        "price": 166.27,
+        "chg": -0.11,
+        "daily": 45,
+        "weekly": 55
+      },
+      {
+        "sym": "CTAS",
+        "name": "Cintas",
+        "sector": "XLI",
+        "price": 174.66,
+        "chg": -0.91,
+        "daily": 15,
+        "weekly": 25
+      },
+      {
+        "sym": "CSCO",
+        "name": "Cisco",
+        "sector": "XLK",
+        "price": 89.8,
+        "chg": 0.11,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "C",
+        "name": "Citigroup",
+        "sector": "XLF",
+        "price": 129.73,
+        "chg": -1.48,
+        "daily": 90,
+        "weekly": 65
+      },
+      {
+        "sym": "CFG",
+        "name": "Citizens Financial Group",
+        "sector": "XLF",
+        "price": 65.16,
+        "chg": -0.21,
+        "daily": 90,
+        "weekly": 55
+      },
+      {
+        "sym": "CLX",
+        "name": "Clorox",
+        "sector": "XLP",
+        "price": 96.85,
+        "chg": -2.77,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "CME",
+        "name": "CME Group",
+        "sector": "XLF",
+        "price": 285.71,
+        "chg": 0.46,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "CMS",
+        "name": "CMS Energy",
+        "sector": "XLU",
+        "price": 74.98,
+        "chg": -0.79,
+        "daily": 70,
+        "weekly": 80
+      },
+      {
+        "sym": "KO",
+        "name": "Coca-Cola Company (The)",
+        "sector": "XLP",
+        "price": 74.63,
+        "chg": -0.09,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "CTSH",
+        "name": "Cognizant",
+        "sector": "XLK",
+        "price": 58.81,
+        "chg": -2.71,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "COHR",
+        "name": "Coherent Corp.",
+        "sector": "XLK",
+        "price": 350.47,
+        "chg": 1.94,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "COIN",
+        "name": "Coinbase",
+        "sector": "XLF",
+        "price": 206.24,
+        "chg": 5.25,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "CL",
+        "name": "Colgate-Palmolive",
+        "sector": "XLP",
+        "price": 82.35,
+        "chg": 0.66,
+        "daily": 10,
+        "weekly": 45
+      },
+      {
+        "sym": "CMCSA",
+        "name": "Comcast",
+        "sector": "XLC",
+        "price": 29.37,
+        "chg": 1.1,
+        "daily": 50,
+        "weekly": 10
+      },
+      {
+        "sym": "FIX",
+        "name": "Comfort Systems USA",
+        "sector": "XLI",
+        "price": 1724.49,
+        "chg": 3.01,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "CAG",
+        "name": "Conagra Brands",
+        "sector": "XLP",
+        "price": 14.53,
+        "chg": -0.95,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "COP",
+        "name": "ConocoPhillips",
+        "sector": "XLE",
+        "price": 122.6,
+        "chg": 1.95,
+        "daily": 55,
+        "weekly": 75
+      },
+      {
+        "sym": "ED",
+        "name": "Consolidated Edison",
+        "sector": "XLU",
+        "price": 108.13,
+        "chg": -0.06,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "STZ",
+        "name": "Constellation Brands",
+        "sector": "XLP",
+        "price": 156.88,
+        "chg": -0.04,
+        "daily": 85,
+        "weekly": 15
+      },
+      {
+        "sym": "CEG",
+        "name": "Constellation Energy",
+        "sector": "XLU",
+        "price": 287.16,
+        "chg": 3.41,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "COO",
+        "name": "Cooper Companies (The)",
+        "sector": "XLV",
+        "price": 66.92,
+        "chg": -0.56,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "CPRT",
+        "name": "Copart",
+        "sector": "XLI",
+        "price": 33.68,
+        "chg": -0.18,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "GLW",
+        "name": "Corning Inc.",
+        "sector": "XLK",
+        "price": 168.76,
+        "chg": 2.0,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "CPAY",
+        "name": "Corpay",
+        "sector": "XLF",
+        "price": 330.7,
+        "chg": 0.23,
+        "daily": 50,
+        "weekly": 50
+      },
+      {
+        "sym": "CTVA",
+        "name": "Corteva",
+        "sector": "XLB",
+        "price": 79.35,
+        "chg": -1.24,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "CSGP",
+        "name": "CoStar Group",
+        "sector": "XLRE",
+        "price": 38.77,
+        "chg": -0.36,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "COST",
+        "name": "Costco",
+        "sector": "XLP",
+        "price": 1003.7,
+        "chg": -0.21,
+        "daily": 50,
+        "weekly": 90
+      },
+      {
+        "sym": "CTRA",
+        "name": "Coterra",
+        "sector": "XLE",
+        "price": 32.93,
+        "chg": 3.39,
+        "daily": 55,
+        "weekly": 90
+      },
+      {
+        "sym": "CRH",
+        "name": "CRH plc",
+        "sector": "XLB",
+        "price": 116.09,
+        "chg": -1.08,
+        "daily": 35,
+        "weekly": 55
+      },
+      {
+        "sym": "CRWD",
+        "name": "CrowdStrike",
+        "sector": "XLK",
+        "price": 466.68,
+        "chg": 3.8,
+        "daily": 50,
+        "weekly": 45
+      },
+      {
+        "sym": "CCI",
+        "name": "Crown Castle",
+        "sector": "XLRE",
+        "price": 86.01,
+        "chg": 1.28,
+        "daily": 15,
+        "weekly": 0
+      },
+      {
+        "sym": "CSX",
+        "name": "CSX Corporation",
+        "sector": "XLI",
+        "price": 43.18,
+        "chg": -0.44,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "CMI",
+        "name": "Cummins",
+        "sector": "XLI",
+        "price": 639.22,
+        "chg": 0.04,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "CVS",
+        "name": "CVS Health",
+        "sector": "XLV",
+        "price": 76.43,
+        "chg": -1.2,
+        "daily": 35,
+        "weekly": 60
+      },
+      {
+        "sym": "DHR",
+        "name": "Danaher Corporation",
+        "sector": "XLV",
+        "price": 184.04,
+        "chg": -5.4,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "DRI",
+        "name": "Darden Restaurants",
+        "sector": "XLY",
+        "price": 199.73,
+        "chg": 1.41,
+        "daily": 50,
+        "weekly": 75
+      },
+      {
+        "sym": "DDOG",
+        "name": "Datadog",
+        "sector": "XLK",
+        "price": 132.14,
+        "chg": 2.2,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "DVA",
+        "name": "DaVita",
+        "sector": "XLV",
+        "price": 152.42,
+        "chg": 1.68,
+        "daily": 70,
+        "weekly": 75
+      },
+      {
+        "sym": "DECK",
+        "name": "Deckers Brands",
+        "sector": "XLY",
+        "price": 107.69,
+        "chg": -2.25,
+        "daily": 35,
+        "weekly": 10
+      },
+      {
+        "sym": "DE",
+        "name": "Deere & Company",
+        "sector": "XLI",
+        "price": 579.99,
+        "chg": -1.24,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "DELL",
+        "name": "Dell Technologies",
+        "sector": "XLK",
+        "price": 214.65,
+        "chg": 1.08,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "DAL",
+        "name": "Delta Air Lines",
+        "sector": "XLI",
+        "price": 68.41,
+        "chg": -2.58,
+        "daily": 60,
+        "weekly": 55
+      },
+      {
+        "sym": "DVN",
+        "name": "Devon Energy",
+        "sector": "XLE",
+        "price": 47.12,
+        "chg": 3.33,
+        "daily": 55,
+        "weekly": 80
+      },
+      {
+        "sym": "DXCM",
+        "name": "Dexcom",
+        "sector": "XLV",
+        "price": 63.41,
+        "chg": 1.29,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "FANG",
+        "name": "Diamondback Energy",
+        "sector": "XLE",
+        "price": 193.87,
+        "chg": 2.14,
+        "daily": 55,
+        "weekly": 80
+      },
+      {
+        "sym": "DLR",
+        "name": "Digital Realty",
+        "sector": "XLRE",
+        "price": 200.86,
+        "chg": -0.2,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "DG",
+        "name": "Dollar General",
+        "sector": "XLP",
+        "price": 123.2,
+        "chg": -0.73,
+        "daily": 50,
+        "weekly": 20
+      },
+      {
+        "sym": "DLTR",
+        "name": "Dollar Tree",
+        "sector": "XLP",
+        "price": 101.97,
+        "chg": -1.79,
+        "daily": 10,
+        "weekly": 20
+      },
+      {
+        "sym": "D",
+        "name": "Dominion Energy",
+        "sector": "XLU",
+        "price": 60.95,
+        "chg": -0.23,
+        "daily": 20,
+        "weekly": 80
+      },
+      {
+        "sym": "DPZ",
+        "name": "Domino's",
+        "sector": "XLY",
+        "price": 365.93,
+        "chg": -0.89,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "DASH",
+        "name": "DoorDash",
+        "sector": "XLY",
+        "price": 182.27,
+        "chg": -0.1,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "DOV",
+        "name": "Dover Corporation",
+        "sector": "XLI",
+        "price": 216.17,
+        "chg": -1.87,
+        "daily": 40,
+        "weekly": 85
+      },
+      {
+        "sym": "DOW",
+        "name": "Dow Inc.",
+        "sector": "XLB",
+        "price": 38.81,
+        "chg": 1.31,
+        "daily": 55,
+        "weekly": 45
+      },
+      {
+        "sym": "DHI",
+        "name": "D. R. Horton",
+        "sector": "XLY",
+        "price": 161.18,
+        "chg": -0.63,
+        "daily": 50,
+        "weekly": 50
+      },
+      {
+        "sym": "DTE",
+        "name": "DTE Energy",
+        "sector": "XLU",
+        "price": 143.57,
+        "chg": 0.07,
+        "daily": 70,
+        "weekly": 80
+      },
+      {
+        "sym": "DUK",
+        "name": "Duke Energy",
+        "sector": "XLU",
+        "price": 125.25,
+        "chg": -0.33,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "DD",
+        "name": "DuPont",
+        "sector": "XLB",
+        "price": 45.98,
+        "chg": -1.56,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "ETN",
+        "name": "Eaton Corporation",
+        "sector": "XLI",
+        "price": 413.87,
+        "chg": 1.02,
+        "daily": 80,
+        "weekly": 90
+      },
+      {
+        "sym": "EBAY",
+        "name": "eBay Inc.",
+        "sector": "XLY",
+        "price": 105.63,
+        "chg": 0.22,
+        "daily": 100,
+        "weekly": 95
+      },
+      {
+        "sym": "SATS",
+        "name": "EchoStar",
+        "sector": "XLC",
+        "price": 122.36,
+        "chg": -1.21,
+        "daily": 80,
+        "weekly": 95
+      },
+      {
+        "sym": "ECL",
+        "name": "Ecolab",
+        "sector": "XLB",
+        "price": 268.93,
+        "chg": -0.71,
+        "daily": 15,
+        "weekly": 65
+      },
+      {
+        "sym": "EIX",
+        "name": "Edison International",
+        "sector": "XLU",
+        "price": 69.38,
+        "chg": -0.5,
+        "daily": 65,
+        "weekly": 65
+      },
+      {
+        "sym": "EW",
+        "name": "Edwards Lifesciences",
+        "sector": "XLV",
+        "price": 81.53,
+        "chg": 2.28,
+        "daily": 40,
+        "weekly": 50
+      },
+      {
+        "sym": "EA",
+        "name": "Electronic Arts",
+        "sector": "XLC",
+        "price": 202.78,
+        "chg": -0.38,
+        "daily": 40,
+        "weekly": 65
+      },
+      {
+        "sym": "ELV",
+        "name": "Elevance Health",
+        "sector": "XLV",
+        "price": 328.2,
+        "chg": 0.03,
+        "daily": 60,
+        "weekly": 10
+      },
+      {
+        "sym": "EME",
+        "name": "Emcor",
+        "sector": "XLI",
+        "price": 860.0,
+        "chg": 2.62,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "EMR",
+        "name": "Emerson Electric",
+        "sector": "XLI",
+        "price": 142.77,
+        "chg": -1.42,
+        "daily": 45,
+        "weekly": 55
+      },
+      {
+        "sym": "ETR",
+        "name": "Entergy",
+        "sector": "XLU",
+        "price": 110.47,
+        "chg": -0.69,
+        "daily": 75,
+        "weekly": 95
+      },
+      {
+        "sym": "EOG",
+        "name": "EOG Resources",
+        "sector": "XLE",
+        "price": 133.01,
+        "chg": 0.44,
+        "daily": 55,
+        "weekly": 70
+      },
+      {
+        "sym": "EPAM",
+        "name": "EPAM Systems",
+        "sector": "XLK",
+        "price": 129.12,
+        "chg": -2.27,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "EQT",
+        "name": "EQT Corporation",
+        "sector": "XLE",
+        "price": 58.72,
+        "chg": 3.05,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "EFX",
+        "name": "Equifax",
+        "sector": "XLI",
+        "price": 178.66,
+        "chg": -7.15,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "EQIX",
+        "name": "Equinix",
+        "sector": "XLRE",
+        "price": 1102.28,
+        "chg": 0.73,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "EQR",
+        "name": "Equity Residential",
+        "sector": "XLRE",
+        "price": 61.7,
+        "chg": -0.24,
+        "daily": 45,
+        "weekly": 40
+      },
+      {
+        "sym": "ERIE",
+        "name": "Erie Indemnity",
+        "sector": "XLF",
+        "price": 250.0,
+        "chg": -1.52,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "ESS",
+        "name": "Essex Property Trust",
+        "sector": "XLRE",
+        "price": 252.19,
+        "chg": -0.38,
+        "daily": 15,
+        "weekly": 40
+      },
+      {
+        "sym": "EL",
+        "name": "Est\u00e9e Lauder Companies (The)",
+        "sector": "XLP",
+        "price": 76.66,
+        "chg": 1.05,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "EG",
+        "name": "Everest Group",
+        "sector": "XLF",
+        "price": 345.0,
+        "chg": -1.38,
+        "daily": 65,
+        "weekly": 50
+      },
+      {
+        "sym": "EVRG",
+        "name": "Evergy",
+        "sector": "XLU",
+        "price": 79.64,
+        "chg": -0.88,
+        "daily": 70,
+        "weekly": 80
+      },
+      {
+        "sym": "ES",
+        "name": "Eversource Energy",
+        "sector": "XLU",
+        "price": 67.05,
+        "chg": 0.34,
+        "daily": 10,
+        "weekly": 65
+      },
+      {
+        "sym": "EXC",
+        "name": "Exelon",
+        "sector": "XLU",
+        "price": 45.86,
+        "chg": -0.89,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "EXE",
+        "name": "Expand Energy",
+        "sector": "XLE",
+        "price": 96.36,
+        "chg": 2.23,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "EXPE",
+        "name": "Expedia Group",
+        "sector": "XLY",
+        "price": 264.6,
+        "chg": -3.36,
+        "daily": 75,
+        "weekly": 55
+      },
+      {
+        "sym": "EXPD",
+        "name": "Expeditors International",
+        "sector": "XLI",
+        "price": 148.44,
+        "chg": -1.68,
+        "daily": 60,
+        "weekly": 55
+      },
+      {
+        "sym": "EXR",
+        "name": "Extra Space Storage",
+        "sector": "XLRE",
+        "price": 141.29,
+        "chg": -1.64,
+        "daily": 35,
+        "weekly": 40
+      },
+      {
+        "sym": "XOM",
+        "name": "ExxonMobil",
+        "sector": "XLE",
+        "price": 149.5,
+        "chg": 0.77,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "FFIV",
+        "name": "F5, Inc.",
+        "sector": "XLK",
+        "price": 311.18,
+        "chg": -1.39,
+        "daily": 85,
+        "weekly": 65
+      },
+      {
+        "sym": "FDS",
+        "name": "FactSet",
+        "sector": "XLF",
+        "price": 242.72,
+        "chg": 1.0,
+        "daily": 30,
+        "weekly": 0
+      },
+      {
+        "sym": "FICO",
+        "name": "Fair Isaac",
+        "sector": "XLK",
+        "price": 970.17,
+        "chg": -6.42,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "FAST",
+        "name": "Fastenal",
+        "sector": "XLI",
+        "price": 44.81,
+        "chg": -1.95,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "FRT",
+        "name": "Federal Realty Investment Trust",
+        "sector": "XLRE",
+        "price": 110.13,
+        "chg": -0.9,
+        "daily": 85,
+        "weekly": 80
+      },
+      {
+        "sym": "FDX",
+        "name": "FedEx",
+        "sector": "XLI",
+        "price": 385.95,
+        "chg": -2.19,
+        "daily": 65,
+        "weekly": 90
+      },
+      {
+        "sym": "FIS",
+        "name": "Fidelity National Information Services",
+        "sector": "XLF",
+        "price": 47.84,
+        "chg": 0.31,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "FITB",
+        "name": "Fifth Third Bancorp",
+        "sector": "XLF",
+        "price": 50.56,
+        "chg": -1.06,
+        "daily": 55,
+        "weekly": 55
+      },
+      {
+        "sym": "FSLR",
+        "name": "First Solar",
+        "sector": "XLK",
+        "price": 188.71,
+        "chg": 1.13,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "FE",
+        "name": "FirstEnergy",
+        "sector": "XLU",
+        "price": 48.43,
+        "chg": -0.16,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "FISV",
+        "name": "Fiserv",
+        "sector": "XLF",
+        "price": 63.26,
+        "chg": 0.0,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "F",
+        "name": "Ford Motor Company",
+        "sector": "XLY",
+        "price": 12.63,
+        "chg": -1.17,
+        "daily": 50,
+        "weekly": 55
+      },
+      {
+        "sym": "FTNT",
+        "name": "Fortinet",
+        "sector": "XLK",
+        "price": 87.09,
+        "chg": 2.15,
+        "daily": 50,
+        "weekly": 50
+      },
+      {
+        "sym": "FTV",
+        "name": "Fortive",
+        "sector": "XLI",
+        "price": 60.86,
+        "chg": -0.28,
+        "daily": 95,
+        "weekly": 85
+      },
+      {
+        "sym": "FOXA",
+        "name": "Fox Corporation (Class A)",
+        "sector": "XLC",
+        "price": 65.56,
+        "chg": 1.94,
+        "daily": 65,
+        "weekly": 55
+      },
+      {
+        "sym": "FOX",
+        "name": "Fox Corporation (Class B)",
+        "sector": "XLC",
+        "price": 58.57,
+        "chg": 1.63,
+        "daily": 65,
+        "weekly": 55
+      },
+      {
+        "sym": "BEN",
+        "name": "Franklin Resources",
+        "sector": "XLF",
+        "price": 27.49,
+        "chg": 0.92,
+        "daily": 70,
+        "weekly": 75
+      },
+      {
+        "sym": "FCX",
+        "name": "Freeport-McMoRan",
+        "sector": "XLB",
+        "price": 70.36,
+        "chg": 4.13,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "GRMN",
+        "name": "Garmin",
+        "sector": "XLY",
+        "price": 266.59,
+        "chg": 0.41,
+        "daily": 75,
+        "weekly": 95
+      },
+      {
+        "sym": "IT",
+        "name": "Gartner",
+        "sector": "XLK",
+        "price": 157.09,
+        "chg": -1.18,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "GE",
+        "name": "GE Aerospace",
+        "sector": "XLI",
+        "price": 276.29,
+        "chg": -3.64,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "GEHC",
+        "name": "GE HealthCare",
+        "sector": "XLV",
+        "price": 71.38,
+        "chg": -1.22,
+        "daily": 15,
+        "weekly": 20
+      },
+      {
+        "sym": "GEV",
+        "name": "GE Vernova",
+        "sector": "XLI",
+        "price": 1127.56,
+        "chg": 13.75,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "GEN",
+        "name": "Gen Digital",
+        "sector": "XLK",
+        "price": 19.99,
+        "chg": 0.4,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "GNRC",
+        "name": "Generac",
+        "sector": "XLI",
+        "price": 213.69,
+        "chg": -0.07,
+        "daily": 65,
+        "weekly": 90
+      },
+      {
+        "sym": "GD",
+        "name": "General Dynamics",
+        "sector": "XLI",
+        "price": 320.74,
+        "chg": -1.47,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "GIS",
+        "name": "General Mills",
+        "sector": "XLP",
+        "price": 35.19,
+        "chg": 0.4,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "GM",
+        "name": "General Motors",
+        "sector": "XLY",
+        "price": 79.0,
+        "chg": -0.06,
+        "daily": 60,
+        "weekly": 55
+      },
+      {
+        "sym": "GPC",
+        "name": "Genuine Parts Company",
+        "sector": "XLY",
+        "price": 111.74,
+        "chg": -2.83,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "GILD",
+        "name": "Gilead Sciences",
+        "sector": "XLV",
+        "price": 132.9,
+        "chg": -0.29,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "GPN",
+        "name": "Global Payments",
+        "sector": "XLF",
+        "price": 71.62,
+        "chg": 0.04,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "GL",
+        "name": "Globe Life",
+        "sector": "XLF",
+        "price": 151.25,
+        "chg": 0.22,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "GDDY",
+        "name": "GoDaddy",
+        "sector": "XLK",
+        "price": 88.4,
+        "chg": -0.23,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "GS",
+        "name": "Goldman Sachs",
+        "sector": "XLF",
+        "price": 934.84,
+        "chg": 0.89,
+        "daily": 70,
+        "weekly": 55
+      },
+      {
+        "sym": "HAL",
+        "name": "Halliburton",
+        "sector": "XLE",
+        "price": 39.11,
+        "chg": 2.52,
+        "daily": 55,
+        "weekly": 75
+      },
+      {
+        "sym": "HIG",
+        "name": "Hartford (The)",
+        "sector": "XLF",
+        "price": 138.11,
+        "chg": -0.75,
+        "daily": 45,
+        "weekly": 95
+      },
+      {
+        "sym": "HAS",
+        "name": "Hasbro",
+        "sector": "XLY",
+        "price": 90.61,
+        "chg": -0.51,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "HCA",
+        "name": "HCA Healthcare",
+        "sector": "XLV",
+        "price": 471.34,
+        "chg": 0.03,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "DOC",
+        "name": "Healthpeak Properties",
+        "sector": "XLRE",
+        "price": 16.33,
+        "chg": -0.85,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "HSIC",
+        "name": "Henry Schein",
+        "sector": "XLV",
+        "price": 78.11,
+        "chg": -0.93,
+        "daily": 60,
+        "weekly": 50
+      },
+      {
+        "sym": "HSY",
+        "name": "Hershey Company (The)",
+        "sector": "XLP",
+        "price": 188.65,
+        "chg": -0.03,
+        "daily": 10,
+        "weekly": 45
+      },
+      {
+        "sym": "HPE",
+        "name": "Hewlett Packard Enterprise",
+        "sector": "XLK",
+        "price": 28.51,
+        "chg": -0.87,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "HLT",
+        "name": "Hilton Worldwide",
+        "sector": "XLY",
+        "price": 333.67,
+        "chg": -1.92,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "HD",
+        "name": "Home Depot (The)",
+        "sector": "XLY",
+        "price": 339.5,
+        "chg": -1.29,
+        "daily": 20,
+        "weekly": 20
+      },
+      {
+        "sym": "HON",
+        "name": "Honeywell",
+        "sector": "XLI",
+        "price": 219.97,
+        "chg": -1.01,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "HRL",
+        "name": "Hormel Foods",
+        "sector": "XLP",
+        "price": 21.43,
+        "chg": 0.85,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "HST",
+        "name": "Host Hotels & Resorts",
+        "sector": "XLRE",
+        "price": 20.85,
+        "chg": -1.28,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "HWM",
+        "name": "Howmet Aerospace",
+        "sector": "XLI",
+        "price": 240.88,
+        "chg": -2.76,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "HPQ",
+        "name": "HP Inc.",
+        "sector": "XLK",
+        "price": 20.44,
+        "chg": -3.08,
+        "daily": 35,
+        "weekly": 20
+      },
+      {
+        "sym": "HUBB",
+        "name": "Hubbell Incorporated",
+        "sector": "XLI",
+        "price": 549.75,
+        "chg": 0.12,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "HUM",
+        "name": "Humana",
+        "sector": "XLV",
+        "price": 217.4,
+        "chg": 0.02,
+        "daily": 30,
+        "weekly": 0
+      },
+      {
+        "sym": "HBAN",
+        "name": "Huntington Bancshares",
+        "sector": "XLF",
+        "price": 16.82,
+        "chg": -0.88,
+        "daily": 45,
+        "weekly": 55
+      },
+      {
+        "sym": "HII",
+        "name": "Huntington Ingalls Industries",
+        "sector": "XLI",
+        "price": 366.88,
+        "chg": -3.0,
+        "daily": 25,
+        "weekly": 75
+      },
+      {
+        "sym": "IBM",
+        "name": "IBM",
+        "sector": "XLK",
+        "price": 251.86,
+        "chg": -1.49,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "IEX",
+        "name": "IDEX Corporation",
+        "sector": "XLI",
+        "price": 203.63,
+        "chg": -0.57,
+        "daily": 65,
+        "weekly": 55
+      },
+      {
+        "sym": "IDXX",
+        "name": "Idexx Laboratories",
+        "sector": "XLV",
+        "price": 578.35,
+        "chg": 1.64,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "ITW",
+        "name": "Illinois Tool Works",
+        "sector": "XLI",
+        "price": 267.09,
+        "chg": -1.46,
+        "daily": 25,
+        "weekly": 75
+      },
+      {
+        "sym": "INCY",
+        "name": "Incyte",
+        "sector": "XLV",
+        "price": 96.74,
+        "chg": 0.54,
+        "daily": 45,
+        "weekly": 55
+      },
+      {
+        "sym": "IR",
+        "name": "Ingersoll Rand",
+        "sector": "XLI",
+        "price": 83.7,
+        "chg": -1.31,
+        "daily": 25,
+        "weekly": 40
+      },
+      {
+        "sym": "PODD",
+        "name": "Insulet Corporation",
+        "sector": "XLV",
+        "price": 193.62,
+        "chg": 0.67,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "INTC",
+        "name": "Intel",
+        "sector": "XLK",
+        "price": 65.27,
+        "chg": -1.49,
+        "daily": 90,
+        "weekly": 80
+      },
+      {
+        "sym": "IBKR",
+        "name": "Interactive Brokers",
+        "sector": "XLF",
+        "price": 78.11,
+        "chg": -1.9,
+        "daily": 100,
+        "weekly": 85
+      },
+      {
+        "sym": "ICE",
+        "name": "Intercontinental Exchange",
+        "sector": "XLF",
+        "price": 158.82,
+        "chg": 0.12,
+        "daily": 25,
+        "weekly": 25
+      },
+      {
+        "sym": "IFF",
+        "name": "International Flavors & Fragrances",
+        "sector": "XLB",
+        "price": 71.17,
+        "chg": -1.73,
+        "daily": 40,
+        "weekly": 25
+      },
+      {
+        "sym": "IP",
+        "name": "International Paper",
+        "sector": "XLB",
+        "price": 33.33,
+        "chg": -5.95,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "INTU",
+        "name": "Intuit",
+        "sector": "XLK",
+        "price": 408.68,
+        "chg": 0.95,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "ISRG",
+        "name": "Intuitive Surgical",
+        "sector": "XLV",
+        "price": 483.62,
+        "chg": 7.16,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "IVZ",
+        "name": "Invesco",
+        "sector": "XLF",
+        "price": 25.56,
+        "chg": 2.36,
+        "daily": 50,
+        "weekly": 55
+      },
+      {
+        "sym": "INVH",
+        "name": "Invitation Homes",
+        "sector": "XLRE",
+        "price": 26.68,
+        "chg": -0.97,
+        "daily": 30,
+        "weekly": 0
+      },
+      {
+        "sym": "IQV",
+        "name": "IQVIA",
+        "sector": "XLV",
+        "price": 175.21,
+        "chg": -0.27,
+        "daily": 30,
+        "weekly": 10
+      },
+      {
+        "sym": "IRM",
+        "name": "Iron Mountain",
+        "sector": "XLRE",
+        "price": 117.23,
+        "chg": -0.51,
+        "daily": 95,
+        "weekly": 75
+      },
+      {
+        "sym": "JBHT",
+        "name": "J.B. Hunt",
+        "sector": "XLI",
+        "price": 247.03,
+        "chg": -1.62,
+        "daily": 95,
+        "weekly": 75
+      },
+      {
+        "sym": "JBL",
+        "name": "Jabil",
+        "sector": "XLK",
+        "price": 336.4,
+        "chg": 0.82,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "JKHY",
+        "name": "Jack Henry & Associates",
+        "sector": "XLF",
+        "price": 155.88,
+        "chg": 0.24,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "J",
+        "name": "Jacobs Solutions",
+        "sector": "XLI",
+        "price": 127.55,
+        "chg": -1.51,
+        "daily": 0,
+        "weekly": 30
+      },
+      {
+        "sym": "JNJ",
+        "name": "Johnson & Johnson",
+        "sector": "XLV",
+        "price": 226.1,
+        "chg": -0.03,
+        "daily": 25,
+        "weekly": 80
+      },
+      {
+        "sym": "JCI",
+        "name": "Johnson Controls",
+        "sector": "XLI",
+        "price": 139.81,
+        "chg": 0.06,
+        "daily": 50,
+        "weekly": 90
+      },
+      {
+        "sym": "JPM",
+        "name": "JPMorgan Chase",
+        "sector": "XLF",
+        "price": 313.02,
+        "chg": 0.01,
+        "daily": 60,
+        "weekly": 55
+      },
+      {
+        "sym": "KVUE",
+        "name": "Kenvue",
+        "sector": "XLP",
+        "price": 17.31,
+        "chg": 0.06,
+        "daily": 20,
+        "weekly": 20
+      },
+      {
+        "sym": "KDP",
+        "name": "Keurig Dr Pepper",
+        "sector": "XLP",
+        "price": 26.54,
+        "chg": 0.38,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "KEY",
+        "name": "KeyCorp",
+        "sector": "XLF",
+        "price": 22.04,
+        "chg": -0.27,
+        "daily": 95,
+        "weekly": 55
+      },
+      {
+        "sym": "KEYS",
+        "name": "Keysight Technologies",
+        "sector": "XLK",
+        "price": 338.97,
+        "chg": -0.1,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "KMB",
+        "name": "Kimberly-Clark",
+        "sector": "XLP",
+        "price": 96.75,
+        "chg": 0.16,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "KIM",
+        "name": "Kimco Realty",
+        "sector": "XLRE",
+        "price": 23.57,
+        "chg": -0.51,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "KMI",
+        "name": "Kinder Morgan",
+        "sector": "XLE",
+        "price": 31.81,
+        "chg": 0.76,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "KKR",
+        "name": "KKR & Co.",
+        "sector": "XLF",
+        "price": 105.92,
+        "chg": 1.41,
+        "daily": 35,
+        "weekly": 40
+      },
+      {
+        "sym": "KLAC",
+        "name": "KLA Corporation",
+        "sector": "XLK",
+        "price": 1812.06,
+        "chg": 1.49,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "KHC",
+        "name": "Kraft Heinz",
+        "sector": "XLP",
+        "price": 21.89,
+        "chg": -0.41,
+        "daily": 0,
+        "weekly": 0
+      },
+      {
+        "sym": "KR",
+        "name": "Kroger",
+        "sector": "XLP",
+        "price": 68.07,
+        "chg": -1.08,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "LHX",
+        "name": "L3Harris",
+        "sector": "XLI",
+        "price": 331.66,
+        "chg": -2.54,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "LH",
+        "name": "Labcorp",
+        "sector": "XLV",
+        "price": 272.62,
+        "chg": -0.29,
+        "daily": 40,
+        "weekly": 85
+      },
+      {
+        "sym": "LRCX",
+        "name": "Lam Research",
+        "sector": "XLK",
+        "price": 265.55,
+        "chg": 2.78,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "LVS",
+        "name": "Las Vegas Sands",
+        "sector": "XLY",
+        "price": 56.85,
+        "chg": -1.2,
+        "daily": 50,
+        "weekly": 60
+      },
+      {
+        "sym": "LDOS",
+        "name": "Leidos",
+        "sector": "XLI",
+        "price": 150.71,
+        "chg": -1.63,
+        "daily": 0,
+        "weekly": 25
+      },
+      {
+        "sym": "LEN",
+        "name": "Lennar",
+        "sector": "XLY",
+        "price": 94.45,
+        "chg": -0.38,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "LII",
+        "name": "Lennox International",
+        "sector": "XLI",
+        "price": 489.76,
+        "chg": -0.59,
+        "daily": 15,
+        "weekly": 30
+      },
+      {
+        "sym": "LLY",
+        "name": "Lilly (Eli)",
+        "sector": "XLV",
+        "price": 921.48,
+        "chg": 2.04,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "LIN",
+        "name": "Linde plc",
+        "sector": "XLB",
+        "price": 494.62,
+        "chg": -0.04,
+        "daily": 80,
+        "weekly": 80
+      },
+      {
+        "sym": "LYV",
+        "name": "Live Nation Entertainment",
+        "sector": "XLC",
+        "price": 154.63,
+        "chg": 0.82,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "LMT",
+        "name": "Lockheed Martin",
+        "sector": "XLI",
+        "price": 555.43,
+        "chg": -2.89,
+        "daily": 25,
+        "weekly": 75
+      },
+      {
+        "sym": "L",
+        "name": "Loews Corporation",
+        "sector": "XLF",
+        "price": 110.65,
+        "chg": -0.75,
+        "daily": 55,
+        "weekly": 90
+      },
+      {
+        "sym": "LOW",
+        "name": "Lowe's",
+        "sector": "XLY",
+        "price": 245.19,
+        "chg": -2.39,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "LULU",
+        "name": "Lululemon Athletica",
+        "sector": "XLY",
+        "price": 163.45,
+        "chg": -1.95,
+        "daily": 15,
+        "weekly": 0
+      },
+      {
+        "sym": "LITE",
+        "name": "Lumentum",
+        "sector": "XLK",
+        "price": 873.6,
+        "chg": 4.38,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "LYB",
+        "name": "LyondellBasell",
+        "sector": "XLB",
+        "price": 72.0,
+        "chg": 0.81,
+        "daily": 45,
+        "weekly": 75
+      },
+      {
+        "sym": "MTB",
+        "name": "M&T Bank",
+        "sector": "XLF",
+        "price": 217.57,
+        "chg": -0.61,
+        "daily": 45,
+        "weekly": 55
+      },
+      {
+        "sym": "MPC",
+        "name": "Marathon Petroleum",
+        "sector": "XLE",
+        "price": 222.07,
+        "chg": 0.78,
+        "daily": 55,
+        "weekly": 85
+      },
+      {
+        "sym": "MAR",
+        "name": "Marriott International",
+        "sector": "XLY",
+        "price": 367.13,
+        "chg": -2.22,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "MRSH",
+        "name": "Marsh McLennan",
+        "sector": "XLF",
+        "price": 175.5,
+        "chg": -1.96,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "MLM",
+        "name": "Martin Marietta Materials",
+        "sector": "XLB",
+        "price": 610.64,
+        "chg": -0.63,
+        "daily": 15,
+        "weekly": 45
+      },
+      {
+        "sym": "MAS",
+        "name": "Masco",
+        "sector": "XLI",
+        "price": 73.96,
+        "chg": 10.78,
+        "daily": 50,
+        "weekly": 50
+      },
+      {
+        "sym": "MA",
+        "name": "Mastercard",
+        "sector": "XLF",
+        "price": 510.16,
+        "chg": -0.23,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "MKC",
+        "name": "McCormick & Company",
+        "sector": "XLP",
+        "price": 51.47,
+        "chg": -0.98,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "MCD",
+        "name": "McDonald's",
+        "sector": "XLY",
+        "price": 300.07,
+        "chg": -0.59,
+        "daily": 10,
+        "weekly": 70
+      },
+      {
+        "sym": "MCK",
+        "name": "McKesson Corporation",
+        "sector": "XLV",
+        "price": 829.23,
+        "chg": -1.55,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "MDT",
+        "name": "Medtronic",
+        "sector": "XLV",
+        "price": 83.22,
+        "chg": 1.49,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "MRK",
+        "name": "Merck & Co.",
+        "sector": "XLV",
+        "price": 112.89,
+        "chg": 0.29,
+        "daily": 35,
+        "weekly": 65
+      },
+      {
+        "sym": "META",
+        "name": "Meta Platforms",
+        "sector": "XLC",
+        "price": 674.72,
+        "chg": 0.88,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "MET",
+        "name": "MetLife",
+        "sector": "XLF",
+        "price": 76.97,
+        "chg": -0.66,
+        "daily": 60,
+        "weekly": 50
+      },
+      {
+        "sym": "MTD",
+        "name": "Mettler Toledo",
+        "sector": "XLV",
+        "price": 1310.07,
+        "chg": -1.07,
+        "daily": 30,
+        "weekly": 40
+      },
+      {
+        "sym": "MGM",
+        "name": "MGM Resorts",
+        "sector": "XLY",
+        "price": 39.24,
+        "chg": 0.33,
+        "daily": 100,
+        "weekly": 65
+      },
+      {
+        "sym": "MCHP",
+        "name": "Microchip Technology",
+        "sector": "XLK",
+        "price": 82.48,
+        "chg": 1.92,
+        "daily": 100,
+        "weekly": 50
+      },
+      {
+        "sym": "MU",
+        "name": "Micron Technology",
+        "sector": "XLK",
+        "price": 487.48,
+        "chg": 8.48,
+        "daily": 60,
+        "weekly": 90
+      },
+      {
+        "sym": "MSFT",
+        "name": "Microsoft",
+        "sector": "XLK",
+        "price": 432.92,
+        "chg": 2.07,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "MAA",
+        "name": "Mid-America Apartment Communities",
+        "sector": "XLRE",
+        "price": 124.59,
+        "chg": -0.91,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "MRNA",
+        "name": "Moderna",
+        "sector": "XLV",
+        "price": 55.6,
+        "chg": 2.53,
+        "daily": 95,
+        "weekly": 40
+      },
+      {
+        "sym": "TAP",
+        "name": "Molson Coors Beverage Company",
+        "sector": "XLP",
+        "price": 42.7,
+        "chg": -2.04,
+        "daily": 10,
+        "weekly": 0
+      },
+      {
+        "sym": "MDLZ",
+        "name": "Mondelez International",
+        "sector": "XLP",
+        "price": 56.06,
+        "chg": -0.12,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "MPWR",
+        "name": "Monolithic Power Systems",
+        "sector": "XLK",
+        "price": 1522.04,
+        "chg": -0.39,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "MNST",
+        "name": "Monster Beverage",
+        "sector": "XLP",
+        "price": 75.95,
+        "chg": 0.9,
+        "daily": 55,
+        "weekly": 45
+      },
+      {
+        "sym": "MCO",
+        "name": "Moody's Corporation",
+        "sector": "XLF",
+        "price": 466.72,
+        "chg": 1.55,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "MS",
+        "name": "Morgan Stanley",
+        "sector": "XLF",
+        "price": 191.05,
+        "chg": 0.92,
+        "daily": 85,
+        "weekly": 55
+      },
+      {
+        "sym": "MOS",
+        "name": "Mosaic Company (The)",
+        "sector": "XLB",
+        "price": 24.52,
+        "chg": 1.32,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "MSI",
+        "name": "Motorola Solutions",
+        "sector": "XLK",
+        "price": 441.66,
+        "chg": -0.86,
+        "daily": 40,
+        "weekly": 50
+      },
+      {
+        "sym": "MSCI",
+        "name": "MSCI Inc.",
+        "sector": "XLF",
+        "price": 608.04,
+        "chg": 1.78,
+        "daily": 65,
+        "weekly": 50
+      },
+      {
+        "sym": "NDAQ",
+        "name": "Nasdaq, Inc.",
+        "sector": "XLF",
+        "price": 86.37,
+        "chg": -1.4,
+        "daily": 30,
+        "weekly": 55
+      },
+      {
+        "sym": "NTAP",
+        "name": "NetApp",
+        "sector": "XLK",
+        "price": 111.02,
+        "chg": -0.7,
+        "daily": 65,
+        "weekly": 60
+      },
+      {
+        "sym": "NFLX",
+        "name": "Netflix",
+        "sector": "XLC",
+        "price": 93.24,
+        "chg": 0.71,
+        "daily": 35,
+        "weekly": 35
+      },
+      {
+        "sym": "NEM",
+        "name": "Newmont",
+        "sector": "XLB",
+        "price": 111.85,
+        "chg": 2.33,
+        "daily": 25,
+        "weekly": 75
+      },
+      {
+        "sym": "NWSA",
+        "name": "News Corp (Class A)",
+        "sector": "XLC",
+        "price": 26.65,
+        "chg": 0.87,
+        "daily": 65,
+        "weekly": 60
+      },
+      {
+        "sym": "NWS",
+        "name": "News Corp (Class B)",
+        "sector": "XLC",
+        "price": 30.74,
+        "chg": 1.05,
+        "daily": 65,
+        "weekly": 60
+      },
+      {
+        "sym": "NEE",
+        "name": "NextEra Energy",
+        "sector": "XLU",
+        "price": 90.0,
+        "chg": -0.66,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "NKE",
+        "name": "Nike, Inc.",
+        "sector": "XLY",
+        "price": 45.68,
+        "chg": -1.53,
+        "daily": 10,
+        "weekly": 0
+      },
+      {
+        "sym": "NI",
+        "name": "NiSource",
+        "sector": "XLU",
+        "price": 46.85,
+        "chg": -0.17,
+        "daily": 85,
+        "weekly": 80
+      },
+      {
+        "sym": "NDSN",
+        "name": "Nordson Corporation",
+        "sector": "XLI",
+        "price": 279.45,
+        "chg": -1.16,
+        "daily": 60,
+        "weekly": 85
+      },
+      {
+        "sym": "NSC",
+        "name": "Norfolk Southern",
+        "sector": "XLI",
+        "price": 298.33,
+        "chg": -1.29,
+        "daily": 25,
+        "weekly": 85
+      },
+      {
+        "sym": "NTRS",
+        "name": "Northern Trust",
+        "sector": "XLF",
+        "price": 167.83,
+        "chg": -2.28,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "NOC",
+        "name": "Northrop Grumman",
+        "sector": "XLI",
+        "price": 589.62,
+        "chg": -3.52,
+        "daily": 20,
+        "weekly": 65
+      },
+      {
+        "sym": "NCLH",
+        "name": "Norwegian Cruise Line Holdings",
+        "sector": "XLY",
+        "price": 19.03,
+        "chg": -1.55,
+        "daily": 15,
+        "weekly": 30
+      },
+      {
+        "sym": "NRG",
+        "name": "NRG Energy",
+        "sector": "XLU",
+        "price": 149.6,
+        "chg": -0.17,
+        "daily": 15,
+        "weekly": 40
+      },
+      {
+        "sym": "NUE",
+        "name": "Nucor",
+        "sector": "XLB",
+        "price": 214.26,
+        "chg": 2.98,
+        "daily": 95,
+        "weekly": 75
+      },
+      {
+        "sym": "NVDA",
+        "name": "Nvidia",
+        "sector": "XLK",
+        "price": 202.5,
+        "chg": 1.31,
+        "daily": 100,
+        "weekly": 65
+      },
+      {
+        "sym": "NVR",
+        "name": "NVR, Inc.",
+        "sector": "XLY",
+        "price": 6610.77,
+        "chg": -4.65,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "NXPI",
+        "name": "NXP Semiconductors",
+        "sector": "XLK",
+        "price": 225.75,
+        "chg": 0.56,
+        "daily": 50,
+        "weekly": 40
+      },
+      {
+        "sym": "ORLY",
+        "name": "O\u2019Reilly Automotive",
+        "sector": "XLY",
+        "price": 93.92,
+        "chg": 0.12,
+        "daily": 30,
+        "weekly": 45
+      },
+      {
+        "sym": "OXY",
+        "name": "Occidental Petroleum",
+        "sector": "XLE",
+        "price": 57.05,
+        "chg": 1.28,
+        "daily": 55,
+        "weekly": 75
+      },
+      {
+        "sym": "ODFL",
+        "name": "Old Dominion",
+        "sector": "XLI",
+        "price": 219.98,
+        "chg": -1.98,
+        "daily": 95,
+        "weekly": 80
+      },
+      {
+        "sym": "OMC",
+        "name": "Omnicom Group",
+        "sector": "XLC",
+        "price": 78.11,
+        "chg": 0.05,
+        "daily": 50,
+        "weekly": 55
+      },
+      {
+        "sym": "ON",
+        "name": "ON Semiconductor",
+        "sector": "XLK",
+        "price": 88.99,
+        "chg": 2.39,
+        "daily": 95,
+        "weekly": 75
+      },
+      {
+        "sym": "OKE",
+        "name": "Oneok",
+        "sector": "XLE",
+        "price": 86.06,
+        "chg": 1.62,
+        "daily": 60,
+        "weekly": 65
+      },
+      {
+        "sym": "ORCL",
+        "name": "Oracle Corporation",
+        "sector": "XLK",
+        "price": 187.5,
+        "chg": 3.49,
+        "daily": 35,
+        "weekly": 50
+      },
+      {
+        "sym": "OTIS",
+        "name": "Otis Worldwide",
+        "sector": "XLI",
+        "price": 77.88,
+        "chg": -1.26,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "PCAR",
+        "name": "Paccar",
+        "sector": "XLI",
+        "price": 125.27,
+        "chg": -0.72,
+        "daily": 80,
+        "weekly": 85
+      },
+      {
+        "sym": "PKG",
+        "name": "Packaging Corporation of America",
+        "sector": "XLB",
+        "price": 205.24,
+        "chg": -2.51,
+        "daily": 20,
+        "weekly": 35
+      },
+      {
+        "sym": "PLTR",
+        "name": "Palantir Technologies",
+        "sector": "XLK",
+        "price": 152.62,
+        "chg": 4.56,
+        "daily": 0,
+        "weekly": 55
+      },
+      {
+        "sym": "PANW",
+        "name": "Palo Alto Networks",
+        "sector": "XLK",
+        "price": 181.2,
+        "chg": 3.57,
+        "daily": 30,
+        "weekly": 50
+      },
+      {
+        "sym": "PSKY",
+        "name": "Paramount Skydance Corporation",
+        "sector": "XLC",
+        "price": 11.8,
+        "chg": 1.64,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "PH",
+        "name": "Parker Hannifin",
+        "sector": "XLI",
+        "price": 954.43,
+        "chg": -1.88,
+        "daily": 30,
+        "weekly": 85
+      },
+      {
+        "sym": "PAYX",
+        "name": "Paychex",
+        "sector": "XLI",
+        "price": 93.43,
+        "chg": -0.27,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "PYPL",
+        "name": "PayPal",
+        "sector": "XLF",
+        "price": 51.22,
+        "chg": 0.67,
+        "daily": 35,
+        "weekly": 0
+      },
+      {
+        "sym": "PNR",
+        "name": "Pentair",
+        "sector": "XLI",
+        "price": 89.6,
+        "chg": -0.43,
+        "daily": 15,
+        "weekly": 25
+      },
+      {
+        "sym": "PEP",
+        "name": "PepsiCo",
+        "sector": "XLP",
+        "price": 153.79,
+        "chg": -0.73,
+        "daily": 35,
+        "weekly": 60
+      },
+      {
+        "sym": "PFE",
+        "name": "Pfizer",
+        "sector": "XLV",
+        "price": 26.8,
+        "chg": -1.87,
+        "daily": 30,
+        "weekly": 40
+      },
+      {
+        "sym": "PCG",
+        "name": "PG&E Corporation",
+        "sector": "XLU",
+        "price": 16.88,
+        "chg": -0.59,
+        "daily": 40,
+        "weekly": 70
+      },
+      {
+        "sym": "PM",
+        "name": "Philip Morris International",
+        "sector": "XLP",
+        "price": 163.95,
+        "chg": 6.98,
+        "daily": 40,
+        "weekly": 65
+      },
+      {
+        "sym": "PSX",
+        "name": "Phillips 66",
+        "sector": "XLE",
+        "price": 160.65,
+        "chg": 0.8,
+        "daily": 60,
+        "weekly": 80
+      },
+      {
+        "sym": "PNW",
+        "name": "Pinnacle West Capital",
+        "sector": "XLU",
+        "price": 100.8,
+        "chg": -0.18,
+        "daily": 85,
+        "weekly": 80
+      },
+      {
+        "sym": "PNC",
+        "name": "PNC Financial Services",
+        "sector": "XLF",
+        "price": 225.06,
+        "chg": -1.31,
+        "daily": 85,
+        "weekly": 55
+      },
+      {
+        "sym": "POOL",
+        "name": "Pool Corporation",
+        "sector": "XLY",
+        "price": 234.22,
+        "chg": 0.47,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "PPG",
+        "name": "PPG Industries",
+        "sector": "XLB",
+        "price": 111.67,
+        "chg": 0.68,
+        "daily": 50,
+        "weekly": 10
+      },
+      {
+        "sym": "PPL",
+        "name": "PPL Corporation",
+        "sector": "XLU",
+        "price": 37.78,
+        "chg": -1.13,
+        "daily": 70,
+        "weekly": 80
+      },
+      {
+        "sym": "PFG",
+        "name": "Principal Financial Group",
+        "sector": "XLF",
+        "price": 97.43,
+        "chg": 1.78,
+        "daily": 85,
+        "weekly": 90
+      },
+      {
+        "sym": "PG",
+        "name": "Procter & Gamble",
+        "sector": "XLP",
+        "price": 142.85,
+        "chg": 0.37,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "PGR",
+        "name": "Progressive Corporation",
+        "sector": "XLF",
+        "price": 202.71,
+        "chg": -2.31,
+        "daily": 20,
+        "weekly": 30
+      },
+      {
+        "sym": "PLD",
+        "name": "Prologis",
+        "sector": "XLRE",
+        "price": 141.42,
+        "chg": -0.35,
+        "daily": 100,
+        "weekly": 90
+      },
+      {
+        "sym": "PRU",
+        "name": "Prudential Financial",
+        "sector": "XLF",
+        "price": 94.85,
+        "chg": -1.66,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "PEG",
+        "name": "Public Service Enterprise Group",
+        "sector": "XLU",
+        "price": 78.51,
+        "chg": -0.06,
+        "daily": 10,
+        "weekly": 60
+      },
+      {
+        "sym": "PTC",
+        "name": "PTC Inc.",
+        "sector": "XLK",
+        "price": 140.6,
+        "chg": -0.23,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "PSA",
+        "name": "Public Storage",
+        "sector": "XLRE",
+        "price": 304.81,
+        "chg": -1.14,
+        "daily": 65,
+        "weekly": 70
+      },
+      {
+        "sym": "PHM",
+        "name": "PulteGroup",
+        "sector": "XLY",
+        "price": 127.56,
+        "chg": -0.84,
+        "daily": 50,
+        "weekly": 45
+      },
+      {
+        "sym": "PWR",
+        "name": "Quanta Services",
+        "sector": "XLI",
+        "price": 613.78,
+        "chg": 1.3,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "QCOM",
+        "name": "Qualcomm",
+        "sector": "XLK",
+        "price": 136.07,
+        "chg": 0.38,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "DGX",
+        "name": "Quest Diagnostics",
+        "sector": "XLV",
+        "price": 204.0,
+        "chg": -0.51,
+        "daily": 60,
+        "weekly": 90
+      },
+      {
+        "sym": "Q",
+        "name": "Qnity Electronics",
+        "sector": "XLK",
+        "price": 139.25,
+        "chg": 3.26,
+        "daily": 85,
+        "weekly": null
+      },
+      {
+        "sym": "RL",
+        "name": "Ralph Lauren Corporation",
+        "sector": "XLY",
+        "price": 375.29,
+        "chg": -2.97,
+        "daily": 70,
+        "weekly": 65
+      },
+      {
+        "sym": "RJF",
+        "name": "Raymond James Financial",
+        "sector": "XLF",
+        "price": 154.52,
+        "chg": -0.01,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "RTX",
+        "name": "RTX Corporation",
+        "sector": "XLI",
+        "price": 180.91,
+        "chg": -3.34,
+        "daily": 30,
+        "weekly": 75
+      },
+      {
+        "sym": "O",
+        "name": "Realty Income",
+        "sector": "XLRE",
+        "price": 63.34,
+        "chg": -1.03,
+        "daily": 45,
+        "weekly": 80
+      },
+      {
+        "sym": "REG",
+        "name": "Regency Centers",
+        "sector": "XLRE",
+        "price": 79.0,
+        "chg": -1.26,
+        "daily": 85,
+        "weekly": 90
+      },
+      {
+        "sym": "REGN",
+        "name": "Regeneron Pharmaceuticals",
+        "sector": "XLV",
+        "price": 746.58,
+        "chg": -0.1,
+        "daily": 30,
+        "weekly": 10
+      },
+      {
+        "sym": "RF",
+        "name": "Regions Financial Corporation",
+        "sector": "XLF",
+        "price": 28.21,
+        "chg": -0.49,
+        "daily": 55,
+        "weekly": 55
+      },
+      {
+        "sym": "RSG",
+        "name": "Republic Services",
+        "sector": "XLI",
+        "price": 205.29,
+        "chg": -0.0,
+        "daily": 10,
+        "weekly": 25
+      },
+      {
+        "sym": "RMD",
+        "name": "ResMed",
+        "sector": "XLV",
+        "price": 222.04,
+        "chg": 0.37,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "RVTY",
+        "name": "Revvity",
+        "sector": "XLV",
+        "price": 94.28,
+        "chg": 0.01,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "HOOD",
+        "name": "Robinhood Markets",
+        "sector": "XLF",
+        "price": 88.43,
+        "chg": 2.31,
+        "daily": 20,
+        "weekly": 55
+      },
+      {
+        "sym": "ROK",
+        "name": "Rockwell Automation",
+        "sector": "XLI",
+        "price": 407.02,
+        "chg": -0.74,
+        "daily": 70,
+        "weekly": 55
+      },
+      {
+        "sym": "ROL",
+        "name": "Rollins, Inc.",
+        "sector": "XLI",
+        "price": 55.32,
+        "chg": 1.11,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "ROP",
+        "name": "Roper Technologies",
+        "sector": "XLK",
+        "price": 364.73,
+        "chg": 0.5,
+        "daily": 35,
+        "weekly": 10
+      },
+      {
+        "sym": "ROST",
+        "name": "Ross Stores",
+        "sector": "XLY",
+        "price": 226.34,
+        "chg": 0.33,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "RCL",
+        "name": "Royal Caribbean Group",
+        "sector": "XLY",
+        "price": 265.64,
+        "chg": -2.15,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "SPGI",
+        "name": "S&P Global",
+        "sector": "XLF",
+        "price": 449.06,
+        "chg": 0.99,
+        "daily": 35,
+        "weekly": 40
+      },
+      {
+        "sym": "CRM",
+        "name": "Salesforce",
+        "sector": "XLK",
+        "price": 189.8,
+        "chg": 1.44,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "SNDK",
+        "name": "Sandisk",
+        "sector": "XLK",
+        "price": 979.07,
+        "chg": 8.37,
+        "daily": 90,
+        "weekly": null
+      },
+      {
+        "sym": "SBAC",
+        "name": "SBA Communications",
+        "sector": "XLRE",
+        "price": 211.86,
+        "chg": -0.58,
+        "daily": 70,
+        "weekly": 20
+      },
+      {
+        "sym": "SLB",
+        "name": "Schlumberger",
+        "sector": "XLE",
+        "price": 54.35,
+        "chg": 2.99,
+        "daily": 95,
+        "weekly": 75
+      },
+      {
+        "sym": "STX",
+        "name": "Seagate Technology",
+        "sector": "XLK",
+        "price": 579.88,
+        "chg": 3.57,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "SRE",
+        "name": "Sempra",
+        "sector": "XLU",
+        "price": 92.38,
+        "chg": -0.83,
+        "daily": 30,
+        "weekly": 85
+      },
+      {
+        "sym": "NOW",
+        "name": "ServiceNow",
+        "sector": "XLK",
+        "price": 103.07,
+        "chg": 2.93,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "SHW",
+        "name": "Sherwin-Williams",
+        "sector": "XLB",
+        "price": 335.15,
+        "chg": 0.16,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "SPG",
+        "name": "Simon Property Group",
+        "sector": "XLRE",
+        "price": 201.68,
+        "chg": -1.5,
+        "daily": 85,
+        "weekly": 90
+      },
+      {
+        "sym": "SWKS",
+        "name": "Skyworks Solutions",
+        "sector": "XLK",
+        "price": 61.77,
+        "chg": 3.05,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "SJM",
+        "name": "J.M. Smucker Company (The)",
+        "sector": "XLP",
+        "price": 94.99,
+        "chg": -0.78,
+        "daily": 20,
+        "weekly": 0
+      },
+      {
+        "sym": "SW",
+        "name": "Smurfit Westrock",
+        "sector": "XLB",
+        "price": 39.69,
+        "chg": -3.71,
+        "daily": 15,
+        "weekly": 30
+      },
+      {
+        "sym": "SNA",
+        "name": "Snap-on",
+        "sector": "XLI",
+        "price": 382.38,
+        "chg": -0.31,
+        "daily": 55,
+        "weekly": 90
+      },
+      {
+        "sym": "SOLV",
+        "name": "Solventum",
+        "sector": "XLV",
+        "price": 69.11,
+        "chg": 0.2,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "SO",
+        "name": "Southern Company",
+        "sector": "XLU",
+        "price": 91.87,
+        "chg": -0.05,
+        "daily": 20,
+        "weekly": 80
+      },
+      {
+        "sym": "LUV",
+        "name": "Southwest Airlines",
+        "sector": "XLI",
+        "price": 39.35,
+        "chg": -3.84,
+        "daily": 40,
+        "weekly": 45
+      },
+      {
+        "sym": "SWK",
+        "name": "Stanley Black & Decker",
+        "sector": "XLI",
+        "price": 75.7,
+        "chg": -0.72,
+        "daily": 50,
+        "weekly": 10
+      },
+      {
+        "sym": "SBUX",
+        "name": "Starbucks",
+        "sector": "XLY",
+        "price": 99.52,
+        "chg": 1.76,
+        "daily": 65,
+        "weekly": 80
+      },
+      {
+        "sym": "STT",
+        "name": "State Street Corporation",
+        "sector": "XLF",
+        "price": 152.4,
+        "chg": -0.76,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "STLD",
+        "name": "Steel Dynamics",
+        "sector": "XLB",
+        "price": 227.46,
+        "chg": 3.29,
+        "daily": 95,
+        "weekly": 95
+      },
+      {
+        "sym": "STE",
+        "name": "Steris",
+        "sector": "XLV",
+        "price": 223.55,
+        "chg": 1.87,
+        "daily": 20,
+        "weekly": 30
+      },
+      {
+        "sym": "SYK",
+        "name": "Stryker Corporation",
+        "sector": "XLV",
+        "price": 329.35,
+        "chg": 0.63,
+        "daily": 15,
+        "weekly": 30
+      },
+      {
+        "sym": "SMCI",
+        "name": "Supermicro",
+        "sector": "XLK",
+        "price": 29.18,
+        "chg": 2.64,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "SYF",
+        "name": "Synchrony Financial",
+        "sector": "XLF",
+        "price": 78.69,
+        "chg": 1.37,
+        "daily": 65,
+        "weekly": 55
+      },
+      {
+        "sym": "SNPS",
+        "name": "Synopsys",
+        "sector": "XLK",
+        "price": 477.26,
+        "chg": 2.07,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "SYY",
+        "name": "Sysco",
+        "sector": "XLP",
+        "price": 75.53,
+        "chg": 0.99,
+        "daily": 20,
+        "weekly": 70
+      },
+      {
+        "sym": "TMUS",
+        "name": "T-Mobile US",
+        "sector": "XLC",
+        "price": 188.92,
+        "chg": -3.31,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "TROW",
+        "name": "T. Rowe Price",
+        "sector": "XLF",
+        "price": 100.24,
+        "chg": 1.11,
+        "daily": 65,
+        "weekly": 40
+      },
+      {
+        "sym": "TTWO",
+        "name": "Take-Two Interactive",
+        "sector": "XLC",
+        "price": 218.19,
+        "chg": 0.25,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "TPR",
+        "name": "Tapestry, Inc.",
+        "sector": "XLY",
+        "price": 146.17,
+        "chg": -2.88,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "TRGP",
+        "name": "Targa Resources",
+        "sector": "XLE",
+        "price": 236.73,
+        "chg": 1.75,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "TGT",
+        "name": "Target Corporation",
+        "sector": "XLP",
+        "price": 130.6,
+        "chg": -1.14,
+        "daily": 95,
+        "weekly": 70
+      },
+      {
+        "sym": "TEL",
+        "name": "TE Connectivity",
+        "sector": "XLK",
+        "price": 221.04,
+        "chg": -9.1,
+        "daily": 70,
+        "weekly": 55
+      },
+      {
+        "sym": "TDY",
+        "name": "Teledyne Technologies",
+        "sector": "XLK",
+        "price": 656.69,
+        "chg": 2.16,
+        "daily": 65,
+        "weekly": 90
+      },
+      {
+        "sym": "TER",
+        "name": "Teradyne",
+        "sector": "XLK",
+        "price": 385.18,
+        "chg": 1.38,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "TSLA",
+        "name": "Tesla, Inc.",
+        "sector": "XLY",
+        "price": 387.51,
+        "chg": 0.28,
+        "daily": 20,
+        "weekly": 55
+      },
+      {
+        "sym": "TXN",
+        "name": "Texas Instruments",
+        "sector": "XLK",
+        "price": 236.31,
+        "chg": 1.36,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "TPL",
+        "name": "Texas Pacific Land Corporation",
+        "sector": "XLE",
+        "price": 439.5,
+        "chg": 0.41,
+        "daily": 55,
+        "weekly": 65
+      },
+      {
+        "sym": "TXT",
+        "name": "Textron",
+        "sector": "XLI",
+        "price": 89.46,
+        "chg": -1.46,
+        "daily": 35,
+        "weekly": 75
+      },
+      {
+        "sym": "TMO",
+        "name": "Thermo Fisher Scientific",
+        "sector": "XLV",
+        "price": 513.98,
+        "chg": -2.02,
+        "daily": 30,
+        "weekly": 10
+      },
+      {
+        "sym": "TJX",
+        "name": "TJX Companies",
+        "sector": "XLY",
+        "price": 158.47,
+        "chg": -0.49,
+        "daily": 70,
+        "weekly": 85
+      },
+      {
+        "sym": "TKO",
+        "name": "TKO Group Holdings",
+        "sector": "XLC",
+        "price": 186.26,
+        "chg": 1.73,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "TTD",
+        "name": "Trade Desk (The)",
+        "sector": "XLC",
+        "price": 23.56,
+        "chg": 1.55,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "TSCO",
+        "name": "Tractor Supply",
+        "sector": "XLY",
+        "price": 38.96,
+        "chg": -1.54,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "TT",
+        "name": "Trane Technologies",
+        "sector": "XLI",
+        "price": 477.19,
+        "chg": -0.4,
+        "daily": 80,
+        "weekly": 90
+      },
+      {
+        "sym": "TDG",
+        "name": "TransDigm Group",
+        "sector": "XLI",
+        "price": 1187.75,
+        "chg": -1.49,
+        "daily": 15,
+        "weekly": 25
+      },
+      {
+        "sym": "TRV",
+        "name": "Travelers Companies (The)",
+        "sector": "XLF",
+        "price": 301.68,
+        "chg": 0.09,
+        "daily": 55,
+        "weekly": 90
+      },
+      {
+        "sym": "TRMB",
+        "name": "Trimble Inc.",
+        "sector": "XLK",
+        "price": 69.09,
+        "chg": 0.17,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "TFC",
+        "name": "Truist Financial",
+        "sector": "XLF",
+        "price": 50.95,
+        "chg": -0.23,
+        "daily": 55,
+        "weekly": 55
+      },
+      {
+        "sym": "TYL",
+        "name": "Tyler Technologies",
+        "sector": "XLK",
+        "price": 346.38,
+        "chg": 1.44,
+        "daily": 10,
+        "weekly": 10
+      },
+      {
+        "sym": "TSN",
+        "name": "Tyson Foods",
+        "sector": "XLP",
+        "price": 64.55,
+        "chg": -0.03,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "USB",
+        "name": "U.S. Bancorp",
+        "sector": "XLF",
+        "price": 56.6,
+        "chg": -0.42,
+        "daily": 85,
+        "weekly": 55
+      },
+      {
+        "sym": "UBER",
+        "name": "Uber",
+        "sector": "XLI",
+        "price": 75.58,
+        "chg": -2.17,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "UDR",
+        "name": "UDR, Inc.",
+        "sector": "XLRE",
+        "price": 34.51,
+        "chg": -1.34,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "ULTA",
+        "name": "Ulta Beauty",
+        "sector": "XLY",
+        "price": 563.91,
+        "chg": -1.1,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "UNP",
+        "name": "Union Pacific Corporation",
+        "sector": "XLI",
+        "price": 249.4,
+        "chg": -0.74,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "UAL",
+        "name": "United Airlines Holdings",
+        "sector": "XLI",
+        "price": 91.71,
+        "chg": -5.58,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "UPS",
+        "name": "United Parcel Service",
+        "sector": "XLI",
+        "price": 105.3,
+        "chg": -0.95,
+        "daily": 60,
+        "weekly": 10
+      },
+      {
+        "sym": "URI",
+        "name": "United Rentals",
+        "sector": "XLI",
+        "price": 802.79,
+        "chg": -0.43,
+        "daily": 20,
+        "weekly": 45
+      },
+      {
+        "sym": "UNH",
+        "name": "UnitedHealth Group",
+        "sector": "XLV",
+        "price": 353.52,
+        "chg": 2.17,
+        "daily": 70,
+        "weekly": 0
+      },
+      {
+        "sym": "UHS",
+        "name": "Universal Health Services",
+        "sector": "XLV",
+        "price": 180.72,
+        "chg": 1.22,
+        "daily": 10,
+        "weekly": 25
+      },
+      {
+        "sym": "VLO",
+        "name": "Valero Energy",
+        "sector": "XLE",
+        "price": 234.36,
+        "chg": 0.42,
+        "daily": 45,
+        "weekly": 90
+      },
+      {
+        "sym": "VTR",
+        "name": "Ventas",
+        "sector": "XLRE",
+        "price": 80.1,
+        "chg": -2.45,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "VLTO",
+        "name": "Veralto",
+        "sector": "XLI",
+        "price": 89.0,
+        "chg": -0.76,
+        "daily": 15,
+        "weekly": 10
+      },
+      {
+        "sym": "VRSN",
+        "name": "Verisign",
+        "sector": "XLK",
+        "price": 269.83,
+        "chg": 0.02,
+        "daily": 70,
+        "weekly": 65
+      },
+      {
+        "sym": "VRSK",
+        "name": "Verisk Analytics",
+        "sector": "XLI",
+        "price": 178.89,
+        "chg": -1.76,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "VZ",
+        "name": "Verizon",
+        "sector": "XLC",
+        "price": 45.98,
+        "chg": -0.63,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "VRTX",
+        "name": "Vertex Pharmaceuticals",
+        "sector": "XLV",
+        "price": 437.67,
+        "chg": 0.25,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "VRT",
+        "name": "Vertiv",
+        "sector": "XLI",
+        "price": 305.14,
+        "chg": -2.34,
+        "daily": 90,
+        "weekly": 95
+      },
+      {
+        "sym": "VTRS",
+        "name": "Viatris",
+        "sector": "XLV",
+        "price": 14.52,
+        "chg": -1.43,
+        "daily": 65,
+        "weekly": 90
+      },
+      {
+        "sym": "VICI",
+        "name": "Vici Properties",
+        "sector": "XLRE",
+        "price": 28.2,
+        "chg": -0.77,
+        "daily": 15,
+        "weekly": 20
+      },
+      {
+        "sym": "V",
+        "name": "Visa Inc.",
+        "sector": "XLF",
+        "price": 311.29,
+        "chg": 0.44,
+        "daily": 20,
+        "weekly": 50
+      },
+      {
+        "sym": "VST",
+        "name": "Vistra Corp.",
+        "sector": "XLU",
+        "price": 155.79,
+        "chg": 0.57,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "VMC",
+        "name": "Vulcan Materials Company",
+        "sector": "XLB",
+        "price": 290.11,
+        "chg": -0.21,
+        "daily": 15,
+        "weekly": 55
+      },
+      {
+        "sym": "WRB",
+        "name": "W. R. Berkley Corporation",
+        "sector": "XLF",
+        "price": 67.5,
+        "chg": 3.21,
+        "daily": 15,
+        "weekly": 35
+      },
+      {
+        "sym": "GWW",
+        "name": "W. W. Grainger",
+        "sector": "XLI",
+        "price": 1154.18,
+        "chg": -1.44,
+        "daily": 85,
+        "weekly": 90
+      },
+      {
+        "sym": "WAB",
+        "name": "Wabtec",
+        "sector": "XLI",
+        "price": 261.52,
+        "chg": 1.51,
+        "daily": 80,
+        "weekly": 90
+      },
+      {
+        "sym": "WMT",
+        "name": "Walmart",
+        "sector": "XLP",
+        "price": 129.98,
+        "chg": 0.29,
+        "daily": 95,
+        "weekly": 90
+      },
+      {
+        "sym": "DIS",
+        "name": "Walt Disney Company (The)",
+        "sector": "XLC",
+        "price": 104.82,
+        "chg": 0.51,
+        "daily": 20,
+        "weekly": 40
+      },
+      {
+        "sym": "WBD",
+        "name": "Warner Bros. Discovery",
+        "sector": "XLC",
+        "price": 27.33,
+        "chg": 0.07,
+        "daily": 25,
+        "weekly": 45
+      },
+      {
+        "sym": "WM",
+        "name": "Waste Management",
+        "sector": "XLI",
+        "price": 223.93,
+        "chg": 0.23,
+        "daily": 20,
+        "weekly": 80
+      },
+      {
+        "sym": "WAT",
+        "name": "Waters Corporation",
+        "sector": "XLV",
+        "price": 334.38,
+        "chg": -0.25,
+        "daily": 30,
+        "weekly": 40
+      },
+      {
+        "sym": "WEC",
+        "name": "WEC Energy Group",
+        "sector": "XLU",
+        "price": 113.38,
+        "chg": -0.18,
+        "daily": 60,
+        "weekly": 80
+      },
+      {
+        "sym": "WFC",
+        "name": "Wells Fargo",
+        "sector": "XLF",
+        "price": 80.58,
+        "chg": -1.19,
+        "daily": 10,
+        "weekly": 35
+      },
+      {
+        "sym": "WELL",
+        "name": "Welltower",
+        "sector": "XLRE",
+        "price": 199.7,
+        "chg": -3.24,
+        "daily": 45,
+        "weekly": 80
+      },
+      {
+        "sym": "WST",
+        "name": "West Pharmaceutical Services",
+        "sector": "XLV",
+        "price": 274.41,
+        "chg": -0.11,
+        "daily": 65,
+        "weekly": 20
+      },
+      {
+        "sym": "WDC",
+        "name": "Western Digital",
+        "sector": "XLK",
+        "price": 389.1,
+        "chg": 1.38,
+        "daily": 90,
+        "weekly": 90
+      },
+      {
+        "sym": "WY",
+        "name": "Weyerhaeuser",
+        "sector": "XLRE",
+        "price": 24.77,
+        "chg": -0.48,
+        "daily": 35,
+        "weekly": 10
+      },
+      {
+        "sym": "WSM",
+        "name": "Williams-Sonoma, Inc.",
+        "sector": "XLY",
+        "price": 197.29,
+        "chg": -2.47,
+        "daily": 50,
+        "weekly": 55
+      },
+      {
+        "sym": "WMB",
+        "name": "Williams Companies",
+        "sector": "XLE",
+        "price": 71.1,
+        "chg": 0.95,
+        "daily": 40,
+        "weekly": 80
+      },
+      {
+        "sym": "WTW",
+        "name": "Willis Towers Watson",
+        "sector": "XLF",
+        "price": 291.4,
+        "chg": -2.16,
+        "daily": 20,
+        "weekly": 30
+      },
+      {
+        "sym": "WDAY",
+        "name": "Workday, Inc.",
+        "sector": "XLK",
+        "price": 126.6,
+        "chg": -1.98,
+        "daily": 0,
+        "weekly": 10
+      },
+      {
+        "sym": "WYNN",
+        "name": "Wynn Resorts",
+        "sector": "XLY",
+        "price": 106.64,
+        "chg": -0.95,
+        "daily": 15,
+        "weekly": 60
+      },
+      {
+        "sym": "XEL",
+        "name": "Xcel Energy",
+        "sector": "XLU",
+        "price": 78.11,
+        "chg": -1.23,
+        "daily": 30,
+        "weekly": 80
+      },
+      {
+        "sym": "XYL",
+        "name": "Xylem Inc.",
+        "sector": "XLI",
+        "price": 121.46,
+        "chg": 1.23,
+        "daily": 10,
+        "weekly": 30
+      },
+      {
+        "sym": "YUM",
+        "name": "Yum! Brands",
+        "sector": "XLY",
+        "price": 159.06,
+        "chg": -0.8,
+        "daily": 35,
+        "weekly": 80
+      },
+      {
+        "sym": "ZBRA",
+        "name": "Zebra Technologies",
+        "sector": "XLK",
+        "price": 231.1,
+        "chg": -2.35,
+        "daily": 20,
+        "weekly": 10
+      },
+      {
+        "sym": "ZBH",
+        "name": "Zimmer Biomet",
+        "sector": "XLV",
+        "price": 93.04,
+        "chg": 0.38,
+        "daily": 15,
+        "weekly": 15
+      },
+      {
+        "sym": "ZTS",
+        "name": "Zoetis",
+        "sector": "XLV",
+        "price": 117.52,
+        "chg": -0.56,
+        "daily": 15,
+        "weekly": 0
+      }
+    ]
+  }
+}
