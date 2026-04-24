@@ -542,13 +542,10 @@ const Overview = (() => {
   function renderStocks(){
     const list = (state.data.stocks?.[state.idx]) || [];
     const q = state.query.trim().toLowerCase();
-    const filtered = q
-      ? list.filter(r => (r.sym||'').toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q))
-      : list;
 
     const dir = state.sortDir === 'asc' ? 1 : -1;
     const k = state.sortKey;
-    const sorted = [...filtered].sort((a,b) => {
+    const sorted = [...list].sort((a,b) => {
       let av, bv;
       if (k === 'rank') { av = 0; bv = 0; }
       else              { av = a[k]; bv = b[k]; }
@@ -556,8 +553,13 @@ const Overview = (() => {
       return ((av||0) - (bv||0)) * dir;
     });
 
+    const ranked = sorted.map((r, i) => ({ ...r, _rank: i + 1 }));
+    const filtered = q
+      ? ranked.filter(r => (r.sym||'').toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q))
+      : ranked;
+
     const body = document.getElementById('stocks-body');
-    body.innerHTML = sorted.map((r, i) => {
+    body.innerHTML = filtered.map((r) => {
       const wsc = r.weekly ?? 0;
       const wcol = scoreColor(wsc);
       const dsc = r.daily ?? 0;
@@ -566,7 +568,7 @@ const Overview = (() => {
       const chgCls = chg >= 0 ? 'delta-up' : 'delta-down';
       return `
         <tr>
-          <td class="rank">${i+1}</td>
+          <td class="rank">${r._rank}</td>
           <td class="sym">${r.sym}</td>
           <td class="name">${r.name}</td>
           <td class="name" style="color:var(--text-dim)">${r.sector||''}</td>
