@@ -660,8 +660,22 @@ const Overview = (() => {
       let av, bv;
       if (k === 'rank') { av = 0; bv = 0; }
       else              { av = a[k]; bv = b[k]; }
-      if (typeof av === 'string') return (av||'').localeCompare(bv||'') * dir;
-      return ((av||0) - (bv||0)) * dir;
+
+      if (typeof av === 'string') {
+        const cmp = (av||'').localeCompare(bv||'');
+        return cmp !== 0 ? cmp * dir : 0;
+      }
+
+      const diff = ((av||0) - (bv||0));
+      if (diff !== 0) return diff * dir;
+
+      // Tie-breaker for weekly score: daily score descending
+      if (k === 'weekly') {
+        const dailyDiff = (a.daily || 0) - (b.daily || 0);
+        return dir === 1 ? dailyDiff : -dailyDiff;
+      }
+
+      return 0;
     });
 
     const ranked = sorted.map((r, i) => ({ ...r, _rank: i + 1 }));
