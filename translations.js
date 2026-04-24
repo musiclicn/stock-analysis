@@ -22,8 +22,9 @@ var TRANSLATIONS = {
     'lang.toggle': '中文',          // label shown when current lang is EN → click to go ZH
 
     /* ---------- tab navigation ---------- */
-    'tab.overview': 'Overview',
-    'tab.breadth':  'Market Breadth',
+    'tab.overview':  'Overview',
+    'tab.breadth':   'Market Breadth',
+    'tab.articles':  'Commentary',
 
     /* ---------- section headings ---------- */
     'section.indexes':      'Major Indexes',
@@ -115,9 +116,14 @@ var TRANSLATIONS = {
     /* ---------- footer (innerHTML) ---------- */
     'footer.text': 'Data from <code>scores.json</code> and <code>breadth.json</code>. Edits appear within seconds.',
 
+    /* ---------- articles ---------- */
+    'articles.expand':   '▼ Read full article',
+    'articles.collapse': '▲ Collapse',
+
     /* ---------- page titles ---------- */
-    'title.overview': 'Market Pulse — U.S. Equities Dashboard',
-    'title.breadth':  'Market Breadth — Market Pulse',
+    'title.overview':  'Market Pulse — U.S. Equities Dashboard',
+    'title.breadth':   'Market Breadth — Market Pulse',
+    'title.articles':  'Commentary — Market Pulse',
   },
 
   zh: {
@@ -136,8 +142,9 @@ var TRANSLATIONS = {
     'lang.toggle': 'English',      // 当前语言为中文时显示，点击切换为英文
 
     /* ---------- 标签导航 ---------- */
-    'tab.overview': '总览',
-    'tab.breadth':  '市场宽度',
+    'tab.overview':  '总览',
+    'tab.breadth':   '市场宽度',
+    'tab.articles':  '市场评论',
 
     /* ---------- 区块标题 ---------- */
     'section.indexes':      '主要指数',
@@ -229,9 +236,14 @@ var TRANSLATIONS = {
     /* ---------- 页脚（innerHTML） ---------- */
     'footer.text': '数据来自 <code>scores.json</code> 和 <code>breadth.json</code>。修改后数秒内生效。',
 
+    /* ---------- 文章 ---------- */
+    'articles.expand':   '▼ 展开全文',
+    'articles.collapse': '▲ 收起',
+
     /* ---------- 页面标题 ---------- */
-    'title.overview': '市场脉搏 — 美股仪表板',
-    'title.breadth':  '市场宽度 — 市场脉搏',
+    'title.overview':  '市场脉搏 — 美股仪表板',
+    'title.breadth':   '市场宽度 — 市场脉搏',
+    'title.articles':  '市场评论 — 市场脉搏',
   },
 };
 

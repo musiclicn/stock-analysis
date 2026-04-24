@@ -256,6 +256,33 @@
 
   footer.foot { margin-top: 40px; color:var(--text-dim); font-size:11px; text-align:center; }
   footer.foot code { color: var(--text-soft); }
+
+  /* =============== ARTICLES =============== */
+  .article-list { display:flex; flex-direction:column; gap:14px; }
+  .article-card { background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; transition:border-color .15s ease; }
+  .article-card:hover { border-color: var(--accent); }
+  .article-header { padding:20px 22px; cursor:pointer; }
+  .article-meta { display:flex; align-items:center; gap:10px; margin-bottom:8px; }
+  .article-date { font-family:var(--mono); font-size:12px; color:var(--text-dim); }
+  .lang-badge { font-family:var(--mono); font-size:10px; padding:2px 8px; border-radius:999px; background:var(--panel-2); border:1px solid var(--border); color:var(--accent); letter-spacing:.08em; }
+  .article-title { font-size:17px; font-weight:600; color:var(--text); letter-spacing:.15px; margin-bottom:6px; }
+  .article-summary { font-size:13px; color:var(--text-soft); line-height:1.65; margin-bottom:10px; }
+  .article-expand-hint { font-size:12px; color:var(--text-dim); }
+
+  .article-body { padding:2px 22px 26px; border-top:1px solid var(--border); animation:fadeIn .2s ease; }
+  .article-body h2 { font-size:17px; font-weight:600; color:var(--text); margin:24px 0 8px; letter-spacing:.15px; }
+  .article-body h3 { font-size:14px; font-weight:600; color:var(--text); margin:18px 0 6px; }
+  .article-body p  { font-size:14px; line-height:1.75; color:var(--text-soft); margin:6px 0; }
+  .article-body ul, .article-body ol { padding-left:22px; margin:6px 0; }
+  .article-body li { font-size:14px; line-height:1.75; color:var(--text-soft); margin:3px 0; }
+  .article-body strong { color:var(--text); font-weight:600; }
+  .article-body hr { border:none; border-top:1px solid var(--border); margin:20px 0; }
+  .article-body blockquote { border-left:3px solid var(--accent); margin:12px 0; padding:8px 16px; background:var(--bg-alt); border-radius:0 8px 8px 0; }
+  .article-body blockquote p { color:var(--text-soft); font-size:13px; margin:0; }
+  .article-body table { width:100%; border-collapse:collapse; font-size:13px; margin:14px 0; }
+  .article-body th { text-align:left; padding:9px 12px; background:var(--bg-alt); color:var(--text-dim); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.1em; border-bottom:1px solid var(--border); }
+  .article-body td { padding:9px 12px; border-bottom:1px solid var(--border); color:var(--text-soft); line-height:1.5; }
+  .article-body tr:last-child td { border-bottom:none; }
 </style>
 </head>
 <body>
@@ -282,8 +309,9 @@
 
   <!-- ================= TAB NAV ================= -->
   <nav class="tab-nav">
-    <a class="tab active" data-tab="overview" href="#/overview"><span data-i18n="tab.overview">Overview</span><span class="pill">scores</span></a>
-    <a class="tab"        data-tab="breadth"  href="#/breadth" ><span data-i18n="tab.breadth">Market Breadth</span><span class="pill">S&amp;P 500</span></a>
+    <a class="tab active" data-tab="overview"  href="#/overview" ><span data-i18n="tab.overview">Overview</span><span class="pill">scores</span></a>
+    <a class="tab"        data-tab="breadth"   href="#/breadth"  ><span data-i18n="tab.breadth">Market Breadth</span><span class="pill">S&amp;P 500</span></a>
+    <a class="tab"        data-tab="articles"  href="#/articles" ><span data-i18n="tab.articles">Commentary</span><span class="pill" id="articles-pill">1</span></a>
   </nav>
 
   <!-- ================= ERROR BANNER (shared) ================= -->
@@ -388,6 +416,14 @@
     </div>
   </section>
 
+  <!-- ================= ARTICLES VIEW ================= -->
+  <section class="view" data-tab="articles">
+    <div class="section-head" style="margin-top:0;">
+      <h2 data-i18n="tab.articles">Commentary</h2>
+    </div>
+    <div class="article-list" id="articles-list"></div>
+  </section>
+
   <footer class="foot" data-i18n-html="footer.text">
     Data from <code>scores.json</code> and <code>breadth.json</code>. Edits appear within seconds.
   </footer>
@@ -396,7 +432,10 @@
 <!-- Chart.js only used for the Breadth tab -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<!-- Markdown renderer used for the Articles tab -->
+<script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
 <script src="translations.js"></script>
+<script src="articles.js"></script>
 
 <script>
 /* ============================================================================
@@ -866,6 +905,58 @@ const Breadth = (() => {
 })();
 
 /* ============================================================================
+   ARTICLES CONTROLLER — renders ARTICLES array from articles.js
+   ============================================================================ */
+const Articles = (() => {
+  const state = { expanded: ARTICLES.length ? ARTICLES[0].id : null };
+
+  marked.use({ gfm: true, breaks: true });
+
+  function fmtDate(d){
+    try { return new Date(d + 'T00:00:00').toLocaleDateString(undefined, { year:'numeric', month:'long', day:'numeric' }); }
+    catch(_){ return d; }
+  }
+
+  function render(){
+    const wrap = document.getElementById('articles-list');
+    if (!wrap) return;
+    document.getElementById('articles-pill').textContent = ARTICLES.length;
+    wrap.innerHTML = ARTICLES.map(a => {
+      const open = state.expanded === a.id;
+      return `
+        <div class="article-card" data-aid="${a.id}">
+          <div class="article-header">
+            <div class="article-meta">
+              <span class="article-date">${fmtDate(a.date)}</span>
+              <span class="lang-badge">${a.lang.toUpperCase()}</span>
+            </div>
+            <div class="article-title">${a.title}</div>
+            <div class="article-summary">${a.summary}</div>
+            <div class="article-expand-hint">${open ? t('articles.collapse') : t('articles.expand')}</div>
+          </div>
+          ${open ? `<div class="article-body">${marked.parse(a.content)}</div>` : ''}
+        </div>`;
+    }).join('');
+  }
+
+  function bind(){
+    document.getElementById('articles-list').addEventListener('click', e => {
+      const header = e.target.closest('.article-header');
+      if (!header) return;
+      const aid = header.closest('.article-card')?.dataset.aid;
+      if (!aid) return;
+      state.expanded = state.expanded === aid ? null : aid;
+      render();
+    });
+  }
+
+  return {
+    init(){ bind(); render(); },
+    repaint(){ render(); },
+  };
+})();
+
+/* ============================================================================
    ROUTER — tab switching + hash URLs
    ============================================================================ */
 const Router = (() => {
@@ -873,15 +964,15 @@ const Router = (() => {
 
   function active(){ return current; }
   function show(name){
-    if (!['overview','breadth'].includes(name)) name = 'overview';
+    if (!['overview','breadth','articles'].includes(name)) name = 'overview';
     current = name;
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
     document.querySelectorAll('.view').forEach(v => v.classList.toggle('visible', v.dataset.tab === name));
-    // update status to reflect the now-active tab
     const upd = name === 'overview' ? Overview.lastUpdated() : Breadth.lastUpdated();
     if (upd) setStatus('live', `${t('status.live')} · ${fmtTime(upd)}`);
     if (name === 'breadth') Breadth.onShow();
-    document.title = name === 'breadth' ? t('title.breadth') : t('title.overview');
+    if (name === 'articles') Articles.repaint();
+    document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
   }
 
   function apply(){
@@ -946,16 +1037,18 @@ Theme.init();      // apply saved theme preference immediately
 Router.bind();
 Overview.init();
 Breadth.init();
+Articles.init();
 Router.apply();    // respect initial URL hash
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
   switchLang(currentLang === 'en' ? 'zh' : 'en');
   Overview.repaint();
   Breadth.repaint();
+  Articles.repaint();
   const name = Router.active();
   const upd = name === 'overview' ? Overview.lastUpdated() : Breadth.lastUpdated();
   if (upd) setStatus('live', `${t('status.live')} · ${fmtTime(upd)}`);
-  document.title = name === 'breadth' ? t('title.breadth') : t('title.overview');
+  document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
 });
 </script>
 </body>
