@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-24T01:06:08+00:00",
+  "updated_at": "2026-04-24T03:00:42+00:00",
   "indexes": [
     {
       "sym": "SPY",
@@ -7,7 +7,9 @@
       "price": 708.45,
       "chg": -0.39,
       "daily": 70,
-      "weekly": 55
+      "weekly": 55,
+      "marketCap": 650202710016,
+      "capCategory": "Mega Cap (>$200B)"
     },
     {
       "sym": "QQQ",
@@ -15,7 +17,9 @@
       "price": 651.42,
       "chg": -0.56,
       "daily": 70,
-      "weekly": 55
+      "weekly": 55,
+      "marketCap": 256073187328,
+      "capCategory": "Mega Cap (>$200B)"
     }
   ],
   "sectors": [
@@ -25,7 +29,9 @@
       "price": 117.39,
       "chg": -0.42,
       "daily": 45,
-      "weekly": 55
+      "weekly": 55,
+      "marketCap": 0,
+      "capCategory": "Unknown"
     },
     {
       "sym": "XLY",
@@ -33,7 +39,9 @@
       "price": 117.74,
       "chg": -1.0,
       "daily": 50,
-      "weekly": 55
+      "weekly": 55,
+      "marketCap": 14158587904,
+      "capCategory": "Large Cap ($10B-$200B)"
     },
     {
       "sym": "XLP",
@@ -41,7 +49,9 @@
       "price": 83.48,
       "chg": 1.67,
       "daily": 50,
-      "weekly": 80
+      "weekly": 80,
+      "marketCap": 17545158656,
+      "capCategory": "Large Cap ($10B-$200B)"
     },
     {
       "sym": "XLE",
@@ -49,7 +59,9 @@
       "price": 56.98,
       "chg": 0.78,
       "daily": 55,
-      "weekly": 80
+      "weekly": 80,
+      "marketCap": 10622439424,
+      "capCategory": "Large Cap ($10B-$200B)"
     },
     {
       "sym": "XLF",
@@ -57,7 +69,9 @@
       "price": 51.8,
       "chg": -0.79,
       "daily": 30,
-      "weekly": 45
+      "weekly": 45,
+      "marketCap": 45762449408,
+      "capCategory": "Large Cap ($10B-$200B)"
     },
     {
       "sym": "XLV",
@@ -65,7 +79,9 @@
       "price": 146.24,
       "chg": -0.1,
       "daily": 20,
-      "weekly": 40
+      "weekly": 40,
+      "marketCap": 28869971968,
+      "capCategory": "Large Cap ($10B-$200B)"
     },
     {
       "sym": "XLI",
@@ -73,7 +89,9 @@
       "price": 174.07,
       "chg": 1.77,
       "daily": 55,
-      "weekly": 90
+      "weekly": 90,
+      "marketCap": 23782488064,
+      "capCategory": "Large Cap ($10B-$200B)"
     },
     {
       "sym": "XLK",
@@ -81,7 +99,9 @@
       "price": 155.84,
       "chg": -1.42,
       "daily": 85,
-      "weekly": 65
+      "weekly": 65,
+      "marketCap": 42397204480,
+      "capCategory": "Large Cap ($10B-$200B)"
     },
     {
       "sym": "XLB",
@@ -89,7 +109,9 @@
       "price": 51.81,
       "chg": -0.04,
       "daily": 85,
-      "weekly": 90
+      "weekly": 90,
+      "marketCap": 3726366720,
+      "capCategory": "Mid Cap ($2B-$10B)"
     },
     {
       "sym": "XLRE",
@@ -97,7 +119,9 @@
       "price": 43.96,
       "chg": 1.15,
       "daily": 65,
-      "weekly": 95
+      "weekly": 95,
+      "marketCap": 0,
+      "capCategory": "Unknown"
     },
     {
       "sym": "XLU",
@@ -105,7 +129,9 @@
       "price": 46.09,
       "chg": 2.72,
       "daily": 50,
-      "weekly": 80
+      "weekly": 80,
+      "marketCap": 7525298688,
+      "capCategory": "Mid Cap ($2B-$10B)"
     }
   ],
   "stocks": {
@@ -113,29 +139,35 @@
       {
         "sym": "ADBE",
         "name": "Adobe Inc.",
-        "sector": "",
+        "sector": "XLK",
         "price": 238.98,
         "chg": -6.63,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 96595714048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AMD",
         "name": "Advanced Micro Devices",
-        "sector": "",
+        "sector": "XLK",
         "price": 305.33,
         "chg": 0.62,
         "daily": 80,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 497813323776,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "ABNB",
         "name": "Airbnb",
-        "sector": "",
+        "sector": "XLY",
         "price": 141.87,
         "chg": -1.6,
         "daily": 100,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 85053046784,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ALNY",
@@ -144,88 +176,108 @@
         "price": 313.79,
         "chg": 1.03,
         "daily": 0,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 41868345344,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GOOGL",
         "name": "Alphabet Inc. (Class A)",
-        "sector": "",
+        "sector": "XLC",
         "price": 338.89,
         "chg": -0.13,
         "daily": 75,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 4099552575488,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "GOOG",
         "name": "Alphabet Inc. (Class C)",
-        "sector": "",
+        "sector": "XLC",
         "price": 337.75,
         "chg": 0.01,
         "daily": 75,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 4085761966080,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AMZN",
         "name": "Amazon",
-        "sector": "",
+        "sector": "XLY",
         "price": 255.08,
         "chg": -0.11,
         "daily": 80,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 2743194615808,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AEP",
         "name": "American Electric Power",
-        "sector": "",
+        "sector": "XLU",
         "price": 135.08,
         "chg": 2.63,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 73424551936,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AMGN",
         "name": "Amgen",
-        "sector": "",
+        "sector": "XLV",
         "price": 348.62,
         "chg": 0.78,
         "daily": 40,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 187929755648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ADI",
         "name": "Analog Devices",
-        "sector": "",
+        "sector": "XLK",
         "price": 403.88,
         "chg": 5.89,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 197175902208,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AAPL",
         "name": "Apple Inc.",
-        "sector": "",
+        "sector": "XLK",
         "price": 273.43,
         "chg": 0.1,
         "daily": 75,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 4014264025088,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AMAT",
         "name": "Applied Materials",
-        "sector": "",
+        "sector": "XLK",
         "price": 403.91,
         "chg": 0.11,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 320546963456,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "APP",
         "name": "AppLovin",
-        "sector": "",
+        "sector": "XLK",
         "price": 454.17,
         "chg": -6.11,
         "daily": 20,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 152719622144,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ARM",
@@ -234,7 +286,9 @@
         "price": 204.61,
         "chg": 4.09,
         "daily": 80,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 217295536128,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "ASML",
@@ -243,97 +297,119 @@
         "price": 1417.8,
         "chg": -1.79,
         "daily": 50,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 546445197312,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "ADSK",
         "name": "Autodesk",
-        "sector": "",
+        "sector": "XLK",
         "price": 231.98,
         "chg": -6.3,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 48947777536,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ADP",
         "name": "Automatic Data Processing",
-        "sector": "",
+        "sector": "XLI",
         "price": 198.53,
         "chg": -1.57,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 79936978944,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AXON",
         "name": "Axon Enterprise",
-        "sector": "",
+        "sector": "XLI",
         "price": 392.64,
         "chg": -2.61,
         "daily": 10,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 31635869696,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BKR",
         "name": "Baker Hughes",
-        "sector": "",
+        "sector": "XLE",
         "price": 64.49,
         "chg": 3.12,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 63958429696,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BKNG",
         "name": "Booking Holdings",
-        "sector": "",
+        "sector": "XLY",
         "price": 176.75,
         "chg": -1.48,
         "daily": 30,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 137542107136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AVGO",
         "name": "Broadcom",
-        "sector": "",
+        "sector": "XLK",
         "price": 419.94,
         "chg": -0.64,
         "daily": 75,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 1988276649984,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CDNS",
         "name": "Cadence Design Systems",
-        "sector": "",
+        "sector": "XLK",
         "price": 314.33,
         "chg": -5.21,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 86784016384,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CHTR",
         "name": "Charter Communications",
-        "sector": "",
+        "sector": "XLC",
         "price": 241.78,
         "chg": -0.29,
         "daily": 30,
-        "weekly": 15
+        "weekly": 15,
+        "marketCap": 30616977408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CTAS",
         "name": "Cintas",
-        "sector": "",
+        "sector": "XLI",
         "price": 177.62,
         "chg": 1.69,
         "daily": 15,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 71063470080,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CSCO",
         "name": "Cisco",
-        "sector": "",
+        "sector": "XLK",
         "price": 88.59,
         "chg": -1.35,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 349921017856,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CCEP",
@@ -342,43 +418,53 @@
         "price": 97.33,
         "chg": 1.19,
         "daily": 45,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 43346763776,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CTSH",
         "name": "Cognizant",
-        "sector": "",
+        "sector": "XLK",
         "price": 55.1,
         "chg": -6.31,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 26351405056,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CMCSA",
         "name": "Comcast",
-        "sector": "",
+        "sector": "XLC",
         "price": 31.64,
         "chg": 7.73,
         "daily": 50,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 115292823552,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CEG",
         "name": "Constellation Energy",
-        "sector": "",
+        "sector": "XLU",
         "price": 292.77,
         "chg": 1.95,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 106069000192,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CPRT",
         "name": "Copart",
-        "sector": "",
+        "sector": "XLI",
         "price": 33.88,
         "chg": 0.59,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 32636891136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CSGP",
@@ -387,97 +473,119 @@
         "price": 37.38,
         "chg": -3.59,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 15842496512,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "COST",
         "name": "Costco",
-        "sector": "",
+        "sector": "XLP",
         "price": 1014.38,
         "chg": 1.06,
         "daily": 40,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 450032271360,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CRWD",
         "name": "CrowdStrike",
-        "sector": "",
+        "sector": "XLK",
         "price": 445.39,
         "chg": -4.56,
         "daily": 35,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 112957186048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CSX",
         "name": "CSX Corporation",
-        "sector": "",
+        "sector": "XLI",
         "price": 46.18,
         "chg": 6.95,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 85808857088,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DDOG",
         "name": "Datadog",
-        "sector": "",
+        "sector": "XLK",
         "price": 127.86,
         "chg": -3.24,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 45243432960,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DXCM",
         "name": "DexCom",
-        "sector": "",
+        "sector": "XLV",
         "price": 62.7,
         "chg": -1.12,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 24194236416,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FANG",
         "name": "Diamondback Energy",
-        "sector": "",
+        "sector": "XLE",
         "price": 195.59,
         "chg": 0.89,
         "daily": 55,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 55021764608,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DASH",
         "name": "DoorDash",
-        "sector": "",
+        "sector": "XLY",
         "price": 177.0,
         "chg": -2.89,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 77127114752,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EA",
         "name": "Electronic Arts",
-        "sector": "",
+        "sector": "XLC",
         "price": 202.51,
         "chg": -0.13,
         "daily": 40,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 50678878208,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EXC",
         "name": "Exelon",
-        "sector": "",
+        "sector": "XLU",
         "price": 46.75,
         "chg": 1.94,
         "daily": 20,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 47833436160,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FAST",
         "name": "Fastenal",
-        "sector": "",
+        "sector": "XLI",
         "price": 45.45,
         "chg": 1.43,
         "daily": 20,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 52178194432,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FER",
@@ -486,52 +594,64 @@
         "price": 69.89,
         "chg": -0.06,
         "daily": 75,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 50135519232,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FTNT",
         "name": "Fortinet",
-        "sector": "",
+        "sector": "XLK",
         "price": 82.76,
         "chg": -4.97,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 61236076544,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GEHC",
         "name": "GE HealthCare",
-        "sector": "",
+        "sector": "XLV",
         "price": 69.89,
         "chg": -2.09,
         "daily": 15,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 31890118656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GILD",
         "name": "Gilead Sciences",
-        "sector": "",
+        "sector": "XLV",
         "price": 133.64,
         "chg": 0.56,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 165874466816,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HON",
         "name": "Honeywell",
-        "sector": "",
+        "sector": "XLI",
         "price": 214.34,
         "chg": -2.56,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 135817207808,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IDXX",
         "name": "Idexx Laboratories",
-        "sector": "",
+        "sector": "XLV",
         "price": 560.93,
         "chg": -3.01,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 44663508992,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "INSM",
@@ -540,88 +660,108 @@
         "price": 143.83,
         "chg": -0.45,
         "daily": 10,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 31046014976,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "INTC",
         "name": "Intel",
-        "sector": "",
+        "sector": "XLK",
         "price": 66.78,
         "chg": 2.31,
         "daily": 90,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 335303081984,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "INTU",
         "name": "Intuit",
-        "sector": "",
+        "sector": "XLK",
         "price": 383.3,
         "chg": -6.21,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 106662453248,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ISRG",
         "name": "Intuitive Surgical",
-        "sector": "",
+        "sector": "XLV",
         "price": 478.82,
         "chg": -0.99,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 169580265472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KDP",
         "name": "Keurig Dr Pepper",
-        "sector": "",
+        "sector": "XLP",
         "price": 28.53,
         "chg": 7.5,
         "daily": 50,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 38813204480,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KLAC",
         "name": "KLA Corporation",
-        "sector": "",
+        "sector": "XLK",
         "price": 1815.43,
         "chg": 0.19,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 238533591040,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "KHC",
         "name": "Kraft Heinz",
-        "sector": "",
+        "sector": "XLP",
         "price": 21.97,
         "chg": 0.37,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 26006872064,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LRCX",
         "name": "Lam Research",
-        "sector": "",
+        "sector": "XLK",
         "price": 258.56,
         "chg": -2.63,
         "daily": 80,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 323339354112,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "LIN",
         "name": "Linde plc",
-        "sector": "",
+        "sector": "XLB",
         "price": 508.06,
         "chg": 2.72,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 235432034304,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MAR",
         "name": "Marriott International",
-        "sector": "",
+        "sector": "XLY",
         "price": 368.24,
         "chg": 0.3,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 97577910272,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MRVL",
@@ -630,7 +770,9 @@
         "price": 165.56,
         "chg": 5.24,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 144775299072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MELI",
@@ -639,43 +781,53 @@
         "price": 1809.2,
         "chg": -2.78,
         "daily": 15,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 91721342976,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "META",
         "name": "Meta Platforms",
-        "sector": "",
+        "sector": "XLC",
         "price": 659.15,
         "chg": -2.31,
         "daily": 15,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 1673201713152,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MCHP",
         "name": "Microchip Technology",
-        "sector": "",
+        "sector": "XLK",
         "price": 90.64,
         "chg": 9.89,
         "daily": 95,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 49048518656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MU",
         "name": "Micron Technology",
-        "sector": "",
+        "sector": "XLK",
         "price": 481.72,
         "chg": -1.18,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 543252021248,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MSFT",
         "name": "Microsoft",
-        "sector": "",
+        "sector": "XLK",
         "price": 415.75,
         "chg": -3.97,
         "daily": 20,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 3090011127808,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MSTR",
@@ -684,124 +836,152 @@
         "price": 172.47,
         "chg": -3.84,
         "daily": 35,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 60180860928,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MDLZ",
         "name": "Mondelez International",
-        "sector": "",
+        "sector": "XLP",
         "price": 57.71,
         "chg": 2.94,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 74068279296,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MPWR",
         "name": "Monolithic Power Systems",
-        "sector": "",
+        "sector": "XLK",
         "price": 1592.17,
         "chg": 4.61,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 78204207104,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MNST",
         "name": "Monster Beverage",
-        "sector": "",
+        "sector": "XLP",
         "price": 77.56,
         "chg": 2.12,
         "daily": 55,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 75846393856,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NFLX",
         "name": "Netflix, Inc.",
-        "sector": "",
+        "sector": "XLC",
         "price": 92.82,
         "chg": -0.45,
         "daily": 35,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 390846316544,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "NVDA",
         "name": "Nvidia",
-        "sector": "",
+        "sector": "XLK",
         "price": 199.64,
         "chg": -1.41,
         "daily": 95,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 4852250312704,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "NXPI",
         "name": "NXP Semiconductors",
-        "sector": "",
+        "sector": "XLK",
         "price": 241.16,
         "chg": 6.83,
         "daily": 50,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 60939407360,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ORLY",
         "name": "O'Reilly Automotive",
-        "sector": "",
+        "sector": "XLY",
         "price": 93.24,
         "chg": -0.72,
         "daily": 30,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 78180532224,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ODFL",
         "name": "Old Dominion Freight Line",
-        "sector": "",
+        "sector": "XLI",
         "price": 222.78,
         "chg": 1.27,
         "daily": 95,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 46433058816,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PCAR",
         "name": "Paccar",
-        "sector": "",
+        "sector": "XLI",
         "price": 126.97,
         "chg": 1.36,
         "daily": 90,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 66772815872,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PLTR",
         "name": "Palantir Technologies",
-        "sector": "",
+        "sector": "XLK",
         "price": 141.57,
         "chg": -7.24,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 338589548544,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "PANW",
         "name": "Palo Alto Networks",
-        "sector": "",
+        "sector": "XLK",
         "price": 173.21,
         "chg": -4.41,
         "daily": 30,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 140473319424,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PAYX",
         "name": "Paychex",
-        "sector": "",
+        "sector": "XLI",
         "price": 90.95,
         "chg": -2.65,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 32586555392,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PYPL",
         "name": "PayPal",
-        "sector": "",
+        "sector": "XLF",
         "price": 49.75,
         "chg": -2.87,
         "daily": 35,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 44758781952,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PDD",
@@ -810,70 +990,86 @@
         "price": 97.77,
         "chg": -2.28,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 138798825472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PEP",
         "name": "PepsiCo",
-        "sector": "",
+        "sector": "XLP",
         "price": 155.7,
         "chg": 1.24,
         "daily": 30,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 212832698368,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "QCOM",
         "name": "Qualcomm",
-        "sector": "",
+        "sector": "XLK",
         "price": 133.95,
         "chg": -1.56,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 143064645632,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "REGN",
         "name": "Regeneron Pharmaceuticals",
-        "sector": "",
+        "sector": "XLV",
         "price": 766.02,
         "chg": 2.6,
         "daily": 50,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 80983490560,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ROP",
         "name": "Roper Technologies",
-        "sector": "",
+        "sector": "XLK",
         "price": 363.76,
         "chg": -0.27,
         "daily": 35,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 37440913408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ROST",
         "name": "Ross Stores",
-        "sector": "",
+        "sector": "XLY",
         "price": 226.92,
         "chg": 0.26,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 73396125696,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SNDK",
         "name": "Sandisk",
-        "sector": "",
+        "sector": "XLK",
         "price": 932.43,
         "chg": -4.76,
         "daily": 90,
-        "weekly": null
+        "weekly": 87,
+        "marketCap": 137627582464,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "STX",
         "name": "Seagate Technology",
-        "sector": "",
+        "sector": "XLK",
         "price": 587.62,
         "chg": 1.33,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 131641786368,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SHOP",
@@ -882,61 +1078,75 @@
         "price": 124.23,
         "chg": -5.86,
         "daily": 20,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 161621639168,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SBUX",
         "name": "Starbucks",
-        "sector": "",
+        "sector": "XLY",
         "price": 99.54,
         "chg": 0.02,
         "daily": 65,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 113405919232,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SNPS",
         "name": "Synopsys",
-        "sector": "",
+        "sector": "XLK",
         "price": 456.85,
         "chg": -4.28,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 87515111424,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TMUS",
         "name": "T-Mobile US",
-        "sector": "",
+        "sector": "XLC",
         "price": 194.07,
         "chg": 2.73,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 213838512128,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "TTWO",
         "name": "Take-Two Interactive",
-        "sector": "",
+        "sector": "XLC",
         "price": 209.9,
         "chg": -3.8,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 38868328448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TSLA",
         "name": "Tesla, Inc.",
-        "sector": "",
+        "sector": "XLY",
         "price": 373.72,
         "chg": -3.56,
         "daily": 20,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 1403589099520,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "TXN",
         "name": "Texas Instruments",
-        "sector": "",
+        "sector": "XLK",
         "price": 282.23,
         "chg": 19.43,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 256829308928,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "TRI",
@@ -945,70 +1155,86 @@
         "price": 90.18,
         "chg": -2.89,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 39946350592,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VRSK",
         "name": "Verisk Analytics",
-        "sector": "",
+        "sector": "XLI",
         "price": 177.14,
         "chg": -0.98,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 23205435392,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VRTX",
         "name": "Vertex Pharmaceuticals",
-        "sector": "",
+        "sector": "XLV",
         "price": 435.1,
         "chg": -0.59,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 110671921152,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WMT",
         "name": "Walmart",
-        "sector": "",
+        "sector": "XLP",
         "price": 132.03,
         "chg": 1.58,
         "daily": 100,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 1052596305920,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "WBD",
         "name": "Warner Bros. Discovery",
-        "sector": "",
+        "sector": "XLC",
         "price": 26.9,
         "chg": -1.57,
         "daily": 25,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 67432067072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WDC",
         "name": "Western Digital",
-        "sector": "",
+        "sector": "XLK",
         "price": 403.12,
         "chg": 3.6,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 137826435072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WDAY",
         "name": "Workday, Inc.",
-        "sector": "",
+        "sector": "XLK",
         "price": 114.67,
         "chg": -9.42,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 29475807232,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "XEL",
         "name": "Xcel Energy",
-        "sector": "",
+        "sector": "XLU",
         "price": 79.48,
         "chg": 1.75,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 49608413184,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ZS",
@@ -1017,7 +1243,9 @@
         "price": 132.97,
         "chg": -6.79,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 21380339712,
+        "capCategory": "Large Cap ($10B-$200B)"
       }
     ],
     "spx": [
@@ -1028,7 +1256,9 @@
         "price": 144.84,
         "chg": -0.64,
         "daily": 15,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 75543797760,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AOS",
@@ -1037,7 +1267,9 @@
         "price": 65.09,
         "chg": 0.43,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 8998028288,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "ABT",
@@ -1046,7 +1278,9 @@
         "price": 92.48,
         "chg": 0.85,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 160700923904,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ABBV",
@@ -1055,7 +1289,9 @@
         "price": 200.95,
         "chg": 0.22,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 355432792064,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "ACN",
@@ -1064,7 +1300,9 @@
         "price": 178.28,
         "chg": -6.22,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 109719773184,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ADBE",
@@ -1073,7 +1311,9 @@
         "price": 238.98,
         "chg": -6.63,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 96595714048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AMD",
@@ -1082,7 +1322,9 @@
         "price": 305.33,
         "chg": 0.62,
         "daily": 80,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 497813323776,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AES",
@@ -1091,7 +1333,9 @@
         "price": 14.5,
         "chg": 0.35,
         "daily": 45,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 10339538944,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AFL",
@@ -1100,7 +1344,9 @@
         "price": 115.12,
         "chg": 0.32,
         "daily": 75,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 59307945984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "A",
@@ -1109,7 +1355,9 @@
         "price": 114.42,
         "chg": -5.02,
         "daily": 15,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 32335355904,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "APD",
@@ -1118,7 +1366,9 @@
         "price": 303.65,
         "chg": 2.32,
         "daily": 80,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 67609493504,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ABNB",
@@ -1127,7 +1377,9 @@
         "price": 141.87,
         "chg": -1.6,
         "daily": 100,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 85053046784,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AKAM",
@@ -1136,7 +1388,9 @@
         "price": 96.18,
         "chg": -0.96,
         "daily": 50,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 14159911936,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ALB",
@@ -1145,7 +1399,9 @@
         "price": 193.14,
         "chg": -0.56,
         "daily": 95,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 22768672768,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ARE",
@@ -1154,7 +1410,9 @@
         "price": 46.38,
         "chg": -0.58,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 8029634560,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "ALGN",
@@ -1163,7 +1421,9 @@
         "price": 190.67,
         "chg": -2.74,
         "daily": 65,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 13655265280,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ALLE",
@@ -1172,7 +1432,9 @@
         "price": 147.42,
         "chg": 1.72,
         "daily": 20,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 12668648448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LNT",
@@ -1181,7 +1443,9 @@
         "price": 72.63,
         "chg": 2.35,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 18758619136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ALL",
@@ -1190,7 +1454,9 @@
         "price": 216.56,
         "chg": 1.12,
         "daily": 85,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 55921704960,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GOOGL",
@@ -1199,7 +1465,9 @@
         "price": 338.89,
         "chg": -0.13,
         "daily": 75,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 4099552575488,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "GOOG",
@@ -1208,7 +1476,9 @@
         "price": 337.75,
         "chg": 0.01,
         "daily": 75,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 4085761966080,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MO",
@@ -1217,7 +1487,9 @@
         "price": 67.15,
         "chg": 3.02,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 112267960320,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AMZN",
@@ -1226,7 +1498,9 @@
         "price": 255.08,
         "chg": -0.11,
         "daily": 80,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 2743194615808,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AMCR",
@@ -1235,7 +1509,9 @@
         "price": 39.64,
         "chg": -1.56,
         "daily": 15,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 18315491328,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AEE",
@@ -1244,7 +1520,9 @@
         "price": 112.05,
         "chg": 2.57,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 30998992896,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AEP",
@@ -1253,7 +1531,9 @@
         "price": 135.08,
         "chg": 2.63,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 73424551936,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AXP",
@@ -1262,7 +1542,9 @@
         "price": 318.55,
         "chg": -4.31,
         "daily": 30,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 217251086336,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AIG",
@@ -1271,7 +1553,9 @@
         "price": 76.33,
         "chg": 0.39,
         "daily": 15,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 40826384384,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AMT",
@@ -1280,7 +1564,9 @@
         "price": 179.01,
         "chg": 1.53,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 83484901376,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AWK",
@@ -1289,7 +1575,9 @@
         "price": 134.97,
         "chg": 2.93,
         "daily": 40,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 26356957184,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AMP",
@@ -1298,7 +1586,9 @@
         "price": 459.63,
         "chg": -1.9,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 41683693568,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AME",
@@ -1307,7 +1597,9 @@
         "price": 235.0,
         "chg": 1.97,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 53830373376,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AMGN",
@@ -1316,7 +1608,9 @@
         "price": 348.62,
         "chg": 0.78,
         "daily": 40,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 187929755648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "APH",
@@ -1325,7 +1619,9 @@
         "price": 150.18,
         "chg": 1.38,
         "daily": 65,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 184635883520,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ADI",
@@ -1334,7 +1630,9 @@
         "price": 403.88,
         "chg": 5.89,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 197175902208,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AON",
@@ -1343,7 +1641,9 @@
         "price": 323.56,
         "chg": -1.01,
         "daily": 35,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 69544452096,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "APA",
@@ -1352,7 +1652,9 @@
         "price": 38.66,
         "chg": 1.58,
         "daily": 55,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 13662459904,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "APO",
@@ -1361,7 +1663,9 @@
         "price": 124.77,
         "chg": -3.32,
         "daily": 35,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 72147918848,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AAPL",
@@ -1370,7 +1674,9 @@
         "price": 273.43,
         "chg": 0.1,
         "daily": 75,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 4014264025088,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AMAT",
@@ -1379,7 +1685,9 @@
         "price": 403.91,
         "chg": 0.11,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 320546963456,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "APP",
@@ -1388,7 +1696,9 @@
         "price": 454.17,
         "chg": -6.11,
         "daily": 20,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 152719622144,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "APTV",
@@ -1397,7 +1707,9 @@
         "price": 60.41,
         "chg": -0.74,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 15171734528,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ACGL",
@@ -1406,7 +1718,9 @@
         "price": 98.07,
         "chg": 1.34,
         "daily": 75,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 34939674624,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ADM",
@@ -1415,7 +1729,9 @@
         "price": 70.03,
         "chg": 0.86,
         "daily": 50,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 33747113984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ARES",
@@ -1424,7 +1740,9 @@
         "price": 114.78,
         "chg": -5.18,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 25884444672,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ANET",
@@ -1433,7 +1751,9 @@
         "price": 172.55,
         "chg": -2.91,
         "daily": 80,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 217269682176,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "AJG",
@@ -1442,7 +1762,9 @@
         "price": 219.37,
         "chg": -0.79,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 56400027648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AIZ",
@@ -1451,7 +1773,9 @@
         "price": 230.46,
         "chg": 0.61,
         "daily": 65,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 11473911808,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "T",
@@ -1460,7 +1784,9 @@
         "price": 26.61,
         "chg": 2.42,
         "daily": 40,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 185794904064,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ATO",
@@ -1469,7 +1795,9 @@
         "price": 187.81,
         "chg": 2.92,
         "daily": 60,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 31071088640,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ADSK",
@@ -1478,7 +1806,9 @@
         "price": 231.98,
         "chg": -6.3,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 48947777536,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ADP",
@@ -1487,7 +1817,9 @@
         "price": 198.53,
         "chg": -1.57,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 79936978944,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AZO",
@@ -1496,7 +1828,9 @@
         "price": 3597.2,
         "chg": 0.2,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 59597766656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AVB",
@@ -1505,7 +1839,9 @@
         "price": 173.35,
         "chg": 1.19,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 24114933760,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AVY",
@@ -1514,7 +1850,9 @@
         "price": 167.43,
         "chg": 0.23,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 12878218240,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AXON",
@@ -1523,7 +1861,9 @@
         "price": 392.64,
         "chg": -2.61,
         "daily": 10,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 31635869696,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BKR",
@@ -1532,7 +1872,9 @@
         "price": 64.49,
         "chg": 3.12,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 63958429696,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BALL",
@@ -1541,7 +1883,9 @@
         "price": 63.12,
         "chg": 0.72,
         "daily": 50,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 16799580160,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BAC",
@@ -1550,7 +1894,9 @@
         "price": 52.47,
         "chg": -1.22,
         "daily": 60,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 374106292224,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "BAX",
@@ -1559,7 +1905,9 @@
         "price": 18.41,
         "chg": 0.55,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 9504208896,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "BDX",
@@ -1568,7 +1916,9 @@
         "price": 154.85,
         "chg": -0.51,
         "daily": 30,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 44049661952,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BRK-B",
@@ -1577,7 +1927,9 @@
         "price": 470.55,
         "chg": 1.11,
         "daily": 10,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 1014915596288,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "BBY",
@@ -1586,7 +1938,9 @@
         "price": 61.5,
         "chg": -3.2,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 12886409216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TECH",
@@ -1595,7 +1949,9 @@
         "price": 52.2,
         "chg": -10.89,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 8166862336,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "BIIB",
@@ -1604,7 +1960,9 @@
         "price": 187.88,
         "chg": -1.15,
         "daily": 60,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 27572992000,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BLK",
@@ -1613,7 +1971,9 @@
         "price": 1053.47,
         "chg": -0.85,
         "daily": 15,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 163672326144,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BX",
@@ -1622,7 +1982,9 @@
         "price": 122.33,
         "chg": -5.7,
         "daily": 35,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 149519319040,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "XYZ",
@@ -1631,7 +1993,9 @@
         "price": 69.93,
         "chg": -3.54,
         "daily": 75,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 42494013440,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BK",
@@ -1640,7 +2004,9 @@
         "price": 135.42,
         "chg": -0.34,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 92949446656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BA",
@@ -1649,7 +2015,9 @@
         "price": 234.15,
         "chg": 1.24,
         "daily": 45,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 184580980736,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BKNG",
@@ -1658,7 +2026,9 @@
         "price": 176.75,
         "chg": -1.48,
         "daily": 30,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 137542107136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BSX",
@@ -1667,7 +2037,9 @@
         "price": 65.69,
         "chg": 1.26,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 97626849280,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BMY",
@@ -1676,7 +2048,9 @@
         "price": 59.02,
         "chg": 0.37,
         "daily": 55,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 120503222272,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "AVGO",
@@ -1685,7 +2059,9 @@
         "price": 419.94,
         "chg": -0.64,
         "daily": 75,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 1988276649984,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "BR",
@@ -1694,7 +2070,9 @@
         "price": 155.95,
         "chg": -2.92,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 18206961664,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BRO",
@@ -1703,7 +2081,9 @@
         "price": 67.55,
         "chg": -0.49,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 22995374080,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BF-B",
@@ -1712,7 +2092,9 @@
         "price": 28.4,
         "chg": -0.46,
         "daily": 70,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 13027182592,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BLDR",
@@ -1721,7 +2103,9 @@
         "price": 90.14,
         "chg": -0.54,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 9691436032,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "BG",
@@ -1730,7 +2114,9 @@
         "price": 126.42,
         "chg": 0.52,
         "daily": 55,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 24501512192,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BXP",
@@ -1739,7 +2125,9 @@
         "price": 57.0,
         "chg": -2.21,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 9044530176,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "CHRW",
@@ -1748,7 +2136,9 @@
         "price": 183.74,
         "chg": 0.76,
         "daily": 55,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 21795391488,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CDNS",
@@ -1757,7 +2147,9 @@
         "price": 314.33,
         "chg": -5.21,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 86784016384,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CPT",
@@ -1766,7 +2158,9 @@
         "price": 102.43,
         "chg": 0.94,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 10727136256,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CPB",
@@ -1775,7 +2169,9 @@
         "price": 20.96,
         "chg": 0.67,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 6249150464,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "COF",
@@ -1784,7 +2180,9 @@
         "price": 196.63,
         "chg": -1.4,
         "daily": 15,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 124701941760,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CAH",
@@ -1793,7 +2191,9 @@
         "price": 204.72,
         "chg": 2.08,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 48173895680,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CCL",
@@ -1802,7 +2202,9 @@
         "price": 26.65,
         "chg": -1.08,
         "daily": 15,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 36913971200,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CARR",
@@ -1811,7 +2213,9 @@
         "price": 61.54,
         "chg": 1.47,
         "daily": 45,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 51412570112,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CVNA",
@@ -1820,7 +2224,9 @@
         "price": 403.02,
         "chg": -3.3,
         "daily": 65,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 57629351936,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CASY",
@@ -1829,7 +2235,9 @@
         "price": 789.82,
         "chg": 0.88,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 29276205056,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CAT",
@@ -1838,7 +2246,9 @@
         "price": 835.24,
         "chg": 3.26,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 388626579456,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CBOE",
@@ -1847,7 +2257,9 @@
         "price": 300.12,
         "chg": 0.9,
         "daily": 80,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 31435249664,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CBRE",
@@ -1856,7 +2268,9 @@
         "price": 149.31,
         "chg": -2.74,
         "daily": 35,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 43768844288,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CDW",
@@ -1865,7 +2279,9 @@
         "price": 136.47,
         "chg": -4.19,
         "daily": 35,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 17603753984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "COR",
@@ -1874,7 +2290,9 @@
         "price": 311.39,
         "chg": 1.0,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 60574912512,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CNC",
@@ -1883,7 +2301,9 @@
         "price": 41.09,
         "chg": 5.55,
         "daily": 55,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 20206931968,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CNP",
@@ -1892,7 +2312,9 @@
         "price": 43.18,
         "chg": 2.52,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 28247037952,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CF",
@@ -1901,7 +2323,9 @@
         "price": 125.59,
         "chg": 2.56,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 19292686336,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CRL",
@@ -1910,7 +2334,9 @@
         "price": 167.74,
         "chg": -9.23,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 8276620800,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "SCHW",
@@ -1919,7 +2345,9 @@
         "price": 88.92,
         "chg": -3.04,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 155806547968,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CHTR",
@@ -1928,7 +2356,9 @@
         "price": 241.78,
         "chg": -0.29,
         "daily": 30,
-        "weekly": 15
+        "weekly": 15,
+        "marketCap": 30616977408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CVX",
@@ -1937,7 +2367,9 @@
         "price": 187.6,
         "chg": 0.69,
         "daily": 60,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 373680209920,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CMG",
@@ -1946,7 +2378,9 @@
         "price": 33.9,
         "chg": -3.45,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 44152143872,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CB",
@@ -1955,7 +2389,9 @@
         "price": 332.88,
         "chg": 2.29,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 129322409984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CHD",
@@ -1964,7 +2400,9 @@
         "price": 94.58,
         "chg": 1.81,
         "daily": 25,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 22403645440,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CIEN",
@@ -1973,7 +2411,9 @@
         "price": 515.85,
         "chg": 3.38,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 72940380160,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CI",
@@ -1982,7 +2422,9 @@
         "price": 279.72,
         "chg": 1.83,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 73751191552,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CINF",
@@ -1991,7 +2433,9 @@
         "price": 168.18,
         "chg": 1.15,
         "daily": 45,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 26183305216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CTAS",
@@ -2000,7 +2444,9 @@
         "price": 177.62,
         "chg": 1.69,
         "daily": 15,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 71063470080,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CSCO",
@@ -2009,7 +2455,9 @@
         "price": 88.59,
         "chg": -1.35,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 349921017856,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "C",
@@ -2018,7 +2466,9 @@
         "price": 128.51,
         "chg": -0.94,
         "daily": 80,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 224804978688,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CFG",
@@ -2027,7 +2477,9 @@
         "price": 65.17,
         "chg": 0.02,
         "daily": 90,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 27763955712,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CLX",
@@ -2036,7 +2488,9 @@
         "price": 97.66,
         "chg": 0.84,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 11808252928,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CME",
@@ -2045,7 +2499,9 @@
         "price": 285.47,
         "chg": -0.08,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 103570825216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CMS",
@@ -2054,7 +2510,9 @@
         "price": 76.62,
         "chg": 2.19,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 23598702592,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KO",
@@ -2063,7 +2521,9 @@
         "price": 76.28,
         "chg": 2.21,
         "daily": 50,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 328320778240,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CTSH",
@@ -2072,7 +2532,9 @@
         "price": 55.1,
         "chg": -6.31,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 26351405056,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "COHR",
@@ -2081,7 +2543,9 @@
         "price": 337.68,
         "chg": -3.65,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 63308873728,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "COIN",
@@ -2090,7 +2554,9 @@
         "price": 197.93,
         "chg": -4.03,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 52268396544,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CL",
@@ -2099,7 +2565,9 @@
         "price": 83.72,
         "chg": 1.66,
         "daily": 40,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 67168714752,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CMCSA",
@@ -2108,7 +2576,9 @@
         "price": 31.64,
         "chg": 7.73,
         "daily": 50,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 115292823552,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FIX",
@@ -2117,7 +2587,9 @@
         "price": 1773.91,
         "chg": 2.87,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 62413193216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CAG",
@@ -2126,7 +2598,9 @@
         "price": 14.41,
         "chg": -0.83,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 6894279168,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "COP",
@@ -2135,7 +2609,9 @@
         "price": 124.37,
         "chg": 1.44,
         "daily": 55,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 151588749312,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ED",
@@ -2144,7 +2620,9 @@
         "price": 110.25,
         "chg": 1.96,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 40618442752,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "STZ",
@@ -2153,7 +2631,9 @@
         "price": 159.31,
         "chg": 1.55,
         "daily": 85,
-        "weekly": 15
+        "weekly": 15,
+        "marketCap": 27432937472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CEG",
@@ -2162,7 +2642,9 @@
         "price": 292.77,
         "chg": 1.95,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 106069000192,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "COO",
@@ -2171,7 +2653,9 @@
         "price": 64.95,
         "chg": -2.94,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 12672679936,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CPRT",
@@ -2180,7 +2664,9 @@
         "price": 33.88,
         "chg": 0.59,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 32636891136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GLW",
@@ -2189,7 +2675,9 @@
         "price": 169.5,
         "chg": 0.44,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 145603018752,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CPAY",
@@ -2198,7 +2686,9 @@
         "price": 313.47,
         "chg": -5.21,
         "daily": 30,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 20730394624,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CTVA",
@@ -2207,7 +2697,9 @@
         "price": 79.63,
         "chg": 0.35,
         "daily": 40,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 53460115456,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CSGP",
@@ -2216,7 +2708,9 @@
         "price": 37.38,
         "chg": -3.59,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 15842496512,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "COST",
@@ -2225,7 +2719,9 @@
         "price": 1014.38,
         "chg": 1.06,
         "daily": 40,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 450032271360,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "CTRA",
@@ -2234,7 +2730,9 @@
         "price": 33.65,
         "chg": 2.19,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 25552218112,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CRH",
@@ -2243,7 +2741,9 @@
         "price": 117.16,
         "chg": 0.92,
         "daily": 45,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 78286348288,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CRWD",
@@ -2252,7 +2752,9 @@
         "price": 445.39,
         "chg": -4.56,
         "daily": 35,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 112957186048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CCI",
@@ -2261,7 +2763,9 @@
         "price": 87.52,
         "chg": 1.76,
         "daily": 15,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 38190870528,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CSX",
@@ -2270,7 +2774,9 @@
         "price": 46.18,
         "chg": 6.95,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 85808857088,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CMI",
@@ -2279,7 +2785,9 @@
         "price": 656.93,
         "chg": 2.77,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 90825449472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CVS",
@@ -2288,7 +2796,9 @@
         "price": 78.86,
         "chg": 3.18,
         "daily": 45,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 101067317248,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DHR",
@@ -2297,7 +2807,9 @@
         "price": 178.57,
         "chg": -2.97,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 126386601984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DRI",
@@ -2306,7 +2818,9 @@
         "price": 202.34,
         "chg": 1.31,
         "daily": 50,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 23175012352,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DDOG",
@@ -2315,7 +2829,9 @@
         "price": 127.86,
         "chg": -3.24,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 45243432960,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DVA",
@@ -2324,7 +2840,9 @@
         "price": 155.03,
         "chg": 1.71,
         "daily": 70,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 10223351808,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DECK",
@@ -2333,7 +2851,9 @@
         "price": 107.71,
         "chg": 0.02,
         "daily": 45,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 15289431040,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DE",
@@ -2342,7 +2862,9 @@
         "price": 591.95,
         "chg": 2.06,
         "daily": 55,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 159890014208,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DELL",
@@ -2351,7 +2873,9 @@
         "price": 212.14,
         "chg": -1.17,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 137931030528,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DAL",
@@ -2360,7 +2884,9 @@
         "price": 68.37,
         "chg": -0.06,
         "daily": 60,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 44918689792,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DVN",
@@ -2369,7 +2895,9 @@
         "price": 48.15,
         "chg": 2.19,
         "daily": 55,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 29922353152,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DXCM",
@@ -2378,7 +2906,9 @@
         "price": 62.7,
         "chg": -1.12,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 24194236416,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FANG",
@@ -2387,7 +2917,9 @@
         "price": 195.59,
         "chg": 0.89,
         "daily": 55,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 55021764608,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DLR",
@@ -2396,7 +2928,9 @@
         "price": 200.0,
         "chg": -0.43,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 69791088640,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DG",
@@ -2405,7 +2939,9 @@
         "price": 122.06,
         "chg": -0.93,
         "daily": 30,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 26880823296,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DLTR",
@@ -2414,7 +2950,9 @@
         "price": 102.25,
         "chg": 0.27,
         "daily": 10,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 20173744128,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "D",
@@ -2423,7 +2961,9 @@
         "price": 62.52,
         "chg": 2.58,
         "daily": 40,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 54952873984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DPZ",
@@ -2432,7 +2972,9 @@
         "price": 372.39,
         "chg": 1.77,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 12521874432,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DASH",
@@ -2441,7 +2983,9 @@
         "price": 177.0,
         "chg": -2.89,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 77127114752,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DOV",
@@ -2450,7 +2994,9 @@
         "price": 228.15,
         "chg": 5.54,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 30723000320,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DOW",
@@ -2459,7 +3005,9 @@
         "price": 38.53,
         "chg": -0.72,
         "daily": 55,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 27770167296,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DHI",
@@ -2468,7 +3016,9 @@
         "price": 164.22,
         "chg": 1.89,
         "daily": 50,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 46792994816,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DTE",
@@ -2477,7 +3027,9 @@
         "price": 147.4,
         "chg": 2.67,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 30663342080,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DUK",
@@ -2486,7 +3038,9 @@
         "price": 128.04,
         "chg": 2.23,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 99642859520,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DD",
@@ -2495,7 +3049,9 @@
         "price": 46.37,
         "chg": 0.85,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 19006005248,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ETN",
@@ -2504,7 +3060,9 @@
         "price": 424.5,
         "chg": 2.57,
         "daily": 80,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 164699783168,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EBAY",
@@ -2513,7 +3071,9 @@
         "price": 103.4,
         "chg": -2.11,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 46323200000,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SATS",
@@ -2522,7 +3082,9 @@
         "price": 121.52,
         "chg": -0.69,
         "daily": 80,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 35104194560,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ECL",
@@ -2531,7 +3093,9 @@
         "price": 271.45,
         "chg": 0.94,
         "daily": 15,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 76663939072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EIX",
@@ -2540,7 +3104,9 @@
         "price": 70.34,
         "chg": 1.38,
         "daily": 35,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 27074283520,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EW",
@@ -2549,7 +3115,9 @@
         "price": 79.72,
         "chg": -2.22,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 45961904128,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EA",
@@ -2558,7 +3126,9 @@
         "price": 202.51,
         "chg": -0.13,
         "daily": 40,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 50678878208,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ELV",
@@ -2567,7 +3137,9 @@
         "price": 346.29,
         "chg": 5.51,
         "daily": 60,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 75201167360,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EME",
@@ -2576,7 +3148,9 @@
         "price": 873.11,
         "chg": 1.52,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 38881828864,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EMR",
@@ -2585,7 +3159,9 @@
         "price": 142.44,
         "chg": -0.23,
         "daily": 35,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 80051281920,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ETR",
@@ -2594,7 +3170,9 @@
         "price": 113.92,
         "chg": 3.12,
         "daily": 75,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 52152418304,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EOG",
@@ -2603,7 +3181,9 @@
         "price": 133.87,
         "chg": 0.65,
         "daily": 60,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 71716274176,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EPAM",
@@ -2612,7 +3192,9 @@
         "price": 120.77,
         "chg": -6.47,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 6371444224,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "EQT",
@@ -2621,7 +3203,9 @@
         "price": 58.93,
         "chg": 0.36,
         "daily": 40,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 36859420672,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EFX",
@@ -2630,7 +3214,9 @@
         "price": 174.93,
         "chg": -2.09,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 21102610432,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EQIX",
@@ -2639,7 +3225,9 @@
         "price": 1115.29,
         "chg": 1.18,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 109993795584,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EQR",
@@ -2648,7 +3236,9 @@
         "price": 62.65,
         "chg": 1.54,
         "daily": 45,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 23473371136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ERIE",
@@ -2657,7 +3247,9 @@
         "price": 248.9,
         "chg": -0.44,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 13014947840,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ESS",
@@ -2666,7 +3258,9 @@
         "price": 255.06,
         "chg": 1.14,
         "daily": 45,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 16445536256,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EL",
@@ -2675,7 +3269,9 @@
         "price": 76.4,
         "chg": -0.34,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 27635945472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EG",
@@ -2684,7 +3280,9 @@
         "price": 350.81,
         "chg": 1.68,
         "daily": 65,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 14039467008,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EVRG",
@@ -2693,7 +3291,9 @@
         "price": 81.89,
         "chg": 2.83,
         "daily": 50,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 18857967616,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ES",
@@ -2702,7 +3302,9 @@
         "price": 68.77,
         "chg": 2.57,
         "daily": 40,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 25846882304,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EXC",
@@ -2711,7 +3313,9 @@
         "price": 46.75,
         "chg": 1.94,
         "daily": 20,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 47833436160,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EXE",
@@ -2720,7 +3324,9 @@
         "price": 96.3,
         "chg": -0.06,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 23150352384,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EXPE",
@@ -2729,7 +3335,9 @@
         "price": 250.37,
         "chg": -5.38,
         "daily": 65,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 30679054336,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EXPD",
@@ -2738,7 +3346,9 @@
         "price": 149.75,
         "chg": 0.88,
         "daily": 60,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 19914354688,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "EXR",
@@ -2747,7 +3357,9 @@
         "price": 142.66,
         "chg": 0.97,
         "daily": 45,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 30129410048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "XOM",
@@ -2756,7 +3368,9 @@
         "price": 150.53,
         "chg": 0.69,
         "daily": 55,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 625686872064,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "FFIV",
@@ -2765,7 +3379,9 @@
         "price": 299.89,
         "chg": -3.63,
         "daily": 70,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 16949565440,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FDS",
@@ -2774,7 +3390,9 @@
         "price": 228.08,
         "chg": -6.03,
         "daily": 30,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 8309211648,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "FICO",
@@ -2783,7 +3401,9 @@
         "price": 979.76,
         "chg": 0.99,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 23241998336,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FAST",
@@ -2792,7 +3412,9 @@
         "price": 45.45,
         "chg": 1.43,
         "daily": 20,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 52178194432,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FRT",
@@ -2801,7 +3423,9 @@
         "price": 111.5,
         "chg": 1.24,
         "daily": 95,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 9632285696,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "FDX",
@@ -2810,7 +3434,9 @@
         "price": 392.69,
         "chg": 1.75,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 93698482176,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FIS",
@@ -2819,7 +3445,9 @@
         "price": 45.74,
         "chg": -4.39,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 23686494208,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FITB",
@@ -2828,7 +3456,9 @@
         "price": 50.89,
         "chg": 0.65,
         "daily": 70,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 46097330176,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FSLR",
@@ -2837,7 +3467,9 @@
         "price": 196.19,
         "chg": 3.96,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 21080764416,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FE",
@@ -2846,7 +3478,9 @@
         "price": 49.62,
         "chg": 2.46,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 28700141568,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FISV",
@@ -2855,7 +3489,9 @@
         "price": 61.55,
         "chg": -2.7,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 32915554304,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "F",
@@ -2864,7 +3500,9 @@
         "price": 12.48,
         "chg": -1.19,
         "daily": 25,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 50058305536,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FTNT",
@@ -2873,7 +3511,9 @@
         "price": 82.76,
         "chg": -4.97,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 61236076544,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FTV",
@@ -2882,7 +3522,9 @@
         "price": 61.11,
         "chg": 0.41,
         "daily": 95,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 18813276160,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FOXA",
@@ -2891,7 +3533,9 @@
         "price": 64.53,
         "chg": -1.57,
         "daily": 65,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 27450808320,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FOX",
@@ -2900,7 +3544,9 @@
         "price": 57.74,
         "chg": -1.42,
         "daily": 65,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 24562368512,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "BEN",
@@ -2909,7 +3555,9 @@
         "price": 26.82,
         "chg": -2.44,
         "daily": 70,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 13966875648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "FCX",
@@ -2918,7 +3566,9 @@
         "price": 61.48,
         "chg": -12.62,
         "daily": 70,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 88359157760,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GRMN",
@@ -2927,7 +3577,9 @@
         "price": 260.8,
         "chg": -2.17,
         "daily": 65,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 50303979520,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IT",
@@ -2936,7 +3588,9 @@
         "price": 148.6,
         "chg": -5.4,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 10032015360,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GE",
@@ -2945,7 +3599,9 @@
         "price": 282.34,
         "chg": 2.19,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 294997196800,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "GEHC",
@@ -2954,7 +3610,9 @@
         "price": 69.89,
         "chg": -2.09,
         "daily": 15,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 31890118656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GEV",
@@ -2963,7 +3621,9 @@
         "price": 1149.53,
         "chg": 1.95,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 308901707776,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "GEN",
@@ -2972,7 +3632,9 @@
         "price": 18.81,
         "chg": -5.9,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 11392534528,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GNRC",
@@ -2981,7 +3643,9 @@
         "price": 218.38,
         "chg": 2.19,
         "daily": 65,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 12813627392,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GD",
@@ -2990,7 +3654,9 @@
         "price": 318.71,
         "chg": -0.63,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 86321283072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GIS",
@@ -2999,7 +3665,9 @@
         "price": 35.47,
         "chg": 0.8,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 18929674240,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GM",
@@ -3008,7 +3676,9 @@
         "price": 78.52,
         "chg": -0.61,
         "daily": 50,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 70798073856,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GPC",
@@ -3017,7 +3687,9 @@
         "price": 109.79,
         "chg": -1.75,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 15274216448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GILD",
@@ -3026,7 +3698,9 @@
         "price": 133.64,
         "chg": 0.56,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 165874466816,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GPN",
@@ -3035,7 +3709,9 @@
         "price": 67.86,
         "chg": -5.25,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 18677991424,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GL",
@@ -3044,7 +3720,9 @@
         "price": 153.97,
         "chg": 1.8,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 12078107648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GDDY",
@@ -3053,7 +3731,9 @@
         "price": 84.77,
         "chg": -4.11,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 11304428544,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GS",
@@ -3062,7 +3742,9 @@
         "price": 931.3,
         "chg": -0.38,
         "daily": 70,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 276366000128,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "HAL",
@@ -3071,7 +3753,9 @@
         "price": 39.65,
         "chg": 1.38,
         "daily": 65,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 33113993216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HIG",
@@ -3080,7 +3764,9 @@
         "price": 139.61,
         "chg": 1.09,
         "daily": 55,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 38395707392,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HAS",
@@ -3089,7 +3775,9 @@
         "price": 96.58,
         "chg": 6.59,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 13668150272,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HCA",
@@ -3098,7 +3786,9 @@
         "price": 474.03,
         "chg": 0.57,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 105978396672,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DOC",
@@ -3107,7 +3797,9 @@
         "price": 16.41,
         "chg": 0.49,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 11409161216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HSIC",
@@ -3116,7 +3808,9 @@
         "price": 78.22,
         "chg": 0.14,
         "daily": 60,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 8975592448,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "HSY",
@@ -3125,7 +3819,9 @@
         "price": 192.1,
         "chg": 1.83,
         "daily": 20,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 38936936448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HPE",
@@ -3134,7 +3830,9 @@
         "price": 27.93,
         "chg": -2.03,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 37059035136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HLT",
@@ -3143,7 +3841,9 @@
         "price": 334.28,
         "chg": 0.18,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 76647604224,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HD",
@@ -3152,7 +3852,9 @@
         "price": 340.16,
         "chg": 0.19,
         "daily": 20,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 338808766464,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "HON",
@@ -3161,7 +3863,9 @@
         "price": 214.34,
         "chg": -2.56,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 135817207808,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HRL",
@@ -3170,7 +3874,9 @@
         "price": 21.76,
         "chg": 1.54,
         "daily": 10,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 11974184960,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HST",
@@ -3179,7 +3885,9 @@
         "price": 21.07,
         "chg": 1.06,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 14482112512,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HWM",
@@ -3188,7 +3896,9 @@
         "price": 246.16,
         "chg": 2.19,
         "daily": 40,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 98695405568,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HPQ",
@@ -3197,7 +3907,9 @@
         "price": 20.14,
         "chg": -1.47,
         "daily": 35,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 18488207360,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HUBB",
@@ -3206,7 +3918,9 @@
         "price": 557.85,
         "chg": 1.47,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 29656197120,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HUM",
@@ -3215,7 +3929,9 @@
         "price": 214.95,
         "chg": -1.13,
         "daily": 30,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 25805707264,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HBAN",
@@ -3224,7 +3940,9 @@
         "price": 16.83,
         "chg": 0.06,
         "daily": 45,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 34116608000,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "HII",
@@ -3233,7 +3951,9 @@
         "price": 370.14,
         "chg": 0.89,
         "daily": 25,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 14575067136,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IBM",
@@ -3242,7 +3962,9 @@
         "price": 231.08,
         "chg": -8.25,
         "daily": 20,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 217188696064,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "IEX",
@@ -3251,7 +3973,9 @@
         "price": 206.64,
         "chg": 1.48,
         "daily": 65,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 15363234816,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IDXX",
@@ -3260,7 +3984,9 @@
         "price": 560.93,
         "chg": -3.01,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 44663508992,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ITW",
@@ -3269,7 +3995,9 @@
         "price": 273.13,
         "chg": 2.26,
         "daily": 45,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 78716067840,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "INCY",
@@ -3278,7 +4006,9 @@
         "price": 95.47,
         "chg": -1.31,
         "daily": 25,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 18999912448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IR",
@@ -3287,7 +4017,9 @@
         "price": 84.95,
         "chg": 1.49,
         "daily": 25,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 33564626944,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PODD",
@@ -3296,7 +4028,9 @@
         "price": 192.21,
         "chg": -0.73,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 13313178624,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "INTC",
@@ -3305,7 +4039,9 @@
         "price": 66.78,
         "chg": 2.31,
         "daily": 90,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 335303081984,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "IBKR",
@@ -3314,7 +4050,9 @@
         "price": 75.9,
         "chg": -2.83,
         "daily": 85,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 33822320640,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ICE",
@@ -3323,7 +4061,9 @@
         "price": 157.48,
         "chg": -0.84,
         "daily": 25,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 89201516544,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IFF",
@@ -3332,7 +4072,9 @@
         "price": 70.94,
         "chg": -0.32,
         "daily": 40,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 18120759296,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IP",
@@ -3341,7 +4083,9 @@
         "price": 33.54,
         "chg": 0.63,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 17758967808,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "INTU",
@@ -3350,7 +4094,9 @@
         "price": 383.3,
         "chg": -6.21,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 106662453248,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ISRG",
@@ -3359,7 +4105,9 @@
         "price": 478.82,
         "chg": -0.99,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 169580265472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IVZ",
@@ -3368,7 +4116,9 @@
         "price": 25.37,
         "chg": -0.74,
         "daily": 50,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 11272235008,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "INVH",
@@ -3377,7 +4127,9 @@
         "price": 27.3,
         "chg": 2.32,
         "daily": 30,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 16364875776,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IQV",
@@ -3386,7 +4138,9 @@
         "price": 160.68,
         "chg": -8.29,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 26972762112,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "IRM",
@@ -3395,7 +4149,9 @@
         "price": 116.12,
         "chg": -0.95,
         "daily": 90,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 34543239168,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "JBHT",
@@ -3404,7 +4160,9 @@
         "price": 253.71,
         "chg": 2.7,
         "daily": 95,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 24002000896,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "JBL",
@@ -3413,7 +4171,9 @@
         "price": 338.53,
         "chg": 0.63,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 35715805184,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "JKHY",
@@ -3422,7 +4182,9 @@
         "price": 150.6,
         "chg": -3.39,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 10899996672,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "J",
@@ -3431,7 +4193,9 @@
         "price": 127.58,
         "chg": 0.02,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 14983852032,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "JNJ",
@@ -3440,7 +4204,9 @@
         "price": 230.65,
         "chg": 2.01,
         "daily": 25,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 555224530944,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "JCI",
@@ -3449,7 +4215,9 @@
         "price": 141.73,
         "chg": 1.37,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 86748135424,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "JPM",
@@ -3458,7 +4226,9 @@
         "price": 311.69,
         "chg": -0.42,
         "daily": 60,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 835173351424,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "KVUE",
@@ -3467,7 +4237,9 @@
         "price": 17.49,
         "chg": 1.04,
         "daily": 20,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 33579335680,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KDP",
@@ -3476,7 +4248,9 @@
         "price": 28.53,
         "chg": 7.5,
         "daily": 50,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 38813204480,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KEY",
@@ -3485,7 +4259,9 @@
         "price": 22.01,
         "chg": -0.14,
         "daily": 80,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 23931320320,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KEYS",
@@ -3494,7 +4270,9 @@
         "price": 346.53,
         "chg": 2.23,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 59430760448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KMB",
@@ -3503,7 +4281,9 @@
         "price": 97.93,
         "chg": 1.22,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 32505489408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KIM",
@@ -3512,7 +4292,9 @@
         "price": 23.84,
         "chg": 1.15,
         "daily": 100,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 16077772800,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KMI",
@@ -3521,7 +4303,9 @@
         "price": 31.73,
         "chg": -0.25,
         "daily": 40,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 70593503232,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KKR",
@@ -3530,7 +4314,9 @@
         "price": 101.64,
         "chg": -4.04,
         "daily": 35,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 94130782208,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KLAC",
@@ -3539,7 +4325,9 @@
         "price": 1815.43,
         "chg": 0.19,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 238533591040,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "KHC",
@@ -3548,7 +4336,9 @@
         "price": 21.97,
         "chg": 0.37,
         "daily": 0,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 26006872064,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "KR",
@@ -3557,7 +4347,9 @@
         "price": 69.1,
         "chg": 1.51,
         "daily": 40,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 43729874944,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LHX",
@@ -3566,7 +4358,9 @@
         "price": 330.22,
         "chg": -0.43,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 61680435200,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LH",
@@ -3575,7 +4369,9 @@
         "price": 264.92,
         "chg": -2.82,
         "daily": 10,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 21829408768,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LRCX",
@@ -3584,7 +4380,9 @@
         "price": 258.56,
         "chg": -2.63,
         "daily": 80,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 323339354112,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "LVS",
@@ -3593,7 +4391,9 @@
         "price": 51.95,
         "chg": -8.62,
         "daily": 15,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 34474967040,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LDOS",
@@ -3602,7 +4402,9 @@
         "price": 147.6,
         "chg": -2.06,
         "daily": 0,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 18655561728,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LEN",
@@ -3611,7 +4413,9 @@
         "price": 94.18,
         "chg": -0.29,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 23196375040,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LII",
@@ -3620,7 +4424,9 @@
         "price": 493.67,
         "chg": 0.8,
         "daily": 15,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 17188544512,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LLY",
@@ -3629,7 +4435,9 @@
         "price": 917.65,
         "chg": -0.42,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 819789496320,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "LIN",
@@ -3638,7 +4446,9 @@
         "price": 508.06,
         "chg": 2.72,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 235432034304,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "LYV",
@@ -3647,7 +4457,9 @@
         "price": 153.21,
         "chg": -0.92,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 35974004736,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LMT",
@@ -3656,7 +4468,9 @@
         "price": 529.79,
         "chg": -4.62,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 122096517120,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "L",
@@ -3665,7 +4479,9 @@
         "price": 112.42,
         "chg": 1.6,
         "daily": 85,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 23132403712,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LOW",
@@ -3674,7 +4490,9 @@
         "price": 246.54,
         "chg": 0.55,
         "daily": 50,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 138077913088,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LULU",
@@ -3683,7 +4501,9 @@
         "price": 141.66,
         "chg": -13.33,
         "daily": 15,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 16618293248,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LITE",
@@ -3692,7 +4512,9 @@
         "price": 846.89,
         "chg": -3.06,
         "daily": 80,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 60467945472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LYB",
@@ -3701,7 +4523,9 @@
         "price": 70.72,
         "chg": -1.78,
         "daily": 45,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 22826244096,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MTB",
@@ -3710,7 +4534,9 @@
         "price": 219.7,
         "chg": 0.98,
         "daily": 85,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 32626462720,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MPC",
@@ -3719,7 +4545,9 @@
         "price": 221.1,
         "chg": -0.44,
         "daily": 35,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 65113260032,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MAR",
@@ -3728,7 +4556,9 @@
         "price": 368.24,
         "chg": 0.3,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 97577910272,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MRSH",
@@ -3737,7 +4567,9 @@
         "price": 174.01,
         "chg": -0.85,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 83837059072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MLM",
@@ -3746,7 +4578,9 @@
         "price": 618.89,
         "chg": 1.35,
         "daily": 25,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 37326524416,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MAS",
@@ -3755,7 +4589,9 @@
         "price": 75.4,
         "chg": 1.95,
         "daily": 50,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 15210776576,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MA",
@@ -3764,7 +4600,9 @@
         "price": 502.38,
         "chg": -1.53,
         "daily": 15,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 448342851584,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MKC",
@@ -3773,7 +4611,9 @@
         "price": 51.89,
         "chg": 0.82,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 13950273536,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MCD",
@@ -3782,7 +4622,9 @@
         "price": 302.53,
         "chg": 0.82,
         "daily": 10,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 215046684672,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MCK",
@@ -3791,7 +4633,9 @@
         "price": 836.1,
         "chg": 0.83,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 102411755520,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MDT",
@@ -3800,7 +4644,9 @@
         "price": 83.79,
         "chg": 0.68,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 107576721408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MRK",
@@ -3809,7 +4655,9 @@
         "price": 114.62,
         "chg": 1.53,
         "daily": 25,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 283097563136,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "META",
@@ -3818,7 +4666,9 @@
         "price": 659.15,
         "chg": -2.31,
         "daily": 15,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 1673201713152,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MET",
@@ -3827,7 +4677,9 @@
         "price": 76.06,
         "chg": -1.18,
         "daily": 30,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 49595215872,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MTD",
@@ -3836,7 +4688,9 @@
         "price": 1264.36,
         "chg": -3.49,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 25601398784,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MGM",
@@ -3845,7 +4699,9 @@
         "price": 38.94,
         "chg": -0.76,
         "daily": 100,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 9961961472,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "MCHP",
@@ -3854,7 +4710,9 @@
         "price": 90.64,
         "chg": 9.89,
         "daily": 95,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 49048518656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MU",
@@ -3863,7 +4721,9 @@
         "price": 481.72,
         "chg": -1.18,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 543252021248,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MSFT",
@@ -3872,7 +4732,9 @@
         "price": 415.75,
         "chg": -3.97,
         "daily": 20,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 3090011127808,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MAA",
@@ -3881,7 +4743,9 @@
         "price": 126.0,
         "chg": 1.13,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 14659802112,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MRNA",
@@ -3890,7 +4754,9 @@
         "price": 52.85,
         "chg": -4.95,
         "daily": 85,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 20959614976,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TAP",
@@ -3899,7 +4765,9 @@
         "price": 42.87,
         "chg": 0.4,
         "daily": 10,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 8071791104,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "MDLZ",
@@ -3908,7 +4776,9 @@
         "price": 57.71,
         "chg": 2.94,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 74068279296,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MPWR",
@@ -3917,7 +4787,9 @@
         "price": 1592.17,
         "chg": 4.61,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 78204207104,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MNST",
@@ -3926,7 +4798,9 @@
         "price": 77.56,
         "chg": 2.12,
         "daily": 55,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 75846393856,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MCO",
@@ -3935,7 +4809,9 @@
         "price": 452.35,
         "chg": -3.08,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 80520052736,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MS",
@@ -3944,7 +4820,9 @@
         "price": 188.65,
         "chg": -1.26,
         "daily": 80,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 299549818880,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "MOS",
@@ -3953,7 +4831,9 @@
         "price": 24.28,
         "chg": -0.98,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 7717317120,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "MSI",
@@ -3962,7 +4842,9 @@
         "price": 443.17,
         "chg": 0.34,
         "daily": 55,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 73656459264,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MSCI",
@@ -3971,7 +4853,9 @@
         "price": 598.01,
         "chg": -1.65,
         "daily": 65,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 43491827712,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NDAQ",
@@ -3980,7 +4864,9 @@
         "price": 87.04,
         "chg": 0.78,
         "daily": 30,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 49477353472,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NTAP",
@@ -3989,7 +4875,9 @@
         "price": 108.4,
         "chg": -2.36,
         "daily": 65,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 21469743104,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NFLX",
@@ -3998,7 +4886,9 @@
         "price": 92.82,
         "chg": -0.45,
         "daily": 35,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 390846316544,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "NEM",
@@ -4007,7 +4897,9 @@
         "price": 111.06,
         "chg": -0.71,
         "daily": 25,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 119937376256,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NWSA",
@@ -4016,7 +4908,9 @@
         "price": 26.31,
         "chg": -1.28,
         "daily": 35,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 14425335808,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NWS",
@@ -4025,7 +4919,9 @@
         "price": 30.4,
         "chg": -1.11,
         "daily": 65,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 16667814912,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NEE",
@@ -4034,7 +4930,9 @@
         "price": 96.25,
         "chg": 6.94,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 200710406144,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "NKE",
@@ -4043,7 +4941,9 @@
         "price": 44.78,
         "chg": -1.97,
         "daily": 10,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 66314121216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NI",
@@ -4052,7 +4952,9 @@
         "price": 48.29,
         "chg": 3.07,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 23108368384,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NDSN",
@@ -4061,7 +4963,9 @@
         "price": 283.83,
         "chg": 1.57,
         "daily": 65,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 15833058304,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NSC",
@@ -4070,7 +4974,9 @@
         "price": 321.44,
         "chg": 7.75,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 72186437632,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NTRS",
@@ -4079,7 +4985,9 @@
         "price": 165.39,
         "chg": -1.45,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 30650228736,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NOC",
@@ -4088,7 +4996,9 @@
         "price": 587.66,
         "chg": -0.33,
         "daily": 20,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 83467386880,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NCLH",
@@ -4097,7 +5007,9 @@
         "price": 18.42,
         "chg": -3.21,
         "daily": 15,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 8391150592,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "NRG",
@@ -4106,7 +5018,9 @@
         "price": 154.53,
         "chg": 3.3,
         "daily": 15,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 32818493440,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NUE",
@@ -4115,7 +5029,9 @@
         "price": 212.95,
         "chg": -0.61,
         "daily": 95,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 48496304128,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NVDA",
@@ -4124,7 +5040,9 @@
         "price": 199.64,
         "chg": -1.41,
         "daily": 95,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 4852250312704,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "NVR",
@@ -4133,7 +5051,9 @@
         "price": 6669.01,
         "chg": 0.88,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 18218579968,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NXPI",
@@ -4142,7 +5062,9 @@
         "price": 241.16,
         "chg": 6.83,
         "daily": 50,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 60939407360,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ORLY",
@@ -4151,7 +5073,9 @@
         "price": 93.24,
         "chg": -0.72,
         "daily": 30,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 78180532224,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "OXY",
@@ -4160,7 +5084,9 @@
         "price": 57.83,
         "chg": 1.37,
         "daily": 55,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 57349734400,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ODFL",
@@ -4169,7 +5095,9 @@
         "price": 222.78,
         "chg": 1.27,
         "daily": 95,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 46433058816,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "OMC",
@@ -4178,7 +5106,9 @@
         "price": 76.82,
         "chg": -1.65,
         "daily": 30,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 23840038912,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ON",
@@ -4187,7 +5117,9 @@
         "price": 97.78,
         "chg": 9.88,
         "daily": 95,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 38459547648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "OKE",
@@ -4196,7 +5128,9 @@
         "price": 87.21,
         "chg": 1.34,
         "daily": 60,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 54944968704,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ORCL",
@@ -4205,7 +5139,9 @@
         "price": 176.28,
         "chg": -5.98,
         "daily": 35,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 506989412352,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "OTIS",
@@ -4214,7 +5150,9 @@
         "price": 79.49,
         "chg": 2.07,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 30660136960,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PCAR",
@@ -4223,7 +5161,9 @@
         "price": 126.97,
         "chg": 1.36,
         "daily": 90,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 66772815872,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PKG",
@@ -4232,7 +5172,9 @@
         "price": 215.02,
         "chg": 4.77,
         "daily": 50,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 19182663680,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PLTR",
@@ -4241,7 +5183,9 @@
         "price": 141.57,
         "chg": -7.24,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 338589548544,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "PANW",
@@ -4250,7 +5194,9 @@
         "price": 173.21,
         "chg": -4.41,
         "daily": 30,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 140473319424,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PSKY",
@@ -4259,7 +5205,9 @@
         "price": 11.27,
         "chg": -4.49,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 12529321984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PH",
@@ -4268,7 +5216,9 @@
         "price": 973.88,
         "chg": 2.04,
         "daily": 40,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 122919755776,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PAYX",
@@ -4277,7 +5227,9 @@
         "price": 90.95,
         "chg": -2.65,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 32586555392,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PYPL",
@@ -4286,7 +5238,9 @@
         "price": 49.75,
         "chg": -2.87,
         "daily": 35,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 44758781952,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PNR",
@@ -4295,7 +5249,9 @@
         "price": 90.48,
         "chg": 0.98,
         "daily": 15,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 14769567744,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PEP",
@@ -4304,7 +5260,9 @@
         "price": 155.7,
         "chg": 1.24,
         "daily": 30,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 212832698368,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "PFE",
@@ -4313,7 +5271,9 @@
         "price": 26.67,
         "chg": -0.49,
         "daily": 30,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 151708467200,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PCG",
@@ -4322,7 +5282,9 @@
         "price": 16.83,
         "chg": -0.3,
         "daily": 30,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 37063442432,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PM",
@@ -4331,7 +5293,9 @@
         "price": 169.19,
         "chg": 3.2,
         "daily": 50,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 263687749632,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "PSX",
@@ -4340,7 +5304,9 @@
         "price": 159.53,
         "chg": -0.7,
         "daily": 60,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 63968751616,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PNW",
@@ -4349,7 +5315,9 @@
         "price": 103.45,
         "chg": 2.63,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 12520102912,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PNC",
@@ -4358,7 +5326,9 @@
         "price": 225.09,
         "chg": 0.01,
         "daily": 85,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 90794754048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "POOL",
@@ -4367,7 +5337,9 @@
         "price": 228.68,
         "chg": -2.37,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 8392689152,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "PPG",
@@ -4376,7 +5348,9 @@
         "price": 110.29,
         "chg": -1.24,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 24682754048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PPL",
@@ -4385,7 +5359,9 @@
         "price": 38.54,
         "chg": 2.01,
         "daily": 80,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 28988444672,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PFG",
@@ -4394,7 +5370,9 @@
         "price": 97.0,
         "chg": -0.44,
         "daily": 85,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 20995584000,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PG",
@@ -4403,7 +5381,9 @@
         "price": 145.71,
         "chg": 2.0,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 340485439488,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "PGR",
@@ -4412,7 +5392,9 @@
         "price": 205.33,
         "chg": 1.29,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 119994851328,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PLD",
@@ -4421,7 +5403,9 @@
         "price": 142.34,
         "chg": 0.65,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 132693704704,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PRU",
@@ -4430,7 +5414,9 @@
         "price": 94.35,
         "chg": -0.53,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 32833800192,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PEG",
@@ -4439,7 +5425,9 @@
         "price": 80.16,
         "chg": 2.1,
         "daily": 10,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 40012185600,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PTC",
@@ -4448,7 +5436,9 @@
         "price": 135.83,
         "chg": -3.39,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 16163241984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PSA",
@@ -4457,7 +5447,9 @@
         "price": 310.82,
         "chg": 1.97,
         "daily": 65,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 54562050048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PHM",
@@ -4466,7 +5458,9 @@
         "price": 130.64,
         "chg": 2.41,
         "daily": 50,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 25101373440,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "PWR",
@@ -4475,7 +5469,9 @@
         "price": 633.44,
         "chg": 3.2,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 95051931648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "QCOM",
@@ -4484,7 +5480,9 @@
         "price": 133.95,
         "chg": -1.56,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 143064645632,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "DGX",
@@ -4493,7 +5491,9 @@
         "price": 199.53,
         "chg": -2.19,
         "daily": 60,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 22087258112,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "Q",
@@ -4502,7 +5502,9 @@
         "price": 140.13,
         "chg": 0.63,
         "daily": 85,
-        "weekly": null
+        "weekly": null,
+        "marketCap": 29379504128,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RL",
@@ -4511,7 +5513,9 @@
         "price": 371.14,
         "chg": -1.11,
         "daily": 70,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 22506174464,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RJF",
@@ -4520,7 +5524,9 @@
         "price": 153.41,
         "chg": -0.72,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 29853587456,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RTX",
@@ -4529,7 +5535,9 @@
         "price": 179.3,
         "chg": -0.89,
         "daily": 30,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 241460330496,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "O",
@@ -4538,7 +5546,9 @@
         "price": 64.08,
         "chg": 1.17,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 59751436288,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "REG",
@@ -4547,7 +5557,9 @@
         "price": 80.74,
         "chg": 2.2,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 15092045824,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "REGN",
@@ -4556,7 +5568,9 @@
         "price": 766.02,
         "chg": 2.6,
         "daily": 50,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 80983490560,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RF",
@@ -4565,7 +5579,9 @@
         "price": 28.4,
         "chg": 0.67,
         "daily": 55,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 24262582272,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RSG",
@@ -4574,7 +5590,9 @@
         "price": 214.04,
         "chg": 4.26,
         "daily": 10,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 66128982016,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RMD",
@@ -4583,7 +5601,9 @@
         "price": 219.51,
         "chg": -1.14,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 31977865216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RVTY",
@@ -4592,7 +5612,9 @@
         "price": 87.15,
         "chg": -7.56,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 9743660032,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "HOOD",
@@ -4601,7 +5623,9 @@
         "price": 83.54,
         "chg": -5.53,
         "daily": 35,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 75211767808,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ROK",
@@ -4610,7 +5634,9 @@
         "price": 408.91,
         "chg": 0.46,
         "daily": 70,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 45975052288,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ROL",
@@ -4619,7 +5645,9 @@
         "price": 56.99,
         "chg": 3.02,
         "daily": 15,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 27438520320,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ROP",
@@ -4628,7 +5656,9 @@
         "price": 363.76,
         "chg": -0.27,
         "daily": 35,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 37440913408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ROST",
@@ -4637,7 +5667,9 @@
         "price": 226.92,
         "chg": 0.26,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 73396125696,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "RCL",
@@ -4646,7 +5678,9 @@
         "price": 260.43,
         "chg": -1.96,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 70453690368,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SPGI",
@@ -4655,7 +5689,9 @@
         "price": 439.03,
         "chg": -2.23,
         "daily": 35,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 131182166016,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "CRM",
@@ -4664,7 +5700,9 @@
         "price": 173.3,
         "chg": -8.69,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 141768720384,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SNDK",
@@ -4673,7 +5711,9 @@
         "price": 932.43,
         "chg": -4.76,
         "daily": 90,
-        "weekly": null
+        "weekly": 87,
+        "marketCap": 137627582464,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SBAC",
@@ -4682,7 +5722,9 @@
         "price": 219.6,
         "chg": 3.65,
         "daily": 80,
-        "weekly": 20
+        "weekly": 20,
+        "marketCap": 23291305984,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SLB",
@@ -4691,7 +5733,9 @@
         "price": 54.74,
         "chg": 0.72,
         "daily": 95,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 82172043264,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "STX",
@@ -4700,7 +5744,9 @@
         "price": 587.62,
         "chg": 1.33,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 131641786368,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SRE",
@@ -4709,7 +5755,9 @@
         "price": 93.91,
         "chg": 1.66,
         "daily": 30,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 61354463232,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NOW",
@@ -4718,7 +5766,9 @@
         "price": 84.78,
         "chg": -17.75,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 87845363712,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SHW",
@@ -4727,7 +5777,9 @@
         "price": 337.66,
         "chg": 0.75,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 83663626240,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SPG",
@@ -4736,7 +5788,9 @@
         "price": 203.66,
         "chg": 0.98,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 77521747968,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SWKS",
@@ -4745,7 +5799,9 @@
         "price": 61.55,
         "chg": -0.36,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 9257487360,
+        "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
         "sym": "SJM",
@@ -4754,7 +5810,9 @@
         "price": 96.19,
         "chg": 1.26,
         "daily": 20,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 10258502656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SW",
@@ -4763,7 +5821,9 @@
         "price": 40.52,
         "chg": 2.09,
         "daily": 15,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 21242769408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SNA",
@@ -4772,7 +5832,9 @@
         "price": 390.75,
         "chg": 2.19,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 20341407744,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SOLV",
@@ -4781,7 +5843,9 @@
         "price": 68.96,
         "chg": -0.22,
         "daily": 20,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 11964078080,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SO",
@@ -4790,7 +5854,9 @@
         "price": 93.91,
         "chg": 2.22,
         "daily": 20,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 105865125888,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "LUV",
@@ -4799,7 +5865,9 @@
         "price": 37.75,
         "chg": -4.07,
         "daily": 35,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 18538108928,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SWK",
@@ -4808,7 +5876,9 @@
         "price": 76.01,
         "chg": 0.41,
         "daily": 50,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 11803322368,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SBUX",
@@ -4817,7 +5887,9 @@
         "price": 99.54,
         "chg": 0.02,
         "daily": 65,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 113405919232,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "STT",
@@ -4826,7 +5898,9 @@
         "price": 151.25,
         "chg": -0.75,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 42157645824,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "STLD",
@@ -4835,7 +5909,9 @@
         "price": 225.05,
         "chg": -1.06,
         "daily": 95,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 32605784064,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "STE",
@@ -4844,7 +5920,9 @@
         "price": 223.52,
         "chg": -0.01,
         "daily": 20,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 21937819648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SYK",
@@ -4853,7 +5931,9 @@
         "price": 329.65,
         "chg": 0.09,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 126250754048,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SMCI",
@@ -4862,7 +5942,9 @@
         "price": 26.75,
         "chg": -8.33,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 16062891008,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SYF",
@@ -4871,7 +5953,9 @@
         "price": 76.62,
         "chg": -2.63,
         "daily": 65,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 26632828928,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SNPS",
@@ -4880,7 +5964,9 @@
         "price": 456.85,
         "chg": -4.28,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 87515111424,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "SYY",
@@ -4889,7 +5975,9 @@
         "price": 75.81,
         "chg": 0.37,
         "daily": 20,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 36307730432,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TMUS",
@@ -4898,7 +5986,9 @@
         "price": 194.07,
         "chg": 2.73,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 213838512128,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "TROW",
@@ -4907,7 +5997,9 @@
         "price": 99.49,
         "chg": -0.75,
         "daily": 65,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 21696071680,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TTWO",
@@ -4916,7 +6008,9 @@
         "price": 209.9,
         "chg": -3.8,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 38868328448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TPR",
@@ -4925,7 +6019,9 @@
         "price": 146.45,
         "chg": 0.19,
         "daily": 40,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 29970956288,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TRGP",
@@ -4934,7 +6030,9 @@
         "price": 239.91,
         "chg": 1.34,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 51569086464,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TGT",
@@ -4943,7 +6041,9 @@
         "price": 130.17,
         "chg": -0.33,
         "daily": 95,
-        "weekly": 70
+        "weekly": 70,
+        "marketCap": 58948210688,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TEL",
@@ -4952,7 +6052,9 @@
         "price": 217.73,
         "chg": -1.5,
         "daily": 40,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 63889440768,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TDY",
@@ -4961,7 +6063,9 @@
         "price": 651.75,
         "chg": -0.75,
         "daily": 65,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 30187290624,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TER",
@@ -4970,7 +6074,9 @@
         "price": 400.99,
         "chg": 4.1,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 62778761216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TSLA",
@@ -4979,7 +6085,9 @@
         "price": 373.72,
         "chg": -3.56,
         "daily": 20,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 1403589099520,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "TXN",
@@ -4988,7 +6096,9 @@
         "price": 282.23,
         "chg": 19.43,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 256829308928,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "TPL",
@@ -4997,7 +6107,9 @@
         "price": 439.15,
         "chg": -0.08,
         "daily": 65,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 30275682304,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TXT",
@@ -5006,7 +6118,9 @@
         "price": 90.37,
         "chg": 1.02,
         "daily": 35,
-        "weekly": 75
+        "weekly": 75,
+        "marketCap": 15733317632,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TMO",
@@ -5015,7 +6129,9 @@
         "price": 466.7,
         "chg": -9.2,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 173435699200,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TJX",
@@ -5024,7 +6140,9 @@
         "price": 158.35,
         "chg": -0.08,
         "daily": 40,
-        "weekly": 85
+        "weekly": 85,
+        "marketCap": 175842459648,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TKO",
@@ -5033,7 +6151,9 @@
         "price": 186.26,
         "chg": 0.0,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 14522009600,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TTD",
@@ -5042,7 +6162,9 @@
         "price": 22.62,
         "chg": -3.99,
         "daily": 20,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 10766601216,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TSCO",
@@ -5051,7 +6173,9 @@
         "price": 38.17,
         "chg": -2.03,
         "daily": 0,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 20090828800,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TT",
@@ -5060,7 +6184,9 @@
         "price": 485.53,
         "chg": 1.75,
         "daily": 80,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 107361402880,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TDG",
@@ -5069,7 +6195,9 @@
         "price": 1165.76,
         "chg": -1.85,
         "daily": 15,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 65834622976,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TRV",
@@ -5078,7 +6206,9 @@
         "price": 307.33,
         "chg": 1.87,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 65352089600,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TRMB",
@@ -5087,7 +6217,9 @@
         "price": 67.04,
         "chg": -2.97,
         "daily": 20,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 15559229440,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TFC",
@@ -5096,7 +6228,9 @@
         "price": 51.4,
         "chg": 0.88,
         "daily": 70,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 64038182912,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TYL",
@@ -5105,7 +6239,9 @@
         "price": 335.74,
         "chg": -3.07,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 14431897600,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "TSN",
@@ -5114,7 +6250,9 @@
         "price": 65.23,
         "chg": 1.05,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 22966112256,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "USB",
@@ -5123,7 +6261,9 @@
         "price": 56.63,
         "chg": 0.05,
         "daily": 85,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 88059658240,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "UBER",
@@ -5132,7 +6272,9 @@
         "price": 74.7,
         "chg": -1.16,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 153741262848,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "UDR",
@@ -5141,7 +6283,9 @@
         "price": 34.91,
         "chg": 1.16,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 13143232512,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ULTA",
@@ -5150,7 +6294,9 @@
         "price": 564.44,
         "chg": 0.09,
         "daily": 20,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 24686704640,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "UNP",
@@ -5159,7 +6305,9 @@
         "price": 271.26,
         "chg": 8.77,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 161041170432,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "UAL",
@@ -5168,7 +6316,9 @@
         "price": 91.25,
         "chg": -0.5,
         "daily": 15,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 29616988160,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "UPS",
@@ -5177,7 +6327,9 @@
         "price": 107.72,
         "chg": 2.3,
         "daily": 60,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 91526766592,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "URI",
@@ -5186,7 +6338,9 @@
         "price": 986.78,
         "chg": 22.92,
         "daily": 50,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 61818372096,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "UNH",
@@ -5195,7 +6349,9 @@
         "price": 354.56,
         "chg": 0.29,
         "daily": 80,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 322016051200,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "UHS",
@@ -5204,7 +6360,9 @@
         "price": 181.18,
         "chg": 0.25,
         "daily": 10,
-        "weekly": 25
+        "weekly": 25,
+        "marketCap": 11057366016,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VLO",
@@ -5213,7 +6371,9 @@
         "price": 233.83,
         "chg": -0.23,
         "daily": 45,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 69921308672,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VTR",
@@ -5222,7 +6382,9 @@
         "price": 82.93,
         "chg": 3.53,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 39430160384,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VLTO",
@@ -5231,7 +6393,9 @@
         "price": 88.79,
         "chg": -0.24,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 21803726848,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VRSN",
@@ -5240,7 +6404,9 @@
         "price": 276.95,
         "chg": 2.64,
         "daily": 80,
-        "weekly": 65
+        "weekly": 65,
+        "marketCap": 25234495488,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VRSK",
@@ -5249,7 +6415,9 @@
         "price": 177.14,
         "chg": -0.98,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 23205435392,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VZ",
@@ -5258,7 +6426,9 @@
         "price": 47.22,
         "chg": 2.7,
         "daily": 50,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 197379604480,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VRTX",
@@ -5267,7 +6437,9 @@
         "price": 435.1,
         "chg": -0.59,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 110671921152,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VRT",
@@ -5276,7 +6448,9 @@
         "price": 321.75,
         "chg": 5.44,
         "daily": 90,
-        "weekly": 95
+        "weekly": 95,
+        "marketCap": 123587002368,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VTRS",
@@ -5285,7 +6459,9 @@
         "price": 14.75,
         "chg": 1.58,
         "daily": 65,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 17175207936,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VICI",
@@ -5294,7 +6470,9 @@
         "price": 28.51,
         "chg": 1.1,
         "daily": 15,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 30476875776,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "V",
@@ -5303,7 +6481,9 @@
         "price": 308.88,
         "chg": -0.77,
         "daily": 15,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 595532840960,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "VST",
@@ -5312,7 +6492,9 @@
         "price": 156.85,
         "chg": 0.68,
         "daily": 15,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 53101457408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "VMC",
@@ -5321,7 +6503,9 @@
         "price": 292.71,
         "chg": 0.9,
         "daily": 45,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 38222184448,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WRB",
@@ -5330,7 +6514,9 @@
         "price": 68.45,
         "chg": 1.41,
         "daily": 15,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 26696800256,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "GWW",
@@ -5339,7 +6525,9 @@
         "price": 1164.91,
         "chg": 0.93,
         "daily": 95,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 55135174656,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WAB",
@@ -5348,7 +6536,9 @@
         "price": 269.45,
         "chg": 3.03,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 45719564288,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WMT",
@@ -5357,7 +6547,9 @@
         "price": 132.03,
         "chg": 1.58,
         "daily": 100,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 1052596305920,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "DIS",
@@ -5366,7 +6558,9 @@
         "price": 103.65,
         "chg": -1.12,
         "daily": 20,
-        "weekly": 40
+        "weekly": 40,
+        "marketCap": 183618043904,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WBD",
@@ -5375,7 +6569,9 @@
         "price": 26.9,
         "chg": -1.57,
         "daily": 25,
-        "weekly": 45
+        "weekly": 45,
+        "marketCap": 67432067072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WM",
@@ -5384,7 +6580,9 @@
         "price": 232.8,
         "chg": 3.96,
         "daily": 40,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 93896572928,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WAT",
@@ -5393,7 +6591,9 @@
         "price": 311.2,
         "chg": -6.93,
         "daily": 30,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 30549100544,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WEC",
@@ -5402,7 +6602,9 @@
         "price": 115.57,
         "chg": 1.93,
         "daily": 50,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 37641105408,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WFC",
@@ -5411,7 +6613,9 @@
         "price": 80.51,
         "chg": -0.09,
         "daily": 10,
-        "weekly": 35
+        "weekly": 35,
+        "marketCap": 246710009856,
+        "capCategory": "Mega Cap (>$200B)"
       },
       {
         "sym": "WELL",
@@ -5420,7 +6624,9 @@
         "price": 208.24,
         "chg": 4.28,
         "daily": 55,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 146711429120,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WST",
@@ -5429,7 +6635,9 @@
         "price": 309.7,
         "chg": 12.86,
         "daily": 85,
-        "weekly": 50
+        "weekly": 50,
+        "marketCap": 21957730304,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WDC",
@@ -5438,7 +6646,9 @@
         "price": 403.12,
         "chg": 3.6,
         "daily": 90,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 137826435072,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WY",
@@ -5447,7 +6657,9 @@
         "price": 25.0,
         "chg": 0.93,
         "daily": 80,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 18026065920,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WSM",
@@ -5456,7 +6668,9 @@
         "price": 192.39,
         "chg": -2.48,
         "daily": 40,
-        "weekly": 55
+        "weekly": 55,
+        "marketCap": 22897498112,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WMB",
@@ -5465,7 +6679,9 @@
         "price": 71.65,
         "chg": 0.77,
         "daily": 60,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 87617699840,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WTW",
@@ -5474,7 +6690,9 @@
         "price": 290.89,
         "chg": -0.18,
         "daily": 20,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 27502458880,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WDAY",
@@ -5483,7 +6701,9 @@
         "price": 114.67,
         "chg": -9.42,
         "daily": 10,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 29475807232,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "WYNN",
@@ -5492,7 +6712,9 @@
         "price": 105.61,
         "chg": -0.97,
         "daily": 15,
-        "weekly": 60
+        "weekly": 60,
+        "marketCap": 11013358592,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "XEL",
@@ -5501,7 +6723,9 @@
         "price": 79.48,
         "chg": 1.75,
         "daily": 30,
-        "weekly": 80
+        "weekly": 80,
+        "marketCap": 49608413184,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "XYL",
@@ -5510,7 +6734,9 @@
         "price": 121.69,
         "chg": 0.19,
         "daily": 10,
-        "weekly": 30
+        "weekly": 30,
+        "marketCap": 29587877888,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "YUM",
@@ -5519,7 +6745,9 @@
         "price": 160.73,
         "chg": 1.05,
         "daily": 45,
-        "weekly": 90
+        "weekly": 90,
+        "marketCap": 44430614528,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ZBRA",
@@ -5528,7 +6756,9 @@
         "price": 226.87,
         "chg": -1.83,
         "daily": 15,
-        "weekly": 10
+        "weekly": 10,
+        "marketCap": 11160121344,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ZBH",
@@ -5537,7 +6767,9 @@
         "price": 92.44,
         "chg": -0.64,
         "daily": 15,
-        "weekly": 15
+        "weekly": 15,
+        "marketCap": 17893527552,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "ZTS",
@@ -5546,7 +6778,9 @@
         "price": 116.06,
         "chg": -1.24,
         "daily": 15,
-        "weekly": 0
+        "weekly": 0,
+        "marketCap": 48992141312,
+        "capCategory": "Large Cap ($10B-$200B)"
       }
     ]
   }

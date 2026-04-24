@@ -342,6 +342,7 @@
               <th data-k="sym"><span data-i18n="th.ticker">Ticker</span></th>
               <th data-k="name"><span data-i18n="th.name">Name</span></th>
               <th data-k="sector"><span data-i18n="th.sector">Sector</span></th>
+              <th data-k="capCategory"><span data-i18n="th.cap">Cap</span></th>
               <th data-k="score"  class="num" style="text-align:right"><span data-i18n="th.score">Score</span> <span class="arrow">▼</span></th>
               <th data-k="price"  class="num" style="text-align:right"><span data-i18n="th.price">Price</span></th>
               <th data-k="chg"    class="num" style="text-align:right"><span data-i18n="th.chg">Chg %</span></th>
@@ -571,6 +572,7 @@ const Overview = (() => {
           <td class="sym">${r.sym}</td>
           <td class="name">${r.name}</td>
           <td class="name" style="color:var(--text-dim)">${r.sector||''}</td>
+          <td class="name" style="color:var(--text-dim); font-size:12px;" title="${r.capCategory||''}">${r.capCategory && r.capCategory !== 'Unknown' ? r.capCategory : '—'}</td>
           <td class="num">
             <div class="score-cell">
               <div class="score-bar"><div style="width:${sc}%; background:${col}"></div></div>
