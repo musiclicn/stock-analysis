@@ -572,10 +572,10 @@ function trendLabel(s){
 const Overview = (() => {
   const URL_ = 'scores.json';
   const POLL_MS = 10000;
-  const state = {
-    tf: 'weekly', idx: 'ndx', sortKey: 'weekly', sortDir: 'desc',
-    query: '', data: null, lastUpdated: null,
-  };
+    const state = {
+      tf: 'daily', idx: 'ndx', sortKey: 'weekly', sortDir: 'desc',
+      query: '', data: null, lastUpdated: null,
+    };
 
   function indexCardHTML(ix){
     const score = ix[state.tf] ?? 0;
