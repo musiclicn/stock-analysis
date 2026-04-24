@@ -54,6 +54,27 @@ var TRANSLATIONS = {
     /* ---------- search ---------- */
     'search.placeholder': 'Search ticker or name…',
 
+    /* ---------- score decision matrix ---------- */
+    'matrix.title':     'Score Decision Matrix',
+    'matrix.hint':      'How to interpret weekly × daily score combinations',
+    'matrix.col.weekly': 'Weekly',
+    'matrix.col.daily':  'Daily',
+    'matrix.col.signal': 'Signal',
+    'matrix.col.action': 'Action',
+    'matrix.any':        'Any',
+    'matrix.s1.signal':  'Strong Trend Confluence',
+    'matrix.s1.action':  'Strong Buy',
+    'matrix.s2.signal':  'Bull Market Pullback',
+    'matrix.s2.action':  'Buy the Dip',
+    'matrix.s3.signal':  'Extreme Fear Entry',
+    'matrix.s3.action':  'Bottom Fish (small size)',
+    'matrix.s4.signal':  'Range Breakout',
+    'matrix.s4.action':  'Weak Buy (quick)',
+    'matrix.s5.signal':  'Trendless Chop',
+    'matrix.s5.action':  'Neutral (watch)',
+    'matrix.s6.signal':  'Bear / Downtrend',
+    'matrix.s6.action':  'Avoid / Short',
+
     /* ---------- table headers ---------- */
     'th.rank':   '#',
     'th.ticker': 'Ticker',
@@ -173,6 +194,27 @@ var TRANSLATIONS = {
 
     /* ---------- 搜索 ---------- */
     'search.placeholder': '搜索代码或名称…',
+
+    /* ---------- 决策矩阵 ---------- */
+    'matrix.title':      '决策矩阵',
+    'matrix.hint':       '周线与日线评分组合解读指南',
+    'matrix.col.weekly': '周线强度',
+    'matrix.col.daily':  '日线强度',
+    'matrix.col.signal': '决策定性',
+    'matrix.col.action': '策略动作',
+    'matrix.any':        '任意',
+    'matrix.s1.signal':  '主升浪强共振',
+    'matrix.s1.action':  '强力做多',
+    'matrix.s2.signal':  '牛市回调',
+    'matrix.s2.action':  '左侧低吸',
+    'matrix.s3.signal':  '极度恐慌买点',
+    'matrix.s3.action':  '小仓位试多',
+    'matrix.s4.signal':  '震荡市突破',
+    'matrix.s4.action':  '快进快出',
+    'matrix.s5.signal':  '无趋势震荡',
+    'matrix.s5.action':  '观望/不做',
+    'matrix.s6.signal':  '熊市/空头排列',
+    'matrix.s6.action':  '规避/做空候选',
 
     /* ---------- 表头 ---------- */
     'th.rank':   '#',
