@@ -1,14 +1,14 @@
 {
-  "updated_at": "2026-04-24T03:47:21+00:00",
+  "updated_at": "2026-04-24T22:25:35+00:00",
   "indexes": [
     {
       "sym": "SPY",
       "name": "S&P 500",
       "price": 708.45,
       "chg": -0.39,
-      "daily": 70,
-      "weekly": 55,
-      "marketCap": 650202710016,
+      "daily": 83,
+      "weekly": 62,
+      "marketCap": 655241314304,
       "capCategory": "Mega Cap (>$200B)"
     },
     {
@@ -16,9 +16,9 @@
       "name": "Nasdaq 100",
       "price": 651.42,
       "chg": -0.56,
-      "daily": 70,
-      "weekly": 55,
-      "marketCap": 256073187328,
+      "daily": 88,
+      "weekly": 62,
+      "marketCap": 260971233280,
       "capCategory": "Mega Cap (>$200B)"
     }
   ],
@@ -28,8 +28,8 @@
       "name": "Communication Svcs",
       "price": 117.39,
       "chg": -0.42,
-      "daily": 45,
-      "weekly": 55,
+      "daily": 71,
+      "weekly": 56,
       "marketCap": 0,
       "capCategory": "Unknown"
     },
@@ -38,9 +38,9 @@
       "name": "Consumer Discretionary",
       "price": 117.74,
       "chg": -1.0,
-      "daily": 50,
-      "weekly": 55,
-      "marketCap": 14158587904,
+      "daily": 77,
+      "weekly": 57,
+      "marketCap": 14272828416,
       "capCategory": "Large Cap ($10B-$200B)"
     },
     {
@@ -48,9 +48,9 @@
       "name": "Consumer Staples",
       "price": 83.48,
       "chg": 1.67,
-      "daily": 50,
-      "weekly": 80,
-      "marketCap": 17545158656,
+      "daily": 47,
+      "weekly": 74,
+      "marketCap": 17492617216,
       "capCategory": "Large Cap ($10B-$200B)"
     },
     {
@@ -58,9 +58,9 @@
       "name": "Energy",
       "price": 56.98,
       "chg": 0.78,
-      "daily": 55,
-      "weekly": 80,
-      "marketCap": 10622439424,
+      "daily": 41,
+      "weekly": 92,
+      "marketCap": 10601932800,
       "capCategory": "Large Cap ($10B-$200B)"
     },
     {
@@ -68,9 +68,9 @@
       "name": "Financials",
       "price": 51.8,
       "chg": -0.79,
-      "daily": 30,
-      "weekly": 45,
-      "marketCap": 45762449408,
+      "daily": 61,
+      "weekly": 38,
+      "marketCap": 45426741248,
       "capCategory": "Large Cap ($10B-$200B)"
     },
     {
@@ -78,9 +78,9 @@
       "name": "Health Care",
       "price": 146.24,
       "chg": -0.1,
-      "daily": 20,
-      "weekly": 40,
-      "marketCap": 28869971968,
+      "daily": 29,
+      "weekly": 58,
+      "marketCap": 28463294464,
       "capCategory": "Large Cap ($10B-$200B)"
     },
     {
@@ -88,9 +88,9 @@
       "name": "Industrials",
       "price": 174.07,
       "chg": 1.77,
-      "daily": 55,
-      "weekly": 90,
-      "marketCap": 23782488064,
+      "daily": 66,
+      "weekly": 84,
+      "marketCap": 23563886592,
       "capCategory": "Large Cap ($10B-$200B)"
     },
     {
@@ -98,9 +98,9 @@
       "name": "Technology",
       "price": 155.84,
       "chg": -1.42,
-      "daily": 85,
-      "weekly": 65,
-      "marketCap": 42397204480,
+      "daily": 89,
+      "weekly": 64,
+      "marketCap": 43588812800,
       "capCategory": "Large Cap ($10B-$200B)"
     },
     {
@@ -108,9 +108,9 @@
       "name": "Materials",
       "price": 51.81,
       "chg": -0.04,
-      "daily": 85,
-      "weekly": 90,
-      "marketCap": 3726366720,
+      "daily": 67,
+      "weekly": 93,
+      "marketCap": 3734278144,
       "capCategory": "Mid Cap ($2B-$10B)"
     },
     {
@@ -118,8 +118,8 @@
       "name": "Real Estate",
       "price": 43.96,
       "chg": 1.15,
-      "daily": 65,
-      "weekly": 95,
+      "daily": 91,
+      "weekly": 98,
       "marketCap": 0,
       "capCategory": "Unknown"
     },
@@ -128,9 +128,9 @@
       "name": "Utilities",
       "price": 46.09,
       "chg": 2.72,
-      "daily": 50,
-      "weekly": 80,
-      "marketCap": 7525298688,
+      "daily": 45,
+      "weekly": 86,
+      "marketCap": 7539993600,
       "capCategory": "Mid Cap ($2B-$10B)"
     }
   ],
@@ -142,9 +142,9 @@
         "sector": "XLK",
         "price": 238.98,
         "chg": -6.63,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 96595714048,
+        "daily": 43,
+        "weekly": 4,
+        "marketCap": 99206848512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -153,9 +153,9 @@
         "sector": "XLK",
         "price": 305.33,
         "chg": 0.62,
-        "daily": 80,
-        "weekly": 95,
-        "marketCap": 497813323776,
+        "daily": 90,
+        "weekly": 83,
+        "marketCap": 567073177600,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -165,8 +165,8 @@
         "price": 141.87,
         "chg": -1.6,
         "daily": 100,
-        "weekly": 65,
-        "marketCap": 85053046784,
+        "weekly": 90,
+        "marketCap": 85622595584,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -175,9 +175,9 @@
         "sector": "",
         "price": 313.79,
         "chg": 1.03,
-        "daily": 0,
-        "weekly": 25,
-        "marketCap": 41868345344,
+        "daily": 22,
+        "weekly": 30,
+        "marketCap": 40767565824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -186,9 +186,9 @@
         "sector": "XLC",
         "price": 338.89,
         "chg": -0.13,
-        "daily": 75,
-        "weekly": 55,
-        "marketCap": 4099552575488,
+        "daily": 79,
+        "weekly": 72,
+        "marketCap": 4166206881792,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -197,9 +197,9 @@
         "sector": "XLC",
         "price": 337.75,
         "chg": 0.01,
-        "daily": 75,
-        "weekly": 55,
-        "marketCap": 4085761966080,
+        "daily": 79,
+        "weekly": 72,
+        "marketCap": 4141045252096,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -208,9 +208,9 @@
         "sector": "XLY",
         "price": 255.08,
         "chg": -0.11,
-        "daily": 80,
-        "weekly": 55,
-        "marketCap": 2743194615808,
+        "daily": 86,
+        "weekly": 65,
+        "marketCap": 2839014801408,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -219,9 +219,9 @@
         "sector": "XLU",
         "price": 135.08,
         "chg": 2.63,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 73424551936,
+        "daily": 71,
+        "weekly": 97,
+        "marketCap": 73234300928,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -230,9 +230,9 @@
         "sector": "XLV",
         "price": 348.62,
         "chg": 0.78,
-        "daily": 40,
+        "daily": 38,
         "weekly": 75,
-        "marketCap": 187929755648,
+        "marketCap": 185735757824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -241,9 +241,9 @@
         "sector": "XLK",
         "price": 403.88,
         "chg": 5.89,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 197175902208,
+        "daily": 96,
+        "weekly": 97,
+        "marketCap": 195071737856,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -252,9 +252,9 @@
         "sector": "XLK",
         "price": 273.43,
         "chg": 0.1,
-        "daily": 75,
-        "weekly": 65,
-        "marketCap": 4014264025088,
+        "daily": 77,
+        "weekly": 72,
+        "marketCap": 3979469914112,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -263,9 +263,9 @@
         "sector": "XLK",
         "price": 403.91,
         "chg": 0.11,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 320546963456,
+        "daily": 75,
+        "weekly": 95,
+        "marketCap": 330967056384,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -274,9 +274,9 @@
         "sector": "XLK",
         "price": 454.17,
         "chg": -6.11,
-        "daily": 20,
-        "weekly": 55,
-        "marketCap": 152719622144,
+        "daily": 55,
+        "weekly": 41,
+        "marketCap": 150742417408,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -285,9 +285,9 @@
         "sector": "",
         "price": 204.61,
         "chg": 4.09,
-        "daily": 80,
-        "weekly": 50,
-        "marketCap": 217295536128,
+        "daily": 94,
+        "weekly": null,
+        "marketCap": 249367887872,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -296,9 +296,9 @@
         "sector": "",
         "price": 1417.8,
         "chg": -1.79,
-        "daily": 50,
+        "daily": 60,
         "weekly": 85,
-        "marketCap": 546445197312,
+        "marketCap": 561823285248,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -307,9 +307,9 @@
         "sector": "XLK",
         "price": 231.98,
         "chg": -6.3,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 48947777536,
+        "daily": 40,
+        "weekly": 18,
+        "marketCap": 50099838976,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -318,9 +318,9 @@
         "sector": "XLI",
         "price": 198.53,
         "chg": -1.57,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 79936978944,
+        "daily": 32,
+        "weekly": 8,
+        "marketCap": 79131697152,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -329,9 +329,9 @@
         "sector": "XLI",
         "price": 392.64,
         "chg": -2.61,
-        "daily": 10,
-        "weekly": 25,
-        "marketCap": 31635869696,
+        "daily": 26,
+        "weekly": 19,
+        "marketCap": 31996831744,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -340,9 +340,9 @@
         "sector": "XLE",
         "price": 64.49,
         "chg": 3.12,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 63958429696,
+        "daily": 51,
+        "weekly": 96,
+        "marketCap": 68371755008,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -351,9 +351,9 @@
         "sector": "XLY",
         "price": 176.75,
         "chg": -1.48,
-        "daily": 30,
-        "weekly": 45,
-        "marketCap": 137542107136,
+        "daily": 61,
+        "weekly": 28,
+        "marketCap": 140265717760,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -362,9 +362,9 @@
         "sector": "XLK",
         "price": 419.94,
         "chg": -0.64,
-        "daily": 75,
-        "weekly": 95,
-        "marketCap": 1988276649984,
+        "daily": 92,
+        "weekly": 68,
+        "marketCap": 2001628430336,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -373,9 +373,9 @@
         "sector": "XLK",
         "price": 314.33,
         "chg": -5.21,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 86784016384,
+        "daily": 73,
+        "weekly": 42,
+        "marketCap": 91908292608,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -384,9 +384,9 @@
         "sector": "XLC",
         "price": 241.78,
         "chg": -0.29,
-        "daily": 30,
-        "weekly": 15,
-        "marketCap": 30616977408,
+        "daily": 78,
+        "weekly": 45,
+        "marketCap": 22810142720,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -395,9 +395,9 @@
         "sector": "XLI",
         "price": 177.62,
         "chg": 1.69,
-        "daily": 15,
-        "weekly": 25,
-        "marketCap": 71063470080,
+        "daily": 35,
+        "weekly": 21,
+        "marketCap": 70375317504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -407,8 +407,8 @@
         "price": 88.59,
         "chg": -1.35,
         "daily": 95,
-        "weekly": 95,
-        "marketCap": 349921017856,
+        "weekly": 96,
+        "marketCap": 351579996160,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -417,9 +417,9 @@
         "sector": "",
         "price": 97.33,
         "chg": 1.19,
-        "daily": 45,
-        "weekly": 80,
-        "marketCap": 43346763776,
+        "daily": 65,
+        "weekly": 66,
+        "marketCap": 43671875584,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -428,9 +428,9 @@
         "sector": "XLK",
         "price": 55.1,
         "chg": -6.31,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 26351405056,
+        "daily": 20,
+        "weekly": 7,
+        "marketCap": 26356187136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -439,9 +439,9 @@
         "sector": "XLC",
         "price": 31.64,
         "chg": 7.73,
-        "daily": 50,
-        "weekly": 10,
-        "marketCap": 115292823552,
+        "daily": 77,
+        "weekly": 70,
+        "marketCap": 100425728000,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -450,9 +450,9 @@
         "sector": "XLU",
         "price": 292.77,
         "chg": 1.95,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 106069000192,
+        "daily": 46,
+        "weekly": 51,
+        "marketCap": 113590239232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -461,9 +461,9 @@
         "sector": "XLI",
         "price": 33.88,
         "chg": 0.59,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 32636891136,
+        "daily": 47,
+        "weekly": 8,
+        "marketCap": 31856609280,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -472,9 +472,9 @@
         "sector": "XLRE",
         "price": 37.38,
         "chg": -3.59,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 15842496512,
+        "daily": 23,
+        "weekly": 1,
+        "marketCap": 15444102144,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -483,9 +483,9 @@
         "sector": "XLP",
         "price": 1014.38,
         "chg": 1.06,
-        "daily": 40,
-        "weekly": 90,
-        "marketCap": 450032271360,
+        "daily": 64,
+        "weekly": 72,
+        "marketCap": 448599293952,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -494,9 +494,9 @@
         "sector": "XLK",
         "price": 445.39,
         "chg": -4.56,
-        "daily": 35,
-        "weekly": 45,
-        "marketCap": 112957186048,
+        "daily": 75,
+        "weekly": 38,
+        "marketCap": 113652088832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -505,9 +505,9 @@
         "sector": "XLI",
         "price": 46.18,
         "chg": 6.95,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 85808857088,
+        "daily": 87,
+        "weekly": 100,
+        "marketCap": 84378083328,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -516,9 +516,9 @@
         "sector": "XLK",
         "price": 127.86,
         "chg": -3.24,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 45243432960,
+        "daily": 60,
+        "weekly": 45,
+        "marketCap": 45816668160,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -527,9 +527,9 @@
         "sector": "XLV",
         "price": 62.7,
         "chg": -1.12,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 24194236416,
+        "daily": 16,
+        "weekly": 17,
+        "marketCap": 23758200832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -538,9 +538,9 @@
         "sector": "XLE",
         "price": 195.59,
         "chg": 0.89,
-        "daily": 55,
-        "weekly": 80,
-        "marketCap": 55021764608,
+        "daily": 63,
+        "weekly": 92,
+        "marketCap": 54796713984,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -549,9 +549,9 @@
         "sector": "XLY",
         "price": 177.0,
         "chg": -2.89,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 77127114752,
+        "daily": 64,
+        "weekly": 28,
+        "marketCap": 77031251968,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -560,9 +560,9 @@
         "sector": "XLC",
         "price": 202.51,
         "chg": -0.13,
-        "daily": 40,
-        "weekly": 65,
-        "marketCap": 50678878208,
+        "daily": 42,
+        "weekly": 67,
+        "marketCap": 50718920704,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -571,9 +571,9 @@
         "sector": "XLU",
         "price": 46.75,
         "chg": 1.94,
-        "daily": 20,
-        "weekly": 80,
-        "marketCap": 47833436160,
+        "daily": 31,
+        "weekly": 83,
+        "marketCap": 48007372800,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -582,9 +582,9 @@
         "sector": "XLI",
         "price": 45.45,
         "chg": 1.43,
-        "daily": 20,
-        "weekly": 80,
-        "marketCap": 52178194432,
+        "daily": 31,
+        "weekly": 69,
+        "marketCap": 51305684992,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -593,9 +593,9 @@
         "sector": "",
         "price": 69.89,
         "chg": -0.06,
-        "daily": 75,
-        "weekly": 85,
-        "marketCap": 50135519232,
+        "daily": 73,
+        "weekly": 69,
+        "marketCap": 49561640960,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -604,9 +604,9 @@
         "sector": "XLK",
         "price": 82.76,
         "chg": -4.97,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 61236076544,
+        "daily": 73,
+        "weekly": 46,
+        "marketCap": 62405152768,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -615,9 +615,9 @@
         "sector": "XLV",
         "price": 69.89,
         "chg": -2.09,
-        "daily": 15,
-        "weekly": 20,
-        "marketCap": 31890118656,
+        "daily": 38,
+        "weekly": null,
+        "marketCap": 31406450688,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -626,9 +626,9 @@
         "sector": "XLV",
         "price": 133.64,
         "chg": 0.56,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 165874466816,
+        "daily": 19,
+        "weekly": 64,
+        "marketCap": 161852948480,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -637,9 +637,9 @@
         "sector": "XLI",
         "price": 214.34,
         "chg": -2.56,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 135817207808,
+        "daily": 35,
+        "weekly": 80,
+        "marketCap": 135075831808,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -648,9 +648,9 @@
         "sector": "XLV",
         "price": 560.93,
         "chg": -3.01,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 44663508992,
+        "daily": 32,
+        "weekly": 39,
+        "marketCap": 45061627904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -659,9 +659,9 @@
         "sector": "",
         "price": 143.83,
         "chg": -0.45,
-        "daily": 10,
-        "weekly": 45,
-        "marketCap": 31046014976,
+        "daily": 16,
+        "weekly": 48,
+        "marketCap": 29176733696,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -670,9 +670,9 @@
         "sector": "XLK",
         "price": 66.78,
         "chg": 2.31,
-        "daily": 90,
-        "weekly": 80,
-        "marketCap": 335303081984,
+        "daily": 97,
+        "weekly": 92,
+        "marketCap": 414434197504,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -681,9 +681,9 @@
         "sector": "XLK",
         "price": 383.3,
         "chg": -6.21,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 106662453248,
+        "daily": 27,
+        "weekly": 17,
+        "marketCap": 110182629376,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -692,9 +692,9 @@
         "sector": "XLV",
         "price": 478.82,
         "chg": -0.99,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 169580265472,
+        "daily": 58,
+        "weekly": 26,
+        "marketCap": 170784407552,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -703,9 +703,9 @@
         "sector": "XLP",
         "price": 28.53,
         "chg": 7.5,
-        "daily": 50,
-        "weekly": 0,
-        "marketCap": 38813204480,
+        "daily": 64,
+        "weekly": 23,
+        "marketCap": 39751905280,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -715,8 +715,8 @@
         "price": 1815.43,
         "chg": 0.19,
         "daily": 90,
-        "weekly": 95,
-        "marketCap": 238533591040,
+        "weekly": 96,
+        "marketCap": 254244175872,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -725,9 +725,9 @@
         "sector": "XLP",
         "price": 21.97,
         "chg": 0.37,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 26006872064,
+        "daily": 14,
+        "weekly": 6,
+        "marketCap": 25971361792,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -736,9 +736,9 @@
         "sector": "XLK",
         "price": 258.56,
         "chg": -2.63,
-        "daily": 80,
-        "weekly": 90,
-        "marketCap": 323339354112,
+        "daily": 74,
+        "weekly": 88,
+        "marketCap": 334869331968,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -747,9 +747,9 @@
         "sector": "XLB",
         "price": 508.06,
         "chg": 2.72,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 235432034304,
+        "daily": 78,
+        "weekly": 88,
+        "marketCap": 236470026240,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -758,9 +758,9 @@
         "sector": "XLY",
         "price": 368.24,
         "chg": 0.3,
-        "daily": 90,
+        "daily": 93,
         "weekly": 95,
-        "marketCap": 97577910272,
+        "marketCap": 97289076736,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -769,9 +769,9 @@
         "sector": "",
         "price": 165.56,
         "chg": 5.24,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 144775299072,
+        "daily": 100,
+        "weekly": 100,
+        "marketCap": 143682224128,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -780,9 +780,9 @@
         "sector": "",
         "price": 1809.2,
         "chg": -2.78,
-        "daily": 15,
-        "weekly": 50,
-        "marketCap": 91721342976,
+        "daily": 54,
+        "weekly": 25,
+        "marketCap": 93040484352,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -791,9 +791,9 @@
         "sector": "XLC",
         "price": 659.15,
         "chg": -2.31,
-        "daily": 15,
-        "weekly": 45,
-        "marketCap": 1673201713152,
+        "daily": 65,
+        "weekly": 43,
+        "marketCap": 1713511989248,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -802,9 +802,9 @@
         "sector": "XLK",
         "price": 90.64,
         "chg": 9.89,
-        "daily": 95,
-        "weekly": 50,
-        "marketCap": 49048518656,
+        "daily": 90,
+        "weekly": 77,
+        "marketCap": 48399159296,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -813,9 +813,9 @@
         "sector": "XLK",
         "price": 481.72,
         "chg": -1.18,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 543252021248,
+        "daily": 70,
+        "weekly": 85,
+        "marketCap": 560168042496,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -824,9 +824,9 @@
         "sector": "XLK",
         "price": 415.75,
         "chg": -3.97,
-        "daily": 20,
-        "weekly": 40,
-        "marketCap": 3090011127808,
+        "daily": 65,
+        "weekly": 28,
+        "marketCap": 3155936149504,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -835,9 +835,9 @@
         "sector": "",
         "price": 172.47,
         "chg": -3.84,
-        "daily": 35,
-        "weekly": 40,
-        "marketCap": 60180860928,
+        "daily": 82,
+        "weekly": 39,
+        "marketCap": 59674906624,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -846,9 +846,9 @@
         "sector": "XLP",
         "price": 57.71,
         "chg": 2.94,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 74068279296,
+        "daily": 40,
+        "weekly": 32,
+        "marketCap": 73939935232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -857,9 +857,9 @@
         "sector": "XLK",
         "price": 1592.17,
         "chg": 4.61,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 78204207104,
+        "daily": 100,
+        "weekly": 100,
+        "marketCap": 80163528704,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -868,9 +868,9 @@
         "sector": "XLP",
         "price": 77.56,
         "chg": 2.12,
-        "daily": 55,
-        "weekly": 55,
-        "marketCap": 75846393856,
+        "daily": 59,
+        "weekly": 58,
+        "marketCap": 76501590016,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -879,9 +879,9 @@
         "sector": "XLC",
         "price": 92.82,
         "chg": -0.45,
-        "daily": 35,
-        "weekly": 35,
-        "marketCap": 390846316544,
+        "daily": 57,
+        "weekly": 44,
+        "marketCap": 389246222336,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -890,9 +890,9 @@
         "sector": "XLK",
         "price": 199.64,
         "chg": -1.41,
-        "daily": 95,
-        "weekly": 65,
-        "marketCap": 4852250312704,
+        "daily": 92,
+        "weekly": 53,
+        "marketCap": 5062002737152,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -901,9 +901,9 @@
         "sector": "XLK",
         "price": 241.16,
         "chg": 6.83,
-        "daily": 50,
-        "weekly": 40,
-        "marketCap": 60939407360,
+        "daily": 75,
+        "weekly": 52,
+        "marketCap": 61667160064,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -912,9 +912,9 @@
         "sector": "XLY",
         "price": 93.24,
         "chg": -0.72,
-        "daily": 30,
-        "weekly": 45,
-        "marketCap": 78180532224,
+        "daily": 52,
+        "weekly": 30,
+        "marketCap": 78088298496,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -923,9 +923,9 @@
         "sector": "XLI",
         "price": 222.78,
         "chg": 1.27,
-        "daily": 95,
-        "weekly": 75,
-        "marketCap": 46433058816,
+        "daily": 97,
+        "weekly": 92,
+        "marketCap": 45849464832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -934,9 +934,9 @@
         "sector": "XLI",
         "price": 126.97,
         "chg": 1.36,
-        "daily": 90,
-        "weekly": 85,
-        "marketCap": 66772815872,
+        "daily": 75,
+        "weekly": 88,
+        "marketCap": 66788593664,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -945,9 +945,9 @@
         "sector": "XLK",
         "price": 141.57,
         "chg": -7.24,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 338589548544,
+        "daily": 32,
+        "weekly": 27,
+        "marketCap": 342224863232,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -956,9 +956,9 @@
         "sector": "XLK",
         "price": 173.21,
         "chg": -4.41,
-        "daily": 30,
-        "weekly": 50,
-        "marketCap": 140473319424,
+        "daily": 77,
+        "weekly": 33,
+        "marketCap": 144795926528,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -967,9 +967,9 @@
         "sector": "XLI",
         "price": 90.95,
         "chg": -2.65,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 32586555392,
+        "daily": 49,
+        "weekly": 11,
+        "marketCap": 32181686272,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -978,9 +978,9 @@
         "sector": "XLF",
         "price": 49.75,
         "chg": -2.87,
-        "daily": 35,
-        "weekly": 0,
-        "marketCap": 44758781952,
+        "daily": 74,
+        "weekly": 20,
+        "marketCap": 45415542784,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -989,9 +989,9 @@
         "sector": "",
         "price": 97.77,
         "chg": -2.28,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 138798825472,
+        "daily": 37,
+        "weekly": 13,
+        "marketCap": 139167940608,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1000,9 +1000,9 @@
         "sector": "XLP",
         "price": 155.7,
         "chg": 1.24,
-        "daily": 30,
-        "weekly": 60,
-        "marketCap": 212832698368,
+        "daily": 48,
+        "weekly": 75,
+        "marketCap": 212477296640,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1011,9 +1011,9 @@
         "sector": "XLK",
         "price": 133.95,
         "chg": -1.56,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 143064645632,
+        "daily": 52,
+        "weekly": 15,
+        "marketCap": 158978523136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1022,9 +1022,9 @@
         "sector": "XLV",
         "price": 766.02,
         "chg": 2.6,
-        "daily": 50,
-        "weekly": 10,
-        "marketCap": 80983490560,
+        "daily": 44,
+        "weekly": 61,
+        "marketCap": 79455838208,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1033,9 +1033,9 @@
         "sector": "XLK",
         "price": 363.76,
         "chg": -0.27,
-        "daily": 35,
-        "weekly": 10,
-        "marketCap": 37440913408,
+        "daily": 75,
+        "weekly": 19,
+        "marketCap": 36374581248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1044,9 +1044,9 @@
         "sector": "XLY",
         "price": 226.92,
         "chg": 0.26,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 73396125696,
+        "daily": 85,
+        "weekly": 100,
+        "marketCap": 73218228224,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1055,9 +1055,9 @@
         "sector": "XLK",
         "price": 932.43,
         "chg": -4.76,
-        "daily": 90,
-        "weekly": 87,
-        "marketCap": 137627582464,
+        "daily": 72,
+        "weekly": null,
+        "marketCap": 146110201856,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1067,8 +1067,8 @@
         "price": 587.62,
         "chg": 1.33,
         "daily": 90,
-        "weekly": 95,
-        "marketCap": 131641786368,
+        "weekly": 98,
+        "marketCap": 131334873088,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1077,9 +1077,9 @@
         "sector": "",
         "price": 124.23,
         "chg": -5.86,
-        "daily": 20,
-        "weekly": 55,
-        "marketCap": 161621639168,
+        "daily": 55,
+        "weekly": 43,
+        "marketCap": 163703209984,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1088,9 +1088,9 @@
         "sector": "XLY",
         "price": 99.54,
         "chg": 0.02,
-        "daily": 65,
-        "weekly": 80,
-        "marketCap": 113405919232,
+        "daily": 77,
+        "weekly": 85,
+        "marketCap": 112414728192,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1099,9 +1099,9 @@
         "sector": "XLK",
         "price": 456.85,
         "chg": -4.28,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 87515111424,
+        "daily": 71,
+        "weekly": 28,
+        "marketCap": 95938101248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1110,9 +1110,9 @@
         "sector": "XLC",
         "price": 194.07,
         "chg": 2.73,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 213838512128,
+        "daily": 25,
+        "weekly": 36,
+        "marketCap": 209133551616,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1121,9 +1121,9 @@
         "sector": "XLC",
         "price": 209.9,
         "chg": -3.8,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 38868328448,
+        "daily": 60,
+        "weekly": 33,
+        "marketCap": 39025725440,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1132,9 +1132,9 @@
         "sector": "XLY",
         "price": 373.72,
         "chg": -3.56,
-        "daily": 20,
-        "weekly": 35,
-        "marketCap": 1403589099520,
+        "daily": 49,
+        "weekly": 46,
+        "marketCap": 1413278859264,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1143,9 +1143,9 @@
         "sector": "XLK",
         "price": 282.23,
         "chg": 19.43,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 256829308928,
+        "daily": 99,
+        "weekly": 97,
+        "marketCap": 252197421056,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1154,9 +1154,9 @@
         "sector": "",
         "price": 90.18,
         "chg": -2.89,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 39946350592,
+        "daily": 50,
+        "weekly": 12,
+        "marketCap": 39755878400,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1165,9 +1165,9 @@
         "sector": "XLI",
         "price": 177.14,
         "chg": -0.98,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 23205435392,
+        "daily": 28,
+        "weekly": 9,
+        "marketCap": 23264385024,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1176,9 +1176,9 @@
         "sector": "XLV",
         "price": 435.1,
         "chg": -0.59,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 110671921152,
+        "daily": 22,
+        "weekly": 29,
+        "marketCap": 109448445952,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1187,9 +1187,9 @@
         "sector": "XLP",
         "price": 132.03,
         "chg": 1.58,
-        "daily": 100,
-        "weekly": 90,
-        "marketCap": 1052596305920,
+        "daily": 76,
+        "weekly": 86,
+        "marketCap": 1035774525440,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1198,9 +1198,9 @@
         "sector": "XLC",
         "price": 26.9,
         "chg": -1.57,
-        "daily": 25,
-        "weekly": 45,
-        "marketCap": 67432067072,
+        "daily": 19,
+        "weekly": 63,
+        "marketCap": 67858219008,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1209,9 +1209,9 @@
         "sector": "XLK",
         "price": 403.12,
         "chg": 3.6,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 137826435072,
+        "daily": 82,
+        "weekly": 94,
+        "marketCap": 138127310848,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1220,9 +1220,9 @@
         "sector": "XLK",
         "price": 114.67,
         "chg": -9.42,
-        "daily": 10,
+        "daily": 27,
         "weekly": 10,
-        "marketCap": 29475807232,
+        "marketCap": 30784188416,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1231,9 +1231,9 @@
         "sector": "XLU",
         "price": 79.48,
         "chg": 1.75,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 49608413184,
+        "daily": 44,
+        "weekly": 81,
+        "marketCap": 49402437632,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1242,9 +1242,9 @@
         "sector": "",
         "price": 132.97,
         "chg": -6.79,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 21380339712,
+        "daily": 31,
+        "weekly": 14,
+        "marketCap": 21787140096,
         "capCategory": "Large Cap ($10B-$200B)"
       }
     ],
@@ -1255,9 +1255,9 @@
         "sector": "XLI",
         "price": 144.84,
         "chg": -0.64,
-        "daily": 15,
-        "weekly": 35,
-        "marketCap": 75543797760,
+        "daily": 36,
+        "weekly": 32,
+        "marketCap": 76143607808,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1266,9 +1266,9 @@
         "sector": "XLI",
         "price": 65.09,
         "chg": 0.43,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 8998028288,
+        "daily": 19,
+        "weekly": 27,
+        "marketCap": 8899878912,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -1277,9 +1277,9 @@
         "sector": "XLV",
         "price": 92.48,
         "chg": 0.85,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 160700923904,
+        "daily": 4,
+        "weekly": 13,
+        "marketCap": 158355046400,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1288,9 +1288,9 @@
         "sector": "XLV",
         "price": 200.95,
         "chg": 0.22,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 355432792064,
+        "daily": 16,
+        "weekly": 36,
+        "marketCap": 351470780416,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1299,9 +1299,9 @@
         "sector": "XLK",
         "price": 178.28,
         "chg": -6.22,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 109719773184,
+        "daily": 30,
+        "weekly": 1,
+        "marketCap": 109769015296,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1310,9 +1310,9 @@
         "sector": "XLK",
         "price": 238.98,
         "chg": -6.63,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 96595714048,
+        "daily": 43,
+        "weekly": 4,
+        "marketCap": 99206848512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1321,9 +1321,9 @@
         "sector": "XLK",
         "price": 305.33,
         "chg": 0.62,
-        "daily": 80,
-        "weekly": 95,
-        "marketCap": 497813323776,
+        "daily": 90,
+        "weekly": 83,
+        "marketCap": 567073177600,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1332,9 +1332,9 @@
         "sector": "XLU",
         "price": 14.5,
         "chg": 0.35,
-        "daily": 45,
-        "weekly": 35,
-        "marketCap": 10339538944,
+        "daily": 48,
+        "weekly": 52,
+        "marketCap": 10332407808,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1343,9 +1343,9 @@
         "sector": "XLF",
         "price": 115.12,
         "chg": 0.32,
-        "daily": 75,
-        "weekly": 90,
-        "marketCap": 59307945984,
+        "daily": 88,
+        "weekly": 57,
+        "marketCap": 59050356736,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1354,9 +1354,9 @@
         "sector": "XLV",
         "price": 114.42,
         "chg": -5.02,
-        "daily": 15,
-        "weekly": 0,
-        "marketCap": 32335355904,
+        "daily": 41,
+        "weekly": 14,
+        "marketCap": 32654696448,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1365,9 +1365,9 @@
         "sector": "XLB",
         "price": 303.65,
         "chg": 2.32,
-        "daily": 80,
-        "weekly": 70,
-        "marketCap": 67609493504,
+        "daily": 77,
+        "weekly": 87,
+        "marketCap": 67188678656,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1377,8 +1377,8 @@
         "price": 141.87,
         "chg": -1.6,
         "daily": 100,
-        "weekly": 65,
-        "marketCap": 85053046784,
+        "weekly": 90,
+        "marketCap": 85622595584,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1387,9 +1387,9 @@
         "sector": "XLK",
         "price": 96.18,
         "chg": -0.96,
-        "daily": 50,
-        "weekly": 70,
-        "marketCap": 14159911936,
+        "daily": 25,
+        "weekly": 72,
+        "marketCap": 14022994944,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1398,9 +1398,9 @@
         "sector": "XLB",
         "price": 193.14,
         "chg": -0.56,
-        "daily": 95,
-        "weekly": 75,
-        "marketCap": 22768672768,
+        "daily": 81,
+        "weekly": 87,
+        "marketCap": 22201636864,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1409,9 +1409,9 @@
         "sector": "XLRE",
         "price": 46.38,
         "chg": -0.58,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 8029634560,
+        "daily": 41,
+        "weekly": 12,
+        "marketCap": 8206224384,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -1420,9 +1420,9 @@
         "sector": "XLV",
         "price": 190.67,
         "chg": -2.74,
-        "daily": 65,
-        "weekly": 30,
-        "marketCap": 13655265280,
+        "daily": 88,
+        "weekly": 77,
+        "marketCap": 13579351040,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1431,9 +1431,9 @@
         "sector": "XLI",
         "price": 147.42,
         "chg": 1.72,
-        "daily": 20,
-        "weekly": 25,
-        "marketCap": 12668648448,
+        "daily": 39,
+        "weekly": 29,
+        "marketCap": 12555213824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1442,9 +1442,9 @@
         "sector": "XLU",
         "price": 72.63,
         "chg": 2.35,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 18758619136,
+        "daily": 68,
+        "weekly": 97,
+        "marketCap": 18675972096,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1453,9 +1453,9 @@
         "sector": "XLF",
         "price": 216.56,
         "chg": 1.12,
-        "daily": 85,
-        "weekly": 95,
-        "marketCap": 55921704960,
+        "daily": 94,
+        "weekly": 69,
+        "marketCap": 54971432960,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1464,9 +1464,9 @@
         "sector": "XLC",
         "price": 338.89,
         "chg": -0.13,
-        "daily": 75,
-        "weekly": 55,
-        "marketCap": 4099552575488,
+        "daily": 79,
+        "weekly": 72,
+        "marketCap": 4166206881792,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1475,9 +1475,9 @@
         "sector": "XLC",
         "price": 337.75,
         "chg": 0.01,
-        "daily": 75,
-        "weekly": 55,
-        "marketCap": 4085761966080,
+        "daily": 79,
+        "weekly": 72,
+        "marketCap": 4141045252096,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1486,9 +1486,9 @@
         "sector": "XLP",
         "price": 67.15,
         "chg": 3.02,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 112267960320,
+        "daily": 50,
+        "weekly": 81,
+        "marketCap": 111816540160,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1497,9 +1497,9 @@
         "sector": "XLY",
         "price": 255.08,
         "chg": -0.11,
-        "daily": 80,
-        "weekly": 55,
-        "marketCap": 2743194615808,
+        "daily": 86,
+        "weekly": 65,
+        "marketCap": 2839014801408,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1508,9 +1508,9 @@
         "sector": "XLB",
         "price": 39.64,
         "chg": -1.56,
-        "daily": 15,
-        "weekly": 0,
-        "marketCap": 18315491328,
+        "daily": 36,
+        "weekly": 13,
+        "marketCap": 17996681216,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1519,9 +1519,9 @@
         "sector": "XLU",
         "price": 112.05,
         "chg": 2.57,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 30998992896,
+        "daily": 68,
+        "weekly": 95,
+        "marketCap": 30741706752,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1530,9 +1530,9 @@
         "sector": "XLU",
         "price": 135.08,
         "chg": 2.63,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 73424551936,
+        "daily": 71,
+        "weekly": 97,
+        "marketCap": 73234300928,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1541,9 +1541,9 @@
         "sector": "XLF",
         "price": 318.55,
         "chg": -4.31,
-        "daily": 30,
-        "weekly": 45,
-        "marketCap": 217251086336,
+        "daily": 65,
+        "weekly": 38,
+        "marketCap": 214202548224,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1552,9 +1552,9 @@
         "sector": "XLF",
         "price": 76.33,
         "chg": 0.39,
-        "daily": 15,
-        "weekly": 40,
-        "marketCap": 40826384384,
+        "daily": 42,
+        "weekly": 36,
+        "marketCap": 40189890560,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1563,9 +1563,9 @@
         "sector": "XLRE",
         "price": 179.01,
         "chg": 1.53,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 83484901376,
+        "daily": 63,
+        "weekly": 37,
+        "marketCap": 83111813120,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1574,9 +1574,9 @@
         "sector": "XLU",
         "price": 134.97,
         "chg": 2.93,
-        "daily": 40,
-        "weekly": 30,
-        "marketCap": 26356957184,
+        "daily": 50,
+        "weekly": 64,
+        "marketCap": 25858992128,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1585,9 +1585,9 @@
         "sector": "XLF",
         "price": 459.63,
         "chg": -1.9,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 41683693568,
+        "daily": 51,
+        "weekly": 27,
+        "marketCap": 42090889216,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1596,9 +1596,9 @@
         "sector": "XLI",
         "price": 235.0,
         "chg": 1.97,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 53830373376,
+        "daily": 77,
+        "weekly": 91,
+        "marketCap": 53360791552,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1607,9 +1607,9 @@
         "sector": "XLV",
         "price": 348.62,
         "chg": 0.78,
-        "daily": 40,
+        "daily": 38,
         "weekly": 75,
-        "marketCap": 187929755648,
+        "marketCap": 185735757824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1618,9 +1618,9 @@
         "sector": "XLK",
         "price": 150.18,
         "chg": 1.38,
-        "daily": 65,
-        "weekly": 55,
-        "marketCap": 184635883520,
+        "daily": 73,
+        "weekly": 61,
+        "marketCap": 184058068992,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1629,9 +1629,9 @@
         "sector": "XLK",
         "price": 403.88,
         "chg": 5.89,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 197175902208,
+        "daily": 96,
+        "weekly": 97,
+        "marketCap": 195071737856,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1640,9 +1640,9 @@
         "sector": "XLF",
         "price": 323.56,
         "chg": -1.01,
-        "daily": 35,
-        "weekly": 10,
-        "marketCap": 69544452096,
+        "daily": 51,
+        "weekly": 11,
+        "marketCap": 69024317440,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1651,9 +1651,9 @@
         "sector": "XLE",
         "price": 38.66,
         "chg": 1.58,
-        "daily": 55,
-        "weekly": 80,
-        "marketCap": 13662459904,
+        "daily": 56,
+        "weekly": 92,
+        "marketCap": 13333797888,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1662,9 +1662,9 @@
         "sector": "XLF",
         "price": 124.77,
         "chg": -3.32,
-        "daily": 35,
-        "weekly": 50,
-        "marketCap": 72147918848,
+        "daily": 69,
+        "weekly": 20,
+        "marketCap": 71853015040,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1673,9 +1673,9 @@
         "sector": "XLK",
         "price": 273.43,
         "chg": 0.1,
-        "daily": 75,
-        "weekly": 65,
-        "marketCap": 4014264025088,
+        "daily": 77,
+        "weekly": 72,
+        "marketCap": 3979469914112,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1684,9 +1684,9 @@
         "sector": "XLK",
         "price": 403.91,
         "chg": 0.11,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 320546963456,
+        "daily": 75,
+        "weekly": 95,
+        "marketCap": 330967056384,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1695,9 +1695,9 @@
         "sector": "XLK",
         "price": 454.17,
         "chg": -6.11,
-        "daily": 20,
-        "weekly": 55,
-        "marketCap": 152719622144,
+        "daily": 55,
+        "weekly": 41,
+        "marketCap": 150742417408,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1706,9 +1706,9 @@
         "sector": "XLY",
         "price": 60.41,
         "chg": -0.74,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 15171734528,
+        "daily": 18,
+        "weekly": 19,
+        "marketCap": 15093878784,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1717,9 +1717,9 @@
         "sector": "XLF",
         "price": 98.07,
         "chg": 1.34,
-        "daily": 75,
-        "weekly": 65,
-        "marketCap": 34939674624,
+        "daily": 74,
+        "weekly": 59,
+        "marketCap": 34269884416,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1728,9 +1728,9 @@
         "sector": "XLP",
         "price": 70.03,
         "chg": 0.86,
-        "daily": 50,
-        "weekly": 80,
-        "marketCap": 33747113984,
+        "daily": 42,
+        "weekly": 87,
+        "marketCap": 33361600512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1739,9 +1739,9 @@
         "sector": "XLF",
         "price": 114.78,
         "chg": -5.18,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 25884444672,
+        "daily": 61,
+        "weekly": 14,
+        "marketCap": 25985927168,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1750,9 +1750,9 @@
         "sector": "XLK",
         "price": 172.55,
         "chg": -2.91,
-        "daily": 80,
-        "weekly": 95,
-        "marketCap": 217269682176,
+        "daily": 93,
+        "weekly": 76,
+        "marketCap": 222759665664,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1761,9 +1761,9 @@
         "sector": "XLF",
         "price": 219.37,
         "chg": -0.79,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 56400027648,
+        "daily": 65,
+        "weekly": 18,
+        "marketCap": 55374200832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1772,9 +1772,9 @@
         "sector": "XLF",
         "price": 230.46,
         "chg": 0.61,
-        "daily": 65,
-        "weekly": 55,
-        "marketCap": 11473911808,
+        "daily": 79,
+        "weekly": 62,
+        "marketCap": 11441051648,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1783,9 +1783,9 @@
         "sector": "XLC",
         "price": 26.61,
         "chg": 2.42,
-        "daily": 40,
-        "weekly": 50,
-        "marketCap": 185794904064,
+        "daily": 30,
+        "weekly": 56,
+        "marketCap": 182932226048,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1794,9 +1794,9 @@
         "sector": "XLU",
         "price": 187.81,
         "chg": 2.92,
-        "daily": 60,
-        "weekly": 95,
-        "marketCap": 31071088640,
+        "daily": 62,
+        "weekly": 96,
+        "marketCap": 30680651776,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1805,9 +1805,9 @@
         "sector": "XLK",
         "price": 231.98,
         "chg": -6.3,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 48947777536,
+        "daily": 40,
+        "weekly": 18,
+        "marketCap": 50099838976,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1816,9 +1816,9 @@
         "sector": "XLI",
         "price": 198.53,
         "chg": -1.57,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 79936978944,
+        "daily": 32,
+        "weekly": 8,
+        "marketCap": 79131697152,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1827,9 +1827,9 @@
         "sector": "XLY",
         "price": 3597.2,
         "chg": 0.2,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 59597766656,
+        "daily": 64,
+        "weekly": 36,
+        "marketCap": 59278176256,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1838,9 +1838,9 @@
         "sector": "XLRE",
         "price": 173.35,
         "chg": 1.19,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 24114933760,
+        "daily": 76,
+        "weekly": 23,
+        "marketCap": 23979995136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1849,9 +1849,9 @@
         "sector": "XLB",
         "price": 167.43,
         "chg": 0.23,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 12878218240,
+        "daily": 19,
+        "weekly": 36,
+        "marketCap": 12729768960,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1860,9 +1860,9 @@
         "sector": "XLI",
         "price": 392.64,
         "chg": -2.61,
-        "daily": 10,
-        "weekly": 25,
-        "marketCap": 31635869696,
+        "daily": 26,
+        "weekly": 19,
+        "marketCap": 31996831744,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1871,9 +1871,9 @@
         "sector": "XLE",
         "price": 64.49,
         "chg": 3.12,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 63958429696,
+        "daily": 51,
+        "weekly": 96,
+        "marketCap": 68371755008,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1882,9 +1882,9 @@
         "sector": "XLB",
         "price": 63.12,
         "chg": 0.72,
-        "daily": 50,
-        "weekly": 80,
-        "marketCap": 16799580160,
+        "daily": 64,
+        "weekly": 87,
+        "marketCap": 16320504832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1893,9 +1893,9 @@
         "sector": "XLF",
         "price": 52.47,
         "chg": -1.22,
-        "daily": 60,
-        "weekly": 55,
-        "marketCap": 374106292224,
+        "daily": 75,
+        "weekly": 62,
+        "marketCap": 371111723008,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1904,9 +1904,9 @@
         "sector": "XLV",
         "price": 18.41,
         "chg": 0.55,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 9504208896,
+        "daily": 63,
+        "weekly": 21,
+        "marketCap": 9375145984,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -1915,9 +1915,9 @@
         "sector": "XLV",
         "price": 154.85,
         "chg": -0.51,
-        "daily": 30,
-        "weekly": 25,
-        "marketCap": 44049661952,
+        "daily": 37,
+        "weekly": 50,
+        "marketCap": 43278757888,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1926,9 +1926,9 @@
         "sector": "XLF",
         "price": 470.55,
         "chg": 1.11,
-        "daily": 10,
-        "weekly": 25,
-        "marketCap": 1014915596288,
+        "daily": 12,
+        "weekly": 18,
+        "marketCap": 1012262699008,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -1937,9 +1937,9 @@
         "sector": "XLY",
         "price": 61.5,
         "chg": -3.2,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 12886409216,
+        "daily": 43,
+        "weekly": 22,
+        "marketCap": 12666397696,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1948,9 +1948,9 @@
         "sector": "XLV",
         "price": 52.2,
         "chg": -10.89,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 8166862336,
+        "daily": 51,
+        "weekly": 29,
+        "marketCap": 8477422080,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -1959,9 +1959,9 @@
         "sector": "XLV",
         "price": 187.88,
         "chg": -1.15,
-        "daily": 60,
-        "weekly": 35,
-        "marketCap": 27572992000,
+        "daily": 58,
+        "weekly": 67,
+        "marketCap": 27059337216,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1970,9 +1970,9 @@
         "sector": "XLF",
         "price": 1053.47,
         "chg": -0.85,
-        "daily": 15,
-        "weekly": 45,
-        "marketCap": 163672326144,
+        "daily": 62,
+        "weekly": 39,
+        "marketCap": 162351710208,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1981,9 +1981,9 @@
         "sector": "XLF",
         "price": 122.33,
         "chg": -5.7,
-        "daily": 35,
-        "weekly": 40,
-        "marketCap": 149519319040,
+        "daily": 63,
+        "weekly": 22,
+        "marketCap": 148688175104,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -1992,9 +1992,9 @@
         "sector": "XLF",
         "price": 69.93,
         "chg": -3.54,
-        "daily": 75,
-        "weekly": 50,
-        "marketCap": 42494013440,
+        "daily": 87,
+        "weekly": 66,
+        "marketCap": 43527045120,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2003,9 +2003,9 @@
         "sector": "XLF",
         "price": 135.42,
         "chg": -0.34,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 92949446656,
+        "daily": 96,
+        "weekly": 77,
+        "marketCap": 92009111552,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2014,9 +2014,9 @@
         "sector": "XLI",
         "price": 234.15,
         "chg": 1.24,
-        "daily": 45,
-        "weekly": 60,
-        "marketCap": 184580980736,
+        "daily": 69,
+        "weekly": 59,
+        "marketCap": 183233003520,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2025,9 +2025,9 @@
         "sector": "XLY",
         "price": 176.75,
         "chg": -1.48,
-        "daily": 30,
-        "weekly": 45,
-        "marketCap": 137542107136,
+        "daily": 61,
+        "weekly": 28,
+        "marketCap": 140265717760,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2036,9 +2036,9 @@
         "sector": "XLV",
         "price": 65.69,
         "chg": 1.26,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 97626849280,
+        "daily": 35,
+        "weekly": 14,
+        "marketCap": 92246884352,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2047,9 +2047,9 @@
         "sector": "XLV",
         "price": 59.02,
         "chg": 0.37,
-        "daily": 55,
-        "weekly": 70,
-        "marketCap": 120503222272,
+        "daily": 40,
+        "weekly": 81,
+        "marketCap": 119870283776,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2058,9 +2058,9 @@
         "sector": "XLK",
         "price": 419.94,
         "chg": -0.64,
-        "daily": 75,
-        "weekly": 95,
-        "marketCap": 1988276649984,
+        "daily": 92,
+        "weekly": 68,
+        "marketCap": 2001628430336,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -2069,9 +2069,9 @@
         "sector": "XLI",
         "price": 155.95,
         "chg": -2.92,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 18206961664,
+        "daily": 25,
+        "weekly": 14,
+        "marketCap": 18104223744,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2080,9 +2080,9 @@
         "sector": "XLF",
         "price": 67.55,
         "chg": -0.49,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 22995374080,
+        "daily": 63,
+        "weekly": 11,
+        "marketCap": 22433681408,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2091,9 +2091,9 @@
         "sector": "XLP",
         "price": 28.4,
         "chg": -0.46,
-        "daily": 70,
-        "weekly": 10,
-        "marketCap": 13027182592,
+        "daily": 76,
+        "weekly": 59,
+        "marketCap": 12985899008,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2102,9 +2102,9 @@
         "sector": "XLI",
         "price": 90.14,
         "chg": -0.54,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 9691436032,
+        "daily": 47,
+        "weekly": 13,
+        "marketCap": 9680685056,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -2113,9 +2113,9 @@
         "sector": "XLP",
         "price": 126.42,
         "chg": 0.52,
-        "daily": 55,
-        "weekly": 75,
-        "marketCap": 24501512192,
+        "daily": 48,
+        "weekly": 89,
+        "marketCap": 24206921728,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2124,9 +2124,9 @@
         "sector": "XLRE",
         "price": 57.0,
         "chg": -2.21,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 9044530176,
+        "daily": 60,
+        "weekly": 15,
+        "marketCap": 9160364032,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -2135,9 +2135,9 @@
         "sector": "XLI",
         "price": 183.74,
         "chg": 0.76,
-        "daily": 55,
-        "weekly": 85,
-        "marketCap": 21795391488,
+        "daily": 69,
+        "weekly": 81,
+        "marketCap": 21711171584,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2146,9 +2146,9 @@
         "sector": "XLK",
         "price": 314.33,
         "chg": -5.21,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 86784016384,
+        "daily": 73,
+        "weekly": 42,
+        "marketCap": 91908292608,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2157,9 +2157,9 @@
         "sector": "XLRE",
         "price": 102.43,
         "chg": 0.94,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 10727136256,
+        "daily": 57,
+        "weekly": 27,
+        "marketCap": 10655922176,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2168,9 +2168,9 @@
         "sector": "XLP",
         "price": 20.96,
         "chg": 0.67,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 6249150464,
+        "daily": 23,
+        "weekly": 1,
+        "marketCap": 6147781120,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -2179,9 +2179,9 @@
         "sector": "XLF",
         "price": 196.63,
         "chg": -1.4,
-        "daily": 15,
-        "weekly": 45,
-        "marketCap": 124701941760,
+        "daily": 54,
+        "weekly": 38,
+        "marketCap": 121378750464,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2190,9 +2190,9 @@
         "sector": "XLV",
         "price": 204.72,
         "chg": 2.08,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 48173895680,
+        "daily": 21,
+        "weekly": 61,
+        "marketCap": 47027908608,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2201,9 +2201,9 @@
         "sector": "XLY",
         "price": 26.65,
         "chg": -1.08,
-        "daily": 15,
-        "weekly": 35,
-        "marketCap": 36913971200,
+        "daily": 32,
+        "weekly": 45,
+        "marketCap": 37634244608,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2212,9 +2212,9 @@
         "sector": "XLI",
         "price": 61.54,
         "chg": 1.47,
-        "daily": 45,
-        "weekly": 50,
-        "marketCap": 51412570112,
+        "daily": 69,
+        "weekly": 49,
+        "marketCap": 50936373248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2223,9 +2223,9 @@
         "sector": "XLY",
         "price": 403.02,
         "chg": -3.3,
-        "daily": 65,
+        "daily": 86,
         "weekly": 55,
-        "marketCap": 57629351936,
+        "marketCap": 58495893504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2235,8 +2235,8 @@
         "price": 789.82,
         "chg": 0.88,
         "daily": 95,
-        "weekly": 95,
-        "marketCap": 29276205056,
+        "weekly": 100,
+        "marketCap": 29636866048,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2245,9 +2245,9 @@
         "sector": "XLI",
         "price": 835.24,
         "chg": 3.26,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 388626579456,
+        "daily": 78,
+        "weekly": 93,
+        "marketCap": 386556035072,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -2256,9 +2256,9 @@
         "sector": "XLF",
         "price": 300.12,
         "chg": 0.9,
-        "daily": 80,
-        "weekly": 90,
-        "marketCap": 31435249664,
+        "daily": 77,
+        "weekly": 96,
+        "marketCap": 31821750272,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2267,9 +2267,9 @@
         "sector": "XLRE",
         "price": 149.31,
         "chg": -2.74,
-        "daily": 35,
-        "weekly": 45,
-        "marketCap": 43768844288,
+        "daily": 67,
+        "weekly": 38,
+        "marketCap": 43469836288,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2278,9 +2278,9 @@
         "sector": "XLK",
         "price": 136.47,
         "chg": -4.19,
-        "daily": 35,
-        "weekly": 0,
-        "marketCap": 17603753984,
+        "daily": 82,
+        "weekly": 28,
+        "marketCap": 17455413248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2289,9 +2289,9 @@
         "sector": "XLV",
         "price": 311.39,
         "chg": 1.0,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 60574912512,
+        "daily": 14,
+        "weekly": 32,
+        "marketCap": 59952414720,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2300,9 +2300,9 @@
         "sector": "XLV",
         "price": 41.09,
         "chg": 5.55,
-        "daily": 55,
-        "weekly": 10,
-        "marketCap": 20206931968,
+        "daily": 78,
+        "weekly": 40,
+        "marketCap": 20565925888,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2311,9 +2311,9 @@
         "sector": "XLU",
         "price": 43.18,
         "chg": 2.52,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 28247037952,
+        "daily": 54,
+        "weekly": 91,
+        "marketCap": 27782578176,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2322,9 +2322,9 @@
         "sector": "XLB",
         "price": 125.59,
         "chg": 2.56,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 19292686336,
+        "daily": 61,
+        "weekly": 98,
+        "marketCap": 18576834560,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2333,9 +2333,9 @@
         "sector": "XLV",
         "price": 167.74,
         "chg": -9.23,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 8276620800,
+        "daily": 55,
+        "weekly": 33,
+        "marketCap": 8378265088,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -2344,9 +2344,9 @@
         "sector": "XLF",
         "price": 88.92,
         "chg": -3.04,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 155806547968,
+        "daily": 18,
+        "weekly": 38,
+        "marketCap": 155070627840,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2355,9 +2355,9 @@
         "sector": "XLC",
         "price": 241.78,
         "chg": -0.29,
-        "daily": 30,
-        "weekly": 15,
-        "marketCap": 30616977408,
+        "daily": 78,
+        "weekly": 45,
+        "marketCap": 22810142720,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2366,9 +2366,9 @@
         "sector": "XLE",
         "price": 187.6,
         "chg": 0.69,
-        "daily": 60,
-        "weekly": 80,
-        "marketCap": 373680209920,
+        "daily": 40,
+        "weekly": 92,
+        "marketCap": 368919576576,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -2377,9 +2377,9 @@
         "sector": "XLY",
         "price": 33.9,
         "chg": -3.45,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 44152143872,
+        "daily": 50,
+        "weekly": 16,
+        "marketCap": 44555890688,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2388,9 +2388,9 @@
         "sector": "XLF",
         "price": 332.88,
         "chg": 2.29,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 129322409984,
+        "daily": 63,
+        "weekly": 91,
+        "marketCap": 126696177664,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2399,9 +2399,9 @@
         "sector": "XLP",
         "price": 94.58,
         "chg": 1.81,
-        "daily": 25,
-        "weekly": 55,
-        "marketCap": 22403645440,
+        "daily": 53,
+        "weekly": 69,
+        "marketCap": 22507870208,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2410,9 +2410,9 @@
         "sector": "XLK",
         "price": 515.85,
         "chg": 3.38,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 72940380160,
+        "daily": 87,
+        "weekly": 100,
+        "marketCap": 73640304640,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2421,9 +2421,9 @@
         "sector": "XLV",
         "price": 279.72,
         "chg": 1.83,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 73751191552,
+        "daily": 69,
+        "weekly": 27,
+        "marketCap": 72675459072,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2432,9 +2432,9 @@
         "sector": "XLF",
         "price": 168.18,
         "chg": 1.15,
-        "daily": 45,
-        "weekly": 55,
-        "marketCap": 26183305216,
+        "daily": 71,
+        "weekly": 61,
+        "marketCap": 25607266304,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2443,9 +2443,9 @@
         "sector": "XLI",
         "price": 177.62,
         "chg": 1.69,
-        "daily": 15,
-        "weekly": 25,
-        "marketCap": 71063470080,
+        "daily": 35,
+        "weekly": 21,
+        "marketCap": 70375317504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2455,8 +2455,8 @@
         "price": 88.59,
         "chg": -1.35,
         "daily": 95,
-        "weekly": 95,
-        "marketCap": 349921017856,
+        "weekly": 96,
+        "marketCap": 351579996160,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -2465,9 +2465,9 @@
         "sector": "XLF",
         "price": 128.51,
         "chg": -0.94,
-        "daily": 80,
-        "weekly": 65,
-        "marketCap": 224804978688,
+        "daily": 88,
+        "weekly": 77,
+        "marketCap": 223877857280,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -2476,9 +2476,9 @@
         "sector": "XLF",
         "price": 65.17,
         "chg": 0.02,
-        "daily": 90,
-        "weekly": 55,
-        "marketCap": 27763955712,
+        "daily": 76,
+        "weekly": 76,
+        "marketCap": 27176044544,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2487,9 +2487,9 @@
         "sector": "XLP",
         "price": 97.66,
         "chg": 0.84,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 11808252928,
+        "daily": 14,
+        "weekly": 20,
+        "marketCap": 11931582464,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2498,9 +2498,9 @@
         "sector": "XLF",
         "price": 285.47,
         "chg": -0.08,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 103570825216,
+        "daily": 22,
+        "weekly": 74,
+        "marketCap": 103422074880,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2509,9 +2509,9 @@
         "sector": "XLU",
         "price": 76.62,
         "chg": 2.19,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 23598702592,
+        "daily": 41,
+        "weekly": 89,
+        "marketCap": 23490902016,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2520,9 +2520,9 @@
         "sector": "XLP",
         "price": 76.28,
         "chg": 2.21,
-        "daily": 50,
+        "daily": 40,
         "weekly": 80,
-        "marketCap": 328320778240,
+        "marketCap": 329827254272,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -2531,9 +2531,9 @@
         "sector": "XLK",
         "price": 55.1,
         "chg": -6.31,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 26351405056,
+        "daily": 20,
+        "weekly": 7,
+        "marketCap": 26356187136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2542,9 +2542,9 @@
         "sector": "XLK",
         "price": 337.68,
         "chg": -3.65,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 63308873728,
+        "daily": 99,
+        "weekly": 100,
+        "marketCap": 63010775040,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2553,9 +2553,9 @@
         "sector": "XLF",
         "price": 197.93,
         "chg": -4.03,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 52268396544,
+        "daily": 67,
+        "weekly": 35,
+        "marketCap": 52754296832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2564,9 +2564,9 @@
         "sector": "XLP",
         "price": 83.72,
         "chg": 1.66,
-        "daily": 40,
-        "weekly": 45,
-        "marketCap": 67168714752,
+        "daily": 33,
+        "weekly": 46,
+        "marketCap": 67914854400,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2575,9 +2575,9 @@
         "sector": "XLC",
         "price": 31.64,
         "chg": 7.73,
-        "daily": 50,
-        "weekly": 10,
-        "marketCap": 115292823552,
+        "daily": 77,
+        "weekly": 70,
+        "marketCap": 100425728000,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2586,9 +2586,9 @@
         "sector": "XLI",
         "price": 1773.91,
         "chg": 2.87,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 62413193216,
+        "daily": 92,
+        "weekly": 98,
+        "marketCap": 60731752448,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2597,9 +2597,9 @@
         "sector": "XLP",
         "price": 14.41,
         "chg": -0.83,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 6894279168,
+        "daily": 7,
+        "weekly": 3,
+        "marketCap": 6779454464,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -2608,9 +2608,9 @@
         "sector": "XLE",
         "price": 124.37,
         "chg": 1.44,
-        "daily": 55,
-        "weekly": 75,
-        "marketCap": 151588749312,
+        "daily": 52,
+        "weekly": 86,
+        "marketCap": 148407549952,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2619,9 +2619,9 @@
         "sector": "XLU",
         "price": 110.25,
         "chg": 1.96,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 40618442752,
+        "daily": 36,
+        "weekly": 82,
+        "marketCap": 40180019200,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2630,9 +2630,9 @@
         "sector": "XLP",
         "price": 159.31,
         "chg": 1.55,
-        "daily": 85,
-        "weekly": 15,
-        "marketCap": 27432937472,
+        "daily": 84,
+        "weekly": 56,
+        "marketCap": 26862960640,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2641,9 +2641,9 @@
         "sector": "XLU",
         "price": 292.77,
         "chg": 1.95,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 106069000192,
+        "daily": 46,
+        "weekly": 51,
+        "marketCap": 113590239232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2652,9 +2652,9 @@
         "sector": "XLV",
         "price": 64.95,
         "chg": -2.94,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 12672679936,
+        "daily": 14,
+        "weekly": 26,
+        "marketCap": 12569269248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2663,9 +2663,9 @@
         "sector": "XLI",
         "price": 33.88,
         "chg": 0.59,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 32636891136,
+        "daily": 47,
+        "weekly": 8,
+        "marketCap": 31856609280,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2674,9 +2674,9 @@
         "sector": "XLK",
         "price": 169.5,
         "chg": 0.44,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 145603018752,
+        "daily": 80,
+        "weekly": 100,
+        "marketCap": 151092117504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2685,9 +2685,9 @@
         "sector": "XLF",
         "price": 313.47,
         "chg": -5.21,
-        "daily": 30,
-        "weekly": 50,
-        "marketCap": 20730394624,
+        "daily": 69,
+        "weekly": 42,
+        "marketCap": 20693362688,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2696,9 +2696,9 @@
         "sector": "XLB",
         "price": 79.63,
         "chg": 0.35,
-        "daily": 40,
-        "weekly": 80,
-        "marketCap": 53460115456,
+        "daily": 48,
+        "weekly": 90,
+        "marketCap": 53574250496,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2707,9 +2707,9 @@
         "sector": "XLRE",
         "price": 37.38,
         "chg": -3.59,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 15842496512,
+        "daily": 23,
+        "weekly": 1,
+        "marketCap": 15444102144,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2718,9 +2718,9 @@
         "sector": "XLP",
         "price": 1014.38,
         "chg": 1.06,
-        "daily": 40,
-        "weekly": 90,
-        "marketCap": 450032271360,
+        "daily": 64,
+        "weekly": 72,
+        "marketCap": 448599293952,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -2730,8 +2730,8 @@
         "price": 33.65,
         "chg": 2.19,
         "daily": 55,
-        "weekly": 90,
-        "marketCap": 25552218112,
+        "weekly": 98,
+        "marketCap": 25461092352,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2740,9 +2740,9 @@
         "sector": "XLB",
         "price": 117.16,
         "chg": 0.92,
-        "daily": 45,
-        "weekly": 55,
-        "marketCap": 78286348288,
+        "daily": 67,
+        "weekly": 44,
+        "marketCap": 78847639552,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2751,9 +2751,9 @@
         "sector": "XLK",
         "price": 445.39,
         "chg": -4.56,
-        "daily": 35,
-        "weekly": 45,
-        "marketCap": 112957186048,
+        "daily": 75,
+        "weekly": 38,
+        "marketCap": 113652088832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2762,9 +2762,9 @@
         "sector": "XLRE",
         "price": 87.52,
         "chg": 1.76,
-        "daily": 15,
-        "weekly": 0,
-        "marketCap": 38190870528,
+        "daily": 72,
+        "weekly": 38,
+        "marketCap": 37675958272,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2773,9 +2773,9 @@
         "sector": "XLI",
         "price": 46.18,
         "chg": 6.95,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 85808857088,
+        "daily": 87,
+        "weekly": 100,
+        "marketCap": 84378083328,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2784,9 +2784,9 @@
         "sector": "XLI",
         "price": 656.93,
         "chg": 2.77,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 90825449472,
+        "daily": 86,
+        "weekly": 83,
+        "marketCap": 91353595904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2795,9 +2795,9 @@
         "sector": "XLV",
         "price": 78.86,
         "chg": 3.18,
-        "daily": 45,
-        "weekly": 60,
-        "marketCap": 101067317248,
+        "daily": 64,
+        "weekly": 58,
+        "marketCap": 99888242688,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2806,9 +2806,9 @@
         "sector": "XLV",
         "price": 178.57,
         "chg": -2.97,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 126386601984,
+        "daily": 37,
+        "weekly": 17,
+        "marketCap": 125452345344,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2817,9 +2817,9 @@
         "sector": "XLY",
         "price": 202.34,
         "chg": 1.31,
-        "daily": 50,
-        "weekly": 85,
-        "marketCap": 23175012352,
+        "daily": 66,
+        "weekly": 64,
+        "marketCap": 23028406272,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2828,9 +2828,9 @@
         "sector": "XLK",
         "price": 127.86,
         "chg": -3.24,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 45243432960,
+        "daily": 60,
+        "weekly": 45,
+        "marketCap": 45816668160,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2839,9 +2839,9 @@
         "sector": "XLV",
         "price": 155.03,
         "chg": 1.71,
-        "daily": 70,
-        "weekly": 75,
-        "marketCap": 10223351808,
+        "daily": 56,
+        "weekly": 86,
+        "marketCap": 10013648896,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2850,9 +2850,9 @@
         "sector": "XLY",
         "price": 107.71,
         "chg": 0.02,
-        "daily": 45,
-        "weekly": 10,
-        "marketCap": 15289431040,
+        "daily": 69,
+        "weekly": 51,
+        "marketCap": 15405830144,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2861,9 +2861,9 @@
         "sector": "XLI",
         "price": 591.95,
         "chg": 2.06,
-        "daily": 55,
-        "weekly": 80,
-        "marketCap": 159890014208,
+        "daily": 60,
+        "weekly": 87,
+        "marketCap": 151973167104,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2872,9 +2872,9 @@
         "sector": "XLK",
         "price": 212.14,
         "chg": -1.17,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 137931030528,
+        "daily": 100,
+        "weekly": 100,
+        "marketCap": 140499288064,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2883,9 +2883,9 @@
         "sector": "XLI",
         "price": 68.37,
         "chg": -0.06,
-        "daily": 60,
-        "weekly": 55,
-        "marketCap": 44918689792,
+        "daily": 68,
+        "weekly": 73,
+        "marketCap": 44971245568,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2894,9 +2894,9 @@
         "sector": "XLE",
         "price": 48.15,
         "chg": 2.19,
-        "daily": 55,
-        "weekly": 80,
-        "marketCap": 29922353152,
+        "daily": 52,
+        "weekly": 85,
+        "marketCap": 29791848448,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2905,9 +2905,9 @@
         "sector": "XLV",
         "price": 62.7,
         "chg": -1.12,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 24194236416,
+        "daily": 16,
+        "weekly": 17,
+        "marketCap": 23758200832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2916,9 +2916,9 @@
         "sector": "XLE",
         "price": 195.59,
         "chg": 0.89,
-        "daily": 55,
-        "weekly": 80,
-        "marketCap": 55021764608,
+        "daily": 63,
+        "weekly": 92,
+        "marketCap": 54796713984,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2927,8 +2927,8 @@
         "sector": "XLRE",
         "price": 200.0,
         "chg": -0.43,
-        "daily": 95,
-        "weekly": 95,
+        "daily": 99,
+        "weekly": 100,
         "marketCap": 69791088640,
         "capCategory": "Large Cap ($10B-$200B)"
       },
@@ -2938,9 +2938,9 @@
         "sector": "XLP",
         "price": 122.06,
         "chg": -0.93,
-        "daily": 30,
-        "weekly": 20,
-        "marketCap": 26880823296,
+        "daily": 41,
+        "weekly": 44,
+        "marketCap": 26583519232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2949,9 +2949,9 @@
         "sector": "XLP",
         "price": 102.25,
         "chg": 0.27,
-        "daily": 10,
-        "weekly": 20,
-        "marketCap": 20173744128,
+        "daily": 21,
+        "weekly": 38,
+        "marketCap": 20469690368,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2960,9 +2960,9 @@
         "sector": "XLU",
         "price": 62.52,
         "chg": 2.58,
-        "daily": 40,
-        "weekly": 80,
-        "marketCap": 54952873984,
+        "daily": 49,
+        "weekly": 81,
+        "marketCap": 55005614080,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2971,9 +2971,9 @@
         "sector": "XLY",
         "price": 372.39,
         "chg": 1.77,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 12521874432,
+        "daily": 38,
+        "weekly": 8,
+        "marketCap": 12368540672,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2982,9 +2982,9 @@
         "sector": "XLY",
         "price": 177.0,
         "chg": -2.89,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 77127114752,
+        "daily": 64,
+        "weekly": 28,
+        "marketCap": 77031251968,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -2993,9 +2993,9 @@
         "sector": "XLI",
         "price": 228.15,
         "chg": 5.54,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 30723000320,
+        "daily": 70,
+        "weekly": 89,
+        "marketCap": 30269190144,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3004,9 +3004,9 @@
         "sector": "XLB",
         "price": 38.53,
         "chg": -0.72,
-        "daily": 55,
-        "weekly": 45,
-        "marketCap": 27770167296,
+        "daily": 56,
+        "weekly": 81,
+        "marketCap": 27863863296,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3015,9 +3015,9 @@
         "sector": "XLY",
         "price": 164.22,
         "chg": 1.89,
-        "daily": 50,
-        "weekly": 50,
-        "marketCap": 46792994816,
+        "daily": 67,
+        "weekly": 57,
+        "marketCap": 45562048512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3026,9 +3026,9 @@
         "sector": "XLU",
         "price": 147.4,
         "chg": 2.67,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 30663342080,
+        "daily": 58,
+        "weekly": 94,
+        "marketCap": 30555170816,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3037,9 +3037,9 @@
         "sector": "XLU",
         "price": 128.04,
         "chg": 2.23,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 99642859520,
+        "daily": 38,
+        "weekly": 88,
+        "marketCap": 99043639296,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3048,9 +3048,9 @@
         "sector": "XLB",
         "price": 46.37,
         "chg": 0.85,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 19006005248,
+        "daily": 45,
+        "weekly": 82,
+        "marketCap": 18989611008,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3059,9 +3059,9 @@
         "sector": "XLI",
         "price": 424.5,
         "chg": 2.57,
-        "daily": 80,
-        "weekly": 90,
-        "marketCap": 164699783168,
+        "daily": 90,
+        "weekly": 83,
+        "marketCap": 164474748928,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3070,9 +3070,9 @@
         "sector": "XLY",
         "price": 103.4,
         "chg": -2.11,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 46323200000,
+        "daily": 100,
+        "weekly": 87,
+        "marketCap": 43877122048,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3081,9 +3081,9 @@
         "sector": "XLC",
         "price": 121.52,
         "chg": -0.69,
-        "daily": 80,
-        "weekly": 95,
-        "marketCap": 35104194560,
+        "daily": 63,
+        "weekly": 82,
+        "marketCap": 33942915072,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3092,9 +3092,9 @@
         "sector": "XLB",
         "price": 271.45,
         "chg": 0.94,
-        "daily": 15,
-        "weekly": 75,
-        "marketCap": 76663939072,
+        "daily": 43,
+        "weekly": 49,
+        "marketCap": 76110381056,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3103,9 +3103,9 @@
         "sector": "XLU",
         "price": 70.34,
         "chg": 1.38,
-        "daily": 35,
-        "weekly": 65,
-        "marketCap": 27074283520,
+        "daily": 37,
+        "weekly": 85,
+        "marketCap": 26504624128,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3114,9 +3114,9 @@
         "sector": "XLV",
         "price": 79.72,
         "chg": -2.22,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 45961904128,
+        "daily": 29,
+        "weekly": 48,
+        "marketCap": 48515985408,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3125,9 +3125,9 @@
         "sector": "XLC",
         "price": 202.51,
         "chg": -0.13,
-        "daily": 40,
-        "weekly": 65,
-        "marketCap": 50678878208,
+        "daily": 42,
+        "weekly": 67,
+        "marketCap": 50718920704,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3136,9 +3136,9 @@
         "sector": "XLV",
         "price": 346.29,
         "chg": 5.51,
-        "daily": 60,
-        "weekly": 10,
-        "marketCap": 75201167360,
+        "daily": 87,
+        "weekly": 34,
+        "marketCap": 74868908032,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3147,9 +3147,9 @@
         "sector": "XLI",
         "price": 873.11,
         "chg": 1.52,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 38881828864,
+        "daily": 89,
+        "weekly": 78,
+        "marketCap": 38738882560,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3158,9 +3158,9 @@
         "sector": "XLI",
         "price": 142.44,
         "chg": -0.23,
-        "daily": 35,
-        "weekly": 55,
-        "marketCap": 80051281920,
+        "daily": 58,
+        "weekly": 61,
+        "marketCap": 79438700544,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3169,9 +3169,9 @@
         "sector": "XLU",
         "price": 113.92,
         "chg": 3.12,
-        "daily": 75,
-        "weekly": 95,
-        "marketCap": 52152418304,
+        "daily": 78,
+        "weekly": 100,
+        "marketCap": 52024233984,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3180,9 +3180,9 @@
         "sector": "XLE",
         "price": 133.87,
         "chg": 0.65,
-        "daily": 60,
-        "weekly": 80,
-        "marketCap": 71716274176,
+        "daily": 54,
+        "weekly": 91,
+        "marketCap": 71319846912,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3191,9 +3191,9 @@
         "sector": "XLK",
         "price": 120.77,
         "chg": -6.47,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 6371444224,
+        "daily": 22,
+        "weekly": 13,
+        "marketCap": 6277009920,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -3202,9 +3202,9 @@
         "sector": "XLE",
         "price": 58.93,
         "chg": 0.36,
-        "daily": 40,
-        "weekly": 80,
-        "marketCap": 36859420672,
+        "daily": 39,
+        "weekly": 70,
+        "marketCap": 36846911488,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3213,9 +3213,9 @@
         "sector": "XLI",
         "price": 174.93,
         "chg": -2.09,
-        "daily": 15,
+        "daily": 44,
         "weekly": 10,
-        "marketCap": 21102610432,
+        "marketCap": 20805849088,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3224,9 +3224,9 @@
         "sector": "XLRE",
         "price": 1115.29,
         "chg": 1.18,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 109993795584,
+        "daily": 97,
+        "weekly": 100,
+        "marketCap": 109349781504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3235,9 +3235,9 @@
         "sector": "XLRE",
         "price": 62.65,
         "chg": 1.54,
-        "daily": 45,
-        "weekly": 40,
-        "marketCap": 23473371136,
+        "daily": 84,
+        "weekly": 47,
+        "marketCap": 23327248384,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3246,9 +3246,9 @@
         "sector": "XLF",
         "price": 248.9,
         "chg": -0.44,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 13014947840,
+        "daily": 37,
+        "weekly": 9,
+        "marketCap": 12215958528,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3257,9 +3257,9 @@
         "sector": "XLRE",
         "price": 255.06,
         "chg": 1.14,
-        "daily": 45,
-        "weekly": 40,
-        "marketCap": 16445536256,
+        "daily": 80,
+        "weekly": 37,
+        "marketCap": 16465523712,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3268,9 +3268,9 @@
         "sector": "XLP",
         "price": 76.4,
         "chg": -0.34,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 27635945472,
+        "daily": 46,
+        "weekly": 32,
+        "marketCap": 28149598208,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3279,9 +3279,9 @@
         "sector": "XLF",
         "price": 350.81,
         "chg": 1.68,
-        "daily": 65,
-        "weekly": 50,
-        "marketCap": 14039467008,
+        "daily": 93,
+        "weekly": 69,
+        "marketCap": 13742116864,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3290,9 +3290,9 @@
         "sector": "XLU",
         "price": 81.89,
         "chg": 2.83,
-        "daily": 50,
-        "weekly": 90,
-        "marketCap": 18857967616,
+        "daily": 48,
+        "weekly": 92,
+        "marketCap": 18705981440,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3301,9 +3301,9 @@
         "sector": "XLU",
         "price": 68.77,
         "chg": 2.57,
-        "daily": 40,
-        "weekly": 65,
-        "marketCap": 25846882304,
+        "daily": 30,
+        "weekly": 66,
+        "marketCap": 25798023168,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3312,9 +3312,9 @@
         "sector": "XLU",
         "price": 46.75,
         "chg": 1.94,
-        "daily": 20,
-        "weekly": 80,
-        "marketCap": 47833436160,
+        "daily": 31,
+        "weekly": 83,
+        "marketCap": 48007372800,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3324,8 +3324,8 @@
         "price": 96.3,
         "chg": -0.06,
         "daily": 10,
-        "weekly": 35,
-        "marketCap": 23150352384,
+        "weekly": 20,
+        "marketCap": 23184009216,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3334,9 +3334,9 @@
         "sector": "XLY",
         "price": 250.37,
         "chg": -5.38,
-        "daily": 65,
-        "weekly": 55,
-        "marketCap": 30679054336,
+        "daily": 76,
+        "weekly": 62,
+        "marketCap": 30810169344,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3346,8 +3346,8 @@
         "price": 149.75,
         "chg": 0.88,
         "daily": 60,
-        "weekly": 55,
-        "marketCap": 19914354688,
+        "weekly": 64,
+        "marketCap": 19623120896,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3356,9 +3356,9 @@
         "sector": "XLRE",
         "price": 142.66,
         "chg": 0.97,
-        "daily": 45,
-        "weekly": 40,
-        "marketCap": 30129410048,
+        "daily": 78,
+        "weekly": 72,
+        "marketCap": 30009024512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3367,9 +3367,9 @@
         "sector": "XLE",
         "price": 150.53,
         "chg": 0.69,
-        "daily": 55,
-        "weekly": 80,
-        "marketCap": 625686872064,
+        "daily": 38,
+        "weekly": 89,
+        "marketCap": 618953244672,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -3378,9 +3378,9 @@
         "sector": "XLK",
         "price": 299.89,
         "chg": -3.63,
-        "daily": 70,
-        "weekly": 65,
-        "marketCap": 16949565440,
+        "daily": 80,
+        "weekly": 70,
+        "marketCap": 17134383104,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3389,9 +3389,9 @@
         "sector": "XLF",
         "price": 228.08,
         "chg": -6.03,
-        "daily": 30,
-        "weekly": 0,
-        "marketCap": 8309211648,
+        "daily": 71,
+        "weekly": 16,
+        "marketCap": 8164944384,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -3400,9 +3400,9 @@
         "sector": "XLK",
         "price": 979.76,
         "chg": 0.99,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 23241998336,
+        "daily": 15,
+        "weekly": 7,
+        "marketCap": 23834101760,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3411,9 +3411,9 @@
         "sector": "XLI",
         "price": 45.45,
         "chg": 1.43,
-        "daily": 20,
-        "weekly": 80,
-        "marketCap": 52178194432,
+        "daily": 31,
+        "weekly": 69,
+        "marketCap": 51305684992,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3422,9 +3422,9 @@
         "sector": "XLRE",
         "price": 111.5,
         "chg": 1.24,
-        "daily": 95,
-        "weekly": 80,
-        "marketCap": 9632285696,
+        "daily": 98,
+        "weekly": 94,
+        "marketCap": 9592547328,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -3433,9 +3433,9 @@
         "sector": "XLI",
         "price": 392.69,
         "chg": 1.75,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 93698482176,
+        "daily": 81,
+        "weekly": 95,
+        "marketCap": 92574646272,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3444,9 +3444,9 @@
         "sector": "XLF",
         "price": 45.74,
         "chg": -4.39,
-        "daily": 20,
+        "daily": 49,
         "weekly": 10,
-        "marketCap": 23686494208,
+        "marketCap": 23681314816,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3455,9 +3455,9 @@
         "sector": "XLF",
         "price": 50.89,
         "chg": 0.65,
-        "daily": 70,
-        "weekly": 55,
-        "marketCap": 46097330176,
+        "daily": 71,
+        "weekly": 76,
+        "marketCap": 44983169024,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3466,9 +3466,9 @@
         "sector": "XLK",
         "price": 196.19,
         "chg": 3.96,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 21080764416,
+        "daily": 37,
+        "weekly": 39,
+        "marketCap": 20819658752,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3477,9 +3477,9 @@
         "sector": "XLU",
         "price": 49.62,
         "chg": 2.46,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 28700141568,
+        "daily": 36,
+        "weekly": 90,
+        "marketCap": 28578676736,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3488,9 +3488,9 @@
         "sector": "XLF",
         "price": 61.55,
         "chg": -2.7,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 32915554304,
+        "daily": 70,
+        "weekly": 24,
+        "marketCap": 32535863296,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3499,9 +3499,9 @@
         "sector": "XLY",
         "price": 12.48,
         "chg": -1.19,
-        "daily": 25,
-        "weekly": 55,
-        "marketCap": 50058305536,
+        "daily": 56,
+        "weekly": 58,
+        "marketCap": 49657196544,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3510,9 +3510,9 @@
         "sector": "XLK",
         "price": 82.76,
         "chg": -4.97,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 61236076544,
+        "daily": 73,
+        "weekly": 46,
+        "marketCap": 62405152768,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3521,9 +3521,9 @@
         "sector": "XLI",
         "price": 61.11,
         "chg": 0.41,
-        "daily": 95,
-        "weekly": 85,
-        "marketCap": 18813276160,
+        "daily": 94,
+        "weekly": 89,
+        "marketCap": 18807117824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3532,9 +3532,9 @@
         "sector": "XLC",
         "price": 64.53,
         "chg": -1.57,
-        "daily": 65,
-        "weekly": 55,
-        "marketCap": 27450808320,
+        "daily": 81,
+        "weekly": 44,
+        "marketCap": 26736142336,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3543,9 +3543,9 @@
         "sector": "XLC",
         "price": 57.74,
         "chg": -1.42,
-        "daily": 65,
-        "weekly": 55,
-        "marketCap": 24562368512,
+        "daily": 81,
+        "weekly": 43,
+        "marketCap": 23894495232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3554,9 +3554,9 @@
         "sector": "XLF",
         "price": 26.82,
         "chg": -2.44,
-        "daily": 70,
-        "weekly": 75,
-        "marketCap": 13966875648,
+        "daily": 80,
+        "weekly": 77,
+        "marketCap": 14123105280,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3565,9 +3565,9 @@
         "sector": "XLB",
         "price": 61.48,
         "chg": -12.62,
-        "daily": 70,
-        "weekly": 80,
-        "marketCap": 88359157760,
+        "daily": 62,
+        "weekly": 89,
+        "marketCap": 87741161472,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3576,9 +3576,9 @@
         "sector": "XLY",
         "price": 260.8,
         "chg": -2.17,
-        "daily": 65,
-        "weekly": 95,
-        "marketCap": 50303979520,
+        "daily": 82,
+        "weekly": 91,
+        "marketCap": 50032017408,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3587,9 +3587,9 @@
         "sector": "XLK",
         "price": 148.6,
         "chg": -5.4,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 10032015360,
+        "daily": 43,
+        "weekly": 13,
+        "marketCap": 10163659776,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3598,9 +3598,9 @@
         "sector": "XLI",
         "price": 282.34,
         "chg": 2.19,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 294997196800,
+        "daily": 34,
+        "weekly": 31,
+        "marketCap": 297358524416,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -3609,9 +3609,9 @@
         "sector": "XLV",
         "price": 69.89,
         "chg": -2.09,
-        "daily": 15,
-        "weekly": 20,
-        "marketCap": 31890118656,
+        "daily": 38,
+        "weekly": null,
+        "marketCap": 31406450688,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3620,9 +3620,9 @@
         "sector": "XLI",
         "price": 1149.53,
         "chg": 1.95,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 308901707776,
+        "daily": 99,
+        "weekly": null,
+        "marketCap": 308810317824,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -3631,9 +3631,9 @@
         "sector": "XLK",
         "price": 18.81,
         "chg": -5.9,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 11392534528,
+        "daily": 37,
+        "weekly": 13,
+        "marketCap": 11531838464,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3642,9 +3642,9 @@
         "sector": "XLI",
         "price": 218.38,
         "chg": 2.19,
-        "daily": 65,
-        "weekly": 90,
-        "marketCap": 12813627392,
+        "daily": 72,
+        "weekly": 92,
+        "marketCap": 12963250176,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3653,9 +3653,9 @@
         "sector": "XLI",
         "price": 318.71,
         "chg": -0.63,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 86321283072,
+        "daily": 7,
+        "weekly": 44,
+        "marketCap": 84831625216,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3664,9 +3664,9 @@
         "sector": "XLP",
         "price": 35.47,
         "chg": 0.8,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 18929674240,
+        "daily": 16,
+        "weekly": 1,
+        "marketCap": 18662832128,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3675,9 +3675,9 @@
         "sector": "XLY",
         "price": 78.52,
         "chg": -0.61,
-        "daily": 50,
-        "weekly": 55,
-        "marketCap": 70798073856,
+        "daily": 58,
+        "weekly": 65,
+        "marketCap": 70374301696,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3686,9 +3686,9 @@
         "sector": "XLY",
         "price": 109.79,
         "chg": -1.75,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 15274216448,
+        "daily": 39,
+        "weekly": 13,
+        "marketCap": 15128137728,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3697,9 +3697,9 @@
         "sector": "XLV",
         "price": 133.64,
         "chg": 0.56,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 165874466816,
+        "daily": 19,
+        "weekly": 64,
+        "marketCap": 161852948480,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3708,9 +3708,9 @@
         "sector": "XLF",
         "price": 67.86,
         "chg": -5.25,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 18677991424,
+        "daily": 45,
+        "weekly": 22,
+        "marketCap": 18650466304,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3719,9 +3719,9 @@
         "sector": "XLF",
         "price": 153.97,
         "chg": 1.8,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 12078107648,
+        "daily": 98,
+        "weekly": 87,
+        "marketCap": 11967500288,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3730,9 +3730,9 @@
         "sector": "XLK",
         "price": 84.77,
         "chg": -4.11,
-        "daily": 20,
+        "daily": 63,
         "weekly": 10,
-        "marketCap": 11304428544,
+        "marketCap": 11473788928,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3741,9 +3741,9 @@
         "sector": "XLF",
         "price": 931.3,
         "chg": -0.38,
-        "daily": 70,
-        "weekly": 55,
-        "marketCap": 276366000128,
+        "daily": 78,
+        "weekly": 61,
+        "marketCap": 275063242752,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -3752,9 +3752,9 @@
         "sector": "XLE",
         "price": 39.65,
         "chg": 1.38,
-        "daily": 65,
-        "weekly": 75,
-        "marketCap": 33113993216,
+        "daily": 51,
+        "weekly": 85,
+        "marketCap": 33706954752,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3763,9 +3763,9 @@
         "sector": "XLF",
         "price": 139.61,
         "chg": 1.09,
-        "daily": 55,
-        "weekly": 95,
-        "marketCap": 38395707392,
+        "daily": 71,
+        "weekly": 55,
+        "marketCap": 36976599040,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3774,9 +3774,9 @@
         "sector": "XLY",
         "price": 96.58,
         "chg": 6.59,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 13668150272,
+        "daily": 61,
+        "weekly": 84,
+        "marketCap": 13455867904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3785,9 +3785,9 @@
         "sector": "XLV",
         "price": 474.03,
         "chg": 0.57,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 105978396672,
+        "daily": 29,
+        "weekly": 61,
+        "marketCap": 96684630016,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3796,9 +3796,9 @@
         "sector": "XLRE",
         "price": 16.41,
         "chg": 0.49,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 11409161216,
+        "daily": 31,
+        "weekly": 45,
+        "marketCap": 11423067136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3807,9 +3807,9 @@
         "sector": "XLV",
         "price": 78.22,
         "chg": 0.14,
-        "daily": 60,
-        "weekly": 50,
-        "marketCap": 8975592448,
+        "daily": 74,
+        "weekly": 72,
+        "marketCap": 8897563648,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -3818,9 +3818,9 @@
         "sector": "XLP",
         "price": 192.1,
         "chg": 1.83,
-        "daily": 20,
-        "weekly": 65,
-        "marketCap": 38936936448,
+        "daily": 18,
+        "weekly": 69,
+        "marketCap": 38811262976,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3829,9 +3829,9 @@
         "sector": "XLK",
         "price": 27.93,
         "chg": -2.03,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 37059035136,
+        "daily": 100,
+        "weekly": 87,
+        "marketCap": 37364211712,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3840,9 +3840,9 @@
         "sector": "XLY",
         "price": 334.28,
         "chg": 0.18,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 76647604224,
+        "daily": 98,
+        "weekly": 91,
+        "marketCap": 76957147136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3851,9 +3851,9 @@
         "sector": "XLY",
         "price": 340.16,
         "chg": 0.19,
-        "daily": 20,
-        "weekly": 20,
-        "marketCap": 338808766464,
+        "daily": 38,
+        "weekly": 15,
+        "marketCap": 334555742208,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -3862,9 +3862,9 @@
         "sector": "XLI",
         "price": 214.34,
         "chg": -2.56,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 135817207808,
+        "daily": 35,
+        "weekly": 80,
+        "marketCap": 135075831808,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3873,9 +3873,9 @@
         "sector": "XLP",
         "price": 21.76,
         "chg": 1.54,
-        "daily": 10,
-        "weekly": 0,
-        "marketCap": 11974184960,
+        "daily": 24,
+        "weekly": 13,
+        "marketCap": 11858624512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3884,9 +3884,9 @@
         "sector": "XLRE",
         "price": 21.07,
         "chg": 1.06,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 14482112512,
+        "daily": 96,
+        "weekly": 99,
+        "marketCap": 14365265920,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3895,9 +3895,9 @@
         "sector": "XLI",
         "price": 246.16,
         "chg": 2.19,
-        "daily": 40,
-        "weekly": 90,
-        "marketCap": 98695405568,
+        "daily": 62,
+        "weekly": 70,
+        "marketCap": 97203912704,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3906,9 +3906,9 @@
         "sector": "XLK",
         "price": 20.14,
         "chg": -1.47,
-        "daily": 35,
-        "weekly": 20,
-        "marketCap": 18488207360,
+        "daily": 78,
+        "weekly": 34,
+        "marketCap": 18166915072,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3917,9 +3917,9 @@
         "sector": "XLI",
         "price": 557.85,
         "chg": 1.47,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 29656197120,
+        "daily": 94,
+        "weekly": 93,
+        "marketCap": 29402087424,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3928,9 +3928,9 @@
         "sector": "XLV",
         "price": 214.95,
         "chg": -1.13,
-        "daily": 30,
-        "weekly": 0,
-        "marketCap": 25805707264,
+        "daily": 79,
+        "weekly": 16,
+        "marketCap": 25839321088,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3939,9 +3939,9 @@
         "sector": "XLF",
         "price": 16.83,
         "chg": 0.06,
-        "daily": 45,
-        "weekly": 55,
-        "marketCap": 34116608000,
+        "daily": 64,
+        "weekly": 51,
+        "marketCap": 33244942336,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3950,9 +3950,9 @@
         "sector": "XLI",
         "price": 370.14,
         "chg": 0.89,
-        "daily": 25,
-        "weekly": 75,
-        "marketCap": 14575067136,
+        "daily": 21,
+        "weekly": 66,
+        "marketCap": 14147824640,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3961,9 +3961,9 @@
         "sector": "XLK",
         "price": 231.08,
         "chg": -8.25,
-        "daily": 20,
-        "weekly": 25,
-        "marketCap": 217188696064,
+        "daily": 43,
+        "weekly": 19,
+        "marketCap": 218034585600,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -3972,9 +3972,9 @@
         "sector": "XLI",
         "price": 206.64,
         "chg": 1.48,
-        "daily": 65,
-        "weekly": 65,
-        "marketCap": 15363234816,
+        "daily": 71,
+        "weekly": 79,
+        "marketCap": 15221974016,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3983,9 +3983,9 @@
         "sector": "XLV",
         "price": 560.93,
         "chg": -3.01,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 44663508992,
+        "daily": 32,
+        "weekly": 39,
+        "marketCap": 45061627904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -3994,9 +3994,9 @@
         "sector": "XLI",
         "price": 273.13,
         "chg": 2.26,
-        "daily": 45,
-        "weekly": 85,
-        "marketCap": 78716067840,
+        "daily": 61,
+        "weekly": 86,
+        "marketCap": 77609377792,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4005,9 +4005,9 @@
         "sector": "XLV",
         "price": 95.47,
         "chg": -1.31,
-        "daily": 25,
-        "weekly": 45,
-        "marketCap": 18999912448,
+        "daily": 47,
+        "weekly": 56,
+        "marketCap": 18836721664,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4016,9 +4016,9 @@
         "sector": "XLI",
         "price": 84.95,
         "chg": 1.49,
-        "daily": 25,
+        "daily": 49,
         "weekly": 40,
-        "marketCap": 33564626944,
+        "marketCap": 33114202112,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4027,9 +4027,9 @@
         "sector": "XLV",
         "price": 192.21,
         "chg": -0.73,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 13313178624,
+        "daily": 10,
+        "weekly": 13,
+        "marketCap": 13129628672,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4038,9 +4038,9 @@
         "sector": "XLK",
         "price": 66.78,
         "chg": 2.31,
-        "daily": 90,
-        "weekly": 80,
-        "marketCap": 335303081984,
+        "daily": 97,
+        "weekly": 92,
+        "marketCap": 414434197504,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4049,9 +4049,9 @@
         "sector": "XLF",
         "price": 75.9,
         "chg": -2.83,
-        "daily": 85,
-        "weekly": 55,
-        "marketCap": 33822320640,
+        "daily": 84,
+        "weekly": 56,
+        "marketCap": 34143164416,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4060,9 +4060,9 @@
         "sector": "XLF",
         "price": 157.48,
         "chg": -0.84,
-        "daily": 25,
+        "daily": 36,
         "weekly": 25,
-        "marketCap": 89201516544,
+        "marketCap": 89750953984,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4071,9 +4071,9 @@
         "sector": "XLB",
         "price": 70.94,
         "chg": -0.32,
-        "daily": 40,
-        "weekly": 25,
-        "marketCap": 18120759296,
+        "daily": 49,
+        "weekly": 60,
+        "marketCap": 18171846656,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4082,9 +4082,9 @@
         "sector": "XLB",
         "price": 33.54,
         "chg": 0.63,
-        "daily": 10,
+        "daily": 24,
         "weekly": 10,
-        "marketCap": 17758967808,
+        "marketCap": 17287725056,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4093,9 +4093,9 @@
         "sector": "XLK",
         "price": 383.3,
         "chg": -6.21,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 106662453248,
+        "daily": 27,
+        "weekly": 17,
+        "marketCap": 110182629376,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4104,9 +4104,9 @@
         "sector": "XLV",
         "price": 478.82,
         "chg": -0.99,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 169580265472,
+        "daily": 58,
+        "weekly": 26,
+        "marketCap": 170784407552,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4115,9 +4115,9 @@
         "sector": "XLF",
         "price": 25.37,
         "chg": -0.74,
-        "daily": 50,
-        "weekly": 55,
-        "marketCap": 11272235008,
+        "daily": 65,
+        "weekly": 64,
+        "marketCap": 11334438912,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4126,9 +4126,9 @@
         "sector": "XLRE",
         "price": 27.3,
         "chg": 2.32,
-        "daily": 30,
-        "weekly": 0,
-        "marketCap": 16364875776,
+        "daily": 82,
+        "weekly": 27,
+        "marketCap": 16262970368,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4137,9 +4137,9 @@
         "sector": "XLV",
         "price": 160.68,
         "chg": -8.29,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 26972762112,
+        "daily": 50,
+        "weekly": 22,
+        "marketCap": 27241349120,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4148,9 +4148,9 @@
         "sector": "XLRE",
         "price": 116.12,
         "chg": -0.95,
-        "daily": 90,
-        "weekly": 75,
-        "marketCap": 34543239168,
+        "daily": 96,
+        "weekly": 84,
+        "marketCap": 34516467712,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4159,9 +4159,9 @@
         "sector": "XLI",
         "price": 253.71,
         "chg": 2.7,
-        "daily": 95,
-        "weekly": 80,
-        "marketCap": 24002000896,
+        "daily": 90,
+        "weekly": 88,
+        "marketCap": 23517628416,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4170,9 +4170,9 @@
         "sector": "XLK",
         "price": 338.53,
         "chg": 0.63,
-        "daily": 95,
+        "daily": 100,
         "weekly": 95,
-        "marketCap": 35715805184,
+        "marketCap": 36044972032,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4181,9 +4181,9 @@
         "sector": "XLF",
         "price": 150.6,
         "chg": -3.39,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 10899996672,
+        "daily": 20,
+        "weekly": 18,
+        "marketCap": 10939803648,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4192,9 +4192,9 @@
         "sector": "XLI",
         "price": 127.58,
         "chg": 0.02,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 14983852032,
+        "daily": 27,
+        "weekly": 28,
+        "marketCap": 14868753408,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4203,9 +4203,9 @@
         "sector": "XLV",
         "price": 230.65,
         "chg": 2.01,
-        "daily": 25,
-        "weekly": 80,
-        "marketCap": 555224530944,
+        "daily": 23,
+        "weekly": 83,
+        "marketCap": 547641851904,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4214,9 +4214,9 @@
         "sector": "XLI",
         "price": 141.73,
         "chg": 1.37,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 86748135424,
+        "daily": 72,
+        "weekly": 91,
+        "marketCap": 86864429056,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4225,9 +4225,9 @@
         "sector": "XLF",
         "price": 311.69,
         "chg": -0.42,
-        "daily": 60,
-        "weekly": 55,
-        "marketCap": 835173351424,
+        "daily": 81,
+        "weekly": 51,
+        "marketCap": 826036256768,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4236,8 +4236,8 @@
         "sector": "XLP",
         "price": 17.49,
         "chg": 1.04,
-        "daily": 20,
-        "weekly": 20,
+        "daily": 57,
+        "weekly": null,
         "marketCap": 33579335680,
         "capCategory": "Large Cap ($10B-$200B)"
       },
@@ -4247,9 +4247,9 @@
         "sector": "XLP",
         "price": 28.53,
         "chg": 7.5,
-        "daily": 50,
-        "weekly": 0,
-        "marketCap": 38813204480,
+        "daily": 64,
+        "weekly": 23,
+        "marketCap": 39751905280,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4258,9 +4258,9 @@
         "sector": "XLF",
         "price": 22.01,
         "chg": -0.14,
-        "daily": 80,
-        "weekly": 55,
-        "marketCap": 23931320320,
+        "daily": 75,
+        "weekly": 78,
+        "marketCap": 23518148608,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4269,9 +4269,9 @@
         "sector": "XLK",
         "price": 346.53,
         "chg": 2.23,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 59430760448,
+        "daily": 93,
+        "weekly": 100,
+        "marketCap": 59504504832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4280,9 +4280,9 @@
         "sector": "XLP",
         "price": 97.93,
         "chg": 1.22,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 32505489408,
+        "daily": 53,
+        "weekly": 16,
+        "marketCap": 32478935040,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4291,9 +4291,9 @@
         "sector": "XLRE",
         "price": 23.84,
         "chg": 1.15,
-        "daily": 100,
-        "weekly": 90,
-        "marketCap": 16077772800,
+        "daily": 91,
+        "weekly": 99,
+        "marketCap": 15976611840,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4302,9 +4302,9 @@
         "sector": "XLE",
         "price": 31.73,
         "chg": -0.25,
-        "daily": 40,
-        "weekly": 80,
-        "marketCap": 70593503232,
+        "daily": 29,
+        "weekly": 89,
+        "marketCap": 70615752704,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4313,9 +4313,9 @@
         "sector": "XLF",
         "price": 101.64,
         "chg": -4.04,
-        "daily": 35,
-        "weekly": 40,
-        "marketCap": 94130782208,
+        "daily": 71,
+        "weekly": 23,
+        "marketCap": 94306746368,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4325,8 +4325,8 @@
         "price": 1815.43,
         "chg": 0.19,
         "daily": 90,
-        "weekly": 95,
-        "marketCap": 238533591040,
+        "weekly": 96,
+        "marketCap": 254244175872,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4335,9 +4335,9 @@
         "sector": "XLP",
         "price": 21.97,
         "chg": 0.37,
-        "daily": 0,
-        "weekly": 0,
-        "marketCap": 26006872064,
+        "daily": 14,
+        "weekly": 6,
+        "marketCap": 25971361792,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4346,9 +4346,9 @@
         "sector": "XLP",
         "price": 69.1,
         "chg": 1.51,
-        "daily": 40,
-        "weekly": 50,
-        "marketCap": 43729874944,
+        "daily": 31,
+        "weekly": 60,
+        "marketCap": 42546450432,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4357,9 +4357,9 @@
         "sector": "XLI",
         "price": 330.22,
         "chg": -0.43,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 61680435200,
+        "daily": 19,
+        "weekly": 73,
+        "marketCap": 59306389504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4368,9 +4368,9 @@
         "sector": "XLV",
         "price": 264.92,
         "chg": -2.82,
-        "daily": 10,
-        "weekly": 75,
-        "marketCap": 21829408768,
+        "daily": 24,
+        "weekly": 63,
+        "marketCap": 21737119744,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4379,9 +4379,9 @@
         "sector": "XLK",
         "price": 258.56,
         "chg": -2.63,
-        "daily": 80,
-        "weekly": 90,
-        "marketCap": 323339354112,
+        "daily": 74,
+        "weekly": 88,
+        "marketCap": 334869331968,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4390,9 +4390,9 @@
         "sector": "XLY",
         "price": 51.95,
         "chg": -8.62,
-        "daily": 15,
-        "weekly": 40,
-        "marketCap": 34474967040,
+        "daily": 45,
+        "weekly": 47,
+        "marketCap": 35045679104,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4401,9 +4401,9 @@
         "sector": "XLI",
         "price": 147.6,
         "chg": -2.06,
-        "daily": 0,
-        "weekly": 25,
-        "marketCap": 18655561728,
+        "daily": 7,
+        "weekly": 27,
+        "marketCap": 18460915712,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4412,9 +4412,9 @@
         "sector": "XLY",
         "price": 94.18,
         "chg": -0.29,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 23196375040,
+        "daily": 42,
+        "weekly": 7,
+        "marketCap": 23164356608,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4423,9 +4423,9 @@
         "sector": "XLI",
         "price": 493.67,
         "chg": 0.8,
-        "daily": 15,
-        "weekly": 30,
-        "marketCap": 17188544512,
+        "daily": 40,
+        "weekly": 18,
+        "marketCap": 17094536192,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4434,9 +4434,9 @@
         "sector": "XLV",
         "price": 917.65,
         "chg": -0.42,
-        "daily": 20,
+        "daily": 19,
         "weekly": 45,
-        "marketCap": 819789496320,
+        "marketCap": 789692284928,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4445,9 +4445,9 @@
         "sector": "XLB",
         "price": 508.06,
         "chg": 2.72,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 235432034304,
+        "daily": 78,
+        "weekly": 88,
+        "marketCap": 236470026240,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4456,9 +4456,9 @@
         "sector": "XLC",
         "price": 153.21,
         "chg": -0.92,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 35974004736,
+        "daily": 46,
+        "weekly": 74,
+        "marketCap": 36779372544,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4467,9 +4467,9 @@
         "sector": "XLI",
         "price": 529.79,
         "chg": -4.62,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 122096517120,
+        "daily": 18,
+        "weekly": 82,
+        "marketCap": 118330777600,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4478,9 +4478,9 @@
         "sector": "XLF",
         "price": 112.42,
         "chg": 1.6,
-        "daily": 85,
-        "weekly": 90,
-        "marketCap": 23132403712,
+        "daily": 79,
+        "weekly": 76,
+        "marketCap": 22753792000,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4489,9 +4489,9 @@
         "sector": "XLY",
         "price": 246.54,
         "chg": 0.55,
-        "daily": 50,
-        "weekly": 50,
-        "marketCap": 138077913088,
+        "daily": 52,
+        "weekly": 57,
+        "marketCap": 136907374592,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4500,9 +4500,9 @@
         "sector": "XLY",
         "price": 141.66,
         "chg": -13.33,
-        "daily": 15,
-        "weekly": 0,
-        "marketCap": 16618293248,
+        "daily": 45,
+        "weekly": 14,
+        "marketCap": 16869339136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4511,9 +4511,9 @@
         "sector": "XLK",
         "price": 846.89,
         "chg": -3.06,
-        "daily": 80,
-        "weekly": 95,
-        "marketCap": 60467945472,
+        "daily": 60,
+        "weekly": 97,
+        "marketCap": 62949097472,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4522,9 +4522,9 @@
         "sector": "XLB",
         "price": 70.72,
         "chg": -1.78,
-        "daily": 45,
-        "weekly": 75,
-        "marketCap": 22826244096,
+        "daily": 50,
+        "weekly": 86,
+        "marketCap": 22551889920,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4533,9 +4533,9 @@
         "sector": "XLF",
         "price": 219.7,
         "chg": 0.98,
-        "daily": 85,
-        "weekly": 55,
-        "marketCap": 32626462720,
+        "daily": 73,
+        "weekly": 76,
+        "marketCap": 31916609536,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4544,9 +4544,9 @@
         "sector": "XLE",
         "price": 221.1,
         "chg": -0.44,
-        "daily": 35,
-        "weekly": 85,
-        "marketCap": 65113260032,
+        "daily": 42,
+        "weekly": 93,
+        "marketCap": 66008526848,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4555,9 +4555,9 @@
         "sector": "XLY",
         "price": 368.24,
         "chg": 0.3,
-        "daily": 90,
+        "daily": 93,
         "weekly": 95,
-        "marketCap": 97577910272,
+        "marketCap": 97289076736,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4566,9 +4566,9 @@
         "sector": "XLF",
         "price": 174.01,
         "chg": -0.85,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 83837059072,
+        "daily": 54,
+        "weekly": 14,
+        "marketCap": 81953243136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4577,9 +4577,9 @@
         "sector": "XLB",
         "price": 618.89,
         "chg": 1.35,
-        "daily": 25,
-        "weekly": 55,
-        "marketCap": 37326524416,
+        "daily": 42,
+        "weekly": 53,
+        "marketCap": 37110001664,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4588,9 +4588,9 @@
         "sector": "XLI",
         "price": 75.4,
         "chg": 1.95,
-        "daily": 50,
-        "weekly": 50,
-        "marketCap": 15210776576,
+        "daily": 67,
+        "weekly": 55,
+        "marketCap": 14964660224,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4599,9 +4599,9 @@
         "sector": "XLF",
         "price": 502.38,
         "chg": -1.53,
-        "daily": 15,
-        "weekly": 30,
-        "marketCap": 448342851584,
+        "daily": 45,
+        "weekly": 21,
+        "marketCap": 449940324352,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4610,9 +4610,9 @@
         "sector": "XLP",
         "price": 51.89,
         "chg": 0.82,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 13950273536,
+        "daily": 34,
+        "weekly": 1,
+        "marketCap": 13853490176,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4621,9 +4621,9 @@
         "sector": "XLY",
         "price": 302.53,
         "chg": 0.82,
-        "daily": 10,
-        "weekly": 70,
-        "marketCap": 215046684672,
+        "daily": 21,
+        "weekly": 49,
+        "marketCap": 212793360384,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4632,9 +4632,9 @@
         "sector": "XLV",
         "price": 836.1,
         "chg": 0.83,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 102411755520,
+        "daily": 21,
+        "weekly": 57,
+        "marketCap": 101433081856,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4643,9 +4643,9 @@
         "sector": "XLV",
         "price": 83.79,
         "chg": 0.68,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 107576721408,
+        "daily": 12,
+        "weekly": 35,
+        "marketCap": 106973290496,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4654,9 +4654,9 @@
         "sector": "XLV",
         "price": 114.62,
         "chg": 1.53,
-        "daily": 25,
-        "weekly": 65,
-        "marketCap": 283097563136,
+        "daily": 30,
+        "weekly": 73,
+        "marketCap": 276379500544,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4665,9 +4665,9 @@
         "sector": "XLC",
         "price": 659.15,
         "chg": -2.31,
-        "daily": 15,
-        "weekly": 45,
-        "marketCap": 1673201713152,
+        "daily": 65,
+        "weekly": 43,
+        "marketCap": 1713511989248,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4676,9 +4676,9 @@
         "sector": "XLF",
         "price": 76.06,
         "chg": -1.18,
-        "daily": 30,
-        "weekly": 50,
-        "marketCap": 49595215872,
+        "daily": 74,
+        "weekly": 33,
+        "marketCap": 50664583168,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4687,9 +4687,9 @@
         "sector": "XLV",
         "price": 1264.36,
         "chg": -3.49,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 25601398784,
+        "daily": 50,
+        "weekly": 39,
+        "marketCap": 25967693824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4698,10 +4698,10 @@
         "sector": "XLY",
         "price": 38.94,
         "chg": -0.76,
-        "daily": 100,
-        "weekly": 65,
-        "marketCap": 9961961472,
-        "capCategory": "Mid Cap ($2B-$10B)"
+        "daily": 97,
+        "weekly": 86,
+        "marketCap": 10115460096,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "MCHP",
@@ -4709,9 +4709,9 @@
         "sector": "XLK",
         "price": 90.64,
         "chg": 9.89,
-        "daily": 95,
-        "weekly": 50,
-        "marketCap": 49048518656,
+        "daily": 90,
+        "weekly": 77,
+        "marketCap": 48399159296,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4720,9 +4720,9 @@
         "sector": "XLK",
         "price": 481.72,
         "chg": -1.18,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 543252021248,
+        "daily": 70,
+        "weekly": 85,
+        "marketCap": 560168042496,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4731,9 +4731,9 @@
         "sector": "XLK",
         "price": 415.75,
         "chg": -3.97,
-        "daily": 20,
-        "weekly": 40,
-        "marketCap": 3090011127808,
+        "daily": 65,
+        "weekly": 28,
+        "marketCap": 3155936149504,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4742,9 +4742,9 @@
         "sector": "XLRE",
         "price": 126.0,
         "chg": 1.13,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 14659802112,
+        "daily": 51,
+        "weekly": 13,
+        "marketCap": 14620243968,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4753,9 +4753,9 @@
         "sector": "XLV",
         "price": 52.85,
         "chg": -4.95,
-        "daily": 85,
-        "weekly": 40,
-        "marketCap": 20959614976,
+        "daily": 67,
+        "weekly": 77,
+        "marketCap": 20118851584,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4764,9 +4764,9 @@
         "sector": "XLP",
         "price": 42.87,
         "chg": 0.4,
-        "daily": 10,
-        "weekly": 0,
-        "marketCap": 8071791104,
+        "daily": 25,
+        "weekly": 4,
+        "marketCap": 7990828544,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -4775,9 +4775,9 @@
         "sector": "XLP",
         "price": 57.71,
         "chg": 2.94,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 74068279296,
+        "daily": 40,
+        "weekly": 32,
+        "marketCap": 73939935232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4786,9 +4786,9 @@
         "sector": "XLK",
         "price": 1592.17,
         "chg": 4.61,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 78204207104,
+        "daily": 100,
+        "weekly": 100,
+        "marketCap": 80163528704,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4797,9 +4797,9 @@
         "sector": "XLP",
         "price": 77.56,
         "chg": 2.12,
-        "daily": 55,
-        "weekly": 55,
-        "marketCap": 75846393856,
+        "daily": 59,
+        "weekly": 58,
+        "marketCap": 76501590016,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4808,9 +4808,9 @@
         "sector": "XLF",
         "price": 452.35,
         "chg": -3.08,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 80520052736,
+        "daily": 61,
+        "weekly": 27,
+        "marketCap": 81178664960,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4819,9 +4819,9 @@
         "sector": "XLF",
         "price": 188.65,
         "chg": -1.26,
-        "daily": 80,
-        "weekly": 55,
-        "marketCap": 299549818880,
+        "daily": 84,
+        "weekly": 65,
+        "marketCap": 298628874240,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4830,9 +4830,9 @@
         "sector": "XLB",
         "price": 24.28,
         "chg": -0.98,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 7717317120,
+        "daily": 13,
+        "weekly": 22,
+        "marketCap": 7628319744,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -4841,9 +4841,9 @@
         "sector": "XLK",
         "price": 443.17,
         "chg": 0.34,
-        "daily": 55,
-        "weekly": 50,
-        "marketCap": 73656459264,
+        "daily": 49,
+        "weekly": 59,
+        "marketCap": 72840396800,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4852,9 +4852,9 @@
         "sector": "XLF",
         "price": 598.01,
         "chg": -1.65,
-        "daily": 65,
-        "weekly": 50,
-        "marketCap": 43491827712,
+        "daily": 88,
+        "weekly": 57,
+        "marketCap": 43104915456,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4863,9 +4863,9 @@
         "sector": "XLF",
         "price": 87.04,
         "chg": 0.78,
-        "daily": 30,
-        "weekly": 55,
-        "marketCap": 49477353472,
+        "daily": 58,
+        "weekly": 43,
+        "marketCap": 51103100928,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4874,9 +4874,9 @@
         "sector": "XLK",
         "price": 108.4,
         "chg": -2.36,
-        "daily": 65,
-        "weekly": 60,
-        "marketCap": 21469743104,
+        "daily": 87,
+        "weekly": 47,
+        "marketCap": 21531140096,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4885,9 +4885,9 @@
         "sector": "XLC",
         "price": 92.82,
         "chg": -0.45,
-        "daily": 35,
-        "weekly": 35,
-        "marketCap": 390846316544,
+        "daily": 57,
+        "weekly": 44,
+        "marketCap": 389246222336,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -4896,9 +4896,9 @@
         "sector": "XLB",
         "price": 111.06,
         "chg": -0.71,
-        "daily": 25,
-        "weekly": 75,
-        "marketCap": 119937376256,
+        "daily": 42,
+        "weekly": 68,
+        "marketCap": 130347933696,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4907,9 +4907,9 @@
         "sector": "XLC",
         "price": 26.31,
         "chg": -1.28,
-        "daily": 35,
-        "weekly": 60,
-        "marketCap": 14425335808,
+        "daily": 82,
+        "weekly": 37,
+        "marketCap": 14365025280,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4918,9 +4918,9 @@
         "sector": "XLC",
         "price": 30.4,
         "chg": -1.11,
-        "daily": 65,
-        "weekly": 60,
-        "marketCap": 16667814912,
+        "daily": 88,
+        "weekly": 48,
+        "marketCap": 16580089856,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4929,10 +4929,10 @@
         "sector": "XLU",
         "price": 96.25,
         "chg": 6.94,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 200710406144,
-        "capCategory": "Mega Cap (>$200B)"
+        "daily": 48,
+        "weekly": 92,
+        "marketCap": 198687653888,
+        "capCategory": "Large Cap ($10B-$200B)"
       },
       {
         "sym": "NKE",
@@ -4940,9 +4940,9 @@
         "sector": "XLY",
         "price": 44.78,
         "chg": -1.97,
-        "daily": 10,
-        "weekly": 0,
-        "marketCap": 66314121216,
+        "daily": 16,
+        "weekly": 5,
+        "marketCap": 66180841472,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4951,9 +4951,9 @@
         "sector": "XLU",
         "price": 48.29,
         "chg": 3.07,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 23108368384,
+        "daily": 69,
+        "weekly": 95,
+        "marketCap": 22964807680,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4962,9 +4962,9 @@
         "sector": "XLI",
         "price": 283.83,
         "chg": 1.57,
-        "daily": 65,
-        "weekly": 85,
-        "marketCap": 15833058304,
+        "daily": 66,
+        "weekly": 90,
+        "marketCap": 15751056384,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4973,9 +4973,9 @@
         "sector": "XLI",
         "price": 321.44,
         "chg": 7.75,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 72186437632,
+        "daily": 74,
+        "weekly": 81,
+        "marketCap": 71797923840,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4984,9 +4984,9 @@
         "sector": "XLF",
         "price": 165.39,
         "chg": -1.45,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 30650228736,
+        "daily": 94,
+        "weekly": 87,
+        "marketCap": 30394484736,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -4995,9 +4995,9 @@
         "sector": "XLI",
         "price": 587.66,
         "chg": -0.33,
-        "daily": 20,
-        "weekly": 65,
-        "marketCap": 83467386880,
+        "daily": 13,
+        "weekly": 69,
+        "marketCap": 81684865024,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5006,9 +5006,9 @@
         "sector": "XLY",
         "price": 18.42,
         "chg": -3.21,
-        "daily": 15,
-        "weekly": 20,
-        "marketCap": 8391150592,
+        "daily": 28,
+        "weekly": 32,
+        "marketCap": 8432149504,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -5017,9 +5017,9 @@
         "sector": "XLU",
         "price": 154.53,
         "chg": 3.3,
-        "daily": 15,
-        "weekly": 40,
-        "marketCap": 32818493440,
+        "daily": 45,
+        "weekly": 36,
+        "marketCap": 33939838976,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5028,9 +5028,9 @@
         "sector": "XLB",
         "price": 212.95,
         "chg": -0.61,
-        "daily": 95,
-        "weekly": 75,
-        "marketCap": 48496304128,
+        "daily": 93,
+        "weekly": 85,
+        "marketCap": 48801472512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5039,9 +5039,9 @@
         "sector": "XLK",
         "price": 199.64,
         "chg": -1.41,
-        "daily": 95,
-        "weekly": 65,
-        "marketCap": 4852250312704,
+        "daily": 92,
+        "weekly": 53,
+        "marketCap": 5062002737152,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5050,9 +5050,9 @@
         "sector": "XLY",
         "price": 6669.01,
         "chg": 0.88,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 18218579968,
+        "daily": 31,
+        "weekly": 11,
+        "marketCap": 17767667712,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5061,9 +5061,9 @@
         "sector": "XLK",
         "price": 241.16,
         "chg": 6.83,
-        "daily": 50,
-        "weekly": 40,
-        "marketCap": 60939407360,
+        "daily": 75,
+        "weekly": 52,
+        "marketCap": 61667160064,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5072,9 +5072,9 @@
         "sector": "XLY",
         "price": 93.24,
         "chg": -0.72,
-        "daily": 30,
-        "weekly": 45,
-        "marketCap": 78180532224,
+        "daily": 52,
+        "weekly": 30,
+        "marketCap": 78088298496,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5083,9 +5083,9 @@
         "sector": "XLE",
         "price": 57.83,
         "chg": 1.37,
-        "daily": 55,
-        "weekly": 85,
-        "marketCap": 57349734400,
+        "daily": 54,
+        "weekly": 86,
+        "marketCap": 56645627904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5094,9 +5094,9 @@
         "sector": "XLI",
         "price": 222.78,
         "chg": 1.27,
-        "daily": 95,
-        "weekly": 75,
-        "marketCap": 46433058816,
+        "daily": 97,
+        "weekly": 92,
+        "marketCap": 45849464832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5105,9 +5105,9 @@
         "sector": "XLC",
         "price": 76.82,
         "chg": -1.65,
-        "daily": 30,
-        "weekly": 30,
-        "marketCap": 23840038912,
+        "daily": 67,
+        "weekly": 65,
+        "marketCap": 23504875520,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5116,9 +5116,9 @@
         "sector": "XLK",
         "price": 97.78,
         "chg": 9.88,
-        "daily": 95,
-        "weekly": 75,
-        "marketCap": 38459547648,
+        "daily": 100,
+        "weekly": 88,
+        "marketCap": 38703411200,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5127,9 +5127,9 @@
         "sector": "XLE",
         "price": 87.21,
         "chg": 1.34,
-        "daily": 60,
-        "weekly": 75,
-        "marketCap": 54944968704,
+        "daily": 49,
+        "weekly": 85,
+        "marketCap": 55127674880,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5138,9 +5138,9 @@
         "sector": "XLK",
         "price": 176.28,
         "chg": -5.98,
-        "daily": 35,
-        "weekly": 50,
-        "marketCap": 506989412352,
+        "daily": 79,
+        "weekly": 40,
+        "marketCap": 498361270272,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5149,9 +5149,9 @@
         "sector": "XLI",
         "price": 79.49,
         "chg": 2.07,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 30660136960,
+        "daily": 30,
+        "weekly": 8,
+        "marketCap": 30066141184,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5160,9 +5160,9 @@
         "sector": "XLI",
         "price": 126.97,
         "chg": 1.36,
-        "daily": 90,
-        "weekly": 85,
-        "marketCap": 66772815872,
+        "daily": 75,
+        "weekly": 88,
+        "marketCap": 66788593664,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5171,9 +5171,9 @@
         "sector": "XLB",
         "price": 215.02,
         "chg": 4.77,
-        "daily": 50,
-        "weekly": 45,
-        "marketCap": 19182663680,
+        "daily": 52,
+        "weekly": 56,
+        "marketCap": 18990854144,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5182,9 +5182,9 @@
         "sector": "XLK",
         "price": 141.57,
         "chg": -7.24,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 338589548544,
+        "daily": 32,
+        "weekly": 27,
+        "marketCap": 342224863232,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5193,9 +5193,9 @@
         "sector": "XLK",
         "price": 173.21,
         "chg": -4.41,
-        "daily": 30,
-        "weekly": 50,
-        "marketCap": 140473319424,
+        "daily": 77,
+        "weekly": 33,
+        "marketCap": 144795926528,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5204,9 +5204,9 @@
         "sector": "XLC",
         "price": 11.27,
         "chg": -4.49,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 12529321984,
+        "daily": 67,
+        "weekly": 29,
+        "marketCap": 12195800064,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5215,9 +5215,9 @@
         "sector": "XLI",
         "price": 973.88,
         "chg": 2.04,
-        "daily": 40,
-        "weekly": 85,
-        "marketCap": 122919755776,
+        "daily": 60,
+        "weekly": 77,
+        "marketCap": 122994212864,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5226,9 +5226,9 @@
         "sector": "XLI",
         "price": 90.95,
         "chg": -2.65,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 32586555392,
+        "daily": 49,
+        "weekly": 11,
+        "marketCap": 32181686272,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5237,9 +5237,9 @@
         "sector": "XLF",
         "price": 49.75,
         "chg": -2.87,
-        "daily": 35,
-        "weekly": 0,
-        "marketCap": 44758781952,
+        "daily": 74,
+        "weekly": 20,
+        "marketCap": 45415542784,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5248,9 +5248,9 @@
         "sector": "XLI",
         "price": 90.48,
         "chg": 0.98,
-        "daily": 15,
-        "weekly": 25,
-        "marketCap": 14769567744,
+        "daily": 47,
+        "weekly": 21,
+        "marketCap": 14976876544,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5259,9 +5259,9 @@
         "sector": "XLP",
         "price": 155.7,
         "chg": 1.24,
-        "daily": 30,
-        "weekly": 60,
-        "marketCap": 212832698368,
+        "daily": 48,
+        "weekly": 75,
+        "marketCap": 212477296640,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5270,9 +5270,9 @@
         "sector": "XLV",
         "price": 26.67,
         "chg": -0.49,
-        "daily": 30,
-        "weekly": 40,
-        "marketCap": 151708467200,
+        "daily": 32,
+        "weekly": 80,
+        "marketCap": 153585614848,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5281,9 +5281,9 @@
         "sector": "XLU",
         "price": 16.83,
         "chg": -0.3,
-        "daily": 30,
-        "weekly": 70,
-        "marketCap": 37063442432,
+        "daily": 36,
+        "weekly": 72,
+        "marketCap": 36578951168,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5292,9 +5292,9 @@
         "sector": "XLP",
         "price": 169.19,
         "chg": 3.2,
-        "daily": 50,
-        "weekly": 85,
-        "marketCap": 263687749632,
+        "daily": 48,
+        "weekly": 58,
+        "marketCap": 255910674432,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5303,9 +5303,9 @@
         "sector": "XLE",
         "price": 159.53,
         "chg": -0.7,
-        "daily": 60,
-        "weekly": 80,
-        "marketCap": 63968751616,
+        "daily": 41,
+        "weekly": 92,
+        "marketCap": 65300017152,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5314,9 +5314,9 @@
         "sector": "XLU",
         "price": 103.45,
         "chg": 2.63,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 12520102912,
+        "daily": 71,
+        "weekly": 97,
+        "marketCap": 12380923904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5325,9 +5325,9 @@
         "sector": "XLF",
         "price": 225.09,
         "chg": 0.01,
-        "daily": 85,
-        "weekly": 55,
-        "marketCap": 90794754048,
+        "daily": 78,
+        "weekly": 77,
+        "marketCap": 88685125632,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5336,9 +5336,9 @@
         "sector": "XLY",
         "price": 228.68,
         "chg": -2.37,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 8392689152,
+        "daily": 60,
+        "weekly": 11,
+        "marketCap": 8534721024,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -5347,9 +5347,9 @@
         "sector": "XLB",
         "price": 110.29,
         "chg": -1.24,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 24682754048,
+        "daily": 60,
+        "weekly": 51,
+        "marketCap": 24573093888,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5358,9 +5358,9 @@
         "sector": "XLU",
         "price": 38.54,
         "chg": 2.01,
-        "daily": 80,
-        "weekly": 90,
-        "marketCap": 28988444672,
+        "daily": 68,
+        "weekly": 94,
+        "marketCap": 29146398720,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5370,8 +5370,8 @@
         "price": 97.0,
         "chg": -0.44,
         "daily": 85,
-        "weekly": 90,
-        "marketCap": 20995584000,
+        "weekly": 91,
+        "marketCap": 21502074880,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5380,9 +5380,9 @@
         "sector": "XLP",
         "price": 145.71,
         "chg": 2.0,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 340485439488,
+        "daily": 42,
+        "weekly": 25,
+        "marketCap": 346257129472,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5391,9 +5391,9 @@
         "sector": "XLF",
         "price": 205.33,
         "chg": 1.29,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 119994851328,
+        "daily": 67,
+        "weekly": 22,
+        "marketCap": 117400117248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5402,9 +5402,9 @@
         "sector": "XLRE",
         "price": 142.34,
         "chg": 0.65,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 132693704704,
+        "daily": 87,
+        "weekly": 94,
+        "marketCap": 132469981184,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5413,9 +5413,9 @@
         "sector": "XLF",
         "price": 94.35,
         "chg": -0.53,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 32833800192,
+        "daily": 44,
+        "weekly": 18,
+        "marketCap": 32785080320,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5424,9 +5424,9 @@
         "sector": "XLU",
         "price": 80.16,
         "chg": 2.1,
-        "daily": 10,
-        "weekly": 60,
-        "marketCap": 40012185600,
+        "daily": 14,
+        "weekly": 54,
+        "marketCap": 40301690880,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5435,9 +5435,9 @@
         "sector": "XLK",
         "price": 135.83,
         "chg": -3.39,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 16163241984,
+        "daily": 18,
+        "weekly": 15,
+        "marketCap": 16322696192,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5446,9 +5446,9 @@
         "sector": "XLRE",
         "price": 310.82,
         "chg": 1.97,
-        "daily": 65,
-        "weekly": 70,
-        "marketCap": 54562050048,
+        "daily": 93,
+        "weekly": 92,
+        "marketCap": 54117928960,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5457,9 +5457,9 @@
         "sector": "XLY",
         "price": 130.64,
         "chg": 2.41,
-        "daily": 50,
-        "weekly": 45,
-        "marketCap": 25101373440,
+        "daily": 73,
+        "weekly": 57,
+        "marketCap": 24509577216,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5468,9 +5468,9 @@
         "sector": "XLI",
         "price": 633.44,
         "chg": 3.2,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 95051931648,
+        "daily": 89,
+        "weekly": 96,
+        "marketCap": 93761445888,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5479,9 +5479,9 @@
         "sector": "XLK",
         "price": 133.95,
         "chg": -1.56,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 143064645632,
+        "daily": 52,
+        "weekly": 15,
+        "marketCap": 158978523136,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5490,20 +5490,9 @@
         "sector": "XLV",
         "price": 199.53,
         "chg": -2.19,
-        "daily": 60,
-        "weekly": 90,
-        "marketCap": 22087258112,
-        "capCategory": "Large Cap ($10B-$200B)"
-      },
-      {
-        "sym": "Q",
-        "name": "Qnity Electronics",
-        "sector": "XLK",
-        "price": 140.13,
-        "chg": 0.63,
-        "daily": 85,
-        "weekly": null,
-        "marketCap": 29379504128,
+        "daily": 54,
+        "weekly": 83,
+        "marketCap": 21726388224,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5512,9 +5501,9 @@
         "sector": "XLY",
         "price": 371.14,
         "chg": -1.11,
-        "daily": 70,
-        "weekly": 65,
-        "marketCap": 22506174464,
+        "daily": 74,
+        "weekly": 58,
+        "marketCap": 22512238592,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5523,9 +5512,9 @@
         "sector": "XLF",
         "price": 153.41,
         "chg": -0.72,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 29853587456,
+        "daily": 55,
+        "weekly": 32,
+        "marketCap": 29855531008,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5534,9 +5523,9 @@
         "sector": "XLI",
         "price": 179.3,
         "chg": -0.89,
-        "daily": 30,
-        "weekly": 75,
-        "marketCap": 241460330496,
+        "daily": 20,
+        "weekly": 64,
+        "marketCap": 234673045504,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5545,9 +5534,9 @@
         "sector": "XLRE",
         "price": 64.08,
         "chg": 1.17,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 59751436288,
+        "daily": 66,
+        "weekly": 95,
+        "marketCap": 59052101632,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5556,9 +5545,9 @@
         "sector": "XLRE",
         "price": 80.74,
         "chg": 2.2,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 15092045824,
+        "daily": 91,
+        "weekly": 98,
+        "marketCap": 14989239296,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5567,9 +5556,9 @@
         "sector": "XLV",
         "price": 766.02,
         "chg": 2.6,
-        "daily": 50,
-        "weekly": 10,
-        "marketCap": 80983490560,
+        "daily": 44,
+        "weekly": 61,
+        "marketCap": 79455838208,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5578,9 +5567,9 @@
         "sector": "XLF",
         "price": 28.4,
         "chg": 0.67,
-        "daily": 55,
-        "weekly": 55,
-        "marketCap": 24262582272,
+        "daily": 66,
+        "weekly": 72,
+        "marketCap": 23715819520,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5589,9 +5578,9 @@
         "sector": "XLI",
         "price": 214.04,
         "chg": 4.26,
-        "daily": 10,
-        "weekly": 25,
-        "marketCap": 66128982016,
+        "daily": 18,
+        "weekly": 33,
+        "marketCap": 64815919104,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5600,9 +5589,9 @@
         "sector": "XLV",
         "price": 219.51,
         "chg": -1.14,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 31977865216,
+        "daily": 19,
+        "weekly": 23,
+        "marketCap": 32027398144,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5611,9 +5600,9 @@
         "sector": "XLV",
         "price": 87.15,
         "chg": -7.56,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 9743660032,
+        "daily": 42,
+        "weekly": 27,
+        "marketCap": 9701174272,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -5622,9 +5611,9 @@
         "sector": "XLF",
         "price": 83.54,
         "chg": -5.53,
-        "daily": 35,
-        "weekly": 55,
-        "marketCap": 75211767808,
+        "daily": 70,
+        "weekly": 35,
+        "marketCap": 76265127936,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5633,9 +5622,9 @@
         "sector": "XLI",
         "price": 408.91,
         "chg": 0.46,
-        "daily": 70,
-        "weekly": 55,
-        "marketCap": 45975052288,
+        "daily": 80,
+        "weekly": 67,
+        "marketCap": 45105942528,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5644,9 +5633,9 @@
         "sector": "XLI",
         "price": 56.99,
         "chg": 3.02,
-        "daily": 15,
-        "weekly": 55,
-        "marketCap": 27438520320,
+        "daily": 54,
+        "weekly": 35,
+        "marketCap": 27250749440,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5655,9 +5644,9 @@
         "sector": "XLK",
         "price": 363.76,
         "chg": -0.27,
-        "daily": 35,
-        "weekly": 10,
-        "marketCap": 37440913408,
+        "daily": 75,
+        "weekly": 19,
+        "marketCap": 36374581248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5666,9 +5655,9 @@
         "sector": "XLY",
         "price": 226.92,
         "chg": 0.26,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 73396125696,
+        "daily": 85,
+        "weekly": 100,
+        "marketCap": 73218228224,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5677,9 +5666,9 @@
         "sector": "XLY",
         "price": 260.43,
         "chg": -1.96,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 70453690368,
+        "daily": 24,
+        "weekly": 29,
+        "marketCap": 71917248512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5688,9 +5677,9 @@
         "sector": "XLF",
         "price": 439.03,
         "chg": -2.23,
-        "daily": 35,
-        "weekly": 40,
-        "marketCap": 131182166016,
+        "daily": 71,
+        "weekly": 27,
+        "marketCap": 130512855040,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5699,9 +5688,9 @@
         "sector": "XLK",
         "price": 173.3,
         "chg": -8.69,
-        "daily": 10,
+        "daily": 33,
         "weekly": 10,
-        "marketCap": 141768720384,
+        "marketCap": 145744461824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5710,9 +5699,9 @@
         "sector": "XLK",
         "price": 932.43,
         "chg": -4.76,
-        "daily": 90,
-        "weekly": 87,
-        "marketCap": 137627582464,
+        "daily": 72,
+        "weekly": null,
+        "marketCap": 146110201856,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5721,9 +5710,9 @@
         "sector": "XLRE",
         "price": 219.6,
         "chg": 3.65,
-        "daily": 80,
-        "weekly": 20,
-        "marketCap": 23291305984,
+        "daily": 89,
+        "weekly": 66,
+        "marketCap": 23277516800,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5732,9 +5721,9 @@
         "sector": "XLE",
         "price": 54.74,
         "chg": 0.72,
-        "daily": 95,
-        "weekly": 75,
-        "marketCap": 82172043264,
+        "daily": 74,
+        "weekly": 84,
+        "marketCap": 84288634880,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5744,8 +5733,8 @@
         "price": 587.62,
         "chg": 1.33,
         "daily": 90,
-        "weekly": 95,
-        "marketCap": 131641786368,
+        "weekly": 98,
+        "marketCap": 131334873088,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5754,9 +5743,9 @@
         "sector": "XLU",
         "price": 93.91,
         "chg": 1.66,
-        "daily": 30,
-        "weekly": 85,
-        "marketCap": 61354463232,
+        "daily": 38,
+        "weekly": 87,
+        "marketCap": 60890591232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5765,9 +5754,9 @@
         "sector": "XLK",
         "price": 84.78,
         "chg": -17.75,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 87845363712,
+        "daily": 25,
+        "weekly": 9,
+        "marketCap": 93430243328,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5776,9 +5765,9 @@
         "sector": "XLB",
         "price": 337.66,
         "chg": 0.75,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 83663626240,
+        "daily": 51,
+        "weekly": 20,
+        "marketCap": 83673538560,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5787,9 +5776,9 @@
         "sector": "XLRE",
         "price": 203.66,
         "chg": 0.98,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 77521747968,
+        "daily": 91,
+        "weekly": 92,
+        "marketCap": 76570140672,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5798,9 +5787,9 @@
         "sector": "XLK",
         "price": 61.55,
         "chg": -0.36,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 9257487360,
+        "daily": 76,
+        "weekly": 33,
+        "marketCap": 9573340160,
         "capCategory": "Mid Cap ($2B-$10B)"
       },
       {
@@ -5809,9 +5798,9 @@
         "sector": "XLP",
         "price": 96.19,
         "chg": 1.26,
-        "daily": 20,
-        "weekly": 0,
-        "marketCap": 10258502656,
+        "daily": 30,
+        "weekly": 10,
+        "marketCap": 10245703680,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5820,9 +5809,9 @@
         "sector": "XLB",
         "price": 40.52,
         "chg": 2.09,
-        "daily": 15,
-        "weekly": 30,
-        "marketCap": 21242769408,
+        "daily": 33,
+        "weekly": 40,
+        "marketCap": 20949186560,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5831,9 +5820,9 @@
         "sector": "XLI",
         "price": 390.75,
         "chg": 2.19,
-        "daily": 55,
+        "daily": 72,
         "weekly": 90,
-        "marketCap": 20341407744,
+        "marketCap": 19699539968,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5842,9 +5831,9 @@
         "sector": "XLV",
         "price": 68.96,
         "chg": -0.22,
-        "daily": 20,
-        "weekly": 40,
-        "marketCap": 11964078080,
+        "daily": 58,
+        "weekly": null,
+        "marketCap": 11887739904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5853,9 +5842,9 @@
         "sector": "XLU",
         "price": 93.91,
         "chg": 2.22,
-        "daily": 20,
-        "weekly": 80,
-        "marketCap": 105865125888,
+        "daily": 32,
+        "weekly": 71,
+        "marketCap": 105391652864,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5864,9 +5853,9 @@
         "sector": "XLI",
         "price": 37.75,
         "chg": -4.07,
-        "daily": 35,
-        "weekly": 45,
-        "marketCap": 18538108928,
+        "daily": 40,
+        "weekly": 59,
+        "marketCap": 19372939264,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5875,9 +5864,9 @@
         "sector": "XLI",
         "price": 76.01,
         "chg": 0.41,
-        "daily": 50,
-        "weekly": 10,
-        "marketCap": 11803322368,
+        "daily": 54,
+        "weekly": 46,
+        "marketCap": 11901152256,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5886,9 +5875,9 @@
         "sector": "XLY",
         "price": 99.54,
         "chg": 0.02,
-        "daily": 65,
-        "weekly": 80,
-        "marketCap": 113405919232,
+        "daily": 77,
+        "weekly": 85,
+        "marketCap": 112414728192,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5897,9 +5886,9 @@
         "sector": "XLF",
         "price": 151.25,
         "chg": -0.75,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 42157645824,
+        "daily": 100,
+        "weekly": 89,
+        "marketCap": 42015494144,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5908,9 +5897,9 @@
         "sector": "XLB",
         "price": 225.05,
         "chg": -1.06,
-        "daily": 95,
-        "weekly": 95,
-        "marketCap": 32605784064,
+        "daily": 93,
+        "weekly": 89,
+        "marketCap": 32857878528,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5919,9 +5908,9 @@
         "sector": "XLV",
         "price": 223.52,
         "chg": -0.01,
-        "daily": 20,
-        "weekly": 30,
-        "marketCap": 21937819648,
+        "daily": 49,
+        "weekly": 21,
+        "marketCap": 21769007104,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5930,9 +5919,9 @@
         "sector": "XLV",
         "price": 329.65,
         "chg": 0.09,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 126250754048,
+        "daily": 22,
+        "weekly": 18,
+        "marketCap": 125431177216,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5941,9 +5930,9 @@
         "sector": "XLK",
         "price": 26.75,
         "chg": -8.33,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 16062891008,
+        "daily": 44,
+        "weekly": 11,
+        "marketCap": 17462013952,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5952,9 +5941,9 @@
         "sector": "XLF",
         "price": 76.62,
         "chg": -2.63,
-        "daily": 65,
-        "weekly": 55,
-        "marketCap": 26632828928,
+        "daily": 86,
+        "weekly": 59,
+        "marketCap": 26521597952,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5963,9 +5952,9 @@
         "sector": "XLK",
         "price": 456.85,
         "chg": -4.28,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 87515111424,
+        "daily": 71,
+        "weekly": 28,
+        "marketCap": 95938101248,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5974,9 +5963,9 @@
         "sector": "XLP",
         "price": 75.81,
         "chg": 0.37,
-        "daily": 20,
-        "weekly": 70,
-        "marketCap": 36307730432,
+        "daily": 43,
+        "weekly": 62,
+        "marketCap": 36666929152,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -5985,9 +5974,9 @@
         "sector": "XLC",
         "price": 194.07,
         "chg": 2.73,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 213838512128,
+        "daily": 25,
+        "weekly": 36,
+        "marketCap": 209133551616,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -5996,9 +5985,9 @@
         "sector": "XLF",
         "price": 99.49,
         "chg": -0.75,
-        "daily": 65,
-        "weekly": 40,
-        "marketCap": 21696071680,
+        "daily": 81,
+        "weekly": 52,
+        "marketCap": 21602299904,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6007,9 +5996,9 @@
         "sector": "XLC",
         "price": 209.9,
         "chg": -3.8,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 38868328448,
+        "daily": 60,
+        "weekly": 33,
+        "marketCap": 39025725440,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6018,9 +6007,9 @@
         "sector": "XLY",
         "price": 146.45,
         "chg": 0.19,
-        "daily": 40,
-        "weekly": 80,
-        "marketCap": 29970956288,
+        "daily": 48,
+        "weekly": 76,
+        "marketCap": 29856354304,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6029,9 +6018,9 @@
         "sector": "XLE",
         "price": 239.91,
         "chg": 1.34,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 51569086464,
+        "daily": 47,
+        "weekly": 93,
+        "marketCap": 51736748032,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6040,9 +6029,9 @@
         "sector": "XLP",
         "price": 130.17,
         "chg": -0.33,
-        "daily": 95,
-        "weekly": 70,
-        "marketCap": 58948210688,
+        "daily": 99,
+        "weekly": 88,
+        "marketCap": 58536112128,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6051,9 +6040,9 @@
         "sector": "XLK",
         "price": 217.73,
         "chg": -1.5,
-        "daily": 40,
-        "weekly": 55,
-        "marketCap": 63889440768,
+        "daily": 54,
+        "weekly": 57,
+        "marketCap": 62991536128,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6062,9 +6051,9 @@
         "sector": "XLK",
         "price": 651.75,
         "chg": -0.75,
-        "daily": 65,
-        "weekly": 90,
-        "marketCap": 30187290624,
+        "daily": 60,
+        "weekly": 89,
+        "marketCap": 30045095936,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6073,9 +6062,9 @@
         "sector": "XLK",
         "price": 400.99,
         "chg": 4.1,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 62778761216,
+        "daily": 82,
+        "weekly": 97,
+        "marketCap": 65454362624,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6084,9 +6073,9 @@
         "sector": "XLY",
         "price": 373.72,
         "chg": -3.56,
-        "daily": 20,
-        "weekly": 35,
-        "marketCap": 1403589099520,
+        "daily": 49,
+        "weekly": 46,
+        "marketCap": 1413278859264,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -6095,9 +6084,9 @@
         "sector": "XLK",
         "price": 282.23,
         "chg": 19.43,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 256829308928,
+        "daily": 99,
+        "weekly": 97,
+        "marketCap": 252197421056,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -6106,9 +6095,9 @@
         "sector": "XLE",
         "price": 439.15,
         "chg": -0.08,
-        "daily": 65,
-        "weekly": 65,
-        "marketCap": 30275682304,
+        "daily": 43,
+        "weekly": 76,
+        "marketCap": 30259136512,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6117,9 +6106,9 @@
         "sector": "XLI",
         "price": 90.37,
         "chg": 1.02,
-        "daily": 35,
-        "weekly": 75,
-        "marketCap": 15733317632,
+        "daily": 47,
+        "weekly": 69,
+        "marketCap": 15313738752,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6128,9 +6117,9 @@
         "sector": "XLV",
         "price": 466.7,
         "chg": -9.2,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 173435699200,
+        "daily": 49,
+        "weekly": 27,
+        "marketCap": 174554267648,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6139,9 +6128,9 @@
         "sector": "XLY",
         "price": 158.35,
         "chg": -0.08,
-        "daily": 40,
-        "weekly": 85,
-        "marketCap": 175842459648,
+        "daily": 41,
+        "weekly": 70,
+        "marketCap": 174376648704,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6150,9 +6139,9 @@
         "sector": "XLC",
         "price": 186.26,
         "chg": 0.0,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 14522009600,
+        "daily": 9,
+        "weekly": 30,
+        "marketCap": 14540722176,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6161,9 +6150,9 @@
         "sector": "XLC",
         "price": 22.62,
         "chg": -3.99,
-        "daily": 20,
-        "weekly": 10,
-        "marketCap": 10766601216,
+        "daily": 55,
+        "weekly": 13,
+        "marketCap": 11409169408,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6172,9 +6161,9 @@
         "sector": "XLY",
         "price": 38.17,
         "chg": -2.03,
-        "daily": 0,
-        "weekly": 10,
-        "marketCap": 20090828800,
+        "daily": 1,
+        "weekly": 7,
+        "marketCap": 19338147840,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6183,9 +6172,9 @@
         "sector": "XLI",
         "price": 485.53,
         "chg": 1.75,
-        "daily": 80,
-        "weekly": 90,
-        "marketCap": 107361402880,
+        "daily": 87,
+        "weekly": 73,
+        "marketCap": 107558207488,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6194,9 +6183,9 @@
         "sector": "XLI",
         "price": 1165.76,
         "chg": -1.85,
-        "daily": 15,
-        "weekly": 25,
-        "marketCap": 65834622976,
+        "daily": 34,
+        "weekly": 19,
+        "marketCap": 64841818112,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6205,9 +6194,9 @@
         "sector": "XLF",
         "price": 307.33,
         "chg": 1.87,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 65352089600,
+        "daily": 70,
+        "weekly": 81,
+        "marketCap": 64373927936,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6216,9 +6205,9 @@
         "sector": "XLK",
         "price": 67.04,
         "chg": -2.97,
-        "daily": 20,
-        "weekly": 50,
-        "marketCap": 15559229440,
+        "daily": 59,
+        "weekly": 35,
+        "marketCap": 15631175680,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6227,9 +6216,9 @@
         "sector": "XLF",
         "price": 51.4,
         "chg": 0.88,
-        "daily": 70,
-        "weekly": 55,
-        "marketCap": 64038182912,
+        "daily": 74,
+        "weekly": 73,
+        "marketCap": 63203442688,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6238,9 +6227,9 @@
         "sector": "XLK",
         "price": 335.74,
         "chg": -3.07,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 14431897600,
+        "daily": 53,
+        "weekly": 12,
+        "marketCap": 14702275584,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6249,9 +6238,9 @@
         "sector": "XLP",
         "price": 65.23,
         "chg": 1.05,
-        "daily": 90,
+        "daily": 75,
         "weekly": 95,
-        "marketCap": 22966112256,
+        "marketCap": 22543616000,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6260,9 +6249,9 @@
         "sector": "XLF",
         "price": 56.63,
         "chg": 0.05,
-        "daily": 85,
-        "weekly": 55,
-        "marketCap": 88059658240,
+        "daily": 79,
+        "weekly": 77,
+        "marketCap": 86426902528,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6271,9 +6260,9 @@
         "sector": "XLI",
         "price": 74.7,
         "chg": -1.16,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 153741262848,
+        "daily": 61,
+        "weekly": 28,
+        "marketCap": 153617776640,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6282,9 +6271,9 @@
         "sector": "XLRE",
         "price": 34.91,
         "chg": 1.16,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 13143232512,
+        "daily": 43,
+        "weekly": 18,
+        "marketCap": 13090524160,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6293,9 +6282,9 @@
         "sector": "XLY",
         "price": 564.44,
         "chg": 0.09,
-        "daily": 20,
-        "weekly": 45,
-        "marketCap": 24686704640,
+        "daily": 44,
+        "weekly": 55,
+        "marketCap": 24429094912,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6304,9 +6293,9 @@
         "sector": "XLI",
         "price": 271.26,
         "chg": 8.77,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 161041170432,
+        "daily": 75,
+        "weekly": 98,
+        "marketCap": 159521357824,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6315,9 +6304,9 @@
         "sector": "XLI",
         "price": 91.25,
         "chg": -0.5,
-        "daily": 15,
-        "weekly": 35,
-        "marketCap": 29616988160,
+        "daily": 37,
+        "weekly": 39,
+        "marketCap": 30184984576,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6326,9 +6315,9 @@
         "sector": "XLI",
         "price": 107.72,
         "chg": 2.3,
-        "daily": 60,
-        "weekly": 10,
-        "marketCap": 91526766592,
+        "daily": 72,
+        "weekly": 64,
+        "marketCap": 90931986432,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6337,9 +6326,9 @@
         "sector": "XLI",
         "price": 986.78,
         "chg": 22.92,
-        "daily": 50,
-        "weekly": 45,
-        "marketCap": 61818372096,
+        "daily": 67,
+        "weekly": 50,
+        "marketCap": 61043429376,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6348,9 +6337,9 @@
         "sector": "XLV",
         "price": 354.56,
         "chg": 0.29,
-        "daily": 80,
-        "weekly": 0,
-        "marketCap": 322016051200,
+        "daily": 88,
+        "weekly": 37,
+        "marketCap": 322343043072,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -6359,9 +6348,9 @@
         "sector": "XLV",
         "price": 181.18,
         "chg": 0.25,
-        "daily": 10,
-        "weekly": 25,
-        "marketCap": 11057366016,
+        "daily": 23,
+        "weekly": 27,
+        "marketCap": 10640533504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6370,9 +6359,9 @@
         "sector": "XLE",
         "price": 233.83,
         "chg": -0.23,
-        "daily": 45,
-        "weekly": 90,
-        "marketCap": 69921308672,
+        "daily": 46,
+        "weekly": 98,
+        "marketCap": 70525337600,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6381,9 +6370,9 @@
         "sector": "XLRE",
         "price": 82.93,
         "chg": 3.53,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 39430160384,
+        "daily": 43,
+        "weekly": 81,
+        "marketCap": 39758229504,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6392,9 +6381,9 @@
         "sector": "XLI",
         "price": 88.79,
         "chg": -0.24,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 21803726848,
+        "daily": 34,
+        "weekly": null,
+        "marketCap": 21761982464,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6403,9 +6392,9 @@
         "sector": "XLK",
         "price": 276.95,
         "chg": 2.64,
-        "daily": 80,
-        "weekly": 65,
-        "marketCap": 25234495488,
+        "daily": 89,
+        "weekly": 66,
+        "marketCap": 24528349184,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6414,9 +6403,9 @@
         "sector": "XLI",
         "price": 177.14,
         "chg": -0.98,
-        "daily": 10,
-        "weekly": 10,
-        "marketCap": 23205435392,
+        "daily": 28,
+        "weekly": 9,
+        "marketCap": 23264385024,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6425,9 +6414,9 @@
         "sector": "XLC",
         "price": 47.22,
         "chg": 2.7,
-        "daily": 50,
-        "weekly": 80,
-        "marketCap": 197379604480,
+        "daily": 36,
+        "weekly": 90,
+        "marketCap": 193868398592,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6436,9 +6425,9 @@
         "sector": "XLV",
         "price": 435.1,
         "chg": -0.59,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 110671921152,
+        "daily": 22,
+        "weekly": 29,
+        "marketCap": 109448445952,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6447,9 +6436,9 @@
         "sector": "XLI",
         "price": 321.75,
         "chg": 5.44,
-        "daily": 90,
-        "weekly": 95,
-        "marketCap": 123587002368,
+        "daily": 94,
+        "weekly": 100,
+        "marketCap": 124243828736,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6458,9 +6447,9 @@
         "sector": "XLV",
         "price": 14.75,
         "chg": 1.58,
-        "daily": 65,
+        "daily": 70,
         "weekly": 90,
-        "marketCap": 17175207936,
+        "marketCap": 16988900352,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6469,9 +6458,9 @@
         "sector": "XLRE",
         "price": 28.51,
         "chg": 1.1,
-        "daily": 15,
-        "weekly": 40,
-        "marketCap": 30476875776,
+        "daily": 70,
+        "weekly": 46,
+        "marketCap": 30380666880,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6480,9 +6469,9 @@
         "sector": "XLF",
         "price": 308.88,
         "chg": -0.77,
-        "daily": 15,
-        "weekly": 30,
-        "marketCap": 595532840960,
+        "daily": 51,
+        "weekly": 21,
+        "marketCap": 596574011392,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -6491,9 +6480,9 @@
         "sector": "XLU",
         "price": 156.85,
         "chg": 0.68,
-        "daily": 15,
-        "weekly": 35,
-        "marketCap": 53101457408,
+        "daily": 45,
+        "weekly": 33,
+        "marketCap": 55640576000,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6502,9 +6491,9 @@
         "sector": "XLB",
         "price": 292.71,
         "chg": 0.9,
-        "daily": 45,
-        "weekly": 55,
-        "marketCap": 38222184448,
+        "daily": 60,
+        "weekly": 48,
+        "marketCap": 38138613760,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6513,9 +6502,9 @@
         "sector": "XLF",
         "price": 68.45,
         "chg": 1.41,
-        "daily": 15,
-        "weekly": 55,
-        "marketCap": 26696800256,
+        "daily": 45,
+        "weekly": 34,
+        "marketCap": 25947963392,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6524,9 +6513,9 @@
         "sector": "XLI",
         "price": 1164.91,
         "chg": 0.93,
-        "daily": 95,
-        "weekly": 90,
-        "marketCap": 55135174656,
+        "daily": 88,
+        "weekly": 81,
+        "marketCap": 54334349312,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6535,9 +6524,9 @@
         "sector": "XLI",
         "price": 269.45,
         "chg": 3.03,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 45719564288,
+        "daily": 75,
+        "weekly": 97,
+        "marketCap": 45314031616,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6546,9 +6535,9 @@
         "sector": "XLP",
         "price": 132.03,
         "chg": 1.58,
-        "daily": 100,
-        "weekly": 90,
-        "marketCap": 1052596305920,
+        "daily": 76,
+        "weekly": 86,
+        "marketCap": 1035774525440,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -6557,9 +6546,9 @@
         "sector": "XLC",
         "price": 103.65,
         "chg": -1.12,
-        "daily": 20,
-        "weekly": 40,
-        "marketCap": 183618043904,
+        "daily": 62,
+        "weekly": 37,
+        "marketCap": 181757935616,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6568,9 +6557,9 @@
         "sector": "XLC",
         "price": 26.9,
         "chg": -1.57,
-        "daily": 25,
-        "weekly": 45,
-        "marketCap": 67432067072,
+        "daily": 19,
+        "weekly": 63,
+        "marketCap": 67858219008,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6579,9 +6568,9 @@
         "sector": "XLI",
         "price": 232.8,
         "chg": 3.96,
-        "daily": 40,
-        "weekly": 80,
-        "marketCap": 93896572928,
+        "daily": 45,
+        "weekly": 66,
+        "marketCap": 92577660928,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6590,9 +6579,9 @@
         "sector": "XLV",
         "price": 311.2,
         "chg": -6.93,
-        "daily": 30,
-        "weekly": 10,
-        "marketCap": 30549100544,
+        "daily": 57,
+        "weekly": 23,
+        "marketCap": 30418538496,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6602,8 +6591,8 @@
         "price": 115.57,
         "chg": 1.93,
         "daily": 50,
-        "weekly": 80,
-        "marketCap": 37641105408,
+        "weekly": 82,
+        "marketCap": 37325176832,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6612,9 +6601,9 @@
         "sector": "XLF",
         "price": 80.51,
         "chg": -0.09,
-        "daily": 10,
-        "weekly": 35,
-        "marketCap": 246710009856,
+        "daily": 34,
+        "weekly": 33,
+        "marketCap": 243369869312,
         "capCategory": "Mega Cap (>$200B)"
       },
       {
@@ -6623,9 +6612,9 @@
         "sector": "XLRE",
         "price": 208.24,
         "chg": 4.28,
-        "daily": 55,
-        "weekly": 90,
-        "marketCap": 146711429120,
+        "daily": 65,
+        "weekly": 75,
+        "marketCap": 147070746624,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6634,9 +6623,9 @@
         "sector": "XLV",
         "price": 309.7,
         "chg": 12.86,
-        "daily": 85,
-        "weekly": 50,
-        "marketCap": 21957730304,
+        "daily": 93,
+        "weekly": 69,
+        "marketCap": 21706743808,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6645,9 +6634,9 @@
         "sector": "XLK",
         "price": 403.12,
         "chg": 3.6,
-        "daily": 90,
-        "weekly": 90,
-        "marketCap": 137826435072,
+        "daily": 82,
+        "weekly": 94,
+        "marketCap": 138127310848,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6656,9 +6645,9 @@
         "sector": "XLRE",
         "price": 25.0,
         "chg": 0.93,
-        "daily": 80,
-        "weekly": 10,
-        "marketCap": 18026065920,
+        "daily": 82,
+        "weekly": 58,
+        "marketCap": 18047696896,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6667,9 +6656,9 @@
         "sector": "XLY",
         "price": 192.39,
         "chg": -2.48,
-        "daily": 40,
-        "weekly": 55,
-        "marketCap": 22897498112,
+        "daily": 59,
+        "weekly": 45,
+        "marketCap": 22678507520,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6678,9 +6667,9 @@
         "sector": "XLE",
         "price": 71.65,
         "chg": 0.77,
-        "daily": 60,
-        "weekly": 80,
-        "marketCap": 87617699840,
+        "daily": 34,
+        "weekly": 89,
+        "marketCap": 88265818112,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6689,9 +6678,9 @@
         "sector": "XLF",
         "price": 290.89,
         "chg": -0.18,
-        "daily": 20,
-        "weekly": 30,
-        "marketCap": 27502458880,
+        "daily": 46,
+        "weekly": 21,
+        "marketCap": 27203694592,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6700,9 +6689,9 @@
         "sector": "XLK",
         "price": 114.67,
         "chg": -9.42,
-        "daily": 10,
+        "daily": 27,
         "weekly": 10,
-        "marketCap": 29475807232,
+        "marketCap": 30784188416,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6711,9 +6700,9 @@
         "sector": "XLY",
         "price": 105.61,
         "chg": -0.97,
-        "daily": 15,
-        "weekly": 60,
-        "marketCap": 11013358592,
+        "daily": 51,
+        "weekly": 44,
+        "marketCap": 11019615232,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6722,9 +6711,9 @@
         "sector": "XLU",
         "price": 79.48,
         "chg": 1.75,
-        "daily": 30,
-        "weekly": 80,
-        "marketCap": 49608413184,
+        "daily": 44,
+        "weekly": 81,
+        "marketCap": 49402437632,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6733,9 +6722,9 @@
         "sector": "XLI",
         "price": 121.69,
         "chg": 0.19,
-        "daily": 10,
-        "weekly": 30,
-        "marketCap": 29587877888,
+        "daily": 27,
+        "weekly": 20,
+        "marketCap": 29531955200,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6744,9 +6733,9 @@
         "sector": "XLY",
         "price": 160.73,
         "chg": 1.05,
-        "daily": 45,
-        "weekly": 90,
-        "marketCap": 44430614528,
+        "daily": 65,
+        "weekly": 86,
+        "marketCap": 44306223104,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6755,9 +6744,9 @@
         "sector": "XLK",
         "price": 226.87,
         "chg": -1.83,
-        "daily": 15,
-        "weekly": 10,
-        "marketCap": 11160121344,
+        "daily": 57,
+        "weekly": 25,
+        "marketCap": 11201442816,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6766,9 +6755,9 @@
         "sector": "XLV",
         "price": 92.44,
         "chg": -0.64,
-        "daily": 15,
-        "weekly": 15,
-        "marketCap": 17893527552,
+        "daily": 57,
+        "weekly": 45,
+        "marketCap": 17665116160,
         "capCategory": "Large Cap ($10B-$200B)"
       },
       {
@@ -6777,9 +6766,9 @@
         "sector": "XLV",
         "price": 116.06,
         "chg": -1.24,
-        "daily": 15,
-        "weekly": 0,
-        "marketCap": 48992141312,
+        "daily": 42,
+        "weekly": 13,
+        "marketCap": 49334067200,
         "capCategory": "Large Cap ($10B-$200B)"
       }
     ]
