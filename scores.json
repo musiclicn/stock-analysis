@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-25T02:21:43+00:00",
+  "updated_at": "2026-04-25T02:59:16+00:00",
   "price_date": "2026-04-24",
   "indexes": [
     {
@@ -21,6 +21,36 @@
       "weekly": 73,
       "marketCap": 260971233280,
       "capCategory": "Mega Cap (>$200B)"
+    },
+    {
+      "sym": "DIA",
+      "name": "Dow Jones",
+      "price": 492.21,
+      "chg": -0.16,
+      "daily": 81,
+      "weekly": 73,
+      "marketCap": 39988563968,
+      "capCategory": "Large Cap ($10B-$200B)"
+    },
+    {
+      "sym": "IWM",
+      "name": "russell 2000",
+      "price": 276.65,
+      "chg": 0.41,
+      "daily": 94,
+      "weekly": 85,
+      "marketCap": 77752475648,
+      "capCategory": "Large Cap ($10B-$200B)"
+    },
+    {
+      "sym": "^VIX",
+      "name": "russell 2000",
+      "price": 18.71,
+      "chg": -3.11,
+      "daily": 46,
+      "weekly": 74,
+      "marketCap": 0,
+      "capCategory": "Unknown"
     }
   ],
   "sectors": [
