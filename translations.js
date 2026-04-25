@@ -50,6 +50,7 @@ var TRANSLATIONS = {
     /* ---------- index/constituent tabs ---------- */
     'idx.ndx': 'Nasdaq 100',
     'idx.spx': 'S&P 500',
+    'idx.watchlist': 'Watchlist',
 
     /* ---------- search ---------- */
     'search.placeholder': 'Search ticker or name…',
@@ -191,6 +192,7 @@ var TRANSLATIONS = {
     /* ---------- 指数 / 成分股标签 ---------- */
     'idx.ndx': '纳斯达克100',
     'idx.spx': '标普500',
+    'idx.watchlist': '自选股',
 
     /* ---------- 搜索 ---------- */
     'search.placeholder': '搜索代码或名称…',
