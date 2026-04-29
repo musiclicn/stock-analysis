@@ -316,22 +316,27 @@
   }
   .table-wrap.hide-history .history-col { display: none; }
 
-  /* History toggle button — sits in the inner-tabs row */
+  /* History toggle button — overrides all inner-tabs tab styling */
   #history-toggle {
     border-radius: 8px !important;
-    border-bottom-width: 1px !important;
+    border: 1px solid var(--border) !important;
+    background: var(--panel) !important;
     color: var(--text-dim) !important;
     font-size: 12px !important;
-    padding: 8px 11px !important;
+    padding: 7px 12px !important;
+    font-weight: 500 !important;
     gap: 5px !important;
     letter-spacing: .01em;
+    transition: color .15s, border-color .15s, background .15s;
   }
+  #history-toggle:hover { color: var(--text) !important; border-color: var(--accent) !important; }
   #history-toggle .hist-icon { font-size: 13px; line-height: 1; }
   #history-toggle.active {
-    color: var(--accent) !important;
-    border-color: rgba(110,168,255,.4) !important;
-    background: rgba(110,168,255,.07) !important;
+    background: var(--accent) !important;
+    color: var(--bg) !important;
+    border-color: var(--accent) !important;
   }
+  #history-toggle.active:hover { opacity: .88; }
 </style>
 </head>
 <body>
@@ -1106,8 +1111,15 @@ const HistoryToggle = (() => {
   let visible = localStorage.getItem(KEY) !== 'false';
 
   function apply(){
-    document.querySelector('.table-wrap')?.classList.toggle('hide-history', !visible);
-    document.getElementById('history-toggle')?.classList.toggle('active', visible);
+    const wrap = document.querySelector('.table-wrap');
+    const btn  = document.getElementById('history-toggle');
+    if (visible) {
+      wrap?.classList.remove('hide-history');
+      btn?.classList.add('active');
+    } else {
+      wrap?.classList.add('hide-history');
+      btn?.classList.remove('active');
+    }
   }
 
   return {
