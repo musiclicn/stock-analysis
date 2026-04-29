@@ -294,6 +294,44 @@
   .article-body th { text-align:left; padding:9px 12px; background:var(--bg-alt); color:var(--text-dim); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.1em; border-bottom:1px solid var(--border); }
   .article-body td { padding:9px 12px; border-bottom:1px solid var(--border); color:var(--text-soft); line-height:1.5; }
   .article-body tr:last-child td { border-bottom:none; }
+
+  /* =============== SCORE HEATMAP STRIP =============== */
+  .heat-strip {
+    display: inline-flex; gap: 1.5px; align-items: center; justify-content: flex-end;
+  }
+  .heat-cell {
+    width: 5px; height: 15px; border-radius: 1.5px;
+    flex-shrink: 0; cursor: default;
+    transition: transform .1s ease;
+  }
+  .heat-cell:hover { transform: scaleY(1.4); position: relative; z-index: 2; }
+  .heat-cell.empty {
+    background: transparent;
+    border: 1px dashed rgba(128,145,210,.13);
+  }
+  td.history-col { padding-left: 6px !important; padding-right: 10px !important; }
+  th.history-col {
+    padding-left: 6px !important; padding-right: 10px !important;
+    min-width: 118px;
+  }
+  .table-wrap.hide-history .history-col { display: none; }
+
+  /* History toggle button — sits in the inner-tabs row */
+  #history-toggle {
+    border-radius: 8px !important;
+    border-bottom-width: 1px !important;
+    color: var(--text-dim) !important;
+    font-size: 12px !important;
+    padding: 8px 11px !important;
+    gap: 5px !important;
+    letter-spacing: .01em;
+  }
+  #history-toggle .hist-icon { font-size: 13px; line-height: 1; }
+  #history-toggle.active {
+    color: var(--accent) !important;
+    border-color: rgba(110,168,255,.4) !important;
+    background: rgba(110,168,255,.07) !important;
+  }
 </style>
 </head>
 <body>
@@ -425,6 +463,9 @@
       <button id="tab-spx" data-idx="spx" data-i18n="idx.spx">S&amp;P 500</button>
       <button id="tab-watchlist" data-idx="watchlist" data-i18n="idx.watchlist">Watchlist</button>
       <div class="spacer"></div>
+      <button id="history-toggle" class="active" title="Show/hide 20-point score history heatmap">
+        <span class="hist-icon">⬚</span> History
+      </button>
       <input class="search" id="search" data-i18n="search.placeholder" data-i18n-attr="placeholder" placeholder="Search ticker or name…" />
     </div>
     <div class="table-wrap">
@@ -438,7 +479,9 @@
               <th data-k="sector"><span data-i18n="th.sector">Sector</span></th>
               <th data-k="capCategory"><span data-i18n="th.cap">Cap</span></th>
               <th data-k="weekly" class="num" style="text-align:right"><span data-i18n="tf.weekly">Weekly</span> <span class="arrow">▼</span></th>
+              <th class="num history-col" style="text-align:right" title="Weekly score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20W</span></th>
               <th data-k="daily"  class="num" style="text-align:right"><span data-i18n="tf.daily">Daily</span></th>
+              <th class="num history-col" style="text-align:right" title="Daily score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20D</span></th>
               <th data-k="price"  class="num" style="text-align:right"><span data-i18n="th.price">Price</span></th>
               <th data-k="chg"    class="num" style="text-align:right"><span data-i18n="th.chg">Chg %</span></th>
             </tr>
@@ -565,6 +608,16 @@ function trendLabel(s){
   if (s >= 40) return t('trend.neutral');
   if (s >= 20) return t('trend.bearish');
   return t('trend.strong_bearish');
+}
+function heatStrip(arr, total=20){
+  const cells = [];
+  const pad = Math.max(0, total - arr.length);
+  for (let i = 0; i < pad; i++)
+    cells.push('<span class="heat-cell empty" title="—"></span>');
+  arr.forEach(s =>
+    cells.push(`<span class="heat-cell" style="background:${scoreColor(s)}" title="${s}"></span>`)
+  );
+  return `<div class="heat-strip">${cells.join('')}</div>`;
 }
 
 /* ============================================================================
@@ -705,12 +758,14 @@ const Overview = (() => {
               <div class="score-val" style="color:${wcol}">${wsc}</div>
             </div>
           </td>
+          <td class="num history-col">${heatStrip(r.history_weekly||[])}</td>
           <td class="num">
             <div class="score-cell">
               <div class="score-bar"><div style="width:${dsc}%; background:${dcol}"></div></div>
               <div class="score-val" style="color:${dcol}">${dsc}</div>
             </div>
           </td>
+          <td class="num history-col">${heatStrip(r.history_daily||[])}</td>
           <td class="num">${fmtNum(r.price||0, 2)}</td>
           <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
         </tr>`;
@@ -1044,6 +1099,30 @@ const Articles = (() => {
 })();
 
 /* ============================================================================
+   HISTORY TOGGLE — show/hide score heatmap columns
+   ============================================================================ */
+const HistoryToggle = (() => {
+  const KEY = 'market-pulse-history';
+  let visible = localStorage.getItem(KEY) !== 'false';
+
+  function apply(){
+    document.querySelector('.table-wrap')?.classList.toggle('hide-history', !visible);
+    document.getElementById('history-toggle')?.classList.toggle('active', visible);
+  }
+
+  return {
+    init(){
+      apply();
+      document.getElementById('history-toggle').addEventListener('click', () => {
+        visible = !visible;
+        localStorage.setItem(KEY, String(visible));
+        apply();
+      });
+    },
+  };
+})();
+
+/* ============================================================================
    ROUTER — tab switching + hash URLs
    ============================================================================ */
 const Router = (() => {
@@ -1121,6 +1200,7 @@ const Theme = (() => {
    ============================================================================ */
 applyI18n();       // apply saved language preference immediately
 Theme.init();      // apply saved theme preference immediately
+HistoryToggle.init();
 Router.bind();
 Overview.init();
 Breadth.init();
