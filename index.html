@@ -196,7 +196,7 @@
   .scroll-body::-webkit-scrollbar { width:10px; }
   .scroll-body::-webkit-scrollbar-thumb { background: var(--border); border-radius:10px; }
 
-  .legend { display:flex; gap:18px; align-items:center; font-size:12px; color:var(--text-dim); margin-top:10px; flex-wrap:wrap; }
+.legend { display:flex; gap:18px; align-items:center; font-size:12px; color:var(--text-dim); margin-top:10px; flex-wrap:wrap; }
   .legend .swatch { width:14px; height:10px; border-radius:3px; display:inline-block; margin-right:6px; vertical-align:middle; }
 
   /* =============== BREADTH CHART =============== */
@@ -314,29 +314,21 @@
     padding-left: 6px !important; padding-right: 10px !important;
     min-width: 118px;
   }
-  .table-wrap.hide-history .history-col { display: none; }
+  section[data-tab="overview"].hide-history .history-col { display: none; }
 
-  /* History toggle button — overrides all inner-tabs tab styling */
-  #history-toggle {
-    border-radius: 8px !important;
-    border: 1px solid var(--border) !important;
-    background: var(--panel) !important;
-    color: var(--text-dim) !important;
-    font-size: 12px !important;
-    padding: 7px 12px !important;
-    font-weight: 500 !important;
-    gap: 5px !important;
-    letter-spacing: .01em;
-    transition: color .15s, border-color .15s, background .15s;
-  }
-  #history-toggle:hover { color: var(--text) !important; border-color: var(--accent) !important; }
-  #history-toggle .hist-icon { font-size: 13px; line-height: 1; }
+  /* History toggle button */
   #history-toggle.active {
-    background: var(--accent) !important;
-    color: var(--bg) !important;
-    border-color: var(--accent) !important;
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
   }
   #history-toggle.active:hover { opacity: .88; }
+
+  /* Card heatmap rows (indexes + sectors) */
+  .card-history { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 5px; }
+  .heat-row { display: flex; align-items: center; gap: 8px; }
+  .heat-row .hl { font-size: 9px; color: var(--text-dim); letter-spacing: .1em; text-transform: uppercase; font-weight: 600; width: 12px; flex-shrink: 0; }
+  .card-history .heat-strip { justify-content: flex-start; flex: 1; }
 </style>
 </head>
 <body>
@@ -384,6 +376,9 @@
       <h2 data-i18n="section.indexes">Major Indexes</h2>
       <div class="right">
         <span class="hint" data-i18n="hint.score">Score: 0 (strong bearish) · 50 (neutral) · 100 (strong bullish)</span>
+        <button id="history-toggle" class="btn active" title="Show/hide 20-point score history heatmap">
+          <span>⬚</span> History
+        </button>
       </div>
     </div>
     <div class="indexes" id="indexes-wrap"></div>
@@ -468,9 +463,6 @@
       <button id="tab-spx" data-idx="spx" data-i18n="idx.spx">S&amp;P 500</button>
       <button id="tab-watchlist" data-idx="watchlist" data-i18n="idx.watchlist">Watchlist</button>
       <div class="spacer"></div>
-      <button id="history-toggle" class="active" title="Show/hide 20-point score history heatmap">
-        <span class="hist-icon">⬚</span> History
-      </button>
       <input class="search" id="search" data-i18n="search.placeholder" data-i18n-attr="placeholder" placeholder="Search ticker or name…" />
     </div>
     <div class="table-wrap">
@@ -686,6 +678,10 @@ const Overview = (() => {
           <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
         </div>
       </div>
+      <div class="card-history history-col">
+        <div class="heat-row"><span class="hl">W</span>${heatStrip(ix.history_weekly||[])}</div>
+        <div class="heat-row"><span class="hl">D</span>${heatStrip(ix.history_daily||[])}</div>
+      </div>
     </div>`;
   }
 
@@ -705,6 +701,10 @@ const Overview = (() => {
       <div style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
         <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
+      </div>
+      <div class="card-history history-col">
+        <div class="heat-row"><span class="hl">W</span>${heatStrip(s.history_weekly||[])}</div>
+        <div class="heat-row"><span class="hl">D</span>${heatStrip(s.history_daily||[])}</div>
       </div>
     </div>`;
   }
@@ -1124,13 +1124,13 @@ const HistoryToggle = (() => {
   let visible = localStorage.getItem(KEY) !== 'false';
 
   function apply(){
-    const wrap = document.querySelector('.table-wrap');
-    const btn  = document.getElementById('history-toggle');
+    const overview = document.querySelector('section[data-tab="overview"]');
+    const btn = document.getElementById('history-toggle');
     if (visible) {
-      wrap?.classList.remove('hide-history');
+      overview?.classList.remove('hide-history');
       btn?.classList.add('active');
     } else {
-      wrap?.classList.add('hide-history');
+      overview?.classList.add('hide-history');
       btn?.classList.remove('active');
     }
   }
