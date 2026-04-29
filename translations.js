@@ -32,7 +32,7 @@ var TRANSLATIONS = {
     'section.constituents': 'Constituents',
 
     /* ---------- hints / labels ---------- */
-    'hint.score':    'Score: 0 (strong bearish) · 50 (neutral) · 100 (strong bullish)',
+    'hint.score':    'Score: 0–30 strong bearish · 31–49 bearish · 50–59 neutral · 60–79 bullish · 80–100 strong bullish',
     'hint.sectors':  'Sorted by active timeframe · click a sector for drill-down (prototype)',
     'hint.sorted_by': 'Sorted by',
 
@@ -41,10 +41,10 @@ var TRANSLATIONS = {
     'tf.weekly': 'Weekly',
 
     /* ---------- score legend ---------- */
-    'legend.strong_bearish': '0–20 strong bearish',
-    'legend.bearish':        '20–40 bearish',
-    'legend.neutral':        '40–60 neutral',
-    'legend.bullish':        '60–80 bullish',
+    'legend.strong_bearish': '0–30 strong bearish',
+    'legend.bearish':        '31–49 bearish',
+    'legend.neutral':        '50–59 neutral',
+    'legend.bullish':        '60–79 bullish',
     'legend.strong_bullish': '80–100 strong bullish',
 
     /* ---------- index/constituent tabs ---------- */
@@ -183,10 +183,10 @@ var TRANSLATIONS = {
     'tf.weekly': '周线',
 
     /* ---------- 评分图例 ---------- */
-    'legend.strong_bearish': '0–20 强烈看空',
-    'legend.bearish':        '20–40 看空',
-    'legend.neutral':        '40–60 中性',
-    'legend.bullish':        '60–80 看多',
+    'legend.strong_bearish': '0–30 强烈看空',
+    'legend.bearish':        '31–49 看空',
+    'legend.neutral':        '50–59 中性',
+    'legend.bullish':        '60–79 看多',
     'legend.strong_bullish': '80–100 强烈看多',
 
     /* ---------- 指数 / 成分股标签 ---------- */
