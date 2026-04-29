@@ -484,6 +484,7 @@
               <th data-k="sector"><span data-i18n="th.sector">Sector</span></th>
               <th data-k="capCategory"><span data-i18n="th.cap">Cap</span></th>
               <th data-k="weekly" class="num" style="text-align:right"><span data-i18n="tf.weekly">Weekly</span> <span class="arrow">▼</span></th>
+              <th data-k="chg2w" class="num" style="text-align:right" title="Sum of weekly score changes over the past 2 weeks"><span style="font-size:11px; letter-spacing:.04em;">2W&thinsp;Δ</span></th>
               <th class="num history-col" style="text-align:right" title="Weekly score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20W</span></th>
               <th data-k="daily"  class="num" style="text-align:right"><span data-i18n="tf.daily">Daily</span></th>
               <th class="num history-col" style="text-align:right" title="Daily score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20D</span></th>
@@ -615,6 +616,12 @@ function trendLabel(s){
   if (s >= 31) return t('trend.bearish');
   return t('trend.strong_bearish');
 }
+function calc2wChg(r){
+  const hw = r.history_weekly || [];
+  const w  = r.weekly ?? 0;
+  if (hw.length >= 3) return (w - hw[hw.length - 2]) + (hw[hw.length - 2] - hw[hw.length - 3]);
+  return null;
+}
 function heatStrip(arr, total=20){
   const cells = [];
   const pad = Math.max(0, total - arr.length);
@@ -718,8 +725,9 @@ const Overview = (() => {
     const k = state.sortKey;
     const sorted = [...list].sort((a,b) => {
       let av, bv;
-      if (k === 'rank') { av = 0; bv = 0; }
-      else              { av = a[k]; bv = b[k]; }
+      if (k === 'rank')  { av = 0; bv = 0; }
+      else if (k === 'chg2w') { av = calc2wChg(a) ?? -999; bv = calc2wChg(b) ?? -999; }
+      else               { av = a[k]; bv = b[k]; }
 
       if (typeof av === 'string') {
         const cmp = (av||'').localeCompare(bv||'');
@@ -751,6 +759,9 @@ const Overview = (() => {
       const dcol = scoreColor(dsc);
       const chg = Number(r.chg||0);
       const chgCls = chg >= 0 ? 'delta-up' : 'delta-down';
+      const d2w = calc2wChg(r);
+      const d2wStr = d2w === null ? '—' : (d2w > 0 ? '+' : '') + d2w;
+      const d2wCls = d2w === null ? '' : d2w > 0 ? 'delta-up' : d2w < 0 ? 'delta-down' : '';
       return `
         <tr>
           <td class="rank">${r._rank}</td>
@@ -764,6 +775,7 @@ const Overview = (() => {
               <div class="score-val" style="color:${wcol}">${wsc}</div>
             </div>
           </td>
+          <td class="num ${d2wCls}" style="font-family:var(--mono); font-weight:600;">${d2wStr}</td>
           <td class="num history-col">${heatStrip(r.history_weekly||[])}</td>
           <td class="num">
             <div class="score-cell">
