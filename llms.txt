@@ -1,0 +1,13 @@
+# Market Pulse — U.S. Equities Dashboard
+> A real-time dashboard analyzing U.S. Equities, Market Breadth, and S&P 500 / Nasdaq performance.
+
+## Main sections
+- `Market Pulse -> /`: Real-time U.S. Equities Dashboard
+- `Market Breadth -> /#/breadth`: Market breadth indicators and analysis
+- `Macro Analysis -> /#/macro`: Macroeconomic drivers and stock market outlook
+
+## Key facts
+- Analyzes major drivers of the stock market including geopolitical events (e.g., Iran war, oil prices).
+- Tracks Federal Reserve policies, leadership changes (e.g., Jerome Powell, Kevin Warsh), and interest rate paths.
+- Evaluates corporate earnings, specifically S&P 500 companies and AI capital expenditures.
+- Provides quantitative scores for indices and sectors.
