@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30T00:12:30+00:00",
+  "updated_at": "2026-04-30T01:01:00+00:00",
   "price_date": "2026-04-29",
   "indexes": [
     {
@@ -11,6 +11,8 @@
       "weekly": 76,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 39820432,
+      "volRatio": 0.6,
       "history_daily": [
         12,
         13,
@@ -109,6 +111,8 @@
       "weekly": 77,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 27393020,
+      "volRatio": 0.6,
       "history_daily": [
         12,
         12,
@@ -207,6 +211,8 @@
       "weekly": 75,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 3090635,
+      "volRatio": 0.7,
       "history_daily": [
         30,
         30,
@@ -305,6 +311,8 @@
       "weekly": 88,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 27678661,
+      "volRatio": 0.9,
       "history_daily": [
         34,
         35,
@@ -403,6 +411,8 @@
       "weekly": 56,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 0,
+      "volRatio": null,
       "history_daily": [
         87,
         87,
@@ -503,6 +513,8 @@
       "weekly": 73,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 4385233,
+      "volRatio": 0.9,
       "history_daily": [
         19,
         19,
@@ -601,6 +613,8 @@
       "weekly": 72,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 8141091,
+      "volRatio": 1.0,
       "history_daily": [
         13,
         8,
@@ -699,6 +713,8 @@
       "weekly": 77,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 12058063,
+      "volRatio": 0.9,
       "history_daily": [
         50,
         51,
@@ -797,6 +813,8 @@
       "weekly": 95,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 40243548,
+      "volRatio": 0.8,
       "history_daily": [
         94,
         93,
@@ -895,6 +913,8 @@
       "weekly": 58,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 21917407,
+      "volRatio": 0.6,
       "history_daily": [
         20,
         21,
@@ -993,6 +1013,8 @@
       "weekly": 58,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 11832530,
+      "volRatio": 1.3,
       "history_daily": [
         28,
         29,
@@ -1091,6 +1113,8 @@
       "weekly": 90,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 7832675,
+      "volRatio": 0.8,
       "history_daily": [
         42,
         42,
@@ -1189,6 +1213,8 @@
       "weekly": 80,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 7448547,
+      "volRatio": 0.7,
       "history_daily": [
         12,
         12,
@@ -1287,6 +1313,8 @@
       "weekly": 95,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 7025249,
+      "volRatio": 0.6,
       "history_daily": [
         61,
         62,
@@ -1385,6 +1413,8 @@
       "weekly": 92,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 9079840,
+      "volRatio": 1.6,
       "history_daily": [
         23,
         38,
@@ -1483,6 +1513,8 @@
       "weekly": 93,
       "marketCap": 0,
       "capCategory": "Unknown",
+      "volume": 12631753,
+      "volRatio": 0.6,
       "history_daily": [
         68,
         69,
@@ -1585,6 +1617,8 @@
         "weekly": 5,
         "marketCap": 98450997248,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2635264,
+        "volRatio": 0.5,
         "history_daily": [
           5,
           11,
@@ -1684,6 +1718,8 @@
         "weekly": 95,
         "marketCap": 549627789312,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 43242149,
+        "volRatio": 1.1,
         "history_daily": [
           40,
           52,
@@ -1783,6 +1819,8 @@
         "weekly": 81,
         "marketCap": 83399999488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3483435,
+        "volRatio": 1.1,
         "history_daily": [
           31,
           28,
@@ -1882,6 +1920,8 @@
         "weekly": 40,
         "marketCap": 40187154432,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1569230,
+        "volRatio": 1.5,
         "history_daily": [
           21,
           17,
@@ -1981,6 +2021,8 @@
         "weekly": 85,
         "marketCap": 4233379446784,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 29676925,
+        "volRatio": 1.2,
         "history_daily": [
           32,
           26,
@@ -2080,6 +2122,8 @@
         "weekly": 84,
         "marketCap": 4201409150976,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 21066220,
+        "volRatio": 1.3,
         "history_daily": [
           32,
           26,
@@ -2179,6 +2223,8 @@
         "weekly": 78,
         "marketCap": 2828798525440,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 56731766,
+        "volRatio": 1.2,
         "history_daily": [
           14,
           14,
@@ -2278,6 +2324,8 @@
         "weekly": 97,
         "marketCap": 73076670464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2893791,
+        "volRatio": 1.2,
         "history_daily": [
           75,
           76,
@@ -2377,6 +2425,8 @@
         "weekly": 75,
         "marketCap": 182215639040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2499387,
+        "volRatio": 1.0,
         "history_daily": [
           52,
           48,
@@ -2476,6 +2526,8 @@
         "weekly": 99,
         "marketCap": 190062755840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3086138,
+        "volRatio": 1.0,
         "history_daily": [
           59,
           66,
@@ -2575,6 +2627,8 @@
         "weekly": 75,
         "marketCap": 3966403870720,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 24117049,
+        "volRatio": 0.6,
         "history_daily": [
           33,
           34,
@@ -2674,6 +2728,8 @@
         "weekly": 98,
         "marketCap": 303627206656,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 4997676,
+        "volRatio": 0.9,
         "history_daily": [
           74,
           69,
@@ -2773,6 +2829,8 @@
         "weekly": 52,
         "marketCap": 149108178944,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2314540,
+        "volRatio": 0.6,
         "history_daily": [
           9,
           8,
@@ -2872,6 +2930,8 @@
         "weekly": 76,
         "marketCap": 214194503680,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 6010082,
+        "volRatio": 0.7,
         "history_daily": [
           74,
           74,
@@ -2971,6 +3031,8 @@
         "weekly": 92,
         "marketCap": 537303056384,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1238533,
+        "volRatio": 0.7,
         "history_daily": [
           54,
           44,
@@ -3070,6 +3132,8 @@
         "weekly": 28,
         "marketCap": 49768570880,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1233952,
+        "volRatio": 0.6,
         "history_daily": [
           11,
           11,
@@ -3169,6 +3233,8 @@
         "weekly": 7,
         "marketCap": 86592692224,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4437987,
+        "volRatio": 1.5,
         "history_daily": [
           6,
           5,
@@ -3268,6 +3334,8 @@
         "weekly": 28,
         "marketCap": 32272390144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1158530,
+        "volRatio": 1.0,
         "history_daily": [
           4,
           4,
@@ -3367,6 +3435,8 @@
         "weekly": 96,
         "marketCap": 68264243200,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7791903,
+        "volRatio": 0.9,
         "history_daily": [
           86,
           77,
@@ -3466,6 +3536,8 @@
         "weekly": 34,
         "marketCap": 135386570752,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12283162,
+        "volRatio": 1.7,
         "history_daily": [
           6,
           5,
@@ -3565,6 +3637,8 @@
         "weekly": 85,
         "marketCap": 1919671336960,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 11566937,
+        "volRatio": 0.5,
         "history_daily": [
           13,
           13,
@@ -3664,6 +3738,8 @@
         "weekly": 56,
         "marketCap": 91096580096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2914636,
+        "volRatio": 1.2,
         "history_daily": [
           3,
           3,
@@ -3763,6 +3839,8 @@
         "weekly": 21,
         "marketCap": 22397947904,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5572203,
+        "volRatio": 1.9,
         "history_daily": [
           44,
           55,
@@ -3862,6 +3940,8 @@
         "weekly": 30,
         "marketCap": 69595152384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1599611,
+        "volRatio": 0.8,
         "history_daily": [
           7,
           12,
@@ -3961,6 +4041,8 @@
         "weekly": 97,
         "marketCap": 353791934464,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 15161210,
+        "volRatio": 0.9,
         "history_daily": [
           55,
           68,
@@ -4060,6 +4142,8 @@
         "weekly": 77,
         "marketCap": 41516883968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1474341,
+        "volRatio": 0.8,
         "history_daily": [
           33,
           32,
@@ -4159,6 +4243,8 @@
         "weekly": 12,
         "marketCap": 26160105472,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 8192744,
+        "volRatio": 1.4,
         "history_daily": [
           18,
           24,
@@ -4258,6 +4344,8 @@
         "weekly": 29,
         "marketCap": 95592841216,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 31844777,
+        "volRatio": 1.1,
         "history_daily": [
           32,
           27,
@@ -4357,6 +4445,8 @@
         "weekly": 50,
         "marketCap": 107601510400,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2718351,
+        "volRatio": 0.9,
         "history_daily": [
           11,
           10,
@@ -4456,6 +4546,8 @@
         "weekly": 7,
         "marketCap": 32107071488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5388726,
+        "volRatio": 0.7,
         "history_daily": [
           11,
           12,
@@ -4555,6 +4647,8 @@
         "weekly": 1,
         "marketCap": 14469309440,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14430486,
+        "volRatio": 2.5,
         "history_daily": [
           3,
           2,
@@ -4654,6 +4748,8 @@
         "weekly": 70,
         "marketCap": 443062484992,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1508631,
+        "volRatio": 0.8,
         "history_daily": [
           73,
           75,
@@ -4753,6 +4849,8 @@
         "weekly": 55,
         "marketCap": 114729943040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1896785,
+        "volRatio": 0.6,
         "history_daily": [
           10,
           15,
@@ -4852,6 +4950,8 @@
         "weekly": 99,
         "marketCap": 83021643776,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10048728,
+        "volRatio": 0.8,
         "history_daily": [
           67,
           69,
@@ -4951,6 +5051,8 @@
         "weekly": 54,
         "marketCap": 47409000448,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3417045,
+        "volRatio": 0.8,
         "history_daily": [
           16,
           15,
@@ -5050,6 +5152,8 @@
         "weekly": 10,
         "marketCap": 22210850816,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6549558,
+        "volRatio": 1.6,
         "history_daily": [
           16,
           16,
@@ -5149,6 +5253,8 @@
         "weekly": 83,
         "marketCap": 57758928896,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2133615,
+        "volRatio": 0.7,
         "history_daily": [
           94,
           93,
@@ -5248,6 +5354,8 @@
         "weekly": 42,
         "marketCap": 73784942592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3704909,
+        "volRatio": 0.9,
         "history_daily": [
           2,
           8,
@@ -5347,6 +5455,8 @@
         "weekly": 83,
         "marketCap": 50718920704,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1271253,
+        "volRatio": 0.8,
         "history_daily": [
           57,
           58,
@@ -5446,6 +5556,8 @@
         "weekly": 86,
         "marketCap": 48109694976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10637553,
+        "volRatio": 1.4,
         "history_daily": [
           79,
           80,
@@ -5545,6 +5657,8 @@
         "weekly": 81,
         "marketCap": 50180612096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6202138,
+        "volRatio": 0.8,
         "history_daily": [
           60,
           56,
@@ -5644,6 +5758,8 @@
         "weekly": 80,
         "marketCap": 48478445568,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1383976,
+        "volRatio": 1.1,
         "history_daily": [
           42,
           38,
@@ -5743,6 +5859,8 @@
         "weekly": 59,
         "marketCap": 63714820096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3056555,
+        "volRatio": 0.5,
         "history_daily": [
           43,
           53,
@@ -5842,6 +5960,8 @@
         "weekly": 13,
         "marketCap": 27142420480,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 23452043,
+        "volRatio": 7.1,
         "history_daily": [
           20,
           10,
@@ -5941,6 +6061,8 @@
         "weekly": 76,
         "marketCap": 159916687360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4922639,
+        "volRatio": 0.9,
         "history_daily": [
           52,
           52,
@@ -6040,6 +6162,8 @@
         "weekly": 83,
         "marketCap": 133257256960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4433334,
+        "volRatio": 1.2,
         "history_daily": [
           55,
           56,
@@ -6139,6 +6263,8 @@
         "weekly": 56,
         "marketCap": 44084637696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 595773,
+        "volRatio": 1.1,
         "history_daily": [
           7,
           12,
@@ -6238,6 +6364,8 @@
         "weekly": 57,
         "marketCap": 29146515456,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1487048,
+        "volRatio": 0.8,
         "history_daily": [
           46,
           48,
@@ -6337,6 +6465,8 @@
         "weekly": 94,
         "marketCap": 476213477376,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 226686173,
+        "volRatio": 1.8,
         "history_daily": [
           59,
           61,
@@ -6436,6 +6566,8 @@
         "weekly": 9,
         "marketCap": 109940523008,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1876539,
+        "volRatio": 0.5,
         "history_daily": [
           14,
           14,
@@ -6535,6 +6667,8 @@
         "weekly": 30,
         "marketCap": 160729726976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2055142,
+        "volRatio": 0.9,
         "history_daily": [
           15,
           14,
@@ -6634,6 +6768,8 @@
         "weekly": 19,
         "marketCap": 39360987136,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 15298007,
+        "volRatio": 1.2,
         "history_daily": [
           18,
           16,
@@ -6733,6 +6869,8 @@
         "weekly": 100,
         "marketCap": 238636072960,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1041508,
+        "volRatio": 1.2,
         "history_daily": [
           68,
           68,
@@ -6832,6 +6970,8 @@
         "weekly": 6,
         "marketCap": 26539556864,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13314681,
+        "volRatio": 1.0,
         "history_daily": [
           13,
           23,
@@ -6931,6 +7071,8 @@
         "weekly": 97,
         "marketCap": 311079534592,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 9541600,
+        "volRatio": 1.0,
         "history_daily": [
           55,
           50,
@@ -7030,6 +7172,8 @@
         "weekly": 92,
         "marketCap": 233879650304,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1413882,
+        "volRatio": 0.7,
         "history_daily": [
           83,
           85,
@@ -7129,6 +7273,8 @@
         "weekly": 94,
         "marketCap": 93791289344,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1248640,
+        "volRatio": 0.9,
         "history_daily": [
           72,
           73,
@@ -7228,6 +7374,8 @@
         "weekly": 99,
         "marketCap": 136913936384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 16796196,
+        "volRatio": 0.5,
         "history_daily": [
           86,
           88,
@@ -7327,6 +7475,8 @@
         "weekly": 36,
         "marketCap": 89582936064,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 448980,
+        "volRatio": 1.2,
         "history_daily": [
           17,
           18,
@@ -7426,6 +7576,8 @@
         "weekly": 54,
         "marketCap": 1698509750272,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 16921156,
+        "volRatio": 1.1,
         "history_daily": [
           14,
           14,
@@ -7525,6 +7677,8 @@
         "weekly": 72,
         "marketCap": 48794185728,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12540586,
+        "volRatio": 1.3,
         "history_daily": [
           32,
           33,
@@ -7624,6 +7778,8 @@
         "weekly": 97,
         "marketCap": 584684994560,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 35354365,
+        "volRatio": 0.8,
         "history_daily": [
           43,
           42,
@@ -7723,6 +7879,8 @@
         "weekly": 42,
         "marketCap": 3154747064320,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 31217392,
+        "volRatio": 1.0,
         "history_daily": [
           1,
           6,
@@ -7822,6 +7980,8 @@
         "weekly": 38,
         "marketCap": 55427694592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14919141,
+        "volRatio": 0.8,
         "history_daily": [
           9,
           9,
@@ -7921,6 +8081,8 @@
         "weekly": 27,
         "marketCap": 78342193152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14580091,
+        "volRatio": 1.9,
         "history_daily": [
           54,
           55,
@@ -8020,6 +8182,8 @@
         "weekly": 99,
         "marketCap": 74995326976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 688001,
+        "volRatio": 1.2,
         "history_daily": [
           63,
           65,
@@ -8119,6 +8283,8 @@
         "weekly": 72,
         "marketCap": 75191197696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3025737,
+        "volRatio": 0.7,
         "history_daily": [
           29,
           28,
@@ -8218,6 +8384,8 @@
         "weekly": 53,
         "marketCap": 387898769408,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 25539487,
+        "volRatio": 0.6,
         "history_daily": [
           45,
           47,
@@ -8317,6 +8485,8 @@
         "weekly": 67,
         "marketCap": 5085821140992,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 114136225,
+        "volRatio": 0.8,
         "history_daily": [
           12,
           13,
@@ -8416,6 +8586,8 @@
         "weekly": 60,
         "marketCap": 73049694208,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10368214,
+        "volRatio": 3.3,
         "history_daily": [
           17,
           12,
@@ -8515,6 +8687,8 @@
         "weekly": 41,
         "marketCap": 76880879616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5188104,
+        "volRatio": 1.1,
         "history_daily": [
           24,
           25,
@@ -8614,6 +8788,8 @@
         "weekly": 85,
         "marketCap": 43633905664,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4969246,
+        "volRatio": 2.7,
         "history_daily": [
           76,
           82,
@@ -8713,6 +8889,8 @@
         "weekly": 74,
         "marketCap": 62172708864,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3401115,
+        "volRatio": 1.2,
         "history_daily": [
           55,
           57,
@@ -8812,6 +8990,8 @@
         "weekly": 49,
         "marketCap": 330735779840,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 32062834,
+        "volRatio": 0.7,
         "history_daily": [
           12,
           17,
@@ -8911,6 +9091,8 @@
         "weekly": 40,
         "marketCap": 147228934144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4134401,
+        "volRatio": 0.5,
         "history_daily": [
           11,
           21,
@@ -9010,6 +9192,8 @@
         "weekly": 8,
         "marketCap": 33697257472,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3689119,
+        "volRatio": 1.1,
         "history_daily": [
           16,
           15,
@@ -9109,6 +9293,8 @@
         "weekly": 33,
         "marketCap": 45829390336,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 18297106,
+        "volRatio": 1.5,
         "history_daily": [
           13,
           19,
@@ -9208,6 +9394,8 @@
         "weekly": 21,
         "marketCap": 138656874496,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3690892,
+        "volRatio": 0.5,
         "history_daily": [
           19,
           15,
@@ -9307,6 +9495,8 @@
         "weekly": 61,
         "marketCap": 212272250880,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 4011479,
+        "volRatio": 0.7,
         "history_daily": [
           52,
           61,
@@ -9406,6 +9596,8 @@
         "weekly": 36,
         "marketCap": 166615040000,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 34105832,
+        "volRatio": 2.7,
         "history_daily": [
           5,
           5,
@@ -9505,6 +9697,8 @@
         "weekly": 26,
         "marketCap": 71957315584,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1832769,
+        "volRatio": 2.8,
         "history_daily": [
           64,
           60,
@@ -9604,6 +9798,8 @@
         "weekly": 15,
         "marketCap": 36639105024,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1136648,
+        "volRatio": 1.0,
         "history_daily": [
           30,
           30,
@@ -9703,6 +9899,8 @@
         "weekly": 99,
         "marketCap": 72800985088,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2016383,
+        "volRatio": 1.0,
         "history_daily": [
           90,
           90,
@@ -9802,6 +10000,8 @@
         "weekly": 100,
         "marketCap": 157078421504,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10942727,
+        "volRatio": 0.7,
         "history_daily": [
           76,
           70,
@@ -9901,6 +10101,8 @@
         "weekly": 100,
         "marketCap": 144115515392,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10834526,
+        "volRatio": 3.0,
         "history_daily": [
           66,
           67,
@@ -10000,6 +10202,8 @@
         "weekly": 57,
         "marketCap": 157757702144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5059250,
+        "volRatio": 0.7,
         "history_daily": [
           15,
           15,
@@ -10099,6 +10303,8 @@
         "weekly": 84,
         "marketCap": 120196145152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 25244912,
+        "volRatio": 3.9,
         "history_daily": [
           35,
           35,
@@ -10198,6 +10404,8 @@
         "weekly": 35,
         "marketCap": 92183478272,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1152389,
+        "volRatio": 0.7,
         "history_daily": [
           7,
           7,
@@ -10297,6 +10505,8 @@
         "weekly": 44,
         "marketCap": 214650077184,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 9872204,
+        "volRatio": 1.5,
         "history_daily": [
           39,
           38,
@@ -10396,6 +10606,8 @@
         "weekly": 54,
         "marketCap": 39875682304,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 991998,
+        "volRatio": 0.7,
         "history_daily": [
           7,
           7,
@@ -10495,6 +10707,8 @@
         "weekly": 58,
         "marketCap": 1400133779456,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 43212673,
+        "volRatio": 0.6,
         "history_daily": [
           12,
           7,
@@ -10594,6 +10808,8 @@
         "weekly": 100,
         "marketCap": 245015183360,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 7809044,
+        "volRatio": 1.0,
         "history_daily": [
           56,
           57,
@@ -10693,6 +10909,8 @@
         "weekly": 8,
         "marketCap": 41323966464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1045686,
+        "volRatio": 0.6,
         "history_daily": [
           6,
           12,
@@ -10792,6 +11010,8 @@
         "weekly": 9,
         "marketCap": 24652990464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3886173,
+        "volRatio": 2.0,
         "history_daily": [
           12,
           6,
@@ -10891,6 +11111,8 @@
         "weekly": 26,
         "marketCap": 107655208960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1057652,
+        "volRatio": 1.0,
         "history_daily": [
           37,
           37,
@@ -10990,6 +11212,8 @@
         "weekly": 90,
         "marketCap": 1020366487552,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 16477714,
+        "volRatio": 1.0,
         "history_daily": [
           64,
           67,
@@ -11089,6 +11313,8 @@
         "weekly": 77,
         "marketCap": 67808083968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12463902,
+        "volRatio": 0.6,
         "history_daily": [
           48,
           43,
@@ -11188,6 +11414,8 @@
         "weekly": 99,
         "marketCap": 141122355200,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10265572,
+        "volRatio": 1.5,
         "history_daily": [
           70,
           70,
@@ -11287,6 +11515,8 @@
         "weekly": 8,
         "marketCap": 31470508032,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3250696,
+        "volRatio": 0.6,
         "history_daily": [
           5,
           11,
@@ -11386,6 +11616,8 @@
         "weekly": 86,
         "marketCap": 49196462080,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3482342,
+        "volRatio": 0.8,
         "history_daily": [
           59,
           65,
@@ -11485,6 +11717,8 @@
         "weekly": 21,
         "marketCap": 21663330304,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1336662,
+        "volRatio": 0.5,
         "history_daily": [
           3,
           3,
@@ -11586,6 +11820,8 @@
         "weekly": 57,
         "marketCap": 75037876224,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3754386,
+        "volRatio": 1.1,
         "history_daily": [
           14,
           9,
@@ -11685,6 +11921,8 @@
         "weekly": 24,
         "marketCap": 8803110912,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 2615144,
+        "volRatio": 1.9,
         "history_daily": [
           23,
           18,
@@ -11784,6 +12022,8 @@
         "weekly": 18,
         "marketCap": 158702583808,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 8951948,
+        "volRatio": 0.7,
         "history_daily": [
           1,
           2,
@@ -11883,6 +12123,8 @@
         "weekly": 51,
         "marketCap": 360632942592,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 10397303,
+        "volRatio": 1.6,
         "history_daily": [
           20,
           10,
@@ -11982,6 +12224,8 @@
         "weekly": 1,
         "marketCap": 110938333184,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5138785,
+        "volRatio": 1.0,
         "history_daily": [
           9,
           19,
@@ -12081,6 +12325,8 @@
         "weekly": 5,
         "marketCap": 98450997248,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2635264,
+        "volRatio": 0.5,
         "history_daily": [
           5,
           11,
@@ -12180,6 +12426,8 @@
         "weekly": 95,
         "marketCap": 549627789312,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 43242149,
+        "volRatio": 1.1,
         "history_daily": [
           40,
           52,
@@ -12279,6 +12527,8 @@
         "weekly": 49,
         "marketCap": 10303884288,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 18360859,
+        "volRatio": 2.1,
         "history_daily": [
           41,
           42,
@@ -12378,6 +12628,8 @@
         "weekly": 75,
         "marketCap": 59869495296,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2352802,
+        "volRatio": 1.2,
         "history_daily": [
           46,
           53,
@@ -12477,6 +12729,8 @@
         "weekly": 11,
         "marketCap": 31453636608,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2109038,
+        "volRatio": 1.2,
         "history_daily": [
           23,
           24,
@@ -12576,6 +12830,8 @@
         "weekly": 85,
         "marketCap": 67353440256,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 980849,
+        "volRatio": 0.9,
         "history_daily": [
           89,
           90,
@@ -12675,6 +12931,8 @@
         "weekly": 81,
         "marketCap": 83399999488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3483435,
+        "volRatio": 1.1,
         "history_daily": [
           31,
           28,
@@ -12774,6 +13032,8 @@
         "weekly": 67,
         "marketCap": 14692859904,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3670130,
+        "volRatio": 0.8,
         "history_daily": [
           97,
           97,
@@ -12873,6 +13133,8 @@
         "weekly": 89,
         "marketCap": 22502250496,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1450888,
+        "volRatio": 0.7,
         "history_daily": [
           77,
           78,
@@ -12972,6 +13234,8 @@
         "weekly": 5,
         "marketCap": 7153761792,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 3809283,
+        "volRatio": 1.5,
         "history_daily": [
           16,
           16,
@@ -13071,6 +13335,8 @@
         "weekly": 57,
         "marketCap": 12776520704,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1376928,
+        "volRatio": 1.4,
         "history_daily": [
           58,
           57,
@@ -13170,6 +13436,8 @@
         "weekly": 40,
         "marketCap": 11805008896,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1334762,
+        "volRatio": 1.3,
         "history_daily": [
           4,
           4,
@@ -13269,6 +13537,8 @@
         "weekly": 96,
         "marketCap": 18595905536,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1738764,
+        "volRatio": 1.0,
         "history_daily": [
           75,
           77,
@@ -13368,6 +13638,8 @@
         "weekly": 81,
         "marketCap": 54829404160,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1053201,
+        "volRatio": 0.8,
         "history_daily": [
           45,
           66,
@@ -13467,6 +13739,8 @@
         "weekly": 85,
         "marketCap": 4233379446784,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 29676925,
+        "volRatio": 1.2,
         "history_daily": [
           32,
           26,
@@ -13566,6 +13840,8 @@
         "weekly": 84,
         "marketCap": 4201409150976,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 21066220,
+        "volRatio": 1.3,
         "history_daily": [
           32,
           26,
@@ -13665,6 +13941,8 @@
         "weekly": 90,
         "marketCap": 114023448576,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10758345,
+        "volRatio": 1.3,
         "history_daily": [
           74,
           77,
@@ -13764,6 +14042,8 @@
         "weekly": 78,
         "marketCap": 2828798525440,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 56731766,
+        "volRatio": 1.2,
         "history_daily": [
           14,
           14,
@@ -13863,6 +14143,8 @@
         "weekly": 6,
         "marketCap": 17257406464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4722243,
+        "volRatio": 1.2,
         "history_daily": [
           23,
           19,
@@ -13962,6 +14244,8 @@
         "weekly": 96,
         "marketCap": 30788737024,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 931404,
+        "volRatio": 0.6,
         "history_daily": [
           75,
           77,
@@ -14061,6 +14345,8 @@
         "weekly": 97,
         "marketCap": 73076670464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2893791,
+        "volRatio": 1.2,
         "history_daily": [
           75,
           76,
@@ -14160,6 +14446,8 @@
         "weekly": 53,
         "marketCap": 215376347136,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 2905062,
+        "volRatio": 1.0,
         "history_daily": [
           21,
           21,
@@ -14259,6 +14547,8 @@
         "weekly": 36,
         "marketCap": 39467819008,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4491805,
+        "volRatio": 1.2,
         "history_daily": [
           18,
           20,
@@ -14358,6 +14648,8 @@
         "weekly": 41,
         "marketCap": 83102482432,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2205609,
+        "volRatio": 0.7,
         "history_daily": [
           12,
           17,
@@ -14457,6 +14749,8 @@
         "weekly": 66,
         "marketCap": 25771116544,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1811554,
+        "volRatio": 1.0,
         "history_daily": [
           75,
           76,
@@ -14556,6 +14850,8 @@
         "weekly": 36,
         "marketCap": 42831736832,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 529768,
+        "volRatio": 0.8,
         "history_daily": [
           9,
           9,
@@ -14655,6 +14951,8 @@
         "weekly": 92,
         "marketCap": 52197138432,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1806743,
+        "volRatio": 1.8,
         "history_daily": [
           53,
           54,
@@ -14754,6 +15052,8 @@
         "weekly": 75,
         "marketCap": 182215639040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2499387,
+        "volRatio": 1.0,
         "history_daily": [
           52,
           48,
@@ -14853,6 +15153,8 @@
         "weekly": 78,
         "marketCap": 182422929408,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14169329,
+        "volRatio": 2.0,
         "history_daily": [
           24,
           25,
@@ -14952,6 +15254,8 @@
         "weekly": 99,
         "marketCap": 190062755840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3086138,
+        "volRatio": 1.0,
         "history_daily": [
           59,
           66,
@@ -15051,6 +15355,8 @@
         "weekly": 16,
         "marketCap": 69314469888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1142891,
+        "volRatio": 0.9,
         "history_daily": [
           10,
           20,
@@ -15150,6 +15456,8 @@
         "weekly": 88,
         "marketCap": 14249104384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5622823,
+        "volRatio": 0.7,
         "history_daily": [
           100,
           99,
@@ -15249,6 +15557,8 @@
         "weekly": 28,
         "marketCap": 70496747520,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2335057,
+        "volRatio": 0.5,
         "history_daily": [
           25,
           19,
@@ -15348,6 +15658,8 @@
         "weekly": 75,
         "marketCap": 3966403870720,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 24117049,
+        "volRatio": 0.6,
         "history_daily": [
           33,
           34,
@@ -15447,6 +15759,8 @@
         "weekly": 98,
         "marketCap": 303627206656,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 4997676,
+        "volRatio": 0.9,
         "history_daily": [
           74,
           69,
@@ -15546,6 +15860,8 @@
         "weekly": 52,
         "marketCap": 149108178944,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2314540,
+        "volRatio": 0.6,
         "history_daily": [
           9,
           8,
@@ -15645,6 +15961,8 @@
         "weekly": 20,
         "marketCap": 14649351168,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1881181,
+        "volRatio": 0.7,
         "history_daily": [
           10,
           1,
@@ -15744,6 +16062,8 @@
         "weekly": 59,
         "marketCap": 33033617408,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3151205,
+        "volRatio": 1.6,
         "history_daily": [
           62,
           69,
@@ -15843,6 +16163,8 @@
         "weekly": 85,
         "marketCap": 35790348288,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4180175,
+        "volRatio": 1.3,
         "history_daily": [
           84,
           87,
@@ -15942,6 +16264,8 @@
         "weekly": 13,
         "marketCap": 36649504768,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2005160,
+        "volRatio": 0.6,
         "history_daily": [
           16,
           14,
@@ -16041,6 +16365,8 @@
         "weekly": 86,
         "marketCap": 212396687360,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 6170166,
+        "volRatio": 0.9,
         "history_daily": [
           18,
           23,
@@ -16140,6 +16466,8 @@
         "weekly": 8,
         "marketCap": 54456348672,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1050694,
+        "volRatio": 0.6,
         "history_daily": [
           25,
           32,
@@ -16239,6 +16567,8 @@
         "weekly": 75,
         "marketCap": 11585433600,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 276146,
+        "volRatio": 0.8,
         "history_daily": [
           27,
           33,
@@ -16338,6 +16668,8 @@
         "weekly": 61,
         "marketCap": 178919718912,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 22728050,
+        "volRatio": 0.6,
         "history_daily": [
           86,
           85,
@@ -16437,6 +16769,8 @@
         "weekly": 94,
         "marketCap": 30723667968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 405450,
+        "volRatio": 0.5,
         "history_daily": [
           76,
           79,
@@ -16536,6 +16870,8 @@
         "weekly": 28,
         "marketCap": 49768570880,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1233952,
+        "volRatio": 0.6,
         "history_daily": [
           11,
           11,
@@ -16635,6 +16971,8 @@
         "weekly": 7,
         "marketCap": 86592692224,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4437987,
+        "volRatio": 1.5,
         "history_daily": [
           6,
           5,
@@ -16734,6 +17072,8 @@
         "weekly": 48,
         "marketCap": 58377715712,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 232416,
+        "volRatio": 1.2,
         "history_daily": [
           18,
           19,
@@ -16833,6 +17173,8 @@
         "weekly": 44,
         "marketCap": 25843329024,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1286973,
+        "volRatio": 1.4,
         "history_daily": [
           9,
           14,
@@ -16932,6 +17274,8 @@
         "weekly": 25,
         "marketCap": 12533629952,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 607653,
+        "volRatio": 1.0,
         "history_daily": [
           31,
           33,
@@ -17031,6 +17375,8 @@
         "weekly": 28,
         "marketCap": 32272390144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1158530,
+        "volRatio": 1.0,
         "history_daily": [
           4,
           4,
@@ -17130,6 +17476,8 @@
         "weekly": 96,
         "marketCap": 68264243200,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7791903,
+        "volRatio": 0.9,
         "history_daily": [
           86,
           77,
@@ -17229,6 +17577,8 @@
         "weekly": 79,
         "marketCap": 16046367744,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1638248,
+        "volRatio": 0.7,
         "history_daily": [
           57,
           58,
@@ -17328,6 +17678,8 @@
         "weekly": 76,
         "marketCap": 377029558272,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 26220071,
+        "volRatio": 0.8,
         "history_daily": [
           29,
           31,
@@ -17427,6 +17779,8 @@
         "weekly": 14,
         "marketCap": 8724667392,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 15273825,
+        "volRatio": 2.3,
         "history_daily": [
           18,
           19,
@@ -17526,6 +17880,8 @@
         "weekly": 16,
         "marketCap": 41335848960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2917648,
+        "volRatio": 1.1,
         "history_daily": [
           43,
           37,
@@ -17625,6 +17981,8 @@
         "weekly": 34,
         "marketCap": 1025333329920,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 3135465,
+        "volRatio": 0.7,
         "history_daily": [
           23,
           24,
@@ -17724,6 +18082,8 @@
         "weekly": 22,
         "marketCap": 12305996800,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3320642,
+        "volRatio": 1.0,
         "history_daily": [
           31,
           37,
@@ -17823,6 +18183,8 @@
         "weekly": 19,
         "marketCap": 8127748608,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1350793,
+        "volRatio": 0.7,
         "history_daily": [
           24,
           31,
@@ -17922,6 +18284,8 @@
         "weekly": 55,
         "marketCap": 28526923776,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2426299,
+        "volRatio": 1.8,
         "history_daily": [
           51,
           43,
@@ -18021,6 +18385,8 @@
         "weekly": 58,
         "marketCap": 161483227136,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 396426,
+        "volRatio": 0.5,
         "history_daily": [
           11,
           20,
@@ -18120,6 +18486,8 @@
         "weekly": 28,
         "marketCap": 146463653888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5971186,
+        "volRatio": 0.9,
         "history_daily": [
           27,
           27,
@@ -18219,6 +18587,8 @@
         "weekly": 74,
         "marketCap": 41374220288,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4898961,
+        "volRatio": 0.9,
         "history_daily": [
           26,
           26,
@@ -18318,6 +18688,8 @@
         "weekly": 94,
         "marketCap": 90787356672,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2734726,
+        "volRatio": 0.7,
         "history_daily": [
           61,
           64,
@@ -18417,6 +18789,8 @@
         "weekly": 72,
         "marketCap": 176666443776,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5760695,
+        "volRatio": 0.9,
         "history_daily": [
           21,
           22,
@@ -18516,6 +18890,8 @@
         "weekly": 34,
         "marketCap": 135386570752,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12283162,
+        "volRatio": 1.7,
         "history_daily": [
           6,
           5,
@@ -18615,6 +18991,8 @@
         "weekly": 13,
         "marketCap": 84934909952,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 20660921,
+        "volRatio": 1.1,
         "history_daily": [
           2,
           1,
@@ -18714,6 +19092,8 @@
         "weekly": 80,
         "marketCap": 117583544320,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7483865,
+        "volRatio": 0.8,
         "history_daily": [
           80,
           81,
@@ -18813,6 +19193,8 @@
         "weekly": 85,
         "marketCap": 1919671336960,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 11566937,
+        "volRatio": 0.5,
         "history_daily": [
           13,
           13,
@@ -18912,6 +19294,8 @@
         "weekly": 7,
         "marketCap": 18767355904,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1004552,
+        "volRatio": 0.8,
         "history_daily": [
           1,
           1,
@@ -19011,6 +19395,8 @@
         "weekly": 8,
         "marketCap": 20892743680,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3038822,
+        "volRatio": 1.2,
         "history_daily": [
           6,
           12,
@@ -19110,6 +19496,8 @@
         "weekly": 29,
         "marketCap": 11407959040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12126143,
+        "volRatio": 2.6,
         "history_daily": [
           41,
           43,
@@ -19209,6 +19597,8 @@
         "weekly": 12,
         "marketCap": 8964631552,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 4396530,
+        "volRatio": 2.2,
         "history_daily": [
           3,
           3,
@@ -19308,6 +19698,8 @@
         "weekly": 89,
         "marketCap": 24480192512,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2085632,
+        "volRatio": 1.4,
         "history_daily": [
           88,
           90,
@@ -19407,6 +19799,8 @@
         "weekly": 26,
         "marketCap": 10197829632,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2098727,
+        "volRatio": 1.0,
         "history_daily": [
           4,
           10,
@@ -19506,6 +19900,8 @@
         "weekly": 86,
         "marketCap": 22114480128,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1899562,
+        "volRatio": 1.0,
         "history_daily": [
           35,
           34,
@@ -19605,6 +20001,8 @@
         "weekly": 56,
         "marketCap": 91096580096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2914636,
+        "volRatio": 1.2,
         "history_daily": [
           3,
           3,
@@ -19704,6 +20102,8 @@
         "weekly": 49,
         "marketCap": 11029795840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 986903,
+        "volRatio": 0.8,
         "history_daily": [
           8,
           15,
@@ -19803,6 +20203,8 @@
         "weekly": 0,
         "marketCap": 6097096192,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 6692287,
+        "volRatio": 0.8,
         "history_daily": [
           18,
           22,
@@ -19902,6 +20304,8 @@
         "weekly": 52,
         "marketCap": 121029943296,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3307977,
+        "volRatio": 0.8,
         "history_daily": [
           22,
           6,
@@ -20001,6 +20405,8 @@
         "weekly": 71,
         "marketCap": 47726796800,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1669567,
+        "volRatio": 1.1,
         "history_daily": [
           46,
           52,
@@ -20100,6 +20506,8 @@
         "weekly": 61,
         "marketCap": 35431870464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 26158958,
+        "volRatio": 1.0,
         "history_daily": [
           23,
           30,
@@ -20199,6 +20607,8 @@
         "weekly": 54,
         "marketCap": 51579654144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 8938574,
+        "volRatio": 1.4,
         "history_daily": [
           25,
           25,
@@ -20298,6 +20708,8 @@
         "weekly": 72,
         "marketCap": 87528693760,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3046107,
+        "volRatio": 1.2,
         "history_daily": [
           23,
           24,
@@ -20397,6 +20809,8 @@
         "weekly": 100,
         "marketCap": 28967806976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 263055,
+        "volRatio": 0.3,
         "history_daily": [
           94,
           96,
@@ -20496,6 +20910,8 @@
         "weekly": 97,
         "marketCap": 376905990144,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 2253514,
+        "volRatio": 1.0,
         "history_daily": [
           67,
           68,
@@ -20595,6 +21011,8 @@
         "weekly": 95,
         "marketCap": 32009238528,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 688635,
+        "volRatio": 0.9,
         "history_daily": [
           51,
           68,
@@ -20694,6 +21112,8 @@
         "weekly": 57,
         "marketCap": 41729290240,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2056895,
+        "volRatio": 1.1,
         "history_daily": [
           16,
           22,
@@ -20793,6 +21213,8 @@
         "weekly": 19,
         "marketCap": 17486370816,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1392885,
+        "volRatio": 1.0,
         "history_daily": [
           34,
           34,
@@ -20892,6 +21314,8 @@
         "weekly": 49,
         "marketCap": 60582690816,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 786536,
+        "volRatio": 0.6,
         "history_daily": [
           7,
           12,
@@ -20991,6 +21415,8 @@
         "weekly": 31,
         "marketCap": 26655162368,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 17898425,
+        "volRatio": 3.1,
         "history_daily": [
           22,
           28,
@@ -21090,6 +21516,8 @@
         "weekly": 94,
         "marketCap": 28011536384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4246471,
+        "volRatio": 1.0,
         "history_daily": [
           77,
           77,
@@ -21189,6 +21617,8 @@
         "weekly": 96,
         "marketCap": 19475490816,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2502444,
+        "volRatio": 0.6,
         "history_daily": [
           91,
           96,
@@ -21288,6 +21718,8 @@
         "weekly": 35,
         "marketCap": 8084186624,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 435535,
+        "volRatio": 0.5,
         "history_daily": [
           31,
           38,
@@ -21387,6 +21819,8 @@
         "weekly": 56,
         "marketCap": 159731515392,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5644960,
+        "volRatio": 0.5,
         "history_daily": [
           25,
           23,
@@ -21486,6 +21920,8 @@
         "weekly": 21,
         "marketCap": 22397947904,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5572203,
+        "volRatio": 1.9,
         "history_daily": [
           44,
           55,
@@ -21585,6 +22021,8 @@
         "weekly": 88,
         "marketCap": 382882775040,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 8594610,
+        "volRatio": 0.7,
         "history_daily": [
           88,
           87,
@@ -21684,6 +22122,8 @@
         "weekly": 11,
         "marketCap": 42966937600,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 27704696,
+        "volRatio": 2.0,
         "history_daily": [
           20,
           26,
@@ -21783,6 +22223,8 @@
         "weekly": 86,
         "marketCap": 126552432640,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2220583,
+        "volRatio": 1.4,
         "history_daily": [
           75,
           76,
@@ -21882,6 +22324,8 @@
         "weekly": 62,
         "marketCap": 22787383296,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1419051,
+        "volRatio": 0.8,
         "history_daily": [
           44,
           51,
@@ -21981,6 +22425,8 @@
         "weekly": 100,
         "marketCap": 67219402752,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1819870,
+        "volRatio": 0.7,
         "history_daily": [
           88,
           89,
@@ -22080,6 +22526,8 @@
         "weekly": 31,
         "marketCap": 77073317888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1759174,
+        "volRatio": 1.3,
         "history_daily": [
           30,
           30,
@@ -22179,6 +22627,8 @@
         "weekly": 77,
         "marketCap": 25247969280,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 474940,
+        "volRatio": 0.6,
         "history_daily": [
           20,
           20,
@@ -22278,6 +22728,8 @@
         "weekly": 30,
         "marketCap": 69595152384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1599611,
+        "volRatio": 0.8,
         "history_daily": [
           7,
           12,
@@ -22377,6 +22829,8 @@
         "weekly": 97,
         "marketCap": 353791934464,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 15161210,
+        "volRatio": 0.9,
         "history_daily": [
           55,
           68,
@@ -22476,6 +22930,8 @@
         "weekly": 95,
         "marketCap": 223230607360,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 11682622,
+        "volRatio": 1.0,
         "history_daily": [
           62,
           64,
@@ -22575,6 +23031,8 @@
         "weekly": 84,
         "marketCap": 27435919360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3210056,
+        "volRatio": 0.6,
         "history_daily": [
           59,
           60,
@@ -22674,6 +23132,8 @@
         "weekly": 6,
         "marketCap": 11458817024,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3846428,
+        "volRatio": 1.6,
         "history_daily": [
           19,
           15,
@@ -22773,6 +23233,8 @@
         "weekly": 77,
         "marketCap": 104094965760,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1955777,
+        "volRatio": 0.8,
         "history_daily": [
           55,
           71,
@@ -22872,6 +23334,8 @@
         "weekly": 89,
         "marketCap": 23016589312,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3463184,
+        "volRatio": 1.2,
         "history_daily": [
           80,
           82,
@@ -22971,6 +23435,8 @@
         "weekly": 89,
         "marketCap": 339276922880,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 12379310,
+        "volRatio": 0.9,
         "history_daily": [
           58,
           72,
@@ -23070,6 +23536,8 @@
         "weekly": 12,
         "marketCap": 26160105472,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 8192744,
+        "volRatio": 1.4,
         "history_daily": [
           18,
           24,
@@ -23169,6 +23637,8 @@
         "weekly": 100,
         "marketCap": 57168842752,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6746475,
+        "volRatio": 1.2,
         "history_daily": [
           62,
           65,
@@ -23268,6 +23738,8 @@
         "weekly": 46,
         "marketCap": 47990378496,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12534871,
+        "volRatio": 1.3,
         "history_daily": [
           11,
           11,
@@ -23367,6 +23839,8 @@
         "weekly": 53,
         "marketCap": 67786485760,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3192137,
+        "volRatio": 0.6,
         "history_daily": [
           53,
           54,
@@ -23466,6 +23940,8 @@
         "weekly": 29,
         "marketCap": 95592841216,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 31844777,
+        "volRatio": 1.1,
         "history_daily": [
           32,
           27,
@@ -23565,6 +24041,8 @@
         "weekly": 99,
         "marketCap": 60693909504,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 305906,
+        "volRatio": 0.8,
         "history_daily": [
           72,
           72,
@@ -23664,6 +24142,8 @@
         "weekly": 0,
         "marketCap": 6808160256,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 14495649,
+        "volRatio": 1.0,
         "history_daily": [
           18,
           21,
@@ -23763,6 +24243,8 @@
         "weekly": 78,
         "marketCap": 156317892608,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9663130,
+        "volRatio": 1.1,
         "history_daily": [
           94,
           99,
@@ -23862,6 +24344,8 @@
         "weekly": 85,
         "marketCap": 40113704960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 941556,
+        "volRatio": 0.5,
         "history_daily": [
           81,
           83,
@@ -23961,6 +24445,8 @@
         "weekly": 45,
         "marketCap": 25902589952,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1925934,
+        "volRatio": 0.9,
         "history_daily": [
           61,
           66,
@@ -24060,6 +24546,8 @@
         "weekly": 50,
         "marketCap": 107601510400,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2718351,
+        "volRatio": 0.9,
         "history_daily": [
           11,
           10,
@@ -24159,6 +24647,8 @@
         "weekly": 13,
         "marketCap": 11968317440,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2404884,
+        "volRatio": 1.2,
         "history_daily": [
           22,
           17,
@@ -24258,6 +24748,8 @@
         "weekly": 7,
         "marketCap": 32107071488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5388726,
+        "volRatio": 0.7,
         "history_daily": [
           11,
           12,
@@ -24357,6 +24849,8 @@
         "weekly": 100,
         "marketCap": 130170413056,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13632340,
+        "volRatio": 1.3,
         "history_daily": [
           80,
           84,
@@ -24456,6 +24950,8 @@
         "weekly": 44,
         "marketCap": 20301199360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 294515,
+        "volRatio": 0.6,
         "history_daily": [
           22,
           28,
@@ -24555,6 +25051,8 @@
         "weekly": 90,
         "marketCap": 53285564416,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2062511,
+        "volRatio": 0.6,
         "history_daily": [
           94,
           95,
@@ -24654,6 +25152,8 @@
         "weekly": 1,
         "marketCap": 14469309440,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14430486,
+        "volRatio": 2.5,
         "history_daily": [
           3,
           2,
@@ -24753,6 +25253,8 @@
         "weekly": 70,
         "marketCap": 443062484992,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1508631,
+        "volRatio": 0.8,
         "history_daily": [
           73,
           75,
@@ -24852,6 +25354,8 @@
         "weekly": 94,
         "marketCap": 27093843968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10433521,
+        "volRatio": 1.5,
         "history_daily": [
           94,
           93,
@@ -24951,6 +25455,8 @@
         "weekly": 61,
         "marketCap": 75800649728,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4399339,
+        "volRatio": 1.0,
         "history_daily": [
           21,
           29,
@@ -25050,6 +25556,8 @@
         "weekly": 55,
         "marketCap": 114729943040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1896785,
+        "volRatio": 0.6,
         "history_daily": [
           10,
           15,
@@ -25149,6 +25657,8 @@
         "weekly": 37,
         "marketCap": 37470867456,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2274090,
+        "volRatio": 0.7,
         "history_daily": [
           7,
           12,
@@ -25248,6 +25758,8 @@
         "weekly": 99,
         "marketCap": 83021643776,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10048728,
+        "volRatio": 0.8,
         "history_daily": [
           67,
           69,
@@ -25347,6 +25859,8 @@
         "weekly": 96,
         "marketCap": 88339578880,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 503575,
+        "volRatio": 0.7,
         "history_daily": [
           49,
           50,
@@ -25446,6 +25960,8 @@
         "weekly": 74,
         "marketCap": 107526610944,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7280885,
+        "volRatio": 1.0,
         "history_daily": [
           16,
           17,
@@ -25545,6 +26061,8 @@
         "weekly": 10,
         "marketCap": 126549393408,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5917742,
+        "volRatio": 1.3,
         "history_daily": [
           19,
           20,
@@ -25644,6 +26162,8 @@
         "weekly": 63,
         "marketCap": 22482073600,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 767364,
+        "volRatio": 0.6,
         "history_daily": [
           26,
           30,
@@ -25743,6 +26263,8 @@
         "weekly": 54,
         "marketCap": 47409000448,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3417045,
+        "volRatio": 0.8,
         "history_daily": [
           16,
           15,
@@ -25842,6 +26364,8 @@
         "weekly": 75,
         "marketCap": 10022881280,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 822325,
+        "volRatio": 1.3,
         "history_daily": [
           79,
           78,
@@ -25941,6 +26465,8 @@
         "weekly": 34,
         "marketCap": 14385209344,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2397143,
+        "volRatio": 1.5,
         "history_daily": [
           28,
           24,
@@ -26040,6 +26566,8 @@
         "weekly": 88,
         "marketCap": 151265492992,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 636725,
+        "volRatio": 0.6,
         "history_daily": [
           58,
           64,
@@ -26139,6 +26667,8 @@
         "weekly": 97,
         "marketCap": 133717819392,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3600940,
+        "volRatio": 0.5,
         "history_daily": [
           88,
           87,
@@ -26238,6 +26768,8 @@
         "weekly": 75,
         "marketCap": 43539013632,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7029234,
+        "volRatio": 0.6,
         "history_daily": [
           68,
           68,
@@ -26337,6 +26869,8 @@
         "weekly": 80,
         "marketCap": 31743172608,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 17018576,
+        "volRatio": 1.3,
         "history_daily": [
           93,
           92,
@@ -26436,6 +26970,8 @@
         "weekly": 10,
         "marketCap": 22210850816,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6549558,
+        "volRatio": 1.6,
         "history_daily": [
           16,
           16,
@@ -26535,6 +27071,8 @@
         "weekly": 83,
         "marketCap": 57758928896,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2133615,
+        "volRatio": 0.7,
         "history_daily": [
           94,
           93,
@@ -26634,6 +27172,8 @@
         "weekly": 97,
         "marketCap": 69090779136,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1933780,
+        "volRatio": 0.9,
         "history_daily": [
           69,
           70,
@@ -26733,6 +27273,8 @@
         "weekly": 40,
         "marketCap": 25134430208,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2970338,
+        "volRatio": 1.0,
         "history_daily": [
           22,
           25,
@@ -26832,6 +27374,8 @@
         "weekly": 35,
         "marketCap": 18881439744,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3016552,
+        "volRatio": 0.9,
         "history_daily": [
           18,
           20,
@@ -26931,6 +27475,8 @@
         "weekly": 91,
         "marketCap": 54935298048,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7274219,
+        "volRatio": 1.8,
         "history_daily": [
           50,
           57,
@@ -27030,6 +27576,8 @@
         "weekly": 17,
         "marketCap": 11053251584,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1625469,
+        "volRatio": 1.6,
         "history_daily": [
           1,
           6,
@@ -27129,6 +27677,8 @@
         "weekly": 42,
         "marketCap": 73784942592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3704909,
+        "volRatio": 0.9,
         "history_daily": [
           2,
           8,
@@ -27228,6 +27778,8 @@
         "weekly": 89,
         "marketCap": 29928497152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 513916,
+        "volRatio": 0.5,
         "history_daily": [
           53,
           47,
@@ -27327,6 +27879,8 @@
         "weekly": 67,
         "marketCap": 28505323520,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 11521359,
+        "volRatio": 0.7,
         "history_daily": [
           100,
           100,
@@ -27426,6 +27980,8 @@
         "weekly": 58,
         "marketCap": 43004846080,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2176650,
+        "volRatio": 0.8,
         "history_daily": [
           17,
           23,
@@ -27525,6 +28081,8 @@
         "weekly": 96,
         "marketCap": 30586372096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 857328,
+        "volRatio": 0.8,
         "history_daily": [
           78,
           79,
@@ -27624,6 +28182,8 @@
         "weekly": 88,
         "marketCap": 98452193280,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1836984,
+        "volRatio": 0.6,
         "history_daily": [
           79,
           81,
@@ -27723,6 +28283,8 @@
         "weekly": 87,
         "marketCap": 18288719872,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2610047,
+        "volRatio": 0.9,
         "history_daily": [
           58,
           64,
@@ -27822,6 +28384,8 @@
         "weekly": 85,
         "marketCap": 159372738560,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1911393,
+        "volRatio": 0.9,
         "history_daily": [
           54,
           49,
@@ -27921,6 +28485,8 @@
         "weekly": 95,
         "marketCap": 46497918976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6584563,
+        "volRatio": 1.4,
         "history_daily": [
           60,
           62,
@@ -28020,6 +28586,8 @@
         "weekly": 96,
         "marketCap": 34601549824,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6794626,
+        "volRatio": 1.1,
         "history_daily": [
           69,
           71,
@@ -28119,6 +28687,8 @@
         "weekly": 52,
         "marketCap": 72472764416,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1497211,
+        "volRatio": 1.1,
         "history_daily": [
           22,
           23,
@@ -28218,6 +28788,8 @@
         "weekly": 82,
         "marketCap": 26150510592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2431750,
+        "volRatio": 0.9,
         "history_daily": [
           79,
           81,
@@ -28317,6 +28889,8 @@
         "weekly": 70,
         "marketCap": 46826717184,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5013236,
+        "volRatio": 0.9,
         "history_daily": [
           29,
           29,
@@ -28416,6 +28990,8 @@
         "weekly": 83,
         "marketCap": 50718920704,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1271253,
+        "volRatio": 0.8,
         "history_daily": [
           57,
           58,
@@ -28515,6 +29091,8 @@
         "weekly": 27,
         "marketCap": 81789870080,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2515511,
+        "volRatio": 1.4,
         "history_daily": [
           40,
           41,
@@ -28614,6 +29192,8 @@
         "weekly": 88,
         "marketCap": 37112107008,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 591940,
+        "volRatio": 1.8,
         "history_daily": [
           64,
           64,
@@ -28713,6 +29293,8 @@
         "weekly": 71,
         "marketCap": 76746719232,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2865200,
+        "volRatio": 1.0,
         "history_daily": [
           20,
           21,
@@ -28812,6 +29394,8 @@
         "weekly": 98,
         "marketCap": 52495765504,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4128765,
+        "volRatio": 1.5,
         "history_daily": [
           93,
           96,
@@ -28911,6 +29495,8 @@
         "weekly": 84,
         "marketCap": 74528784384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3096937,
+        "volRatio": 0.7,
         "history_daily": [
           94,
           94,
@@ -29010,6 +29596,8 @@
         "weekly": 5,
         "marketCap": 5956775936,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1514449,
+        "volRatio": 1.1,
         "history_daily": [
           14,
           24,
@@ -29109,6 +29697,8 @@
         "weekly": 76,
         "marketCap": 36972007424,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 8659555,
+        "volRatio": 1.1,
         "history_daily": [
           81,
           73,
@@ -29208,6 +29798,8 @@
         "weekly": 12,
         "marketCap": 20816705536,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1218178,
+        "volRatio": 0.7,
         "history_daily": [
           9,
           10,
@@ -29307,6 +29899,8 @@
         "weekly": 100,
         "marketCap": 107407876096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 663092,
+        "volRatio": 1.3,
         "history_daily": [
           90,
           92,
@@ -29406,6 +30000,8 @@
         "weekly": 56,
         "marketCap": 25278132224,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4440193,
+        "volRatio": 1.8,
         "history_daily": [
           26,
           29,
@@ -29505,6 +30101,8 @@
         "weekly": 8,
         "marketCap": 11489652736,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 194395,
+        "volRatio": 0.9,
         "history_daily": [
           21,
           22,
@@ -29604,6 +30202,8 @@
         "weekly": 59,
         "marketCap": 18316986368,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1016016,
+        "volRatio": 2.4,
         "history_daily": [
           10,
           16,
@@ -29703,6 +30303,8 @@
         "weekly": 27,
         "marketCap": 27379120128,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3149016,
+        "volRatio": 0.8,
         "history_daily": [
           7,
           7,
@@ -29802,6 +30404,8 @@
         "weekly": 53,
         "marketCap": 13767329792,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 258270,
+        "volRatio": 0.8,
         "history_daily": [
           37,
           50,
@@ -29901,6 +30505,8 @@
         "weekly": 95,
         "marketCap": 18729009152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1413549,
+        "volRatio": 0.9,
         "history_daily": [
           72,
           74,
@@ -30000,6 +30606,8 @@
         "weekly": 80,
         "marketCap": 25828091904,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1865550,
+        "volRatio": 1.0,
         "history_daily": [
           43,
           36,
@@ -30099,6 +30707,8 @@
         "weekly": 86,
         "marketCap": 48109694976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10637553,
+        "volRatio": 1.4,
         "history_daily": [
           79,
           80,
@@ -30198,6 +30808,8 @@
         "weekly": 34,
         "marketCap": 24236871680,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5126740,
+        "volRatio": 1.5,
         "history_daily": [
           60,
           53,
@@ -30297,6 +30909,8 @@
         "weekly": 76,
         "marketCap": 30703562752,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2004334,
+        "volRatio": 1.2,
         "history_daily": [
           27,
           20,
@@ -30396,6 +31010,8 @@
         "weekly": 73,
         "marketCap": 19786690560,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 897729,
+        "volRatio": 0.9,
         "history_daily": [
           48,
           48,
@@ -30495,6 +31111,8 @@
         "weekly": 69,
         "marketCap": 31005175808,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1987393,
+        "volRatio": 1.6,
         "history_daily": [
           18,
           19,
@@ -30594,6 +31212,8 @@
         "weekly": 88,
         "marketCap": 642895052800,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 14616787,
+        "volRatio": 0.7,
         "history_daily": [
           93,
           92,
@@ -30693,6 +31313,8 @@
         "weekly": 84,
         "marketCap": 18546798592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1440356,
+        "volRatio": 2.0,
         "history_daily": [
           68,
           71,
@@ -30792,6 +31414,8 @@
         "weekly": 8,
         "marketCap": 8463680000,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 679951,
+        "volRatio": 0.7,
         "history_daily": [
           29,
           32,
@@ -30891,6 +31515,8 @@
         "weekly": 7,
         "marketCap": 24755705856,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 456650,
+        "volRatio": 1.2,
         "history_daily": [
           9,
           9,
@@ -30990,6 +31616,8 @@
         "weekly": 81,
         "marketCap": 50180612096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6202138,
+        "volRatio": 0.8,
         "history_daily": [
           60,
           56,
@@ -31089,6 +31717,8 @@
         "weekly": 89,
         "marketCap": 9613936640,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 648153,
+        "volRatio": 0.7,
         "history_daily": [
           69,
           72,
@@ -31188,6 +31818,8 @@
         "weekly": 98,
         "marketCap": 92720193536,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1316419,
+        "volRatio": 0.9,
         "history_daily": [
           66,
           68,
@@ -31287,6 +31919,8 @@
         "weekly": 17,
         "marketCap": 23935062016,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3383512,
+        "volRatio": 0.6,
         "history_daily": [
           6,
           5,
@@ -31386,6 +32020,8 @@
         "weekly": 80,
         "marketCap": 45100924928,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4319991,
+        "volRatio": 0.6,
         "history_daily": [
           42,
           51,
@@ -31485,6 +32121,8 @@
         "weekly": 42,
         "marketCap": 20481189888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1667241,
+        "volRatio": 0.8,
         "history_daily": [
           20,
           20,
@@ -31584,6 +32222,8 @@
         "weekly": 89,
         "marketCap": 28306829312,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4777056,
+        "volRatio": 1.2,
         "history_daily": [
           75,
           77,
@@ -31683,6 +32323,8 @@
         "weekly": 16,
         "marketCap": 33166901248,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4800147,
+        "volRatio": 0.9,
         "history_daily": [
           18,
           23,
@@ -31782,6 +32424,8 @@
         "weekly": 70,
         "marketCap": 49095647232,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 44560428,
+        "volRatio": 1.2,
         "history_daily": [
           14,
           14,
@@ -31881,6 +32525,8 @@
         "weekly": 59,
         "marketCap": 63714820096,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3056555,
+        "volRatio": 0.5,
         "history_daily": [
           43,
           53,
@@ -31980,6 +32626,8 @@
         "weekly": 83,
         "marketCap": 19010306048,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3980075,
+        "volRatio": 1.4,
         "history_daily": [
           58,
           59,
@@ -32079,6 +32727,8 @@
         "weekly": 71,
         "marketCap": 26774427648,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1565911,
+        "volRatio": 0.5,
         "history_daily": [
           32,
           32,
@@ -32178,6 +32828,8 @@
         "weekly": 70,
         "marketCap": 24085923840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 601517,
+        "volRatio": 0.4,
         "history_daily": [
           25,
           26,
@@ -32275,8 +32927,10 @@
         "chg": -0.03,
         "daily": 95,
         "weekly": 87,
-        "marketCap": 15302220800,
+        "marketCap": 15302824960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9603065,
+        "volRatio": 1.9,
         "history_daily": [
           25,
           25,
@@ -32376,6 +33030,8 @@
         "weekly": 84,
         "marketCap": 81723105280,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9374121,
+        "volRatio": 0.6,
         "history_daily": [
           57,
           64,
@@ -32475,6 +33131,8 @@
         "weekly": 92,
         "marketCap": 48814919680,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1389388,
+        "volRatio": 1.9,
         "history_daily": [
           61,
           62,
@@ -32574,6 +33232,8 @@
         "weekly": 8,
         "marketCap": 10142055424,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 643642,
+        "volRatio": 0.5,
         "history_daily": [
           12,
           17,
@@ -32673,6 +33333,8 @@
         "weekly": 59,
         "marketCap": 296282357760,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 9793801,
+        "volRatio": 1.5,
         "history_daily": [
           19,
           14,
@@ -32772,6 +33434,8 @@
         "weekly": 13,
         "marketCap": 27142420480,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 23452043,
+        "volRatio": 7.1,
         "history_daily": [
           20,
           10,
@@ -32871,6 +33535,8 @@
         "weekly": 92,
         "marketCap": 285678927872,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 3700268,
+        "volRatio": 1.5,
         "history_daily": [
           84,
           84,
@@ -32970,6 +33636,8 @@
         "weekly": 10,
         "marketCap": 11592403968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6099245,
+        "volRatio": 1.0,
         "history_daily": [
           1,
           1,
@@ -33069,6 +33737,8 @@
         "weekly": 95,
         "marketCap": 14840290304,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2102233,
+        "volRatio": 3.1,
         "history_daily": [
           58,
           46,
@@ -33168,6 +33838,8 @@
         "weekly": 56,
         "marketCap": 91743617024,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3235063,
+        "volRatio": 2.3,
         "history_daily": [
           37,
           37,
@@ -33267,6 +33939,8 @@
         "weekly": 0,
         "marketCap": 18395992064,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6686028,
+        "volRatio": 0.8,
         "history_daily": [
           7,
           7,
@@ -33366,6 +34040,8 @@
         "weekly": 81,
         "marketCap": 69084930048,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9200681,
+        "volRatio": 1.5,
         "history_daily": [
           48,
           38,
@@ -33465,6 +34141,8 @@
         "weekly": 7,
         "marketCap": 14368531456,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 871980,
+        "volRatio": 0.5,
         "history_daily": [
           10,
           11,
@@ -33564,6 +34242,8 @@
         "weekly": 76,
         "marketCap": 159916687360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4922639,
+        "volRatio": 0.9,
         "history_daily": [
           52,
           52,
@@ -33663,6 +34343,8 @@
         "weekly": 12,
         "marketCap": 19533996032,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4634705,
+        "volRatio": 1.8,
         "history_daily": [
           5,
           5,
@@ -33762,6 +34444,8 @@
         "weekly": 94,
         "marketCap": 11965931520,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 388223,
+        "volRatio": 0.8,
         "history_daily": [
           52,
           60,
@@ -33861,6 +34545,8 @@
         "weekly": 13,
         "marketCap": 11380085760,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3053067,
+        "volRatio": 1.6,
         "history_daily": [
           10,
           9,
@@ -33960,6 +34646,8 @@
         "weekly": 79,
         "marketCap": 268739444736,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1720605,
+        "volRatio": 0.9,
         "history_daily": [
           41,
           43,
@@ -34059,6 +34747,8 @@
         "weekly": 86,
         "marketCap": 34927980544,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 11829599,
+        "volRatio": 0.8,
         "history_daily": [
           92,
           91,
@@ -34158,6 +34848,8 @@
         "weekly": 71,
         "marketCap": 37457235968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1305784,
+        "volRatio": 1.0,
         "history_daily": [
           42,
           55,
@@ -34257,6 +34949,8 @@
         "weekly": 93,
         "marketCap": 13305853952,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1274302,
+        "volRatio": 0.6,
         "history_daily": [
           43,
           43,
@@ -34356,6 +35050,8 @@
         "weekly": 58,
         "marketCap": 96734158848,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 988284,
+        "volRatio": 0.9,
         "history_daily": [
           31,
           30,
@@ -34455,6 +35151,8 @@
         "weekly": 37,
         "marketCap": 11117153280,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7906877,
+        "volRatio": 1.0,
         "history_daily": [
           20,
           17,
@@ -34554,6 +35252,8 @@
         "weekly": 63,
         "marketCap": 8468406272,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1250491,
+        "volRatio": 1.3,
         "history_daily": [
           34,
           39,
@@ -34653,6 +35353,8 @@
         "weekly": 57,
         "marketCap": 38341021696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2445629,
+        "volRatio": 1.3,
         "history_daily": [
           55,
           48,
@@ -34752,6 +35454,8 @@
         "weekly": 96,
         "marketCap": 37549969408,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9885752,
+        "volRatio": 0.7,
         "history_daily": [
           74,
           76,
@@ -34851,6 +35555,8 @@
         "weekly": 92,
         "marketCap": 71580196864,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3230383,
+        "volRatio": 2.1,
         "history_daily": [
           70,
           66,
@@ -34950,6 +35656,8 @@
         "weekly": 20,
         "marketCap": 321527676928,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 4091463,
+        "volRatio": 1.1,
         "history_daily": [
           14,
           9,
@@ -35049,6 +35757,8 @@
         "weekly": 83,
         "marketCap": 133257256960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4433334,
+        "volRatio": 1.2,
         "history_daily": [
           55,
           56,
@@ -35148,6 +35858,8 @@
         "weekly": 6,
         "marketCap": 11478929408,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4510894,
+        "volRatio": 0.9,
         "history_daily": [
           24,
           23,
@@ -35247,6 +35959,8 @@
         "weekly": 97,
         "marketCap": 14662398976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9007347,
+        "volRatio": 1.1,
         "history_daily": [
           71,
           71,
@@ -35346,6 +36060,8 @@
         "weekly": 81,
         "marketCap": 94830346240,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1337012,
+        "volRatio": 0.6,
         "history_daily": [
           60,
           50,
@@ -35445,6 +36161,8 @@
         "weekly": 20,
         "marketCap": 18488207360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14744698,
+        "volRatio": 0.9,
         "history_daily": [
           41,
           47,
@@ -35544,6 +36262,8 @@
         "weekly": 90,
         "marketCap": 29022511104,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 669093,
+        "volRatio": 1.4,
         "history_daily": [
           68,
           64,
@@ -35643,6 +36363,8 @@
         "weekly": 18,
         "marketCap": 29187641344,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3589335,
+        "volRatio": 2.0,
         "history_daily": [
           21,
           28,
@@ -35742,6 +36464,8 @@
         "weekly": 65,
         "marketCap": 33062500352,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 19304757,
+        "volRatio": 0.9,
         "history_daily": [
           24,
           25,
@@ -35841,6 +36565,8 @@
         "weekly": 79,
         "marketCap": 14261230592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 476580,
+        "volRatio": 1.2,
         "history_daily": [
           42,
           47,
@@ -35940,6 +36666,8 @@
         "weekly": 34,
         "marketCap": 213447966720,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 6415565,
+        "volRatio": 1.0,
         "history_daily": [
           16,
           21,
@@ -36039,6 +36767,8 @@
         "weekly": 67,
         "marketCap": 16158755840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1312580,
+        "volRatio": 2.0,
         "history_daily": [
           58,
           58,
@@ -36138,6 +36868,8 @@
         "weekly": 56,
         "marketCap": 44084637696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 595773,
+        "volRatio": 1.1,
         "history_daily": [
           7,
           12,
@@ -36237,6 +36969,8 @@
         "weekly": 83,
         "marketCap": 76566093824,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1650657,
+        "volRatio": 1.4,
         "history_daily": [
           36,
           31,
@@ -36336,6 +37070,8 @@
         "weekly": 75,
         "marketCap": 19722334208,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2242660,
+        "volRatio": 1.6,
         "history_daily": [
           27,
           27,
@@ -36435,6 +37171,8 @@
         "weekly": 33,
         "marketCap": 30312599552,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5314305,
+        "volRatio": 1.5,
         "history_daily": [
           21,
           19,
@@ -36534,6 +37272,8 @@
         "weekly": 20,
         "marketCap": 11083579392,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4045537,
+        "volRatio": 4.8,
         "history_daily": [
           1,
           0,
@@ -36633,6 +37373,8 @@
         "weekly": 94,
         "marketCap": 476213477376,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 226686173,
+        "volRatio": 1.8,
         "history_daily": [
           59,
           61,
@@ -36732,6 +37474,8 @@
         "weekly": 76,
         "marketCap": 130999672832,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5304166,
+        "volRatio": 1.2,
         "history_daily": [
           34,
           34,
@@ -36831,6 +37575,8 @@
         "weekly": 39,
         "marketCap": 88470822912,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1957106,
+        "volRatio": 0.7,
         "history_daily": [
           24,
           41,
@@ -36930,6 +37676,8 @@
         "weekly": 46,
         "marketCap": 17597112320,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1109565,
+        "volRatio": 0.8,
         "history_daily": [
           63,
           72,
@@ -37029,6 +37777,8 @@
         "weekly": 19,
         "marketCap": 17780148224,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6304537,
+        "volRatio": 0.9,
         "history_daily": [
           18,
           14,
@@ -37128,6 +37878,8 @@
         "weekly": 9,
         "marketCap": 109940523008,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1876539,
+        "volRatio": 0.5,
         "history_daily": [
           14,
           14,
@@ -37227,6 +37979,8 @@
         "weekly": 30,
         "marketCap": 160729726976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2055142,
+        "volRatio": 0.9,
         "history_daily": [
           15,
           14,
@@ -37326,6 +38080,8 @@
         "weekly": 83,
         "marketCap": 11366211584,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6649280,
+        "volRatio": 1.0,
         "history_daily": [
           35,
           35,
@@ -37425,6 +38181,8 @@
         "weekly": 27,
         "marketCap": 16826449920,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5320283,
+        "volRatio": 1.0,
         "history_daily": [
           17,
           24,
@@ -37524,6 +38282,8 @@
         "weekly": 12,
         "marketCap": 26297939968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1239758,
+        "volRatio": 0.9,
         "history_daily": [
           23,
           23,
@@ -37623,6 +38383,8 @@
         "weekly": 83,
         "marketCap": 34067273728,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1518817,
+        "volRatio": 1.1,
         "history_daily": [
           51,
           56,
@@ -37722,6 +38484,8 @@
         "weekly": 92,
         "marketCap": 23226834944,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 834251,
+        "volRatio": 0.9,
         "history_daily": [
           60,
           68,
@@ -37821,6 +38585,8 @@
         "weekly": 99,
         "marketCap": 35223105536,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 700946,
+        "volRatio": 0.7,
         "history_daily": [
           78,
           78,
@@ -37920,6 +38686,8 @@
         "weekly": 20,
         "marketCap": 11127985152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 618417,
+        "volRatio": 0.7,
         "history_daily": [
           18,
           18,
@@ -38019,6 +38787,8 @@
         "weekly": 38,
         "marketCap": 14747783168,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 422932,
+        "volRatio": 0.6,
         "history_daily": [
           9,
           4,
@@ -38118,6 +38888,8 @@
         "weekly": 86,
         "marketCap": 547280781312,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 6884458,
+        "volRatio": 0.9,
         "history_daily": [
           75,
           75,
@@ -38217,6 +38989,8 @@
         "weekly": 95,
         "marketCap": 86515556352,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1535957,
+        "volRatio": 0.5,
         "history_daily": [
           70,
           70,
@@ -38316,6 +39090,8 @@
         "weekly": 72,
         "marketCap": 828635414528,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 7857299,
+        "volRatio": 0.9,
         "history_daily": [
           29,
           30,
@@ -38415,6 +39191,8 @@
         "weekly": 23,
         "marketCap": 33080156160,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13246602,
+        "volRatio": 0.7,
         "history_daily": [
           36,
           30,
@@ -38514,6 +39292,8 @@
         "weekly": 19,
         "marketCap": 39360987136,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 15298007,
+        "volRatio": 1.2,
         "history_daily": [
           18,
           16,
@@ -38613,6 +39393,8 @@
         "weekly": 84,
         "marketCap": 23561639936,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9933666,
+        "volRatio": 0.7,
         "history_daily": [
           59,
           61,
@@ -38712,6 +39494,8 @@
         "weekly": 100,
         "marketCap": 57532227584,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 724460,
+        "volRatio": 0.7,
         "history_daily": [
           82,
           83,
@@ -38809,8 +39593,10 @@
         "chg": -2.38,
         "daily": 33,
         "weekly": 9,
-        "marketCap": 31898064896,
+        "marketCap": 31898089472,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5367020,
+        "volRatio": 1.1,
         "history_daily": [
           22,
           20,
@@ -38910,6 +39696,8 @@
         "weekly": 94,
         "marketCap": 15942891520,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4559951,
+        "volRatio": 1.0,
         "history_daily": [
           62,
           68,
@@ -39009,6 +39797,8 @@
         "weekly": 86,
         "marketCap": 70838452224,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 8308394,
+        "volRatio": 0.7,
         "history_daily": [
           81,
           79,
@@ -39108,6 +39898,8 @@
         "weekly": 28,
         "marketCap": 91982184448,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3388752,
+        "volRatio": 0.7,
         "history_daily": [
           27,
           27,
@@ -39207,6 +39999,8 @@
         "weekly": 100,
         "marketCap": 238636072960,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1041508,
+        "volRatio": 1.2,
         "history_daily": [
           68,
           68,
@@ -39306,6 +40100,8 @@
         "weekly": 6,
         "marketCap": 26539556864,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13314681,
+        "volRatio": 1.0,
         "history_daily": [
           13,
           23,
@@ -39405,6 +40201,8 @@
         "weekly": 69,
         "marketCap": 42464178176,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5717297,
+        "volRatio": 1.2,
         "history_daily": [
           67,
           72,
@@ -39504,6 +40302,8 @@
         "weekly": 82,
         "marketCap": 60032983040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1320799,
+        "volRatio": 1.0,
         "history_daily": [
           59,
           59,
@@ -39603,6 +40403,8 @@
         "weekly": 69,
         "marketCap": 21188337664,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1004750,
+        "volRatio": 1.7,
         "history_daily": [
           40,
           48,
@@ -39702,6 +40504,8 @@
         "weekly": 97,
         "marketCap": 311079534592,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 9541600,
+        "volRatio": 1.0,
         "history_daily": [
           55,
           50,
@@ -39801,6 +40605,8 @@
         "weekly": 63,
         "marketCap": 35596877824,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4053935,
+        "volRatio": 1.0,
         "history_daily": [
           21,
           22,
@@ -39900,6 +40706,8 @@
         "weekly": 34,
         "marketCap": 18441957376,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 784619,
+        "volRatio": 1.0,
         "history_daily": [
           7,
           12,
@@ -39999,6 +40807,8 @@
         "weekly": 8,
         "marketCap": 21849122816,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2216753,
+        "volRatio": 0.7,
         "history_daily": [
           2,
           2,
@@ -40098,6 +40908,8 @@
         "weekly": 34,
         "marketCap": 18022432768,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1041875,
+        "volRatio": 2.3,
         "history_daily": [
           14,
           10,
@@ -40197,6 +41009,8 @@
         "weekly": 42,
         "marketCap": 760434786304,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 3292614,
+        "volRatio": 1.1,
         "history_daily": [
           35,
           31,
@@ -40296,6 +41110,8 @@
         "weekly": 92,
         "marketCap": 233879650304,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 1413882,
+        "volRatio": 0.7,
         "history_daily": [
           83,
           85,
@@ -40395,6 +41211,8 @@
         "weekly": 82,
         "marketCap": 36004663296,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1454768,
+        "volRatio": 0.5,
         "history_daily": [
           42,
           53,
@@ -40494,6 +41312,8 @@
         "weekly": 79,
         "marketCap": 117543632896,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1404008,
+        "volRatio": 1.0,
         "history_daily": [
           55,
           60,
@@ -40593,6 +41413,8 @@
         "weekly": 87,
         "marketCap": 22883426304,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 544478,
+        "volRatio": 0.9,
         "history_daily": [
           41,
           48,
@@ -40692,6 +41514,8 @@
         "weekly": 45,
         "marketCap": 130774687744,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3204060,
+        "volRatio": 1.3,
         "history_daily": [
           23,
           18,
@@ -40791,6 +41615,8 @@
         "weekly": 7,
         "marketCap": 16207705088,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3345365,
+        "volRatio": 1.3,
         "history_daily": [
           16,
           12,
@@ -40890,6 +41716,8 @@
         "weekly": 99,
         "marketCap": 61284048896,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6061632,
+        "volRatio": 1.1,
         "history_daily": [
           82,
           84,
@@ -40989,6 +41817,8 @@
         "weekly": 76,
         "marketCap": 23655759872,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7963380,
+        "volRatio": 1.1,
         "history_daily": [
           94,
           98,
@@ -41088,6 +41918,8 @@
         "weekly": 78,
         "marketCap": 32008681472,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 942894,
+        "volRatio": 0.9,
         "history_daily": [
           51,
           59,
@@ -41187,6 +42019,8 @@
         "weekly": 92,
         "marketCap": 71212285952,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2631712,
+        "volRatio": 1.2,
         "history_daily": [
           91,
           90,
@@ -41286,6 +42120,8 @@
         "weekly": 94,
         "marketCap": 93791289344,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1248640,
+        "volRatio": 0.9,
         "history_daily": [
           72,
           73,
@@ -41385,6 +42221,8 @@
         "weekly": 9,
         "marketCap": 82304958464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1626629,
+        "volRatio": 0.5,
         "history_daily": [
           18,
           29,
@@ -41484,6 +42322,8 @@
         "weekly": 62,
         "marketCap": 36962238464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 478708,
+        "volRatio": 1.2,
         "history_daily": [
           25,
           26,
@@ -41583,6 +42423,8 @@
         "weekly": 62,
         "marketCap": 14375596032,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2612408,
+        "volRatio": 0.8,
         "history_daily": [
           17,
           12,
@@ -41682,6 +42524,8 @@
         "weekly": 39,
         "marketCap": 464501080064,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 5866444,
+        "volRatio": 1.9,
         "history_daily": [
           6,
           6,
@@ -41781,6 +42625,8 @@
         "weekly": 1,
         "marketCap": 13587335168,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1965352,
+        "volRatio": 0.4,
         "history_daily": [
           1,
           1,
@@ -41880,6 +42726,8 @@
         "weekly": 46,
         "marketCap": 206196867072,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 2237052,
+        "volRatio": 0.7,
         "history_daily": [
           33,
           33,
@@ -41979,6 +42827,8 @@
         "weekly": 64,
         "marketCap": 100761853952,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 790755,
+        "volRatio": 1.1,
         "history_daily": [
           39,
           45,
@@ -42078,6 +42928,8 @@
         "weekly": 50,
         "marketCap": 101901950976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10786387,
+        "volRatio": 1.3,
         "history_daily": [
           10,
           15,
@@ -42177,6 +43029,8 @@
         "weekly": 62,
         "marketCap": 274033098752,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 9762707,
+        "volRatio": 1.1,
         "history_daily": [
           86,
           87,
@@ -42276,6 +43130,8 @@
         "weekly": 54,
         "marketCap": 1698509750272,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 16921156,
+        "volRatio": 1.1,
         "history_daily": [
           14,
           14,
@@ -42375,6 +43231,8 @@
         "weekly": 54,
         "marketCap": 51486175232,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3065303,
+        "volRatio": 0.9,
         "history_daily": [
           18,
           26,
@@ -42474,6 +43332,8 @@
         "weekly": 40,
         "marketCap": 25111183360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 92234,
+        "volRatio": 0.7,
         "history_daily": [
           30,
           31,
@@ -42573,6 +43433,8 @@
         "weekly": 71,
         "marketCap": 10046386176,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5029947,
+        "volRatio": 1.3,
         "history_daily": [
           79,
           73,
@@ -42672,6 +43534,8 @@
         "weekly": 72,
         "marketCap": 48794185728,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12540586,
+        "volRatio": 1.3,
         "history_daily": [
           32,
           33,
@@ -42771,6 +43635,8 @@
         "weekly": 97,
         "marketCap": 584684994560,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 35354365,
+        "volRatio": 0.8,
         "history_daily": [
           43,
           42,
@@ -42870,6 +43736,8 @@
         "weekly": 42,
         "marketCap": 3154747064320,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 31217392,
+        "volRatio": 1.0,
         "history_daily": [
           1,
           6,
@@ -42969,6 +43837,8 @@
         "weekly": 35,
         "marketCap": 15473038336,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1251770,
+        "volRatio": 1.4,
         "history_daily": [
           10,
           11,
@@ -43068,6 +43938,8 @@
         "weekly": 56,
         "marketCap": 18131951616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5468151,
+        "volRatio": 1.0,
         "history_daily": [
           66,
           66,
@@ -43167,6 +44039,8 @@
         "weekly": 4,
         "marketCap": 7985180160,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 3713678,
+        "volRatio": 1.3,
         "history_daily": [
           22,
           29,
@@ -43266,6 +44140,8 @@
         "weekly": 27,
         "marketCap": 78342193152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14580091,
+        "volRatio": 1.9,
         "history_daily": [
           54,
           55,
@@ -43365,6 +44241,8 @@
         "weekly": 99,
         "marketCap": 74995326976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 688001,
+        "volRatio": 1.2,
         "history_daily": [
           63,
           65,
@@ -43464,6 +44342,8 @@
         "weekly": 72,
         "marketCap": 75191197696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3025737,
+        "volRatio": 0.7,
         "history_daily": [
           29,
           28,
@@ -43563,6 +44443,8 @@
         "weekly": 41,
         "marketCap": 80370368512,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1080778,
+        "volRatio": 1.0,
         "history_daily": [
           10,
           15,
@@ -43662,6 +44544,8 @@
         "weekly": 83,
         "marketCap": 297056894976,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 5100734,
+        "volRatio": 0.9,
         "history_daily": [
           35,
           36,
@@ -43761,6 +44645,8 @@
         "weekly": 24,
         "marketCap": 7320008704,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 6475718,
+        "volRatio": 0.7,
         "history_daily": [
           27,
           29,
@@ -43860,6 +44746,8 @@
         "weekly": 67,
         "marketCap": 71339581440,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 782094,
+        "volRatio": 1.0,
         "history_daily": [
           46,
           45,
@@ -43959,6 +44847,8 @@
         "weekly": 73,
         "marketCap": 43500556288,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 516208,
+        "volRatio": 0.9,
         "history_daily": [
           9,
           15,
@@ -44058,6 +44948,8 @@
         "weekly": 73,
         "marketCap": 51616907264,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2482837,
+        "volRatio": 0.7,
         "history_daily": [
           10,
           16,
@@ -44157,6 +45049,8 @@
         "weekly": 51,
         "marketCap": 21519257600,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1463523,
+        "volRatio": 0.7,
         "history_daily": [
           39,
           43,
@@ -44256,6 +45150,8 @@
         "weekly": 53,
         "marketCap": 387898769408,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 25539487,
+        "volRatio": 0.6,
         "history_daily": [
           45,
           47,
@@ -44355,6 +45251,8 @@
         "weekly": 82,
         "marketCap": 114879356928,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5464798,
+        "volRatio": 0.7,
         "history_daily": [
           46,
           48,
@@ -44454,6 +45352,8 @@
         "weekly": 45,
         "marketCap": 14379045888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3440624,
+        "volRatio": 0.7,
         "history_daily": [
           41,
           41,
@@ -44553,6 +45453,8 @@
         "weekly": 57,
         "marketCap": 16576453632,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 826740,
+        "volRatio": 0.6,
         "history_daily": [
           44,
           45,
@@ -44652,6 +45554,8 @@
         "weekly": 93,
         "marketCap": 196376592384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9076279,
+        "volRatio": 1.1,
         "history_daily": [
           76,
           77,
@@ -44751,6 +45655,8 @@
         "weekly": 1,
         "marketCap": 65736572928,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13224663,
+        "volRatio": 0.4,
         "history_daily": [
           1,
           1,
@@ -44850,6 +45756,8 @@
         "weekly": 94,
         "marketCap": 23055728640,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4136403,
+        "volRatio": 0.9,
         "history_daily": [
           74,
           75,
@@ -44949,6 +45857,8 @@
         "weekly": 92,
         "marketCap": 15638374400,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 252491,
+        "volRatio": 0.8,
         "history_daily": [
           49,
           44,
@@ -45048,6 +45958,8 @@
         "weekly": 91,
         "marketCap": 70100279296,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 948735,
+        "volRatio": 0.7,
         "history_daily": [
           25,
           26,
@@ -45147,6 +46059,8 @@
         "weekly": 97,
         "marketCap": 30546448384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2123826,
+        "volRatio": 1.9,
         "history_daily": [
           46,
           54,
@@ -45246,6 +46160,8 @@
         "weekly": 71,
         "marketCap": 81301372928,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 679746,
+        "volRatio": 0.8,
         "history_daily": [
           57,
           57,
@@ -45345,6 +46261,8 @@
         "weekly": 38,
         "marketCap": 8095046144,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 18415954,
+        "volRatio": 0.9,
         "history_daily": [
           18,
           14,
@@ -45444,6 +46362,8 @@
         "weekly": 50,
         "marketCap": 31646175232,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1303750,
+        "volRatio": 0.5,
         "history_daily": [
           13,
           18,
@@ -45543,6 +46463,8 @@
         "weekly": 87,
         "marketCap": 50646130688,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1583287,
+        "volRatio": 1.0,
         "history_daily": [
           53,
           61,
@@ -45642,6 +46564,8 @@
         "weekly": 67,
         "marketCap": 5085821140992,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 114136225,
+        "volRatio": 0.8,
         "history_daily": [
           12,
           13,
@@ -45741,6 +46665,8 @@
         "weekly": 14,
         "marketCap": 16957815808,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 18265,
+        "volRatio": 0.8,
         "history_daily": [
           14,
           15,
@@ -45840,6 +46766,8 @@
         "weekly": 60,
         "marketCap": 73049694208,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10368214,
+        "volRatio": 3.3,
         "history_daily": [
           17,
           12,
@@ -45939,6 +46867,8 @@
         "weekly": 41,
         "marketCap": 76880879616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5188104,
+        "volRatio": 1.1,
         "history_daily": [
           24,
           25,
@@ -46038,6 +46968,8 @@
         "weekly": 73,
         "marketCap": 60255395840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13237286,
+        "volRatio": 0.8,
         "history_daily": [
           95,
           94,
@@ -46137,6 +47069,8 @@
         "weekly": 85,
         "marketCap": 43633905664,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4969246,
+        "volRatio": 2.7,
         "history_daily": [
           76,
           82,
@@ -46236,6 +47170,8 @@
         "weekly": 46,
         "marketCap": 23644526592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7502317,
+        "volRatio": 1.7,
         "history_daily": [
           39,
           34,
@@ -46335,6 +47271,8 @@
         "weekly": 74,
         "marketCap": 38884339712,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12493409,
+        "volRatio": 1.2,
         "history_daily": [
           62,
           64,
@@ -46434,6 +47372,8 @@
         "weekly": 78,
         "marketCap": 56274333696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6290173,
+        "volRatio": 1.4,
         "history_daily": [
           89,
           87,
@@ -46533,6 +47473,8 @@
         "weekly": 44,
         "marketCap": 471182639104,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 20178126,
+        "volRatio": 0.6,
         "history_daily": [
           5,
           11,
@@ -46632,6 +47574,8 @@
         "weekly": 11,
         "marketCap": 29392650240,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3497521,
+        "volRatio": 1.0,
         "history_daily": [
           2,
           8,
@@ -46731,6 +47675,8 @@
         "weekly": 74,
         "marketCap": 62172708864,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3401115,
+        "volRatio": 1.2,
         "history_daily": [
           55,
           57,
@@ -46830,6 +47776,8 @@
         "weekly": 69,
         "marketCap": 19274553344,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 805706,
+        "volRatio": 0.9,
         "history_daily": [
           38,
           28,
@@ -46929,6 +47877,8 @@
         "weekly": 49,
         "marketCap": 330735779840,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 32062834,
+        "volRatio": 0.7,
         "history_daily": [
           12,
           17,
@@ -47028,6 +47978,8 @@
         "weekly": 40,
         "marketCap": 147228934144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4134401,
+        "volRatio": 0.5,
         "history_daily": [
           11,
           21,
@@ -47127,6 +48079,8 @@
         "weekly": 33,
         "marketCap": 11495402496,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5765759,
+        "volRatio": 0.5,
         "history_daily": [
           7,
           8,
@@ -47226,6 +48180,8 @@
         "weekly": 86,
         "marketCap": 119590158336,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 441525,
+        "volRatio": 0.8,
         "history_daily": [
           48,
           39,
@@ -47325,6 +48281,8 @@
         "weekly": 8,
         "marketCap": 33697257472,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3689119,
+        "volRatio": 1.1,
         "history_daily": [
           16,
           15,
@@ -47424,6 +48382,8 @@
         "weekly": 33,
         "marketCap": 45829390336,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 18297106,
+        "volRatio": 1.5,
         "history_daily": [
           13,
           19,
@@ -47523,6 +48483,8 @@
         "weekly": 34,
         "marketCap": 13195974656,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3082113,
+        "volRatio": 1.8,
         "history_daily": [
           7,
           2,
@@ -47622,6 +48584,8 @@
         "weekly": 61,
         "marketCap": 212272250880,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 4011479,
+        "volRatio": 0.7,
         "history_daily": [
           52,
           61,
@@ -47721,6 +48685,8 @@
         "weekly": 71,
         "marketCap": 149376237568,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 29867678,
+        "volRatio": 0.9,
         "history_daily": [
           90,
           91,
@@ -47820,6 +48786,8 @@
         "weekly": 45,
         "marketCap": 36050419712,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 16991668,
+        "volRatio": 0.7,
         "history_daily": [
           69,
           69,
@@ -47919,6 +48887,8 @@
         "weekly": 67,
         "marketCap": 253593124864,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 3654866,
+        "volRatio": 0.7,
         "history_daily": [
           27,
           28,
@@ -48018,6 +48988,8 @@
         "weekly": 88,
         "marketCap": 69566472192,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3707172,
+        "volRatio": 1.2,
         "history_daily": [
           91,
           89,
@@ -48117,6 +49089,8 @@
         "weekly": 97,
         "marketCap": 12304677888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 739324,
+        "volRatio": 0.8,
         "history_daily": [
           80,
           82,
@@ -48216,6 +49190,8 @@
         "weekly": 82,
         "marketCap": 88221253632,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1626216,
+        "volRatio": 0.7,
         "history_daily": [
           50,
           57,
@@ -48315,6 +49291,8 @@
         "weekly": 10,
         "marketCap": 7692809216,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 708090,
+        "volRatio": 1.0,
         "history_daily": [
           6,
           11,
@@ -48414,6 +49392,8 @@
         "weekly": 32,
         "marketCap": 23429482496,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2156472,
+        "volRatio": 1.0,
         "history_daily": [
           38,
           35,
@@ -48513,6 +49493,8 @@
         "weekly": 97,
         "marketCap": 29078704128,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4555321,
+        "volRatio": 0.7,
         "history_daily": [
           78,
           79,
@@ -48612,6 +49594,8 @@
         "weekly": 90,
         "marketCap": 21564846080,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1133794,
+        "volRatio": 0.8,
         "history_daily": [
           58,
           66,
@@ -48711,6 +49695,8 @@
         "weekly": 29,
         "marketCap": 341046624256,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 8536461,
+        "volRatio": 1.0,
         "history_daily": [
           15,
           11,
@@ -48810,6 +49796,8 @@
         "weekly": 28,
         "marketCap": 117265702912,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1382397,
+        "volRatio": 0.5,
         "history_daily": [
           14,
           13,
@@ -48909,6 +49897,8 @@
         "weekly": 93,
         "marketCap": 129412268032,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3343805,
+        "volRatio": 0.9,
         "history_daily": [
           51,
           56,
@@ -49008,6 +49998,8 @@
         "weekly": 35,
         "marketCap": 33554159616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2795858,
+        "volRatio": 1.2,
         "history_daily": [
           33,
           35,
@@ -49107,6 +50099,8 @@
         "weekly": 61,
         "marketCap": 39727665152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2347242,
+        "volRatio": 1.1,
         "history_daily": [
           30,
           35,
@@ -49206,6 +50200,8 @@
         "weekly": 17,
         "marketCap": 16361965568,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1068635,
+        "volRatio": 1.0,
         "history_daily": [
           2,
           2,
@@ -49305,6 +50301,8 @@
         "weekly": 82,
         "marketCap": 51626246144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1357688,
+        "volRatio": 1.3,
         "history_daily": [
           18,
           29,
@@ -49404,6 +50402,8 @@
         "weekly": 58,
         "marketCap": 22993606656,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2134956,
+        "volRatio": 1.0,
         "history_daily": [
           21,
           21,
@@ -49503,6 +50503,8 @@
         "weekly": 98,
         "marketCap": 94325653504,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1315279,
+        "volRatio": 1.5,
         "history_daily": [
           66,
           66,
@@ -49602,6 +50604,8 @@
         "weekly": 36,
         "marketCap": 166615040000,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 34105832,
+        "volRatio": 2.7,
         "history_daily": [
           5,
           5,
@@ -49701,6 +50705,8 @@
         "weekly": 83,
         "marketCap": 20957048832,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1391654,
+        "volRatio": 1.3,
         "history_daily": [
           69,
           68,
@@ -49800,6 +50806,8 @@
         "weekly": 98,
         "marketCap": 29624805376,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1839612,
+        "volRatio": 1.3,
         "history_daily": [
           81,
           81,
@@ -49899,6 +50907,8 @@
         "weekly": 78,
         "marketCap": 21797285888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 305002,
+        "volRatio": 0.6,
         "history_daily": [
           36,
           27,
@@ -49998,6 +51008,8 @@
         "weekly": 49,
         "marketCap": 30275868672,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 744582,
+        "volRatio": 0.5,
         "history_daily": [
           9,
           4,
@@ -50097,6 +51109,8 @@
         "weekly": 75,
         "marketCap": 232693415936,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 4848311,
+        "volRatio": 1.0,
         "history_daily": [
           47,
           47,
@@ -50196,6 +51210,8 @@
         "weekly": 94,
         "marketCap": 59014799360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4822365,
+        "volRatio": 0.9,
         "history_daily": [
           48,
           49,
@@ -50295,6 +51311,8 @@
         "weekly": 96,
         "marketCap": 14837832704,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1548991,
+        "volRatio": 1.1,
         "history_daily": [
           68,
           74,
@@ -50394,6 +51412,8 @@
         "weekly": 26,
         "marketCap": 71957315584,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1832769,
+        "volRatio": 2.8,
         "history_daily": [
           64,
           60,
@@ -50493,6 +51513,8 @@
         "weekly": 79,
         "marketCap": 23929399296,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4301789,
+        "volRatio": 0.4,
         "history_daily": [
           38,
           39,
@@ -50592,6 +51614,8 @@
         "weekly": 41,
         "marketCap": 64358662144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1015395,
+        "volRatio": 0.6,
         "history_daily": [
           48,
           65,
@@ -50691,6 +51715,8 @@
         "weekly": 32,
         "marketCap": 30873622528,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1301315,
+        "volRatio": 1.3,
         "history_daily": [
           2,
           3,
@@ -50790,6 +51816,8 @@
         "weekly": 18,
         "marketCap": 9196942336,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 985211,
+        "volRatio": 1.0,
         "history_daily": [
           23,
           23,
@@ -50889,6 +51917,8 @@
         "weekly": 56,
         "marketCap": 64101957632,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 79233153,
+        "volRatio": 2.4,
         "history_daily": [
           7,
           2,
@@ -50988,6 +52018,8 @@
         "weekly": 80,
         "marketCap": 44995760128,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 500223,
+        "volRatio": 0.7,
         "history_daily": [
           24,
           20,
@@ -51087,6 +52119,8 @@
         "weekly": 55,
         "marketCap": 26639384576,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1878449,
+        "volRatio": 0.7,
         "history_daily": [
           13,
           13,
@@ -51186,6 +52220,8 @@
         "weekly": 15,
         "marketCap": 36639105024,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1136648,
+        "volRatio": 1.0,
         "history_daily": [
           30,
           30,
@@ -51285,6 +52321,8 @@
         "weekly": 99,
         "marketCap": 72800985088,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2016383,
+        "volRatio": 1.0,
         "history_daily": [
           90,
           90,
@@ -51384,6 +52422,8 @@
         "weekly": 48,
         "marketCap": 68716896256,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4281517,
+        "volRatio": 1.7,
         "history_daily": [
           28,
           24,
@@ -51481,8 +52521,10 @@
         "chg": -0.06,
         "daily": 40,
         "weekly": 34,
-        "marketCap": 129437171712,
+        "marketCap": 128224239616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1843623,
+        "volRatio": 1.0,
         "history_daily": [
           10,
           17,
@@ -51582,6 +52624,8 @@
         "weekly": 14,
         "marketCap": 148247707648,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5838815,
+        "volRatio": 0.4,
         "history_daily": [
           7,
           13,
@@ -51681,6 +52725,8 @@
         "weekly": 100,
         "marketCap": 157078421504,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10942727,
+        "volRatio": 0.7,
         "history_daily": [
           76,
           70,
@@ -51780,6 +52826,8 @@
         "weekly": 63,
         "marketCap": 22906298368,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1106255,
+        "volRatio": 0.6,
         "history_daily": [
           6,
           29,
@@ -51879,6 +52927,8 @@
         "weekly": 81,
         "marketCap": 83289964544,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13341098,
+        "volRatio": 0.9,
         "history_daily": [
           83,
           81,
@@ -51978,6 +53028,8 @@
         "weekly": 100,
         "marketCap": 144115515392,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10834526,
+        "volRatio": 3.0,
         "history_daily": [
           66,
           67,
@@ -52077,6 +53129,8 @@
         "weekly": 88,
         "marketCap": 60524728320,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1927718,
+        "volRatio": 0.6,
         "history_daily": [
           84,
           87,
@@ -52176,6 +53230,8 @@
         "weekly": 8,
         "marketCap": 91672969216,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 16608008,
+        "volRatio": 0.6,
         "history_daily": [
           6,
           6,
@@ -52275,6 +53331,8 @@
         "weekly": 31,
         "marketCap": 78755209216,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2093269,
+        "volRatio": 1.3,
         "history_daily": [
           22,
           19,
@@ -52374,6 +53432,8 @@
         "weekly": 89,
         "marketCap": 76162850816,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 993605,
+        "volRatio": 0.7,
         "history_daily": [
           45,
           45,
@@ -52473,6 +53533,8 @@
         "weekly": 27,
         "marketCap": 9424438272,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 3535670,
+        "volRatio": 1.2,
         "history_daily": [
           8,
           18,
@@ -52572,6 +53634,8 @@
         "weekly": 8,
         "marketCap": 10323557376,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1830680,
+        "volRatio": 1.0,
         "history_daily": [
           10,
           10,
@@ -52671,6 +53735,8 @@
         "weekly": 42,
         "marketCap": 20802396160,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4449560,
+        "volRatio": 0.9,
         "history_daily": [
           29,
           25,
@@ -52770,6 +53836,8 @@
         "weekly": 89,
         "marketCap": 19604953088,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 290508,
+        "volRatio": 0.7,
         "history_daily": [
           57,
           58,
@@ -52869,6 +53937,8 @@
         "weekly": 19,
         "marketCap": 11535549440,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 820284,
+        "volRatio": 0.7,
         "history_daily": [
           8,
           8,
@@ -52968,6 +54038,8 @@
         "weekly": 82,
         "marketCap": 105414205440,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4645179,
+        "volRatio": 1.1,
         "history_daily": [
           70,
           72,
@@ -53067,6 +54139,8 @@
         "weekly": 71,
         "marketCap": 18192158720,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5668446,
+        "volRatio": 0.7,
         "history_daily": [
           35,
           34,
@@ -53166,6 +54240,8 @@
         "weekly": 60,
         "marketCap": 11784687616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2740299,
+        "volRatio": 1.1,
         "history_daily": [
           25,
           20,
@@ -53265,6 +54341,8 @@
         "weekly": 84,
         "marketCap": 120196145152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 25244912,
+        "volRatio": 3.9,
         "history_daily": [
           35,
           35,
@@ -53364,6 +54442,8 @@
         "weekly": 98,
         "marketCap": 42004340736,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2146435,
+        "volRatio": 1.0,
         "history_daily": [
           59,
           63,
@@ -53463,6 +54543,8 @@
         "weekly": 94,
         "marketCap": 32357021696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 844951,
+        "volRatio": 0.7,
         "history_daily": [
           53,
           54,
@@ -53562,6 +54644,8 @@
         "weekly": 31,
         "marketCap": 20870961152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 810433,
+        "volRatio": 1.3,
         "history_daily": [
           11,
           17,
@@ -53661,6 +54745,8 @@
         "weekly": 29,
         "marketCap": 120689827840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2935506,
+        "volRatio": 1.6,
         "history_daily": [
           2,
           7,
@@ -53760,6 +54846,8 @@
         "weekly": 15,
         "marketCap": 15804684288,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 25748010,
+        "volRatio": 0.8,
         "history_daily": [
           1,
           6,
@@ -53859,6 +54947,8 @@
         "weekly": 75,
         "marketCap": 25311784960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2552741,
+        "volRatio": 0.7,
         "history_daily": [
           31,
           32,
@@ -53958,6 +55048,8 @@
         "weekly": 35,
         "marketCap": 92183478272,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1152389,
+        "volRatio": 0.7,
         "history_daily": [
           7,
           7,
@@ -54057,6 +55149,8 @@
         "weekly": 51,
         "marketCap": 35426500608,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4860119,
+        "volRatio": 0.8,
         "history_daily": [
           21,
           18,
@@ -54156,6 +55250,8 @@
         "weekly": 44,
         "marketCap": 214650077184,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 9872204,
+        "volRatio": 1.5,
         "history_daily": [
           39,
           38,
@@ -54255,6 +55351,8 @@
         "weekly": 58,
         "marketCap": 21909784576,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2550005,
+        "volRatio": 1.2,
         "history_daily": [
           24,
           24,
@@ -54354,6 +55452,8 @@
         "weekly": 54,
         "marketCap": 39875682304,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 991998,
+        "volRatio": 0.7,
         "history_daily": [
           7,
           7,
@@ -54453,6 +55553,8 @@
         "weekly": 86,
         "marketCap": 28978407424,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1677423,
+        "volRatio": 1.0,
         "history_daily": [
           61,
           46,
@@ -54552,6 +55654,8 @@
         "weekly": 89,
         "marketCap": 53768040448,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1426321,
+        "volRatio": 1.1,
         "history_daily": [
           90,
           89,
@@ -54651,6 +55755,8 @@
         "weekly": 79,
         "marketCap": 58075521024,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3758336,
+        "volRatio": 0.8,
         "history_daily": [
           82,
           89,
@@ -54750,6 +55856,8 @@
         "weekly": 64,
         "marketCap": 59911614464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2365050,
+        "volRatio": 0.9,
         "history_daily": [
           28,
           28,
@@ -54849,6 +55957,8 @@
         "weekly": 95,
         "marketCap": 29213300736,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 262355,
+        "volRatio": 0.7,
         "history_daily": [
           51,
           51,
@@ -54948,6 +56058,8 @@
         "weekly": 100,
         "marketCap": 47958847488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12801289,
+        "volRatio": 4.4,
         "history_daily": [
           74,
           74,
@@ -55047,6 +56159,8 @@
         "weekly": 58,
         "marketCap": 1400133779456,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 43212673,
+        "volRatio": 0.6,
         "history_daily": [
           12,
           7,
@@ -55146,6 +56260,8 @@
         "weekly": 100,
         "marketCap": 245015183360,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 7809044,
+        "volRatio": 1.0,
         "history_daily": [
           56,
           57,
@@ -55245,6 +56361,8 @@
         "weekly": 74,
         "marketCap": 30267410432,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 319090,
+        "volRatio": 0.6,
         "history_daily": [
           66,
           61,
@@ -55344,6 +56462,8 @@
         "weekly": 66,
         "marketCap": 15630599168,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2143340,
+        "volRatio": 2.0,
         "history_daily": [
           33,
           28,
@@ -55443,6 +56563,8 @@
         "weekly": 15,
         "marketCap": 173272186880,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1356270,
+        "volRatio": 0.7,
         "history_daily": [
           26,
           32,
@@ -55542,6 +56664,8 @@
         "weekly": 79,
         "marketCap": 173310607360,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3461482,
+        "volRatio": 0.9,
         "history_daily": [
           79,
           81,
@@ -55641,6 +56765,8 @@
         "weekly": 51,
         "marketCap": 13772311552,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 726389,
+        "volRatio": 0.5,
         "history_daily": [
           42,
           46,
@@ -55740,6 +56866,8 @@
         "weekly": 10,
         "marketCap": 11599561728,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 20269691,
+        "volRatio": 1.2,
         "history_daily": [
           5,
           5,
@@ -55839,6 +56967,8 @@
         "weekly": 8,
         "marketCap": 18301235200,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10168224,
+        "volRatio": 1.1,
         "history_daily": [
           3,
           2,
@@ -55938,6 +57068,8 @@
         "weekly": 80,
         "marketCap": 105999294464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1237137,
+        "volRatio": 1.0,
         "history_daily": [
           41,
           44,
@@ -56037,6 +57169,8 @@
         "weekly": 30,
         "marketCap": 64534601728,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 324906,
+        "volRatio": 0.8,
         "history_daily": [
           7,
           7,
@@ -56136,6 +57270,8 @@
         "weekly": 87,
         "marketCap": 64271855616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1375387,
+        "volRatio": 1.0,
         "history_daily": [
           52,
           57,
@@ -56235,6 +57371,8 @@
         "weekly": 51,
         "marketCap": 15382841344,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1266894,
+        "volRatio": 0.8,
         "history_daily": [
           3,
           8,
@@ -56334,6 +57472,8 @@
         "weekly": 80,
         "marketCap": 63103774720,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6867426,
+        "volRatio": 0.8,
         "history_daily": [
           34,
           43,
@@ -56433,6 +57573,8 @@
         "weekly": 12,
         "marketCap": 15303211008,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 586496,
+        "volRatio": 1.3,
         "history_daily": [
           6,
           6,
@@ -56532,6 +57674,8 @@
         "weekly": 93,
         "marketCap": 22385182720,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3242893,
+        "volRatio": 1.4,
         "history_daily": [
           85,
           86,
@@ -56631,6 +57775,8 @@
         "weekly": 84,
         "marketCap": 87344349184,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9269715,
+        "volRatio": 1.0,
         "history_daily": [
           50,
           58,
@@ -56730,6 +57876,8 @@
         "weekly": 41,
         "marketCap": 153267896320,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 11572556,
+        "volRatio": 0.8,
         "history_daily": [
           4,
           4,
@@ -56829,6 +57977,8 @@
         "weekly": 35,
         "marketCap": 13613844480,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3516301,
+        "volRatio": 1.1,
         "history_daily": [
           16,
           17,
@@ -56928,6 +58078,8 @@
         "weekly": 55,
         "marketCap": 23190472704,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 802681,
+        "volRatio": 1.3,
         "history_daily": [
           19,
           20,
@@ -57027,6 +58179,8 @@
         "weekly": 93,
         "marketCap": 157203382272,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3231592,
+        "volRatio": 1.0,
         "history_daily": [
           54,
           62,
@@ -57126,6 +58280,8 @@
         "weekly": 58,
         "marketCap": 28763369472,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5772727,
+        "volRatio": 0.7,
         "history_daily": [
           26,
           26,
@@ -57225,6 +58381,8 @@
         "weekly": 37,
         "marketCap": 90583629824,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6199855,
+        "volRatio": 1.2,
         "history_daily": [
           40,
           47,
@@ -57324,6 +58482,8 @@
         "weekly": 61,
         "marketCap": 59647664128,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 437199,
+        "volRatio": 0.8,
         "history_daily": [
           10,
           10,
@@ -57423,6 +58583,8 @@
         "weekly": 28,
         "marketCap": 336710959104,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 7064010,
+        "volRatio": 0.8,
         "history_daily": [
           17,
           22,
@@ -57522,6 +58684,8 @@
         "weekly": 34,
         "marketCap": 10251163648,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1425534,
+        "volRatio": 2.2,
         "history_daily": [
           13,
           11,
@@ -57621,6 +58785,8 @@
         "weekly": 97,
         "marketCap": 75145297920,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3637733,
+        "volRatio": 1.2,
         "history_daily": [
           90,
           93,
@@ -57720,6 +58886,8 @@
         "weekly": 91,
         "marketCap": 42470293504,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10053462,
+        "volRatio": 2.7,
         "history_daily": [
           52,
           62,
@@ -57819,6 +58987,8 @@
         "weekly": 2,
         "marketCap": 21970712576,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3282240,
+        "volRatio": 1.8,
         "history_daily": [
           7,
           7,
@@ -57918,6 +59088,8 @@
         "weekly": 86,
         "marketCap": 24806146048,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 439906,
+        "volRatio": 0.5,
         "history_daily": [
           63,
           69,
@@ -58017,6 +59189,8 @@
         "weekly": 9,
         "marketCap": 24652990464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3886173,
+        "volRatio": 2.0,
         "history_daily": [
           12,
           6,
@@ -58116,6 +59290,8 @@
         "weekly": 91,
         "marketCap": 194643361792,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 24167211,
+        "volRatio": 0.9,
         "history_daily": [
           76,
           75,
@@ -58215,6 +59391,8 @@
         "weekly": 26,
         "marketCap": 107655208960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1057652,
+        "volRatio": 1.0,
         "history_daily": [
           37,
           37,
@@ -58314,6 +59492,8 @@
         "weekly": 96,
         "marketCap": 117606432768,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4444338,
+        "volRatio": 0.8,
         "history_daily": [
           67,
           72,
@@ -58413,6 +59593,8 @@
         "weekly": 94,
         "marketCap": 17431379968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 11230706,
+        "volRatio": 1.2,
         "history_daily": [
           55,
           50,
@@ -58512,6 +59694,8 @@
         "weekly": 54,
         "marketCap": 30573084672,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12029799,
+        "volRatio": 1.8,
         "history_daily": [
           18,
           18,
@@ -58611,6 +59795,8 @@
         "weekly": 41,
         "marketCap": 645623316480,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 16641544,
+        "volRatio": 2.6,
         "history_daily": [
           4,
           4,
@@ -58710,6 +59896,8 @@
         "weekly": 52,
         "marketCap": 52065492992,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4946490,
+        "volRatio": 1.4,
         "history_daily": [
           8,
           3,
@@ -58809,6 +59997,8 @@
         "weekly": 61,
         "marketCap": 38662238208,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1808928,
+        "volRatio": 1.8,
         "history_daily": [
           19,
           28,
@@ -58908,6 +60098,8 @@
         "weekly": 44,
         "marketCap": 26111770624,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1611507,
+        "volRatio": 0.8,
         "history_daily": [
           3,
           9,
@@ -59007,6 +60199,8 @@
         "weekly": 79,
         "marketCap": 54183841792,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 190494,
+        "volRatio": 0.8,
         "history_daily": [
           68,
           72,
@@ -59106,6 +60300,8 @@
         "weekly": 93,
         "marketCap": 44348567552,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1140578,
+        "volRatio": 1.0,
         "history_daily": [
           75,
           77,
@@ -59205,6 +60401,8 @@
         "weekly": 90,
         "marketCap": 1020366487552,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 16477714,
+        "volRatio": 1.0,
         "history_daily": [
           64,
           67,
@@ -59304,6 +60502,8 @@
         "weekly": 53,
         "marketCap": 179454967808,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5415642,
+        "volRatio": 0.7,
         "history_daily": [
           7,
           7,
@@ -59403,6 +60603,8 @@
         "weekly": 77,
         "marketCap": 67808083968,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12463902,
+        "volRatio": 0.6,
         "history_daily": [
           48,
           43,
@@ -59502,6 +60704,8 @@
         "weekly": 68,
         "marketCap": 92892258304,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2639184,
+        "volRatio": 1.4,
         "history_daily": [
           63,
           75,
@@ -59601,6 +60805,8 @@
         "weekly": 24,
         "marketCap": 28677085184,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1269610,
+        "volRatio": 1.4,
         "history_daily": [
           32,
           32,
@@ -59700,6 +60906,8 @@
         "weekly": 88,
         "marketCap": 37295861760,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1271722,
+        "volRatio": 0.7,
         "history_daily": [
           75,
           76,
@@ -59799,6 +61007,8 @@
         "weekly": 58,
         "marketCap": 249774358528,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 16704202,
+        "volRatio": 1.0,
         "history_daily": [
           31,
           32,
@@ -59898,6 +61108,8 @@
         "weekly": 89,
         "marketCap": 149423865856,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3650502,
+        "volRatio": 1.4,
         "history_daily": [
           52,
           57,
@@ -59997,6 +61209,8 @@
         "weekly": 61,
         "marketCap": 20866471936,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 796397,
+        "volRatio": 0.8,
         "history_daily": [
           39,
           45,
@@ -60096,6 +61310,8 @@
         "weekly": 99,
         "marketCap": 141122355200,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10265572,
+        "volRatio": 1.5,
         "history_daily": [
           70,
           70,
@@ -60195,6 +61411,8 @@
         "weekly": 40,
         "marketCap": 17485283328,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5618472,
+        "volRatio": 1.4,
         "history_daily": [
           45,
           58,
@@ -60294,6 +61512,8 @@
         "weekly": 62,
         "marketCap": 21563326464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 876207,
+        "volRatio": 0.8,
         "history_daily": [
           24,
           24,
@@ -60393,6 +61613,8 @@
         "weekly": 89,
         "marketCap": 89659875328,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5586324,
+        "volRatio": 1.0,
         "history_daily": [
           70,
           68,
@@ -60492,6 +61714,8 @@
         "weekly": 34,
         "marketCap": 27428710400,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 866096,
+        "volRatio": 1.5,
         "history_daily": [
           6,
           7,
@@ -60591,6 +61815,8 @@
         "weekly": 8,
         "marketCap": 31470508032,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3250696,
+        "volRatio": 0.6,
         "history_daily": [
           5,
           11,
@@ -60690,6 +61916,8 @@
         "weekly": 55,
         "marketCap": 10870490112,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1350942,
+        "volRatio": 1.0,
         "history_daily": [
           22,
           23,
@@ -60789,6 +62017,8 @@
         "weekly": 86,
         "marketCap": 49196462080,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3482342,
+        "volRatio": 0.8,
         "history_daily": [
           59,
           65,
@@ -60888,6 +62118,8 @@
         "weekly": 33,
         "marketCap": 27592140800,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2658110,
+        "volRatio": 1.0,
         "history_daily": [
           13,
           14,
@@ -60987,6 +62219,8 @@
         "weekly": 80,
         "marketCap": 44184592384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3161257,
+        "volRatio": 2.1,
         "history_daily": [
           42,
           47,
@@ -61086,6 +62320,8 @@
         "weekly": 27,
         "marketCap": 10602779648,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 884717,
+        "volRatio": 1.2,
         "history_daily": [
           12,
           7,
@@ -61185,6 +62421,8 @@
         "weekly": 23,
         "marketCap": 15499076608,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5241803,
+        "volRatio": 2.3,
         "history_daily": [
           29,
           32,
@@ -61284,6 +62522,8 @@
         "weekly": 8,
         "marketCap": 48050798592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3394908,
+        "volRatio": 1.1,
         "history_daily": [
           21,
           27,
@@ -61385,6 +62625,8 @@
         "weekly": 91,
         "marketCap": 16480857088,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2703558,
+        "volRatio": 0.5,
         "history_daily": [
           69,
           78,
@@ -61484,6 +62726,8 @@
         "weekly": 81,
         "marketCap": 83399999488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3483435,
+        "volRatio": 1.1,
         "history_daily": [
           31,
           28,
@@ -61583,6 +62827,8 @@
         "weekly": 5,
         "marketCap": 98450997248,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2635264,
+        "volRatio": 0.5,
         "history_daily": [
           5,
           11,
@@ -61682,6 +62928,8 @@
         "weekly": 59,
         "marketCap": 21145864192,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3802130,
+        "volRatio": 0.8,
         "history_daily": [
           9,
           10,
@@ -61781,6 +63029,8 @@
         "weekly": 72,
         "marketCap": 33716852736,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4826619,
+        "volRatio": 0.8,
         "history_daily": [
           4,
           9,
@@ -61880,6 +63130,8 @@
         "weekly": 89,
         "marketCap": 22502250496,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1450888,
+        "volRatio": 0.7,
         "history_daily": [
           77,
           78,
@@ -61979,6 +63231,8 @@
         "weekly": 82,
         "marketCap": 13467544576,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1788352,
+        "volRatio": 0.5,
         "history_daily": [
           36,
           37,
@@ -62078,6 +63332,8 @@
         "weekly": 52,
         "marketCap": 149108178944,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2314540,
+        "volRatio": 0.6,
         "history_daily": [
           9,
           8,
@@ -62177,6 +63433,8 @@
         "weekly": 76,
         "marketCap": 214194503680,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 6010082,
+        "volRatio": 0.7,
         "history_daily": [
           74,
           74,
@@ -62276,6 +63534,8 @@
         "weekly": 69,
         "marketCap": 26684614656,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14641013,
+        "volRatio": 0.9,
         "history_daily": [
           38,
           48,
@@ -62375,6 +63635,8 @@
         "weekly": 72,
         "marketCap": 176666443776,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5760695,
+        "volRatio": 0.9,
         "history_daily": [
           21,
           22,
@@ -62474,6 +63736,8 @@
         "weekly": 61,
         "marketCap": 321846640640,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 5607583,
+        "volRatio": 0.6,
         "history_daily": [
           9,
           9,
@@ -62573,6 +63837,8 @@
         "weekly": 58,
         "marketCap": 1818536064,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 53942793,
+        "volRatio": 1.8,
         "history_daily": [
           2,
           8,
@@ -62672,6 +63938,8 @@
         "weekly": 68,
         "marketCap": 41173975040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1818563,
+        "volRatio": 0.9,
         "history_daily": [
           14,
           15,
@@ -62771,6 +64039,8 @@
         "weekly": 58,
         "marketCap": 8940742656,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1585278,
+        "volRatio": 0.8,
         "history_daily": [
           13,
           14,
@@ -62870,6 +64140,8 @@
         "weekly": 23,
         "marketCap": 11767456768,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 32404823,
+        "volRatio": 0.8,
         "history_daily": [
           9,
           9,
@@ -62969,6 +64241,8 @@
         "weekly": 19,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 1784382,
+        "volRatio": 0.7,
         "history_daily": [
           6,
           6,
@@ -63068,6 +64342,8 @@
         "weekly": null,
         "marketCap": 1120029568,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 339469,
+        "volRatio": 0.7,
         "history_daily": [
           1,
           1,
@@ -63125,6 +64401,8 @@
         "weekly": 16,
         "marketCap": 3595094272,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 16755107,
+        "volRatio": 1.1,
         "history_daily": [
           7,
           6,
@@ -63224,6 +64502,8 @@
         "weekly": 16,
         "marketCap": 8390225920,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 4174562,
+        "volRatio": 0.6,
         "history_daily": [
           8,
           8,
@@ -63323,6 +64603,8 @@
         "weekly": 22,
         "marketCap": 5846750208,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 13711052,
+        "volRatio": 0.8,
         "history_daily": [
           17,
           17,
@@ -63422,6 +64704,8 @@
         "weekly": 11,
         "marketCap": 42966937600,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 27704696,
+        "volRatio": 2.0,
         "history_daily": [
           20,
           26,
@@ -63521,6 +64805,8 @@
         "weekly": 46,
         "marketCap": 47990378496,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 12534871,
+        "volRatio": 1.3,
         "history_daily": [
           11,
           11,
@@ -63620,6 +64906,8 @@
         "weekly": 79,
         "marketCap": 25411799040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 7882442,
+        "volRatio": 0.7,
         "history_daily": [
           48,
           46,
@@ -63719,6 +65007,8 @@
         "weekly": 14,
         "marketCap": 148247707648,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5838815,
+        "volRatio": 0.4,
         "history_daily": [
           7,
           13,
@@ -63818,6 +65108,8 @@
         "weekly": 81,
         "marketCap": 1504760192,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 16639844,
+        "volRatio": 0.9,
         "history_daily": [
           22,
           23,
@@ -63917,6 +65209,8 @@
         "weekly": 50,
         "marketCap": 4890112512,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1394381,
+        "volRatio": 0.8,
         "history_daily": [
           8,
           14,
@@ -64016,6 +65310,8 @@
         "weekly": 55,
         "marketCap": 114729943040,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1896785,
+        "volRatio": 0.6,
         "history_daily": [
           10,
           15,
@@ -64115,6 +65411,8 @@
         "weekly": 54,
         "marketCap": 60315168768,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 24671697,
+        "volRatio": 0.7,
         "history_daily": [
           24,
           30,
@@ -64214,6 +65512,8 @@
         "weekly": 28,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 41552,
+        "volRatio": 0.9,
         "history_daily": [
           17,
           18,
@@ -64313,6 +65613,8 @@
         "weekly": 88,
         "marketCap": 382882775040,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 8594610,
+        "volRatio": 0.7,
         "history_daily": [
           88,
           87,
@@ -64412,6 +65714,8 @@
         "weekly": 42,
         "marketCap": 73784942592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3704909,
+        "volRatio": 0.9,
         "history_daily": [
           2,
           8,
@@ -64511,6 +65815,8 @@
         "weekly": 58,
         "marketCap": 43004846080,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2176650,
+        "volRatio": 0.8,
         "history_daily": [
           17,
           23,
@@ -64610,6 +65916,8 @@
         "weekly": 53,
         "marketCap": 179454967808,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5415642,
+        "volRatio": 0.7,
         "history_daily": [
           7,
           7,
@@ -64709,6 +66017,8 @@
         "weekly": 19,
         "marketCap": 11471488000,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 6540175,
+        "volRatio": 0.6,
         "history_daily": [
           3,
           9,
@@ -64808,6 +66118,8 @@
         "weekly": 45,
         "marketCap": 185034416,
         "capCategory": "Micro Cap (<$300M)",
+        "volume": 1454056,
+        "volRatio": 0.9,
         "history_daily": [
           8,
           14,
@@ -64907,6 +66219,8 @@
         "weekly": 15,
         "marketCap": 4997256192,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1312490,
+        "volRatio": 0.8,
         "history_daily": [
           15,
           16,
@@ -65006,6 +66320,8 @@
         "weekly": 30,
         "marketCap": 721042560,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 1901369,
+        "volRatio": 1.1,
         "history_daily": [
           68,
           60,
@@ -65105,6 +66421,8 @@
         "weekly": 20,
         "marketCap": 4110341376,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 17200395,
+        "volRatio": 2.7,
         "history_daily": [
           52,
           41,
@@ -65204,6 +66522,8 @@
         "weekly": 84,
         "marketCap": 74528784384,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3096937,
+        "volRatio": 0.7,
         "history_daily": [
           94,
           94,
@@ -65303,6 +66623,8 @@
         "weekly": 22,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 2394699,
+        "volRatio": 0.7,
         "history_daily": [
           18,
           7,
@@ -65402,6 +66724,8 @@
         "weekly": 22,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 33148275,
+        "volRatio": 1.1,
         "history_daily": [
           18,
           7,
@@ -65501,6 +66825,8 @@
         "weekly": 20,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 3683677,
+        "volRatio": 0.6,
         "history_daily": [
           17,
           7,
@@ -65600,6 +66926,8 @@
         "weekly": 91,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 5280913,
+        "volRatio": 0.7,
         "history_daily": [
           47,
           48,
@@ -65699,6 +67027,8 @@
         "weekly": 84,
         "marketCap": 81723105280,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9374121,
+        "volRatio": 0.6,
         "history_daily": [
           57,
           64,
@@ -65798,6 +67128,8 @@
         "weekly": 1,
         "marketCap": 8884762624,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 10126937,
+        "volRatio": 0.6,
         "history_daily": [
           11,
           12,
@@ -65897,6 +67229,8 @@
         "weekly": 14,
         "marketCap": 18723545088,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1455994,
+        "volRatio": 0.5,
         "history_daily": [
           6,
           17,
@@ -65996,6 +67330,8 @@
         "weekly": 56,
         "marketCap": 8882531328,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1396231,
+        "volRatio": 0.2,
         "history_daily": [
           21,
           33,
@@ -66095,6 +67431,8 @@
         "weekly": 15,
         "marketCap": 4520418304,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1613982,
+        "volRatio": 1.0,
         "history_daily": [
           12,
           16,
@@ -66194,6 +67532,8 @@
         "weekly": 72,
         "marketCap": 21476395008,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 677738,
+        "volRatio": 0.6,
         "history_daily": [
           6,
           7,
@@ -66293,6 +67633,8 @@
         "weekly": 22,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 352289,
+        "volRatio": 2.2,
         "history_daily": [
           26,
           15,
@@ -66392,6 +67734,8 @@
         "weekly": 13,
         "marketCap": 11380085760,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3053067,
+        "volRatio": 1.6,
         "history_daily": [
           10,
           9,
@@ -66491,6 +67835,8 @@
         "weekly": 73,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 20064395,
+        "volRatio": 1.0,
         "history_daily": [
           43,
           45,
@@ -66590,6 +67936,8 @@
         "weekly": 11,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 541666,
+        "volRatio": 0.4,
         "history_daily": [
           41,
           37,
@@ -66689,6 +68037,8 @@
         "weekly": 33,
         "marketCap": 9920386048,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 5720266,
+        "volRatio": 1.0,
         "history_daily": [
           4,
           3,
@@ -66788,6 +68138,8 @@
         "weekly": 85,
         "marketCap": 4233379446784,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 29676925,
+        "volRatio": 1.2,
         "history_daily": [
           32,
           26,
@@ -66887,6 +68239,8 @@
         "weekly": 51,
         "marketCap": 243753888,
         "capCategory": "Micro Cap (<$300M)",
+        "volume": 6980965,
+        "volRatio": 0.7,
         "history_daily": [
           9,
           15,
@@ -66986,6 +68340,8 @@
         "weekly": 39,
         "marketCap": 15663840256,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 41344415,
+        "volRatio": 0.8,
         "history_daily": [
           8,
           4,
@@ -67085,6 +68441,8 @@
         "weekly": 22,
         "marketCap": 2038296448,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 559544,
+        "volRatio": 0.7,
         "history_daily": [
           30,
           31,
@@ -67184,6 +68542,8 @@
         "weekly": 56,
         "marketCap": 64101957632,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 79233153,
+        "volRatio": 2.4,
         "history_daily": [
           7,
           2,
@@ -67283,6 +68643,8 @@
         "weekly": 23,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 33371845,
+        "volRatio": 0.8,
         "history_daily": [
           6,
           6,
@@ -67382,6 +68744,8 @@
         "weekly": 28,
         "marketCap": 884488192,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 371715,
+        "volRatio": 0.5,
         "history_daily": [
           32,
           31,
@@ -67481,6 +68845,8 @@
         "weekly": 50,
         "marketCap": 1304567552,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 793660,
+        "volRatio": 0.8,
         "history_daily": [
           3,
           3,
@@ -67580,6 +68946,8 @@
         "weekly": 94,
         "marketCap": 476213477376,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 226686173,
+        "volRatio": 1.8,
         "history_daily": [
           59,
           61,
@@ -67679,6 +69047,8 @@
         "weekly": 65,
         "marketCap": 15439243264,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 24364599,
+        "volRatio": 0.7,
         "history_daily": [
           1,
           1,
@@ -67778,6 +69148,8 @@
         "weekly": 79,
         "marketCap": 14219198464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 24507945,
+        "volRatio": 0.7,
         "history_daily": [
           9,
           9,
@@ -67877,6 +69249,8 @@
         "weekly": 30,
         "marketCap": 160729726976,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2055142,
+        "volRatio": 0.9,
         "history_daily": [
           15,
           14,
@@ -67976,6 +69350,8 @@
         "weekly": 47,
         "marketCap": 1800571392,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 17892695,
+        "volRatio": 0.6,
         "history_daily": [
           32,
           41,
@@ -68075,6 +69451,8 @@
         "weekly": 94,
         "marketCap": 4457614336,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 679191,
+        "volRatio": 0.6,
         "history_daily": [
           79,
           67,
@@ -68174,6 +69552,8 @@
         "weekly": 42,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 19655749,
+        "volRatio": 0.8,
         "history_daily": [
           2,
           2,
@@ -68273,6 +69653,8 @@
         "weekly": 90,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 596594,
+        "volRatio": 1.1,
         "history_daily": [
           52,
           54,
@@ -68372,6 +69754,8 @@
         "weekly": 24,
         "marketCap": 18144925696,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2543744,
+        "volRatio": 0.9,
         "history_daily": [
           53,
           60,
@@ -68471,6 +69855,8 @@
         "weekly": 42,
         "marketCap": 760434786304,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 3292614,
+        "volRatio": 1.1,
         "history_daily": [
           35,
           31,
@@ -68570,6 +69956,8 @@
         "weekly": 75,
         "marketCap": 4301810176,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 4814223,
+        "volRatio": 3.1,
         "history_daily": [
           39,
           35,
@@ -68669,6 +70057,8 @@
         "weekly": 29,
         "marketCap": 1612041344,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 839698,
+        "volRatio": 0.6,
         "history_daily": [
           1,
           1,
@@ -68768,6 +70158,8 @@
         "weekly": 7,
         "marketCap": 16207705088,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3345365,
+        "volRatio": 1.3,
         "history_daily": [
           16,
           12,
@@ -68867,6 +70259,8 @@
         "weekly": 51,
         "marketCap": 5479656960,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 10697660,
+        "volRatio": 0.8,
         "history_daily": [
           16,
           17,
@@ -68966,6 +70360,8 @@
         "weekly": 22,
         "marketCap": 7352284160,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 5245955,
+        "volRatio": 0.7,
         "history_daily": [
           8,
           8,
@@ -69065,6 +70461,8 @@
         "weekly": 54,
         "marketCap": 1698509750272,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 16921156,
+        "volRatio": 1.1,
         "history_daily": [
           14,
           14,
@@ -69164,6 +70562,8 @@
         "weekly": 10,
         "marketCap": 3436420864,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 620714,
+        "volRatio": 0.4,
         "history_daily": [
           7,
           7,
@@ -69263,6 +70663,8 @@
         "weekly": 24,
         "marketCap": 7320008704,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 6475718,
+        "volRatio": 0.7,
         "history_daily": [
           27,
           29,
@@ -69362,6 +70764,8 @@
         "weekly": 82,
         "marketCap": 10891015168,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4221918,
+        "volRatio": 0.8,
         "history_daily": [
           4,
           4,
@@ -69461,6 +70865,8 @@
         "weekly": 62,
         "marketCap": 274033098752,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 9762707,
+        "volRatio": 1.1,
         "history_daily": [
           86,
           87,
@@ -69560,6 +70966,8 @@
         "weekly": 56,
         "marketCap": 18131951616,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5468151,
+        "volRatio": 1.0,
         "history_daily": [
           66,
           66,
@@ -69659,6 +71067,8 @@
         "weekly": 58,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 8230897,
+        "volRatio": 0.7,
         "history_daily": [
           18,
           24,
@@ -69758,6 +71168,8 @@
         "weekly": 38,
         "marketCap": 55427694592,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14919141,
+        "volRatio": 0.8,
         "history_daily": [
           9,
           9,
@@ -69857,6 +71269,8 @@
         "weekly": 31,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 2887627,
+        "volRatio": 0.7,
         "history_daily": [
           8,
           7,
@@ -69956,6 +71370,8 @@
         "weekly": 21,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 2058148,
+        "volRatio": 1.3,
         "history_daily": [
           7,
           3,
@@ -70055,6 +71471,8 @@
         "weekly": 83,
         "marketCap": 35723468800,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 14124464,
+        "volRatio": 0.9,
         "history_daily": [
           56,
           60,
@@ -70154,6 +71572,8 @@
         "weekly": 82,
         "marketCap": 114879356928,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5464798,
+        "volRatio": 0.7,
         "history_daily": [
           46,
           48,
@@ -70253,6 +71673,8 @@
         "weekly": 76,
         "marketCap": 16011211776,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 32920805,
+        "volRatio": 0.9,
         "history_daily": [
           66,
           68,
@@ -70352,6 +71774,8 @@
         "weekly": 1,
         "marketCap": 65736572928,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13224663,
+        "volRatio": 0.4,
         "history_daily": [
           1,
           1,
@@ -70451,6 +71875,8 @@
         "weekly": 54,
         "marketCap": 1470171904,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 26740691,
+        "volRatio": 5.1,
         "history_daily": [
           46,
           41,
@@ -70550,6 +71976,8 @@
         "weekly": 67,
         "marketCap": 5085821140992,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 114136225,
+        "volRatio": 0.8,
         "history_daily": [
           12,
           13,
@@ -70649,6 +72077,8 @@
         "weekly": 7,
         "marketCap": 178654003200,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 15345106,
+        "volRatio": 0.9,
         "history_daily": [
           19,
           20,
@@ -70748,6 +72178,8 @@
         "weekly": 83,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 148891,
+        "volRatio": 0.5,
         "history_daily": [
           94,
           94,
@@ -70847,6 +72279,8 @@
         "weekly": 49,
         "marketCap": 11301311488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 15920154,
+        "volRatio": 1.1,
         "history_daily": [
           0,
           1,
@@ -70946,6 +72380,8 @@
         "weekly": 30,
         "marketCap": 13471785984,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1997552,
+        "volRatio": 0.5,
         "history_daily": [
           25,
           25,
@@ -71045,6 +72481,8 @@
         "weekly": 18,
         "marketCap": 11694143488,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 2303048,
+        "volRatio": 0.4,
         "history_daily": [
           1,
           1,
@@ -71144,6 +72582,8 @@
         "weekly": 85,
         "marketCap": 5347456000,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 39001361,
+        "volRatio": 1.1,
         "history_daily": [
           18,
           17,
@@ -71243,6 +72683,8 @@
         "weekly": 44,
         "marketCap": 471182639104,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 20178126,
+        "volRatio": 0.6,
         "history_daily": [
           5,
           11,
@@ -71342,6 +72784,8 @@
         "weekly": 87,
         "marketCap": 217719648,
         "capCategory": "Micro Cap (<$300M)",
+        "volume": 1190951,
+        "volRatio": 0.9,
         "history_daily": [
           30,
           29,
@@ -71441,6 +72885,8 @@
         "weekly": 73,
         "marketCap": 60255395840,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 13237286,
+        "volRatio": 0.8,
         "history_daily": [
           95,
           94,
@@ -71540,6 +72986,8 @@
         "weekly": 71,
         "marketCap": 149376237568,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 29867678,
+        "volRatio": 0.9,
         "history_daily": [
           90,
           91,
@@ -71639,6 +73087,8 @@
         "weekly": 49,
         "marketCap": 330735779840,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 32062834,
+        "volRatio": 0.7,
         "history_daily": [
           12,
           17,
@@ -71738,6 +73188,8 @@
         "weekly": 74,
         "marketCap": 4753387008,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 131427006,
+        "volRatio": 1.9,
         "history_daily": [
           60,
           65,
@@ -71837,6 +73289,8 @@
         "weekly": 2,
         "marketCap": 4144657664,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 5194404,
+        "volRatio": 1.4,
         "history_daily": [
           3,
           3,
@@ -71936,6 +73390,8 @@
         "weekly": 82,
         "marketCap": 51626246144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 1357688,
+        "volRatio": 1.3,
         "history_daily": [
           18,
           29,
@@ -72035,6 +73491,8 @@
         "weekly": 33,
         "marketCap": 45829390336,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 18297106,
+        "volRatio": 1.5,
         "history_daily": [
           13,
           19,
@@ -72134,6 +73592,8 @@
         "weekly": 36,
         "marketCap": 166615040000,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 34105832,
+        "volRatio": 2.7,
         "history_daily": [
           5,
           5,
@@ -72233,6 +73693,8 @@
         "weekly": 42,
         "marketCap": 4207592448,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 19254808,
+        "volRatio": 0.9,
         "history_daily": [
           3,
           3,
@@ -72332,6 +73794,8 @@
         "weekly": 77,
         "marketCap": 1341006080,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 6177649,
+        "volRatio": 0.5,
         "history_daily": [
           52,
           50,
@@ -72431,6 +73895,8 @@
         "weekly": 28,
         "marketCap": 28432293888,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3337403,
+        "volRatio": 0.9,
         "history_daily": [
           8,
           13,
@@ -72530,6 +73996,8 @@
         "weekly": 59,
         "marketCap": 5344116224,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 21332051,
+        "volRatio": 0.7,
         "history_daily": [
           2,
           2,
@@ -72629,6 +74097,8 @@
         "weekly": 82,
         "marketCap": 44520968192,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 17296380,
+        "volRatio": 0.7,
         "history_daily": [
           27,
           36,
@@ -72728,6 +74198,8 @@
         "weekly": 54,
         "marketCap": 40605339648,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 21175117,
+        "volRatio": 0.8,
         "history_daily": [
           15,
           21,
@@ -72827,6 +74299,8 @@
         "weekly": 84,
         "marketCap": 120196145152,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 25244912,
+        "volRatio": 3.9,
         "history_daily": [
           35,
           35,
@@ -72926,6 +74400,8 @@
         "weekly": 35,
         "marketCap": 50964836352,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3387413,
+        "volRatio": 0.9,
         "history_daily": [
           8,
           9,
@@ -73025,6 +74501,8 @@
         "weekly": 57,
         "marketCap": 157757702144,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5059250,
+        "volRatio": 0.7,
         "history_daily": [
           15,
           15,
@@ -73124,6 +74602,8 @@
         "weekly": 15,
         "marketCap": 15804684288,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 25748010,
+        "volRatio": 0.8,
         "history_daily": [
           1,
           6,
@@ -73223,6 +74703,8 @@
         "weekly": 29,
         "marketCap": 3664669952,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 23862106,
+        "volRatio": 0.6,
         "history_daily": [
           4,
           4,
@@ -73322,6 +74804,8 @@
         "weekly": 100,
         "marketCap": 157078421504,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 10942727,
+        "volRatio": 0.7,
         "history_daily": [
           76,
           70,
@@ -73421,6 +74905,8 @@
         "weekly": 30,
         "marketCap": 48819752960,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3815952,
+        "volRatio": 0.5,
         "history_daily": [
           2,
           1,
@@ -73520,6 +75006,8 @@
         "weekly": 55,
         "marketCap": 19798470656,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 198236777,
+        "volRatio": 3.7,
         "history_daily": [
           1,
           2,
@@ -73619,6 +75107,8 @@
         "weekly": 0,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 668256,
+        "volRatio": 1.1,
         "history_daily": [
           7,
           7,
@@ -73718,6 +75208,8 @@
         "weekly": 1,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 380562,
+        "volRatio": 0.3,
         "history_daily": [
           8,
           7,
@@ -73817,6 +75309,8 @@
         "weekly": 87,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 1857358,
+        "volRatio": 1.5,
         "history_daily": [
           59,
           42,
@@ -73916,6 +75410,8 @@
         "weekly": 38,
         "marketCap": 3405017856,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1149871,
+        "volRatio": 1.3,
         "history_daily": [
           6,
           7,
@@ -74015,6 +75511,8 @@
         "weekly": 40,
         "marketCap": 16590984192,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5072070,
+        "volRatio": 0.6,
         "history_daily": [
           6,
           5,
@@ -74114,6 +75612,8 @@
         "weekly": 7,
         "marketCap": 24958620,
         "capCategory": "Micro Cap (<$300M)",
+        "volume": 118312,
+        "volRatio": 0.4,
         "history_daily": [
           3,
           3,
@@ -74213,6 +75713,8 @@
         "weekly": 58,
         "marketCap": 1400133779456,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 43212673,
+        "volRatio": 0.6,
         "history_daily": [
           12,
           7,
@@ -74312,6 +75814,8 @@
         "weekly": 29,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 55296898,
+        "volRatio": 0.5,
         "history_daily": [
           13,
           8,
@@ -74411,6 +75915,8 @@
         "weekly": 10,
         "marketCap": 11599561728,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 20269691,
+        "volRatio": 1.2,
         "history_daily": [
           5,
           5,
@@ -74510,6 +76016,8 @@
         "weekly": 82,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 3922796,
+        "volRatio": 0.5,
         "history_daily": [
           87,
           91,
@@ -74609,6 +76117,8 @@
         "weekly": 28,
         "marketCap": 336710959104,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 7064010,
+        "volRatio": 0.8,
         "history_daily": [
           17,
           22,
@@ -74708,6 +76218,8 @@
         "weekly": 36,
         "marketCap": 2917157376,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 5344668,
+        "volRatio": 1.3,
         "history_daily": [
           8,
           7,
@@ -74807,6 +76319,8 @@
         "weekly": 84,
         "marketCap": 87344349184,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 9269715,
+        "volRatio": 1.0,
         "history_daily": [
           50,
           58,
@@ -74906,6 +76420,8 @@
         "weekly": null,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 150054,
+        "volRatio": 0.4,
         "history_daily": [
           30,
           30,
@@ -74963,6 +76479,8 @@
         "weekly": 28,
         "marketCap": 189610096,
         "capCategory": "Micro Cap (<$300M)",
+        "volume": 1361562,
+        "volRatio": 0.5,
         "history_daily": [
           7,
           7,
@@ -75062,6 +76580,8 @@
         "weekly": 79,
         "marketCap": 4094161408,
         "capCategory": "Mid Cap ($2B-$10B)",
+        "volume": 1826280,
+        "volRatio": 0.9,
         "history_daily": [
           42,
           42,
@@ -75161,6 +76681,8 @@
         "weekly": 8,
         "marketCap": 31470508032,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 3250696,
+        "volRatio": 0.6,
         "history_daily": [
           5,
           11,
@@ -75260,6 +76782,8 @@
         "weekly": 96,
         "marketCap": 1238919296,
         "capCategory": "Small Cap ($300M-$2B)",
+        "volume": 2243109,
+        "volRatio": 0.6,
         "history_daily": [
           18,
           33,
@@ -75359,6 +76883,8 @@
         "weekly": 58,
         "marketCap": 0,
         "capCategory": "Unknown",
+        "volume": 11832530,
+        "volRatio": 1.3,
         "history_daily": [
           28,
           29,
@@ -75458,6 +76984,8 @@
         "weekly": 88,
         "marketCap": 642895052800,
         "capCategory": "Mega Cap (>$200B)",
+        "volume": 14616787,
+        "volRatio": 0.7,
         "history_daily": [
           93,
           92,
@@ -75557,6 +77085,8 @@
         "weekly": 52,
         "marketCap": 15158206464,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 5239983,
+        "volRatio": 0.9,
         "history_daily": [
           14,
           14,
@@ -75656,6 +77186,8 @@
         "weekly": 74,
         "marketCap": 41374220288,
         "capCategory": "Large Cap ($10B-$200B)",
+        "volume": 4898961,
+        "volRatio": 0.9,
         "history_daily": [
           26,
           26,

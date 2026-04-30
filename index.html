@@ -476,6 +476,8 @@
               <th data-k="name"><span data-i18n="th.name">Name</span></th>
               <th data-k="sector"><span data-i18n="th.sector">Sector</span></th>
               <th data-k="capCategory"><span data-i18n="th.cap">Cap</span></th>
+              <th data-k="volume" class="num" style="text-align:right"><span data-i18n="th.volume">Volume</span></th>
+              <th data-k="volRatio" class="num" style="text-align:right"><span data-i18n="th.volRatio">Vol Ratio</span></th>
               <th data-k="weekly" class="num" style="text-align:right"><span data-i18n="tf.weekly">Weekly</span> <span class="arrow">▼</span></th>
               <th data-k="chg2w" class="num" style="text-align:right" title="Sum of weekly score changes over the past 2 weeks"><span style="font-size:11px; letter-spacing:.04em;">2W&thinsp;Δ</span></th>
               <th class="num history-col" style="text-align:right" title="Weekly score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20W</span></th>
@@ -585,6 +587,12 @@ function fmtTime(iso){
   } catch(_) { return iso; }
 }
 function fmtNum(n, d=2){ return Number(n).toLocaleString(undefined, {minimumFractionDigits:d, maximumFractionDigits:d}); }
+function fmtVol(n){
+  if (n >= 1e9) return (n/1e9).toFixed(2) + 'B';
+  if (n >= 1e6) return (n/1e6).toFixed(2) + 'M';
+  if (n >= 1e3) return (n/1e3).toFixed(1) + 'K';
+  return n;
+}
 function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
 
 function scoreColor(s){
@@ -687,9 +695,11 @@ const Overview = (() => {
         </div>
         <div class="stat-grid">
           <div class="stat"><div class="k">${t('card.price')}</div><div class="v">${fmtNum(ix.price||0,2)}</div></div>
+          <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
+          <div class="stat"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
+          <div class="stat"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
           <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily}</div></div>
           <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</div></div>
-          <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
         </div>
       </div>
       <div class="card-history history-col">
@@ -715,6 +725,10 @@ const Overview = (() => {
       <div style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
         <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
+        <span>${t('card.volume')} <span style="color:var(--text-soft); font-family:var(--mono); font-weight:600;">${fmtVol(s.volume||0)}</span></span>
+        <span>${t('card.vol_ratio')} <span style="color:${(s.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text-soft)'}; font-family:var(--mono); font-weight:700;">${s.volRatio ? s.volRatio.toFixed(2) : '—'}</span></span>
       </div>
       <div class="card-history history-col">
         <div class="heat-row"><span class="hl">W</span>${heatStrip(s.history_weekly||[])}</div>
@@ -785,6 +799,8 @@ const Overview = (() => {
           <td class="name">${r.name}</td>
           <td class="name" style="color:var(--text-dim)">${r.sector||''}</td>
           <td class="name" style="color:var(--text-dim); font-size:12px;" title="${r.capCategory||''}">${r.capCategory && r.capCategory !== 'Unknown' ? r.capCategory : '—'}</td>
+          <td class="num" style="color:var(--text-soft)">${fmtVol(r.volume||0)}</td>
+          <td class="num" style="font-weight:600; color:${(r.volRatio||0) > 2 ? 'var(--score-100)' : (r.volRatio||0) > 1.5 ? 'var(--score-75)' : 'var(--text-soft)'}">${r.volRatio ? r.volRatio.toFixed(2) : '—'}</td>
           <td class="num">
             <div class="score-cell">
               <div class="score-bar"><div style="width:${wsc}%; background:${wcol}"></div></div>

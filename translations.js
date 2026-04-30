@@ -82,6 +82,8 @@ var TRANSLATIONS = {
     'th.name':   'Name',
     'th.sector': 'Sector',
     'th.cap':    'Cap',
+    'th.volume': 'Volume',
+    'th.volRatio': 'Vol Ratio',
     'th.score':  'Score',
     'th.price':  'Price',
     'th.chg':    'Chg %',
@@ -100,6 +102,8 @@ var TRANSLATIONS = {
     'card.trend':  'Trend',
     'card.daily':  'Daily',
     'card.weekly': 'Weekly',
+    'card.volume': 'Volume',
+    'card.vol_ratio': 'Vol Ratio',
 
     /* ---------- breadth tab ---------- */
     'breadth.title':    'S&P 500 Market Breadth',
@@ -224,6 +228,8 @@ var TRANSLATIONS = {
     'th.name':   '名称',
     'th.sector': '板块',
     'th.cap':    '市值级别',
+    'th.volume': '成交量',
+    'th.volRatio': '量比',
     'th.score':  '评分',
     'th.price':  '价格',
     'th.chg':    '涨跌%',
@@ -242,6 +248,8 @@ var TRANSLATIONS = {
     'card.trend':  '趋势',
     'card.daily':  '日线',
     'card.weekly': '周线',
+    'card.volume': '成交量',
+    'card.vol_ratio': '量比',
 
     /* ---------- 市场宽度标签页 ---------- */
     'breadth.title':    '标普500市场宽度',
