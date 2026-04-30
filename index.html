@@ -580,11 +580,7 @@
 <!-- Visitor analytics: GoatCounter — https://musiclicn.goatcounter.com -->
 <script data-goatcounter="https://musiclicn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
-<!-- Chart.js only used for the Breadth tab -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
-<!-- Markdown renderer used for the Articles tab -->
-<script src="https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js"></script>
+<!-- Chart.js (Breadth tab) and marked (Articles tab) are lazy-loaded by loadScript() below -->
 <script src="translations.js?v=2"></script>
 <script src="articles.js?v=2"></script>
 
@@ -628,6 +624,35 @@ function fmtVol(n){
   return n;
 }
 function css(v){ return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+
+// Inject a <script src> on first call; subsequent calls return the same promise.
+const _scriptCache = new Map();
+function loadScript(src){
+  if (_scriptCache.has(src)) return _scriptCache.get(src);
+  const p = new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = src; s.async = true;
+    s.onload = () => resolve();
+    s.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.head.appendChild(s);
+  });
+  _scriptCache.set(src, p);
+  return p;
+}
+
+// Poll-then-fetch: hit the tiny *.updated_at.txt file first, only re-download
+// the heavy JSON when the timestamp actually changed. Both requests rely on
+// regular browser/CDN caching — no cache-busting query string.
+async function fetchIfChanged(jsonUrl, stampUrl, lastStamp){
+  const sres = await fetch(stampUrl);
+  if (!sres.ok) throw new Error(`HTTP ${sres.status} on ${stampUrl}`);
+  const stamp = (await sres.text()).trim();
+  if (stamp && stamp === lastStamp) return { unchanged: true, stamp };
+  const jres = await fetch(jsonUrl);
+  if (!jres.ok) throw new Error(`HTTP ${jres.status} on ${jsonUrl}`);
+  const data = await jres.json();
+  return { unchanged: false, stamp: stamp || data.updated_at || '', data };
+}
 
 function scoreColor(s){
   const stops = [
@@ -686,6 +711,7 @@ function heatStrip(arr, total=20){
    ============================================================================ */
 const Overview = (() => {
   const URL_ = 'scores.json';
+  const STAMP_URL = 'scores.updated_at.txt';
   const POLL_MS = 10000;
     const state = {
       tf: 'daily', idx: 'ndx', sortKey: 'weekly', sortDir: 'desc',
@@ -876,16 +902,13 @@ const Overview = (() => {
   async function load(silent=false){
     if (!silent && Router.active() === 'overview') setStatus('loading', t('status.refreshing'));
     try {
-      const res = await fetch(`${URL_}?v=${Date.now()}`, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = await res.json();
-
-      if (json.updated_at && json.updated_at === state.lastUpdated && state.data){
+      const r = await fetchIfChanged(URL_, STAMP_URL, state.lastUpdated);
+      if (r.unchanged && state.data){
         if (Router.active() === 'overview') setStatus('live', fmtTime(state.lastUpdated));
         hideError(); return;
       }
-      state.data = json;
-      state.lastUpdated = json.updated_at || new Date().toISOString();
+      state.data = r.data;
+      state.lastUpdated = r.stamp || r.data.updated_at || new Date().toISOString();
       hideError();
       paint();
       if (Router.active() === 'overview') setStatus('live', fmtTime(state.lastUpdated));
@@ -933,11 +956,20 @@ const Overview = (() => {
    ============================================================================ */
 const Breadth = (() => {
   const URL_ = 'breadth.json';
+  const STAMP_URL = 'breadth.updated_at.txt';
   const POLL_MS = 30000;
   const state = {
     range: '6m', data: null, lastUpdated: null,
     visible: [true, true, true], chart: null, chartInited: false,
   };
+
+  let libPromise = null;
+  function ensureLib(){
+    if (libPromise) return libPromise;
+    libPromise = loadScript('https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js')
+      .then(() => loadScript('https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js'));
+    return libPromise;
+  }
 
   function filterByRange(series, range){
     if (!series.length) return series;
@@ -1014,7 +1046,8 @@ const Breadth = (() => {
     state.chartInited = true;
   }
 
-  function paint(){
+  async function paint(){
+    await ensureLib();
     if (!state.chartInited) buildChart();
     if (!state.data) return;
     const slice = filterByRange(state.data.series, state.range);
@@ -1051,17 +1084,14 @@ const Breadth = (() => {
   async function load(silent=false){
     if (!silent && Router.active() === 'breadth') setStatus('loading', t('status.refreshing'));
     try {
-      const res = await fetch(`${URL_}?v=${Date.now()}`, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const json = await res.json();
-      if (!Array.isArray(json.series)) throw new Error('"series" array missing');
-
-      if (json.updated_at && json.updated_at === state.lastUpdated && state.data){
+      const r = await fetchIfChanged(URL_, STAMP_URL, state.lastUpdated);
+      if (r.unchanged && state.data){
         if (Router.active() === 'breadth') setStatus('live', fmtTime(state.lastUpdated));
         hideError(); return;
       }
-      state.data = json;
-      state.lastUpdated = json.updated_at || new Date().toISOString();
+      if (!Array.isArray(r.data.series)) throw new Error('"series" array missing');
+      state.data = r.data;
+      state.lastUpdated = r.stamp || r.data.updated_at || new Date().toISOString();
       document.getElementById('breadth-updated-at').textContent = fmtTime(state.lastUpdated);
       hideError();
       if (Router.active() === 'breadth') paint();
@@ -1096,6 +1126,8 @@ const Breadth = (() => {
     onShow(){ if (state.data) paint(); },     // lazy paint when tab becomes visible
     repaint(){
       if (!state.data) return;
+      // Don't trigger Chart.js download just to repaint a hidden tab.
+      if (!state.chartInited && Router.active() !== 'breadth') return;
       if (state.chartInited){
         state.chart.data.datasets[0].label = t('chart.sp500_label');
         state.chart.data.datasets[1].label = t('chart.ma50_label');
@@ -1136,17 +1168,24 @@ const Breadth = (() => {
 const Articles = (() => {
   const state = { expanded: ARTICLES.length ? ARTICLES[0].id : null };
 
-  marked.use({ gfm: true, breaks: true });
+  let markedPromise = null;
+  function ensureMarked(){
+    if (markedPromise) return markedPromise;
+    markedPromise = loadScript('https://cdn.jsdelivr.net/npm/marked@9.1.6/marked.min.js')
+      .then(() => marked.use({ gfm: true, breaks: true }));
+    return markedPromise;
+  }
 
   function fmtDate(d){
     try { return new Date(d + 'T00:00:00').toLocaleDateString(undefined, { year:'numeric', month:'long', day:'numeric' }); }
     catch(_){ return d; }
   }
 
-  function render(){
+  async function render(){
     const wrap = document.getElementById('articles-list');
     if (!wrap) return;
     document.getElementById('articles-pill').textContent = ARTICLES.length;
+    await ensureMarked();
     wrap.innerHTML = ARTICLES.map(a => {
       const open = state.expanded === a.id;
       const title = typeof a.title === 'object' ? (a.title[currentLang] || a.title['zh']) : a.title;
@@ -1180,7 +1219,12 @@ const Articles = (() => {
   }
 
   return {
-    init(){ bind(); render(); },
+    init(){
+      bind();
+      // Set the pill count immediately; defer the heavy render (and the marked.js
+      // download) until the user actually opens the Articles tab.
+      document.getElementById('articles-pill').textContent = ARTICLES.length;
+    },
     repaint(){ render(); },
   };
 })();
