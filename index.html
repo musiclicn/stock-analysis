@@ -67,10 +67,11 @@
   .toolbar { display:flex; gap:10px; align-items:center; }
 
   .status { color:var(--text-dim); font-size:12px; margin-right:6px; display:flex; align-items:center; gap:6px; }
-  .status .dot { width:8px; height:8px; border-radius:50%; display:inline-block; }
-  .status.live .dot    { background:#22c55e; box-shadow: 0 0 10px #22c55e; }
-  .status.loading .dot { background:#6ea8ff; box-shadow: 0 0 10px #6ea8ff; animation: pulse 1s ease-in-out infinite; }
-  .status.error .dot   { background:#ef4444; box-shadow: 0 0 10px #ef4444; }
+  .status .dot { width:7px; height:7px; border-radius:50%; display:none; flex-shrink:0; }
+  .status.loading .dot { display:inline-block; background:#6ea8ff; box-shadow: 0 0 8px #6ea8ff; animation: pulse 1s ease-in-out infinite; }
+  .status.error   .dot { display:inline-block; background:#ef4444; box-shadow: 0 0 8px #ef4444; }
+  .status .status-label { color: var(--text-dim); }
+  .status .status-time  { font-family: var(--mono); color: var(--text-soft); letter-spacing: .02em; }
   @keyframes pulse { 0%,100% {opacity:1;} 50% {opacity:.35;} }
 
   .btn {
@@ -564,7 +565,12 @@
 function setStatus(kind, text){
   const el = document.getElementById('status');
   el.className = 'status ' + kind;
-  document.getElementById('status-text').textContent = text;
+  const textEl = document.getElementById('status-text');
+  if (kind === 'live') {
+    textEl.innerHTML = `<span class="status-label">Updated at</span>&nbsp;<span class="status-time">${text}</span>`;
+  } else {
+    textEl.textContent = text;
+  }
 }
 function showError(msg){
   document.getElementById('error-msg').textContent = ' ' + msg;
@@ -825,14 +831,14 @@ const Overview = (() => {
       const json = await res.json();
 
       if (json.updated_at && json.updated_at === state.lastUpdated && state.data){
-        if (Router.active() === 'overview') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
+        if (Router.active() === 'overview') setStatus('live', fmtTime(state.lastUpdated));
         hideError(); return;
       }
       state.data = json;
       state.lastUpdated = json.updated_at || new Date().toISOString();
       hideError();
       paint();
-      if (Router.active() === 'overview') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
+      if (Router.active() === 'overview') setStatus('live', fmtTime(state.lastUpdated));
     } catch(err){
       if (Router.active() === 'overview'){ setStatus('error', t('status.failed')); showError(err.message || String(err)); }
     }
@@ -1001,7 +1007,7 @@ const Breadth = (() => {
       if (!Array.isArray(json.series)) throw new Error('"series" array missing');
 
       if (json.updated_at && json.updated_at === state.lastUpdated && state.data){
-        if (Router.active() === 'breadth') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
+        if (Router.active() === 'breadth') setStatus('live', fmtTime(state.lastUpdated));
         hideError(); return;
       }
       state.data = json;
@@ -1009,7 +1015,7 @@ const Breadth = (() => {
       document.getElementById('breadth-updated-at').textContent = fmtTime(state.lastUpdated);
       hideError();
       if (Router.active() === 'breadth') paint();
-      if (Router.active() === 'breadth') setStatus('live', `${t('status.live')} · ${fmtTime(state.lastUpdated)}`);
+      if (Router.active() === 'breadth') setStatus('live', fmtTime(state.lastUpdated));
     } catch(err){
       if (Router.active() === 'breadth'){ setStatus('error', t('status.failed')); showError(err.message || String(err)); }
     }
@@ -1170,7 +1176,7 @@ const Router = (() => {
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
     document.querySelectorAll('.view').forEach(v => v.classList.toggle('visible', v.dataset.tab === name));
     const upd = name === 'overview' ? Overview.lastUpdated() : Breadth.lastUpdated();
-    if (upd) setStatus('live', `${t('status.live')} · ${fmtTime(upd)}`);
+    if (upd) setStatus('live', fmtTime(upd));
     if (name === 'breadth') Breadth.onShow();
     if (name === 'articles') Articles.repaint();
     document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
@@ -1249,7 +1255,7 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
   Articles.repaint();
   const name = Router.active();
   const upd = name === 'overview' ? Overview.lastUpdated() : Breadth.lastUpdated();
-  if (upd) setStatus('live', `${t('status.live')} · ${fmtTime(upd)}`);
+  if (upd) setStatus('live', fmtTime(upd));
   document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
 });
 </script>
