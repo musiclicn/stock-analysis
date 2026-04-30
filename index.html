@@ -608,6 +608,14 @@ function trendLabel(s){
   if (s >= 31) return t('trend.bearish');
   return t('trend.strong_bearish');
 }
+function matchPriority(r, q){
+  const sym  = (r.sym  || '').toLowerCase();
+  const name = (r.name || '').toLowerCase();
+  if (sym.startsWith(q))  return 0;
+  if (name.startsWith(q)) return 1;
+  if (sym.includes(q))    return 2;
+  return 3;
+}
 function calc2wChg(r){
   const hw = r.history_weekly || [];
   const w  = r.weekly ?? 0;
@@ -748,7 +756,9 @@ const Overview = (() => {
 
     const ranked = sorted.map((r, i) => ({ ...r, _rank: i + 1 }));
     const filtered = q
-      ? ranked.filter(r => (r.sym||'').toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q))
+      ? ranked
+          .filter(r => (r.sym||'').toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q))
+          .sort((a, b) => matchPriority(a, q) - matchPriority(b, q))
       : ranked;
 
     const body = document.getElementById('stocks-body');
