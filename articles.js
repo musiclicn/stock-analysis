@@ -6,10 +6,16 @@ var ARTICLES = [
   {
     id: '20260429',
     date: '2026-04-29',
-    lang: 'zh',
-    title: '核心资产赛道解析与走势预测报告',
-    summary: '资金集中的四大核心赛道深度解析——半导体AI算力、网络安全与云、电力基建、大消费；附未来2-3个月三大情景概率推演及华尔街操盘建议。',
-    content: `
+    title: {
+      zh: '核心资产赛道解析与走势预测报告',
+      en: 'Core Asset Sectors Analysis & Trend Forecast'
+    },
+    summary: {
+      zh: '资金集中的四大核心赛道深度解析——半导体AI算力、网络安全与云、电力基建、大消费；附未来2-3个月三大情景概率推演及华尔街操盘建议。',
+      en: 'In-depth analysis of the four core sectors with concentrated capital: Semiconductors & AI Hardware, Cybersecurity & Cloud, Power Infrastructure, and Broad Consumption; accompanied by three scenario probability projections for the next 2-3 months and Wall Street trading advice.'
+    },
+    content: {
+      zh: `
 
 ## 一、核心赛道与热点解析
 
@@ -105,14 +111,117 @@ var ARTICLES = [
 - **关注软件端滞涨股：** 如果坚信AI逻辑，可以将注意力从硬件转移到部分估值已经回调到位、具备实质性AI商业化落地的网络安全与SaaS龙头（如CRWD, DDOG）上进行分批建仓。
 
 > ⚠️ 以上为信息分析，不构成投资建议。市场存在多重不确定性，请结合自身风险承受能力做决策。`,
+      en: `
+
+## 1. Core Sectors & Hotspots Analysis
+
+> Data as of April 29, 2026
+
+---
+
+### 1.1 The Primary Core Sector: Semiconductors & AI Hardware (XLK)
+
+**Key Tickers:** NVDA, AMD, ARM, AVGO, ASML, KLAC, TXN, MU, WDC
+
+**Current Hotspots:** AI model training and inference demands continue to drive data center construction; memory cycle recovery (MU, WDC); edge AI and custom chips (ASML, ARM, AVGO).
+
+**Market Characteristics:** High-valuation pullbacks and profit-taking. Significant single-day drops (e.g., ARM -7.98%, SNDK -6.34%, KLAC -4.79%, AMD -3.41%) indicate the semiconductor sector is undergoing a clear "valuation kill" or capital rotation. AI hardware stocks with massive prior gains are facing liquidity pressure.
+
+---
+
+### 1.2 Strong Demand Sector: Cybersecurity, Cloud & SaaS (XLK/XLC)
+
+**Key Tickers:** CRWD, FTNT, DDOG, CDNS, META, GOOGL, AMZN
+
+**Current Hotspots:** Marginal recovery in enterprise IT spending; commercialization of Generative AI in software (Copilot, ad algorithm optimization); frequent cybersecurity threats driving security budget growth (CRWD, FTNT).
+
+**Market Characteristics:** Performance is relatively divergent. Mega-caps (GOOGL, AMZN, META) have seen smaller declines, showing some defensive traits, while high-Beta SaaS software is also facing correction pressure.
+
+---
+
+### 1.3 Hidden AI Mainline: Power Infrastructure & Traditional Energy (XLU/XLE)
+
+**Key Tickers:** CEG, AEP, EXC, XEL, FANG, BKR
+
+**Current Hotspots:** "The end of AI is electricity." The massive power demand from data centers has directly ignited the utilities (especially nuclear power like CEG) and grid infrastructure sectors.
+
+**Market Characteristics:** Dual attributes of safe haven and defense. Amid the broad tech sell-off, utility stocks like AEP (+0.38%) and EXC (+0.97%) closed green against the trend, showing a clear safe-haven effect and fundamental support.
+
+---
+
+### 1.4 Resilient Sector: Broad Consumption & Travel (XLY/XLP)
+
+**Key Tickers:** WMT, COST, ROST, SBUX, ABNB, MAR, TSLA
+
+**Current Hotspots:** Consumer spending downgrades vs. the resilience of consumer staples (WMT, COST performing steadily); normalization of service/travel demand (ABNB, MAR); EV price wars and demand slowdown (TSLA remains weak).
+
+**Market Characteristics:** Showing typical "lipstick effect" and defensive characteristics. Hypermarkets like Walmart (WMT) and Costco (COST) are relatively resilient, while consumer discretionary is underperforming.
+
+---
+
+## 2. Trend Probability Analysis for the Next 2-3 Months
+
+Based on current signs of capital rotating from high-flying tech stocks to defensive and low-valuation sectors, the probability projections are as follows:
+
+### Scenario 1: Tech Stocks Consolidate, Capital Rotates (Probability: 60% — Baseline)
+
+**Logic:** Since semiconductors and AI hardware sectors have overdrawn too much expectation previously, if the next 1-2 earnings seasons don't show significantly better-than-expected earnings blowouts (especially guidance from NVDA, AMD), they will enter a period of valuation digestion through sideways trading or slow decline.
+
+| Sector | Trend Forecast |
+|------|---------|
+| Semiconductors/AI Hardware (XLK) | Seeking a bottom through volatility, then finding support at key technical levels, showing broad consolidation |
+| Utilities/Energy (XLU/XLE) | Steadily climbing as institutional capital continues to allocate to "AI Power" logic tickers |
+| Consumer Staples (XLP) | Slowly climbing, acting as a stabilizer for the broader market |
+
+### Scenario 2: Macro Liquidity Warms Up, AI Mainline Resurrects (Probability: 25% — Optimistic)
+
+**Logic:** The macro level releases clear positive news (inflation cools more than expected, Fed signals stronger easing), risk-free rates decline, reigniting market risk appetite for high-growth stocks.
+
+| Sector | Trend Forecast |
+|------|---------|
+| Semiconductors/AI Hardware (XLK) | "V-shaped" rebound after short-term plunge; NVDA, AVGO, ARM, etc. hit new highs again |
+| Software/Cloud Services (XLC) | Following the hardware breakout, experiencing valuation repair |
+| Traditional Sectors | Capital drained again, underperforming the broader indices |
+
+### Scenario 3: Systemic Recession Trade Brews (Probability: 15% — Pessimistic)
+
+**Logic:** Economic data deteriorates beyond expectations, unemployment spikes, and the market shifts from a "soft landing" to a "hard landing" recession expectation. At this time, both valuations and earnings (EPS) will be slashed.
+
+| Sector | Trend Forecast |
+|------|---------|
+| Pro-cyclical Sectors (Tech, Industrials, Discretionary) | Indiscriminate sell-off, widening declines |
+| Defensive Sectors | Only Gold, Core Pharma (AMGN, GILD), and extremely defensive Utilities remain green |
+
+---
+
+## 3. Wall Street Trading Advice
+
+Based on the highest probability scenario (capital rotation and valuation digestion), the trading advice for the next 2-3 months is:
+
+- **Lower Beta, Increase Alpha:** Temporarily avoid pure hardware compute stocks with extreme recent volatility (like ARM, KLAC, AMAT), and do not catch falling knives blindly. Wait for their earnings seasons to provide clear H2 guidance before making right-side trades.
+
+- **Allocate to "Pick-and-Shovel Providers to the AI Pick-and-Shovel Providers":** Focus on and buy dips in power and grid equipment stocks benefiting from AI infrastructure (like CEG, AEP, EXC). This logic combines growth and defense, making it the most certain direction for institutional consensus right now.
+
+- **Defensive Base Position:** Use consumer staples (WMT, COST) and high-quality dividend stocks as the portfolio's ballast to smooth out potentially exacerbated broader market volatility over the next 2-3 months.
+
+- **Watch Stagnant Software Stocks:** If you firmly believe in the AI logic, you can shift attention from hardware to cybersecurity and SaaS leaders (like CRWD, DDOG) that have already corrected their valuations and possess substantial AI commercialization, building positions in batches.
+
+> ⚠️ The above is informational analysis and does not constitute investment advice. The market carries multiple uncertainties; please make decisions based on your own risk tolerance.`
+    }
   },
   {
     id: '20260423',
     date: '2026-04-23',
-    lang: 'zh',
-    title: '当前美股走势最关键的三大驱动因素',
-    summary: '伊朗战争与油价、美联储领导层更迭、企业盈利与AI资本开支——深度解析当前美股三大关键驱动因素及其短中长期影响。',
-    content: `
+    title: {
+      zh: '当前美股走势最关键的三大驱动因素',
+      en: 'The Top Three Driving Factors of the Current U.S. Stock Market'
+    },
+    summary: {
+      zh: '伊朗战争与油价、美联储领导层更迭、企业盈利与AI资本开支——深度解析当前美股三大关键驱动因素及其短中长期影响。',
+      en: 'Iran War and Oil Prices, Federal Reserve Leadership Changes, Corporate Earnings and AI Capital Expenditures—An in-depth analysis of the top three key driving factors in the U.S. stock market and their short, medium, and long-term impacts.'
+    },
+    content: {
+      zh: `
 
 ## 当前美股走势最关键的三大驱动因素
 
@@ -180,5 +289,74 @@ var ARTICLES = [
 **核心逻辑**：当前市场是"优秀的基本面 + 地缘政治风险溢价"的博弈。短期内，伊朗停火的每一条新闻都会主导日内波动；中长期看，Warsh 就任后的货币政策走向和AI资本开支能否持续转化为盈利增长，才是真正决定未来12-18个月走势的关键变量。
 
 > ⚠️ 以上为信息分析，不构成投资建议。市场存在多重不确定性，请结合自身风险承受能力做决策。`,
-  },
+      en: `
+
+## The Top Three Driving Factors of the Current U.S. Stock Market
+
+> Data as of April 23, 2026: S&P 500 ~7,137; Nasdaq hits all-time high
+
+---
+
+### Factor 1: Iran War and Oil Prices 🛢️
+**— The biggest short-term volatility source currently**
+
+**Current Status**: Oil prices surged from pre-war ~$70/bbl to a peak of $119, currently oscillating around $100. The US and Iran have entered a ceasefire phase, and the transit conditions in the Strait of Hormuz have become the core variable for global markets.
+
+**Short-Term Impact (1-8 weeks)**:
+- The market is highly sensitive to the ceasefire. Every opening or closing of the Strait by Iran triggers severe two-way volatility in stocks and oil prices.
+- After the US seized Iranian ships, oil prices spiked 5.4% in a single day, and the stock market subsequently retreated, fully illustrating the current market's extreme sensitivity to geopolitical news.
+- **Trading Logic**: Ceasefire continues → Oil prices fall → Inflation expectations cool → Stocks rise; Conversely, severe declines.
+
+**Medium-to-Long-Term Impact (3-12 months)**:
+- Historically, oil price shocks often trigger economic recessions and bear markets, but currently, corporate earnings expectations are accelerating, partially hedging the pressure of valuation compression.
+- If the war becomes prolonged, high oil prices will continuously feed inflation, squeezing the Fed's room for rate cuts, and systematically suppressing valuations.
+- Energy stocks are structural beneficiaries, while tech and consumer stocks are the main bearers of pressure.
+
+---
+
+### Factor 2: Federal Reserve Leadership Changes and Interest Rate Paths 🏦
+**— The biggest medium-to-long-term uncertainty**
+
+**Current Status**: Jerome Powell's term ends on May 15. Trump has nominated Kevin Warsh as his successor, whose confirmation hearing was just held on April 21.
+
+**Short-Term Impact (1-8 weeks)**:
+- Senator Thom Tillis, citing a DOJ investigation into Powell, threatened to block Warsh's nomination, adding variables to the succession timeline; if no one takes over by then, Powell will continue to govern as "Acting Chair."
+- Next week's FOMC meeting is expected to keep rates unchanged, with no surprises in the short term.
+
+**Medium-to-Long-Term Impact (3-18 months)**:
+- This is the most complex factor. Warsh is seen as a "hawk" on one hand, but on the other, he believes AI-driven productivity gains can provide a basis for lower rates. There's an inherent contradiction between the two, and the market hasn't fully priced this in.
+- If inflation rebounds due to rising oil prices, Warsh will face pressure to hike rates—which runs contrary to the intentions of Trump who nominated him, and the potential political conflict will become a tail risk for the market.
+- The Fed Chair confirmation process itself in H2 could bring policy uncertainty. Historically, central bank leadership turbulence often triggers bond and FX market volatility, which then transmits to the stock market.
+
+---
+
+### Factor 3: Corporate Earnings + AI CapEx Cycle 💰
+**— The strongest structural support in the medium-to-long term**
+
+**Current Status**: About 15% of S&P 500 constituents have currently reported Q1 results, with nearly 90% beating analyst expectations; if the remaining companies merely meet expectations, the index's YoY EPS growth will reach 13%.
+
+**Short-Term Impact (1-8 weeks)**:
+- This week enters the peak of earnings season (Meta, Microsoft, Apple, Amazon, and other big tech progressively reporting). Analysts expect 14%-16% EPS growth for the full year of 2026, setting an extremely high expectation threshold. Once mega-cap earnings or guidance miss expectations, ultra-high valuations will amplify downward volatility.
+- Alphabet rose 2% in a single day after unveiling new AI chips and partnerships, driving the Nasdaq to a new all-time high, fully indicating the tech giants' AI narrative remains the core of short-term sentiment.
+
+**Medium-to-Long-Term Impact (1-3 years)**:
+- S&P 500 companies' CapEx as a percentage of revenue continues to hit multi-decade highs. Aggressive reinvestment by enterprises in future growth is the most important leading indicator supporting earnings sustainability.
+- For the 493 stocks in the S&P 500 excluding the "Magnificent Seven," analysts expect earnings growth to double compared to 2025, implying the bull market is expected to broaden to more sectors.
+- However, valuation models show that U.S. equities are significantly expensive relative to the past decade's average earnings, and annualized returns over the next 10 years may drop from the historical 15% to single digits.
+
+---
+
+## Comprehensive Judgment
+
+| Factor | Short-Term (1-8 weeks) | Medium-to-Long-Term (3+ months) |
+|------|------------|--------------|
+| Iran War/Oil Prices | **Biggest Risk Source**, severe two-way volatility | If prolonged, systematically suppresses valuations |
+| Fed Leadership Change | Limited impact (no move this meeting) | **Biggest Uncertainty**, blurry policy path |
+| Corporate Earnings/AI | **Strongest Support**, earnings beat expectations | Long-term structural bull market basis, but valuations are rich |
+
+**Core Logic**: The current market is a tug-of-war between "excellent fundamentals + geopolitical risk premium." In the short term, every piece of news about the Iran ceasefire will dictate intraday volatility; looking medium-to-long term, the monetary policy direction after Warsh takes office and whether AI capital expenditures can continuously translate into earnings growth are the true key variables determining the trend over the next 12-18 months.
+
+> ⚠️ The above is informational analysis and does not constitute investment advice. The market carries multiple uncertainties; please make decisions based on your own risk tolerance.`
+    }
+  }
 ];

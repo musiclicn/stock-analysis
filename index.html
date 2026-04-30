@@ -553,8 +553,16 @@
       <!-- SEO / GEO Content Fallback for AI Crawlers -->
       <noscript>
         <article>
+          <h3>Core Asset Sectors Analysis & Trend Forecast (2026-04-29)</h3>
+          <p>In-depth analysis of the four core sectors with concentrated capital: Semiconductors & AI Hardware, Cybersecurity & Cloud, Power Infrastructure, and Broad Consumption; accompanied by three scenario probability projections for the next 2-3 months and Wall Street trading advice.</p>
+        </article>
+        <article>
           <h3>核心资产赛道解析与走势预测报告 (2026-04-29)</h3>
           <p>资金集中的四大核心赛道深度解析——半导体AI算力、网络安全与云、电力基建、大消费；附未来2-3个月三大情景概率推演及华尔街操盘建议。</p>
+        </article>
+        <article>
+          <h3>The Top Three Driving Factors of the Current U.S. Stock Market (2026-04-23)</h3>
+          <p>Iran War and Oil Prices, Federal Reserve Leadership Changes, Corporate Earnings and AI Capital Expenditures—An in-depth analysis of the top three key driving factors in the U.S. stock market and their short, medium, and long-term impacts.</p>
         </article>
         <article>
           <h3>当前美股走势最关键的三大驱动因素 (2026-04-23)</h3>
@@ -1141,18 +1149,21 @@ const Articles = (() => {
     document.getElementById('articles-pill').textContent = ARTICLES.length;
     wrap.innerHTML = ARTICLES.map(a => {
       const open = state.expanded === a.id;
+      const title = typeof a.title === 'object' ? (a.title[currentLang] || a.title['zh']) : a.title;
+      const summary = typeof a.summary === 'object' ? (a.summary[currentLang] || a.summary['zh']) : a.summary;
+      const content = typeof a.content === 'object' ? (a.content[currentLang] || a.content['zh']) : a.content;
       return `
         <div class="article-card" data-aid="${a.id}">
           <div class="article-header">
             <div class="article-meta">
               <span class="article-date">${fmtDate(a.date)}</span>
-              <span class="lang-badge">${a.lang.toUpperCase()}</span>
+              <span class="lang-badge">${currentLang.toUpperCase()}</span>
             </div>
-            <div class="article-title">${a.title}</div>
-            <div class="article-summary">${a.summary}</div>
+            <div class="article-title">${title}</div>
+            <div class="article-summary">${summary}</div>
             <div class="article-expand-hint">${open ? t('articles.collapse') : t('articles.expand')}</div>
           </div>
-          ${open ? `<div class="article-body">${marked.parse(a.content)}</div>` : ''}
+          ${open ? `<div class="article-body">${marked.parse(content)}</div>` : ''}
         </div>`;
     }).join('');
   }
