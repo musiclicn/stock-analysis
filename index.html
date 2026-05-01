@@ -670,12 +670,26 @@
 
 // ---------------------------- shared utilities ----------------------------
 
+/** Robust HTML escape to prevent XSS. */
+function esc(str) {
+  if (typeof str !== 'string') return str;
+  return str.replace(/[&<>"']/g, function(m) {
+    return {
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[m];
+  });
+}
+
 function setStatus(kind, text){
   const el = document.getElementById('status');
   el.className = 'status ' + kind;
   const textEl = document.getElementById('status-text');
   if (kind === 'live') {
-    textEl.innerHTML = `<span class="status-label">Updated at</span>&nbsp;<span class="status-time">${text}</span>`;
+    textEl.innerHTML = `<span class="status-label">Updated at</span>&nbsp;<span class="status-time">${esc(text)}</span>`;
   } else {
     textEl.textContent = text;
   }
@@ -777,7 +791,7 @@ function heatStrip(arr, total=20){
   for (let i = 0; i < pad; i++)
     cells.push('<span class="heat-cell empty" title="—"></span>');
   arr.forEach(s =>
-    cells.push(`<span class="heat-cell" style="background:${scoreColor(s)}" title="${s}"></span>`)
+    cells.push(`<span class="heat-cell" style="background:${scoreColor(s)}" title="${esc(s)}"></span>`)
   );
   return `<div class="heat-strip">${cells.join('')}</div>`;
 }
@@ -805,8 +819,8 @@ const Overview = (() => {
     <div class="index-card">
       <div class="index-head">
         <div>
-          <div class="index-title">${ix.name}</div>
-          <div class="index-symbol">${ix.sym}</div>
+          <div class="index-title">${esc(ix.name)}</div>
+          <div class="index-symbol">${esc(ix.sym)}</div>
         </div>
         <div style="text-align:right;">
           <div class="index-title">${state.tf === 'daily' ? t('card.daily_score') : t('card.weekly_score')}</div>
@@ -849,11 +863,11 @@ const Overview = (() => {
     const sc = s[state.tf] ?? 0;
     const col = scoreColor(sc);
     return `
-    <div class="sector-card" title="${s.name}">
+    <div class="sector-card" title="${esc(s.name)}">
       <div class="row1">
         <div>
-          <div class="tkr">${s.sym}</div>
-          <div class="name">${s.name}</div>
+          <div class="tkr">${esc(s.sym)}</div>
+          <div class="name">${esc(s.name)}</div>
         </div>
         <div class="score-pill" style="background:${col}">${sc}</div>
       </div>
@@ -931,10 +945,10 @@ const Overview = (() => {
       return `
         <tr>
           <td class="rank">${r._rank}</td>
-          <td class="sym">${r.sym}</td>
-          <td class="name">${r.name}</td>
-          <td class="name" style="color:var(--text-dim)">${r.sector||''}</td>
-          <td class="name" style="color:var(--text-dim); font-size:12px;" title="${r.capCategory||''}">${r.capCategory && r.capCategory !== 'Unknown' ? r.capCategory : '—'}</td>
+          <td class="sym">${esc(r.sym)}</td>
+          <td class="name">${esc(r.name)}</td>
+          <td class="name" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
+          <td class="name" style="color:var(--text-dim); font-size:12px;" title="${esc(r.capCategory||'')}">${r.capCategory && r.capCategory !== 'Unknown' ? esc(r.capCategory) : '—'}</td>
           <td class="num" style="color:var(--text-soft)">${fmtVol(r.volume||0)}</td>
           <td class="num" style="font-weight:600; color:${(r.volRatio||0) > 2 ? 'var(--score-100)' : (r.volRatio||0) > 1.5 ? 'var(--score-75)' : 'var(--text-soft)'}">${r.volRatio ? r.volRatio.toFixed(2) : '—'}</td>
           <td class="num">
@@ -1163,8 +1177,8 @@ const Breadth = (() => {
         <div class="sub">${sub || ''}</div>
       </div>`;
     wrap.innerHTML = [
-      tile(t('summary.latest_close'), fmtNum(last.price, 2), last.date),
-      tile(`${t('summary.change')} (${state.range.toUpperCase()})`, `${priceChg>=0?'+':''}${priceChg.toFixed(2)}%`, `vs. ${first.date}`, color),
+      tile(t('summary.latest_close'), fmtNum(last.price, 2), esc(last.date)),
+      tile(`${t('summary.change')} (${state.range.toUpperCase()})`, `${priceChg>=0?'+':''}${priceChg.toFixed(2)}%`, `vs. ${esc(first.date)}`, color),
       tile(t('summary.above_ma50'),  `${last.above_ma50.toFixed(1)}%`,  last.above_ma50  >= 50 ? t('summary.majority_above') : t('summary.majority_below')),
       tile(t('summary.above_ma200'), `${last.above_ma200.toFixed(1)}%`, last.above_ma200 >= 50 ? t('summary.lt_bullish') : t('summary.lt_bearish')),
     ].join('');
@@ -1289,14 +1303,14 @@ const Articles = (() => {
       const summary = typeof a.summary === 'object' ? (a.summary[currentLang] || a.summary['zh']) : a.summary;
       const content = typeof a.content === 'object' ? (a.content[currentLang] || a.content['zh']) : a.content;
       return `
-        <div class="article-card" data-aid="${a.id}">
+        <div class="article-card" data-aid="${esc(a.id)}">
           <div class="article-header">
             <div class="article-meta">
-              <span class="article-date">${fmtDate(a.date)}</span>
+              <span class="article-date">${esc(fmtDate(a.date))}</span>
               <span class="lang-badge">${currentLang.toUpperCase()}</span>
             </div>
-            <div class="article-title">${title}</div>
-            <div class="article-summary">${summary}</div>
+            <div class="article-title">${esc(title)}</div>
+            <div class="article-summary">${esc(summary)}</div>
             <div class="article-expand-hint">${open ? t('articles.collapse') : t('articles.expand')}</div>
           </div>
           ${open ? `<div class="article-body">${marked.parse(content)}</div>` : ''}
