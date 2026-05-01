@@ -311,37 +311,42 @@ var TRANSLATIONS = {
 
 var currentLang = localStorage.getItem('mp-lang') || 'en';
 
-/** Look up a translation key; falls back to English, then the key itself. */
+/** Look up a translation key; returns null if not found in any locale. */
 function t(key) {
   return (TRANSLATIONS[currentLang] || {})[key]
       || (TRANSLATIONS.en || {})[key]
-      || key;
+      || null;
 }
 
 /**
  * Walk all [data-i18n] elements and update their text (or attribute).
  * [data-i18n-html] elements get innerHTML instead of textContent.
  * [data-i18n-attr] elements set the named attribute (e.g. placeholder).
+ * Skips update when key is missing so hardcoded HTML fallback stays visible.
  */
 function applyI18n() {
   document.documentElement.lang = currentLang;
 
   document.querySelectorAll('[data-i18n]').forEach(function(el) {
     var key  = el.dataset.i18n;
+    var val  = t(key);
+    if (val === null) return;
     var attr = el.dataset.i18nAttr;
     if (attr) {
-      el.setAttribute(attr, t(key));
+      el.setAttribute(attr, val);
     } else {
-      el.textContent = t(key);
+      el.textContent = val;
     }
   });
 
   document.querySelectorAll('[data-i18n-html]').forEach(function(el) {
-    el.innerHTML = t(el.dataset.i18nHtml);
+    var val = t(el.dataset.i18nHtml);
+    if (val !== null) el.innerHTML = val;
   });
 
   var langBtn = document.getElementById('lang-toggle');
-  if (langBtn) langBtn.textContent = t('lang.toggle');
+  var langVal = t('lang.toggle');
+  if (langBtn && langVal !== null) langBtn.textContent = langVal;
 }
 
 /** Switch language, persist to localStorage, and refresh all static labels. */
