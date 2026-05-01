@@ -684,8 +684,8 @@ function trendLabel(s){
   return t('trend.strong_bearish');
 }
 function matchPriority(r, q){
-  const sym  = (r.sym  || '').toLowerCase();
-  const name = (r.name || '').toLowerCase();
+  const sym  = r._symLow  || '';
+  const name = r._nameLow || '';
   if (sym.startsWith(q))  return 0;
   if (name.startsWith(q)) return 1;
   if (sym.includes(q))    return 2;
@@ -839,7 +839,7 @@ const Overview = (() => {
     const ranked = sorted.map((r, i) => ({ ...r, _rank: i + 1 }));
     const filtered = q
       ? ranked
-          .filter(r => (r.sym||'').toLowerCase().includes(q) || (r.name||'').toLowerCase().includes(q))
+          .filter(r => (r._symLow || '').includes(q) || (r._nameLow || '').includes(q))
           .sort((a, b) => matchPriority(a, q) - matchPriority(b, q))
       : ranked;
 
@@ -910,6 +910,14 @@ const Overview = (() => {
         hideError(); return;
       }
       state.data = r.data;
+      if (state.data.stocks) {
+        for (const idx in state.data.stocks) {
+          state.data.stocks[idx].forEach(s => {
+            s._symLow = (s.sym || '').toLowerCase();
+            s._nameLow = (s.name || '').toLowerCase();
+          });
+        }
+      }
       state.lastUpdated = r.stamp || r.data.updated_at || new Date().toISOString();
       hideError();
       paint();
