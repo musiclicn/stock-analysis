@@ -3,8 +3,15 @@ import * as cookie from 'cookie';
 
 const JWT_SECRET_STRING = "super-secret-local-jwt-key"; // Note: For production use env.JWT_SECRET
 
-async function getJwtSecret(env) {
-    const secret = env.JWT_SECRET || JWT_SECRET_STRING;
+async function getJwtSecret(env, url) {
+    let secret = env.JWT_SECRET;
+    if (!secret) {
+        if (url.hostname === 'localhost' || url.hostname === '127.0.0.1') {
+            secret = JWT_SECRET_STRING;
+        } else {
+            throw new Error("JWT_SECRET is not set in production");
+        }
+    }
     return new TextEncoder().encode(secret);
 }
 
@@ -15,12 +22,40 @@ function buf2hex(buffer) {
         .join('');
 }
 
-// Hash password with Web Crypto API
-async function hashPassword(password) {
+// Legacy SHA-256 hash for backward compatibility
+async function hashPasswordLegacy(password) {
     const encoder = new TextEncoder();
     const data = encoder.encode(password);
     const hash = await crypto.subtle.digest('SHA-256', data);
     return buf2hex(hash);
+}
+
+// Hash password with Web Crypto API using PBKDF2
+async function hashPassword(password, saltHex = null) {
+    const encoder = new TextEncoder();
+    const salt = saltHex ? new Uint8Array(saltHex.match(/.{1,2}/g).map(byte => parseInt(byte, 16))) : crypto.getRandomValues(new Uint8Array(16));
+    const keyMaterial = await crypto.subtle.importKey(
+        "raw",
+        encoder.encode(password),
+        { name: "PBKDF2" },
+        false,
+        ["deriveBits"]
+    );
+    const derivedBits = await crypto.subtle.deriveBits(
+        {
+            name: "PBKDF2",
+            salt: salt,
+            iterations: 100000,
+            hash: "SHA-256",
+        },
+        keyMaterial,
+        256
+    );
+    const hashHex = buf2hex(derivedBits);
+    if (!saltHex) {
+        return `${buf2hex(salt)}:${hashHex}`;
+    }
+    return hashHex;
 }
 
 // Set HTTP-Only Cookie header
@@ -70,11 +105,33 @@ export default {
                     const user = await env.DB.prepare("SELECT * FROM users WHERE email = ? AND provider = 'local'").bind(email).first();
                     if (!user) return new Response("Invalid credentials", { status: 401 });
 
-                    const passwordHash = await hashPassword(password);
-                    if (user.password_hash !== passwordHash) return new Response("Invalid credentials", { status: 401 });
+                    let isValid = false;
+                    let needsUpgrade = false;
+
+                    if (user.password_hash && user.password_hash.includes(':')) {
+                        const [saltHex, hashHex] = user.password_hash.split(':');
+                        const computedHash = await hashPassword(password, saltHex);
+                        if (computedHash === hashHex) {
+                            isValid = true;
+                        }
+                    } else if (user.password_hash) {
+                        // Legacy SHA-256 check
+                        const computedHash = await hashPasswordLegacy(password);
+                        if (computedHash === user.password_hash) {
+                            isValid = true;
+                            needsUpgrade = true;
+                        }
+                    }
+
+                    if (!isValid) return new Response("Invalid credentials", { status: 401 });
+
+                    if (needsUpgrade) {
+                        const newHash = await hashPassword(password);
+                        await env.DB.prepare("UPDATE users SET password_hash = ? WHERE id = ?").bind(newHash, user.id).run();
+                    }
 
                     // Create JWT
-                    const secret = await getJwtSecret(env);
+                    const secret = await getJwtSecret(env, url);
                     const jwt = await new SignJWT({ userId: user.id, email: user.email })
                         .setProtectedHeader({ alg: 'HS256' })
                         .setIssuedAt()
@@ -103,7 +160,7 @@ export default {
                 if (!match) return new Response("Not authenticated", { status: 401 });
 
                 try {
-                    const secret = await getJwtSecret(env);
+                    const secret = await getJwtSecret(env, url);
                     const { payload } = await jwtVerify(match[1], secret);
                     return new Response(JSON.stringify({ success: true, user: { id: payload.userId, email: payload.email } }), { status: 200 });
                 } catch (e) {
@@ -123,14 +180,27 @@ export default {
                 }
                 const clientId = env.GOOGLE_CLIENT_ID;
                 const redirectUri = `${url.origin}/api/auth/google/callback`;
-                const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=email%20profile`;
-                return Response.redirect(authUrl, 302);
+                const state = crypto.randomUUID();
+                const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=email%20profile&state=${encodeURIComponent(state)}`;
+                return new Response(null, {
+                    status: 302,
+                    headers: {
+                        'Location': authUrl,
+                        'Set-Cookie': serializeCookie('oauth_state', state, 60 * 10) // 10 minutes
+                    }
+                });
             }
 
             // ---- Google OAuth Callback ----
             if (path === 'google/callback' && method === 'GET') {
                 const code = url.searchParams.get('code');
+                const state = url.searchParams.get('state');
+                const cookieStr = request.headers.get('Cookie') || '';
+                const match = cookieStr.match(/oauth_state=([^;]+)/);
                 if (!code) return new Response("No code provided", { status: 400 });
+                if (!state || !match || state !== match[1]) {
+                    return new Response("Invalid state parameter", { status: 400 });
+                }
 
                 if (!env.GOOGLE_CLIENT_ID || !env.GOOGLE_CLIENT_SECRET) {
                     return new Response(
@@ -176,7 +246,7 @@ export default {
                     }
 
                     // Create JWT
-                    const secret = await getJwtSecret(env);
+                    const secret = await getJwtSecret(env, url);
                     const jwt = await new SignJWT({ userId: user.id, email: user.email })
                         .setProtectedHeader({ alg: 'HS256' })
                         .setIssuedAt()
@@ -184,9 +254,13 @@ export default {
                         .sign(secret);
 
                     // Redirect back to main site
-                    const response = Response.redirect(url.origin, 302);
-                    response.headers.append('Set-Cookie', serializeCookie('auth_token', jwt, 7 * 24 * 60 * 60));
-                    return response;
+                    return new Response(null, {
+                        status: 302,
+                        headers: {
+                            'Location': url.origin,
+                            'Set-Cookie': serializeCookie('auth_token', jwt, 7 * 24 * 60 * 60)
+                        }
+                    });
 
                 } catch (e) {
                     return new Response(`Google Auth Error: ${e.message}`, { status: 500 });
@@ -203,14 +277,27 @@ export default {
                 }
                 const clientId = env.FACEBOOK_CLIENT_ID;
                 const redirectUri = `${url.origin}/api/auth/facebook/callback`;
-                const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=email`;
-                return Response.redirect(authUrl, 302);
+                const state = crypto.randomUUID();
+                const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=email&state=${encodeURIComponent(state)}`;
+                return new Response(null, {
+                    status: 302,
+                    headers: {
+                        'Location': authUrl,
+                        'Set-Cookie': serializeCookie('oauth_state', state, 60 * 10) // 10 minutes
+                    }
+                });
             }
 
             // ---- Facebook OAuth Callback ----
             if (path === 'facebook/callback' && method === 'GET') {
                  const code = url.searchParams.get('code');
+                 const state = url.searchParams.get('state');
+                 const cookieStr = request.headers.get('Cookie') || '';
+                 const match = cookieStr.match(/oauth_state=([^;]+)/);
                  if (!code) return new Response("No code provided", { status: 400 });
+                 if (!state || !match || state !== match[1]) {
+                     return new Response("Invalid state parameter", { status: 400 });
+                 }
 
                  if (!env.FACEBOOK_CLIENT_ID || !env.FACEBOOK_CLIENT_SECRET) {
                      return new Response(
@@ -244,7 +331,7 @@ export default {
                      }
 
                      // Create JWT
-                     const secret = await getJwtSecret(env);
+                     const secret = await getJwtSecret(env, url);
                      const jwt = await new SignJWT({ userId: user.id, email: user.email })
                          .setProtectedHeader({ alg: 'HS256' })
                          .setIssuedAt()
@@ -252,9 +339,13 @@ export default {
                          .sign(secret);
 
                      // Redirect back to main site
-                     const response = Response.redirect(url.origin, 302);
-                     response.headers.append('Set-Cookie', serializeCookie('auth_token', jwt, 7 * 24 * 60 * 60));
-                     return response;
+                     return new Response(null, {
+                         status: 302,
+                         headers: {
+                             'Location': url.origin,
+                             'Set-Cookie': serializeCookie('auth_token', jwt, 7 * 24 * 60 * 60)
+                         }
+                     });
 
                  } catch (e) {
                      return new Response(`Facebook Auth Error: ${e.message}`, { status: 500 });
