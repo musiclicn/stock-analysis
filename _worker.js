@@ -113,9 +113,17 @@ export default {
 
             // ---- Google OAuth Redirect ----
             if (path === 'google' && method === 'GET') {
-                const clientId = env.GOOGLE_CLIENT_ID || 'PLACEHOLDER_GOOGLE_CLIENT_ID';
+                if (!env.GOOGLE_CLIENT_ID) {
+                    return new Response(
+                        "Google sign-in is not configured on this server. The GOOGLE_CLIENT_ID secret is missing. " +
+                        "Set GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET via `wrangler secret put` and ensure " +
+                        `${url.origin}/api/auth/google/callback is registered as an authorized redirect URI in the Google Cloud Console.`,
+                        { status: 500 }
+                    );
+                }
+                const clientId = env.GOOGLE_CLIENT_ID;
                 const redirectUri = `${url.origin}/api/auth/google/callback`;
-                const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=email%20profile`;
+                const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=email%20profile`;
                 return Response.redirect(authUrl, 302);
             }
 
@@ -124,8 +132,14 @@ export default {
                 const code = url.searchParams.get('code');
                 if (!code) return new Response("No code provided", { status: 400 });
 
-                const clientId = env.GOOGLE_CLIENT_ID || 'PLACEHOLDER_GOOGLE_CLIENT_ID';
-                const clientSecret = env.GOOGLE_CLIENT_SECRET || 'PLACEHOLDER_GOOGLE_CLIENT_SECRET';
+                if (!env.GOOGLE_CLIENT_ID || !env.GOOGLE_CLIENT_SECRET) {
+                    return new Response(
+                        "Google sign-in is not configured on this server. GOOGLE_CLIENT_ID/GOOGLE_CLIENT_SECRET secrets are missing.",
+                        { status: 500 }
+                    );
+                }
+                const clientId = env.GOOGLE_CLIENT_ID;
+                const clientSecret = env.GOOGLE_CLIENT_SECRET;
                 const redirectUri = `${url.origin}/api/auth/google/callback`;
 
                 try {
@@ -181,9 +195,15 @@ export default {
 
             // ---- Facebook OAuth Redirect ----
             if (path === 'facebook' && method === 'GET') {
-                const clientId = env.FACEBOOK_CLIENT_ID || 'PLACEHOLDER_FACEBOOK_CLIENT_ID';
+                if (!env.FACEBOOK_CLIENT_ID) {
+                    return new Response(
+                        "Facebook sign-in is not configured on this server. The FACEBOOK_CLIENT_ID secret is missing.",
+                        { status: 500 }
+                    );
+                }
+                const clientId = env.FACEBOOK_CLIENT_ID;
                 const redirectUri = `${url.origin}/api/auth/facebook/callback`;
-                const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=email`;
+                const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${encodeURIComponent(clientId)}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=email`;
                 return Response.redirect(authUrl, 302);
             }
 
@@ -192,8 +212,14 @@ export default {
                  const code = url.searchParams.get('code');
                  if (!code) return new Response("No code provided", { status: 400 });
 
-                 const clientId = env.FACEBOOK_CLIENT_ID || 'PLACEHOLDER_FACEBOOK_CLIENT_ID';
-                 const clientSecret = env.FACEBOOK_CLIENT_SECRET || 'PLACEHOLDER_FACEBOOK_CLIENT_SECRET';
+                 if (!env.FACEBOOK_CLIENT_ID || !env.FACEBOOK_CLIENT_SECRET) {
+                     return new Response(
+                         "Facebook sign-in is not configured on this server. FACEBOOK_CLIENT_ID/FACEBOOK_CLIENT_SECRET secrets are missing.",
+                         { status: 500 }
+                     );
+                 }
+                 const clientId = env.FACEBOOK_CLIENT_ID;
+                 const clientSecret = env.FACEBOOK_CLIENT_SECRET;
                  const redirectUri = `${url.origin}/api/auth/facebook/callback`;
 
                  try {
