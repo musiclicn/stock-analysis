@@ -158,7 +158,7 @@ var TRANSLATIONS = {
 
   zh: {
     /* ---------- 品牌 ---------- */
-    'brand.title':   '市场脉搏',
+    'brand.title':   'Alpha Stock',
     'brand.tagline': '美股 · 评分与宽度',
 
     /* ---------- 状态栏 ---------- */
