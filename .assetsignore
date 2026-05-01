@@ -1,1 +1,9 @@
 _worker.js
+.git/
+.github/
+migrations/
+wrangler.jsonc
+*.py
+package.json
+package-lock.json
+llms.txt
