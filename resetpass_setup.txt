@@ -1,0 +1,36 @@
+ Files changed:
+  - migrations/0001_password_resets.sql — new table for reset tokens (stores hash, not raw token)
+  - _worker.js — sha256Hex + randomTokenBase64Url helpers, POST /api/auth/forgot-password, POST /api/auth/reset-password
+  - index.html — added confirm-password field, "Forgot password?" link, mode state machine in Auth controller, auto-detection of ?reset=<token> in URL
+
+  Flow:
+  1. User clicks Forgot password? in the login modal → enters email → server stores hashed token (1-hour expiry) and sends a Resend email with a link https://yoursite/?reset=<token>
+  2. User opens the link → page detects the query param → modal opens in reset mode → user sets new password (min 8 chars) and confirms
+  3. On success: password_hash updated, token marked used, URL cleaned, modal switches to login
+
+  Security choices:
+  - Token: 32 random bytes, base64url; only its SHA-256 hash stored in DB
+  - Single-use + 1-hour expiry; prior unused tokens for the user are deleted on each new request
+  - forgot-password always returns 200 to prevent email enumeration
+  - Skips OAuth-only users (no password_hash to reset)
+
+  What you need to do
+
+  1. Apply the migration (locally + remote):
+  npx wrangler d1 migrations apply stock-score --local
+  npx wrangler d1 migrations apply stock-score --remote
+
+  2. Sign up at https://resend.com → grab an API key from the dashboard.
+
+  3. Set the secret(s):
+  npx wrangler secret put RESEND_API_KEY
+  # Optional — defaults to onboarding@resend.dev (test sender, only sends to your Resend account email)
+  npx wrangler secret put FROM_EMAIL
+
+  For real users, you must verify a sending domain in Resend (10-min DNS setup) and set FROM_EMAIL to something like noreply@yourdomain.com. Until then, onboarding@resend.dev only delivers to
+  the email you used to register at Resend — fine for testing.
+
+  4. Deploy: npx wrangler deploy
+
+  Reminder: the password hashing in _worker.js:19 is still plain SHA-256 (no salt), and the new reset endpoint follows the same scheme for consistency. Worth upgrading to PBKDF2 separately when
+   you're ready.

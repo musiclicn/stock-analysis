@@ -324,6 +324,9 @@
   .social-btn:hover { background: var(--panel-2); }
   .auth-switch { text-align: center; font-size: 12px; color: var(--text-dim); margin-top: 16px; }
   .auth-switch a { color: var(--accent); cursor: pointer; text-decoration: underline; }
+  .auth-forgot { text-align: right; font-size: 12px; margin-top: 8px; }
+  .auth-forgot a { color: var(--text-dim); cursor: pointer; }
+  .auth-forgot a:hover { color: var(--accent); text-decoration: underline; }
   #auth-error { color: #ef4444; font-size: 13px; text-align: center; display: none; }
 
   /* =============== SCORE INTRO =============== */
@@ -663,12 +666,16 @@
     <form id="auth-form" class="auth-form">
       <input type="email" id="auth-email" placeholder="Email address" required />
       <input type="password" id="auth-password" placeholder="Password" required />
+      <input type="password" id="auth-password-confirm" placeholder="Confirm new password" style="display:none" />
       <button type="submit" id="auth-submit">Continue</button>
     </form>
+    <div id="auth-forgot-row" class="auth-forgot">
+      <a id="auth-forgot-btn">Forgot password?</a>
+    </div>
     <div class="auth-divider" style="display:none">or</div>
     <a href="/api/auth/google" class="social-btn" style="display:none">Continue with Google</a>
     <a href="/api/auth/facebook" class="social-btn" style="display:none">Continue with Facebook</a>
-    <div class="auth-switch">
+    <div id="auth-switch-row" class="auth-switch">
       <span id="auth-switch-text">Don't have an account?</span>
       <a id="auth-switch-btn">Sign up</a>
     </div>
@@ -1478,7 +1485,7 @@ const Theme = (() => {
    AUTH CONTROLLER — modal logic and API integration
    ============================================================================ */
 const Auth = (() => {
-  let isSignup = false;
+  let mode = 'login'; // 'login' | 'signup' | 'forgot' | 'reset'
   let currentUser = null;
 
   const modal = document.getElementById('auth-modal');
@@ -1487,45 +1494,85 @@ const Auth = (() => {
   const form = document.getElementById('auth-form');
   const emailInput = document.getElementById('auth-email');
   const passwordInput = document.getElementById('auth-password');
+  const confirmInput = document.getElementById('auth-password-confirm');
   const submitBtn = document.getElementById('auth-submit');
   const errorEl = document.getElementById('auth-error');
   const titleEl = document.getElementById('auth-title');
   const switchBtn = document.getElementById('auth-switch-btn');
   const switchText = document.getElementById('auth-switch-text');
+  const switchRow = document.getElementById('auth-switch-row');
+  const forgotRow = document.getElementById('auth-forgot-row');
+  const forgotBtn = document.getElementById('auth-forgot-btn');
 
-  function show(errorMsg = '') {
-    errorEl.textContent = errorMsg;
-    errorEl.style.display = errorMsg ? 'block' : 'none';
-    modal.classList.add('show');
+  function clearStatus() {
+    errorEl.style.display = 'none';
+    errorEl.textContent = '';
   }
+
+  function setStatus(msg, ok = false) {
+    errorEl.style.color = ok ? 'var(--score-100)' : '#ef4444';
+    errorEl.textContent = msg;
+    errorEl.style.display = msg ? 'block' : 'none';
+  }
+
+  function setMode(next) {
+    mode = next;
+    clearStatus();
+    if (mode === 'login') {
+      titleEl.textContent = 'Log in to your account';
+      submitBtn.textContent = 'Continue';
+      emailInput.style.display = ''; emailInput.required = true;
+      passwordInput.style.display = ''; passwordInput.required = true;
+      passwordInput.placeholder = 'Password';
+      confirmInput.style.display = 'none'; confirmInput.required = false;
+      forgotRow.style.display = '';
+      switchRow.style.display = '';
+      switchText.textContent = "Don't have an account?";
+      switchBtn.textContent = 'Sign up';
+    } else if (mode === 'signup') {
+      titleEl.textContent = 'Create an account';
+      submitBtn.textContent = 'Sign up';
+      emailInput.style.display = ''; emailInput.required = true;
+      passwordInput.style.display = ''; passwordInput.required = true;
+      passwordInput.placeholder = 'Password';
+      confirmInput.style.display = 'none'; confirmInput.required = false;
+      forgotRow.style.display = 'none';
+      switchRow.style.display = '';
+      switchText.textContent = 'Already have an account?';
+      switchBtn.textContent = 'Log in';
+    } else if (mode === 'forgot') {
+      titleEl.textContent = 'Reset your password';
+      submitBtn.textContent = 'Send reset link';
+      emailInput.style.display = ''; emailInput.required = true;
+      passwordInput.style.display = 'none'; passwordInput.required = false;
+      confirmInput.style.display = 'none'; confirmInput.required = false;
+      forgotRow.style.display = 'none';
+      switchRow.style.display = '';
+      switchText.textContent = 'Remembered your password?';
+      switchBtn.textContent = 'Log in';
+    } else if (mode === 'reset') {
+      titleEl.textContent = 'Set a new password';
+      submitBtn.textContent = 'Update password';
+      emailInput.style.display = 'none'; emailInput.required = false;
+      passwordInput.style.display = ''; passwordInput.required = true;
+      passwordInput.placeholder = 'New password (min 8 chars)';
+      confirmInput.style.display = ''; confirmInput.required = true;
+      forgotRow.style.display = 'none';
+      switchRow.style.display = 'none';
+    }
+  }
+
+  function show() { modal.classList.add('show'); }
   function hide() { modal.classList.remove('show'); }
 
-  function toggleMode() {
-    isSignup = !isSignup;
-    titleEl.textContent = isSignup ? "Create an account" : "Log in to your account";
-    submitBtn.textContent = isSignup ? "Sign up" : "Continue";
-    switchText.textContent = isSignup ? "Already have an account?" : "Don't have an account?";
-    switchBtn.textContent = isSignup ? "Log in" : "Sign up";
-    errorEl.style.display = 'none';
-  }
-
   function renderUser() {
-    if (currentUser) {
-      toggleBtn.textContent = "Log out";
-    } else {
-      toggleBtn.textContent = "Login";
-    }
+    toggleBtn.textContent = currentUser ? 'Log out' : 'Login';
   }
 
   async function checkSession() {
     try {
       const res = await fetch('/api/auth/me');
-      if (res.ok) {
-        const data = await res.json();
-        currentUser = data.user;
-      } else {
-        currentUser = null;
-      }
+      currentUser = res.ok ? (await res.json()).user : null;
     } catch(e) {
       currentUser = null;
     }
@@ -1533,62 +1580,109 @@ const Auth = (() => {
   }
 
   async function handleLogout() {
-    try {
-      await fetch('/api/auth/logout', { method: 'POST' });
-      currentUser = null;
-      renderUser();
-    } catch(e) {}
+    try { await fetch('/api/auth/logout', { method: 'POST' }); } catch(e) {}
+    currentUser = null;
+    renderUser();
+  }
+
+  function getResetTokenFromUrl() {
+    return new URLSearchParams(window.location.search).get('reset');
+  }
+
+  function clearResetTokenFromUrl() {
+    const params = new URLSearchParams(window.location.search);
+    params.delete('reset');
+    const qs = params.toString();
+    const newUrl = window.location.pathname + (qs ? `?${qs}` : '') + window.location.hash;
+    window.history.replaceState({}, '', newUrl);
   }
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const endpoint = isSignup ? '/api/auth/register' : '/api/auth/login';
     submitBtn.disabled = true;
-    errorEl.style.display = 'none';
+    clearStatus();
 
     try {
-      const res = await fetch(endpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: emailInput.value, password: passwordInput.value })
-      });
-      if (!res.ok) {
-        const text = await res.text();
-        throw new Error(text || 'Authentication failed');
-      }
+      if (mode === 'login' || mode === 'signup') {
+        const endpoint = mode === 'signup' ? '/api/auth/register' : '/api/auth/login';
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: emailInput.value, password: passwordInput.value })
+        });
+        if (!res.ok) throw new Error(await res.text() || 'Authentication failed');
 
-      if (isSignup) {
-        // Automatically switch to login after successful signup
-        toggleMode();
-        show("Account created! Please log in.");
-        errorEl.style.color = "var(--score-100)";
-      } else {
-        await checkSession();
-        hide();
+        if (mode === 'signup') {
+          setMode('login');
+          setStatus('Account created! Please log in.', true);
+        } else {
+          await checkSession();
+          hide();
+          emailInput.value = '';
+          passwordInput.value = '';
+        }
+      } else if (mode === 'forgot') {
+        const res = await fetch('/api/auth/forgot-password', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: emailInput.value })
+        });
+        if (!res.ok) throw new Error(await res.text() || 'Request failed');
+        setStatus('If an account exists for that email, a reset link has been sent. Check your inbox.', true);
         emailInput.value = '';
+      } else if (mode === 'reset') {
+        if (passwordInput.value.length < 8) throw new Error('Password must be at least 8 characters');
+        if (passwordInput.value !== confirmInput.value) throw new Error('Passwords do not match');
+        const token = getResetTokenFromUrl();
+        if (!token) throw new Error('Reset link is missing or invalid. Request a new one.');
+        const res = await fetch('/api/auth/reset-password', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ token, password: passwordInput.value })
+        });
+        if (!res.ok) throw new Error(await res.text() || 'Reset failed');
         passwordInput.value = '';
+        confirmInput.value = '';
+        clearResetTokenFromUrl();
+        setMode('login');
+        setStatus('Password updated. Please log in with your new password.', true);
       }
     } catch(err) {
-      errorEl.style.color = "#ef4444";
-      errorEl.textContent = err.message;
-      errorEl.style.display = 'block';
+      setStatus(err.message);
     } finally {
       submitBtn.disabled = false;
     }
   }
 
+  function handleSwitch() {
+    if (mode === 'login') setMode('signup');
+    else setMode('login');
+  }
+
   function bind() {
     toggleBtn.addEventListener('click', () => {
       if (currentUser) handleLogout();
-      else show();
+      else { setMode('login'); show(); }
     });
     closeBtn.addEventListener('click', hide);
     modal.addEventListener('click', e => { if (e.target === modal) hide(); });
-    switchBtn.addEventListener('click', toggleMode);
+    switchBtn.addEventListener('click', handleSwitch);
+    forgotBtn.addEventListener('click', () => setMode('forgot'));
     form.addEventListener('submit', handleSubmit);
   }
 
-  return { init: () => { bind(); checkSession(); } };
+  return {
+    init: () => {
+      bind();
+      checkSession();
+      if (getResetTokenFromUrl()) {
+        setMode('reset');
+        show();
+      } else {
+        setMode('login');
+      }
+    }
+  };
 })();
 
 /* ============================================================================

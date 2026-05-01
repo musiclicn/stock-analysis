@@ -56,6 +56,17 @@ async function hashPassword(password, saltHex = null) {
         return `${buf2hex(salt)}:${hashHex}`;
     }
     return hashHex;
+async function sha256Hex(str) {
+    const data = new TextEncoder().encode(str);
+    const hash = await crypto.subtle.digest('SHA-256', data);
+    return buf2hex(hash);
+}
+
+function randomTokenBase64Url(byteLen = 32) {
+    const bytes = crypto.getRandomValues(new Uint8Array(byteLen));
+    let bin = '';
+    for (const b of bytes) bin += String.fromCharCode(b);
+    return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
 // Set HTTP-Only Cookie header
@@ -151,6 +162,100 @@ export default {
                 const response = new Response(JSON.stringify({ success: true }), { status: 200 });
                 response.headers.append('Set-Cookie', serializeCookie('auth_token', '', 0)); // Expire cookie
                 return response;
+            }
+
+            // ---- Forgot Password (request reset email) ----
+            if (path === 'forgot-password' && method === 'POST') {
+                try {
+                    const { email } = await request.json();
+                    if (!email) return new Response("Email required", { status: 400 });
+
+                    if (!env.RESEND_API_KEY) {
+                        return new Response(
+                            "Password reset is not configured on this server. The RESEND_API_KEY secret is missing.",
+                            { status: 500 }
+                        );
+                    }
+
+                    // Always return the same response to prevent email enumeration
+                    const okResponse = () => new Response(JSON.stringify({ success: true }), { status: 200 });
+
+                    const user = await env.DB.prepare(
+                        "SELECT id, email FROM users WHERE email = ? AND provider = 'local' AND password_hash IS NOT NULL"
+                    ).bind(email).first();
+                    if (!user) return okResponse();
+
+                    const token = randomTokenBase64Url(32);
+                    const tokenHash = await sha256Hex(token);
+                    const expiresAt = Math.floor(Date.now() / 1000) + 3600; // 1 hour
+
+                    // Invalidate any prior unused tokens for this user
+                    await env.DB.prepare(
+                        "DELETE FROM password_resets WHERE user_id = ? AND used_at IS NULL"
+                    ).bind(user.id).run();
+
+                    await env.DB.prepare(
+                        "INSERT INTO password_resets (token_hash, user_id, expires_at) VALUES (?, ?, ?)"
+                    ).bind(tokenHash, user.id, expiresAt).run();
+
+                    const resetUrl = `${url.origin}/?reset=${encodeURIComponent(token)}`;
+                    const fromEmail = env.FROM_EMAIL || 'onboarding@resend.dev';
+
+                    const emailRes = await fetch('https://api.resend.com/emails', {
+                        method: 'POST',
+                        headers: {
+                            'Authorization': `Bearer ${env.RESEND_API_KEY}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            from: fromEmail,
+                            to: user.email,
+                            subject: 'Reset your password',
+                            text: `We received a request to reset your password. The link below is valid for 1 hour:\n\n${resetUrl}\n\nIf you did not request this, you can safely ignore this email.`,
+                            html: `<p>We received a request to reset your password. The link below is valid for 1 hour:</p><p><a href="${resetUrl}">${resetUrl}</a></p><p>If you did not request this, you can safely ignore this email.</p>`
+                        })
+                    });
+
+                    if (!emailRes.ok) {
+                        const errBody = await emailRes.text();
+                        console.error("Resend email send failed:", emailRes.status, errBody);
+                    }
+
+                    return okResponse();
+                } catch (e) {
+                    return new Response(e.message, { status: 500 });
+                }
+            }
+
+            // ---- Reset Password (consume token) ----
+            if (path === 'reset-password' && method === 'POST') {
+                try {
+                    const { token, password } = await request.json();
+                    if (!token || !password) return new Response("Token and password required", { status: 400 });
+                    if (password.length < 8) return new Response("Password must be at least 8 characters", { status: 400 });
+
+                    const tokenHash = await sha256Hex(token);
+                    const now = Math.floor(Date.now() / 1000);
+
+                    const reset = await env.DB.prepare(
+                        "SELECT user_id, expires_at, used_at FROM password_resets WHERE token_hash = ?"
+                    ).bind(tokenHash).first();
+
+                    if (!reset || reset.used_at !== null || reset.expires_at < now) {
+                        return new Response("Invalid or expired reset link", { status: 400 });
+                    }
+
+                    const passwordHash = await hashPassword(password);
+
+                    await env.DB.batch([
+                        env.DB.prepare("UPDATE users SET password_hash = ? WHERE id = ?").bind(passwordHash, reset.user_id),
+                        env.DB.prepare("UPDATE password_resets SET used_at = ? WHERE token_hash = ?").bind(now, tokenHash)
+                    ]);
+
+                    return new Response(JSON.stringify({ success: true }), { status: 200 });
+                } catch (e) {
+                    return new Response(e.message, { status: 500 });
+                }
             }
 
             // ---- Get Current User (Session Check) ----
