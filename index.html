@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Market Pulse — U.S. Equities Dashboard | Stock Analysis</title>
+<title>Alpha Stock — U.S. Equities Dashboard | Stock Analysis</title>
 <meta name="description" content="A daily dashboard analyzing U.S. Equities, Market Breadth, S&P 500, Nasdaq, most traded 100 stocks performance, a quantatitive method to calculate stock strength using 0-100 score,  and macroeconomic drivers like Federal Reserve policies and oil prices." />
 <meta name="keywords" content="Stock Market, U.S. Equities, S&P 500, Nasdaq, Market Breadth, Macroeconomics, Investing" />
-<meta property="og:title" content="Market Pulse — U.S. Equities Dashboard" />
+<meta property="og:title" content="Alpha Stock — U.S. Equities Dashboard" />
 <meta property="og:description" content="A real-time dashboard analyzing U.S. Equities, Market Breadth, and macroeconomic drivers." />
 <meta property="og:type" content="website" />
 <meta name="robots" content="index, follow" />
@@ -16,7 +16,7 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Market Pulse",
+  "name": "Alpha Stock",
   "description": "A real-time dashboard analyzing U.S. Equities, Market Breadth, and macroeconomic drivers."
 }
 </script>
@@ -72,14 +72,14 @@
 
   /* =============== TOPBAR =============== */
   header.topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom: 8px; }
-  .brand { display:flex; align-items:center; gap:12px; }
-  .logo {
-    width:34px; height:34px; border-radius:9px;
-    background: conic-gradient(from 210deg, #6ea8ff, #22c55e, #eab308, #ef4444, #6ea8ff);
-    box-shadow: 0 0 0 1px rgba(255,255,255,.06), 0 6px 20px rgba(110,168,255,.35);
+  .brand { display:flex; align-items:center; gap:14px; }
+  .brand h1 {
+    font-size:32px; margin:0; font-weight:800; letter-spacing:-.5px; line-height:1.1;
+    color: #ffffff;
+    text-shadow: 0 0 32px rgba(110,168,255,.55), 0 2px 8px rgba(0,0,0,.4);
   }
-  .brand h1 { font-size:18px; margin:0; letter-spacing:.2px; }
-  .brand small { color:var(--text-dim); font-size:12px; display:block; }
+  .brand h1 .accent { color: #6ea8ff; }
+  .brand small { color:var(--text-dim); font-size:12.5px; display:block; letter-spacing:.06em; margin-top:3px; }
   .toolbar { display:flex; gap:10px; align-items:center; }
 
   .status { color:var(--text-dim); font-size:12px; margin-right:6px; display:flex; align-items:center; gap:6px; }
@@ -406,9 +406,8 @@
   <!-- ================= TOPBAR ================= -->
   <header class="topbar">
     <div class="brand">
-      <div class="logo"></div>
       <div>
-        <h1 data-i18n="brand.title">Market Pulse</h1>
+        <h1><span class="accent">Alpha</span> Stock</h1>
         <small data-i18n="brand.tagline">U.S. equities · scores &amp; breadth</small>
       </div>
     </div>

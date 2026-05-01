@@ -8,7 +8,7 @@
 var TRANSLATIONS = {
   en: {
     /* ---------- brand ---------- */
-    'brand.title':   'Market Pulse',
+    'brand.title':   'Alpha Stock',
     'brand.tagline': 'U.S. equities · scores & breadth',
 
     /* ---------- status bar ---------- */
@@ -147,9 +147,9 @@ var TRANSLATIONS = {
     'articles.collapse': '▲ Collapse',
 
     /* ---------- page titles ---------- */
-    'title.overview':  'Market Pulse — U.S. Equities Dashboard',
-    'title.breadth':   'Market Breadth — Market Pulse',
-    'title.articles':  'Commentary — Market Pulse',
+    'title.overview':  'Alpha Stock — U.S. Equities Dashboard',
+    'title.breadth':   'Market Breadth — Alpha Stock',
+    'title.articles':  'Commentary — Alpha Stock',
   },
 
   zh: {
