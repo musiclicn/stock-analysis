@@ -2,12 +2,21 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "stock-analysis",
   "compatibility_date": "2026-04-30",
+  "main": "_worker.js",
   "observability": {
     "enabled": true
   },
   "assets": {
     "directory": "."
   },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "stock-score",
+      "database_id": "91ee2855-e99c-46ec-8984-37595adcde52",
+      "migrations_dir": "migrations"
+    }
+  ],
   "compatibility_flags": [
     "nodejs_compat"
   ]

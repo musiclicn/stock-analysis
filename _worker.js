@@ -1,0 +1,246 @@
+import { SignJWT, jwtVerify } from 'jose';
+import * as cookie from 'cookie';
+
+const JWT_SECRET_STRING = "super-secret-local-jwt-key"; // Note: For production use env.JWT_SECRET
+
+async function getJwtSecret(env) {
+    const secret = env.JWT_SECRET || JWT_SECRET_STRING;
+    return new TextEncoder().encode(secret);
+}
+
+// Convert ArrayBuffer to Hex String
+function buf2hex(buffer) {
+    return [...new Uint8Array(buffer)]
+        .map(x => x.toString(16).padStart(2, '0'))
+        .join('');
+}
+
+// Hash password with Web Crypto API
+async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hash = await crypto.subtle.digest('SHA-256', data);
+    return buf2hex(hash);
+}
+
+// Set HTTP-Only Cookie header
+function serializeCookie(name, value, maxAge) {
+    return `${name}=${value}; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=${maxAge}`;
+}
+
+export default {
+    async fetch(request, env, ctx) {
+        const url = new URL(request.url);
+        console.log("FETCH", request.method, url.pathname);
+
+        // API Routes
+        if (url.pathname.startsWith('/api/auth/')) {
+            const path = url.pathname.replace('/api/auth/', '');
+            const method = request.method;
+
+            // ---- Local Registration ----
+            if (path === 'register' && method === 'POST') {
+                try {
+                    const { email, password } = await request.json();
+                    if (!email || !password) return new Response("Email and password required", { status: 400 });
+
+                    // Check if user exists
+                    const existing = await env.DB.prepare("SELECT id FROM users WHERE email = ?").bind(email).first();
+                    if (existing) return new Response("User already exists", { status: 400 });
+
+                    const userId = crypto.randomUUID();
+                    const passwordHash = await hashPassword(password);
+
+                    await env.DB.prepare(
+                        "INSERT INTO users (id, email, password_hash, provider) VALUES (?, ?, ?, 'local')"
+                    ).bind(userId, email, passwordHash).run();
+
+                    return new Response(JSON.stringify({ success: true, message: "User registered" }), { status: 201 });
+                } catch (e) {
+                    return new Response(e.message, { status: 500 });
+                }
+            }
+
+            // ---- Local Login ----
+            if (path === 'login' && method === 'POST') {
+                try {
+                    const { email, password } = await request.json();
+                    if (!email || !password) return new Response("Email and password required", { status: 400 });
+
+                    const user = await env.DB.prepare("SELECT * FROM users WHERE email = ? AND provider = 'local'").bind(email).first();
+                    if (!user) return new Response("Invalid credentials", { status: 401 });
+
+                    const passwordHash = await hashPassword(password);
+                    if (user.password_hash !== passwordHash) return new Response("Invalid credentials", { status: 401 });
+
+                    // Create JWT
+                    const secret = await getJwtSecret(env);
+                    const jwt = await new SignJWT({ userId: user.id, email: user.email })
+                        .setProtectedHeader({ alg: 'HS256' })
+                        .setIssuedAt()
+                        .setExpirationTime('7d')
+                        .sign(secret);
+
+                    const response = new Response(JSON.stringify({ success: true, user: { id: user.id, email: user.email } }), { status: 200 });
+                    response.headers.append('Set-Cookie', serializeCookie('auth_token', jwt, 7 * 24 * 60 * 60));
+                    return response;
+                } catch (e) {
+                    return new Response(e.message, { status: 500 });
+                }
+            }
+
+            // ---- Logout ----
+            if (path === 'logout' && method === 'POST') {
+                const response = new Response(JSON.stringify({ success: true }), { status: 200 });
+                response.headers.append('Set-Cookie', serializeCookie('auth_token', '', 0)); // Expire cookie
+                return response;
+            }
+
+            // ---- Get Current User (Session Check) ----
+            if (path === 'me' && method === 'GET') {
+                const cookieStr = request.headers.get('Cookie') || '';
+                const match = cookieStr.match(/auth_token=([^;]+)/);
+                if (!match) return new Response("Not authenticated", { status: 401 });
+
+                try {
+                    const secret = await getJwtSecret(env);
+                    const { payload } = await jwtVerify(match[1], secret);
+                    return new Response(JSON.stringify({ success: true, user: { id: payload.userId, email: payload.email } }), { status: 200 });
+                } catch (e) {
+                    return new Response("Invalid token", { status: 401 });
+                }
+            }
+
+            // ---- Google OAuth Redirect ----
+            if (path === 'google' && method === 'GET') {
+                const clientId = env.GOOGLE_CLIENT_ID || 'PLACEHOLDER_GOOGLE_CLIENT_ID';
+                const redirectUri = `${url.origin}/api/auth/google/callback`;
+                const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&response_type=code&scope=email%20profile`;
+                return Response.redirect(authUrl, 302);
+            }
+
+            // ---- Google OAuth Callback ----
+            if (path === 'google/callback' && method === 'GET') {
+                const code = url.searchParams.get('code');
+                if (!code) return new Response("No code provided", { status: 400 });
+
+                const clientId = env.GOOGLE_CLIENT_ID || 'PLACEHOLDER_GOOGLE_CLIENT_ID';
+                const clientSecret = env.GOOGLE_CLIENT_SECRET || 'PLACEHOLDER_GOOGLE_CLIENT_SECRET';
+                const redirectUri = `${url.origin}/api/auth/google/callback`;
+
+                try {
+                    // Exchange code for token
+                    const tokenRes = await fetch('https://oauth2.googleapis.com/token', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                        body: new URLSearchParams({
+                            code,
+                            client_id: clientId,
+                            client_secret: clientSecret,
+                            redirect_uri: redirectUri,
+                            grant_type: 'authorization_code'
+                        })
+                    });
+                    const tokenData = await tokenRes.json();
+                    if (!tokenData.access_token) throw new Error("Failed to get Google access token");
+
+                    // Get user info
+                    const userRes = await fetch('https://www.googleapis.com/oauth2/v2/userinfo', {
+                        headers: { 'Authorization': `Bearer ${tokenData.access_token}` }
+                    });
+                    const userData = await userRes.json();
+                    if (!userData.email) throw new Error("Failed to get Google user email");
+
+                    // Handle user in DB
+                    let user = await env.DB.prepare("SELECT * FROM users WHERE email = ?").bind(userData.email).first();
+                    if (!user) {
+                        const userId = crypto.randomUUID();
+                        await env.DB.prepare(
+                            "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'google', ?)"
+                        ).bind(userId, userData.email, userData.id).run();
+                        user = { id: userId, email: userData.email };
+                    }
+
+                    // Create JWT
+                    const secret = await getJwtSecret(env);
+                    const jwt = await new SignJWT({ userId: user.id, email: user.email })
+                        .setProtectedHeader({ alg: 'HS256' })
+                        .setIssuedAt()
+                        .setExpirationTime('7d')
+                        .sign(secret);
+
+                    // Redirect back to main site
+                    const response = Response.redirect(url.origin, 302);
+                    response.headers.append('Set-Cookie', serializeCookie('auth_token', jwt, 7 * 24 * 60 * 60));
+                    return response;
+
+                } catch (e) {
+                    return new Response(`Google Auth Error: ${e.message}`, { status: 500 });
+                }
+            }
+
+            // ---- Facebook OAuth Redirect ----
+            if (path === 'facebook' && method === 'GET') {
+                const clientId = env.FACEBOOK_CLIENT_ID || 'PLACEHOLDER_FACEBOOK_CLIENT_ID';
+                const redirectUri = `${url.origin}/api/auth/facebook/callback`;
+                const authUrl = `https://www.facebook.com/v18.0/dialog/oauth?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=email`;
+                return Response.redirect(authUrl, 302);
+            }
+
+            // ---- Facebook OAuth Callback ----
+            if (path === 'facebook/callback' && method === 'GET') {
+                 const code = url.searchParams.get('code');
+                 if (!code) return new Response("No code provided", { status: 400 });
+
+                 const clientId = env.FACEBOOK_CLIENT_ID || 'PLACEHOLDER_FACEBOOK_CLIENT_ID';
+                 const clientSecret = env.FACEBOOK_CLIENT_SECRET || 'PLACEHOLDER_FACEBOOK_CLIENT_SECRET';
+                 const redirectUri = `${url.origin}/api/auth/facebook/callback`;
+
+                 try {
+                     // Exchange code for token
+                     const tokenRes = await fetch(`https://graph.facebook.com/v18.0/oauth/access_token?client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&client_secret=${clientSecret}&code=${code}`);
+                     const tokenData = await tokenRes.json();
+                     if (!tokenData.access_token) throw new Error("Failed to get Facebook access token");
+
+                     // Get user info
+                     const userRes = await fetch(`https://graph.facebook.com/me?fields=id,name,email&access_token=${tokenData.access_token}`);
+                     const userData = await userRes.json();
+                     if (!userData.email) throw new Error("Facebook did not return an email. The user might not have an email associated or denied the permission.");
+
+                     // Handle user in DB
+                     let user = await env.DB.prepare("SELECT * FROM users WHERE email = ?").bind(userData.email).first();
+                     if (!user) {
+                         const userId = crypto.randomUUID();
+                         await env.DB.prepare(
+                             "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'facebook', ?)"
+                         ).bind(userId, userData.email, userData.id).run();
+                         user = { id: userId, email: userData.email };
+                     }
+
+                     // Create JWT
+                     const secret = await getJwtSecret(env);
+                     const jwt = await new SignJWT({ userId: user.id, email: user.email })
+                         .setProtectedHeader({ alg: 'HS256' })
+                         .setIssuedAt()
+                         .setExpirationTime('7d')
+                         .sign(secret);
+
+                     // Redirect back to main site
+                     const response = Response.redirect(url.origin, 302);
+                     response.headers.append('Set-Cookie', serializeCookie('auth_token', jwt, 7 * 24 * 60 * 60));
+                     return response;
+
+                 } catch (e) {
+                     return new Response(`Facebook Auth Error: ${e.message}`, { status: 500 });
+                 }
+             }
+
+            return new Response("Not found", { status: 404 });
+        }
+
+        // Serve static assets natively handled by Wrangler (fallback if not matched by assets)
+        // With Cloudflare Workers `assets`, static files are intercepted *before* the script
+        // if they match a file in the directory. If no file matches, it falls through to this script.
+        return new Response("Not found", { status: 404 });
+    }
+};
