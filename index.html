@@ -10,6 +10,8 @@
 <meta property="og:description" content="A real-time dashboard analyzing U.S. Equities, Market Breadth, and macroeconomic drivers." />
 <meta property="og:type" content="website" />
 <meta name="robots" content="index, follow" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+<link rel="preconnect" href="https://gc.zgo.at" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -578,13 +580,13 @@
 </div>
 
 <!-- Visitor analytics: GoatCounter — https://musiclicn.goatcounter.com -->
-<script data-goatcounter="https://musiclicn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://musiclicn.goatcounter.com/count" async defer src="//gc.zgo.at/count.js"></script>
 
 <!-- Chart.js (Breadth tab) and marked (Articles tab) are lazy-loaded by loadScript() below -->
-<script src="translations.js?v=2"></script>
-<script src="articles.js?v=2"></script>
+<script defer src="translations.js?v=2"></script>
+<script defer src="articles.js?v=2"></script>
 
-<script>
+<script type="module">
 /* ============================================================================
    Market Pulse — combined dashboard
    - Two tabs: Overview (scores) and Market Breadth (chart)
@@ -926,8 +928,13 @@ const Overview = (() => {
         renderStocks();
       });
     });
+    let searchTimeout;
     document.getElementById('search').addEventListener('input', e => {
-      state.query = e.target.value; renderStocks();
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        state.query = e.target.value;
+        renderStocks();
+      }, 300);
     });
     document.querySelectorAll('#stocks-table thead th').forEach(th => {
       th.addEventListener('click', () => {
@@ -944,7 +951,15 @@ const Overview = (() => {
   }
 
   return {
-    init(){ bind(); load(); setInterval(() => load(true), POLL_MS); },
+    init(){
+      bind();
+      load();
+      let timer = setInterval(() => load(true), POLL_MS);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) clearInterval(timer);
+        else { load(true); timer = setInterval(() => load(true), POLL_MS); }
+      });
+    },
     refresh: () => load(),
     repaint(){ if (state.data) paint(); },
     lastUpdated: () => state.lastUpdated,
@@ -1121,7 +1136,15 @@ const Breadth = (() => {
   }
 
   return {
-    init(){ bind(); load(); setInterval(() => load(true), POLL_MS); },
+    init(){
+      bind();
+      load();
+      let timer = setInterval(() => load(true), POLL_MS);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) clearInterval(timer);
+        else { load(true); timer = setInterval(() => load(true), POLL_MS); }
+      });
+    },
     refresh: () => load(),
     onShow(){ if (state.data) paint(); },     // lazy paint when tab becomes visible
     repaint(){
