@@ -12,8 +12,8 @@
   "d1_databases": [
     {
       "binding": "DB",
-      "database_name": "stock-auth",
-      "database_id": "YOUR_D1_DATABASE_ID",
+      "database_name": "stock-score",
+      "database_id": "91ee2855-e99c-46ec-8984-37595adcde52",
       "migrations_dir": "migrations"
     }
   ],
