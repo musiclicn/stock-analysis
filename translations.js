@@ -146,6 +146,10 @@ var TRANSLATIONS = {
     'articles.expand':   '▼ Read full article',
     'articles.collapse': '▲ Collapse',
 
+    /* ---------- score intro ---------- */
+    'score-intro.label': 'AlphaStockPro Score',
+    'score-intro.body':  'A <strong>proprietary quantitative metric</strong> that tracks the underlying momentum and strength of US indexes, sectors, and stocks. By analyzing historical score changes, we help you identify <strong>trend exhaustion</strong> and pinpoint <strong>high-probability reversal opportunities</strong>.',
+
     /* ---------- page titles ---------- */
     'title.overview':  'Alpha Stock — U.S. Equities Dashboard',
     'title.breadth':   'Market Breadth — Alpha Stock',
@@ -291,6 +295,10 @@ var TRANSLATIONS = {
     /* ---------- 文章 ---------- */
     'articles.expand':   '▼ 展开全文',
     'articles.collapse': '▲ 收起',
+
+    /* ---------- 评分简介 ---------- */
+    'score-intro.label': 'AlphaStockPro 评分',
+    'score-intro.body':  '一项<strong>专有量化指标</strong>，追踪美国指数、板块与个股的底层动量和强度。通过分析历史评分变化，帮助您识别<strong>趋势衰竭</strong>信号，精准捕捉<strong>高概率反转机会</strong>。',
 
     /* ---------- 页面标题 ---------- */
     'title.overview':  '市场脉搏 — 美股仪表板',

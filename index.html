@@ -326,6 +326,24 @@
   .auth-switch a { color: var(--accent); cursor: pointer; text-decoration: underline; }
   #auth-error { color: #ef4444; font-size: 13px; text-align: center; display: none; }
 
+  /* =============== SCORE INTRO =============== */
+  .score-intro {
+    background: linear-gradient(135deg, rgba(110,168,255,.07) 0%, rgba(110,168,255,.03) 100%);
+    border: 1px solid rgba(110,168,255,.18);
+    border-left: 3px solid var(--accent);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+  }
+  .score-intro .score-intro-label {
+    font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 6px;
+  }
+  .score-intro p {
+    margin: 0; font-size: 13.5px; line-height: 1.65; color: var(--text-soft);
+  }
+  .score-intro strong { color: var(--text); font-weight: 600; }
+
   /* =============== SCORE MATRIX =============== */
   .score-matrix { background:var(--panel-2); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
   .score-matrix table { width:100%; border-collapse:collapse; font-size:13px; }
@@ -440,6 +458,11 @@
 
   <!-- ================= OVERVIEW VIEW ================= -->
   <section class="view visible" data-tab="overview">
+
+    <div class="score-intro">
+      <div class="score-intro-label" data-i18n="score-intro.label">AlphaStockPro Score</div>
+      <p data-i18n-html="score-intro.body">A <strong>proprietary quantitative metric</strong> that tracks the underlying momentum and strength of US indexes, sectors, and stocks. By analyzing historical score changes, we help you identify <strong>trend exhaustion</strong> and pinpoint <strong>high-probability reversal opportunities</strong>.</p>
+    </div>
 
     <div class="section-head">
       <h2 data-i18n="section.indexes">Major Indexes</h2>
