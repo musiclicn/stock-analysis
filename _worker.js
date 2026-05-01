@@ -56,6 +56,8 @@ async function hashPassword(password, saltHex = null) {
         return `${buf2hex(salt)}:${hashHex}`;
     }
     return hashHex;
+}
+
 async function sha256Hex(str) {
     const data = new TextEncoder().encode(str);
     const hash = await crypto.subtle.digest('SHA-256', data);
