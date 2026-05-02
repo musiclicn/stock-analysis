@@ -22,9 +22,23 @@ var TRANSLATIONS = {
     'lang.toggle': '中文',          // label shown when current lang is EN → click to go ZH
 
     /* ---------- tab navigation ---------- */
-    'tab.overview':  'Overview',
-    'tab.breadth':   'Market Breadth',
-    'tab.articles':  'Commentary',
+    'tab.overview':   'Overview',
+    'tab.breadth':    'Market Breadth',
+    'tab.articles':   'Commentary',
+    'tab.ai-layers':  'AI 5 Layers',
+
+    /* ---------- AI layers chart ---------- */
+    'ailayers.title':    'Jensen Huang\'s AI 5-Layer Cake',
+    'ailayers.subtitle': 'Equal-weight basket performance of key stocks in each layer, indexed to 100 at start',
+    'ailayers.zoom':     'Zoom',
+    'ailayers.updated':  'Updated',
+    'ailayers.indexed':  'Indexed (base = 100)',
+    'ailayers.layer0':   'AI Energy',
+    'ailayers.layer1':   'AI Chips & Compute',
+    'ailayers.layer2':   'AI Infrastructure',
+    'ailayers.layer3':   'AI Models',
+    'ailayers.layer4':   'AI Applications',
+    'ailayers.perf':     'Performance',
 
     /* ---------- section headings ---------- */
     'section.indexes':      'Major Indexes',
@@ -172,9 +186,23 @@ var TRANSLATIONS = {
     'lang.toggle': 'English',      // 当前语言为中文时显示，点击切换为英文
 
     /* ---------- 标签导航 ---------- */
-    'tab.overview':  '总览',
-    'tab.breadth':   '市场宽度',
-    'tab.articles':  '市场评论',
+    'tab.overview':   '总览',
+    'tab.breadth':    '市场宽度',
+    'tab.articles':   '市场评论',
+    'tab.ai-layers':  'AI五层架构',
+
+    /* ---------- AI五层图表 ---------- */
+    'ailayers.title':    '黄仁勋的AI五层蛋糕架构',
+    'ailayers.subtitle': '各层代表股票等权重篮子表现，以起始日为基准100',
+    'ailayers.zoom':     '缩放',
+    'ailayers.updated':  '更新于',
+    'ailayers.indexed':  '指数化（基准=100）',
+    'ailayers.layer0':   'AI能源',
+    'ailayers.layer1':   'AI芯片与算力',
+    'ailayers.layer2':   'AI基础设施',
+    'ailayers.layer3':   'AI大模型',
+    'ailayers.layer4':   'AI应用',
+    'ailayers.perf':     '区间涨跌',
 
     /* ---------- 区块标题 ---------- */
     'section.indexes':      '主要指数',

@@ -42,6 +42,12 @@
     --ma50:    #ef6a5a;
     --ma200:   #f2b33d;
 
+    --layer0:  #f59e0b;
+    --layer1:  #6ea8ff;
+    --layer2:  #22c55e;
+    --layer3:  #a78bfa;
+    --layer4:  #f87171;
+
     --radius: 14px;
     --shadow: 0 1px 0 rgba(255,255,255,.04) inset, 0 8px 28px rgba(0,0,0,.35);
     --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -445,9 +451,10 @@
 
   <!-- ================= TAB NAV ================= -->
   <nav class="tab-nav">
-    <a class="tab active" data-tab="overview"  href="#/overview" ><span data-i18n="tab.overview">Overview</span><span class="pill">scores</span></a>
-    <a class="tab"        data-tab="breadth"   href="#/breadth"  ><span data-i18n="tab.breadth">Market Breadth</span><span class="pill">S&amp;P 500</span></a>
-    <a class="tab"        data-tab="articles"  href="#/articles" ><span data-i18n="tab.articles">Commentary</span><span class="pill" id="articles-pill">1</span></a>
+    <a class="tab active" data-tab="overview"   href="#/overview"  ><span data-i18n="tab.overview">Overview</span><span class="pill">scores</span></a>
+    <a class="tab"        data-tab="breadth"    href="#/breadth"   ><span data-i18n="tab.breadth">Market Breadth</span><span class="pill">S&amp;P 500</span></a>
+    <a class="tab"        data-tab="ai-layers"  href="#/ai-layers" ><span data-i18n="tab.ai-layers">AI 5 Layers</span><span class="pill">AI</span></a>
+    <a class="tab"        data-tab="articles"   href="#/articles"  ><span data-i18n="tab.articles">Commentary</span><span class="pill" id="articles-pill">1</span></a>
   </nav>
 
   <!-- ================= ERROR BANNER (shared) ================= -->
@@ -624,6 +631,43 @@
     </div>
   </section>
 
+  <!-- ================= AI LAYERS VIEW ================= -->
+  <section class="view" data-tab="ai-layers">
+    <div class="chart-card">
+      <div class="chart-head">
+        <h2 data-i18n="ailayers.title">Jensen Huang's AI 5-Layer Cake</h2>
+        <div class="sub" data-i18n="ailayers.subtitle">Equal-weight basket performance of key stocks in each layer, indexed to 100 at start</div>
+      </div>
+
+      <div class="range-row">
+        <span class="label" data-i18n="ailayers.zoom">Zoom</span>
+        <div class="range" id="al-range">
+          <button data-r="2y" class="active">2y</button>
+          <button data-r="1y">1y</button>
+          <button data-r="ytd">YTD</button>
+          <button data-r="6m">6m</button>
+          <button data-r="3m">3m</button>
+          <button data-r="1m">1m</button>
+        </div>
+        <div class="spacer"></div>
+        <span class="label" data-i18n="ailayers.updated">Updated</span>
+        <span id="al-updated-at" style="font-family: var(--mono); color: var(--text-soft); font-size: 12px;">—</span>
+      </div>
+
+      <div class="chart-wrap"><canvas id="al-chart"></canvas></div>
+
+      <div class="legend-row" id="al-legend">
+        <span class="item" data-ds="0"><span class="swatch" style="background:var(--layer0)"></span><span data-i18n="ailayers.layer0">AI Energy</span></span>
+        <span class="item" data-ds="1"><span class="swatch" style="background:var(--layer1)"></span><span data-i18n="ailayers.layer1">AI Chips &amp; Compute</span></span>
+        <span class="item" data-ds="2"><span class="swatch" style="background:var(--layer2)"></span><span data-i18n="ailayers.layer2">AI Infrastructure</span></span>
+        <span class="item" data-ds="3"><span class="swatch" style="background:var(--layer3)"></span><span data-i18n="ailayers.layer3">AI Models</span></span>
+        <span class="item" data-ds="4"><span class="swatch" style="background:var(--layer4)"></span><span data-i18n="ailayers.layer4">AI Applications</span></span>
+      </div>
+
+      <div class="summary" id="al-summary"></div>
+    </div>
+  </section>
+
   <!-- ================= ARTICLES VIEW ================= -->
   <section class="view" data-tab="articles">
     <div class="section-head" style="margin-top:0;">
@@ -686,7 +730,7 @@
 <script data-goatcounter="https://musiclicn.goatcounter.com/count" async defer src="//gc.zgo.at/count.js"></script>
 
 <!-- Chart.js (Breadth tab) and marked (Articles tab) are lazy-loaded by loadScript() below -->
-<script defer src="translations.js?v=3"></script>
+<script defer src="translations.js?v=4"></script>
 <script defer src="articles.js?v=2"></script>
 
 <script type="module">
@@ -1311,6 +1355,226 @@ const Breadth = (() => {
 })();
 
 /* ============================================================================
+   AI LAYERS CONTROLLER — loads ai_layers.json, multi-line Chart.js rendering
+   ============================================================================ */
+const AILayers = (() => {
+  const URL_      = 'ai_layers.json';
+  const STAMP_URL = 'ai_layers.updated_at.txt';
+  const POLL_MS   = 60000;
+  const LAYER_VARS = ['--layer0','--layer1','--layer2','--layer3','--layer4'];
+  const LAYER_KEYS = ['ailayers.layer0','ailayers.layer1','ailayers.layer2','ailayers.layer3','ailayers.layer4'];
+
+  const state = {
+    range: '2y', data: null, lastUpdated: null,
+    visible: [true, true, true, true, true],
+    chart: null, chartInited: false,
+  };
+
+  function ensureLib(){
+    // Reuse the same Chart.js promise from Breadth (already defined above)
+    return typeof Chart !== 'undefined'
+      ? Promise.resolve()
+      : loadScript('https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js')
+          .then(() => loadScript('https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js'));
+  }
+
+  function filterByRange(series, range){
+    if (!series || !series.length) return series || [];
+    const last = new Date(series[series.length - 1].date);
+    let cutoff;
+    switch(range){
+      case '2y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 2); break;
+      case '1y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 1); break;
+      case 'ytd': cutoff = new Date(last.getFullYear(), 0, 1); break;
+      case '6m':  cutoff = new Date(last); cutoff.setMonth(last.getMonth() - 6); break;
+      case '3m':  cutoff = new Date(last); cutoff.setMonth(last.getMonth() - 3); break;
+      case '1m':  cutoff = new Date(last); cutoff.setMonth(last.getMonth() - 1); break;
+      default:    return series;
+    }
+    return series.filter(r => new Date(r.date) >= cutoff);
+  }
+
+  // Rebase a filtered slice so the first value = 100
+  function rebase(slice){
+    if (!slice.length) return slice;
+    const base = slice[0].value;
+    if (!base) return slice;
+    return slice.map(r => ({ x: r.date, y: round2(r.value / base * 100) }));
+  }
+
+  function round2(v){ return Math.round(v * 100) / 100; }
+
+  function buildChart(){
+    if (state.chartInited) return;
+    const ctx = document.getElementById('al-chart').getContext('2d');
+    const layerNames = state.data ? state.data.layers.map(l => l.name) : LAYER_KEYS;
+    const datasets = LAYER_VARS.map((v, i) => ({
+      label: t(LAYER_KEYS[i]) || layerNames[i],
+      data: [],
+      borderColor: css(v),
+      backgroundColor: css(v),
+      borderWidth: 2,
+      pointRadius: 0,
+      tension: 0.1,
+    }));
+    state.chart = new Chart(ctx, {
+      type: 'line',
+      data: { datasets },
+      options: {
+        responsive: true, maintainAspectRatio: false, animation: false,
+        interaction: { mode: 'index', intersect: false },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            backgroundColor: css('--panel'), borderColor: css('--border'), borderWidth: 1,
+            titleColor: css('--text'), bodyColor: css('--text-soft'),
+            titleFont: { weight: '600' }, padding: 10,
+            callbacks: {
+              title: items => items.length
+                ? new Date(items[0].parsed.x).toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' })
+                : '',
+              label: ctx => `  ${ctx.dataset.label}: ${ctx.parsed.y.toFixed(1)}`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            type: 'time',
+            time: { tooltipFormat: 'PP', displayFormats: { day: 'MMM d', month: 'MMM yy', year: 'yyyy' } },
+            grid:  { color: 'rgba(128,128,128,0.15)', drawTicks: false },
+            ticks: { color: css('--text-dim'), maxRotation: 0, autoSkipPadding: 18 },
+            border:{ color: css('--border') },
+          },
+          y: {
+            position: 'left',
+            grid:   { color: 'rgba(128,128,128,0.15)', drawTicks: false },
+            ticks:  { color: css('--text-dim'), callback: v => v.toFixed(0) },
+            border: { color: css('--border') },
+            title:  { display: true, text: t('ailayers.indexed') || 'Indexed (base = 100)', color: css('--text-dim'), font: { size: 11 } },
+          },
+        },
+      },
+    });
+    state.chartInited = true;
+  }
+
+  async function paint(){
+    await ensureLib();
+    if (!state.chartInited) buildChart();
+    if (!state.data) return;
+    let xMin, xMax;
+    state.data.layers.forEach((layer, i) => {
+      const slice = filterByRange(layer.series, state.range);
+      const pts = rebase(slice);
+      state.chart.data.datasets[i].data = pts;
+      state.chart.data.datasets[i].hidden = !state.visible[i];
+      if (pts.length) {
+        if (!xMin || pts[0].x < xMin)             xMin = pts[0].x;
+        if (!xMax || pts[pts.length-1].x > xMax)  xMax = pts[pts.length-1].x;
+      }
+    });
+    state.chart.options.scales.x.min = xMin;
+    state.chart.options.scales.x.max = xMax;
+    state.chart.update('none');
+    renderSummary();
+  }
+
+  function renderSummary(){
+    const wrap = document.getElementById('al-summary');
+    if (!wrap || !state.data) return;
+    const tiles = state.data.layers.map((layer, i) => {
+      const slice = filterByRange(layer.series, state.range);
+      if (slice.length < 2) return '';
+      const perf = (slice[slice.length - 1].value / slice[0].value - 1) * 100;
+      const color = perf >= 0 ? 'var(--score-100)' : 'var(--score-0)';
+      const sign  = perf >= 0 ? '+' : '';
+      return `<div class="tile">
+        <div class="k" style="color:${css(LAYER_VARS[i])}">${esc(layer.name)}</div>
+        <div class="v" style="color:${color}">${sign}${perf.toFixed(1)}%</div>
+        <div class="sub">${esc(layer.tickers.join(', '))}</div>
+      </div>`;
+    });
+    wrap.innerHTML = tiles.join('');
+  }
+
+  async function load(silent=false){
+    if (!silent && Router.active() === 'ai-layers') setStatus('loading', t('status.refreshing'));
+    try {
+      const r = await fetchIfChanged(URL_, STAMP_URL, state.lastUpdated);
+      if (r.unchanged && state.data){
+        if (Router.active() === 'ai-layers') setStatus('live', fmtTime(state.lastUpdated));
+        hideError(); return;
+      }
+      if (!Array.isArray(r.data.layers)) throw new Error('"layers" array missing');
+      state.data = r.data;
+      state.lastUpdated = r.stamp || r.data.updated_at || new Date().toISOString();
+      document.getElementById('al-updated-at').textContent = fmtTime(state.lastUpdated);
+      hideError();
+      if (Router.active() === 'ai-layers') { paint(); setStatus('live', fmtTime(state.lastUpdated)); }
+    } catch(err){
+      if (Router.active() === 'ai-layers'){ setStatus('error', t('status.failed')); showError(err.message || String(err)); }
+    }
+  }
+
+  function bind(){
+    document.querySelectorAll('#al-range button').forEach(b => {
+      b.addEventListener('click', () => {
+        document.querySelectorAll('#al-range button').forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        state.range = b.dataset.r;
+        paint();
+      });
+    });
+    document.querySelectorAll('#al-legend .item').forEach(el => {
+      el.addEventListener('click', () => {
+        const i = Number(el.dataset.ds);
+        state.visible[i] = !state.visible[i];
+        el.classList.toggle('off', !state.visible[i]);
+        paint();
+      });
+    });
+  }
+
+  return {
+    init(){
+      bind();
+      load();
+      let timer = setInterval(() => load(true), POLL_MS);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) clearInterval(timer);
+        else { load(true); timer = setInterval(() => load(true), POLL_MS); }
+      });
+    },
+    refresh: () => load(),
+    onShow(){ if (state.data) paint(); },
+    repaint(){
+      if (!state.chartInited) return;
+      LAYER_VARS.forEach((v, i) => {
+        const fallback = state.data ? state.data.layers[i]?.name : LAYER_KEYS[i];
+        state.chart.data.datasets[i].label       = t(LAYER_KEYS[i]) || fallback;
+        state.chart.data.datasets[i].borderColor = css(v);
+        state.chart.data.datasets[i].backgroundColor = css(v);
+      });
+      state.chart.options.scales.x.grid.color   = 'rgba(128,128,128,0.15)';
+      state.chart.options.scales.x.border.color = css('--border');
+      state.chart.options.scales.x.ticks.color  = css('--text-dim');
+      state.chart.options.scales.y.grid.color   = 'rgba(128,128,128,0.15)';
+      state.chart.options.scales.y.border.color = css('--border');
+      state.chart.options.scales.y.ticks.color  = css('--text-dim');
+      state.chart.options.scales.y.title.text   = t('ailayers.indexed') || 'Indexed (base = 100)';
+      state.chart.options.scales.y.title.color  = css('--text-dim');
+      state.chart.options.plugins.tooltip.backgroundColor = css('--panel');
+      state.chart.options.plugins.tooltip.borderColor     = css('--border');
+      state.chart.options.plugins.tooltip.titleColor      = css('--text');
+      state.chart.options.plugins.tooltip.bodyColor       = css('--text-soft');
+      state.chart.update('none');
+      paint();
+    },
+    lastUpdated: () => state.lastUpdated,
+  };
+})();
+
+/* ============================================================================
    ARTICLES CONTROLLER — renders ARTICLES array from articles.js
    ============================================================================ */
 const Articles = (() => {
@@ -1416,15 +1680,21 @@ const Router = (() => {
 
   function active(){ return current; }
   function show(name){
-    if (!['overview','breadth','articles'].includes(name)) name = 'overview';
+    if (!['overview','breadth','ai-layers','articles'].includes(name)) name = 'overview';
     current = name;
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
     document.querySelectorAll('.view').forEach(v => v.classList.toggle('visible', v.dataset.tab === name));
-    const upd = name === 'overview' ? Overview.lastUpdated() : Breadth.lastUpdated();
+    const upd = name === 'overview' ? Overview.lastUpdated()
+              : name === 'ai-layers' ? AILayers.lastUpdated()
+              : Breadth.lastUpdated();
     if (upd) setStatus('live', fmtTime(upd));
-    if (name === 'breadth') Breadth.onShow();
-    if (name === 'articles') Articles.repaint();
-    document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
+    if (name === 'breadth')    Breadth.onShow();
+    if (name === 'ai-layers')  AILayers.onShow();
+    if (name === 'articles')   Articles.repaint();
+    document.title = name === 'breadth'   ? t('title.breadth')
+                   : name === 'articles'  ? t('title.articles')
+                   : name === 'ai-layers' ? t('tab.ai-layers') + ' — ' + t('brand.title')
+                   : t('title.overview');
   }
 
   function apply(){
@@ -1450,7 +1720,8 @@ const Router = (() => {
 document.getElementById('refresh').addEventListener('click', async () => {
   const ico = document.getElementById('refresh-ico');
   ico.classList.add('spin');
-  if (Router.active() === 'overview') await Overview.refresh();
+  if (Router.active() === 'overview')       await Overview.refresh();
+  else if (Router.active() === 'ai-layers') await AILayers.refresh();
   else await Breadth.refresh();
   setTimeout(() => ico.classList.remove('spin'), 400);
 });
@@ -1467,6 +1738,7 @@ const Theme = (() => {
     localStorage.setItem(KEY, current);
     Overview.repaint();
     Breadth.repaint();
+    AILayers.repaint();
   }
 
   return {
@@ -1694,6 +1966,7 @@ HistoryToggle.init();
 Router.bind();
 Overview.init();
 Breadth.init();
+AILayers.init();
 Articles.init();
 Auth.init();
 Router.apply();    // respect initial URL hash
