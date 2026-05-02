@@ -445,6 +445,7 @@
       </button>
       <button id="theme-toggle" class="btn" title="Toggle theme">🌓</button>
       <button id="lang-toggle" class="btn">中文</button>
+      <button id="feedback-toggle" class="btn" data-i18n="btn.feedback">Feedback</button>
       <button id="login-toggle" class="btn">Login</button>
     </div>
   </header>
@@ -455,6 +456,7 @@
     <a class="tab"        data-tab="breadth"    href="#/breadth"   ><span data-i18n="tab.breadth">Market Breadth</span><span class="pill">S&amp;P 500</span></a>
     <a class="tab"        data-tab="ai-layers"  href="#/ai-layers" ><span data-i18n="tab.ai-layers">AI 5 Layers</span><span class="pill">AI</span></a>
     <a class="tab"        data-tab="articles"   href="#/articles"  ><span data-i18n="tab.articles">Commentary</span><span class="pill" id="articles-pill">1</span></a>
+    <a class="tab"        data-tab="admin"      href="#/admin"     id="admin-tab" style="display:none;"><span data-i18n="tab.admin">Admin</span></a>
   </nav>
 
   <!-- ================= ERROR BANNER (shared) ================= -->
@@ -696,9 +698,38 @@
     </div>
   </section>
 
+  <!-- ================= ADMIN VIEW ================= -->
+  <section class="view" data-tab="admin" style="display:none;">
+    <div class="section-head" style="margin-top:0;">
+      <h2 data-i18n="admin.feedbacks.title">User Feedbacks</h2>
+    </div>
+    <div id="admin-feedbacks-container" style="overflow-x:auto;">
+      <div class="status loading"><span class="dot"></span><span data-i18n="status.loading">Loading...</span></div>
+    </div>
+  </section>
+
   <footer class="foot" data-i18n-html="footer.text">
     Data from <code>scores.json</code> and <code>breadth.json</code>. Edits appear within seconds.
   </footer>
+</div>
+
+<!-- ================= FEEDBACK MODAL ================= -->
+<div id="feedback-modal" class="modal-overlay">
+  <div class="modal">
+    <button id="feedback-modal-close" class="modal-close">✕</button>
+    <h2 data-i18n="feedback.title">Submit Feedback</h2>
+    <div id="feedback-error"></div>
+    <form id="feedback-form" class="auth-form" style="display: flex; flex-direction: column; gap: 0.5rem;">
+      <select id="feedback-type" required>
+        <option value="suggestion" data-i18n="feedback.type.suggestion">Suggestion</option>
+        <option value="complaint" data-i18n="feedback.type.complaint">Complaint</option>
+        <option value="other" data-i18n="feedback.type.other">Other</option>
+      </select>
+      <input type="text" id="feedback-username" placeholder="Username (optional)" data-i18n-placeholder="feedback.username" />
+      <textarea id="feedback-message" rows="5" placeholder="Your message..." required data-i18n-placeholder="feedback.message"></textarea>
+      <button type="submit" id="feedback-submit" data-i18n="btn.submit">Submit</button>
+    </form>
+  </div>
 </div>
 
 <!-- ================= AUTH MODAL ================= -->
@@ -1754,6 +1785,133 @@ const Theme = (() => {
 })();
 
 /* ============================================================================
+   FEEDBACK CONTROLLER
+   ============================================================================ */
+const Feedback = (() => {
+  const modal = document.getElementById('feedback-modal');
+  const toggleBtn = document.getElementById('feedback-toggle');
+  const closeBtn = document.getElementById('feedback-modal-close');
+  const form = document.getElementById('feedback-form');
+  const errorEl = document.getElementById('feedback-error');
+  const submitBtn = document.getElementById('feedback-submit');
+
+  function clearStatus() {
+    errorEl.style.display = 'none';
+    errorEl.textContent = '';
+  }
+
+  function setStatus(msg, ok = false) {
+    errorEl.style.color = ok ? 'var(--score-100)' : '#ef4444';
+    errorEl.textContent = msg;
+    errorEl.style.display = msg ? 'block' : 'none';
+  }
+
+  function show() {
+    clearStatus();
+    form.reset();
+    modal.classList.add('show');
+  }
+
+  function hide() {
+    modal.classList.remove('show');
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    clearStatus();
+
+    const type = document.getElementById('feedback-type').value;
+    const username = document.getElementById('feedback-username').value;
+    const message = document.getElementById('feedback-message').value;
+
+    try {
+      const res = await fetch('/api/feedback', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type, username, message })
+      });
+      let data = {};
+      try { data = await res.json(); } catch(e) {}
+      if (res.ok) {
+        setStatus('Feedback submitted successfully!', true);
+        setTimeout(() => { hide(); }, 2000);
+      } else {
+        setStatus(data.message || 'Error submitting feedback');
+      }
+    } catch(err) {
+      setStatus('Network error');
+    } finally {
+      submitBtn.disabled = false;
+    }
+  }
+
+  function init() {
+    toggleBtn.addEventListener('click', show);
+    closeBtn.addEventListener('click', hide);
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) hide();
+    });
+    form.addEventListener('submit', handleSubmit);
+  }
+
+  return { init };
+})();
+
+/* ============================================================================
+   ADMIN CONTROLLER
+   ============================================================================ */
+const Admin = (() => {
+  const container = document.getElementById('admin-feedbacks-container');
+  let loaded = false;
+
+  async function loadFeedbacks() {
+    container.innerHTML = `<div class="status loading"><span class="dot"></span><span data-i18n="status.loading">Loading...</span></div>`;
+    applyTranslations(container);
+    try {
+      const res = await fetch('/api/feedbacks');
+      if (!res.ok) throw new Error('Failed to load feedbacks or forbidden');
+      const data = await res.json();
+
+      if (!data.feedbacks || data.feedbacks.length === 0) {
+        container.innerHTML = '<p>No feedbacks yet.</p>';
+        return;
+      }
+
+      let html = '<table style="width:100%; border-collapse: collapse; margin-top: 1rem;">';
+      html += '<tr><th style="text-align:left; border-bottom:1px solid var(--border); padding:0.5rem;">Date</th>';
+      html += '<th style="text-align:left; border-bottom:1px solid var(--border); padding:0.5rem;">User</th>';
+      html += '<th style="text-align:left; border-bottom:1px solid var(--border); padding:0.5rem;">Type</th>';
+      html += '<th style="text-align:left; border-bottom:1px solid var(--border); padding:0.5rem;">Message</th></tr>';
+
+      data.feedbacks.forEach(fb => {
+        const date = new Date(fb.created_at).toLocaleString();
+        const user = fb.username ? esc(fb.username) : (fb.user_id ? 'User '+fb.user_id.substring(0,8) : 'Anonymous');
+        html += `<tr>
+          <td style="border-bottom:1px solid var(--border); padding:0.5rem; white-space:nowrap;">${date}</td>
+          <td style="border-bottom:1px solid var(--border); padding:0.5rem;">${user}</td>
+          <td style="border-bottom:1px solid var(--border); padding:0.5rem;">${esc(fb.type)}</td>
+          <td style="border-bottom:1px solid var(--border); padding:0.5rem; max-width:400px; word-wrap:break-word;">${esc(fb.message)}</td>
+        </tr>`;
+      });
+      html += '</table>';
+      container.innerHTML = html;
+      loaded = true;
+    } catch (e) {
+      container.innerHTML = `<p style="color:#ef4444">${esc(e.message)}</p>`;
+    }
+  }
+
+  function init() {
+    document.getElementById('admin-tab').addEventListener('click', () => {
+      if (!loaded) loadFeedbacks();
+    });
+  }
+
+  return { init, loadFeedbacks };
+})();
+
+/* ============================================================================
    AUTH CONTROLLER — modal logic and API integration
    ============================================================================ */
 const Auth = (() => {
@@ -1839,6 +1997,12 @@ const Auth = (() => {
 
   function renderUser() {
     toggleBtn.textContent = currentUser ? 'Log out' : 'Login';
+    const adminTab = document.getElementById('admin-tab');
+    if (currentUser && currentUser.is_admin) {
+      adminTab.style.display = '';
+    } else {
+      adminTab.style.display = 'none';
+    }
   }
 
   async function checkSession() {
@@ -1969,6 +2133,8 @@ Breadth.init();
 AILayers.init();
 Articles.init();
 Auth.init();
+Feedback.init();
+Admin.init();
 Router.apply();    // respect initial URL hash
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
