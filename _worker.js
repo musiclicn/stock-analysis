@@ -82,6 +82,57 @@ export default {
         console.log("FETCH", request.method, url.pathname);
 
         // API Routes
+        if (url.pathname === '/api/feedbacks' && request.method === 'GET') {
+            const cookieStr = request.headers.get('Cookie') || '';
+            const match = cookieStr.match(/auth_token=([^;]+)/);
+            if (!match) return new Response("Not authenticated", { status: 401 });
+
+            try {
+                const secret = await getJwtSecret(env, url);
+                const { payload } = await jwtVerify(match[1], secret);
+
+                const dbUser = await env.DB.prepare("SELECT is_admin FROM users WHERE id = ?").bind(payload.userId).first();
+                if (!dbUser || !dbUser.is_admin) {
+                    return new Response("Forbidden", { status: 403 });
+                }
+
+                const { results } = await env.DB.prepare("SELECT * FROM feedbacks ORDER BY created_at DESC").all();
+                return new Response(JSON.stringify({ success: true, feedbacks: results }), { status: 200 });
+            } catch (e) {
+                return new Response(e.message, { status: 500 });
+            }
+        }
+
+        if (url.pathname === '/api/feedback' && request.method === 'POST') {
+            try {
+                const { type, message, username } = await request.json();
+                if (!message) return new Response("Message required", { status: 400 });
+
+                let userId = null;
+                const cookieStr = request.headers.get('Cookie') || '';
+                const match = cookieStr.match(/auth_token=([^;]+)/);
+
+                if (match) {
+                    try {
+                        const secret = await getJwtSecret(env, url);
+                        const { payload } = await jwtVerify(match[1], secret);
+                        userId = payload.userId;
+                    } catch (e) {
+                        // ignore invalid token for anonymous feedback
+                    }
+                }
+
+                const id = crypto.randomUUID();
+                await env.DB.prepare(
+                    "INSERT INTO feedbacks (id, user_id, username, type, message) VALUES (?, ?, ?, ?, ?)"
+                ).bind(id, userId, username || null, type || 'other', message).run();
+
+                return new Response(JSON.stringify({ success: true, message: "Feedback submitted" }), { status: 201 });
+            } catch (e) {
+                return new Response(e.message, { status: 500 });
+            }
+        }
+
         if (url.pathname.startsWith('/api/auth/')) {
             const path = url.pathname.replace('/api/auth/', '');
             const method = request.method;
@@ -269,7 +320,12 @@ export default {
                 try {
                     const secret = await getJwtSecret(env, url);
                     const { payload } = await jwtVerify(match[1], secret);
-                    return new Response(JSON.stringify({ success: true, user: { id: payload.userId, email: payload.email } }), { status: 200 });
+
+                    // Fetch is_admin status
+                    const dbUser = await env.DB.prepare("SELECT is_admin FROM users WHERE id = ?").bind(payload.userId).first();
+                    const is_admin = dbUser ? !!dbUser.is_admin : false;
+
+                    return new Response(JSON.stringify({ success: true, user: { id: payload.userId, email: payload.email, is_admin } }), { status: 200 });
                 } catch (e) {
                     return new Response("Invalid token", { status: 401 });
                 }

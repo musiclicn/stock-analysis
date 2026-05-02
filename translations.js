@@ -26,6 +26,16 @@ var TRANSLATIONS = {
     'tab.breadth':    'Market Breadth',
     'tab.articles':   'Commentary',
     'tab.ai-layers':  'AI 5 Layers',
+    'tab.admin':      'Admin',
+    'btn.feedback':   'Feedback',
+    'feedback.title': 'Submit Feedback',
+    'feedback.type.suggestion': 'Suggestion',
+    'feedback.type.complaint':  'Complaint',
+    'feedback.type.other':      'Other',
+    'feedback.username': 'Username (optional)',
+    'feedback.message':  'Your message...',
+    'btn.submit':     'Submit',
+    'admin.feedbacks.title': 'User Feedbacks',
 
     /* ---------- AI layers chart ---------- */
     'ailayers.title':    'Jensen Huang\'s AI 5-Layer Cake',
@@ -190,6 +200,16 @@ var TRANSLATIONS = {
     'tab.breadth':    '市场宽度',
     'tab.articles':   '市场评论',
     'tab.ai-layers':  'AI五层架构',
+    'tab.admin':      '管理',
+    'btn.feedback':   '反馈',
+    'feedback.title': '提交反馈',
+    'feedback.type.suggestion': '建议',
+    'feedback.type.complaint':  '投诉',
+    'feedback.type.other':      '其他',
+    'feedback.username': '用户名（可选）',
+    'feedback.message':  '您的留言...',
+    'btn.submit':     '提交',
+    'admin.feedbacks.title': '用户反馈',
 
     /* ---------- AI五层图表 ---------- */
     'ailayers.title':    '黄仁勋的AI五层蛋糕架构',
