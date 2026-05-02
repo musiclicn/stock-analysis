@@ -9,7 +9,7 @@ var TRANSLATIONS = {
   en: {
     /* ---------- brand ---------- */
     'brand.title':   'Alpha Stock',
-    'brand.tagline': 'U.S. equities · scores & breadth',
+    'brand.tagline': 'help you find alpha stocks',
 
     /* ---------- status bar ---------- */
     'status.loading':    'Loading…',
@@ -165,7 +165,7 @@ var TRANSLATIONS = {
     'score-intro.body':  'A <strong>proprietary quantitative metric</strong> that tracks the underlying momentum and strength of US indexes, sectors, and stocks. By analyzing historical score changes, we help you identify <strong>trend exhaustion</strong> and pinpoint <strong>high-probability reversal opportunities</strong>.',
 
     /* ---------- page titles ---------- */
-    'title.overview':  'Alpha Stock — U.S. Equities Dashboard',
+    'title.overview':  'Alpha Stock — U.S. Equities',
     'title.breadth':   'Market Breadth — Alpha Stock',
     'title.articles':  'Commentary — Alpha Stock',
   },
@@ -173,7 +173,7 @@ var TRANSLATIONS = {
   zh: {
     /* ---------- 品牌 ---------- */
     'brand.title':   'Alpha Stock',
-    'brand.tagline': '美股 · 评分与宽度',
+    'brand.tagline': '美股 · 专业追踪阿尔法股票',
 
     /* ---------- 状态栏 ---------- */
     'status.loading':    '加载中…',
@@ -329,7 +329,7 @@ var TRANSLATIONS = {
     'score-intro.body':  '一项<strong>专有量化指标</strong>，追踪美国指数、板块与个股的底层动量和强度。通过分析历史评分变化，帮助您识别<strong>趋势衰竭</strong>信号，精准捕捉<strong>高概率反转机会</strong>。',
 
     /* ---------- 页面标题 ---------- */
-    'title.overview':  '市场脉搏 — 美股仪表板',
+    'title.overview':  '美股专业追踪阿尔法股票',
     'title.breadth':   '市场宽度 — 市场脉搏',
     'title.articles':  '市场评论 — 市场脉搏',
   },
