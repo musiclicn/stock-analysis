@@ -252,7 +252,19 @@ export default {
                     ).bind(tokenHash, user.id, expiresAt).run();
 
                     const resetUrl = `${url.origin}/?reset=${encodeURIComponent(token)}`;
-                    const fromEmail = env.FROM_EMAIL || 'onboarding@resend.dev';
+
+                    let fromEmail = (env.FROM_EMAIL || 'onboarding@resend.dev').trim();
+                    if (!fromEmail.includes('@')) {
+                        const domain = url.hostname.replace(/^www\./, '') || 'example.com';
+                        fromEmail = `${fromEmail} <noreply@${domain}>`;
+                    } else if (!fromEmail.includes('<') && fromEmail.includes(' ')) {
+                        const parts = fromEmail.split(/\s+/);
+                        const emailPart = parts.pop();
+                        const namePart = parts.join(' ');
+                        if (emailPart.includes('@')) {
+                            fromEmail = `${namePart} <${emailPart}>`;
+                        }
+                    }
 
                     const emailRes = await fetch('https://api.resend.com/emails', {
                         method: 'POST',
