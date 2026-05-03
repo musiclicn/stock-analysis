@@ -699,7 +699,7 @@
   </section>
 
   <!-- ================= ADMIN VIEW ================= -->
-  <section class="view" data-tab="admin" style="display:none;">
+  <section class="view" data-tab="admin">
     <div class="section-head" style="margin-top:0;">
       <h2 data-i18n="admin.feedbacks.title">User Feedbacks</h2>
     </div>
@@ -1711,7 +1711,7 @@ const Router = (() => {
 
   function active(){ return current; }
   function show(name){
-    if (!['overview','breadth','ai-layers','articles'].includes(name)) name = 'overview';
+    if (!['overview','breadth','ai-layers','articles','admin'].includes(name)) name = 'overview';
     current = name;
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
     document.querySelectorAll('.view').forEach(v => v.classList.toggle('visible', v.dataset.tab === name));
@@ -1722,9 +1722,11 @@ const Router = (() => {
     if (name === 'breadth')    Breadth.onShow();
     if (name === 'ai-layers')  AILayers.onShow();
     if (name === 'articles')   Articles.repaint();
+    if (name === 'admin')      Admin.onShow();
     document.title = name === 'breadth'   ? t('title.breadth')
                    : name === 'articles'  ? t('title.articles')
                    : name === 'ai-layers' ? t('tab.ai-layers') + ' — ' + t('brand.title')
+                   : name === 'admin'     ? t('tab.admin') + ' — ' + t('brand.title')
                    : t('title.overview');
   }
 
@@ -1753,6 +1755,7 @@ document.getElementById('refresh').addEventListener('click', async () => {
   ico.classList.add('spin');
   if (Router.active() === 'overview')       await Overview.refresh();
   else if (Router.active() === 'ai-layers') await AILayers.refresh();
+  else if (Router.active() === 'admin')     await Admin.loadFeedbacks();
   else await Breadth.refresh();
   setTimeout(() => ico.classList.remove('spin'), 400);
 });
@@ -1867,7 +1870,8 @@ const Admin = (() => {
 
   async function loadFeedbacks() {
     container.innerHTML = `<div class="status loading"><span class="dot"></span><span data-i18n="status.loading">Loading...</span></div>`;
-    applyTranslations(container);
+    if (typeof applyTranslations === 'function') applyTranslations(container);
+    else if (typeof applyI18n === 'function') applyI18n();
     try {
       const res = await fetch('/api/feedbacks');
       if (!res.ok) throw new Error('Failed to load feedbacks or forbidden');
@@ -1903,12 +1907,14 @@ const Admin = (() => {
   }
 
   function init() {
-    document.getElementById('admin-tab').addEventListener('click', () => {
-      if (!loaded) loadFeedbacks();
-    });
+    // Initialization done if needed
   }
 
-  return { init, loadFeedbacks };
+  function onShow() {
+    if (!loaded) loadFeedbacks();
+  }
+
+  return { init, onShow, loadFeedbacks };
 })();
 
 /* ============================================================================
