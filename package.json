@@ -20,6 +20,7 @@
   "homepage": "https://github.com/musiclicn/stock-analysis#readme",
   "dependencies": {
     "cookie": "^1.1.1",
-    "jose": "^6.2.3"
+    "jose": "^6.2.3",
+    "resend": "^6.12.2"
   }
 }
