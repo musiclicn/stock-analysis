@@ -169,6 +169,7 @@ export default {
 
                     const user = await env.DB.prepare("SELECT * FROM users WHERE email = ? AND provider = 'local'").bind(email).first();
                     if (!user) return new Response("Invalid credentials", { status: 401 });
+                    if (user.status === 'deleted') return new Response("Account deleted", { status: 403 });
 
                     let isValid = false;
                     let needsUpgrade = false;
@@ -212,6 +213,26 @@ export default {
             }
 
             // ---- Logout ----
+
+            if (path === 'delete-account' && method === 'POST') {
+                const cookieStr = request.headers.get('Cookie') || '';
+                const match = cookieStr.match(/auth_token=([^;]+)/);
+                if (!match) return new Response("Not authenticated", { status: 401 });
+
+                try {
+                    const secret = await getJwtSecret(env, url);
+                    const { payload } = await jwtVerify(match[1], secret);
+
+                    await env.DB.prepare("UPDATE users SET status = 'deleted' WHERE id = ?").bind(payload.userId).run();
+
+                    const response = new Response(JSON.stringify({ success: true }), { status: 200 });
+                    response.headers.append('Set-Cookie', serializeCookie('auth_token', '', 0)); // Expire cookie
+                    return response;
+                } catch (e) {
+                    return new Response("Invalid token", { status: 401 });
+                }
+            }
+
             if (path === 'logout' && method === 'POST') {
                 const response = new Response(JSON.stringify({ success: true }), { status: 200 });
                 response.headers.append('Set-Cookie', serializeCookie('auth_token', '', 0)); // Expire cookie
@@ -328,7 +349,8 @@ export default {
                     const { payload } = await jwtVerify(match[1], secret);
 
                     // Fetch is_admin status
-                    const dbUser = await env.DB.prepare("SELECT is_admin FROM users WHERE id = ?").bind(payload.userId).first();
+                    const dbUser = await env.DB.prepare("SELECT is_admin, status FROM users WHERE id = ?").bind(payload.userId).first();
+                    if (dbUser && dbUser.status === 'deleted') return new Response("Account deleted", { status: 401 });
                     const is_admin = dbUser ? !!dbUser.is_admin : false;
 
                     return new Response(JSON.stringify({ success: true, user: { id: payload.userId, email: payload.email, is_admin } }), { status: 200 });
@@ -406,6 +428,7 @@ export default {
 
                     // Handle user in DB
                     let user = await env.DB.prepare("SELECT * FROM users WHERE email = ?").bind(userData.email).first();
+                    if (user && user.status === 'deleted') return new Response("Account deleted", { status: 403 });
                     if (!user) {
                         const userId = crypto.randomUUID();
                         await env.DB.prepare(
@@ -491,6 +514,7 @@ export default {
 
                      // Handle user in DB
                      let user = await env.DB.prepare("SELECT * FROM users WHERE email = ?").bind(userData.email).first();
+                     if (user && user.status === 'deleted') return new Response("Account deleted", { status: 403 });
                      if (!user) {
                          const userId = crypto.randomUUID();
                          await env.DB.prepare(

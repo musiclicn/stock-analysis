@@ -472,6 +472,7 @@
     <a class="tab"        data-tab="ai-layers"  href="#/ai-layers" ><span data-i18n="tab.ai-layers">AI 5 Layers</span><span class="pill">AI</span></a>
     <a class="tab"        data-tab="articles"   href="#/articles"  ><span data-i18n="tab.articles">Commentary</span><span class="pill" id="articles-pill">1</span></a>
     <a class="tab"        data-tab="admin"      href="#/admin"     id="admin-tab" style="display:none;"><span data-i18n="tab.admin">Admin</span></a>
+    <a class="tab"        data-tab="settings"   href="#/settings"  id="settings-tab" style="display:none;"><span data-i18n="tab.settings">Settings</span></a>
   </nav>
 
   <!-- ================= ERROR BANNER (shared) ================= -->
@@ -713,7 +714,19 @@
     </div>
   </section>
 
-  <!-- ================= ADMIN VIEW ================= -->
+
+  <!-- ================= SETTINGS VIEW ================= -->
+  <section class="view" data-tab="settings">
+    <div class="card">
+      <h2 data-i18n="tab.settings">Settings</h2>
+      <p style="margin-bottom: 20px;">Manage your account settings below.</p>
+      <div>
+        <button id="delete-account-btn" class="btn" style="background:#ef4444;color:white;border-color:#ef4444;">Delete Account</button>
+      </div>
+    </div>
+  </section>
+
+<!-- ================= ADMIN VIEW ================= -->
   <section class="view" data-tab="admin">
     <div class="section-head" style="margin-top:0;">
       <h2 data-i18n="admin.feedbacks.title">User Feedbacks</h2>
@@ -1726,7 +1739,7 @@ const Router = (() => {
 
   function active(){ return current; }
   function show(name){
-    if (!['overview','breadth','ai-layers','articles','admin'].includes(name)) name = 'overview';
+    if (!['overview','breadth','ai-layers','articles','admin','settings'].includes(name)) name = 'overview';
     current = name;
     document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
     document.querySelectorAll('.view').forEach(v => v.classList.toggle('visible', v.dataset.tab === name));
@@ -1742,6 +1755,7 @@ const Router = (() => {
                    : name === 'articles'  ? t('title.articles')
                    : name === 'ai-layers' ? t('tab.ai-layers') + ' — ' + t('brand.title')
                    : name === 'admin'     ? t('tab.admin') + ' — ' + t('brand.title')
+                   : name === 'settings'  ? t('tab.settings') + ' — ' + t('brand.title')
                    : t('title.overview');
   }
 
@@ -2025,6 +2039,13 @@ const Auth = (() => {
       adminTab.style.display = 'none';
     }
 
+    const settingsTab = document.getElementById('settings-tab');
+    if (currentUser) {
+      settingsTab.style.display = '';
+    } else {
+      settingsTab.style.display = 'none';
+    }
+
     const welcomeEl = document.getElementById('user-welcome');
     if (currentUser && currentUser.email) {
       const username = currentUser.email.split('@')[0];
@@ -2152,6 +2173,36 @@ const Auth = (() => {
   };
 })();
 
+
+/* ============================================================================
+   SETTINGS CONTROLLER
+   ============================================================================ */
+const Settings = (() => {
+  function init() {
+    const btn = document.getElementById('delete-account-btn');
+    if (btn) {
+      btn.addEventListener('click', async () => {
+        if (confirm("Are you sure you want to delete your account? This action cannot be undone.")) {
+          try {
+            const res = await fetch('/api/auth/delete-account', { method: 'POST' });
+            if (res.ok) {
+              alert("Account deleted.");
+              await fetch('/api/auth/logout', { method: 'POST' });
+              location.href = '#/overview';
+              location.reload();
+            } else {
+              alert("Failed to delete account.");
+            }
+          } catch (e) {
+            alert("Error deleting account.");
+          }
+        }
+      });
+    }
+  }
+  return { init };
+})();
+
 /* ============================================================================
    KICKOFF
    ============================================================================ */
@@ -2166,6 +2217,7 @@ Articles.init();
 Auth.init();
 Feedback.init();
 Admin.init();
+Settings.init();
 Router.apply();    // respect initial URL hash
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
