@@ -106,6 +106,20 @@
   .btn .spin  { animation: spin .9s linear infinite; display:inline-block; }
   @keyframes spin { to { transform: rotate(360deg); } }
 
+  /* --- User Welcome --- */
+  .user-welcome {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--panel); border: 1px solid var(--border);
+    padding: 4px 12px 4px 4px; border-radius: 999px;
+    font-size: 13px; color: var(--text);
+  }
+  .user-welcome .avatar {
+    width: 24px; height: 24px; border-radius: 50%;
+    background: var(--accent); color: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 12px; text-transform: uppercase;
+  }
+
   /* =============== TAB NAV =============== */
   .tab-nav {
     display: flex; gap: 4px;
@@ -446,6 +460,7 @@
       <button id="theme-toggle" class="btn" title="Toggle theme">🌓</button>
       <button id="lang-toggle" class="btn">中文</button>
       <button id="feedback-toggle" class="btn" data-i18n="btn.feedback">Feedback</button>
+      <div id="user-welcome" class="user-welcome" style="display:none;"></div>
       <button id="login-toggle" class="btn">Login</button>
     </div>
   </header>
@@ -2008,6 +2023,16 @@ const Auth = (() => {
       adminTab.style.display = '';
     } else {
       adminTab.style.display = 'none';
+    }
+
+    const welcomeEl = document.getElementById('user-welcome');
+    if (currentUser && currentUser.email) {
+      const username = currentUser.email.split('@')[0];
+      const initial = username.charAt(0).toUpperCase();
+      welcomeEl.innerHTML = `<span class="avatar">${esc(initial)}</span><span>${esc(username)}</span>`;
+      welcomeEl.style.display = '';
+    } else {
+      welcomeEl.style.display = 'none';
     }
   }
 
