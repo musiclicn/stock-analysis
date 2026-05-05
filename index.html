@@ -705,13 +705,14 @@
         <span class="label" data-i18n="breadth.zoom">Zoom</span>
         <div class="range" id="range">
           <button data-r="all">All</button>
-          <button data-r="10y">10y</button>
-          <button data-r="5y">5y</button>
           <button data-r="3y">3y</button>
           <button data-r="2y">2y</button>
           <button data-r="1y">1y</button>
           <button data-r="ytd">YTD</button>
           <button data-r="6m" class="active">6m</button>
+          <button data-r="3m">3m</button>
+          <button data-r="1m">1m</button>
+          <button data-r="1w">1w</button>
         </div>
         <div class="spacer"></div>
         <span class="label" data-i18n="breadth.updated">Updated</span>
@@ -1296,17 +1297,18 @@ const Breadth = (() => {
 
   function filterByRange(series, range){
     if (!series.length) return series;
-    const last = new Date(series[series.length - 1].date);
+    const now = new Date();
     let cutoff;
     switch(range){
       case 'all': return series;
-      case '10y': cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 10); break;
-      case '5y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 5);  break;
-      case '3y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 3);  break;
-      case '2y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 2);  break;
-      case '1y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 1);  break;
-      case 'ytd': cutoff = new Date(last.getFullYear(), 0, 1); break;
-      case '6m':  cutoff = new Date(last); cutoff.setMonth(last.getMonth() - 6); break;
+      case '3y':  cutoff = new Date(now); cutoff.setFullYear(now.getFullYear() - 3);  break;
+      case '2y':  cutoff = new Date(now); cutoff.setFullYear(now.getFullYear() - 2);  break;
+      case '1y':  cutoff = new Date(now); cutoff.setFullYear(now.getFullYear() - 1);  break;
+      case 'ytd': cutoff = new Date(now.getFullYear(), 0, 1); break;
+      case '6m':  cutoff = new Date(now); cutoff.setMonth(now.getMonth() - 6);  break;
+      case '3m':  cutoff = new Date(now); cutoff.setMonth(now.getMonth() - 3);  break;
+      case '1m':  cutoff = new Date(now); cutoff.setMonth(now.getMonth() - 1);  break;
+      case '1w':  cutoff = new Date(now); cutoff.setDate(now.getDate() - 7);    break;
       default:    return series;
     }
     return series.filter(r => new Date(r.date) >= cutoff);
@@ -1379,6 +1381,13 @@ const Breadth = (() => {
     state.chart.data.datasets[1].data = toPt('above_ma50');
     state.chart.data.datasets[2].data = toPt('above_ma200');
     state.chart.data.datasets.forEach((ds, i) => ds.hidden = !state.visible[i]);
+    if (slice.length) {
+      state.chart.options.scales.x.min = slice[0].date;
+      state.chart.options.scales.x.max = slice[slice.length - 1].date;
+    } else {
+      delete state.chart.options.scales.x.min;
+      delete state.chart.options.scales.x.max;
+    }
     state.chart.update('none');
     renderSummary(slice);
   }
