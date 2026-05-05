@@ -48,7 +48,10 @@ var TRANSLATIONS = {
     'ailayers.layer2':   'AI Infrastructure',
     'ailayers.layer3':   'AI Models',
     'ailayers.layer4':   'AI Applications',
-    'ailayers.perf':     'Performance',
+    'ailayers.perf':       'Performance',
+    'ailayers.gate.title': 'Members Only',
+    'ailayers.gate.sub':   'Log in to access the AI 5-Layer Cake chart and performance data.',
+    'ailayers.gate.btn':   'Log in',
 
     /* ---------- section headings ---------- */
     'section.indexes':      'Major Indexes',
@@ -229,7 +232,10 @@ var TRANSLATIONS = {
     'ailayers.layer2':   'AI基础设施',
     'ailayers.layer3':   'AI大模型',
     'ailayers.layer4':   'AI应用',
-    'ailayers.perf':     '区间涨跌',
+    'ailayers.perf':       '区间涨跌',
+    'ailayers.gate.title': '会员专属',
+    'ailayers.gate.sub':   '请登录后查看 AI 五层蛋糕图表及表现数据。',
+    'ailayers.gate.btn':   '登录',
 
     /* ---------- 区块标题 ---------- */
     'section.indexes':      '主要指数',
