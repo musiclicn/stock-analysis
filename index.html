@@ -749,48 +749,37 @@
   <section class="view" data-tab="ai-layers">
     <div class="chart-card">
 
-      <!-- login gate (shown when logged out) -->
-      <div id="ai-layers-gate" class="ai-login-gate">
-        <div class="gate-icon">🔒</div>
-        <p class="gate-title" data-i18n="ailayers.gate.title">Please sign in to view this content.</p>
-        <p class="gate-sub" data-i18n="ailayers.gate.sub">Log in to access the AI 5-Layer Cake chart and performance data.</p>
-        <button class="gate-btn" id="ai-gate-login-btn" data-i18n="ailayers.gate.btn">Log in</button>
+      <div class="chart-head">
+        <h2 data-i18n="ailayers.title">Jensen Huang's AI 5-Layer Cake</h2>
+        <div class="sub" data-i18n="ailayers.subtitle">Equal-weight basket performance of key stocks in each layer, indexed to 100 at start</div>
       </div>
 
-      <!-- actual content (shown when logged in) -->
-      <div id="ai-layers-content" style="display:none">
-        <div class="chart-head">
-          <h2 data-i18n="ailayers.title">Jensen Huang's AI 5-Layer Cake</h2>
-          <div class="sub" data-i18n="ailayers.subtitle">Equal-weight basket performance of key stocks in each layer, indexed to 100 at start</div>
+      <div class="range-row">
+        <span class="label" data-i18n="ailayers.zoom">Zoom</span>
+        <div class="range" id="al-range">
+          <button data-r="2y" class="active">2y</button>
+          <button data-r="1y">1y</button>
+          <button data-r="ytd">YTD</button>
+          <button data-r="6m">6m</button>
+          <button data-r="3m">3m</button>
+          <button data-r="1m">1m</button>
         </div>
-
-        <div class="range-row">
-          <span class="label" data-i18n="ailayers.zoom">Zoom</span>
-          <div class="range" id="al-range">
-            <button data-r="2y" class="active">2y</button>
-            <button data-r="1y">1y</button>
-            <button data-r="ytd">YTD</button>
-            <button data-r="6m">6m</button>
-            <button data-r="3m">3m</button>
-            <button data-r="1m">1m</button>
-          </div>
-          <div class="spacer"></div>
-          <span class="label" data-i18n="ailayers.updated">Updated</span>
-          <span id="al-updated-at" style="font-family: var(--mono); color: var(--text-soft); font-size: 12px;">—</span>
-        </div>
-
-        <div class="chart-wrap"><canvas id="al-chart"></canvas></div>
-
-        <div class="legend-row" id="al-legend">
-          <span class="item" data-ds="0"><span class="swatch" style="background:var(--layer0)"></span><span data-i18n="ailayers.layer0">AI Energy</span></span>
-          <span class="item" data-ds="1"><span class="swatch" style="background:var(--layer1)"></span><span data-i18n="ailayers.layer1">AI Chips &amp; Compute</span></span>
-          <span class="item" data-ds="2"><span class="swatch" style="background:var(--layer2)"></span><span data-i18n="ailayers.layer2">AI Infrastructure</span></span>
-          <span class="item" data-ds="3"><span class="swatch" style="background:var(--layer3)"></span><span data-i18n="ailayers.layer3">AI Models</span></span>
-          <span class="item" data-ds="4"><span class="swatch" style="background:var(--layer4)"></span><span data-i18n="ailayers.layer4">AI Applications</span></span>
-        </div>
-
-        <div class="summary" id="al-summary"></div>
+        <div class="spacer"></div>
+        <span class="label" data-i18n="ailayers.updated">Updated</span>
+        <span id="al-updated-at" style="font-family: var(--mono); color: var(--text-soft); font-size: 12px;">—</span>
       </div>
+
+      <div class="chart-wrap"><canvas id="al-chart"></canvas></div>
+
+      <div class="legend-row" id="al-legend">
+        <span class="item" data-ds="0"><span class="swatch" style="background:var(--layer0)"></span><span data-i18n="ailayers.layer0">AI Energy</span></span>
+        <span class="item" data-ds="1"><span class="swatch" style="background:var(--layer1)"></span><span data-i18n="ailayers.layer1">AI Chips &amp; Compute</span></span>
+        <span class="item" data-ds="2"><span class="swatch" style="background:var(--layer2)"></span><span data-i18n="ailayers.layer2">AI Infrastructure</span></span>
+        <span class="item" data-ds="3"><span class="swatch" style="background:var(--layer3)"></span><span data-i18n="ailayers.layer3">AI Models</span></span>
+        <span class="item" data-ds="4"><span class="swatch" style="background:var(--layer4)"></span><span data-i18n="ailayers.layer4">AI Applications</span></span>
+      </div>
+
+      <div class="summary" id="al-summary"></div>
 
     </div>
   </section>
@@ -1676,13 +1665,22 @@ const AILayers = (() => {
       const perf = (slice[slice.length - 1].value / slice[0].value - 1) * 100;
       const color = perf >= 0 ? 'var(--score-100)' : 'var(--score-0)';
       const sign  = perf >= 0 ? '+' : '';
+      const tickersSub = Auth.getUser()
+        ? `<div class="sub">${esc(layer.tickers.join(', '))}</div>`
+        : `<div class="sub" style="filter:blur(4px); user-select:none;">███ ████ ███</div>`;
       return `<div class="tile">
         <div class="k" style="color:${css(LAYER_VARS[i])}">${esc(layer.name)}</div>
         <div class="v" style="color:${color}">${sign}${perf.toFixed(1)}%</div>
-        <div class="sub">${esc(layer.tickers.join(', '))}</div>
+        ${tickersSub}
       </div>`;
     });
-    wrap.innerHTML = tiles.join('');
+    const loginHint = Auth.getUser() ? '' : `
+      <div style="width:100%; text-align:center; padding: 10px 0 2px; font-size:12px; color:var(--text-dim);">
+        🔒 <a href="#" id="al-login-hint" style="color:var(--accent); text-decoration:underline; cursor:pointer;">Log in</a> to see the stock list in each layer
+      </div>`;
+    wrap.innerHTML = tiles.join('') + loginHint;
+    const hintBtn = wrap.querySelector('#al-login-hint');
+    if (hintBtn) hintBtn.addEventListener('click', e => { e.preventDefault(); Auth.openLogin(); });
   }
 
   async function load(silent=false){
@@ -2167,12 +2165,7 @@ const Auth = (() => {
       adminTab.style.display = 'none';
     }
 
-    const aiGate    = document.getElementById('ai-layers-gate');
-    const aiContent = document.getElementById('ai-layers-content');
-    if (aiGate && aiContent) {
-      aiGate.style.display    = currentUser ? 'none' : '';
-      aiContent.style.display = currentUser ? ''     : 'none';
-    }
+    AILayers.repaint();
 
     const artGate    = document.getElementById('articles-gate');
     const artContent = document.getElementById('articles-content');
@@ -2322,7 +2315,6 @@ Breadth.init();
 AILayers.init();
 Articles.init();
 Auth.init();
-document.getElementById('ai-gate-login-btn').addEventListener('click', () => Auth.openLogin());
 document.getElementById('articles-gate-login-btn').addEventListener('click', () => Auth.openLogin());
 Feedback.init();
 Admin.init();
