@@ -55,6 +55,13 @@ var TRANSLATIONS = {
     'section.sectors':      'Sectors (SPDR ETFs)',
     'section.constituents': 'Constituents',
 
+    /* ---------- announcement board ---------- */
+    'announce.title':      'Announcements',
+    'announce.tag.new':    'NEW',
+    'announce.tag.fix':    'FIX',
+    'announce.tag.update': 'UPDATE',
+    'announce.tag.info':   'INFO',
+
     /* ---------- hints / labels ---------- */
     'hint.score':    'Score: 0–30 strong bearish · 31–49 bearish · 50–59 neutral · 60–79 bullish · 80–100 strong bullish',
     'hint.sectors':  'Sorted by active timeframe · click a sector for drill-down (prototype)',
@@ -228,6 +235,13 @@ var TRANSLATIONS = {
     'section.indexes':      '主要指数',
     'section.sectors':      '板块（SPDR ETF）',
     'section.constituents': '成分股',
+
+    /* ---------- 公告栏 ---------- */
+    'announce.title':      '公告',
+    'announce.tag.new':    '新功能',
+    'announce.tag.fix':    '修复',
+    'announce.tag.update': '更新',
+    'announce.tag.info':   '信息',
 
     /* ---------- 提示 / 标签 ---------- */
     'hint.score':    '评分：0（强烈看空）· 50（中性）· 100（强烈看多）',

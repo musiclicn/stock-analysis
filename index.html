@@ -120,6 +120,78 @@
     font-weight: 700; font-size: 12px; text-transform: uppercase;
   }
 
+  /* =============== ANNOUNCEMENT BOARD =============== */
+  .announce-board {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .announce-board-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .announce-board-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .announce-dismiss-all {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0 2px;
+    line-height: 1;
+    opacity: .6;
+  }
+  .announce-dismiss-all:hover { opacity: 1; color: var(--text); }
+  .announce-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--text-soft);
+    animation: fadeIn .2s ease;
+  }
+  .announce-tag {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-top: 1px;
+  }
+  .announce-tag.new    { background: rgba(34,197,94,.15);  color: var(--score-100); }
+  .announce-tag.fix    { background: rgba(110,168,255,.15); color: var(--accent); }
+  .announce-tag.update { background: rgba(234,179,8,.15);  color: var(--score-50); }
+  .announce-tag.info   { background: rgba(139,147,173,.12); color: var(--text-dim); }
+  .announce-close {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 2px;
+    margin-left: auto;
+    flex-shrink: 0;
+    line-height: 1;
+    opacity: .5;
+  }
+  .announce-close:hover { opacity: 1; color: var(--text); }
+
   /* =============== TAB NAV =============== */
   .tab-nav {
     display: flex; gap: 4px;
@@ -465,6 +537,15 @@
     </div>
   </header>
 
+  <!-- ================= ANNOUNCEMENT BOARD ================= -->
+  <div id="announce-board" class="announce-board" style="display:none;">
+    <div class="announce-board-header">
+      <span class="announce-board-title" data-i18n="announce.title">Announcements</span>
+      <button class="announce-dismiss-all" id="announce-dismiss-all" title="Dismiss all">✕</button>
+    </div>
+    <div id="announce-list"></div>
+  </div>
+
   <!-- ================= TAB NAV ================= -->
   <nav class="tab-nav">
     <a class="tab active" data-tab="overview"   href="#/overview"  ><span data-i18n="tab.overview">Overview</span><span class="pill">scores</span></a>
@@ -600,6 +681,7 @@
               <th data-k="chg2w" class="num" style="text-align:right" title="Sum of weekly score changes over the past 2 weeks"><span style="font-size:11px; letter-spacing:.04em;">2W&thinsp;Δ</span></th>
               <th class="num history-col" style="text-align:right" title="Weekly score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20W</span></th>
               <th data-k="daily"  class="num" style="text-align:right"><span data-i18n="tf.daily">Daily</span></th>
+              <th data-k="chg2d" class="num" style="text-align:right" title="(latest daily − previous daily) + (2 days ago daily − previous daily)"><span style="font-size:11px; letter-spacing:.04em;">2D&thinsp;Δ</span></th>
               <th class="num history-col" style="text-align:right" title="Daily score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20D</span></th>
               <th data-k="price"  class="num" style="text-align:right"><span data-i18n="th.price">Price</span></th>
               <th data-k="chg"    class="num" style="text-align:right"><span data-i18n="th.chg">Chg %</span></th>
@@ -904,6 +986,12 @@ function calc2wChg(r){
   if (hw.length >= 3) return (w - hw[hw.length - 2]) + (hw[hw.length - 2] - hw[hw.length - 3]);
   return null;
 }
+function calc2dChg(r){
+  const hd = r.history_daily || [];
+  const d  = r.daily ?? 0;
+  if (hd.length >= 3) return (d - hd[hd.length - 2]) + (hd[hd.length - 3] - hd[hd.length - 2]);
+  return null;
+}
 function heatStrip(arr, total=20){
   const cells = [];
   const pad = Math.max(0, total - arr.length);
@@ -1024,6 +1112,7 @@ const Overview = (() => {
       let av, bv;
       if (k === 'rank')  { av = 0; bv = 0; }
       else if (k === 'chg2w') { av = calc2wChg(a) ?? -999; bv = calc2wChg(b) ?? -999; }
+      else if (k === 'chg2d') { av = calc2dChg(a) ?? -999; bv = calc2dChg(b) ?? -999; }
       else               { av = a[k]; bv = b[k]; }
 
       if (typeof av === 'string') {
@@ -1061,6 +1150,9 @@ const Overview = (() => {
       const d2w = calc2wChg(r);
       const d2wStr = d2w === null ? '—' : (d2w > 0 ? '+' : '') + d2w;
       const d2wCls = d2w === null ? '' : d2w > 0 ? 'delta-up' : d2w < 0 ? 'delta-down' : '';
+      const d2d = calc2dChg(r);
+      const d2dStr = d2d === null ? '—' : (d2d > 0 ? '+' : '') + d2d;
+      const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
       return `
         <tr>
           <td class="rank">${r._rank}</td>
@@ -1084,6 +1176,7 @@ const Overview = (() => {
               <div class="score-val" style="color:${dcol}">${dsc}</div>
             </div>
           </td>
+          <td class="num ${d2dCls}" style="font-family:var(--mono); font-weight:600;">${d2dStr}</td>
           <td class="num history-col">${heatStrip(r.history_daily||[])}</td>
           <td class="num">${fmtNum(r.price||0, 2)}</td>
           <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
@@ -2170,6 +2263,7 @@ Router.apply();    // respect initial URL hash
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
   switchLang(currentLang === 'en' ? 'zh' : 'en');
+  if (typeof renderAnnouncements === 'function') renderAnnouncements();
   Overview.repaint();
   Breadth.repaint();
   Articles.repaint();
@@ -2178,6 +2272,76 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
   if (upd) setStatus('live', fmtTime(upd));
   document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
 });
+
+/* ============================================================================
+   ANNOUNCEMENT BOARD
+   To add/remove items, edit the ANNOUNCEMENTS array below.
+   Each item needs a unique `id` (used to track dismissal in localStorage),
+   a `type` ('new' | 'fix' | 'update' | 'info'), and a `text`.
+   ============================================================================ */
+(function(){
+  const ANNOUNCEMENTS = [
+    { id: 'ann-003', type: 'new',
+      text: { en: '2D Δ column added to Constituents — shows 2-day daily score momentum.',
+              zh: '成分股表格新增 2D Δ 列，显示两日每日评分动量。' } },
+    { id: 'ann-002', type: 'new',
+      text: { en: 'Support login with Facebook.',
+              zh: '新增 Facebook 账号登录支持。' } },
+    { id: 'ann-001', type: 'fix',
+      text: { en: 'Password reset email delivery fixed.',
+              zh: '已修复重置密码邮件发送问题。' } },
+  ];
+
+  const STORAGE_KEY = 'dismissed-announcements';
+
+  function getDismissed(){
+    try { return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')); }
+    catch(e){ return new Set(); }
+  }
+  function saveDismissed(set){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...set])); } catch(e){}
+  }
+
+  function render(){
+    const dismissed = getDismissed();
+    const visible = ANNOUNCEMENTS.filter(a => !dismissed.has(a.id));
+    const board = document.getElementById('announce-board');
+    const list  = document.getElementById('announce-list');
+    if (!board || !list) return;
+    if (visible.length === 0){ board.style.display = 'none'; return; }
+    board.style.display = '';
+    list.innerHTML = visible.map(a => {
+      const text = typeof a.text === 'object' ? (a.text[currentLang] || a.text.en) : a.text;
+      const tag  = t('announce.tag.' + a.type) || a.type.toUpperCase();
+      return `
+      <div class="announce-item" id="ann-item-${esc(a.id)}">
+        <span class="announce-tag ${esc(a.type)}">${esc(tag)}</span>
+        <span>${esc(text)}</span>
+        <button class="announce-close" data-ann="${esc(a.id)}" title="Dismiss">✕</button>
+      </div>`;
+    }).join('');
+
+    list.querySelectorAll('.announce-close').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.ann;
+        const set = getDismissed();
+        set.add(id);
+        saveDismissed(set);
+        render();
+      });
+    });
+  }
+
+  document.getElementById('announce-dismiss-all').addEventListener('click', () => {
+    const set = getDismissed();
+    ANNOUNCEMENTS.forEach(a => set.add(a.id));
+    saveDismissed(set);
+    render();
+  });
+
+  render();
+  window.renderAnnouncements = render;
+})();
 </script>
 </body>
 </html>
