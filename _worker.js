@@ -1,5 +1,6 @@
 import { SignJWT, jwtVerify } from 'jose';
 import * as cookie from 'cookie';
+import { Resend } from 'resend';
 
 const JWT_SECRET_STRING = "super-secret-local-jwt-key"; // Note: For production use env.JWT_SECRET
 
@@ -266,24 +267,17 @@ export default {
                         }
                     }
 
-                    const emailRes = await fetch('https://api.resend.com/emails', {
-                        method: 'POST',
-                        headers: {
-                            'Authorization': `Bearer ${env.RESEND_API_KEY}`,
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            from: fromEmail,
-                            to: user.email,
-                            subject: 'Reset your password',
-                            text: `We received a request to reset your password. The link below is valid for 1 hour:\n\n${resetUrl}\n\nIf you did not request this, you can safely ignore this email.`,
-                            html: `<p>We received a request to reset your password. The link below is valid for 1 hour:</p><p><a href="${resetUrl}">${resetUrl}</a></p><p>If you did not request this, you can safely ignore this email.</p>`
-                        })
+                    const resend = new Resend(env.RESEND_API_KEY);
+                    const { data, error } = await resend.emails.send({
+                        from: fromEmail,
+                        to: user.email,
+                        subject: 'Reset your password',
+                        text: `We received a request to reset your password. The link below is valid for 1 hour:\n\n${resetUrl}\n\nIf you did not request this, you can safely ignore this email.`,
+                        html: `<p>We received a request to reset your password. The link below is valid for 1 hour:</p><p><a href="${resetUrl}">${resetUrl}</a></p><p>If you did not request this, you can safely ignore this email.</p>`
                     });
 
-                    if (!emailRes.ok) {
-                        const errBody = await emailRes.text();
-                        console.error("Resend email send failed:", emailRes.status, errBody);
+                    if (error) {
+                        console.error("Resend email send failed:", error);
                     }
 
                     return okResponse();
