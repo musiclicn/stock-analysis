@@ -797,30 +797,43 @@
 
   <!-- ================= ARTICLES VIEW ================= -->
   <section class="view" data-tab="articles">
-    <div class="section-head" style="margin-top:0;">
-      <h2 data-i18n="tab.articles">Commentary</h2>
+
+    <!-- login gate (shown when logged out) -->
+    <div id="articles-gate" class="ai-login-gate">
+      <div class="gate-icon">🔒</div>
+      <p class="gate-title" data-i18n="articles.gate.title">Please sign in to view this content.</p>
+      <p class="gate-sub" data-i18n="articles.gate.sub">Log in to read market commentary and analysis.</p>
+      <button class="gate-btn" id="articles-gate-login-btn" data-i18n="articles.gate.btn">Log in</button>
     </div>
-    <div class="article-list" id="articles-list">
-      <!-- SEO / GEO Content Fallback for AI Crawlers -->
-      <noscript>
-        <article>
-          <h3>Core Asset Sectors Analysis & Trend Forecast (2026-04-29)</h3>
-          <p>In-depth analysis of the four core sectors with concentrated capital: Semiconductors & AI Hardware, Cybersecurity & Cloud, Power Infrastructure, and Broad Consumption; accompanied by three scenario probability projections for the next 2-3 months and Wall Street trading advice.</p>
-        </article>
-        <article>
-          <h3>核心资产赛道解析与走势预测报告 (2026-04-29)</h3>
-          <p>资金集中的四大核心赛道深度解析——半导体AI算力、网络安全与云、电力基建、大消费；附未来2-3个月三大情景概率推演及华尔街操盘建议。</p>
-        </article>
-        <article>
-          <h3>The Top Three Driving Factors of the Current U.S. Stock Market (2026-04-23)</h3>
-          <p>Iran War and Oil Prices, Federal Reserve Leadership Changes, Corporate Earnings and AI Capital Expenditures—An in-depth analysis of the top three key driving factors in the U.S. stock market and their short, medium, and long-term impacts.</p>
-        </article>
-        <article>
-          <h3>当前美股走势最关键的三大驱动因素 (2026-04-23)</h3>
-          <p>伊朗战争与油价、美联储领导层更迭与利率路径、企业盈利 + AI资本开支周期。当前市场是"优秀的基本面 + 地缘政治风险溢价"的博弈。</p>
-        </article>
-      </noscript>
+
+    <!-- actual content (shown when logged in) -->
+    <div id="articles-content" style="display:none">
+      <div class="section-head" style="margin-top:0;">
+        <h2 data-i18n="tab.articles">Commentary</h2>
+      </div>
+      <div class="article-list" id="articles-list">
+        <!-- SEO / GEO Content Fallback for AI Crawlers -->
+        <noscript>
+          <article>
+            <h3>Core Asset Sectors Analysis & Trend Forecast (2026-04-29)</h3>
+            <p>In-depth analysis of the four core sectors with concentrated capital: Semiconductors & AI Hardware, Cybersecurity & Cloud, Power Infrastructure, and Broad Consumption; accompanied by three scenario probability projections for the next 2-3 months and Wall Street trading advice.</p>
+          </article>
+          <article>
+            <h3>核心资产赛道解析与走势预测报告 (2026-04-29)</h3>
+            <p>资金集中的四大核心赛道深度解析——半导体AI算力、网络安全与云、电力基建、大消费；附未来2-3个月三大情景概率推演及华尔街操盘建议。</p>
+          </article>
+          <article>
+            <h3>The Top Three Driving Factors of the Current U.S. Stock Market (2026-04-23)</h3>
+            <p>Iran War and Oil Prices, Federal Reserve Leadership Changes, Corporate Earnings and AI Capital Expenditures—An in-depth analysis of the top three key driving factors in the U.S. stock market and their short, medium, and long-term impacts.</p>
+          </article>
+          <article>
+            <h3>当前美股走势最关键的三大驱动因素 (2026-04-23)</h3>
+            <p>伊朗战争与油价、美联储领导层更迭与利率路径、企业盈利 + AI资本开支周期。当前市场是"优秀的基本面 + 地缘政治风险溢价"的博弈。</p>
+          </article>
+        </noscript>
+      </div>
     </div>
+
   </section>
 
   <!-- ================= ADMIN VIEW ================= -->
@@ -2161,6 +2174,13 @@ const Auth = (() => {
       aiContent.style.display = currentUser ? ''     : 'none';
     }
 
+    const artGate    = document.getElementById('articles-gate');
+    const artContent = document.getElementById('articles-content');
+    if (artGate && artContent) {
+      artGate.style.display    = currentUser ? 'none' : '';
+      artContent.style.display = currentUser ? ''     : 'none';
+    }
+
     const welcomeEl = document.getElementById('user-welcome');
     if (currentUser && currentUser.email) {
       const username = currentUser.email.split('@')[0];
@@ -2303,6 +2323,7 @@ AILayers.init();
 Articles.init();
 Auth.init();
 document.getElementById('ai-gate-login-btn').addEventListener('click', () => Auth.openLogin());
+document.getElementById('articles-gate-login-btn').addEventListener('click', () => Auth.openLogin());
 Feedback.init();
 Admin.init();
 Router.apply();    // respect initial URL hash

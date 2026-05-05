@@ -49,9 +49,12 @@ var TRANSLATIONS = {
     'ailayers.layer3':   'AI Models',
     'ailayers.layer4':   'AI Applications',
     'ailayers.perf':       'Performance',
-    'ailayers.gate.title': 'Members Only',
-    'ailayers.gate.sub':   'Log in to access the AI 5-Layer Cake chart and performance data.',
-    'ailayers.gate.btn':   'Log in',
+    'ailayers.gate.title':  'Members Only',
+    'ailayers.gate.sub':    'Log in to access the AI 5-Layer Cake chart and performance data.',
+    'ailayers.gate.btn':    'Log in',
+    'articles.gate.title':  'Members Only',
+    'articles.gate.sub':    'Log in to read market commentary and analysis.',
+    'articles.gate.btn':    'Log in',
 
     /* ---------- section headings ---------- */
     'section.indexes':      'Major Indexes',
@@ -233,9 +236,12 @@ var TRANSLATIONS = {
     'ailayers.layer3':   'AI大模型',
     'ailayers.layer4':   'AI应用',
     'ailayers.perf':       '区间涨跌',
-    'ailayers.gate.title': '会员专属',
-    'ailayers.gate.sub':   '请登录后查看 AI 五层蛋糕图表及表现数据。',
-    'ailayers.gate.btn':   '登录',
+    'ailayers.gate.title':  '会员专属',
+    'ailayers.gate.sub':    '请登录后查看 AI 五层蛋糕图表及表现数据。',
+    'ailayers.gate.btn':    '登录',
+    'articles.gate.title':  '会员专属',
+    'articles.gate.sub':    '请登录后阅读市场评述与分析。',
+    'articles.gate.btn':    '登录',
 
     /* ---------- 区块标题 ---------- */
     'section.indexes':      '主要指数',
