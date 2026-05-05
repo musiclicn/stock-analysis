@@ -1,0 +1,16 @@
+--- index.html
++++ index.html
+@@ -374,7 +374,15 @@
+   @media (max-width: 720px){
+     .summary { grid-template-columns: repeat(2, 1fr); }
+     .chart-wrap { height: 360px; }
+-    .section-head { flex-direction: column; align-items: flex-start; }
++    .section-head { flex-direction: column; align-items: flex-start; }
++    #sectors-wrap.sectors { margin-top: 10px; }
++    #sectors-toggle { display: block !important; margin-left: 0 !important; margin-top: 8px !important; }
++    .mobile-hidden { display: none !important; }
++    .mobile-collapsed { display: none; }
++    .history-col { display: none !important; }
++    .stocks td, .stocks th { padding: 10px 4px !important; }
++    .stocks { font-size: 12px; }
+   }
