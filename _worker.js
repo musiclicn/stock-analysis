@@ -2,18 +2,11 @@ import { SignJWT, jwtVerify } from 'jose';
 import * as cookie from 'cookie';
 import { Resend } from 'resend';
 
-const JWT_SECRET_STRING = "super-secret-local-jwt-key"; // Note: For production use env.JWT_SECRET
-
-async function getJwtSecret(env, url) {
-    let secret = env.JWT_SECRET;
-    if (!secret) {
-        if (url.hostname === 'localhost' || url.hostname === '127.0.0.1') {
-            secret = JWT_SECRET_STRING;
-        } else {
-            throw new Error("JWT_SECRET is not set in production");
-        }
+async function getJwtSecret(env) {
+    if (!env.JWT_SECRET) {
+        throw new Error("JWT_SECRET environment secret is not configured. Run: wrangler secret put JWT_SECRET");
     }
-    return new TextEncoder().encode(secret);
+    return new TextEncoder().encode(env.JWT_SECRET);
 }
 
 // Convert ArrayBuffer to Hex String
@@ -89,7 +82,7 @@ export default {
             if (!match) return new Response("Not authenticated", { status: 401 });
 
             try {
-                const secret = await getJwtSecret(env, url);
+                const secret = await getJwtSecret(env);
                 const { payload } = await jwtVerify(match[1], secret);
 
                 const dbUser = await env.DB.prepare("SELECT is_admin FROM users WHERE id = ?").bind(payload.userId).first();
@@ -115,7 +108,7 @@ export default {
 
                 if (match) {
                     try {
-                        const secret = await getJwtSecret(env, url);
+                        const secret = await getJwtSecret(env);
                         const { payload } = await jwtVerify(match[1], secret);
                         userId = payload.userId;
                     } catch (e) {
@@ -196,7 +189,7 @@ export default {
                     }
 
                     // Create JWT
-                    const secret = await getJwtSecret(env, url);
+                    const secret = await getJwtSecret(env);
                     const jwt = await new SignJWT({ userId: user.id, email: user.email })
                         .setProtectedHeader({ alg: 'HS256' })
                         .setIssuedAt()
@@ -324,7 +317,7 @@ export default {
                 if (!match) return new Response("Not authenticated", { status: 401 });
 
                 try {
-                    const secret = await getJwtSecret(env, url);
+                    const secret = await getJwtSecret(env);
                     const { payload } = await jwtVerify(match[1], secret);
 
                     // Fetch is_admin status
@@ -404,9 +397,21 @@ export default {
                     const userData = await userRes.json();
                     if (!userData.email) throw new Error("Failed to get Google user email");
 
-                    // Handle user in DB
-                    let user = await env.DB.prepare("SELECT * FROM users WHERE email = ?").bind(userData.email).first();
+                    // Handle user in DB — filter by provider to prevent email-collision account takeover
+                    let user = await env.DB.prepare(
+                        "SELECT * FROM users WHERE email = ? AND provider = 'google'"
+                    ).bind(userData.email).first();
                     if (!user) {
+                        // Reject if a local/other-provider account already owns this email
+                        const conflict = await env.DB.prepare(
+                            "SELECT provider FROM users WHERE email = ?"
+                        ).bind(userData.email).first();
+                        if (conflict) {
+                            return new Response(
+                                "An account with this email already exists. Please log in with your original sign-in method.",
+                                { status: 409 }
+                            );
+                        }
                         const userId = crypto.randomUUID();
                         await env.DB.prepare(
                             "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'google', ?)"
@@ -415,7 +420,7 @@ export default {
                     }
 
                     // Create JWT
-                    const secret = await getJwtSecret(env, url);
+                    const secret = await getJwtSecret(env);
                     const jwt = await new SignJWT({ userId: user.id, email: user.email })
                         .setProtectedHeader({ alg: 'HS256' })
                         .setIssuedAt()
@@ -489,9 +494,22 @@ export default {
                      const userData = await userRes.json();
                      if (!userData.email) throw new Error("Facebook did not return an email. The user might not have an email associated or denied the permission.");
 
-                     // Handle user in DB
-                     let user = await env.DB.prepare("SELECT * FROM users WHERE email = ?").bind(userData.email).first();
+                     // Handle user in DB — filter by provider to prevent email-collision account takeover
+                     let user = await env.DB.prepare(
+                         "SELECT * FROM users WHERE email = ? AND provider = 'facebook'"
+                     ).bind(userData.email).first();
                      if (!user) {
+                         // Reject if a local/other-provider account already owns this email
+                         const conflict = await env.DB.prepare(
+                             "SELECT provider FROM users WHERE email = ?"
+                         ).bind(userData.email).first();
+                         if (conflict) {
+                             return new Response(
+                                 "An account with this email already exists. Please log in with your original sign-in method.",
+                                 { status: 409 }
+                             );
+
+                         }
                          const userId = crypto.randomUUID();
                          await env.DB.prepare(
                              "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'facebook', ?)"
@@ -500,7 +518,7 @@ export default {
                      }
 
                      // Create JWT
-                     const secret = await getJwtSecret(env, url);
+                     const secret = await getJwtSecret(env);
                      const jwt = await new SignJWT({ userId: user.id, email: user.email })
                          .setProtectedHeader({ alg: 'HS256' })
                          .setIssuedAt()
