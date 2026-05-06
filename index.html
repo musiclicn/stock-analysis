@@ -1092,6 +1092,7 @@ const Overview = (() => {
     const state = {
       tf: 'daily', idx: 'ndx', sortKey: 'weekly', sortDir: 'desc',
       query: '', data: null, lastUpdated: null,
+      renderLimit: 50, totalFiltered: 0,
     };
 
   function indexCardHTML(ix){
@@ -1252,8 +1253,12 @@ const Overview = (() => {
           .sort((a, b) => matchPriority(a, q) - matchPriority(b, q))
       : ranked;
 
+    // PAGINATION LOGIC
+    state.totalFiltered = filtered.length;
+    const paginated = filtered.slice(0, state.renderLimit);
+
     const body = document.getElementById('stocks-body');
-    body.innerHTML = filtered.map((r) => {
+    const html = paginated.map((r) => {
       const wsc = r.weekly ?? 0;
       const wcol = scoreColor(wsc);
       const dsc = r.daily ?? 0;
@@ -1295,6 +1300,8 @@ const Overview = (() => {
           <td class="num ${chgCls}" data-col="chg">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
         </tr>`;
     }).join('');
+
+    body.innerHTML = html;
 
     document.querySelectorAll('#stocks-table thead th').forEach(th => {
       const key = th.dataset.k;
@@ -1362,6 +1369,7 @@ const Overview = (() => {
         document.querySelectorAll('.inner-tabs button[data-idx]').forEach(x => x.classList.remove('active'));
         b.classList.add('active');
         state.idx = b.dataset.idx;
+        state.renderLimit = 50;
         renderStocks();
       });
     });
@@ -1370,6 +1378,7 @@ const Overview = (() => {
       clearTimeout(searchTimeout);
       searchTimeout = setTimeout(() => {
         state.query = e.target.value;
+        state.renderLimit = 50;
         renderStocks();
       }, 300);
     });
@@ -1382,9 +1391,25 @@ const Overview = (() => {
           state.sortKey = k;
           state.sortDir = (k === 'sym' || k === 'name' || k === 'sector') ? 'asc' : 'desc';
         }
+        state.renderLimit = 50;
         renderStocks();
       });
     });
+
+    // Add scroll event listener to the scroll-body
+    const scrollBody = document.querySelector('.scroll-body');
+    if (scrollBody) {
+      scrollBody.addEventListener('scroll', () => {
+        // Only load more if we haven't rendered all filtered items yet
+        if (state.renderLimit < state.totalFiltered) {
+          const threshold = 100; // pixels from bottom to trigger load
+          if (scrollBody.scrollTop + scrollBody.clientHeight >= scrollBody.scrollHeight - threshold) {
+            state.renderLimit += 50;
+            renderStocks();
+          }
+        }
+      });
+    }
   }
 
   return {
