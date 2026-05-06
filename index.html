@@ -1215,12 +1215,7 @@ const Overview = (() => {
     const sorted = [...(state.data.sectors || [])].sort((a,b) => (b[state.tf]||0) - (a[state.tf]||0));
     document.getElementById('sectors-wrap').innerHTML = sorted.map(sectorCardHTML).join('');
   }
-  function renderStocks(){
-    const list = (state.data.stocks?.[state.idx]) || [];
-    const q = state.query.trim().toLowerCase();
-
-    const dir = state.sortDir === 'asc' ? 1 : -1;
-    const k = state.sortKey;
+  function filterAndSortStocks(list, q, k, dir) {
     const sorted = [...list].sort((a,b) => {
       let av, bv;
       if (k === 'rank')  { av = 0; bv = 0; }
@@ -1246,56 +1241,57 @@ const Overview = (() => {
     });
 
     const ranked = sorted.map((r, i) => ({ ...r, _rank: i + 1 }));
-    const filtered = q
+    return q
       ? ranked
           .filter(r => (r._symLow || '').includes(q) || (r._nameLow || '').includes(q))
           .sort((a, b) => matchPriority(a, q) - matchPriority(b, q))
       : ranked;
+  }
 
-    const body = document.getElementById('stocks-body');
-    body.innerHTML = filtered.map((r) => {
-      const wsc = r.weekly ?? 0;
-      const wcol = scoreColor(wsc);
-      const dsc = r.daily ?? 0;
-      const dcol = scoreColor(dsc);
-      const chg = Number(r.chg||0);
-      const chgCls = chg >= 0 ? 'delta-up' : 'delta-down';
-      const d2w = calc2wChg(r);
-      const d2wStr = d2w === null ? '—' : (d2w > 0 ? '+' : '') + d2w;
-      const d2wCls = d2w === null ? '' : d2w > 0 ? 'delta-up' : d2w < 0 ? 'delta-down' : '';
-      const d2d = calc2dChg(r);
-      const d2dStr = d2d === null ? '—' : (d2d > 0 ? '+' : '') + d2d;
-      const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
-      return `
-        <tr data-sym="${esc(r.sym)}">
-          <td class="rank mobile-hidden">${r._rank}</td>
-          <td class="sym">${esc(r.sym)}</td>
-          <td class="name mobile-hidden">${esc(r.name)}</td>
-          <td class="name mobile-hidden" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
-          <td class="name mobile-hidden" style="color:var(--text-dim); font-size:12px;" title="${esc(r.capCategory||'')}">${r.capCategory && r.capCategory !== 'Unknown' ? esc(r.capCategory) : '—'}</td>
-          <td class="num mobile-hidden" style="color:var(--text-soft)">${fmtVol(r.volume||0)}</td>
-          <td class="num mobile-hidden" style="font-weight:600; color:${(r.volRatio||0) > 2 ? 'var(--score-100)' : (r.volRatio||0) > 1.5 ? 'var(--score-75)' : 'var(--text-soft)'}">${r.volRatio ? r.volRatio.toFixed(2) : '—'}</td>
-          <td class="num">
-            <div class="score-cell">
-              <div class="score-bar mobile-hidden"><div style="width:${wsc}%; background:${wcol}"></div></div>
-              <div class="score-val" style="color:${wcol}">${wsc}</div>
-            </div>
-          </td>
-          <td class="num ${d2wCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2wStr}</td>
-          <td class="num history-col">${heatStrip(r.history_weekly||[])}</td>
-          <td class="num">
-            <div class="score-cell">
-              <div class="score-bar mobile-hidden"><div style="width:${dsc}%; background:${dcol}"></div></div>
-              <div class="score-val" style="color:${dcol}">${dsc}</div>
-            </div>
-          </td>
-          <td class="num ${d2dCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2dStr}</td>
-          <td class="num history-col">${heatStrip(r.history_daily||[])}</td>
-          <td class="num" data-col="price">${fmtNum(r.price||0, 2)}</td>
-          <td class="num ${chgCls}" data-col="chg">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
-        </tr>`;
-    }).join('');
+  function generateStockRowHTML(r) {
+    const wsc = r.weekly ?? 0;
+    const wcol = scoreColor(wsc);
+    const dsc = r.daily ?? 0;
+    const dcol = scoreColor(dsc);
+    const chg = Number(r.chg||0);
+    const chgCls = chg >= 0 ? 'delta-up' : 'delta-down';
+    const d2w = calc2wChg(r);
+    const d2wStr = d2w === null ? '—' : (d2w > 0 ? '+' : '') + d2w;
+    const d2wCls = d2w === null ? '' : d2w > 0 ? 'delta-up' : d2w < 0 ? 'delta-down' : '';
+    const d2d = calc2dChg(r);
+    const d2dStr = d2d === null ? '—' : (d2d > 0 ? '+' : '') + d2d;
+    const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
+    return `
+      <tr data-sym="${esc(r.sym)}">
+        <td class="rank mobile-hidden">${r._rank}</td>
+        <td class="sym">${esc(r.sym)}</td>
+        <td class="name mobile-hidden">${esc(r.name)}</td>
+        <td class="name mobile-hidden" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
+        <td class="name mobile-hidden" style="color:var(--text-dim); font-size:12px;" title="${esc(r.capCategory||'')}">${r.capCategory && r.capCategory !== 'Unknown' ? esc(r.capCategory) : '—'}</td>
+        <td class="num mobile-hidden" style="color:var(--text-soft)">${fmtVol(r.volume||0)}</td>
+        <td class="num mobile-hidden" style="font-weight:600; color:${(r.volRatio||0) > 2 ? 'var(--score-100)' : (r.volRatio||0) > 1.5 ? 'var(--score-75)' : 'var(--text-soft)'}">${r.volRatio ? r.volRatio.toFixed(2) : '—'}</td>
+        <td class="num">
+          <div class="score-cell">
+            <div class="score-bar mobile-hidden"><div style="width:${wsc}%; background:${wcol}"></div></div>
+            <div class="score-val" style="color:${wcol}">${wsc}</div>
+          </div>
+        </td>
+        <td class="num ${d2wCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2wStr}</td>
+        <td class="num history-col">${heatStrip(r.history_weekly||[])}</td>
+        <td class="num">
+          <div class="score-cell">
+            <div class="score-bar mobile-hidden"><div style="width:${dsc}%; background:${dcol}"></div></div>
+            <div class="score-val" style="color:${dcol}">${dsc}</div>
+          </div>
+        </td>
+        <td class="num ${d2dCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2dStr}</td>
+        <td class="num history-col">${heatStrip(r.history_daily||[])}</td>
+        <td class="num" data-col="price">${fmtNum(r.price||0, 2)}</td>
+        <td class="num ${chgCls}" data-col="chg">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
+      </tr>`;
+  }
 
+  function updateSortIndicators() {
     document.querySelectorAll('#stocks-table thead th').forEach(th => {
       const key = th.dataset.k;
       const oldArrow = th.querySelector('.arrow');
@@ -1308,6 +1304,19 @@ const Overview = (() => {
       }
     });
     document.getElementById('sort-hint').textContent = `${state.sortKey} (${state.sortDir})`;
+  }
+
+  function renderStocks(){
+    const list = (state.data.stocks?.[state.idx]) || [];
+    const q = state.query.trim().toLowerCase();
+    const dir = state.sortDir === 'asc' ? 1 : -1;
+
+    const filtered = filterAndSortStocks(list, q, state.sortKey, dir);
+
+    const body = document.getElementById('stocks-body');
+    body.innerHTML = filtered.map(generateStockRowHTML).join('');
+
+    updateSortIndicators();
     if (typeof Prices !== 'undefined') Prices.patch();
   }
   function paint(){
