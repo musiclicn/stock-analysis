@@ -120,6 +120,78 @@
     font-weight: 700; font-size: 12px; text-transform: uppercase;
   }
 
+  /* =============== ANNOUNCEMENT BOARD =============== */
+  .announce-board {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .announce-board-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .announce-board-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+  }
+  .announce-dismiss-all {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0 2px;
+    line-height: 1;
+    opacity: .6;
+  }
+  .announce-dismiss-all:hover { opacity: 1; color: var(--text); }
+  .announce-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+    line-height: 1.45;
+    color: var(--text-soft);
+    animation: fadeIn .2s ease;
+  }
+  .announce-tag {
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-top: 1px;
+  }
+  .announce-tag.new    { background: rgba(34,197,94,.15);  color: var(--score-100); }
+  .announce-tag.fix    { background: rgba(110,168,255,.15); color: var(--accent); }
+  .announce-tag.update { background: rgba(234,179,8,.15);  color: var(--score-50); }
+  .announce-tag.info   { background: rgba(139,147,173,.12); color: var(--text-dim); }
+  .announce-close {
+    background: none;
+    border: none;
+    color: var(--text-dim);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 2px;
+    margin-left: auto;
+    flex-shrink: 0;
+    line-height: 1;
+    opacity: .5;
+  }
+  .announce-close:hover { opacity: 1; color: var(--text); }
+
   /* =============== TAB NAV =============== */
   .tab-nav {
     display: flex; gap: 4px;
@@ -194,6 +266,8 @@
   .stat .v { font-family: var(--mono); font-size:16px; margin-top:3px; }
   .delta-up { color:#22c55e; }
   .delta-down { color:#ef4444; }
+  /* Mobile compact index row — hidden on desktop */
+  .ix-row { display:none; }
 
   /* =============== SECTORS =============== */
   .sectors { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:12px; }
@@ -205,6 +279,8 @@
   .sector-card .score-pill { font-family: var(--mono); font-weight:700; font-size:15px; padding:3px 10px; border-radius:999px; color: var(--bg); }
   .sector-card .bar-wrap { margin-top:12px; background: var(--bg-alt); height:6px; border-radius:999px; overflow:hidden; }
   .sector-card .bar { height:100%; border-radius:999px; transition: width .5s ease; }
+  /* Mobile compact sector row — hidden on desktop */
+  .sc-row { display:none; }
 
   /* =============== CONSTITUENTS =============== */
   .inner-tabs { display:flex; gap:6px; margin-bottom:14px; align-items:center; }
@@ -257,6 +333,20 @@
   .chart-wrap { position: relative; height: 460px; }
   #chart { width: 100%; height: 100%; }
 
+  /* =============== AI LAYERS LOGIN GATE =============== */
+  .ai-login-gate {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; padding: 72px 24px; text-align: center;
+  }
+  .ai-login-gate .gate-icon { font-size: 40px; line-height: 1; }
+  .ai-login-gate .gate-title { font-size: 18px; font-weight: 700; color: var(--text); margin: 0; }
+  .ai-login-gate .gate-sub { font-size: 13px; color: var(--text-dim); margin: 0; max-width: 340px; line-height: 1.6; }
+  .ai-login-gate .gate-btn {
+    margin-top: 4px; padding: 10px 28px; border-radius: 8px; border: none; cursor: pointer;
+    background: var(--accent); color: #fff; font-size: 14px; font-weight: 600;
+  }
+  .ai-login-gate .gate-btn:hover { opacity: .88; }
+
   .legend-row {
     display:flex; justify-content: center; gap: 26px; flex-wrap: wrap;
     padding: 14px 0 2px; color: var(--text-soft); font-size: 13px;
@@ -289,6 +379,50 @@
     .summary { grid-template-columns: repeat(2, 1fr); }
     .chart-wrap { height: 360px; }
     .section-head { flex-direction: column; align-items: flex-start; }
+    #sectors-wrap.sectors { margin-top: 10px; }
+    #sectors-toggle { display: block !important; margin-left: 0 !important; margin-top: 8px !important; }
+    .mobile-hidden { display: none !important; }
+    .mobile-collapsed { display: none; }
+    .history-col { display: none !important; }
+    .stocks td, .stocks th { padding: 10px 4px !important; }
+    .stocks { font-size: 12px; }
+
+    /* Compact sector rows on mobile */
+    .sectors { grid-template-columns: 1fr; gap: 6px; }
+    .sector-card { padding: 10px 14px; }
+    .sector-card .row1,
+    .sector-card .bar-wrap,
+    .sector-card .sc-detail { display: none !important; }
+    .sc-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      align-items: center;
+      gap: 12px;
+    }
+    .scr-sym { min-width: 0; }
+    .scr-ticker { font-weight: 700; font-size: 15px; letter-spacing: .3px; display: block; }
+    .scr-name { font-size: 10px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+
+    /* Compact index rows on mobile */
+    .indexes { grid-template-columns: 1fr; gap: 6px; }
+    .index-card { padding: 11px 14px; }
+    .index-card .index-head,
+    .index-card .index-body,
+    .index-card .card-history { display: none !important; }
+    .ix-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto auto;
+      align-items: center;
+      gap: 10px;
+    }
+    .ixr-sym { min-width: 0; }
+    .ixr-ticker { font-weight: 700; font-size: 15px; letter-spacing: .3px; display: block; }
+    .ixr-name { font-size: 10px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+    .ixr-price { font-family: var(--mono); font-size: 13px; text-align: right; white-space: nowrap; }
+    .ixr-chg { font-family: var(--mono); font-size: 12px; text-align: right; white-space: nowrap; }
+    .ixr-score { display: flex; flex-direction: column; align-items: center; min-width: 36px; }
+    .ixr-sv { font-family: var(--mono); font-weight: 700; font-size: 15px; line-height: 1; }
+    .ixr-sl { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .1em; margin-top: 2px; }
   }
 
   footer.foot { margin-top: 40px; color:var(--text-dim); font-size:11px; text-align:center; }
@@ -465,6 +599,15 @@
     </div>
   </header>
 
+  <!-- ================= ANNOUNCEMENT BOARD ================= -->
+  <div id="announce-board" class="announce-board" style="display:none;">
+    <div class="announce-board-header">
+      <span class="announce-board-title" data-i18n="announce.title">Announcements</span>
+      <button class="announce-dismiss-all" id="announce-dismiss-all" title="Dismiss all">✕</button>
+    </div>
+    <div id="announce-list"></div>
+  </div>
+
   <!-- ================= TAB NAV ================= -->
   <nav class="tab-nav">
     <a class="tab active" data-tab="overview"   href="#/overview"  ><span data-i18n="tab.overview">Overview</span><span class="pill">scores</span></a>
@@ -506,6 +649,7 @@
     <div class="section-head">
       <h2 data-i18n="section.sectors">Sectors (SPDR ETFs)</h2>
       <div class="hint" data-i18n="hint.sectors">Sorted by active timeframe · click a sector for drill-down (prototype)</div>
+      <button id="sectors-toggle" style="margin-left:auto; padding: 4px 8px; font-size: 12px; display: none;" class="sectors-toggle">Show</button>
     </div>
     <div class="sectors" id="sectors-wrap"></div>
     <div class="legend">
@@ -590,17 +734,18 @@
         <table class="stocks" id="stocks-table">
           <thead>
             <tr>
-              <th data-k="rank" style="width:60px"><span data-i18n="th.rank">#</span></th>
+              <th data-k="rank" style="width:60px" class="mobile-hidden"><span data-i18n="th.rank">#</span></th>
               <th data-k="sym"><span data-i18n="th.ticker">Ticker</span></th>
-              <th data-k="name"><span data-i18n="th.name">Name</span></th>
-              <th data-k="sector"><span data-i18n="th.sector">Sector</span></th>
-              <th data-k="capCategory"><span data-i18n="th.cap">Cap</span></th>
-              <th data-k="volume" class="num" style="text-align:right"><span data-i18n="th.volume">Volume</span></th>
-              <th data-k="volRatio" class="num" style="text-align:right"><span data-i18n="th.volRatio">Vol Ratio</span></th>
+              <th data-k="name" class="mobile-hidden"><span data-i18n="th.name">Name</span></th>
+              <th data-k="sector" class="mobile-hidden"><span data-i18n="th.sector">Sector</span></th>
+              <th data-k="capCategory" class="mobile-hidden"><span data-i18n="th.cap">Cap</span></th>
+              <th data-k="volume" class="num mobile-hidden" style="text-align:right"><span data-i18n="th.volume">Volume</span></th>
+              <th data-k="volRatio" class="num mobile-hidden" style="text-align:right"><span data-i18n="th.volRatio">Vol Ratio</span></th>
               <th data-k="weekly" class="num" style="text-align:right"><span data-i18n="tf.weekly">Weekly</span> <span class="arrow">▼</span></th>
-              <th data-k="chg2w" class="num" style="text-align:right" title="Sum of weekly score changes over the past 2 weeks"><span style="font-size:11px; letter-spacing:.04em;">2W&thinsp;Δ</span></th>
+              <th data-k="chg2w" class="num mobile-hidden" style="text-align:right" title="Sum of weekly score changes over the past 2 weeks"><span style="font-size:11px; letter-spacing:.04em;">2W&thinsp;Δ</span></th>
               <th class="num history-col" style="text-align:right" title="Weekly score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20W</span></th>
               <th data-k="daily"  class="num" style="text-align:right"><span data-i18n="tf.daily">Daily</span></th>
+              <th data-k="chg2d" class="num mobile-hidden" style="text-align:right" title="(latest daily − previous daily) + (2 days ago daily − previous daily)"><span style="font-size:11px; letter-spacing:.04em;">2D&thinsp;Δ</span></th>
               <th class="num history-col" style="text-align:right" title="Daily score — 20 most recent data points (oldest → newest)"><span style="font-size:10px; letter-spacing:.06em; color:var(--text-dim);">←&thinsp;20D</span></th>
               <th data-k="price"  class="num" style="text-align:right"><span data-i18n="th.price">Price</span></th>
               <th data-k="chg"    class="num" style="text-align:right"><span data-i18n="th.chg">Chg %</span></th>
@@ -624,13 +769,14 @@
         <span class="label" data-i18n="breadth.zoom">Zoom</span>
         <div class="range" id="range">
           <button data-r="all">All</button>
-          <button data-r="10y">10y</button>
-          <button data-r="5y">5y</button>
           <button data-r="3y">3y</button>
           <button data-r="2y">2y</button>
           <button data-r="1y">1y</button>
           <button data-r="ytd">YTD</button>
           <button data-r="6m" class="active">6m</button>
+          <button data-r="3m">3m</button>
+          <button data-r="1m">1m</button>
+          <button data-r="1w">1w</button>
         </div>
         <div class="spacer"></div>
         <span class="label" data-i18n="breadth.updated">Updated</span>
@@ -652,6 +798,7 @@
   <!-- ================= AI LAYERS VIEW ================= -->
   <section class="view" data-tab="ai-layers">
     <div class="chart-card">
+
       <div class="chart-head">
         <h2 data-i18n="ailayers.title">Jensen Huang's AI 5-Layer Cake</h2>
         <div class="sub" data-i18n="ailayers.subtitle">Equal-weight basket performance of key stocks in each layer, indexed to 100 at start</div>
@@ -683,35 +830,49 @@
       </div>
 
       <div class="summary" id="al-summary"></div>
+
     </div>
   </section>
 
   <!-- ================= ARTICLES VIEW ================= -->
   <section class="view" data-tab="articles">
-    <div class="section-head" style="margin-top:0;">
-      <h2 data-i18n="tab.articles">Commentary</h2>
+
+    <!-- login gate (shown when logged out) -->
+    <div id="articles-gate" class="ai-login-gate">
+      <div class="gate-icon">🔒</div>
+      <p class="gate-title" data-i18n="articles.gate.title">Please sign in to view this content.</p>
+      <p class="gate-sub" data-i18n="articles.gate.sub">Log in to read market commentary and analysis.</p>
+      <button class="gate-btn" id="articles-gate-login-btn" data-i18n="articles.gate.btn">Log in</button>
     </div>
-    <div class="article-list" id="articles-list">
-      <!-- SEO / GEO Content Fallback for AI Crawlers -->
-      <noscript>
-        <article>
-          <h3>Core Asset Sectors Analysis & Trend Forecast (2026-04-29)</h3>
-          <p>In-depth analysis of the four core sectors with concentrated capital: Semiconductors & AI Hardware, Cybersecurity & Cloud, Power Infrastructure, and Broad Consumption; accompanied by three scenario probability projections for the next 2-3 months and Wall Street trading advice.</p>
-        </article>
-        <article>
-          <h3>核心资产赛道解析与走势预测报告 (2026-04-29)</h3>
-          <p>资金集中的四大核心赛道深度解析——半导体AI算力、网络安全与云、电力基建、大消费；附未来2-3个月三大情景概率推演及华尔街操盘建议。</p>
-        </article>
-        <article>
-          <h3>The Top Three Driving Factors of the Current U.S. Stock Market (2026-04-23)</h3>
-          <p>Iran War and Oil Prices, Federal Reserve Leadership Changes, Corporate Earnings and AI Capital Expenditures—An in-depth analysis of the top three key driving factors in the U.S. stock market and their short, medium, and long-term impacts.</p>
-        </article>
-        <article>
-          <h3>当前美股走势最关键的三大驱动因素 (2026-04-23)</h3>
-          <p>伊朗战争与油价、美联储领导层更迭与利率路径、企业盈利 + AI资本开支周期。当前市场是"优秀的基本面 + 地缘政治风险溢价"的博弈。</p>
-        </article>
-      </noscript>
+
+    <!-- actual content (shown when logged in) -->
+    <div id="articles-content" style="display:none">
+      <div class="section-head" style="margin-top:0;">
+        <h2 data-i18n="tab.articles">Commentary</h2>
+      </div>
+      <div class="article-list" id="articles-list">
+        <!-- SEO / GEO Content Fallback for AI Crawlers -->
+        <noscript>
+          <article>
+            <h3>Core Asset Sectors Analysis & Trend Forecast (2026-04-29)</h3>
+            <p>In-depth analysis of the four core sectors with concentrated capital: Semiconductors & AI Hardware, Cybersecurity & Cloud, Power Infrastructure, and Broad Consumption; accompanied by three scenario probability projections for the next 2-3 months and Wall Street trading advice.</p>
+          </article>
+          <article>
+            <h3>核心资产赛道解析与走势预测报告 (2026-04-29)</h3>
+            <p>资金集中的四大核心赛道深度解析——半导体AI算力、网络安全与云、电力基建、大消费；附未来2-3个月三大情景概率推演及华尔街操盘建议。</p>
+          </article>
+          <article>
+            <h3>The Top Three Driving Factors of the Current U.S. Stock Market (2026-04-23)</h3>
+            <p>Iran War and Oil Prices, Federal Reserve Leadership Changes, Corporate Earnings and AI Capital Expenditures—An in-depth analysis of the top three key driving factors in the U.S. stock market and their short, medium, and long-term impacts.</p>
+          </article>
+          <article>
+            <h3>当前美股走势最关键的三大驱动因素 (2026-04-23)</h3>
+            <p>伊朗战争与油价、美联储领导层更迭与利率路径、企业盈利 + AI资本开支周期。当前市场是"优秀的基本面 + 地缘政治风险溢价"的博弈。</p>
+          </article>
+        </noscript>
+      </div>
     </div>
+
   </section>
 
 
@@ -917,6 +1078,12 @@ function calc2wChg(r){
   if (hw.length >= 3) return (w - hw[hw.length - 2]) + (hw[hw.length - 2] - hw[hw.length - 3]);
   return null;
 }
+function calc2dChg(r){
+  const hd = r.history_daily || [];
+  const d  = r.daily ?? 0;
+  if (hd.length >= 3) return (d - hd[hd.length - 2]) + (hd[hd.length - 3] - hd[hd.length - 2]);
+  return null;
+}
 function heatStrip(arr, total=20){
   const cells = [];
   const pad = Math.max(0, total - arr.length);
@@ -948,7 +1115,23 @@ const Overview = (() => {
     const delta = Number(ix.chg || 0);
     const deltaCls = delta >= 0 ? 'delta-up' : 'delta-down';
     return `
-    <div class="index-card">
+    <div class="index-card" data-sym="${esc(ix.sym)}">
+      <div class="ix-row">
+        <div class="ixr-sym">
+          <span class="ixr-ticker">${esc(ix.sym)}</span>
+          <span class="ixr-name">${esc(ix.name)}</span>
+        </div>
+        <div class="ixr-price" data-col="price">${fmtNum(ix.price||0,2)}</div>
+        <div class="ixr-chg ${deltaCls}" data-col="chg">${delta >= 0 ? '▲' : '▼'} ${Math.abs(delta).toFixed(2)}%</div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</span>
+          <span class="ixr-sl">W</span>
+        </div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(ix.daily)}">${ix.daily}</span>
+          <span class="ixr-sl">D</span>
+        </div>
+      </div>
       <div class="index-head">
         <div>
           <div class="index-title">${esc(ix.name)}</div>
@@ -956,13 +1139,13 @@ const Overview = (() => {
         </div>
         <div style="text-align:right;">
           <div class="index-title">${state.tf === 'daily' ? t('card.daily_score') : t('card.weekly_score')}</div>
-          <div class="${deltaCls}" style="font-family:var(--mono); font-size:15px; margin-top:4px;">
+          <div class="${deltaCls}" data-col="chg" style="font-family:var(--mono); font-size:15px; margin-top:4px;">
             ${delta >= 0 ? '▲' : '▼'} ${Math.abs(delta).toFixed(2)}%
           </div>
         </div>
       </div>
       <div class="index-body">
-        <div class="gauge">
+        <div class="gauge mobile-hidden">
           <svg viewBox="0 0 140 140">
             <circle class="track" cx="70" cy="70" r="58" stroke-width="12" fill="none" />
             <circle class="bar"   cx="70" cy="70" r="58" stroke="${color}" stroke-width="12" fill="none"
@@ -976,12 +1159,15 @@ const Overview = (() => {
           </div>
         </div>
         <div class="stat-grid">
-          <div class="stat"><div class="k">${t('card.price')}</div><div class="v">${fmtNum(ix.price||0,2)}</div></div>
+          <div class="stat"><div class="k">${t('card.price')}</div><div class="v" data-col="price">${fmtNum(ix.price||0,2)}</div></div>
           <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
           <div class="stat"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
           <div class="stat"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
           <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily}</div></div>
           <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</div></div>
+          <div class="stat mobile-hidden"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
+          <div class="stat mobile-hidden"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
+          <div class="stat mobile-hidden"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
         </div>
       </div>
       <div class="card-history history-col">
@@ -996,6 +1182,20 @@ const Overview = (() => {
     const col = scoreColor(sc);
     return `
     <div class="sector-card" title="${esc(s.name)}">
+      <div class="sc-row">
+        <div class="scr-sym">
+          <span class="scr-ticker">${esc(s.sym)}</span>
+          <span class="scr-name">${esc(s.name)}</span>
+        </div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(s.weekly)}">${s.weekly}</span>
+          <span class="ixr-sl">W</span>
+        </div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(s.daily)}">${s.daily}</span>
+          <span class="ixr-sl">D</span>
+        </div>
+      </div>
       <div class="row1">
         <div>
           <div class="tkr">${esc(s.sym)}</div>
@@ -1004,11 +1204,11 @@ const Overview = (() => {
         <div class="score-pill" style="background:${col}">${sc}</div>
       </div>
       <div class="bar-wrap"><div class="bar" style="width:${sc}%; background:${col}"></div></div>
-      <div style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
+      <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
         <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
       </div>
-      <div style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
+      <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.volume')} <span style="color:var(--text-soft); font-family:var(--mono); font-weight:600;">${fmtVol(s.volume||0)}</span></span>
         <span>${t('card.vol_ratio')} <span style="color:${(s.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text-soft)'}; font-family:var(--mono); font-weight:700;">${s.volRatio ? s.volRatio.toFixed(2) : '—'}</span></span>
       </div>
@@ -1022,6 +1222,7 @@ const Overview = (() => {
   function renderIndexes(){
     document.getElementById('indexes-wrap').innerHTML =
       (state.data.indexes || []).map(indexCardHTML).join('');
+    if (typeof Prices !== 'undefined') Prices.patch();
   }
   function renderSectors(){
     const sorted = [...(state.data.sectors || [])].sort((a,b) => (b[state.tf]||0) - (a[state.tf]||0));
@@ -1037,6 +1238,7 @@ const Overview = (() => {
       let av, bv;
       if (k === 'rank')  { av = 0; bv = 0; }
       else if (k === 'chg2w') { av = calc2wChg(a) ?? -999; bv = calc2wChg(b) ?? -999; }
+      else if (k === 'chg2d') { av = calc2dChg(a) ?? -999; bv = calc2dChg(b) ?? -999; }
       else               { av = a[k]; bv = b[k]; }
 
       if (typeof av === 'string') {
@@ -1074,32 +1276,36 @@ const Overview = (() => {
       const d2w = calc2wChg(r);
       const d2wStr = d2w === null ? '—' : (d2w > 0 ? '+' : '') + d2w;
       const d2wCls = d2w === null ? '' : d2w > 0 ? 'delta-up' : d2w < 0 ? 'delta-down' : '';
+      const d2d = calc2dChg(r);
+      const d2dStr = d2d === null ? '—' : (d2d > 0 ? '+' : '') + d2d;
+      const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
       return `
-        <tr>
-          <td class="rank">${r._rank}</td>
+        <tr data-sym="${esc(r.sym)}">
+          <td class="rank mobile-hidden">${r._rank}</td>
           <td class="sym">${esc(r.sym)}</td>
-          <td class="name">${esc(r.name)}</td>
-          <td class="name" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
-          <td class="name" style="color:var(--text-dim); font-size:12px;" title="${esc(r.capCategory||'')}">${r.capCategory && r.capCategory !== 'Unknown' ? esc(r.capCategory) : '—'}</td>
-          <td class="num" style="color:var(--text-soft)">${fmtVol(r.volume||0)}</td>
-          <td class="num" style="font-weight:600; color:${(r.volRatio||0) > 2 ? 'var(--score-100)' : (r.volRatio||0) > 1.5 ? 'var(--score-75)' : 'var(--text-soft)'}">${r.volRatio ? r.volRatio.toFixed(2) : '—'}</td>
+          <td class="name mobile-hidden">${esc(r.name)}</td>
+          <td class="name mobile-hidden" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
+          <td class="name mobile-hidden" style="color:var(--text-dim); font-size:12px;" title="${esc(r.capCategory||'')}">${r.capCategory && r.capCategory !== 'Unknown' ? esc(r.capCategory) : '—'}</td>
+          <td class="num mobile-hidden" style="color:var(--text-soft)">${fmtVol(r.volume||0)}</td>
+          <td class="num mobile-hidden" style="font-weight:600; color:${(r.volRatio||0) > 2 ? 'var(--score-100)' : (r.volRatio||0) > 1.5 ? 'var(--score-75)' : 'var(--text-soft)'}">${r.volRatio ? r.volRatio.toFixed(2) : '—'}</td>
           <td class="num">
             <div class="score-cell">
-              <div class="score-bar"><div style="width:${wsc}%; background:${wcol}"></div></div>
+              <div class="score-bar mobile-hidden"><div style="width:${wsc}%; background:${wcol}"></div></div>
               <div class="score-val" style="color:${wcol}">${wsc}</div>
             </div>
           </td>
-          <td class="num ${d2wCls}" style="font-family:var(--mono); font-weight:600;">${d2wStr}</td>
+          <td class="num ${d2wCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2wStr}</td>
           <td class="num history-col">${heatStrip(r.history_weekly||[])}</td>
           <td class="num">
             <div class="score-cell">
-              <div class="score-bar"><div style="width:${dsc}%; background:${dcol}"></div></div>
+              <div class="score-bar mobile-hidden"><div style="width:${dsc}%; background:${dcol}"></div></div>
               <div class="score-val" style="color:${dcol}">${dsc}</div>
             </div>
           </td>
+          <td class="num ${d2dCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2dStr}</td>
           <td class="num history-col">${heatStrip(r.history_daily||[])}</td>
-          <td class="num">${fmtNum(r.price||0, 2)}</td>
-          <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
+          <td class="num" data-col="price">${fmtNum(r.price||0, 2)}</td>
+          <td class="num ${chgCls}" data-col="chg">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
         </tr>`;
     }).join('');
 
@@ -1115,6 +1321,7 @@ const Overview = (() => {
       }
     });
     document.getElementById('sort-hint').textContent = `${state.sortKey} (${state.sortDir})`;
+    if (typeof Prices !== 'undefined') Prices.patch();
   }
   function paint(){
     if (!state.data) return;
@@ -1148,6 +1355,21 @@ const Overview = (() => {
   }
 
   function bind(){
+    document.body.addEventListener('click', e => {
+      if (e.target.id === 'sectors-toggle') {
+        const sectorsWrap = document.getElementById('sectors-wrap');
+        const legend = document.querySelector('.sectors').nextElementSibling;
+        if (sectorsWrap.classList.contains('mobile-collapsed')) {
+          sectorsWrap.classList.remove('mobile-collapsed');
+          if (legend) legend.classList.remove('mobile-collapsed');
+          e.target.textContent = 'Hide';
+        } else {
+          sectorsWrap.classList.add('mobile-collapsed');
+          if (legend) legend.classList.add('mobile-collapsed');
+          e.target.textContent = 'Show';
+        }
+      }
+    });
     document.querySelectorAll('.inner-tabs button[data-idx]').forEach(b => {
       b.addEventListener('click', () => {
         document.querySelectorAll('.inner-tabs button[data-idx]').forEach(x => x.classList.remove('active'));
@@ -1182,6 +1404,12 @@ const Overview = (() => {
     init(){
       bind();
       load();
+      if (window.innerWidth <= 720) {
+        const sectorsWrap = document.getElementById('sectors-wrap');
+        const legend = document.querySelector('.sectors').nextElementSibling;
+        if (sectorsWrap) sectorsWrap.classList.add('mobile-collapsed');
+        if (legend && legend.classList.contains('legend')) legend.classList.add('mobile-collapsed');
+      }
       let timer = setInterval(() => load(true), POLL_MS);
       document.addEventListener('visibilitychange', () => {
         if (document.hidden) clearInterval(timer);
@@ -1191,6 +1419,75 @@ const Overview = (() => {
     refresh: () => load(),
     repaint(){ if (state.data) paint(); },
     lastUpdated: () => state.lastUpdated,
+  };
+})();
+
+/* ============================================================================
+   PRICES CONTROLLER — polls R2 prices.json every 5 min, patches DOM in place
+   ============================================================================ */
+const Prices = (() => {
+  const BASE      = 'https://pub-db1ceca2b3604ce5b2ad16f08710bc8d.r2.dev';
+  const URL_      = `${BASE}/prices.json`;
+  const STAMP_URL = `${BASE}/prices.updated_at.txt`;
+  const POLL_MS   = 5 * 60 * 1000;
+
+  let lastStamp = null;
+  let data      = null;
+
+  async function load(){
+    try {
+      const sres = await fetch(STAMP_URL, { cache: 'no-store' });
+      if (!sres.ok) return;
+      const stamp = (await sres.text()).trim();
+      if (stamp === lastStamp) return;
+      lastStamp = stamp;
+      const res = await fetch(URL_, { cache: 'no-store' });
+      if (!res.ok) return;
+      const json = await res.json();
+      data = json.prices;
+      patch();
+    } catch(e){}
+  }
+
+  function patch(){
+    if (!data) return;
+
+    // Patch stocks table rows
+    document.querySelectorAll('#stocks-body tr[data-sym]').forEach(tr => {
+      const p = data[tr.dataset.sym];
+      if (!p) return;
+      const priceEl = tr.querySelector('[data-col="price"]');
+      const chgEl   = tr.querySelector('[data-col="chg"]');
+      if (priceEl) priceEl.textContent = fmtNum(p.price, 2);
+      if (chgEl){
+        chgEl.className = `num ${p.chg >= 0 ? 'delta-up' : 'delta-down'}`;
+        chgEl.textContent = `${p.chg >= 0 ? '+' : ''}${p.chg.toFixed(2)}%`;
+      }
+    });
+
+    // Patch index cards (querySelectorAll covers both desktop and mobile ix-row elements)
+    document.querySelectorAll('.index-card[data-sym]').forEach(card => {
+      const p = data[card.dataset.sym];
+      if (!p) return;
+      card.querySelectorAll('[data-col="price"]').forEach(el => {
+        el.textContent = fmtNum(p.price, 2);
+      });
+      card.querySelectorAll('[data-col="chg"]').forEach(el => {
+        const up = p.chg >= 0;
+        el.className = el.classList.contains('ixr-chg')
+          ? `ixr-chg ${up ? 'delta-up' : 'delta-down'}`
+          : `${up ? 'delta-up' : 'delta-down'}`;
+        el.textContent = `${up ? '▲' : '▼'} ${Math.abs(p.chg).toFixed(2)}%`;
+      });
+    });
+  }
+
+  return {
+    init(){
+      load();
+      setInterval(load, POLL_MS);
+    },
+    patch,
   };
 })();
 
@@ -1216,17 +1513,18 @@ const Breadth = (() => {
 
   function filterByRange(series, range){
     if (!series.length) return series;
-    const last = new Date(series[series.length - 1].date);
+    const now = new Date();
     let cutoff;
     switch(range){
       case 'all': return series;
-      case '10y': cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 10); break;
-      case '5y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 5);  break;
-      case '3y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 3);  break;
-      case '2y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 2);  break;
-      case '1y':  cutoff = new Date(last); cutoff.setFullYear(last.getFullYear() - 1);  break;
-      case 'ytd': cutoff = new Date(last.getFullYear(), 0, 1); break;
-      case '6m':  cutoff = new Date(last); cutoff.setMonth(last.getMonth() - 6); break;
+      case '3y':  cutoff = new Date(now); cutoff.setFullYear(now.getFullYear() - 3);  break;
+      case '2y':  cutoff = new Date(now); cutoff.setFullYear(now.getFullYear() - 2);  break;
+      case '1y':  cutoff = new Date(now); cutoff.setFullYear(now.getFullYear() - 1);  break;
+      case 'ytd': cutoff = new Date(now.getFullYear(), 0, 1); break;
+      case '6m':  cutoff = new Date(now); cutoff.setMonth(now.getMonth() - 6);  break;
+      case '3m':  cutoff = new Date(now); cutoff.setMonth(now.getMonth() - 3);  break;
+      case '1m':  cutoff = new Date(now); cutoff.setMonth(now.getMonth() - 1);  break;
+      case '1w':  cutoff = new Date(now); cutoff.setDate(now.getDate() - 7);    break;
       default:    return series;
     }
     return series.filter(r => new Date(r.date) >= cutoff);
@@ -1299,6 +1597,13 @@ const Breadth = (() => {
     state.chart.data.datasets[1].data = toPt('above_ma50');
     state.chart.data.datasets[2].data = toPt('above_ma200');
     state.chart.data.datasets.forEach((ds, i) => ds.hidden = !state.visible[i]);
+    if (slice.length) {
+      state.chart.options.scales.x.min = slice[0].date;
+      state.chart.options.scales.x.max = slice[slice.length - 1].date;
+    } else {
+      delete state.chart.options.scales.x.min;
+      delete state.chart.options.scales.x.max;
+    }
     state.chart.update('none');
     renderSummary(slice);
   }
@@ -1547,13 +1852,22 @@ const AILayers = (() => {
       const perf = (slice[slice.length - 1].value / slice[0].value - 1) * 100;
       const color = perf >= 0 ? 'var(--score-100)' : 'var(--score-0)';
       const sign  = perf >= 0 ? '+' : '';
+      const tickersSub = Auth.getUser()
+        ? `<div class="sub">${esc(layer.tickers.join(', '))}</div>`
+        : `<div class="sub" style="filter:blur(4px); user-select:none;">███ ████ ███</div>`;
       return `<div class="tile">
         <div class="k" style="color:${css(LAYER_VARS[i])}">${esc(layer.name)}</div>
         <div class="v" style="color:${color}">${sign}${perf.toFixed(1)}%</div>
-        <div class="sub">${esc(layer.tickers.join(', '))}</div>
+        ${tickersSub}
       </div>`;
     });
-    wrap.innerHTML = tiles.join('');
+    const loginHint = Auth.getUser() ? '' : `
+      <div style="width:100%; text-align:center; padding: 10px 0 2px; font-size:12px; color:var(--text-dim);">
+        🔒 <a href="#" id="al-login-hint" style="color:var(--accent); text-decoration:underline; cursor:pointer;">Log in</a> to see the stock list in each layer
+      </div>`;
+    wrap.innerHTML = tiles.join('') + loginHint;
+    const hintBtn = wrap.querySelector('#al-login-hint');
+    if (hintBtn) hintBtn.addEventListener('click', e => { e.preventDefault(); Auth.openLogin(); });
   }
 
   async function load(silent=false){
@@ -2039,6 +2353,15 @@ const Auth = (() => {
       adminTab.style.display = 'none';
     }
 
+    AILayers.repaint();
+
+    const artGate    = document.getElementById('articles-gate');
+    const artContent = document.getElementById('articles-content');
+    if (artGate && artContent) {
+      artGate.style.display    = currentUser ? 'none' : '';
+      artContent.style.display = currentUser ? ''     : 'none';
+    }
+
     const settingsTab = document.getElementById('settings-tab');
     if (currentUser) {
       settingsTab.style.display = '';
@@ -2169,7 +2492,9 @@ const Auth = (() => {
       } else {
         setMode('login');
       }
-    }
+    },
+    getUser: () => currentUser,
+    openLogin: () => { setMode('login'); show(); },
   };
 })();
 
@@ -2211,10 +2536,12 @@ Theme.init();      // apply saved theme preference immediately
 HistoryToggle.init();
 Router.bind();
 Overview.init();
+Prices.init();
 Breadth.init();
 AILayers.init();
 Articles.init();
 Auth.init();
+document.getElementById('articles-gate-login-btn').addEventListener('click', () => Auth.openLogin());
 Feedback.init();
 Admin.init();
 Settings.init();
@@ -2222,6 +2549,7 @@ Router.apply();    // respect initial URL hash
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
   switchLang(currentLang === 'en' ? 'zh' : 'en');
+  if (typeof renderAnnouncements === 'function') renderAnnouncements();
   Overview.repaint();
   Breadth.repaint();
   Articles.repaint();
@@ -2230,6 +2558,76 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
   if (upd) setStatus('live', fmtTime(upd));
   document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
 });
+
+/* ============================================================================
+   ANNOUNCEMENT BOARD
+   To add/remove items, edit the ANNOUNCEMENTS array below.
+   Each item needs a unique `id` (used to track dismissal in localStorage),
+   a `type` ('new' | 'fix' | 'update' | 'info'), and a `text`.
+   ============================================================================ */
+(function(){
+  const ANNOUNCEMENTS = [
+    { id: 'ann-003', type: 'new',
+      text: { en: '2D Δ column added to Constituents — shows 2-day daily score momentum.',
+              zh: '成分股表格新增 2D Δ 列，显示两日每日评分动量。' } },
+    { id: 'ann-002', type: 'new',
+      text: { en: 'Support login with Facebook.',
+              zh: '新增 Facebook 账号登录支持。' } },
+    { id: 'ann-001', type: 'fix',
+      text: { en: 'Password reset email delivery fixed.',
+              zh: '已修复重置密码邮件发送问题。' } },
+  ];
+
+  const STORAGE_KEY = 'dismissed-announcements';
+
+  function getDismissed(){
+    try { return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')); }
+    catch(e){ return new Set(); }
+  }
+  function saveDismissed(set){
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...set])); } catch(e){}
+  }
+
+  function render(){
+    const dismissed = getDismissed();
+    const visible = ANNOUNCEMENTS.filter(a => !dismissed.has(a.id));
+    const board = document.getElementById('announce-board');
+    const list  = document.getElementById('announce-list');
+    if (!board || !list) return;
+    if (visible.length === 0){ board.style.display = 'none'; return; }
+    board.style.display = '';
+    list.innerHTML = visible.map(a => {
+      const text = typeof a.text === 'object' ? (a.text[currentLang] || a.text.en) : a.text;
+      const tag  = t('announce.tag.' + a.type) || a.type.toUpperCase();
+      return `
+      <div class="announce-item" id="ann-item-${esc(a.id)}">
+        <span class="announce-tag ${esc(a.type)}">${esc(tag)}</span>
+        <span>${esc(text)}</span>
+        <button class="announce-close" data-ann="${esc(a.id)}" title="Dismiss">✕</button>
+      </div>`;
+    }).join('');
+
+    list.querySelectorAll('.announce-close').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.ann;
+        const set = getDismissed();
+        set.add(id);
+        saveDismissed(set);
+        render();
+      });
+    });
+  }
+
+  document.getElementById('announce-dismiss-all').addEventListener('click', () => {
+    const set = getDismissed();
+    ANNOUNCEMENTS.forEach(a => set.add(a.id));
+    saveDismissed(set);
+    render();
+  });
+
+  render();
+  window.renderAnnouncements = render;
+})();
 </script>
 </body>
 </html>

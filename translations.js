@@ -49,12 +49,25 @@ var TRANSLATIONS = {
     'ailayers.layer2':   'AI Infrastructure',
     'ailayers.layer3':   'AI Models',
     'ailayers.layer4':   'AI Applications',
-    'ailayers.perf':     'Performance',
+    'ailayers.perf':       'Performance',
+    'ailayers.gate.title':  'Members Only',
+    'ailayers.gate.sub':    'Log in to access the AI 5-Layer Cake chart and performance data.',
+    'ailayers.gate.btn':    'Log in',
+    'articles.gate.title':  'Members Only',
+    'articles.gate.sub':    'Log in to read market commentary and analysis.',
+    'articles.gate.btn':    'Log in',
 
     /* ---------- section headings ---------- */
     'section.indexes':      'Major Indexes',
     'section.sectors':      'Sectors (SPDR ETFs)',
     'section.constituents': 'Constituents',
+
+    /* ---------- announcement board ---------- */
+    'announce.title':      'Announcements',
+    'announce.tag.new':    'NEW',
+    'announce.tag.fix':    'FIX',
+    'announce.tag.update': 'UPDATE',
+    'announce.tag.info':   'INFO',
 
     /* ---------- hints / labels ---------- */
     'hint.score':    'Score: 0–30 strong bearish · 31–49 bearish · 50–59 neutral · 60–79 bullish · 80–100 strong bullish',
@@ -224,12 +237,25 @@ var TRANSLATIONS = {
     'ailayers.layer2':   'AI基础设施',
     'ailayers.layer3':   'AI大模型',
     'ailayers.layer4':   'AI应用',
-    'ailayers.perf':     '区间涨跌',
+    'ailayers.perf':       '区间涨跌',
+    'ailayers.gate.title':  '会员专属',
+    'ailayers.gate.sub':    '请登录后查看 AI 五层蛋糕图表及表现数据。',
+    'ailayers.gate.btn':    '登录',
+    'articles.gate.title':  '会员专属',
+    'articles.gate.sub':    '请登录后阅读市场评述与分析。',
+    'articles.gate.btn':    '登录',
 
     /* ---------- 区块标题 ---------- */
     'section.indexes':      '主要指数',
     'section.sectors':      '板块（SPDR ETF）',
     'section.constituents': '成分股',
+
+    /* ---------- 公告栏 ---------- */
+    'announce.title':      '公告',
+    'announce.tag.new':    '新功能',
+    'announce.tag.fix':    '修复',
+    'announce.tag.update': '更新',
+    'announce.tag.info':   '信息',
 
     /* ---------- 提示 / 标签 ---------- */
     'hint.score':    '评分：0（强烈看空）· 50（中性）· 100（强烈看多）',
