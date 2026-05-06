@@ -266,6 +266,8 @@
   .stat .v { font-family: var(--mono); font-size:16px; margin-top:3px; }
   .delta-up { color:#22c55e; }
   .delta-down { color:#ef4444; }
+  /* Mobile compact index row — hidden on desktop */
+  .ix-row { display:none; }
 
   /* =============== SECTORS =============== */
   .sectors { display:grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap:12px; }
@@ -277,6 +279,8 @@
   .sector-card .score-pill { font-family: var(--mono); font-weight:700; font-size:15px; padding:3px 10px; border-radius:999px; color: var(--bg); }
   .sector-card .bar-wrap { margin-top:12px; background: var(--bg-alt); height:6px; border-radius:999px; overflow:hidden; }
   .sector-card .bar { height:100%; border-radius:999px; transition: width .5s ease; }
+  /* Mobile compact sector row — hidden on desktop */
+  .sc-row { display:none; }
 
   /* =============== CONSTITUENTS =============== */
   .inner-tabs { display:flex; gap:6px; margin-bottom:14px; align-items:center; }
@@ -382,6 +386,43 @@
     .history-col { display: none !important; }
     .stocks td, .stocks th { padding: 10px 4px !important; }
     .stocks { font-size: 12px; }
+
+    /* Compact sector rows on mobile */
+    .sectors { grid-template-columns: 1fr; gap: 6px; }
+    .sector-card { padding: 10px 14px; }
+    .sector-card .row1,
+    .sector-card .bar-wrap,
+    .sector-card .sc-detail { display: none !important; }
+    .sc-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      align-items: center;
+      gap: 12px;
+    }
+    .scr-sym { min-width: 0; }
+    .scr-ticker { font-weight: 700; font-size: 15px; letter-spacing: .3px; display: block; }
+    .scr-name { font-size: 10px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+
+    /* Compact index rows on mobile */
+    .indexes { grid-template-columns: 1fr; gap: 6px; }
+    .index-card { padding: 11px 14px; }
+    .index-card .index-head,
+    .index-card .index-body,
+    .index-card .card-history { display: none !important; }
+    .ix-row {
+      display: grid;
+      grid-template-columns: 1fr auto auto auto auto;
+      align-items: center;
+      gap: 10px;
+    }
+    .ixr-sym { min-width: 0; }
+    .ixr-ticker { font-weight: 700; font-size: 15px; letter-spacing: .3px; display: block; }
+    .ixr-name { font-size: 10px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+    .ixr-price { font-family: var(--mono); font-size: 13px; text-align: right; white-space: nowrap; }
+    .ixr-chg { font-family: var(--mono); font-size: 12px; text-align: right; white-space: nowrap; }
+    .ixr-score { display: flex; flex-direction: column; align-items: center; min-width: 36px; }
+    .ixr-sv { font-family: var(--mono); font-weight: 700; font-size: 15px; line-height: 1; }
+    .ixr-sl { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .1em; margin-top: 2px; }
   }
 
   footer.foot { margin-top: 40px; color:var(--text-dim); font-size:11px; text-align:center; }
@@ -1062,6 +1103,22 @@ const Overview = (() => {
     const deltaCls = delta >= 0 ? 'delta-up' : 'delta-down';
     return `
     <div class="index-card" data-sym="${esc(ix.sym)}">
+      <div class="ix-row">
+        <div class="ixr-sym">
+          <span class="ixr-ticker">${esc(ix.sym)}</span>
+          <span class="ixr-name">${esc(ix.name)}</span>
+        </div>
+        <div class="ixr-price" data-col="price">${fmtNum(ix.price||0,2)}</div>
+        <div class="ixr-chg ${deltaCls}" data-col="chg">${delta >= 0 ? '▲' : '▼'} ${Math.abs(delta).toFixed(2)}%</div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</span>
+          <span class="ixr-sl">W</span>
+        </div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(ix.daily)}">${ix.daily}</span>
+          <span class="ixr-sl">D</span>
+        </div>
+      </div>
       <div class="index-head">
         <div>
           <div class="index-title">${esc(ix.name)}</div>
@@ -1112,6 +1169,20 @@ const Overview = (() => {
     const col = scoreColor(sc);
     return `
     <div class="sector-card" title="${esc(s.name)}">
+      <div class="sc-row">
+        <div class="scr-sym">
+          <span class="scr-ticker">${esc(s.sym)}</span>
+          <span class="scr-name">${esc(s.name)}</span>
+        </div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(s.weekly)}">${s.weekly}</span>
+          <span class="ixr-sl">W</span>
+        </div>
+        <div class="ixr-score">
+          <span class="ixr-sv" style="color:${scoreColor(s.daily)}">${s.daily}</span>
+          <span class="ixr-sl">D</span>
+        </div>
+      </div>
       <div class="row1">
         <div>
           <div class="tkr">${esc(s.sym)}</div>
@@ -1120,11 +1191,11 @@ const Overview = (() => {
         <div class="score-pill" style="background:${col}">${sc}</div>
       </div>
       <div class="bar-wrap"><div class="bar" style="width:${sc}%; background:${col}"></div></div>
-      <div style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
+      <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
         <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
       </div>
-      <div style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
+      <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.volume')} <span style="color:var(--text-soft); font-family:var(--mono); font-weight:600;">${fmtVol(s.volume||0)}</span></span>
         <span>${t('card.vol_ratio')} <span style="color:${(s.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text-soft)'}; font-family:var(--mono); font-weight:700;">${s.volRatio ? s.volRatio.toFixed(2) : '—'}</span></span>
       </div>
@@ -1381,17 +1452,20 @@ const Prices = (() => {
       }
     });
 
-    // Patch index cards
+    // Patch index cards (querySelectorAll covers both desktop and mobile ix-row elements)
     document.querySelectorAll('.index-card[data-sym]').forEach(card => {
       const p = data[card.dataset.sym];
       if (!p) return;
-      const priceEl = card.querySelector('[data-col="price"]');
-      const chgEl   = card.querySelector('[data-col="chg"]');
-      if (priceEl) priceEl.textContent = fmtNum(p.price, 2);
-      if (chgEl){
-        chgEl.className = p.chg >= 0 ? 'delta-up' : 'delta-down';
-        chgEl.textContent = `${p.chg >= 0 ? '▲' : '▼'} ${Math.abs(p.chg).toFixed(2)}%`;
-      }
+      card.querySelectorAll('[data-col="price"]').forEach(el => {
+        el.textContent = fmtNum(p.price, 2);
+      });
+      card.querySelectorAll('[data-col="chg"]').forEach(el => {
+        const up = p.chg >= 0;
+        el.className = el.classList.contains('ixr-chg')
+          ? `ixr-chg ${up ? 'delta-up' : 'delta-down'}`
+          : `${up ? 'delta-up' : 'delta-down'}`;
+        el.textContent = `${up ? '▲' : '▼'} ${Math.abs(p.chg).toFixed(2)}%`;
+      });
     });
   }
 
