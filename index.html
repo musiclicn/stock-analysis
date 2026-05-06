@@ -1061,7 +1061,7 @@ const Overview = (() => {
     const delta = Number(ix.chg || 0);
     const deltaCls = delta >= 0 ? 'delta-up' : 'delta-down';
     return `
-    <div class="index-card">
+    <div class="index-card" data-sym="${esc(ix.sym)}">
       <div class="index-head">
         <div>
           <div class="index-title">${esc(ix.name)}</div>
@@ -1069,7 +1069,7 @@ const Overview = (() => {
         </div>
         <div style="text-align:right;">
           <div class="index-title">${state.tf === 'daily' ? t('card.daily_score') : t('card.weekly_score')}</div>
-          <div class="${deltaCls}" style="font-family:var(--mono); font-size:15px; margin-top:4px;">
+          <div class="${deltaCls}" data-col="chg" style="font-family:var(--mono); font-size:15px; margin-top:4px;">
             ${delta >= 0 ? '▲' : '▼'} ${Math.abs(delta).toFixed(2)}%
           </div>
         </div>
@@ -1089,7 +1089,7 @@ const Overview = (() => {
           </div>
         </div>
         <div class="stat-grid">
-          <div class="stat"><div class="k">${t('card.price')}</div><div class="v">${fmtNum(ix.price||0,2)}</div></div>
+          <div class="stat"><div class="k">${t('card.price')}</div><div class="v" data-col="price">${fmtNum(ix.price||0,2)}</div></div>
           <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily}</div></div>
           <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</div></div>
           <div class="stat mobile-hidden"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
@@ -1135,6 +1135,7 @@ const Overview = (() => {
   function renderIndexes(){
     document.getElementById('indexes-wrap').innerHTML =
       (state.data.indexes || []).map(indexCardHTML).join('');
+    if (typeof Prices !== 'undefined') Prices.patch();
   }
   function renderSectors(){
     const sorted = [...(state.data.sectors || [])].sort((a,b) => (b[state.tf]||0) - (a[state.tf]||0));
@@ -1192,7 +1193,7 @@ const Overview = (() => {
       const d2dStr = d2d === null ? '—' : (d2d > 0 ? '+' : '') + d2d;
       const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
       return `
-        <tr>
+        <tr data-sym="${esc(r.sym)}">
           <td class="rank mobile-hidden">${r._rank}</td>
           <td class="sym">${esc(r.sym)}</td>
           <td class="name mobile-hidden">${esc(r.name)}</td>
@@ -1216,8 +1217,8 @@ const Overview = (() => {
           </td>
           <td class="num ${d2dCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2dStr}</td>
           <td class="num history-col">${heatStrip(r.history_daily||[])}</td>
-          <td class="num">${fmtNum(r.price||0, 2)}</td>
-          <td class="num ${chgCls}">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
+          <td class="num" data-col="price">${fmtNum(r.price||0, 2)}</td>
+          <td class="num ${chgCls}" data-col="chg">${chg >= 0 ? '+' : ''}${chg.toFixed(2)}%</td>
         </tr>`;
     }).join('');
 
@@ -1233,6 +1234,7 @@ const Overview = (() => {
       }
     });
     document.getElementById('sort-hint').textContent = `${state.sortKey} (${state.sortDir})`;
+    if (typeof Prices !== 'undefined') Prices.patch();
   }
   function paint(){
     if (!state.data) return;
@@ -1330,6 +1332,72 @@ const Overview = (() => {
     refresh: () => load(),
     repaint(){ if (state.data) paint(); },
     lastUpdated: () => state.lastUpdated,
+  };
+})();
+
+/* ============================================================================
+   PRICES CONTROLLER — polls R2 prices.json every 5 min, patches DOM in place
+   ============================================================================ */
+const Prices = (() => {
+  const BASE      = 'https://pub-db1ceca2b3604ce5b2ad16f08710bc8d.r2.dev';
+  const URL_      = `${BASE}/prices.json`;
+  const STAMP_URL = `${BASE}/prices.updated_at.txt`;
+  const POLL_MS   = 5 * 60 * 1000;
+
+  let lastStamp = null;
+  let data      = null;
+
+  async function load(){
+    try {
+      const sres = await fetch(STAMP_URL, { cache: 'no-store' });
+      if (!sres.ok) return;
+      const stamp = (await sres.text()).trim();
+      if (stamp === lastStamp) return;
+      lastStamp = stamp;
+      const res = await fetch(URL_, { cache: 'no-store' });
+      if (!res.ok) return;
+      const json = await res.json();
+      data = json.prices;
+      patch();
+    } catch(e){}
+  }
+
+  function patch(){
+    if (!data) return;
+
+    // Patch stocks table rows
+    document.querySelectorAll('#stocks-body tr[data-sym]').forEach(tr => {
+      const p = data[tr.dataset.sym];
+      if (!p) return;
+      const priceEl = tr.querySelector('[data-col="price"]');
+      const chgEl   = tr.querySelector('[data-col="chg"]');
+      if (priceEl) priceEl.textContent = fmtNum(p.price, 2);
+      if (chgEl){
+        chgEl.className = `num ${p.chg >= 0 ? 'delta-up' : 'delta-down'}`;
+        chgEl.textContent = `${p.chg >= 0 ? '+' : ''}${p.chg.toFixed(2)}%`;
+      }
+    });
+
+    // Patch index cards
+    document.querySelectorAll('.index-card[data-sym]').forEach(card => {
+      const p = data[card.dataset.sym];
+      if (!p) return;
+      const priceEl = card.querySelector('[data-col="price"]');
+      const chgEl   = card.querySelector('[data-col="chg"]');
+      if (priceEl) priceEl.textContent = fmtNum(p.price, 2);
+      if (chgEl){
+        chgEl.className = p.chg >= 0 ? 'delta-up' : 'delta-down';
+        chgEl.textContent = `${p.chg >= 0 ? '▲' : '▼'} ${Math.abs(p.chg).toFixed(2)}%`;
+      }
+    });
+  }
+
+  return {
+    init(){
+      load();
+      setInterval(load, POLL_MS);
+    },
+    patch,
   };
 })();
 
@@ -2340,6 +2408,7 @@ Theme.init();      // apply saved theme preference immediately
 HistoryToggle.init();
 Router.bind();
 Overview.init();
+Prices.init();
 Breadth.init();
 AILayers.init();
 Articles.init();
