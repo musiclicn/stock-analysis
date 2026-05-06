@@ -1268,7 +1268,7 @@ const Overview = (() => {
       const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
       return `
         <tr data-sym="${esc(r.sym)}">
-          <td class="rank">${r._rank}</td>
+          <td class="rank mobile-hidden">${r._rank}</td>
           <td class="sym">${esc(r.sym)}</td>
           <td class="name mobile-hidden">${esc(r.name)}</td>
           <td class="name mobile-hidden" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
