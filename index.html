@@ -1090,6 +1090,9 @@ const Overview = (() => {
         </div>
         <div class="stat-grid">
           <div class="stat"><div class="k">${t('card.price')}</div><div class="v" data-col="price">${fmtNum(ix.price||0,2)}</div></div>
+          <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
+          <div class="stat"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
+          <div class="stat"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
           <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily}</div></div>
           <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</div></div>
           <div class="stat mobile-hidden"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
@@ -1194,7 +1197,7 @@ const Overview = (() => {
       const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
       return `
         <tr data-sym="${esc(r.sym)}">
-          <td class="rank mobile-hidden">${r._rank}</td>
+          <td class="rank">${r._rank}</td>
           <td class="sym">${esc(r.sym)}</td>
           <td class="name mobile-hidden">${esc(r.name)}</td>
           <td class="name mobile-hidden" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
