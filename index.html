@@ -125,77 +125,7 @@
     font-weight: 700; font-size: 12px; text-transform: uppercase;
   }
 
-  /* =============== ANNOUNCEMENT BOARD =============== */
-  .announce-board {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 10px 14px;
-    margin-bottom: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-  .announce-board-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 4px;
-  }
-  .announce-board-title {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    color: var(--text-dim);
-  }
-  .announce-dismiss-all {
-    background: none;
-    border: none;
-    color: var(--text-dim);
-    font-size: 13px;
-    cursor: pointer;
-    padding: 0 2px;
-    line-height: 1;
-    opacity: .6;
-  }
-  .announce-dismiss-all:hover { opacity: 1; color: var(--text); }
-  .announce-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    font-size: 13px;
-    line-height: 1.45;
-    color: var(--text-soft);
-    animation: fadeIn .2s ease;
-  }
-  .announce-tag {
-    flex-shrink: 0;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-    padding: 2px 6px;
-    border-radius: 5px;
-    margin-top: 1px;
-  }
-  .announce-tag.new    { background: rgba(34,197,94,.15);  color: var(--score-100); }
-  .announce-tag.fix    { background: rgba(110,168,255,.15); color: var(--accent); }
-  .announce-tag.update { background: rgba(234,179,8,.15);  color: var(--score-50); }
-  .announce-tag.info   { background: rgba(139,147,173,.12); color: var(--text-dim); }
-  .announce-close {
-    background: none;
-    border: none;
-    color: var(--text-dim);
-    font-size: 14px;
-    cursor: pointer;
-    padding: 0 2px;
-    margin-left: auto;
-    flex-shrink: 0;
-    line-height: 1;
-    opacity: .5;
-  }
-  .announce-close:hover { opacity: 1; color: var(--text); }
+
 
   /* =============== TAB NAV =============== */
   .tab-nav {
@@ -466,7 +396,6 @@
     .pagination .page-btn { padding: 10px 18px; min-height: 44px; }
     .pagination .ps-btn { padding: 8px 12px; min-height: 44px; font-size: 12px; }
     .inner-tabs button { padding: 12px 14px; }
-    .announce-close { padding: 8px; font-size: 18px; }
     .btn { padding: 10px 14px; min-height: 44px; }
 
     /* ---- Safari/iPhone: Scrollable tab nav (U2) ---- */
@@ -577,10 +506,37 @@
     font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
     color: var(--accent); margin-bottom: 6px;
   }
+  .score-intro .score-intro-chevron {
+    display: none; /* hidden on desktop */
+  }
   .score-intro p {
     margin: 0; font-size: 13.5px; line-height: 1.65; color: var(--text-soft);
   }
   .score-intro strong { color: var(--text); font-weight: 600; }
+
+  @media (max-width: 720px) {
+    .score-intro { padding: 12px 16px; margin-bottom: 16px; cursor: pointer; }
+    .score-intro .score-intro-label {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 0;
+    }
+    .score-intro .score-intro-chevron {
+      display: inline-block;
+      font-size: 12px; color: var(--text-dim);
+      transition: transform .2s ease;
+    }
+    .score-intro.expanded .score-intro-chevron {
+      transform: rotate(90deg);
+    }
+    .score-intro p {
+      display: none;
+      margin-top: 10px;
+    }
+    .score-intro.expanded p {
+      display: block;
+      animation: fadeIn .2s ease;
+    }
+  }
 
   /* =============== SCORE MATRIX =============== */
   .score-matrix { background:var(--panel-2); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
@@ -682,14 +638,7 @@
     </div>
   </header>
 
-  <!-- ================= ANNOUNCEMENT BOARD ================= -->
-  <div id="announce-board" class="announce-board" style="display:none;">
-    <div class="announce-board-header">
-      <span class="announce-board-title" data-i18n="announce.title">Announcements</span>
-      <button class="announce-dismiss-all" id="announce-dismiss-all" title="Dismiss all">✕</button>
-    </div>
-    <div id="announce-list"></div>
-  </div>
+
 
   <!-- ================= TAB NAV ================= -->
   <nav class="tab-nav">
@@ -712,8 +661,8 @@
   <!-- ================= OVERVIEW VIEW ================= -->
   <section class="view visible" data-tab="overview">
 
-    <div class="score-intro">
-      <div class="score-intro-label" data-i18n="score-intro.label">AlphaStockPro Score</div>
+    <div class="score-intro" id="score-intro">
+      <div class="score-intro-label" data-i18n="score-intro.label">AlphaStockPro Score<span class="score-intro-chevron">▶</span></div>
       <p data-i18n-html="score-intro.body">A <strong>proprietary quantitative metric</strong> that tracks the underlying momentum and strength of US indexes, sectors, and stocks. By analyzing historical score changes, we help you identify <strong>trend exhaustion</strong> and pinpoint <strong>high-probability reversal opportunities</strong>.</p>
     </div>
 
@@ -2681,6 +2630,7 @@ const Auth = (() => {
 applyI18n();       // apply saved language preference immediately
 Theme.init();      // apply saved theme preference immediately
 HistoryToggle.init();
+document.getElementById('score-intro').addEventListener('click', function(){ this.classList.toggle('expanded'); });
 Router.bind();
 Overview.init();
 Prices.init();
@@ -2695,7 +2645,6 @@ Router.apply();    // respect initial URL hash
 
 document.getElementById('lang-toggle').addEventListener('click', () => {
   switchLang(currentLang === 'en' ? 'zh' : 'en');
-  if (typeof renderAnnouncements === 'function') renderAnnouncements();
   Overview.repaint();
   Breadth.repaint();
   Articles.repaint();
@@ -2705,75 +2654,7 @@ document.getElementById('lang-toggle').addEventListener('click', () => {
   document.title = name === 'breadth' ? t('title.breadth') : name === 'articles' ? t('title.articles') : t('title.overview');
 });
 
-/* ============================================================================
-   ANNOUNCEMENT BOARD
-   To add/remove items, edit the ANNOUNCEMENTS array below.
-   Each item needs a unique `id` (used to track dismissal in localStorage),
-   a `type` ('new' | 'fix' | 'update' | 'info'), and a `text`.
-   ============================================================================ */
-(function(){
-  const ANNOUNCEMENTS = [
-    { id: 'ann-003', type: 'new',
-      text: { en: '2D Δ column added to Constituents — shows 2-day daily score momentum.',
-              zh: '成分股表格新增 2D Δ 列，显示两日每日评分动量。' } },
-    { id: 'ann-002', type: 'new',
-      text: { en: 'Support login with Facebook.',
-              zh: '新增 Facebook 账号登录支持。' } },
-    { id: 'ann-001', type: 'fix',
-      text: { en: 'Password reset email delivery fixed.',
-              zh: '已修复重置密码邮件发送问题。' } },
-  ];
 
-  const STORAGE_KEY = 'dismissed-announcements';
-
-  function getDismissed(){
-    try { return new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')); }
-    catch(e){ return new Set(); }
-  }
-  function saveDismissed(set){
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify([...set])); } catch(e){}
-  }
-
-  function render(){
-    const dismissed = getDismissed();
-    const visible = ANNOUNCEMENTS.filter(a => !dismissed.has(a.id));
-    const board = document.getElementById('announce-board');
-    const list  = document.getElementById('announce-list');
-    if (!board || !list) return;
-    if (visible.length === 0){ board.style.display = 'none'; return; }
-    board.style.display = '';
-    list.innerHTML = visible.map(a => {
-      const text = typeof a.text === 'object' ? (a.text[currentLang] || a.text.en) : a.text;
-      const tag  = t('announce.tag.' + a.type) || a.type.toUpperCase();
-      return `
-      <div class="announce-item" id="ann-item-${esc(a.id)}">
-        <span class="announce-tag ${esc(a.type)}">${esc(tag)}</span>
-        <span>${esc(text)}</span>
-        <button class="announce-close" data-ann="${esc(a.id)}" title="Dismiss">✕</button>
-      </div>`;
-    }).join('');
-
-    list.querySelectorAll('.announce-close').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const id = btn.dataset.ann;
-        const set = getDismissed();
-        set.add(id);
-        saveDismissed(set);
-        render();
-      });
-    });
-  }
-
-  document.getElementById('announce-dismiss-all').addEventListener('click', () => {
-    const set = getDismissed();
-    ANNOUNCEMENTS.forEach(a => set.add(a.id));
-    saveDismissed(set);
-    render();
-  });
-
-  render();
-  window.renderAnnouncements = render;
-})();
 </script>
 </body>
 </html>
