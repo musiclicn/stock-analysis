@@ -1,6 +1,7 @@
 import { SignJWT, jwtVerify } from 'jose';
 import * as cookie from 'cookie';
 import { Resend } from 'resend';
+import { serializeCookie } from './serializeCookie.js';
 
 async function getJwtSecret(env) {
     if (!env.JWT_SECRET) {
@@ -65,10 +66,6 @@ function randomTokenBase64Url(byteLen = 32) {
     return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
-// Set HTTP-Only Cookie header
-function serializeCookie(name, value, maxAge) {
-    return `${name}=${value}; HttpOnly; Secure; SameSite=Lax; Path=/; Max-Age=${maxAge}`;
-}
 
 export default {
     async fetch(request, env, ctx) {
