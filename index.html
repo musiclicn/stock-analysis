@@ -1167,11 +1167,11 @@ const Overview = (() => {
         <div class="ixr-price" data-col="price">${fmtNum(ix.price||0,2)}</div>
         <div class="ixr-chg ${deltaCls}" data-col="chg">${delta >= 0 ? '▲' : '▼'} ${Math.abs(delta).toFixed(2)}%</div>
         <div class="ixr-score">
-          <span class="ixr-sv" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</span>
+          <span class="ixr-sv" style="color:${scoreColor(ix.weekly)}">${ix.weekly ?? ''}</span>
           <span class="ixr-sl">W</span>
         </div>
         <div class="ixr-score">
-          <span class="ixr-sv" style="color:${scoreColor(ix.daily)}">${ix.daily}</span>
+          <span class="ixr-sv" style="color:${scoreColor(ix.daily)}">${ix.daily ?? ''}</span>
           <span class="ixr-sl">D</span>
         </div>
       </div>
@@ -1196,7 +1196,7 @@ const Overview = (() => {
           </svg>
           <div class="label">
             <div>
-              <div class="big" style="color:${color}">${score}</div>
+              <div class="big" style="color:${color}">${ix[state.tf] ?? ''}</div>
               <div class="small">/ 100</div>
             </div>
           </div>
@@ -1206,8 +1206,8 @@ const Overview = (() => {
           <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
           <div class="stat"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
           <div class="stat"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
-          <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily}</div></div>
-          <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly}</div></div>
+          <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily ?? ''}</div></div>
+          <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly ?? ''}</div></div>
           <div class="stat mobile-hidden"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
           <div class="stat mobile-hidden"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
           <div class="stat mobile-hidden"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
@@ -1237,11 +1237,11 @@ const Overview = (() => {
         <div class="scr-price" data-col="price">${fmtNum(price, 2)}</div>
         <div class="scr-chg ${chgCls}" data-col="chg">${chgStr}</div>
         <div class="ixr-score">
-          <span class="ixr-sv" style="color:${scoreColor(s.weekly)}">${s.weekly}</span>
+          <span class="ixr-sv" style="color:${scoreColor(s.weekly)}">${s.weekly ?? ''}</span>
           <span class="ixr-sl">W</span>
         </div>
         <div class="ixr-score">
-          <span class="ixr-sv" style="color:${scoreColor(s.daily)}">${s.daily}</span>
+          <span class="ixr-sv" style="color:${scoreColor(s.daily)}">${s.daily ?? ''}</span>
           <span class="ixr-sl">D</span>
         </div>
       </div>
@@ -1250,7 +1250,7 @@ const Overview = (() => {
           <div class="tkr">${esc(s.sym)}</div>
           <div class="name">${esc(s.name)}</div>
         </div>
-        <div class="score-pill" style="background:${col}">${sc}</div>
+        <div class="score-pill" style="background:${col}">${s[state.tf] ?? ''}</div>
       </div>
       <div class="bar-wrap"><div class="bar" style="width:${sc}%; background:${col}"></div></div>
       <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
@@ -1258,8 +1258,8 @@ const Overview = (() => {
         <span class="${chgCls}" data-col="chg" style="font-family:var(--mono); font-weight:700;">${chgStr}</span>
       </div>
       <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
-        <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
-        <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
+        <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily ?? ''}</span></span>
+        <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly ?? ''}</span></span>
       </div>
       <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.volume')} <span style="color:var(--text-soft); font-family:var(--mono); font-weight:600;">${fmtVol(s.volume||0)}</span></span>
@@ -1320,8 +1320,10 @@ const Overview = (() => {
 
   function generateStockRowHTML(r) {
     const wsc = r.weekly ?? 0;
+    const wscStr = r.weekly ?? '';
     const wcol = scoreColor(wsc);
     const dsc = r.daily ?? 0;
+    const dscStr = r.daily ?? '';
     const dcol = scoreColor(dsc);
     const chg = Number(r.chg||0);
     const chgCls = chg >= 0 ? 'delta-up' : 'delta-down';
@@ -1342,7 +1344,7 @@ const Overview = (() => {
         <td class="num">
           <div class="score-cell">
             <div class="score-bar mobile-hidden"><div style="width:${wsc}%; background:${wcol}"></div></div>
-            <div class="score-val" style="color:${wcol}">${wsc}</div>
+            <div class="score-val" style="color:${wcol}">${wscStr}</div>
           </div>
         </td>
         <td class="num ${d2wCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2wStr}</td>
@@ -1350,7 +1352,7 @@ const Overview = (() => {
         <td class="num">
           <div class="score-cell">
             <div class="score-bar mobile-hidden"><div style="width:${dsc}%; background:${dcol}"></div></div>
-            <div class="score-val" style="color:${dcol}">${dsc}</div>
+            <div class="score-val" style="color:${dcol}">${dscStr}</div>
           </div>
         </td>
         <td class="num ${d2dCls} mobile-hidden" style="font-family:var(--mono); font-weight:600;">${d2dStr}</td>
