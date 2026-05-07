@@ -9,7 +9,7 @@ var TRANSLATIONS = {
   en: {
     /* ---------- brand ---------- */
     'brand.title':   'Alpha Stock',
-    'brand.tagline': 'help you find alpha stocks',
+    'brand.tagline': 'A 0–100 score that tells you when to buy, when to wait, and when to get out.',
 
     /* ---------- status bar ---------- */
     'status.loading':    'Loading…',
@@ -196,7 +196,7 @@ var TRANSLATIONS = {
   zh: {
     /* ---------- 品牌 ---------- */
     'brand.title':   'Alpha Stock',
-    'brand.tagline': '美股 · 专业追踪阿尔法股票',
+    'brand.tagline': '一个 0-100 的评分，告诉你何时买入，何时观望，何时退出。',
 
     /* ---------- 状态栏 ---------- */
     'status.loading':    '加载中…',
