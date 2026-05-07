@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>Alpha Stock — U.S. Equities Dashboard | Stock Analysis</title>
 <meta name="description" content="A daily dashboard analyzing U.S. Equities, Market Breadth, S&P 500, Nasdaq, most traded 100 stocks performance, a quantatitive method to calculate stock strength using 0-100 score,  and macroeconomic drivers like Federal Reserve policies and oil prices." />
 <meta name="keywords" content="Stock Market, U.S. Equities, S&P 500, Nasdaq, Market Breadth, Macroeconomics, Investing" />
@@ -66,15 +66,20 @@
     --shadow: 0 1px 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.06);
   }
   * { box-sizing: border-box; }
-  html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+  html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: var(--sans); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
   body {
     background:
       radial-gradient(1100px 500px at 80% -10%, rgba(110,168,255,.10), transparent 60%),
       radial-gradient(900px 420px at -10% 30%, rgba(34,197,94,.06), transparent 60%),
       var(--bg);
-    min-height: 100dvh;
   }
-  .container { max-width: 1320px; margin: 0 auto; padding: 24px 28px 80px; }
+  .container {
+    max-width: 1320px; margin: 0 auto;
+    padding: 24px 28px 80px;
+    padding-left: max(28px, env(safe-area-inset-left));
+    padding-right: max(28px, env(safe-area-inset-right));
+    padding-bottom: max(80px, env(safe-area-inset-bottom));
+  }
 
   /* =============== TOPBAR =============== */
   header.topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom: 8px; }
@@ -292,7 +297,7 @@
 
   .table-wrap { background:var(--panel-2); border:1px solid var(--border); border-radius:0 12px 12px 12px; overflow:hidden; }
   table.stocks { width:100%; border-collapse:collapse; font-size:13px; }
-  .stocks thead th { text-align:left; padding:12px 14px; background: var(--bg-alt); color:var(--text-dim); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.12em; border-bottom:1px solid var(--border); position:sticky; top:0; cursor:pointer; user-select:none; }
+  .stocks thead th { text-align:left; padding:12px 14px; background: var(--bg-alt); color:var(--text-dim); font-weight:600; font-size:11px; text-transform:uppercase; letter-spacing:.12em; border-bottom:1px solid var(--border); position:sticky; top:0; cursor:pointer; user-select:none; -webkit-transform: translateZ(0); z-index: 10; }
   .stocks thead th .arrow { color:var(--accent); margin-left:4px; font-size:10px; }
   .stocks tbody tr { border-bottom:1px solid rgba(31,42,74,.55); }
   .stocks tbody tr:hover { background: rgba(110,168,255,.04); }
@@ -454,6 +459,45 @@
     .ixr-score { display: flex; flex-direction: column; align-items: center; min-width: 36px; }
     .ixr-sv { font-family: var(--mono); font-weight: 700; font-size: 15px; line-height: 1; }
     .ixr-sl { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .1em; margin-top: 2px; }
+
+    /* ---- Safari/iPhone: Touch targets ≥ 44px (U1) ---- */
+    .tab { padding: 14px 14px 16px; font-size: 13px; }
+    .range button { padding: 10px 14px; font-size: 13px; }
+    .pagination .page-btn { padding: 10px 18px; min-height: 44px; }
+    .pagination .ps-btn { padding: 8px 12px; min-height: 44px; font-size: 12px; }
+    .inner-tabs button { padding: 12px 14px; }
+    .announce-close { padding: 8px; font-size: 18px; }
+    .btn { padding: 10px 14px; min-height: 44px; }
+
+    /* ---- Safari/iPhone: Scrollable tab nav (U2) ---- */
+    .tab-nav {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      flex-wrap: nowrap;
+      margin: 10px 0 20px;
+    }
+    .tab-nav::-webkit-scrollbar { display: none; }
+    .tab { white-space: nowrap; flex-shrink: 0; }
+
+    /* ---- Safari/iPhone: Full-width search below tabs (U3) ---- */
+    .inner-tabs { flex-wrap: wrap; }
+    .inner-tabs .search {
+      width: 100%;
+      min-width: unset;
+      order: 99;
+      margin-top: 6px;
+    }
+
+    /* ---- Safari/iPhone: Toolbar wrapping (U4) ---- */
+    header.topbar { flex-wrap: wrap; gap: 8px; }
+    .toolbar { flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+    .brand h1 { font-size: 24px; }
+    .status { order: 99; width: 100%; justify-content: flex-end; }
+
+    /* ---- Safari/iPhone: Pagination stacking (U6) ---- */
+    .pagination { flex-wrap: wrap; gap: 8px; }
+    .pagination .page-sizes { width: 100%; justify-content: center; margin-left: 0; }
   }
 
   footer.foot { margin-top: 40px; color:var(--text-dim); font-size:11px; text-align:center; }
@@ -462,9 +506,12 @@
   /* =============== MODAL =============== */
   .modal-overlay {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(11, 16, 32, 0.85); backdrop-filter: blur(4px);
+    background: rgba(11, 16, 32, 0.92);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     display: flex; align-items: center; justify-content: center;
     z-index: 1000; opacity: 0; pointer-events: none; transition: opacity .2s ease;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
   .modal-overlay.show { opacity: 1; pointer-events: auto; }
   .modal {
@@ -472,6 +519,9 @@
     border-radius: var(--radius); padding: 24px; width: 100%; max-width: 400px;
     box-shadow: var(--shadow); position: relative;
     transform: translateY(10px); transition: transform .2s ease;
+    max-height: calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 48px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .modal-overlay.show .modal { transform: translateY(0); }
   .modal-close {
@@ -577,9 +627,11 @@
   .heat-cell {
     width: 5px; height: 15px; border-radius: 1.5px;
     flex-shrink: 0; cursor: default;
-    transition: transform .1s ease;
   }
-  .heat-cell:hover { transform: scaleY(1.4); position: relative; z-index: 2; }
+  @media (hover: hover) {
+    .heat-cell { transition: transform .1s ease; }
+    .heat-cell:hover { transform: scaleY(1.4); position: relative; z-index: 2; }
+  }
   .heat-cell.empty {
     background: transparent;
     border: 1px dashed rgba(128,145,210,.13);
@@ -1372,12 +1424,14 @@ const Overview = (() => {
     const start = ps > 0 ? (state.page - 1) * ps : 0;
     const pageRows = ps > 0 ? filtered.slice(start, start + ps) : filtered;
 
-    const body = document.getElementById('stocks-body');
-    body.innerHTML = pageRows.map(generateStockRowHTML).join('');
+    requestAnimationFrame(() => {
+      const body = document.getElementById('stocks-body');
+      body.innerHTML = pageRows.map(generateStockRowHTML).join('');
 
-    updateSortIndicators();
-    updatePagination(total, totalPages);
-    if (typeof Prices !== 'undefined') Prices.patch();
+      updateSortIndicators();
+      updatePagination(total, totalPages);
+      if (typeof Prices !== 'undefined') Prices.patch();
+    });
   }
 
   function updatePagination(total, totalPages){
@@ -1660,6 +1714,7 @@ const Breadth = (() => {
   function buildChart(){
     if (state.chartInited) return;
     const ctx = document.getElementById('chart').getContext('2d');
+    const dpr = window.innerWidth <= 720 ? Math.min(window.devicePixelRatio, 2) : window.devicePixelRatio;
     state.chart = new Chart(ctx, {
       type: 'line',
       data: { datasets: [
@@ -1668,7 +1723,7 @@ const Breadth = (() => {
         { label: t('chart.ma200_label'), data: [], yAxisID: 'yPct',   borderColor: css('--ma200'),  backgroundColor: css('--ma200'),  borderWidth: 1.6, pointRadius: 0, tension: 0.1 },
       ]},
       options: {
-        responsive: true, maintainAspectRatio: false, animation: false,
+        responsive: true, maintainAspectRatio: false, animation: false, devicePixelRatio: dpr,
         interaction: { mode: 'index', intersect: false },
         plugins: {
           legend: { display: false },
@@ -1898,6 +1953,7 @@ const AILayers = (() => {
   function buildChart(){
     if (state.chartInited) return;
     const ctx = document.getElementById('al-chart').getContext('2d');
+    const dpr = window.innerWidth <= 720 ? Math.min(window.devicePixelRatio, 2) : window.devicePixelRatio;
     const layerNames = state.data ? state.data.layers.map(l => l.name) : LAYER_KEYS;
     const datasets = LAYER_VARS.map((v, i) => ({
       label: t(LAYER_KEYS[i]) || layerNames[i],
@@ -1912,7 +1968,7 @@ const AILayers = (() => {
       type: 'line',
       data: { datasets },
       options: {
-        responsive: true, maintainAspectRatio: false, animation: false,
+        responsive: true, maintainAspectRatio: false, animation: false, devicePixelRatio: dpr,
         interaction: { mode: 'index', intersect: false },
         plugins: {
           legend: { display: false },
