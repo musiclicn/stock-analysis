@@ -1416,11 +1416,13 @@ const Overview = (() => {
     refresh: () => load(),
     repaint(){ if (state.data) paint(); },
     lastUpdated: () => state.lastUpdated,
+    getData: () => state.data,
   };
 })();
 
 /* ============================================================================
-   PRICES CONTROLLER — polls R2 prices.json every 5 min, patches DOM in place
+   PRICES CONTROLLER — polls R2 prices.json every 5 min, merges into data model
+   and patches DOM in place for immediate visual feedback.
    ============================================================================ */
 const Prices = (() => {
   const BASE      = 'https://pub-db1ceca2b3604ce5b2ad16f08710bc8d.r2.dev';
@@ -1443,11 +1445,36 @@ const Prices = (() => {
       const json = await res.json();
       data = json.prices;
       patch();
-    } catch(e){}
+    } catch(e){
+      console.warn('Prices: failed to load from R2', e);
+    }
+  }
+
+  /** Merge R2 prices into a flat array of {sym, price?, chg?} objects. */
+  function mergeInto(arr){
+    if (!Array.isArray(arr)) return;
+    for (const item of arr){
+      const p = data[item.sym];
+      if (p){ item.price = p.price; item.chg = p.chg; }
+    }
   }
 
   function patch(){
     if (!data) return;
+
+    // ---- Merge into Overview data model so re-renders use fresh prices ----
+    const scoreData = Overview.getData();
+    if (scoreData){
+      mergeInto(scoreData.indexes);
+      mergeInto(scoreData.sectors);
+      if (scoreData.stocks){
+        for (const cat in scoreData.stocks){
+          mergeInto(scoreData.stocks[cat]);
+        }
+      }
+    }
+
+    // ---- Immediate DOM patch for already-rendered elements ----
 
     // Patch stocks table rows
     document.querySelectorAll('#stocks-body tr[data-sym]').forEach(tr => {
