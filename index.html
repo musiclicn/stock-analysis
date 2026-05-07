@@ -1276,7 +1276,11 @@ const Overview = (() => {
     if (typeof Prices !== 'undefined') Prices.patch();
   }
   function renderSectors(){
-    const sorted = [...(state.data.sectors || [])].sort((a,b) => (b[state.tf]||0) - (a[state.tf]||0));
+    const sorted = [...(state.data.sectors || [])].sort((a,b) => {
+      const wDiff = (b.weekly || 0) - (a.weekly || 0);
+      if (wDiff !== 0) return wDiff;
+      return (b.daily || 0) - (a.daily || 0);
+    });
     document.getElementById('sectors-wrap').innerHTML = sorted.map(sectorCardHTML).join('');
   }
   function filterAndSortStocks(list, q, k, dir) {
