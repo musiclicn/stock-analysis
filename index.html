@@ -173,7 +173,7 @@
   .toggle button.active { background: var(--panel-2); color:var(--text); box-shadow: var(--shadow); }
 
   /* =============== INDEX HERO CARDS =============== */
-  .indexes { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .indexes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .index-card {
     position:relative; background: linear-gradient(180deg, var(--panel-2), var(--panel));
     border:1px solid var(--border); border-radius: var(--radius); padding: 22px;
@@ -335,6 +335,9 @@
   .error-banner code { background:#1a1020; padding:1px 6px; border-radius:4px; color:#fecaca; }
   .error-banner.show { display:block; }
 
+  @media (max-width: 1100px) {
+    .indexes { grid-template-columns: 1fr 1fr; }
+  }
   @media (max-width: 900px){
     .indexes { grid-template-columns: 1fr; }
     .index-body { flex-direction:column; align-items:flex-start; gap:16px; }
