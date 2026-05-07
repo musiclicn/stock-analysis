@@ -361,13 +361,15 @@
     .sector-card .sc-detail { display: none !important; }
     .sc-row {
       display: grid;
-      grid-template-columns: 1fr auto auto;
+      grid-template-columns: 1fr auto auto auto auto;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
     .scr-sym { min-width: 0; }
     .scr-ticker { font-weight: 700; font-size: 15px; letter-spacing: .3px; display: block; }
     .scr-name { font-size: 10px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+    .scr-price { font-family: var(--mono); font-size: 13px; text-align: right; white-space: nowrap; }
+    .scr-chg   { font-family: var(--mono); font-size: 12px; text-align: right; white-space: nowrap; }
 
     /* Compact index rows on mobile */
     .indexes { grid-template-columns: 1fr; gap: 6px; }
@@ -678,8 +680,8 @@
     <div class="indexes" id="indexes-wrap"></div>
 
     <div class="section-head">
-      <h2 data-i18n="section.sectors">Sectors (SPDR ETFs)</h2>
-      <div class="hint" data-i18n="hint.sectors">Sorted by active timeframe · click a sector for drill-down (prototype)</div>
+      <h2 data-i18n="section.sectors">Sectors</h2>
+      <div class="hint mobile-hidden" data-i18n="hint.sectors">Sorted by active timeframe · click a sector for drill-down (prototype)</div>
       <button id="sectors-toggle" style="margin-left:auto; padding: 4px 8px; font-size: 12px; display: none;" class="sectors-toggle">Show</button>
     </div>
     <div class="sectors" id="sectors-wrap"></div>
@@ -1219,13 +1221,19 @@ const Overview = (() => {
   function sectorCardHTML(s){
     const sc = s[state.tf] ?? 0;
     const col = scoreColor(sc);
+    const price = s.price || 0;
+    const chg = Number(s.chg || 0);
+    const chgCls = chg >= 0 ? 'delta-up' : 'delta-down';
+    const chgStr = `${chg >= 0 ? '▲' : '▼'} ${Math.abs(chg).toFixed(2)}%`;
     return `
-    <div class="sector-card" title="${esc(s.name)}">
+    <div class="sector-card" data-sym="${esc(s.sym)}" title="${esc(s.name)}">
       <div class="sc-row">
         <div class="scr-sym">
           <span class="scr-ticker">${esc(s.sym)}</span>
           <span class="scr-name">${esc(s.name)}</span>
         </div>
+        <div class="scr-price" data-col="price">${fmtNum(price, 2)}</div>
+        <div class="scr-chg ${chgCls}" data-col="chg">${chgStr}</div>
         <div class="ixr-score">
           <span class="ixr-sv" style="color:${scoreColor(s.weekly)}">${s.weekly}</span>
           <span class="ixr-sl">W</span>
@@ -1244,6 +1252,10 @@ const Overview = (() => {
       </div>
       <div class="bar-wrap"><div class="bar" style="width:${sc}%; background:${col}"></div></div>
       <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--text-dim);">
+        <span>${t('card.price')} <span style="font-family:var(--mono); font-weight:600; color:var(--text-soft);" data-col="price">${fmtNum(price, 2)}</span></span>
+        <span class="${chgCls}" data-col="chg" style="font-family:var(--mono); font-weight:700;">${chgStr}</span>
+      </div>
+      <div class="sc-detail" style="display:flex; justify-content:space-between; margin-top:4px; font-size:11px; color:var(--text-dim);">
         <span>${t('card.daily')} <span style="color:${scoreColor(s.daily)}; font-family:var(--mono); font-weight:700;">${s.daily}</span></span>
         <span>${t('card.weekly')} <span style="color:${scoreColor(s.weekly)}; font-family:var(--mono); font-weight:700;">${s.weekly}</span></span>
       </div>
@@ -1595,7 +1607,7 @@ const Prices = (() => {
       }
     });
 
-    // Patch index cards (querySelectorAll covers both desktop and mobile ix-row elements)
+    // Patch index cards
     document.querySelectorAll('.index-card[data-sym]').forEach(card => {
       const p = data[card.dataset.sym];
       if (!p) return;
@@ -1608,6 +1620,23 @@ const Prices = (() => {
           ? `ixr-chg ${up ? 'delta-up' : 'delta-down'}`
           : `${up ? 'delta-up' : 'delta-down'}`;
         el.textContent = `${up ? '▲' : '▼'} ${Math.abs(p.chg).toFixed(2)}%`;
+      });
+    });
+
+    // Patch sector cards
+    document.querySelectorAll('.sector-card[data-sym]').forEach(card => {
+      const p = data[card.dataset.sym];
+      if (!p) return;
+      const up = p.chg >= 0;
+      const chgStr = `${up ? '▲' : '▼'} ${Math.abs(p.chg).toFixed(2)}%`;
+      card.querySelectorAll('[data-col="price"]').forEach(el => {
+        el.textContent = fmtNum(p.price, 2);
+      });
+      card.querySelectorAll('[data-col="chg"]').forEach(el => {
+        el.className = el.classList.contains('scr-chg')
+          ? `scr-chg ${up ? 'delta-up' : 'delta-down'}`
+          : `${up ? 'delta-up' : 'delta-down'}`;
+        el.textContent = chgStr;
       });
     });
   }

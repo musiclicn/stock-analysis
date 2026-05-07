@@ -58,7 +58,7 @@ var TRANSLATIONS = {
 
     /* ---------- section headings ---------- */
     'section.indexes':      'Major Indexes',
-    'section.sectors':      'Sectors (SPDR ETFs)',
+    'section.sectors':      'Sectors',
     'section.constituents': 'Constituents',
 
     /* ---------- announcement board ---------- */
@@ -245,7 +245,7 @@ var TRANSLATIONS = {
 
     /* ---------- 区块标题 ---------- */
     'section.indexes':      '主要指数',
-    'section.sectors':      '板块（SPDR ETF）',
+    'section.sectors':      '板块',
     'section.constituents': '成分股',
 
     /* ---------- 公告栏 ---------- */
