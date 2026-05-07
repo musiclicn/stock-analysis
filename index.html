@@ -767,7 +767,6 @@
         <table class="stocks" id="stocks-table">
           <thead>
             <tr>
-              <th data-k="rank" style="width:60px" class="mobile-hidden"><span data-i18n="th.rank">#</span></th>
               <th data-k="sym"><span data-i18n="th.ticker">Ticker</span></th>
               <th data-k="name" class="mobile-hidden"><span data-i18n="th.name">Name</span></th>
               <th data-k="sector" class="mobile-hidden"><span data-i18n="th.sector">Sector</span></th>
@@ -1331,8 +1330,7 @@ const Overview = (() => {
     const d2dCls = d2d === null ? '' : d2d > 0 ? 'delta-up' : d2d < 0 ? 'delta-down' : '';
     return `
       <tr data-sym="${esc(r.sym)}">
-        <td class="rank mobile-hidden">${r._rank}</td>
-        <td class="sym">${esc(r.sym)}</td>
+        <td class="sym"><span style="color:var(--text-dim); font-family:var(--mono); font-size:11px; margin-right:6px; font-weight:normal;">${r._rank}</span>${esc(r.sym)}</td>
         <td class="name mobile-hidden">${esc(r.name)}</td>
         <td class="name mobile-hidden" style="color:var(--text-dim)">${esc(r.sector||'')}</td>
         <td class="name mobile-hidden" style="color:var(--text-dim); font-size:12px;" title="${esc(r.capCategory||'')}">${r.capCategory && r.capCategory !== 'Unknown' ? esc(r.capCategory) : '—'}</td>
