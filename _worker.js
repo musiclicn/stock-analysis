@@ -167,6 +167,7 @@ export default {
                 try {
                     const { email, password } = await request.json();
                     if (!email || !password) return new Response("Email and password required", { status: 400 });
+                    if (password.length < 6) return new Response("Password must be at least 6 characters", { status: 400 });
 
                     // Check if user exists
                     const existing = await env.DB.prepare("SELECT id FROM users WHERE email = ?").bind(email).first();
@@ -321,7 +322,7 @@ export default {
                 try {
                     const { token, password } = await request.json();
                     if (!token || !password) return new Response("Token and password required", { status: 400 });
-                    if (password.length < 8) return new Response("Password must be at least 8 characters", { status: 400 });
+                    if (password.length < 6) return new Response("Password must be at least 6 characters", { status: 400 });
 
                     const tokenHash = await sha256Hex(token);
                     const now = Math.floor(Date.now() / 1000);
