@@ -1570,6 +1570,7 @@ const Prices = (() => {
       const json = await res.json();
       data = json.prices;
       patch();
+      if (stamp && Router.active() === 'overview') setStatus('live', fmtTime(stamp));
     } catch(e){
       console.warn('Prices: failed to load from R2', e);
     }
