@@ -180,9 +180,41 @@ export default {
                     if (!email || !password) return new Response("Email and password required", { status: 400 });
                     if (password.length < 6) return new Response("Password must be at least 6 characters", { status: 400 });
 
+                    // Always return the same response to prevent email enumeration
+                    const okResponse = () => new Response(JSON.stringify({ success: true, message: "User registered" }), { status: 201 });
+
                     // Check if user exists
                     const existing = await env.DB.prepare("SELECT id FROM users WHERE email = ?").bind(email).first();
-                    if (existing) return new Response("User already exists", { status: 400 });
+                    if (existing) {
+                        if (env.RESEND_API_KEY) {
+                            ctx.waitUntil((async () => {
+                                try {
+                                    let fromEmail = (env.FROM_EMAIL || 'onboarding@resend.dev').trim();
+                                    if (!fromEmail.includes('@')) {
+                                        const domain = url.hostname.replace(/^www\./, '') || 'example.com';
+                                        fromEmail = `${fromEmail} <noreply@${domain}>`;
+                                    } else if (!fromEmail.includes('<') && fromEmail.includes(' ')) {
+                                        const parts = fromEmail.split(/\s+/);
+                                        const emailPart = parts.pop();
+                                        const namePart = parts.join(' ');
+                                        if (emailPart.includes('@')) {
+                                            fromEmail = `${namePart} <${emailPart}>`;
+                                        }
+                                    }
+                                    const resend = new Resend(env.RESEND_API_KEY);
+                                    await resend.emails.send({
+                                        from: fromEmail,
+                                        to: email,
+                                        subject: 'Registration Attempt',
+                                        text: "Hi,\n\nWe received a registration attempt for this email address. Since you already have an account, no action is required. If you forgot your password, you can reset it on the login page.\n\nThanks!",
+                                    });
+                                } catch (e) {
+                                    console.error("Duplicate registration email failed:", e);
+                                }
+                            })());
+                        }
+                        return okResponse();
+                    }
 
                     const userId = crypto.randomUUID();
                     const passwordHash = await hashPassword(password);
