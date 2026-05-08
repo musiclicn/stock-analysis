@@ -93,6 +93,15 @@ function isRateLimited(ip, action, limit, windowMs) {
     record.count += 1;
     return record.count > limit;
 }
+async function verifyAuthToken(token, env) {
+    const secret = await getJwtSecret(env);
+    const result = await jwtVerify(token, secret);
+    if (result.payload.jti) {
+        const revoked = await env.DB.prepare("SELECT jti FROM revoked_tokens WHERE jti = ?").bind(result.payload.jti).first();
+        if (revoked) throw new Error("Token revoked");
+    }
+    return result;
+}
 
 export default {
     async fetch(request, env, ctx) {
@@ -107,8 +116,7 @@ export default {
             if (!match) return new Response("Not authenticated", { status: 401 });
 
             try {
-                const secret = await getJwtSecret(env);
-                const { payload } = await jwtVerify(match[1], secret);
+                const { payload } = await verifyAuthToken(match[1], env);
 
                 const dbUser = await env.DB.prepare("SELECT is_admin FROM users WHERE id = ?").bind(payload.userId).first();
                 if (!dbUser || !dbUser.is_admin) {
@@ -136,8 +144,7 @@ export default {
 
                 if (match) {
                     try {
-                        const secret = await getJwtSecret(env);
-                        const { payload } = await jwtVerify(match[1], secret);
+                        const { payload } = await verifyAuthToken(match[1], env);
                         userId = payload.userId;
                     } catch (e) {
                         // ignore invalid token for anonymous feedback
@@ -225,7 +232,8 @@ export default {
 
                     // Create JWT
                     const secret = await getJwtSecret(env);
-                    const jwt = await new SignJWT({ userId: user.id, email: user.email })
+                    const jti = crypto.randomUUID();
+                    const jwt = await new SignJWT({ userId: user.id, email: user.email, jti })
                         .setProtectedHeader({ alg: 'HS256' })
                         .setIssuedAt()
                         .setExpirationTime('7d')
@@ -241,6 +249,18 @@ export default {
 
             // ---- Logout ----
             if (path === 'logout' && method === 'POST') {
+                const cookieStr = request.headers.get('Cookie') || '';
+                const match = cookieStr.match(/auth_token=([^;]+)/);
+                if (match) {
+                    try {
+                        const { payload } = await jwtVerify(match[1], await getJwtSecret(env));
+                        if (payload.jti && payload.exp) {
+                            await env.DB.prepare("INSERT OR IGNORE INTO revoked_tokens (jti, expires_at) VALUES (?, ?)").bind(payload.jti, payload.exp).run();
+                        }
+                    } catch (e) {
+                        // ignore invalid token on logout
+                    }
+                }
                 const response = new Response(JSON.stringify({ success: true }), { status: 200 });
                 response.headers.append('Set-Cookie', serializeCookie('auth_token', '', 0)); // Expire cookie
                 return response;
@@ -355,8 +375,7 @@ export default {
                 if (!match) return new Response("Not authenticated", { status: 401 });
 
                 try {
-                    const secret = await getJwtSecret(env);
-                    const { payload } = await jwtVerify(match[1], secret);
+                    const { payload } = await verifyAuthToken(match[1], env);
 
                     // Fetch is_admin status
                     const dbUser = await env.DB.prepare("SELECT is_admin FROM users WHERE id = ?").bind(payload.userId).first();
@@ -470,7 +489,8 @@ export default {
 
                     // Create JWT
                     const secret = await getJwtSecret(env);
-                    const jwt = await new SignJWT({ userId: user.id, email: user.email })
+                    const jti = crypto.randomUUID();
+                    const jwt = await new SignJWT({ userId: user.id, email: user.email, jti })
                         .setProtectedHeader({ alg: 'HS256' })
                         .setIssuedAt()
                         .setExpirationTime('7d')
@@ -578,7 +598,8 @@ export default {
 
                      // Create JWT
                      const secret = await getJwtSecret(env);
-                     const jwt = await new SignJWT({ userId: user.id, email: user.email })
+                     const jti = crypto.randomUUID();
+                     const jwt = await new SignJWT({ userId: user.id, email: user.email, jti })
                          .setProtectedHeader({ alg: 'HS256' })
                          .setIssuedAt()
                          .setExpirationTime('7d')
