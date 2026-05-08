@@ -503,8 +503,8 @@
       ]
     },
     {
-      "sym": "BTC/USD",
-      "name": "BTC",
+      "sym": "BTC",
+      "name": "Bitcoin",
       "price": 79994.65,
       "chg": -1.78,
       "daily": 77,
