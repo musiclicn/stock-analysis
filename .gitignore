@@ -8,3 +8,8 @@ wrangler.log
 http.log
 node_modules/
 articles/
+
+# Nuxt files
+.nuxt/
+.output/
+dist/
