@@ -136,7 +136,11 @@ export default {
             }
             try {
                 const { type, message, username } = await request.json();
-                if (!message) return new Response("Message required", { status: 400 });
+                
+                if (!message || typeof message !== 'string') return new Response("Message required", { status: 400 });
+                if (message.length > 1000) return new Response("Message exceeds maximum length of 1000 characters", { status: 400 });
+                if (type && (typeof type !== 'string' || type.length > 50)) return new Response("Type invalid or too long (max 50 chars)", { status: 400 });
+                if (username && (typeof username !== 'string' || username.length > 100)) return new Response("Username invalid or too long (max 100 chars)", { status: 400 });
 
                 let userId = null;
                 const cookieStr = request.headers.get('Cookie') || '';
