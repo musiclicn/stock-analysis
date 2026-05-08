@@ -1,25 +1,21 @@
 {
-  "name": "app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "_worker.js",
-  "scripts": {
-    "test": "node --test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/musiclicn/stock-analysis.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "alpha-stock",
+  "private": true,
   "type": "module",
-  "bugs": {
-    "url": "https://github.com/musiclicn/stock-analysis/issues"
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "homepage": "https://github.com/musiclicn/stock-analysis#readme",
+  "devDependencies": {
+    "nuxt": "^3.11.2",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0",
+    "typescript": "^5.4.5"
+  },
   "dependencies": {
-    "acorn": "^8.16.0",
     "cookie": "^1.1.1",
     "jose": "^6.2.3",
     "resend": "^6.12.2"
