@@ -399,21 +399,32 @@ export default {
                         "SELECT * FROM users WHERE email = ? AND provider = 'google'"
                     ).bind(userData.email).first();
                     if (!user) {
-                        // Reject if a local/other-provider account already owns this email
+                        // Handle account conflicts
                         const conflict = await env.DB.prepare(
-                            "SELECT provider FROM users WHERE email = ?"
+                            "SELECT id, provider FROM users WHERE email = ?"
                         ).bind(userData.email).first();
+                        
                         if (conflict) {
-                            return new Response(
-                                "An account with this email already exists. Please log in with your original sign-in method.",
-                                { status: 409 }
-                            );
+                            if (conflict.provider === 'local') {
+                                // Securely take over unverified local account (clearing password to evict attacker)
+                                await env.DB.prepare(
+                                    "UPDATE users SET provider = 'google', provider_id = ?, password_hash = NULL WHERE id = ?"
+                                ).bind(userData.id, conflict.id).run();
+                                user = { id: conflict.id, email: userData.email };
+                            } else {
+                                // Reject if it belongs to another OAuth provider
+                                return new Response(
+                                    "An account with this email already exists. Please log in with your original sign-in method.",
+                                    { status: 409 }
+                                );
+                            }
+                        } else {
+                            const userId = crypto.randomUUID();
+                            await env.DB.prepare(
+                                "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'google', ?)"
+                            ).bind(userId, userData.email, userData.id).run();
+                            user = { id: userId, email: userData.email };
                         }
-                        const userId = crypto.randomUUID();
-                        await env.DB.prepare(
-                            "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'google', ?)"
-                        ).bind(userId, userData.email, userData.id).run();
-                        user = { id: userId, email: userData.email };
                     }
 
                     // Create JWT
@@ -496,22 +507,32 @@ export default {
                          "SELECT * FROM users WHERE email = ? AND provider = 'facebook'"
                      ).bind(userData.email).first();
                      if (!user) {
-                         // Reject if a local/other-provider account already owns this email
+                         // Handle account conflicts
                          const conflict = await env.DB.prepare(
-                             "SELECT provider FROM users WHERE email = ?"
+                             "SELECT id, provider FROM users WHERE email = ?"
                          ).bind(userData.email).first();
+                         
                          if (conflict) {
-                             return new Response(
-                                 "An account with this email already exists. Please log in with your original sign-in method.",
-                                 { status: 409 }
-                             );
-
+                             if (conflict.provider === 'local') {
+                                 // Securely take over unverified local account (clearing password to evict attacker)
+                                 await env.DB.prepare(
+                                     "UPDATE users SET provider = 'facebook', provider_id = ?, password_hash = NULL WHERE id = ?"
+                                 ).bind(userData.id, conflict.id).run();
+                                 user = { id: conflict.id, email: userData.email };
+                             } else {
+                                 // Reject if it belongs to another OAuth provider
+                                 return new Response(
+                                     "An account with this email already exists. Please log in with your original sign-in method.",
+                                     { status: 409 }
+                                 );
+                             }
+                         } else {
+                             const userId = crypto.randomUUID();
+                             await env.DB.prepare(
+                                 "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'facebook', ?)"
+                             ).bind(userId, userData.email, userData.id).run();
+                             user = { id: userId, email: userData.email };
                          }
-                         const userId = crypto.randomUUID();
-                         await env.DB.prepare(
-                             "INSERT INTO users (id, email, provider, provider_id) VALUES (?, ?, 'facebook', ?)"
-                         ).bind(userId, userData.email, userData.id).run();
-                         user = { id: userId, email: userData.email };
                      }
 
                      // Create JWT
