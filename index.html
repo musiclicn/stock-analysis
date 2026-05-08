@@ -382,18 +382,19 @@
     .index-card .card-history { display: none !important; }
     .ix-row {
       display: grid;
-      grid-template-columns: 1fr auto auto auto auto;
+      grid-template-columns: 1fr 54px 62px 28px 28px 66px;
       align-items: center;
-      gap: 10px;
+      gap: 6px;
     }
     .ixr-sym { min-width: 0; }
     .ixr-ticker { font-weight: 700; font-size: 15px; letter-spacing: .3px; display: block; }
     .ixr-name { font-size: 10px; color: var(--text-dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
-    .ixr-price { font-family: var(--mono); font-size: 13px; text-align: right; white-space: nowrap; }
-    .ixr-chg { font-family: var(--mono); font-size: 12px; text-align: right; white-space: nowrap; }
-    .ixr-score { display: flex; flex-direction: column; align-items: center; min-width: 36px; }
-    .ixr-sv { font-family: var(--mono); font-weight: 700; font-size: 15px; line-height: 1; }
+    .ixr-chg { font-family: var(--mono); font-size: 11px; text-align: right; white-space: nowrap; }
+    .ixr-price { font-family: var(--mono); font-size: 12px; text-align: right; white-space: nowrap; color: var(--text-soft); }
+    .ixr-score { display: flex; flex-direction: column; align-items: center; }
+    .ixr-sv { font-family: var(--mono); font-weight: 700; font-size: 14px; line-height: 1; }
     .ixr-sl { font-size: 9px; color: var(--text-dim); text-transform: uppercase; letter-spacing: .1em; margin-top: 2px; }
+    .ixr-trend { font-size: 10px; font-weight: 600; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
     /* ---- Safari/iPhone: Touch targets ≥ 44px (U1) ---- */
     .tab { padding: 14px 14px 16px; font-size: 13px; }
@@ -1164,8 +1165,8 @@ const Overview = (() => {
           <span class="ixr-ticker">${esc(ix.sym)}</span>
           <span class="ixr-name">${esc(ix.name)}</span>
         </div>
-        <div class="ixr-price" data-col="price">${fmtNum(ix.price||0,2)}</div>
         <div class="ixr-chg ${deltaCls}" data-col="chg">${delta >= 0 ? '▲' : '▼'} ${Math.abs(delta).toFixed(2)}%</div>
+        <div class="ixr-price" data-col="price">${fmtNum(ix.price||0,2)}</div>
         <div class="ixr-score">
           <span class="ixr-sv" style="color:${scoreColor(ix.weekly)}">${ix.weekly ?? ''}</span>
           <span class="ixr-sl">W</span>
@@ -1174,6 +1175,7 @@ const Overview = (() => {
           <span class="ixr-sv" style="color:${scoreColor(ix.daily)}">${ix.daily ?? ''}</span>
           <span class="ixr-sl">D</span>
         </div>
+        <div class="ixr-trend" style="color:${color}">${trendLabel(score)}</div>
       </div>
       <div class="index-head">
         <div>
@@ -1203,14 +1205,11 @@ const Overview = (() => {
         </div>
         <div class="stat-grid">
           <div class="stat"><div class="k">${t('card.price')}</div><div class="v" data-col="price">${fmtNum(ix.price||0,2)}</div></div>
-          <div class="stat"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
+          <div class="stat"><div class="k">${t('card.trend')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${trendLabel(score)}</div></div>
           <div class="stat"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
           <div class="stat"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
           <div class="stat"><div class="k">${t('card.daily_score')}</div><div class="v" style="color:${scoreColor(ix.daily)}">${ix.daily ?? ''}</div></div>
           <div class="stat"><div class="k">${t('card.weekly_score')}</div><div class="v" style="color:${scoreColor(ix.weekly)}">${ix.weekly ?? ''}</div></div>
-          <div class="stat mobile-hidden"><div class="k">${t('card.trend')}</div><div class="v">${trendLabel(score)}</div></div>
-          <div class="stat mobile-hidden"><div class="k">${t('card.volume')}</div><div class="v">${fmtVol(ix.volume||0)}</div></div>
-          <div class="stat mobile-hidden"><div class="k">${t('card.vol_ratio')}</div><div class="v" style="color:${(ix.volRatio||0) > 1.5 ? 'var(--score-100)' : 'var(--text)'}">${ix.volRatio ? ix.volRatio.toFixed(2) : '—'}</div></div>
         </div>
       </div>
       <div class="card-history history-col">
