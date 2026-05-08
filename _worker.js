@@ -66,11 +66,39 @@ function randomTokenBase64Url(byteLen = 32) {
     return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
+const rateLimitMap = new Map();
+
+function isRateLimited(ip, action, limit, windowMs) {
+    if (!ip) return false;
+    const now = Date.now();
+    const key = `${ip}:${action}`;
+    
+    // Prevent memory leaks in long-lived isolates
+    if (rateLimitMap.size > 10000) {
+        rateLimitMap.clear();
+    }
+
+    const record = rateLimitMap.get(key);
+    if (!record) {
+        rateLimitMap.set(key, { count: 1, resetAt: now + windowMs });
+        return false;
+    }
+
+    if (now > record.resetAt) {
+        record.count = 1;
+        record.resetAt = now + windowMs;
+        return false;
+    }
+
+    record.count += 1;
+    return record.count > limit;
+}
 
 export default {
     async fetch(request, env, ctx) {
         const url = new URL(request.url);
-        console.log("FETCH", request.method, url.pathname);
+        const ip = request.headers.get('cf-connecting-ip') || request.headers.get('x-real-ip') || '127.0.0.1';
+        console.log("FETCH", request.method, url.pathname, ip);
 
         // API Routes
         if (url.pathname === '/api/feedbacks' && request.method === 'GET') {
@@ -95,6 +123,9 @@ export default {
         }
 
         if (url.pathname === '/api/feedback' && request.method === 'POST') {
+            if (isRateLimited(ip, 'feedback', 5, 60 * 1000)) {
+                return new Response("Too many requests, please try again later.", { status: 429 });
+            }
             try {
                 const { type, message, username } = await request.json();
                 if (!message) return new Response("Message required", { status: 400 });
@@ -130,6 +161,9 @@ export default {
 
             // ---- Local Registration ----
             if (path === 'register' && method === 'POST') {
+                if (isRateLimited(ip, 'register', 5, 15 * 60 * 1000)) {
+                    return new Response("Too many registration attempts. Try again later.", { status: 429 });
+                }
                 try {
                     const { email, password } = await request.json();
                     if (!email || !password) return new Response("Email and password required", { status: 400 });
@@ -153,6 +187,9 @@ export default {
 
             // ---- Local Login ----
             if (path === 'login' && method === 'POST') {
+                if (isRateLimited(ip, 'login', 10, 5 * 60 * 1000)) {
+                    return new Response("Too many login attempts. Try again later.", { status: 429 });
+                }
                 try {
                     const { email, password } = await request.json();
                     if (!email || !password) return new Response("Email and password required", { status: 400 });
@@ -210,6 +247,9 @@ export default {
 
             // ---- Forgot Password (request reset email) ----
             if (path === 'forgot-password' && method === 'POST') {
+                if (isRateLimited(ip, 'forgot-password', 3, 15 * 60 * 1000)) {
+                    return new Response("Too many password reset requests. Try again later.", { status: 429 });
+                }
                 try {
                     const { email } = await request.json();
                     if (!email) return new Response("Email required", { status: 400 });
