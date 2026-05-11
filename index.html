@@ -16,8 +16,8 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Alpha Stock",
-  "description": "A real-time dashboard analyzing U.S. Equities, Market Breadth, and macroeconomic drivers."
+  "name": "Alpha Stock (Archived)",
+  "description": "ARCHIVED: This site is no longer updated. Visit alphastockpro.com for the latest U.S. Equities analysis and quant scores."
 }
 </script>
 <style>
@@ -399,24 +399,26 @@
   .banner-btn {
     background: var(--accent);
     color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 10px 24px;
+    border-radius: 20px;
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     white-space: nowrap;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    box-shadow: 0 4px 12px rgba(110, 168, 255, 0.25);
+    box-shadow: 0 4px 12px rgba(110, 168, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .banner-btn:hover {
-    opacity: 0.9;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(110, 168, 255, 0.35);
+    opacity: 1;
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 0 20px rgba(110, 168, 255, 0.4);
+    background: #7fb4ff;
   }
-  .banner-btn:active { transform: translateY(0); }
+  .banner-btn:active { transform: translateY(0) scale(0.98); }
   
   :root.light-theme .migration-banner {
     background: rgba(37, 99, 235, 0.05);
@@ -528,6 +530,7 @@
     header.topbar { flex-wrap: wrap; gap: 8px; }
     .toolbar { flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
     .brand h1 { font-size: 24px; }
+    .brand .archive-badge { font-size: 9px; padding: 1px 4px; margin-left: 6px; }
     .status { order: 99; width: 100%; justify-content: flex-end; }
 
     /* ---- Safari/iPhone: Pagination stacking (U6) ---- */
@@ -931,7 +934,7 @@
           <button data-r="1m">1m</button>
         </div>
         <div class="spacer"></div>
-        <span class="label" data-i18n="breadth.updated">Updated</span>
+        <span class="label" data-i18n="breadth.updated">Last Updated</span>
         <span id="breadth-updated-at" style="font-family: var(--mono); color: var(--text-soft); font-size: 12px;">—</span>
       </div>
 
@@ -968,7 +971,7 @@
           <button data-r="1m">1m</button>
         </div>
         <div class="spacer"></div>
-        <span class="label" data-i18n="ailayers.updated">Updated</span>
+        <span class="label" data-i18n="ailayers.updated">Last Updated</span>
         <span id="al-updated-at" style="font-family: var(--mono); color: var(--text-soft); font-size: 12px;">—</span>
       </div>
 
@@ -1049,6 +1052,7 @@
   <div class="modal">
     <button id="feedback-modal-close" class="modal-close">✕</button>
     <h2 data-i18n="feedback.title">Submit Feedback</h2>
+    <p style="font-size: 12px; color: var(--text-dim); text-align: center; margin-bottom: 16px;" data-i18n-html="score-intro.archive"></p>
     <div id="feedback-error"></div>
     <form id="feedback-form" class="auth-form" style="display: flex; flex-direction: column; gap: 0.5rem;">
       <select id="feedback-type" required>
@@ -1068,6 +1072,7 @@
   <div class="modal">
     <button id="modal-close" class="modal-close">✕</button>
     <h2 id="auth-title">Log in to your account</h2>
+    <p style="font-size: 12px; color: var(--text-dim); text-align: center; margin-bottom: 16px;" data-i18n-html="score-intro.archive"></p>
     <div id="auth-error"></div>
     <form id="auth-form" class="auth-form">
       <input type="email" id="auth-email" placeholder="Email address" required />
