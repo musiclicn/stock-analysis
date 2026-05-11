@@ -12,10 +12,10 @@ var TRANSLATIONS = {
     'brand.tagline': 'A 0–100 score that tells you when to buy, when to wait, and when to get out.',
 
     /* ---------- status bar ---------- */
-    'status.loading':    'Loading…',
-    'status.refreshing': 'Refreshing…',
-    'status.live':       'Live',
-    'status.failed':     'Failed to load',
+    'status.loading':    'Archived',
+    'status.refreshing': 'Archived',
+    'status.live':       'Archived',
+    'status.failed':     'Archived',
 
     /* ---------- toolbar ---------- */
     'btn.refresh': 'Refresh',
@@ -146,7 +146,7 @@ var TRANSLATIONS = {
     'breadth.title':    'S&P 500 Market Breadth',
     'breadth.subtitle': 'Index price vs. % of constituents above their 50-day and 200-day moving averages',
     'breadth.zoom':     'Zoom',
-    'breadth.updated':  'Updated',
+    'breadth.updated':  'Last Updated',
 
     /* ---------- chart legend (HTML items) ---------- */
     'chart.sp500':  'S&P 500 (Index, left)',
@@ -172,12 +172,16 @@ var TRANSLATIONS = {
     'summary.lt_bullish':     'long-term bullish',
     'summary.lt_bearish':     'long-term bearish',
 
+    /* ---------- migration notice ---------- */
+    'migration.notice': 'This site is no longer updated. Experience the new and improved <strong>Alpha Stock Pro</strong>.',
+    'migration.btn':    'Visit New Site',
+
     /* ---------- error banner (innerHTML — <code> tags preserved) ---------- */
     'error.title': 'Data load failed.',
     'error.hint':  'Serve this folder over HTTP (e.g. <code>python3 -m http.server 8000</code>) — browsers block <code>fetch()</code> on <code>file://</code>.',
 
     /* ---------- footer (innerHTML) ---------- */
-    'footer.text': 'Data from <code>scores.json</code> and <code>breadth.json</code>. Edits appear within seconds.',
+    'footer.text': 'Alpha Stock &copy; 2024. This site is now an archive. Visit <a href="https://alphastockpro.com/" style="color: var(--accent); text-decoration: none;">Alpha Stock Pro</a> for latest updates.',
 
     /* ---------- articles ---------- */
     'articles.expand':   '▼ Read full article',
@@ -186,6 +190,7 @@ var TRANSLATIONS = {
     /* ---------- score intro ---------- */
     'score-intro.label': 'AlphaStockPro Score',
     'score-intro.body':  'A <strong>proprietary quantitative metric</strong> that tracks the underlying momentum and strength of US indexes, sectors, and stocks. By analyzing historical score changes, we help you identify <strong>trend exhaustion</strong> and pinpoint <strong>high-probability reversal opportunities</strong>.',
+    'score-intro.archive': 'Note: This legacy dashboard is no longer updated. Visit the new <a href="https://alphastockpro.com/" style="color:var(--accent); font-weight:600; text-decoration:none;">Alpha Stock Pro</a> for real-time scores.',
 
     /* ---------- page titles ---------- */
     'title.overview':  'Alpha Stock — U.S. Equities',
@@ -199,10 +204,10 @@ var TRANSLATIONS = {
     'brand.tagline': '一个 0-100 的评分，告诉你何时买入，何时观望，何时退出。',
 
     /* ---------- 状态栏 ---------- */
-    'status.loading':    '加载中…',
-    'status.refreshing': '刷新中…',
-    'status.live':       '实时',
-    'status.failed':     '加载失败',
+    'status.loading':    '已归档',
+    'status.refreshing': '已归档',
+    'status.live':       '已归档',
+    'status.failed':     '已归档',
 
     /* ---------- 工具栏 ---------- */
     'btn.refresh': '刷新',
@@ -333,7 +338,7 @@ var TRANSLATIONS = {
     'breadth.title':    '标普500市场宽度',
     'breadth.subtitle': '指数价格 vs. 成分股中高于50日/200日均线的比例',
     'breadth.zoom':     '缩放',
-    'breadth.updated':  '更新时间',
+    'breadth.updated':  '最后更新时间',
 
     /* ---------- 图表图例（HTML 元素） ---------- */
     'chart.sp500':  '标普500（指数，左轴）',
@@ -359,12 +364,16 @@ var TRANSLATIONS = {
     'summary.lt_bullish':     '长期看多',
     'summary.lt_bearish':     '长期看空',
 
+    /* ---------- 迁移公告 ---------- */
+    'migration.notice': '本站点不再更新。体验全新升级的 <strong>Alpha Stock Pro</strong>。',
+    'migration.btn':    '访问新站点',
+
     /* ---------- 错误横幅（innerHTML — 保留 <code> 标签） ---------- */
     'error.title': '数据加载失败。',
     'error.hint':  '请通过HTTP服务访问（如 <code>python3 -m http.server 8000</code>）——浏览器禁止在 <code>file://</code> 下使用 <code>fetch()</code>。',
 
     /* ---------- 页脚（innerHTML） ---------- */
-    'footer.text': '数据来自 <code>scores.json</code> 和 <code>breadth.json</code>。修改后数秒内生效。',
+    'footer.text': 'Alpha Stock &copy; 2024. 本站点已归档。访问 <a href="https://alphastockpro.com/" style="color: var(--accent); text-decoration: none;">Alpha Stock Pro</a> 获取最新更新。',
 
     /* ---------- 文章 ---------- */
     'articles.expand':   '▼ 展开全文',
@@ -373,11 +382,16 @@ var TRANSLATIONS = {
     /* ---------- 评分简介 ---------- */
     'score-intro.label': 'AlphaStockPro 评分',
     'score-intro.body':  '一项<strong>专有量化指标</strong>，追踪美国指数、板块与个股的底层动量和强度。通过分析历史评分变化，帮助您识别<strong>趋势衰竭</strong>信号，精准捕捉<strong>高概率反转机会</strong>。',
+    'score-intro.archive': '注：此旧版仪表盘不再更新。请访问全新的 <a href="https://alphastockpro.com/" style="color:var(--accent); font-weight:600; text-decoration:none;">Alpha Stock Pro</a> 获取实时评分。',
 
     /* ---------- 页面标题 ---------- */
     'title.overview':  '美股专业追踪阿尔法股票',
     'title.breadth':   '市场宽度 — 市场脉搏',
     'title.articles':  '市场评论 — 市场脉搏',
+
+    /* ---------- 迁移公告 ---------- */
+    'migration.notice': '本站点不再更新。体验全新升级的 <strong>Alpha Stock Pro</strong>。',
+    'migration.btn':    '访问新站点',
   },
 };
 
@@ -427,5 +441,8 @@ function applyI18n() {
 function switchLang(lang) {
   currentLang = lang;
   localStorage.setItem('mp-lang', lang);
+  applyI18n();
+}
+;
   applyI18n();
 }

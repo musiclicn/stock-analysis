@@ -1,5 +1,8 @@
-# Market Pulse — U.S. Equities Dashboard
-> A real-time dashboard analyzing U.S. Equities, Market Breadth, and S&P 500 / Nasdaq performance.
+# Alpha Stock (Archived)
+> This site is no longer updated. The new and improved version is available at [https://alphastockpro.com/](https://alphastockpro.com/).
+
+## Original Project: Market Pulse
+An archive of the U.S. Equities Dashboard analyzing Market Breadth and S&P 500 / Nasdaq performance.
 
 ## Main sections
 - `Market Pulse -> /`: Real-time U.S. Equities Dashboard
