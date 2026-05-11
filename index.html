@@ -355,47 +355,50 @@
 
   /* =============== MIGRATION BANNER =============== */
   .migration-banner {
-    background: rgba(110,168,255, 0.08);
-    border: 1px solid rgba(110,168,255, 0.15);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 14px;
-    padding: 16px 24px;
-    margin-bottom: 24px;
+    background: rgba(110,168,255, 0.12);
+    border: 1px solid rgba(110,168,255, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 16px;
+    padding: 20px 32px;
+    margin-bottom: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
-    position: relative;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 12px;
+    z-index: 2000;
     overflow: hidden;
-    animation: bannerSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    animation: bannerSlideIn 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   }
   @keyframes bannerSlideIn {
-    from { opacity: 0; transform: translateY(-10px); }
+    from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
   }
   .migration-banner::before {
     content: ""; position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(110,168,255, 0.1), transparent 50%);
+    background: linear-gradient(135deg, rgba(110,168,255, 0.2), transparent 60%);
     pointer-events: none;
   }
   .banner-content {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
     z-index: 1;
   }
-  .migration-banner .icon { font-size: 20px; }
+  .migration-banner .icon { font-size: 24px; filter: drop-shadow(0 0 8px rgba(110,168,255,0.4)); }
   .migration-banner p {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
     color: var(--text);
-    line-height: 1.5;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
   }
-  .migration-banner strong { color: var(--accent); font-weight: 700; }
+  .migration-banner strong { color: #fff; font-weight: 700; text-shadow: 0 0 12px rgba(110,168,255,0.3); }
   .banner-btn {
     background: var(--accent);
     color: #ffffff;
@@ -730,7 +733,8 @@
   <div class="migration-banner">
     <div class="banner-content">
       <span class="icon">🚀</span>
-      <p data-i18n-html="migration.notice">This site is no longer updated. Experience the new and improved <strong>Alpha Stock Pro</strong>.</p>
+      <p data-i18n-html="migration.notice"><strong>IMPORTANT:</strong> This site is no longer updated. Experience the new and improved <strong>Alpha Stock Pro</strong>.</p>
+      <p data-i18n-html="migration.notice"><strong>重要提示：</strong> 本网站已停止更新。欢迎体验全新升级的 <strong>Alpha Stock Pro</strong>。</p>
       <a href="https://alphastockpro.com/" class="banner-btn">
         <span data-i18n="migration.btn">Visit New Site</span> <span class="arrow">→</span>
       </a>

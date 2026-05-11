@@ -41,7 +41,7 @@ var TRANSLATIONS = {
     'ailayers.title':    'Jensen Huang\'s AI 5-Layer Cake',
     'ailayers.subtitle': 'Equal-weight basket performance of key stocks in each layer, indexed to 100 at start',
     'ailayers.zoom':     'Zoom',
-    'ailayers.updated':  'Updated',
+    'ailayers.updated':  'Last Updated',
     'ailayers.indexed':  'Indexed (base = 100)',
     'ailayers.layer0':   'AI Energy',
     'ailayers.layer1':   'AI Chips & Compute',
@@ -173,7 +173,7 @@ var TRANSLATIONS = {
     'summary.lt_bearish':     'long-term bearish',
 
     /* ---------- migration notice ---------- */
-    'migration.notice': 'This site is no longer updated. Experience the new and improved <strong>Alpha Stock Pro</strong>.',
+    'migration.notice': '<strong>IMPORTANT:</strong> This site is no longer updated. Experience the new and improved <strong>Alpha Stock Pro</strong>.',
     'migration.btn':    'Visit New Site',
 
     /* ---------- error banner (innerHTML — <code> tags preserved) ---------- */
@@ -441,6 +441,11 @@ function applyI18n() {
 function switchLang(lang) {
   currentLang = lang;
   localStorage.setItem('mp-lang', lang);
+  applyI18n();
+}
+;
+  applyI18n();
+}
   applyI18n();
 }
 ;
